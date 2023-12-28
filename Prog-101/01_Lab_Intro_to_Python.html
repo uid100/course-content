@@ -1,0 +1,302 @@
+<!-- This page is optimized specifically for the Canvas LMS environment -->
+<div id='lab1'>
+    <div id="Description">
+        <h1>Lab 1 - Starting out with Python</h1>
+        <hr>
+        <div id="Overview">
+            <h2>Overview
+                <span class="element_toggler btn" role="button" aria-controls="Summary" 
+                aria-label="Toggler toggle list visibility" aria-expanded="false"> 
+                Show/Hide
+                </span>
+            </h2>
+            <div id="Summary">
+                <p>This lab provides an introduction to programming in Python. 
+                </p><p> 
+                    You will be creating 2 relatively simple Python console 
+                    applications using Python IDLE. It also gives you an 
+                    opportunity to apply some of the terminology and concepts 
+                    presented in chapters 1 & 2 of the textbook.
+                </p>
+            </div>
+            
+        </div>
+        <hr>
+        <div id="Learning Objectives">
+            <h3>Learning Objectives
+                <span class="element_toggler btn" role="button" aria-controls="Objectives" 
+                aria-label="Toggler toggle list visibility" aria-expanded="false"> 
+                Show/Hide
+                </span>
+            </h3>
+            <div id="Objectives">
+                <ul>
+                    <li> Introduction to the Python IDLE IDE </li>
+                    <li> Introduction to Python applications </li>
+                    <li> Introduction to writing pseudocode </li>
+                    <li> Use variables to hold and retrieve data </li>
+                    <li> Write comments in Python source code </li>
+                    <li> Arithmetic calculations </li>
+                    <li> Demonstrate sequential code </li>
+                    <li> Use Python for console input and output </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="enhanceable_content tabs">
+        <ul>
+            <li><a href="#todo">To Do:</a></li>
+            <li><a href="#exercise1">Exercise 1</a></li>
+            <li><a href="#exercise2">Exercise 2</a></li>
+            <li><a href="#exercise3">Exercise 3</a></li>
+        </ul>
+
+        <div id="todo">
+            <h2>To-do list:</h2>
+            <ul>
+                <li>Create lab folders</li>
+                <li>Exercise 1. Complete the guided example pseudocode and Python solution for Multiply.py</li>
+                <li>Exercise 2. Write your program design (pseudocode) and Python code for KmToMiles.py</li>
+                <li>Exercise 3. Write your program design (pseudocode) and Python code for MilesToKm.py</li>
+                <li>Zip your Lab01 folder containing your pseudocode text file(s) and your (3) Python (.py) files and upload to Canvas.</li>
+            </ul>
+            <hr>
+            <h3>Create Lab Folders</h3>
+            <p>
+                The first part of the lab is to set up your folder structure.
+                Take a few minutes 
+                to create a folder structure for your labs like the one shown. 
+                Being organized is a critical survival skill in software 
+                development. 
+            </p><p>
+                <em>If you are using the classroom lab computers, be sure 
+                to create this on your USB drive and be sure to save to it! Saving 
+                on the C: drive of the lab computers is a disaster waiting to 
+                happen!</em>
+            </p>
+            <p>
+                Many systems traditionally don't allow using spaces in file (and folder)
+                names. This is a good practice for all of your files, but especially when 
+                writing code. Lab01 is not the same as Lab 01 or Lab assignment 1. When 
+                you start processing multiple data files, using spaces in file names will 
+                cause unexpected problems. Learn to avoid that now.
+            </p><p>
+                There are 16 weeks and 12 Labs in this class. If you name your folders: 
+                Lab1, Lab2, Lab3, ... then your files will sort themselves as Lab1, Lab10, 
+                Lab11, Lab12, Lab2, Lab3... I suppose this is ok, but it might be 
+                frustrating when you're looking for a file, so since there are more than 9
+                and less than 100 labs, using two digits for the folder name makes sense.
+            </p><p>
+                When you submit your file (and it is called Lab01.zip) it unzips to the 
+                same folder structure that I'm expecting, and it's easy for me to find, 
+                and shows that you read and followed the instructions.
+            </p>
+            <p><img id="Lab_Folders" 
+                src="https://canvas.instructure.com/courses/3525664/files/170820031/preview" 
+                alt="Recommended folder structure." width="172" height="249" />
+            </p>
+            <h3>Windows or Mac?</h3>
+            <p>
+                This is a question that I get asked frequently. Python is supported across
+                several platforms. I program on different platforms and I regularly test 
+                solutions on a Windows PC, a Macbook, and a Linux computer. Many of the 
+                examples have even been tested on my iPhone!
+            </p>
+            <p>
+                For this class, either Windows or MacOS will work just fine, but you should
+                choose the one that you are most comfortable with. To be successful,
+                programming experience is not required, but knowledge and comfort with your
+                computer is.
+            </p>
+            <h3>Filename Extensions</h3>
+            <p>
+                <em>Please don't skip this step!</em>
+            </p>
+            <p>
+                Before we go any further, make sure that the setting to view filename
+                extensions is enabled. The exact location or method to check this will
+                vary between systems and even from release to release, but in general, 
+                this should work.
+            </p>
+            <p>
+                For Windows, open the File Explorer and find the <strong>View</strong> menu. 
+                Set the option to <strong>Show > File Extensions</strong>. The exact location
+                of this setting has changed between the last few versions of Windows, but
+                this should be enough to find it.
+            </p>
+            <p>
+                Mac users, open the <strong>Finder</strong> and select <strong>Preferences</strong>
+                and check <strong>Show all filename extensions</strong>
+            </p>
+            <p>
+                <em>Continue with Exercise 1.</em>
+            </p>
+        </div>
+
+        <div id="exercise1">
+            <h2>Exercise 1 - Multiply 2 Numbers<br>
+                Guided Python Application</h2>
+            <hr>
+            <p>
+                For most of the labs in this class, the first exercise will be a guided 
+                walk-through where we will apply the chapter concepts to develop a working 
+                Python application.
+            </p>
+            <p>
+                In this exercise, you will be guided through the steps of analyzing a 
+                problem statement, writing pseudocode, and creating a working Python 
+                application using Python IDLE (Integrated Development and Learning 
+                Environment). Be sure to complete this exercise as you will be repeating 
+                these steps and writing the same (or very similar) code for the other 
+                exercises.
+            </p>
+            <p>
+                Be aware, practice is the key here. <em>The more you do, the 
+                easier it gets!</em>
+            </p>
+            <hr>
+            <p>
+                This course is about program logic and design. Specifically, that means
+                the <strong>approach</strong> to the problem is as important as the 
+                final solution! To say that another way, <strong>the program design is 
+                as important as the program</strong>.
+            </p>
+            <p>
+                <strong>Step one</strong> is <em>always</em> to analyze the problem and 
+                figure out a plan of attack. To save time, we'll continue the problem we l
+                ooked at in the chapter one lecture notes and the final problem statement 
+                is pasted below for reference. Please review the chapter one notes if you 
+                need to review the more detailed analysis and pseudocode.
+            </p>
+            <p>
+                Problem statement from chapter one notes: <del>It's a bright, sunny day and 
+                Cuyamaca Learning Center has hired you as a consultant to develop an 
+                application that will</del> accept two input <strong>numbers</strong> 
+                from the user and display the <strong>product</strong>> of the two values 
+                (numbers.) Notice that the first part of that statement isn't relevant to
+                the solution, so we can ignore it.
+            </p>
+            <p>
+                Break it down into
+                <ol>
+                    <li>input, </li>
+                    <li>process, and </li> 
+                    <li>output </li>
+                </ol>
+                This is a simple problem and we can easily break it down into “workable pieces” 
+                using this approach.
+                <ul>
+                    <li><em>What input do we need?</em> We need 2 numbers</li>
+                    <li><em>What is our process?</em> We need to multiply the 2 numbers. <br>
+                        Our formula is: product = number1 * number2</li>
+                    <li><em>What is our output:</em> We need to display the product</li>
+                </ul>
+            </p>
+            <p>
+                <strong>The next step</strong> is to write the pseudocode.
+            </p> 
+                
+            <div id="PseudocodeCollapseSection">
+                <h3>Write the Pseudocode&nbsp;&nbsp; 
+                    <span class="element_toggler btn" role="button" aria-controls="Pseudocode" 
+                        aria-label="Toggler toggle list visibility" aria-expanded="false"> 
+                        Instructions
+                    </span>
+                </h3>
+                <div id="Pseudocode" style="list-style: none; display: none;">
+                    <h3>Write the Pseudocode</h3>
+                    <p>
+                        Write your pseudocode as a text document. You can use any 
+                        text editor, word processor or even as a spreadsheet, but 
+                        be sure to save your work as a text file (.txt), Python IDLE 
+                        can be used as well. 
+                    </p>
+                    <p>
+                        Please do not use Rich Text Format (.rtf), or MS-Office file 
+                        (.doc, .docx, .ppt, .pptx...) or any other format.
+                    </p>
+                    <hr>
+                    <h4>Steps</h4>
+                    <ol>
+                        <li>Start Python IDLE</li>
+                        <li>From the <strong>File</strong> menu, click <strong>New File</strong></li><br>
+                        xxxx
+                        <li>
+                            Once the new file is created, save it right away as a <strong><em>text 
+                            file</em></strong>. Be sure to save it in your <em>Lab01</em> folder 
+                            so you get points for it!
+                        </li>
+                        <li>
+                            <p>
+                                Write your pseudocode. Keep in mind there is no single “correct” way of 
+                                doing it. This is perhaps what makes writing pseudocode confusing and 
+                                difficult at first. Develop a style that helps you understand the problem 
+                                and how you plan to code the solution.
+                            </p>
+                            <p>
+                                The sample shown below is a suggested approach. It is acceptable to
+                                copy the example.
+                            </p>
+                            <p>
+                                Your pseudocode should be a simple set of step-by-step instructions.
+                                It should list all of the steps and any calculations and constants
+                                that are required for writing the code. This is your design document, 
+                                but it should be simple to follow and simple to understand.
+                            </p>
+                            <p>
+                                Do not submit a copy of your code. They are not the same thing.
+                            </p>
+                        </li>
+                    </ol>
+                    <p>
+                        <strong>Next</strong>, write and test your program.
+                    </p> 
+                </div>
+
+
+                <h3>Write the code for Multiply.py &nbsp;&nbsp; 
+                    <span class="element_toggler btn" role="button" aria-controls="Multiply" 
+                        aria-label="Toggler toggle list visibility" aria-expanded="false"> 
+                        Instructions
+                    </span>
+                </h3>
+
+                <div id="Multiply" style="list-style: none; display: none;">
+                    <ol>
+                        <li>
+                            Create a file called Exponent.py and save to your lab04 
+                            folder
+                        </li>
+
+                        <li>
+                            Next, convert the program design into working Python code. <br>
+                            Enter the code from the example image below, and save your work
+                            <p>&nbsp;</p>
+                            <img 
+                                id="ExponentCode" 
+                                src="https://canvas.instructure.com/courses/3525664/files/170709160/preview" 
+                                alt="Demo code for Exponent calculation program." 
+                                width="803" height="738" 
+                                data-api-endpoint="https://canvas.instructure.com/api/v1/courses/3525664/files/170709160" 
+                                data-api-returntype="File" 
+                            />
+                        </li>
+
+                        <li>
+                            Be sure to test your code
+                        </li>
+                    </ol>
+                </div>                
+            </div>
+        </div>
+        <div id="exercise2">
+            Exercise 2
+        </div>
+        <div id="exercise3">
+            Exercise 3
+        </div>
+    </div>
+</div>
