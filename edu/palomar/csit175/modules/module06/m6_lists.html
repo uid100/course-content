@@ -1,0 +1,101 @@
+<span id="49289" style="display: none;">Python</span>
+
+<div id="top" style="background-color: lightskyblue;">
+    <div id="header" style="padding: 20px; margin-bottom: 10px; display: block; ">
+        <div id="navigation" style="padding: 20px; width: 180px; height: 120px; font-size: 80%; 
+        text-align: center; font-style: italic; color: navy; float: right; 
+        background-color: aliceblue; border: 1px solid skyblue; display: block;">
+            <a href="/courses/49289/pages/homepage">
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/programmer.jpg" alt="homepage link" />
+                home
+            </a>
+        </div> <!-- #navigation -->
+        <p>&nbsp;&nbsp;&nbsp;</p>
+    </div> <!-- #header -->
+    <div id="content" style="padding: 20px;">
+        <h2 class="alert">Lists</h2>
+
+        <p>
+            We started this discussion reviewing <em>variables</em> in order to better understand <em>arrays</em> and
+            now we'll discuss that just as Python handles variable declarations differently than other languages, data
+            collections are also different.
+        </p>
+        <p>
+            While an understanding of arrays, their rules and limitations and handling, will certainly be of help, in
+            Python we will use a <code>List</code> instead.
+        </p>
+        <p class="ic-flash-info">
+            A Python <code>List</code> is not an <code>array</code>
+        </p>
+
+        <h3 class="alert">Python Lists vs. Arrays</h3>
+
+        <h3>Lists in Python</h3>
+        <p>
+            In Python, lists are versatile data structures that can hold elements of different data types and sizes.
+            They
+            are <em>mutable</em>, meaning their elements can be changed after creation. Because the memory for an array
+            needs to be known in order to reserve the memory for it, the size cannot change; it is <em>immutable.</em>
+        </p>
+        <p>
+            Lists in Python are declared using square brackets <code>[ ]</code>. For example:
+        </p>
+        <pre><code>my_list = [1, 2, 3, 4, 5]</code></pre>
+        <p>
+            Elements in a list are indexed starting from 0. They can be accessed using square brackets and the index of
+            the element. For example:
+        </p>
+        <pre><code>print(my_list[0])  # Output: 1</code></pre>
+        <p>
+            Elements can be added to the end of a list using the <code>append()</code> method or inserted at a specific
+            index using the <code>insert()</code> method. Similarly, elements can be removed using the
+            <code>remove()</code> method or <code>pop()</code> method.
+        </p>
+
+        <h3>Arrays in Python</h3>
+        <p>
+            Unlike lists, arrays in Python are provided by the <code>array</code> module and can only store elements of
+            the same data type. They are more memory-efficient compared to lists when dealing with large datasets of a
+            single data type.
+        </p>
+        <p>
+            Arrays in Python are declared using the <code>array()</code> function from the <code>array</code> module.
+            For
+            example:
+        </p>
+        <pre><code>import array
+my_array = array.array('i', [1, 2, 3, 4, 5])</code></pre>
+
+        <p>
+            In the above example, <code>'i'</code> specifies the type code for integers.
+        </p>
+        <p>
+            Similar to lists, elements in arrays are indexed starting from 0 and can be accessed using square brackets
+            and the index of the element. For example:
+        </p>
+        <pre><code>print(my_array[0])  # Output: 1</code></pre>
+        <p>Arrays support many of the same operations as lists, such as appending elements using the
+            <code>append()</code> method or removing elements using the <code>remove()</code> method.
+        </p>
+
+        <h3>Comparison</h3>
+        <p>Lists and arrays in Python serve similar purposes but have some key differences:</p>
+        <ul>
+            <li>Lists can hold elements of different data types, whereas arrays can only hold elements of the same data
+                type.</li>
+            <li>Arrays are more memory-efficient compared to lists when dealing with large datasets of a single data
+                type.</li>
+            <li>Lists are more versatile and offer more built-in methods for manipulation compared to arrays.</li>
+        </ul>
+        </body>
+
+        </html>
+
+
+        <p>&nbsp;</p>
+    </div> <!-- #content -->
+    <div id="footer" style="padding: 20px;">
+        <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+    </div> <!-- #footer -->
+</div> <!-- #top -->

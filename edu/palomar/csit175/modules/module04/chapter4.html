@@ -1,0 +1,120 @@
+<p style="display: none;">49289</p>
+<div id="top">
+    <div id="header" style="padding: 20px; margin-bottom: 10px; ">
+        <div id="navigation" style="padding: 20px; width: 180px; height: 120px; font-size: 80%; 
+        text-align: center; font-style: italic; color: navy; float: right; 
+        background-color: aliceblue; border: 1px solid skyblue; display: block;">
+            <a href="/courses/49289/pages/homepage">
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/programmer.jpg" alt="homepage link" />
+                home
+            </a>
+        </div> <!-- #navigation -->
+        <figure>
+            <img src="/courses/49289/file_contents/course%20files/course_image/textbook.jpg" alt="textbook cover">
+        </figure>
+    </div> <!-- #header -->
+
+    <h2 class="alert alert-info">Chapter 4 How to define and use functions and modules</h2>
+    <h3>Modular code</h3>
+    <p>
+        We've seen that Python has a pretty extensive library of built in methods that allow us to get user input,
+        convert text into numbers, display output on the console and do a variety of other programming tasks. By having
+        this built-in library of ready to use (and reuse) code, it saves us the work of having to code all this from
+        scratch.
+    </p>
+    <p>
+        Chapter 4 takes us into developing user defined methods. Some languages also use the terms function or
+        procedure or subroutine when this topic comes up. We will discuss this as we progress through the chapter.
+    </p>
+    <p>
+        By breaking up our code into methods, we often get code we can (potentially) reuse in other projects as well as
+        allow multiple people to work on the same project. It also ties into the concept of decomposing a problem into
+        small pieces.
+    </p>
+
+    <h3>
+        Benefits of Writing Modular code
+    </h3>
+    <h4>Maintainability</h4>
+    <p>
+        Breaking down a program into smaller, self-contained modules makes it easier to understand,
+        update, and debug. Developers can focus on a specific module without having to understand the entire codebase,
+        which reduces the risk of introducing unintended side effects when making changes.
+    </p>
+    <h4>Scalability</h4>
+    <p>
+        Modular code allows developers to scale applications more efficiently. New features can be
+        implemented as separate modules, making it easier to integrate them into the existing codebase without
+        disrupting the entire system. This modular approach also facilitates parallel development, where multiple teams
+        can work on different modules simultaneously.
+    </p>
+    <h4>Reusability</h4>
+    <p>
+        Modular code promotes code reusability by encapsulating common functionalities into reusable
+        modules. These modules can be easily imported and used in different parts of an application or even in other
+        projects, saving time and effort in development.
+    </p>
+    <h4>Collaboration</h4>
+    <p>
+        Modular code encourages collaboration among developers. Each module can be assigned to a
+        different developer or team, allowing for parallel development and easier integration of contributions.
+        Additionally, well-defined interfaces between modules facilitate communication and coordination among team
+        members.
+    </p>
+    <h4>Flexibility</h4>
+    <p>
+        Modular code provides flexibility in design and architecture. Developers can easily swap out
+        modules or replace them with more efficient implementations without affecting other parts of the system. This
+        flexibility enables applications to evolve and adapt to changing requirements and technological advancements.
+    </p>
+    <h4>Testing</h4>
+    <p>
+        Modular code simplifies testing by isolating functionalities into separate units. Developers can write
+        unit tests for each module independently, ensuring that individual components work correctly. This modular
+        testing approach improves test coverage, reduces the likelihood of regressions, and enhances the overall quality
+        of the software.
+    </p>
+
+
+    <h3>Decomposing code into modules</h3>
+    <p>
+        An important, but sometimes misunderstood concept in software engineering are the goals of writing code that is
+    <ul>
+        <li>Highly-Cohesive</li>
+        <li>Loosely-Coupled</li>
+    </ul>
+    </p>
+    <p>
+        You have seen why keeping code in smaller units is beneficial, but it is important to be sure each unit of
+        code contains:
+    </p>
+    <p class="ic-flash-info"><em>all that it needs and nothing it doesn't.</em></p>
+    <p style="font-weight: bold;">
+        Make sure each of your functions does only one thing, and does not depend on anything outside itself.
+    </p>
+    <p>
+        High Cohesion: Imagine you have a group of friends who are all interested in playing soccer. High cohesion among
+        your friends means that they all share a common interest or purpose: playing soccer. They stick together because
+        they have a strong bond based on this shared interest. Similarly, in programming, high cohesion refers to the
+        idea that elements within a module are closely related and work together to perform a single, well-defined task.
+        Just like your soccer-playing friends, cohesive modules are tightly focused on a specific purpose, making them
+        easier to understand, maintain, and reuse.
+    </p>
+    <p>
+        Loose Coupling: Now, let's say you have another group of friends who are interested in various activities like
+        playing soccer, watching movies, and cooking. Unlike the soccer-only group, this group has loose coupling
+        because each friend can pursue their interests independently without relying heavily on the others. They are
+        connected, but not tightly bound to each other. In programming, loose coupling means that modules are
+        independent of each other and interact through well-defined interfaces or contracts. Changes in one module
+        should not require extensive modifications in other modules. This flexibility allows for easier maintenance,
+        testing, and modification of the codebase.
+    </p>
+    <p>
+        In essence, high cohesion emphasizes the idea of "sticking together" within a module, while loose coupling
+        promotes a "hands-off" approach between modules, allowing them to interact without being tightly intertwined.
+        These principles help in creating modular, flexible, and maintainable software systems.
+    </p>
+
+    <a href="#top" style="font-style: italic;text-align: center;">top</a>
+</div> <!-- #top -->

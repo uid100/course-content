@@ -1,0 +1,205 @@
+<span id="49289" style="display: none;">Python</span>
+
+<div id="lab10" style="background-color: lightskyblue;">
+    <div id="header" style="padding: 20px; margin-bottom: 10px; display: block; ">
+        <div id="navigation" style="padding: 20px; width: 180px; height: 120px; font-size: 80%; 
+        text-align: center; font-style: italic; color: navy; float: right; 
+        background-color: aliceblue; border: 1px solid skyblue; display: block;">
+            <a href="/courses/49289/pages/homepage">
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/programmer.jpg" alt="homepage link" />
+                home
+            </a>
+        </div> <!-- #navigation -->
+        <p>&nbsp;&nbsp;&nbsp;</p>
+    </div> <!-- #header -->
+
+    <div id="overview" style="padding: 20px;">
+        <h2 class="alert">Lab #11</h2>
+
+        <div id="introduction">
+            <p>
+                This lab will demonstrate some ways you can integrate your code with web technologies.
+            </p>
+        </div> <!-- #introduction -->
+        <div id="objectives" style="padding: 40px;">
+            <ul>Objectives:
+                <li>Using APIs</li>
+                <li>Using Flask to create web applications</li>
+            </ul>
+        </div> <!-- #objectives -->
+    </div> <!-- #overview -->
+
+    <div id="tabs" class="enhanceable_content tabs">
+        <p style="font-style: italic;">Click through each of the following tabs.</p>
+        <ul>
+            <li><a href="#ex1" style="color:navy;">Exercise 1</a></li>
+            <li><a href="#ex2" style="color:navy;">Exercise 2</a></li>
+            <li><a href="#ex3" style="color:navy;">Exercise 3</a></li>
+        </ul>
+
+        <div id="ex1" style="padding: 20px; background-color: lightskyblue;">
+            <h2 class="alert">Exercise 1</h2>
+            <h3>Reading from an API</h3>
+            <p>
+                A browser request to a web server will usually return a formatted web page intended to be viewed in a
+                browser. Another common use-case is to send a request to an API server, which typically returns JSON
+                formatted data.
+            </p>
+            <p>
+                Many API servers will require a key with the request, for example the Google Maps API provides a rich
+                data set which can be accessed for a modest fee. Most development tasks will be well within the
+                <em>free-tier</em> for many of these services, and the fees are modest for light usage for production
+                web sites.
+            </p>
+            <p>
+                In addition, there are many publicly available API servers which are free to use and access. A web
+                search will quickly introduce many of these. The lists are growing all the time.
+            </p>
+            <div id="api-read">
+                <p>
+                    The <code>requests</code> module is a third-party library for making HTTP requests in Python. It
+                    will need to be installed before this code will run.
+                </p>
+                <p class="ic-flash-info">
+                    <code>python3 -m pip install --upgrade urllib3</code><br>
+                    <code>python3 -m pip install --upgrade requests</code>
+                </p>
+                <img style="display: block; margin-left: auto; margin-right: auto;"
+                    src="/courses/49289/file_contents/course%20files/course_image/lab11/api_read_1.png"
+                    alt="api_read Python source" />
+                <img style="display: block; margin-left: auto; margin-right: auto;"
+                    src="/courses/49289/file_contents/course%20files/course_image/lab11/api_read_2.png"
+                    alt="api_read Python source" />
+            </div> <!-- #api-read -->
+
+            <p>
+                Run the application several times. Observe the output changing.
+            </p>
+
+            <p style="font-style: italic; text-align: center;">Go to Exercise 2!</p>
+        </div> <!-- #ex1 -->
+
+        <div id="ex2" style="padding: 20px; background-color: lightskyblue;">
+            <h2 class="alert">Exercise 2</h2>
+            <h3>A web application</h3>
+            <p>
+                Now let's make an application which will read the user's location from a ZIP code in the URL and return
+                some current information about that location. This will use the Zippopotamus API which does not require
+                an API key, and the Flask web server.
+            </p>
+            <p>
+                You can learn more about writing Python Flask apps here: https://flask.palletsprojects.com/en/3.0.x/
+            </p>
+            <p>
+                To create and use Flask applications, you will need to install the Flask package. Once again, use the
+                Package installer: <code>pip</code>. Pip stands for <em>Pip Installs Packages</em>.
+            </p>
+            <p class="ic-flash-info">
+                <code>python3 -m pip install --upgrade Flask</code>
+            </p>
+            <p>
+                This application uses the Zippopotamus API to fetch city and state information based on a zip code. It's
+                important to note that since Zippopotamus is a free and open API, it may have limitations or
+                inconsistencies in its data compared to more comprehensive paid APIs.
+            </p>
+            <p>
+                Create a new Python file named <strong>location.py</strong>
+            </p>
+            <img style="display: block; margin-left: auto; margin-right: auto;"
+                src="/courses/49289/file_contents/course%20files/course_image/lab11/location_py.png"
+                alt="find city from zip code Python source" />
+            <p>
+                When you successfully run your code, you'll see that Flask has started a web server.
+            </p>
+            <img style="display: block; margin-left: auto; margin-right: auto;"
+                src="/courses/49289/file_contents/course%20files/course_image/lab11/FlaskRunning.png"
+                alt="Flask running web service" />
+            <p>
+                Open a browser and enter http://127.0.0.1:5000/92101 in the address bar.
+            </p>
+            <p>
+                127.0.0.1 is a special IP address known as the <em>loopback</em> or <strong>localhost</strong> address.
+                You could also use <code>localhost:5000/92101</code> to see the same results. Try some different
+                zipcodes on the URL <em>route</em>.
+            </p>
+            <p>
+                The response type served from Flask is a very simple web page. You can use your browser to view the
+                source. In the next exercise, we'll add more data and formatting.
+            </p>
+            <hr />
+            <p style="font-style: italic; text-align: center;">Go to Exercise 3!</p>
+        </div> <!-- #ex2 -->
+
+        <div id="ex3" style="padding: 20px; background-color: lightskyblue;">
+            <h2 class="alert">Exercise 3</h2>
+            <h3>Weather Forecast</h3>
+            <p>
+                In the previous exercise, the application took input from the user, on the address bar, called the
+                'route', and returned a very simple string which Flask formatted as a minimalist html file. This time
+                we'll add some more to make things more interesting, connecting to multiple APIs and formatting the html
+                using <strong>bootstrap</strong> <em>cascading style sheets (CSS)</em>.
+            </p>
+
+            <p>
+                Create a new Python source file. Name it <code>forecast.py</code>. I suggest you enter the code as
+                presented, test and understand it before making any <em>customizations.</em>
+            </p>
+            <p>
+                Notice the code starts by parsing the @App.route from the user, to get the ZIP code from the user and
+                then connects to the Zippopotamus API to get the latitude, longitude, city, and state. You can try this
+                URL from your browser to see the JSON return data from this API for different ZIP codes.
+            </p>
+            <p>
+                Next the program uses that location (lat,lon) to get the weather forecast for the area from the NOAA
+                servers. If you enter the position in the route to the NOAA URL, you'll see that the first response
+                contains another URL that contains the forecast for the area, so two API calls are made to the weather
+                API.
+            </p>
+            <img style="display: block; margin-left: auto; margin-right: auto;"
+                src="/courses/49289/file_contents/course%20files/course_image/lab11/forecast_source1.png"
+                alt="get weather forecast from zip code Python source" />
+            <img style="display: block; margin-left: auto; margin-right: auto;"
+                src="/courses/49289/file_contents/course%20files/course_image/lab11/forecast_source2.png"
+                alt="get weather forecast from zip code Python source" />
+            <p>
+                Next, create another folder in your lab folder called <code>templates</code> and add a file named
+                <code>weather.html</code> The data from the forecast model and the current local time will be passed to
+                the template html file.
+            </p>
+            <img style="display: block; margin-left: auto; margin-right: auto;"
+                src="/courses/49289/file_contents/course%20files/course_image/lab11/weather_html.png"
+                alt="templates/weather.html source file" />
+            <p>
+                When the html response is delivered to the browser, the browser will also download the bootstrap
+                stylesheets from a <strong>Content Delivery Network (CDN)</strong> server. Using these styles, the
+                output can be formatted with a little more <em>flair</em>. Notice the dynamic image file that is
+                also retrieved from the weather site and included in the page.
+            </p>
+            <p>
+                Try using different zipcodes to see that the data is dynamic. Also, try resizing the browser to see that
+                the responsive design resizes automatically.
+            </p>
+            <p>
+                This demonstration is only listening for requests on the same computer (localhost). If you change the
+                app.run() parameter list in forecast.py to:<br>
+                <code>app.run(host='0.0.0.0', debug=True, port=5000)</code><br>
+                Flask will listen for requests from other computers (like your mobile phone if it's on your home wifi).
+                You may have to also configure Firewall and router settings to get this to work across the network. That
+                is beyond the scope of this exercise.
+            </p>
+            <hr />
+            <p>
+                zip your Lab11 folder with your lab files in it:
+            </p>
+            <pre>
+                Lab11/
+                ├── api_read.py
+                ├── forecast.py
+                ├── location.py
+                ├── templates/
+                │   ├── weather.html
+            </pre>
+        </div> <!-- #ex3 -->
+    </div>
+</div>

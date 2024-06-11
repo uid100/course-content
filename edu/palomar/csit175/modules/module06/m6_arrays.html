@@ -1,0 +1,95 @@
+<span id="49289" style="display: none;">Python</span>
+
+<div id="top" style="background-color: lightskyblue;">
+    <div id="header" style="padding: 20px; margin-bottom: 10px; display: block; ">
+        <div id="navigation" style="padding: 20px; width: 180px; height: 120px; font-size: 80%; 
+        text-align: center; font-style: italic; color: navy; float: right; 
+        background-color: aliceblue; border: 1px solid skyblue; display: block;">
+            <a href="/courses/49289/pages/homepage">
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/programmer.jpg" alt="homepage link" />
+                home
+            </a>
+        </div> <!-- #navigation -->
+        <p>&nbsp;&nbsp;&nbsp;</p>
+    </div> <!-- #header -->
+    <div id="content" style="padding: 20px;">
+        <h2 class="alert">Arrays</h2>
+
+        <h3>Variable type</h3>
+        <p>An array is a fundamental data structure in programming that allows you to store a collection of elements of
+            the same type under a single variable name. Arrays are commonly used for organizing and manipulating data
+            efficiently.
+        </p>
+        <p>
+            Keep the <strong>variable</strong> discussion in mind. An array is first and most importantly, a variable
+            type! So it must have a known size and set of rules, and must address a location in memory.
+        </p>
+        <h4 style="font-style: italic;">
+            How much space do I need?
+        </h4>
+        <p>
+            All elements of an array must be the same type (and size!), and the number of elements must be known when it
+            is declared. When the compiler identifies the space required for any variable, it needs to know how much
+            space is required.
+        </p>
+        <h4 style="font-style: italic;">
+            An array is stored in <strong>contiguous</strong> memory
+        </h4>
+        <p>
+            The application will map any variable to an actual location in memory. Arrays are no different. The address
+            of an array maps to the start of the block of memory reserved to store its data. Since each element is the
+            same size (type), if the first element is stored at the start of the block, finding the second one is simply
+            a matter of moving through the memory, past exactly the size of the first element. Getting to the third
+            means starting from the beginning and going past the first two (2) elements. In code, we call this the index
+            of the array element. So, <code>myArray[5]</code> is referring to an element located past the first 5 items
+            counted from the beginning of the memory block, or the sixth element.
+        </p>
+
+        <h3>Declaring Arrays</h3>
+        <p>
+            <em>In most programming languages,</em> arrays are declared by specifying the data type of the elements they
+            will contain, followed by the array name and the size of the array (number of elements).
+        </p>
+        <p>
+            <em>Why?</em> Because the application has to know how much space it needs.
+        </p>
+
+        <h3>Assigning Values to Arrays</h3>
+        <p>
+            Once declared, you can assign values to individual elements of the array using indexing. Indexing starts at
+            0
+            for the first element and goes up to the size of the array minus one.
+        </p>
+        <p>
+            The <em>index</em> is also called the <em>subscript</em>. Since a variable name refers to the address of its
+            location in memory, the array name points to the base address and the index is the
+            <strong><em>offset</em></strong> from that base address. If you count (offset) past the number of elements
+            that are contained in an array, then you've gone past the last item. That's why the location of the last
+            item has to be the count minus one. <code>n - 1</code>
+        </p>
+
+        <h3>Storing and Retrieving Elements</h3>
+        <p>Elements in an array are stored sequentially in memory, allowing for fast access based on their index. You
+            can retrieve elements by specifying their index within square brackets.</p>
+        <pre><code>
+        // Retrieving elements from the array in Python
+        myArray = [10, 20, 30]
+        print(myArray[0])  # Output: 10
+        print(myArray[2])  # Output: 30
+            </code></pre>
+
+        <p>Arrays provide a convenient and efficient way to work with collections of data in programming, making them a
+            valuable tool for various tasks.</p>
+
+        <p>&nbsp;</p>
+        <p>
+            These rules for how to create and use arrays are important, but if you understand how arrays work, then the
+            <em>why</em> they work will make sense, and the rules will make more sense.
+        </p>
+        <p>&nbsp;</p>
+    </div> <!-- #content -->
+    <div id="footer" style="padding: 20px;">
+        <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+    </div> <!-- #footer -->
+</div> <!-- #top -->

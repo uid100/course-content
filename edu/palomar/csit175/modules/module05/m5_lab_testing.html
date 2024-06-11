@@ -1,0 +1,144 @@
+<p><span id="49289" style="display: none;">Python</span></p>
+<div id="lab" style="background-color: lightskyblue;">
+    <div id="header" style="padding: 20px;">
+        <div id="navigtion" style="width:200px;"><a href="/courses/49289/pages/homepage" style="color:navy;">
+                <img src="/courses/49289/file_contents/course%20files/course_image/programmer.jpg"
+                    alt="home page link" /><br /><em>home</em> </a></div>
+    </div>
+    <div id="overview" style="padding: 20px;">
+        <h2 class="alert">Software testing - Lab 5</h2>
+        <div id="introduction">
+            <p>This lab provides an opportunity to apply the concepts and principles presented in the module and chapter
+                5 of the text.
+            </p>
+            <p>
+                When you are writing code, you will likely encounter errors in three different stages of development.
+            </p>
+            <ol>
+                <li>Syntax Errors or compile-time errors - your code will not compile and run until these are resolved.
+                </li>
+                <li>Runtime Errors - also known as exceptions, these issues may be handled in code for a better user
+                    experience</li>
+                <li>Logic Errors - sometimes more difficult to identify, the code may run and produce incorrecct results
+                </li>
+            </ol>
+
+        </div>
+        <div id="topics" style="padding: 40px;">
+            <ul>Topics:
+                <li>Test, troubleshoot, and debug Python applications</li>
+            </ul>
+        </div> <!-- #topics -->
+    </div> <!-- #overview -->
+    <div id="tabs" class="enhanceable_content tabs">
+        <p style="font-style: italic;">Click through each of the following tabs.</p>
+        <p class="ic-flash-info">Submit the zip file of your lab05 folder containing your Python (.py) source files</p>
+        <ul>
+            <li><a href="#ex1" style="color:navy;">Exercise 1</a></li>
+            <li><a href="#ex2" style="color:navy;">Exercise 2</a></li>
+            <li><a href="#ex3" style="color:navy;">Exercise 3</a></li>
+        </ul>
+        <div id="ex1" style="padding: 20px;">
+            <h2 class="alert">Exercise 1</h2>
+            <h3>Find and fix syntax errors</h3>
+            <div id="ex1-intro">
+                <p>
+                    Create a Python file named <code>syntax_errors.py</code> and copy the following code.
+                </p>
+                <p>&nbsp;</p>
+                <p>Each line that contains an error, add a hash (#) at the beginning of each line
+                    that contains an error to mark it as a comment and add another comment above it
+                    explaining what the error is, and then another line below that with the corrected
+                    code if possible.
+                </p>
+                <p>For example:</p>
+                <pre>
+        x = 5
+        while x > 0
+            print( x, end=' ' )
+            x -= 1 
+    </pre>
+
+                <p>would be replaced with:</p>
+                <pre>
+        x = 5
+        # while clause should be terminated with a color (':')
+        # while x > 0
+        while x > 0:
+            print( x, end=' ' )
+            x -= 1 
+    </pre>
+                <p>&nbsp;</p>
+                <p><img src="/courses/49289/file_contents/course%20files/course_image/lab05/syntax_errors.png"
+                        alt="sample code with syntax errors" width="562" height="132" /></p>
+            </div>
+            <p>&nbsp;</p>
+            <p style="font-style: italic; text-align: center;">Go to Exercise 2!</p>
+        </div> <!-- #ex1 -->
+
+        <div id="ex2" style="padding: 20px;">
+            <h2 class="alert">Exercise 2</h2>
+            <h3>Find and fix the runtime exceptions</h3>
+            <div id="ex2-instructions">
+                <p>
+                    Create a Python file named <code>syntax_errors.py</code> and copy the following code.
+                </p>
+                <p>&nbsp;</p>
+                <p>Each line that contains an error, add a hash (#) at the beginning of each line
+                    that contains an error to mark it as a comment and add another comment above it
+                    explaining what the error is, and then another line below that with the corrected
+                    code if possible as you did in Ex.1
+                </p>
+                <p>There may be syntax as well as runtime errors in the code.</p>
+
+                <p>&nbsp;</p>
+                <p><img src="/courses/49289/file_contents/course%20files/course_image/lab05/runtime_errors.png"
+                        alt="sample code with syntax errors" width="562" height="132" /></p>
+            </div>
+            <p>&nbsp;</p>
+            <p style="font-style: italic; text-align: center;">Go to Exercise 3!</p>
+        </div> <!-- #ex2 -->
+
+        <div id="ex3" style="padding: 20px;">
+            <h2 class="alert">Exercise 3</h2>
+            <h3>Find and fix the logic errors</h3>
+            <div id="ex3-instructions">
+                <p>
+                    Create a Python file named <code>logic_errors.py</code> and copy the following code.
+                </p>
+                <p>&nbsp;</p>
+                <p>Each line that contains an error, add a hash (#) at the beginning of each line
+                    that contains an error to mark it as a comment and add another comment above it
+                    explaining what the error is, and then another line below that with the corrected
+                    code if possible as you did in Ex.1
+                </p>
+                <p>
+                    Note: copy the code as written first. The code will run without any changes to it.
+                </p>
+                <p>&nbsp;</p>
+                <p style="background-color: yellow;">
+                    In this example, do not change anything below line 38!
+                </p>
+                <p>
+                    This is an embedded test. This file could be imported into another file for use,
+                    after it is fixed. If it is run by itself, it will only test the functions, but
+                    if imported into another program, the functions could be called independently and
+                    the tests would not run separately. This is a good way to testing that your functions
+                    are working when they are being used in other programs.
+                </p>
+                <p>&nbsp;</p>
+                <p><img src="/courses/49289/file_contents/course%20files/course_image/lab05/logic_errors_pt1.png"
+                        alt="sample code with logic errors and embedded testing. part 1 of 3" width="562"
+                        height="132" /></p>
+                <p><img src="/courses/49289/file_contents/course%20files/course_image/lab05/logic_errors_pt2.png"
+                        alt="sample code with logic errors and embedded testing. part 2 of 3" width="761"
+                        height="495" /></p>
+                <p><img src="/courses/49289/file_contents/course%20files/course_image/lab05/logic_errors_pt3.png"
+                        alt="sample code with logic errors and embedded testing. part 3 of 3" width="765"
+                        height="500" /></p>
+            </div>
+            <p>&nbsp;</p>
+        </div> <!-- #ex3 -->
+    </div>
+</div>
+<p>&nbsp;</p>

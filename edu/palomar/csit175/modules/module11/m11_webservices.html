@@ -1,0 +1,167 @@
+<span id="49289" style="display: none;">csit-175 Python Programming</span>
+
+<div id="webservices" style="background-color: lightskyblue;">
+    <div id="header" style="padding: 20px; margin-bottom: 10px; ">
+        <div id="navigation" style="padding: 20px; width: 180px; height: 120px; font-size: 80%; 
+        text-align: center; font-style: italic; color: navy; float: right; 
+        background-color: aliceblue; border: 1px solid skyblue; display: block;">
+            <a href="/courses/49289/pages/homepage">
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/programmer.jpg" alt="homepage link" />
+                home
+            </a>
+        </div> <!-- #navigation -->
+    </div> <!-- #header -->
+    <div id="kludge" style="display:block;">
+        <!-- kludge -->
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div> <!-- #kludge -->
+
+    <div id="notes" style="padding: 20px;">
+
+        <p>&nbsp</p>
+        <p>
+            Before we start looking at code, there are several related but distinct concepts that we should take the
+            time to investigate and define to reduce confusion.
+        </p>
+        <p>&nbsp</p>
+        <h2 class="alert">Internet vs World Wide Web</h2>
+        <p>
+            The terms "Internet" and "World Wide Web" (WWW) are often used interchangeably, but they actually refer to
+            different concepts.
+        </p>
+        <p><strong>Internet:</strong></p>
+        <ul>
+            <li>The Internet is a global network that connects millions of computers and other devices worldwide.</li>
+            <li>It's a massive network infrastructure that enables communication and the transfer of data between
+                devices through various protocols such as TCP/IP (Transmission Control Protocol/Internet Protocol).</li>
+            <li>The Internet allows for the exchange of information, communication via email, instant messaging, video
+                conferencing, file sharing, and much more.</li>
+            <li>It encompasses a wide range of technologies and services beyond just web browsing.</li>
+        </ul>
+        <p><strong>World Wide Web (WWW):</strong></p>
+        <ul>
+            <li>The World Wide Web is a system of interconnected hypertext documents and resources linked via URLs
+                (Uniform Resource Locators).</li>
+            <li>It's a subset of the Internet and operates on top of it.</li>
+            <li>The WWW was launched in 1989 as a way to share documents over the Internet. It became publicly
+                accessible in 1991.</li>
+            <li>Web pages on the WWW are typically written in HTML (Hypertext Markup Language) and can contain text,
+                images, videos, hyperlinks, and other multimedia elements.</li>
+            <li>Users access web pages using web browsers such as Google Chrome, Mozilla Firefox, Safari, etc.</li>
+            <li>The WWW enables various services and activities such as web search, online shopping, social networking,
+                blogging, and much more.</li>
+        </ul>
+        <p>&nbsp;</p>
+
+        <h2 class="alert">Web Page vs Web Site vs Web Application</h2>
+
+
+        <p><strong>Web Pages:</strong></p>
+        <p>A web page is a single document that is part of a website. It typically contains:</p>
+        <ul>
+            <li>Text</li>
+            <li>Images</li>
+            <li>Videos</li>
+            <li>Hyperlinks</li>
+            <li>Other multimedia elements</li>
+        </ul>
+
+        <p><strong>Websites:</strong></p>
+        <p>A website is a collection of related web pages that share a common domain name. It:</p>
+        <ul>
+            <li>Consists of multiple web pages</li>
+            <li>Is organized hierarchically</li>
+            <li>May be static or dynamic</li>
+            <li>Examples include: personal blogs, news portals, e-commerce platforms</li>
+        </ul>
+
+        <p><strong>Web Applications:</strong></p>
+        <p>A web application is an interactive software program accessed via a web browser. It:</p>
+        <ul>
+            <li>Allows users to perform specific tasks or access services</li>
+            <li>Can be simple or complex</li>
+            <li>Is built using HTML, CSS, and JavaScript for the front end, and server-side technologies like PHP,
+                Python, or Node.js for the back end</li>
+            <li>Examples include: Gmail, Facebook, Google Maps</li>
+        </ul>
+
+        <h2 class="alert">Web Servers and (REST) APIs</h2>
+        <p>
+            There are many servers and many services running on the internet. For now we'll focus on two.
+        </p>
+        <p class="ic-flash-info">
+            A <strong>server</strong> delivers a <em>predictable</em> <strong>response</strong> to a
+            <em>well-formed</em>
+            <strong>request.</strong>
+        </p>
+        <p>
+            We have seen how content is commonly served on the WWW by web servers and (REST) APIs. These are also
+            similar
+            but different concepts.
+        </p>
+
+        <p><strong>They have a different purpose</strong></p>
+        <ul>
+            <li><strong>REST API:</strong> Provides a way for clients to interact with a server to perform operations on
+                resources using standard HTTP methods.</li>
+            <li><strong>Web Server:</strong> Serves web content (such as HTML pages, images, CSS files) to clients over
+                the
+                internet.</li>
+        </ul>
+
+        <p><strong>They have different Functionality</strong></p>
+        <ul>
+            <li><strong>REST API:</strong> Enables clients to interact with resources, such as creating, reading,
+                updating,
+                and deleting data, using standard HTTP methods.</li>
+            <li><strong>Web Server:</strong> Serves static content and handles dynamic content generation using
+                server-side
+                scripting languages.</li>
+        </ul>
+
+        <p><strong>They have different Level of Abstraction</strong></p>
+        <ul>
+            <li><strong>REST API:</strong> Operates at a higher level of abstraction, providing a standardized way for
+                clients to access and manipulate resources over the web.</li>
+            <li><strong>Web Server:</strong> Operates at a lower level, handling the mechanics of serving web content
+                over
+                HTTP.</li>
+        </ul>
+
+        <p><strong>They have different Interactivity</strong></p>
+        <ul>
+            <li><strong>REST API:</strong> Enables interactive communication between clients and servers, allowing
+                clients
+                to request specific data or perform actions on resources.</li>
+            <li><strong>Web Server:</strong> Serves static content and handles simple interactions, but does not provide
+                the
+                same level of interactivity as a REST API.</li>
+        </ul>
+
+        <p>
+            A REST API is commonly used for serving database content across the internet. Web servers deliver content
+            formatted for web browser applications.
+        </p>
+
+    </div>
+
+    <div id="resources" style="padding: 20px;">
+        <p>
+            Here's another look at REST and RESTful services.
+        </p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lsMQRaeKNDk?si=7bSBePbiQJWP16n-"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div id="footer" style="padding: 20px;">
+        <hr />
+        <p style="text-align: center;"><em>Use the [Next &gt;] button to continue.</em></p>
+    </div>
+</div> <!-- #webservices -->

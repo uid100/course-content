@@ -1,0 +1,155 @@
+<span id="49289" style="display: none;">Python</span>
+
+<div id="top" style="background-color: lightskyblue;">
+    <div id="header" style="padding: 20px; margin-bottom: 10px; display: block; ">
+        <div id="navigation" style="padding: 20px; width: 180px; height: 120px; font-size: 80%; 
+        text-align: center; font-style: italic; color: navy; float: right; 
+        background-color: aliceblue; border: 1px solid skyblue; display: block;">
+            <a href="/courses/49289/pages/homepage">
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/programmer.jpg" alt="homepage link" />
+                home
+            </a>
+        </div> <!-- #navigation -->
+        <p>&nbsp;&nbsp;&nbsp;</p>
+    </div> <!-- #header -->
+
+    <div id="boolean" style="margin:30px;">
+        <h2 class="alert alert-info">Making Decisions</h2>
+        <h3>Boolean Expressions</h3>
+        <p>
+            Sequential processing consists of passing an ordered list of instructions
+            through a processor. Do step 1, then step 2, step 3, and step 4, and so on.
+        </p>
+        <p>
+            Often, in any sequential list of instructions there will be conditional
+            execution. If it's raining outside, then find an umbrella. If the dog is
+            scratching at the door, then open the door and let her go outside. If it
+            is your grandmother's birthday, then we will be joining her for dinner at
+            her favorite restaurant.
+        </p>
+        <p>
+            Conditional execution involves evaluating a boolean expression. This is a
+            binary expression. It can only evaluate to</p>
+        <ul>
+            <li><code>True</code> or <code>False</code>, </li>
+            <li><code>Yes</code> or <code>No</code>, </li>
+            <li><code>On</code> or <code>Off</code>.</li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>
+            Here are some examples of boolean expressions.
+        </p>
+        <ul stype="margin-left:30px;">
+            <li>5 > 3</li>
+            <li>10 == 10</li>
+            <li>x < y</li>
+            <li>a >= b</li>
+            <li>word1 == word2</li>
+            <li>is_sunny and is_warm</li>
+            <li>not is_raining</li>
+            <li>hour_of_day <= 12</li>
+            <li>temperature > 75 or humidity < 60</li>
+            <li>count != 0</li>
+            <li>not (x == y)</li>
+            <li>is_weekend or is_holiday</li>
+            <li>age >= 18 and age < 21</li>
+            <li>not (is_working_day and is_busy)</li>
+            <li>username == "admin" and password == "secure123"</li>
+            <li>not is_empty or is_full</li>
+            <li>grade == 'A' or grade == 'B'</li>
+            <li>points >= 90 and not is_cheating</li>
+            <li>not (is_morning and is_weekday)</li>
+            <li>is_valid and not is_expired</li>
+        </ul>
+        <h3>Python Conditional Statements: if, elif, else</h3>
+        <p>
+            In Python, the if statement is used to conditionally execute a block of code.
+            The keyword <code>if</code> is followed by a boolean expression and a colon,
+            then the conditional code to be executed is indented (typically 4 spaces) and
+            then processing returns from the code block by un-indenting to the same column
+            that it started.
+        </p>
+        <p>
+            For example:
+        </p>
+        <pre>
+            if TODAY == "Friday":
+                print("Weekend is almost here!")
+                hours_worked += 8
+            print(TODAY)</pre>
+        <p>&nbsp;</p>
+
+        <p>In Python, conditional statements are used to execute different blocks of code based on certain conditions.
+            The key components for this are the <code>if</code>, <code>elif</code> (else if), and <code>else</code>
+            statements.</p>
+
+        <h2><strong><em>if</em></strong> Statement:</h2>
+        <p>The <code>if</code> statement is used to execute a block of code if a specified condition evaluates to
+            <code>True</code>. Here's the basic syntax:
+        </p>
+
+        <pre><code>if condition:
+    # Code to be executed if the condition is True
+  </code></pre>
+
+        <h2><strong><em>elif</em></strong> Statement:</h2>
+        <p>The <code>elif</code> statement allows you to check additional conditions if the previous <code>if</code> or
+            <code>elif</code> conditions are not met. It stands for "else if." Here's how it works:
+        </p>
+
+        <pre><code>if condition:
+    # Code to be executed if the condition is True
+elif another_condition:
+    # Code to be executed if another_condition is True
+  </code></pre>
+
+        <h2><strong><em>else</em></strong> Statement:</h2>
+        <p>The <code>else</code> statement is used to execute a block of code when none of the previous conditions (in
+            <code>if</code> or <code>elif</code>) are true. It acts as a fallback. Here's the syntax:
+        </p>
+
+        <pre><code>if condition:
+    # Code to be executed if the condition is True
+elif another_condition:
+    # Code to be executed if another_condition is True
+else:
+    # Code to be executed if none of the above conditions are True
+  </code></pre>
+
+        <p>Together, these statements provide a way to create structured and controlled flow in your Python programs,
+            allowing for different code paths based on varying conditions.</p>
+
+        <p>
+            Notice that the <code>elif</code> statement is not just another <code>if</code> statement. It relies on
+            the first <code>if</code> condition to be evaluated as <code>False</code> or it will never be evaluated.
+        </p>
+        <p>
+            Likewise, any <code>else</code> statements won't execute unless all of the previous <code>if</code> and
+            <code>elif</code> boolean conditions have evaluated as false.
+        </p>
+        <p>
+            Remember that not all <code>if</code> statements will need an <code>else</code> statement.
+        </p>
+        <p>
+            Finally, remember that all <code>if</code> and <code>elif</code> statements must have a corresponding
+            boolean expression, and an <code>else</code> statement never will.
+        </p>
+        <p>&nbsp;</p>
+        <h3>Indenting</h3>
+        <p>
+            As <em>forgiving</em> and <em>simple</em> as the Python programming language tends to be,
+            be aware that it is <em>very</em> particular about indentation. Each code block is identified
+            and distinguished by the level of indentation, and returning to the previous indentation level
+            after the code block is executed. By default, this should always be 4 spaces. In fact, the language
+            isn't particular about how many spaces as long as it's consistent and always the same.
+        </p>
+        <p>
+            As a general rule, every popular code editor will translate the Tab character to a fixed number
+            of spaces. It's a good idea to get in the habit of using the [Tab] key to enter the correct
+            number of spaces, and not the spacebar. The [Tab] key won't get it wrong.
+        </p>
+    </div>
+
+
+</div> <!-- #top -->
