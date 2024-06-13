@@ -7,19 +7,19 @@
     <title>SQL Install</title>
 </head>
 
-<body style="background-color: bisque;">
+<body style="background-color: lightgray;">
     <div id="top"></div>
     <div id="header" style="padding:20px;">
         <h1>SQL Server</h1>
-        <p>installation guide</p>
+        <h2>installation guide</h2>
         <p style="font-style: italic;">(13-Jun-2024)</p>
     </div> <!-- #header -->
 
     <div id="background" class="ic-flash-info" style="padding:20px;">
         <p style="font-style: italic;">
-            A new PC build image was used for this walk-through. No pre-existing software is installed or assumed on
-            this (Windows 10 pro) system at the beginning of the install. These instructions and steps are subject to
-            change, but are current as of this date.
+            Note: A new Windows PC build image (vm) was used for this walk-through. No pre-existing software is
+            installed or assumed on this (Windows 10 pro) system at the beginning of the install. These instructions and
+            steps are subject to change, but are current as of this date.
         </p>
     </div> <!-- #background -->
 
@@ -65,7 +65,7 @@
                 <img src="https://uid100.github.io/course-content/images/SQL_2_install.png" alt="Install SQL Server"
                     style="display:block; width:70%; margin:auto;" />
                 <p style="font-style: italic; padding:10px;">
-                    For reference, in my case, using a modest system configuration and relatively fast internet
+                    For reference, in this case, using a modest system configuration and relatively fast internet
                     access, the automated installation process, including acquiring the setup files, installing and
                     configuring the software completed in under 10 minutes.
                 </p>
@@ -80,11 +80,11 @@
                 </p>
                 <p>
                     This will open a link in your browser to download the setup utility for
-                    SSMS. After downloading the setup utility file, close the browser and launch the file (<em>from your
-                        downloads folder</em>)
+                    SSMS. After downloading the setup utility file, close the browser and launch the installer from your
+                    downloads folder
                 </p>
                 <p>
-                    Accept the defaul installation location and the install will typically take another 5 minutes or so.
+                    Accept the default installation location. The install will typically take another 5 minutes or so.
                 </p>
                 <img src="https://uid100.github.io/course-content/images/SQL_3_ssms.png"
                     style="display:block; width:70%; margin:auto;" alt="Install SSMS" />
@@ -141,15 +141,16 @@
                 <pre>
                     netsh advfirewall firewall add rule name = SQLPort dir = in protocol = tcp action = allow localport = 1433 remoteip = localsubnet profile = DOMAIN
                 </pre>
-                <p>Refer to these instructions for more information:</p>
-                <p>
+                <p>Refer to these instructions for more information:
                     <a
                         href="https://learn.microsoft.com/en-us/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access?view=sql-server-ver16">
                         learn.microsoft.com</a>
-                </p>
             </li>
         </ol> <!-- #steps -->
     </div> <!-- #install -->
+    <p style="padding:10px; text-align: center; font-style: italic;">
+        <a href="#top"></a>
+    </p>
 </body>
 
 </html>
