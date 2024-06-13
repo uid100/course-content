@@ -25,9 +25,9 @@
 
     <hr />
 
-    <div id="install" style="padding:40px;">
+    <div id="install" style="padding:20px;">
         <ol id="steps">
-            <li id="1-download">
+            <li id="1-download" style="padding:20px;">
                 <p style="font-weight: bold;">Download Installer</p>
                 <p>
                     Navigate to the Microsoft download link for SQL Server. Scroll down the page and find the link to
@@ -49,7 +49,8 @@
                         alt="Microsoft SQL Downloads" />
                 </p>
             </li> <!-- #1-download -->
-            <li id="2-install">
+
+            <li id="2-install" style="padding:20px;">
                 <ol type="a">
                     <li>Launch the downloaded installation utility,</li>
                     <li>Select the Basic installation,</li>
@@ -65,23 +66,37 @@
                         configuring the software completed in under 10 minutes.
                     </p>
             </li> <!-- #2-install -->
-            <li id="3-config-network">
-                At the <em>installation complete</em> screen, select the option to install SQL Server Management Studio
-                <strong>[Install SSMS]</strong>. This will open a link in your browser to download the setup utility for
-                SSMS. After downloading the setup utility file, close the browser and launch the file (<em>from your
-                    downloads folder.</em>) Accept the defaul installation location and the install will typically take
-                another 5 minutes or so.
-                <img src="https://uid100/github.io/course-content/images/SQL_3_ssms.png" style="display:block;"
-                    alt="Install SQL Server" />
-            </li> <!-- #3-config-network -->
-            <li>
-                (Optional) Enable the network service.
+
+            <li id="3-ssms" style="padding:20px;">
+                <p>
+                    At the <em>installation complete</em> screen, select the option to install SQL Server Management
+                    Studio
+                    <strong>[Install SSMS]</strong>.
+                </p>
+                <p>
+                    This will open a link in your browser to download the setup utility for
+                    SSMS. After downloading the setup utility file, close the browser and launch the file (<em>from your
+                        downloads folder</em>)
+                </p>
+                <p>
+                    Accept the defaul installation location and the install will typically take another 5 minutes or so.
+                </p>
+                <img src="https://uid100.github.io/course-content/images/SQL_3_ssms.png"
+                    style="width:80%; display:block;" alt="Install SSMS" />
+            </li> <!-- #3-ssms -->
+
+            <li id="4-config-network" style="padding:20px;">
+                <p>
+                    (Optional) Enable the network service.
+                </p>
+                <p>
+                    At this point SQL Server is installed and can be accessed from the local (Windows) machine. In order
+                    to access your database from another computer on your network, enable the service.
+                </p>
                 <ol type="a">
                     <li>
                         <strong>Configure SQL Server</strong><br />
-                        At this point SQL Server is installed and can be accessed from the local (Windows) machine. From
-                        the
-                        Start Menu, find the newly installed:<br />
+                        From the Windows <strong>Start</strong> Menu, find the newly installed:<br />
                         "Microsoft SQL Server 2022" and <br />
                         "SQL Server 2022 Configuration" from the drop-down menu.
 
@@ -96,7 +111,7 @@
                         Restart the service.
                     </li>
                 </ol>
-            </li>
+            </li> <!-- #4-config-network -->
             <li>
                 The SQL Server instance will support (TCP) network access on port 1433. The final step is to configure
                 the Windows firewall to allow access to that port. This can be accomplished quickly and simply from the
