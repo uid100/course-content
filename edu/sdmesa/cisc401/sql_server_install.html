@@ -112,8 +112,8 @@
                     </li>
                     <li>
                         <p>
-                            Select <strong>SQL Server Network Configuration > Protocols for MSSQLSERVER</strong> and
-                            right-click on <strong>TCP/IP</strong> and <strong>Enable</strong>.
+                            Select <strong>SQL Server Network Configuration > Protocols for MSSQLSERVER</strong>,
+                            right-click <strong>TCP/IP</strong> and <strong>Enable</strong>.
                         </p>
                         <img src="https://uid100.github.io/course-content/images/SQL_4b_enable_tcpip.png"
                             alt="Enable TCP/IP" style="display:block; margin:auto; width:70%;" />
@@ -128,11 +128,25 @@
             </li> <!-- #4-config-network -->
 
             <li>
-                The SQL Server instance will support (TCP) network access on port 1433. The final step is to configure
-                the Windows firewall to allow access to that port. This can be accomplished quickly and simply from the
-                command line, powershell, or management console. Refer to these instructions <a
-                    href="https://learn.microsoft.com/en-us/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access?view=sql-server-ver16">
-                    learn.microsoft.com</a>
+                <p style="font-weight: bold;">(Optional) Configure the network firewall.</p>
+                <p>
+                    The SQL Server instance will support (TCP) network access on port 1433. By default, the Windows
+                    firewall will block access to any network ports that are not explicitly opened. The final step to
+                    enable network access to your database is to configure the firewall to allow access to that port.
+                </p>
+                <p>
+                    This can be accomplished quickly and simply from the command line, powershell, or management
+                    console.
+                </p>
+                <pre>
+                    netsh advfirewall firewall add rule name = SQLPort dir = in protocol = tcp action = allow localport = 1433 remoteip = localsubnet profile = DOMAIN
+                </pre>
+                <p>Refer to these instructions for more information:</p>
+                <p>
+                    <a
+                        href="https://learn.microsoft.com/en-us/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access?view=sql-server-ver16">
+                        learn.microsoft.com</a>
+                </p>
             </li>
         </ol> <!-- #steps -->
     </div> <!-- #install -->
