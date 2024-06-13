@@ -13,12 +13,14 @@
         <p>installation guide</p>
         <p style="font-style: italic;">(13-Jun-2024)</p>
     </div> <!-- #header -->
-    <div id="background">
+    <div id="background" style="padding:20px;">
         <p>
             A new PC build image was used for this walk-through. No pre-existing software installations are on this
             (Windows 10 pro) system at the beginning of the install. These instructions and steps are subject to change,
             but are current as of this date.
         </p>
+    </div>
+    <div id="install" style="padding:20px;">
         <ol>
             <li>Navigate to the Microsoft download link for SQL Server. Scroll down the page and find the link to
                 download the Developer version of the product.<br />
@@ -29,6 +31,8 @@
                     <b>SQL Server 2022 Developer</b> is a full-featured free edition, licensed for use as a development
                     and test database in a non-production environment.
                 </blockquote>
+                <img src="https://uid100.github.io/course-content/images/SQL_1_download.jpg"
+                    alt="Microsoft SQL Downloads" />
             </li>
             <li>
                 <ol type="a">
@@ -37,6 +41,8 @@
                     <li>Read and accept the license terms for the developer edition of SQL Server</li>
                     <li>Confirm the install location. In most cases, the default is recommended</li>
                     <li>Click the <b>[Install]</b> to begin</li>
+                    <img src="https://uid100/github.io/course-content/images/SQL_2_install.jpg"
+                        alt="Install SQL Server" />
                     </ul>
                     For reference, in my case, using a modest system configuration and relatively fast internet access,
                     the automated installation process, including acquiring the setup files, installing and configuring
@@ -48,6 +54,30 @@
                 SSMS. After downloading the setup utility file, close the browser and launch the file (<em>from your
                     downloads folder.</em>) Accept the defaul installation location and the install will typically take
                 another 5 minutes or so.
+                <img src="https://uid100/github.io/course-content/images/SQL_3_ssms.jpg" alt="Install SQL Server" />
+            </li>
+            <li>
+                (Optional) Enable the network service.
+                <ol type="a">
+                    <li>
+                        <strong>Configure SQL Server</strong><br />
+                        At this point SQL Server is installed and can be accessed from the local (Windows) machine. From
+                        the
+                        Start Menu, find the newly installed:<br />
+                        "Microsoft SQL Server 2022" and <br />
+                        "SQL Server 2022 Configuration" from the drop-down menu.
+
+                        <img src="https://uid100/github.io/course-content/images/SQL_3_ssms.jpg"
+                            alt="Install SQL Server" />
+                    </li>
+                    <li>
+                        Select <strong>SQL Server Network Configuration > Protocols for MSSQLSERVER</strong> and
+                        right-click on <strong>TCP/IP</strong> and <strong>Enable</strong>.
+                    </li>
+                    <li>
+                        Restart the service.
+                    </li>
+                </ol>
             </li>
         </ol>
     </div>
