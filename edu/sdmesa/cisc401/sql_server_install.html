@@ -13,28 +13,42 @@
         <p>installation guide</p>
         <p style="font-style: italic;">(13-Jun-2024)</p>
     </div> <!-- #header -->
+
     <div id="background" style="padding:20px;">
         <p>
             A new PC build image was used for this walk-through. No pre-existing software installations are on this
             (Windows 10 pro) system at the beginning of the install. These instructions and steps are subject to change,
             but are current as of this date.
         </p>
-    </div>
+    </div> <!-- #background -->
+
+    <hr />
+
     <div id="install" style="padding:20px;">
-        <ol>
-            <li>Navigate to the Microsoft download link for SQL Server. Scroll down the page and find the link to
-                download the Developer version of the product.<br />
-                <a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">
-                    https://www.microsoft.com/en-us/sql-server/sql-server-downloads
-                </a>
-                <blockquote>
-                    <b>SQL Server 2022 Developer</b> is a full-featured free edition, licensed for use as a development
+        <ol id="steps">
+            <li id="1-download">
+                <p style="font-weight: bold;">Download Installer</p>
+                <p>
+                    Navigate to the Microsoft download link for SQL Server. Scroll down the page and find the link to
+                    download the Developer version of the product.
+                </p>
+                <p>
+                    <a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">
+                        https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+                    </a>
+                <p>
+                <blockquote style="text-align: center;">
+                    <strong>SQL Server 2022 Developer</strong> <br />
+                    is a full-featured free edition, licensed for use as a development <br />
                     and test database in a non-production environment.
                 </blockquote>
-                <img src="https://uid100.github.io/course-content/images/SQL_1_download.jpg"
-                    alt="Microsoft SQL Downloads" />
-            </li>
-            <li>
+                </p>
+                <p>
+                    <img src="https://uid100.github.io/course-content/images/SQL_1_download.png"
+                        alt="Microsoft SQL Downloads" />
+                </p>
+            </li> <!-- #1-download -->
+            <li id="2-install">
                 <ol type="a">
                     <li>Launch the downloaded installation utility,</li>
                     <li>Select the Basic installation,</li>
@@ -47,8 +61,8 @@
                     For reference, in my case, using a modest system configuration and relatively fast internet access,
                     the automated installation process, including acquiring the setup files, installing and configuring
                     the software completed in about 8-1/2 minutes.
-            </li>
-            <li>
+            </li> <!-- #2-install -->
+            <li id="3-config-network">
                 At the <em>installation complete</em> screen, select the option to install SQL Server Management Studio
                 <strong>[Install SSMS]</strong>. This will open a link in your browser to download the setup utility for
                 SSMS. After downloading the setup utility file, close the browser and launch the file (<em>from your
@@ -56,7 +70,7 @@
                 another 5 minutes or so.
                 <img src="https://uid100/github.io/course-content/images/SQL_3_ssms.png" style="display:block;"
                     alt="Install SQL Server" />
-            </li>
+            </li> <!-- #3-config-network -->
             <li>
                 (Optional) Enable the network service.
                 <ol type="a">
@@ -87,8 +101,8 @@
                     href="https://learn.microsoft.com/en-us/sql/sql-server/install/configure-the-windows-firewall-to-allow-sql-server-access?view=sql-server-ver16">
                     learn.microsoft.com</a>
             </li>
-        </ol>
-    </div>
+        </ol> <!-- #steps -->
+    </div> <!-- #install -->
 </body>
 
 </html>
