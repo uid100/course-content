@@ -41,6 +41,7 @@
                     Scroll down the page and find the link to download the Developer version of the product.
                 </p>
                 <blockquote style="text-align: center;">
+                    <strong>Developer</strong><br />
                     SQL Server 2022 Developer is a full-featured free edition, <br />
                     licensed for use as a development and test database in a <br />
                     non-production environment.
@@ -60,15 +61,14 @@
                     <li>Read and accept the license terms for the developer edition of SQL Server</li>
                     <li>Confirm the install location. In most cases, the default is recommended</li>
                     <li>Click the <b>[Install]</b> button to begin</li>
-                    <img src="https://uid100.github.io/course-content/images/SQL_2_install.png" alt="Install SQL Server"
-                        style="display:block; width:90%; margin:auto;" />
-                    </ul>
-                    <p style="font-style: italic; padding:10px;">
-                        For reference, in my case, using a modest system configuration and relatively fast internet
-                        access, the automated installation process, including acquiring the setup files, installing and
-                        configuring the software completed in under 10 minutes.
-                    </p>
                 </ol>
+                <img src="https://uid100.github.io/course-content/images/SQL_2_install.png" alt="Install SQL Server"
+                    style="display:block; width:90%; margin:auto;" />
+                <p style="font-style: italic; padding:10px;">
+                    For reference, in my case, using a modest system configuration and relatively fast internet
+                    access, the automated installation process, including acquiring the setup files, installing and
+                    configuring the software completed in under 10 minutes.
+                </p>
             </li> <!-- #2-install -->
 
             <li id="3-ssms" style="padding:20px;">
@@ -93,19 +93,22 @@
             <li id="4-config-network" style="padding:20px;">
                 <p style="font-weight: bold;">(Optional) Enable the network service.</p>
                 <p>
-                    At this point SQL Server is installed and can be accessed from the local (Windows) machine. In order
-                    to access your database from another computer on your network, enable the service and allow access
-                    through the firewall.
+                    At this point SQL Server is installed and can be accessed from the local (Windows) machine.
+                </p>
+                <p>
+                    In order to access the database from another computer on your network, enable the service and allow
+                    access through the firewall.
                 </p>
                 <ol type="a">
                     <li>
-                        <strong>Configure SQL Server</strong><br />
-                        From the Windows <strong>Start</strong> Menu, find the newly installed:<br />
-                        "Microsoft SQL Server 2022" and <br />
-                        "SQL Server 2022 Configuration" from the drop-down menu.
-
+                        <p>
+                            <strong>Configure SQL Server</strong><br />
+                            From the Windows <strong>Start</strong> Menu, find the newly installed:<br />
+                            <strong>Microsoft SQL Server 2022</strong> and <br />
+                            <strong>SQL Server 2022 Configuration</strong> from the drop-down menu.
+                        </p>
                         <img src="https://uid100.github.io/course-content/images/SQL_4_ssms.png"
-                            alt="Install SQL Server" style="display:block;" />
+                            alt="Install SQL Server" style="display:block; margin:auto; width:50%;" />
                     </li>
                     <li>
                         Select <strong>SQL Server Network Configuration > Protocols for MSSQLSERVER</strong> and
