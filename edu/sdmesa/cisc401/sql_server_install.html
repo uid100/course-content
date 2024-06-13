@@ -7,7 +7,8 @@
     <title>SQL Install</title>
 </head>
 
-<body>
+<body style="background-color: bisque;">
+    <div id="top"></div>
     <div id="header" style="padding:20px;">
         <h1>SQL Server</h1>
         <p>installation guide</p>
@@ -24,7 +25,7 @@
 
     <hr />
 
-    <div id="install" style="padding:20px;">
+    <div id="install" style="padding:40px;">
         <ol id="steps">
             <li id="1-download">
                 <p style="font-weight: bold;">Download Installer</p>
@@ -55,12 +56,14 @@
                     <li>Read and accept the license terms for the developer edition of SQL Server</li>
                     <li>Confirm the install location. In most cases, the default is recommended</li>
                     <li>Click the <b>[Install]</b> to begin</li>
-                    <img src="https://uid100/github.io/course-content/images/SQL_2_install.png" alt="Install SQL Server"
-                        style="display:block;" />
+                    <img src="https://uid100.github.io/course-content/images/SQL_2_install.png" alt="Install SQL Server"
+                        style="display:block; width:80%" />
                     </ul>
-                    For reference, in my case, using a modest system configuration and relatively fast internet access,
-                    the automated installation process, including acquiring the setup files, installing and configuring
-                    the software completed in about 8-1/2 minutes.
+                    <p style="font-style: italic; padding:20px;">
+                        For reference, in my case, using a modest system configuration and relatively fast internet
+                        access, the automated installation process, including acquiring the setup files, installing and
+                        configuring the software completed in under 10 minutes.
+                    </p>
             </li> <!-- #2-install -->
             <li id="3-config-network">
                 At the <em>installation complete</em> screen, select the option to install SQL Server Management Studio
