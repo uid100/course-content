@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Install</title>
+</head>
+
+<body>
+    <div id="header" style="padding:20px;">
+        <h1>SQL Server</h1>
+        <p>installation guide</p>
+        <p style="font-style: italic;">(13-Jun-2024)</p>
+    </div> <!-- #header -->
+    <div id="background">
+        <p>
+            A new PC build image was used for this walk-through. No pre-existing software installations are on this
+            (Windows 10 pro) system at the beginning of the install. These instructions and steps are subject to change,
+            but are current as of this date.
+        </p>
+        <ol>
+            <li>Navigate to the Microsoft download link for SQL Server. Scroll down the page and find the link to
+                download the Developer version of the product.<br />
+                <a href="https://www.microsoft.com/en-us/sql-server/sql-server-downloads">
+                    https://www.microsoft.com/en-us/sql-server/sql-server-downloads
+                </a>
+                <blockquote>
+                    <b>SQL Server 2022 Developer</b> is a full-featured free edition, licensed for use as a development
+                    and test database in a non-production environment.
+                </blockquote>
+            </li>
+            <li>
+                <ol type="a">
+                    <li>Launch the downloaded installation utility,</li>
+                    <li>Select the Basic installation,</li>
+                    <li>Read and accept the license terms for the developer edition of SQL Server</li>
+                    <li>Confirm the install location. In most cases, the default is recommended</li>
+                    <li>Click the <b>[Install]</b> to begin</li>
+                    </ul>
+                    For reference, in my case, using a modest system configuration and relatively fast internet access,
+                    the automated installation process, including acquiring the setup files, installing and configuring
+                    the software completed in about 8-1/2 minutes.
+            </li>
+            <li>
+                At the <em>installation complete</em> screen, select the option to install SQL Server Management Studio
+                <strong>[Install SSMS]</strong>. This will open a link in your browser to download the setup utility for
+                SSMS. After downloading the setup utility file, close the browser and launch the file (<em>from your
+                    downloads folder.</em>) Accept the defaul installation location and the install will typically take
+                another 5 minutes or so.
+            </li>
+        </ol>
+    </div>
+</body>
+
+</html>
