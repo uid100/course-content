@@ -28,7 +28,7 @@
     <div id="install" style="padding:20px;">
         <ol id="steps">
             <li id="1-download" style="padding:20px;">
-                <p style="font-weight: bold;">Download Installer</p>
+                <p style="font-weight: bold;">Download installer</p>
                 <p>
                     Navigate to the Microsoft download link for SQL Server.
                 </p>
@@ -47,29 +47,32 @@
                 </blockquote>
                 </p>
                 <p>
-                    <img src="https://uid100.github.io/course-content/images/SQL_1_download.png" style="width: 80%"
-                        alt="Microsoft SQL Downloads" />
+                    <img src="https://uid100.github.io/course-content/images/SQL_1_download.png"
+                        style="display:block; width:90%; margin:auto;" alt="Microsoft SQL Downloads" />
                 </p>
             </li> <!-- #1-download -->
 
             <li id="2-install" style="padding:20px;">
+                <p style="font-weight: bold;">Run the installer</p>
                 <ol type="a">
                     <li>Launch the downloaded installation utility,</li>
                     <li>Select the Basic installation,</li>
                     <li>Read and accept the license terms for the developer edition of SQL Server</li>
                     <li>Confirm the install location. In most cases, the default is recommended</li>
-                    <li>Click the <b>[Install]</b> to begin</li>
+                    <li>Click the <b>[Install]</b> button to begin</li>
                     <img src="https://uid100.github.io/course-content/images/SQL_2_install.png" alt="Install SQL Server"
-                        style="display:block; width:80%" />
+                        style="display:block; width:90%; margin:auto;" />
                     </ul>
-                    <p style="font-style: italic; padding:20px;">
+                    <p style="font-style: italic; padding:10px;">
                         For reference, in my case, using a modest system configuration and relatively fast internet
                         access, the automated installation process, including acquiring the setup files, installing and
                         configuring the software completed in under 10 minutes.
                     </p>
+                </ol>
             </li> <!-- #2-install -->
 
             <li id="3-ssms" style="padding:20px;">
+                <p style="font-weight: bold;">Install SQL Server Management Studio</p>
                 <p>
                     At the <em>installation complete</em> screen, select the option to install SQL Server Management
                     Studio
@@ -84,16 +87,15 @@
                     Accept the defaul installation location and the install will typically take another 5 minutes or so.
                 </p>
                 <img src="https://uid100.github.io/course-content/images/SQL_3_ssms.png"
-                    style="width:80%; display:block;" alt="Install SSMS" />
+                    style="display:block; width:90%; margin:auto;" alt="Install SSMS" />
             </li> <!-- #3-ssms -->
 
             <li id="4-config-network" style="padding:20px;">
-                <p>
-                    (Optional) Enable the network service.
-                </p>
+                <p style="font-weight: bold;">(Optional) Enable the network service.</p>
                 <p>
                     At this point SQL Server is installed and can be accessed from the local (Windows) machine. In order
-                    to access your database from another computer on your network, enable the service.
+                    to access your database from another computer on your network, enable the service and allow access
+                    through the firewall.
                 </p>
                 <ol type="a">
                     <li>
@@ -102,7 +104,7 @@
                         "Microsoft SQL Server 2022" and <br />
                         "SQL Server 2022 Configuration" from the drop-down menu.
 
-                        <img src="https://uid100/github.io/course-content/images/SQL_3_ssms.png"
+                        <img src="https://uid100.github.io/course-content/images/SQL_4_ssms.png"
                             alt="Install SQL Server" style="display:block;" />
                     </li>
                     <li>
