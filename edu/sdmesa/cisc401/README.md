@@ -1,11 +1,15 @@
 # CISC 401
 ## Database Management and Design for Healthcare Professionals
 ### Course Outline of Record
-- https://www.curricunet.com/SDCCD/reports/course_outline.cfm?courses_id=24476&rpt=pdf
-- https://www.curricunet.com/SDCCD/reports/course_outline.cfm?courses_id=24476&rpt=rpt
-### links
-- [https://open.umn.edu/opentextbooks/textbooks/354](https://opentextbc.ca/dbdesign01/)
-- https://www.curricunet.com/SDCCD/reports/course_outline.cfm?courses_id=24476&rpt=rpt
+- [COR - pdf](https://www.curricunet.com/SDCCD/reports/course_outline.cfm?courses_id=24476&rpt=pdf)
+- [COR - doc](https://www.curricunet.com/SDCCD/reports/course_outline.cfm?courses_id=24476&rpt=rpt)
+
+### (ZTC) reference books
+- [Database Design 2d, Adrienne Watt](https://open.umn.edu/opentextbooks/textbooks/354)
+- [Learning SQL](https://riptutorial.com/ebook/sql)
+- [Essential SQL](https://www.programming-books.io/essential/sql/)
+- [SQL Notes for Professionals](https://books.goalkicker.com/SQLBook/)
+
 
 ### why
 - You can query data in a database (ask it questions).
