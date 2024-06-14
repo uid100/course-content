@@ -6,6 +6,7 @@
 
 ### (ZTC) reference books
 - [Database Design 2d, Adrienne Watt](https://open.umn.edu/opentextbooks/textbooks/354)
+- [Transact-SQL: The Building Blocks to SQL Server Programming - G.Larsen](https://www.sqlservercentral.com/books/transact-sql-the-building-blocks-to-sql-server-programming-by-gregory-a-larsen)
 - [Learning SQL](https://riptutorial.com/ebook/sql)
 - [Essential SQL](https://www.programming-books.io/essential/sql/)
 - [SQL Notes for Professionals](https://books.goalkicker.com/SQLBook/)
