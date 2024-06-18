@@ -5,22 +5,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
 
 <body>
-    <div id="syllabus" style="background-color: lightskyblue;">
-        <div id="page-header" style="margin: 20px;">
 
-            <h3>
-                CISC 401 Course Syllabus <br />
+    <div id="syllabus">
+        <div id="page-header" style="margin: 20px;">
+            <h3 style="text-align: center;">Course Syllabus </h3>
+            <h4>
+                CISC 401<br />
                 Database Management and Design<br />
                 For Healhcare Professionals
-            </h3>
+            </h4>
+        </div> <!-- #page-header -->
+
+        <div class="accordion" id="syllabus-content">
+            <div class="accordion-item" id="term">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#term"
+                    aria-expanded="true" aria-controls="term-detail">
+                    term
+                </button>
+                <div id="term-detail" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#syllabus-content">
+                    <div class="accordion-body">
+                        <ul>
+                            <li>Fall 2024</li>
+                            <li>4 Units</li>
+                            <li>W 5P - 8P</li>
+                            <li>location: <span style="font-style: italic;">Mesa S-304</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div> <!-- #term -->
+            <div class="accordion-item" id="course-info">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#term"
+                    aria-expanded="true" aria-controls="term-detail">
+                    about
+                </button>
+                <div id="term-detail" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#syllabus-content">
+                    <div class="accordion-body">
+                        <p>
+                            course information
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- #course-info -->
+            <div class="accordion-item" id="course-info">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#term"
+                    aria-expanded="true" aria-controls="term-detail">
+                    overview
+                </button>
+                <div id="term-detail" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#syllabus-content">
+                    <div class="accordion-body">
+                        <p>
+                            overview
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- #overview -->
+            <div class="accordion-item" id="course-info">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#term"
+                    aria-expanded="true" aria-controls="term-detail">
+                    learning outcomes
+                </button>
+                <div id="term-detail" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#syllabus-content">
+                    <div class="accordion-body">
+                        <p>
+                            course information
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- #learning-outcomes -->
+            <div class="accordion-item" id="course-info">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#term"
+                    aria-expanded="true" aria-controls="term-detail">
+                    policies
+                </button>
+                <div id="term-detail" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#syllabus-content">
+                    <div class="accordion-body">
+                        <p>
+                            course information
+                        </p>
+                    </div>
+                </div>
+            </div> <!-- #course-info -->
+        </div> <!-- #syllabus-content -->
+
+        <!-- 
             <p>&nbsp;</p>
             <h3>Term: <em>Fall 2024</em></h3>
             <ul>
-                <li>CISC 401<em>4 Units</em></li>
+                <li style="font-style: italic;">
+                    4 Units
+                </li>
             </ul>
+
             <div id="instructions" style="padding: 20px; display: block;">
                 <span id="mobile" class="element_toggler btn" role="button"
                     aria-controls="instructor schedule description textbook classroom getting_help grades attendance accessibility"
@@ -31,7 +115,7 @@
                     view
                     each section!</p>
             </div>
-        </div> <!-- #header -->
+        </div> #header -->
 
         <!--
 --------------EDIT... Placeholder------------        
