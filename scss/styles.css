@@ -11857,8 +11857,12 @@ body {
   background-color: #0062cc;
 }
 
-.dl {
+dl {
   padding: 20px;
+}
+
+dd {
+  padding: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */
