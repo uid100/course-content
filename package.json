@@ -1,0 +1,23 @@
+{
+  "name": "course-content",
+  "version": "1.0.0",
+  "description": "* Python  * Logic & Design  * (SDCCD) SD Mesa College  * sdmesa/      └── cisc401       └── app.css       js/ ├── app.js ├── controllers/ └── models/  * shared/      └──",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uid100/course-content.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uid100/course-content/issues"
+  },
+  "homepage": "https://github.com/uid100/course-content#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}
