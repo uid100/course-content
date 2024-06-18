@@ -25,7 +25,7 @@
 
             <div class="accordion-item" id="term">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#term-detail"
-                    aria-expanded="true" aria-controls="term-detail">
+                    aria-expanded="false" aria-controls="term-detail">
                     term
                 </button>
                 <div id="term-detail" class="accordion-collapse collapse show" aria-labelledby="term"
@@ -41,12 +41,12 @@
                 </div>
             </div> <!-- #term -->
 
-            <div class="accordion-item" id="course-info">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#course-about"
-                    aria-expanded="true" aria-controls="course-about">
+            <div class="accordion-item" id="about">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#course-info"
+                    aria-expanded="false" aria-controls="course-info">
                     about
                 </button>
-                <div id="course-info" class="accordion-collapse collapse show" aria-labelledby="course-info"
+                <div id="course-info" class="accordion-collapse collapse show" aria-labelledby="about"
                     data-bs-parent="#syllabus-content">
                     <div class="accordion-body">
                         <p>
@@ -68,7 +68,7 @@
 
             <div class="accordion-item" id="overview">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#course-overview" aria-expanded="true" aria-controls="course-overview">
+                    data-bs-target="#course-overview" aria-expanded="false" aria-controls="course-overview">
                     overview
                 </button>
                 <div id="course-overview" class="accordion-collapse collapse show" aria-labelledby="overview"
@@ -83,14 +83,31 @@
 
             <div class="accordion-item" id="outcomes">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#learning-outcomes" aria-expanded="true" aria-controls="learning-outcomes">
+                    data-bs-target="#learning-outcomes" aria-expanded="false" aria-controls="learning-outcomes">
                     learning outcomes
                 </button>
                 <div id="learning-outcomes" class="accordion-collapse collapse show" aria-labelledby="outcomes"
                     data-bs-parent="#syllabus-content">
                     <div class="accordion-body">
                         <p>
-                            course information
+                        <ol>
+                            <li>Format data to satisfy integration and interoperability needs.</li>
+                            <li>Construct and maintain the standardization of data dictionaries to meet the needs of the
+                                enterprise.
+                            </li>
+                            <li>Assess information operability and information exchange.</li>
+                            <li>Analyze information needs of customers across the healthcare continuum.</li>
+                            <li>Evaluate health information systems and data storage design.</li>
+                            <li>Apply knowledge of database architecture and design to meet organizational needs.</li>
+                            <li>Utilize technology for data collection, storage, analysis and reporting of information.
+                            </li>
+                            <li>Assess systems capabilities to meet regulatory requirements.</li>
+                            <li>Apply knowledge of database querying and data exploration and mining techniques to
+                                facilitate
+                                information retrieval.</li>
+                            <li>Evaluate administrative reports using Structured Query Language (SQL) reporting tools
+                            </li>
+                        </ol>
                         </p>
                     </div>
                 </div>
@@ -98,7 +115,7 @@
 
             <div class="accordion-item" id="policies">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#policy"
-                    aria-expanded="true" aria-controls="policy">
+                    aria-expanded="false" aria-controls="policy">
                     policies
                 </button>
                 <div id="policy" class="accordion-collapse collapse show" aria-labelledby="policies"
@@ -113,30 +130,7 @@
             </div> <!-- #policies-->
         </div> <!-- #syllabus-content -->
 
-        <!-- 
-            <p>&nbsp;</p>
-            <h3>Term: <em>Fall 2024</em></h3>
-            <ul>
-                <li style="font-style: italic;">
-                    4 Units
-                </li>
-            </ul>
 
-            <div id="instructions" style="padding: 20px; display: block;">
-                <span id="mobile" class="element_toggler btn" role="button"
-                    aria-controls="instructor schedule description textbook classroom getting_help grades attendance accessibility"
-                    aria-label="Toggler toggle list visibility" aria-expanded="true">
-                    Update. All sections are expanded by default for compatibility with mobile devices.<br />To view as
-                    original outline view: <strong>(Collapse all.)</strong> </span>
-                <p style="font-style: italic; background-color: yellow;">Lots of stuff in here! &nbsp;&nbsp; Click to
-                    view
-                    each section!</p>
-            </div>
-        </div> #header -->
-
-        <!--
---------------EDIT... Placeholder------------        
--->
         <div id="instructorCollapseSection" style="padding: 20px;">
             <h2>Instructor &nbsp;&nbsp;
                 <span class="element_toggler btn" role="button" aria-controls="instructor"
