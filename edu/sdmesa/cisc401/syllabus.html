@@ -26,12 +26,11 @@
             <div class="accordion-item" id="instructor">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                     data-bs-target="#instructor-about" aria-expanded="false" aria-controls="instructor-about">
-                    instructor
+                    <h3>Instructor</h3>
                 </button>
                 <div id="instructor-about" class="accordion-collapse collapse show" aria-labelledby="instructor"
                     data-bs-parent="#syllabus-content">
                     <div class="accordion-body">
-                        <h3>Instructor</h3>
                         <dl style="padding: 20px;">
                             <dt>name:</dt>
                             <dd>Dan Sullivan</dd>
@@ -72,12 +71,11 @@
             <div class="accordion-item" id="term">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#term-detail"
                     aria-expanded="false" aria-controls="term-detail">
-                    schedule
+                    <h3>Schedule</h3>
                 </button>
                 <div id="term-detail" class="accordion-collapse collapse show" aria-labelledby="term"
                     data-bs-parent="#syllabus-content">
                     <div class="accordion-body">
-                        <h3>Schedule</h3>
                         <dl>
                             <dt>course number:</dt>
                             <dd>CISC 401</dd>
@@ -100,15 +98,17 @@
             <div class="accordion-item" id="about">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#course-info"
                     aria-expanded="false" aria-controls="course-info">
-                    about
+                    <h3>About</h3>
                 </button>
                 <div id="course-info" class="accordion-collapse collapse show" aria-labelledby="about"
                     data-bs-parent="#syllabus-content">
                     <div class="accordion-body">
-                        <h3>About</h3>
+                        <h4 style="font-weight: bold;">
+                            Database Management and Design<br />
+                            for Healthcare Professionals
+                        </h4>
                         <dl>
-                            <dd>Database Management and Design for Healthcare Professionals</dd>
-                            <dd>Must be admitted to the Health Information Management program.</dd>
+                            <dt>catalog description:</dt>
                             <dd>
                                 This course discusses advanced topics in database management and design. The concepts
                                 covered in this course include programming language, current database structures
@@ -120,35 +120,24 @@
                             <dd style="font-style: italic;">
                                 This course is designed for health information management majors.
                             </dd>
+                            <dt>limitations:</dt>
+                            <dd>Must be admitted to the Health Information Management program</dd>
+                            <dt>advisory:</dt>
+                            <dd>Computer and Information Sciences 181 with a grade of “C” or better, or equivalent.</dd>
                         </dl>
                     </div>
                 </div>
             </div> <!-- #course-info -->
 
-            <div class="accordion-item" id="overview">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#course-overview" aria-expanded="false" aria-controls="course-overview">
-                    overview
-                </button>
-                <div id="course-overview" class="accordion-collapse collapse show" aria-labelledby="overview"
-                    data-bs-parent="#syllabus-content">
-                    <div class="accordion-body">
-                        <p>
-                            overview
-                        </p>
-                    </div>
-                </div>
-            </div> <!-- #overview -->
-
             <div class="accordion-item" id="outcomes">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                     data-bs-target="#learning-outcomes" aria-expanded="false" aria-controls="learning-outcomes">
-                    learning outcomes
+                    <h3>Learning Outcomes</h3>
                 </button>
                 <div id="learning-outcomes" class="accordion-collapse collapse show" aria-labelledby="outcomes"
                     data-bs-parent="#syllabus-content">
                     <div class="accordion-body">
-                        <p>
+                        <p>Upon successful completion of the course the student will be able to:
                         <ol>
                             <li>Format data to satisfy integration and interoperability needs.</li>
                             <li>Construct and maintain the standardization of data dictionaries to meet the needs of the
@@ -168,9 +157,94 @@
                             </li>
                         </ol>
                         </p>
+                        <h3>Program Alignment</h3>
+                        <h4>
+                            Health Information Management Program Learning Outcomes
+                        </h4>
+                        <ul>
+                            <li>Apply the laws of patient record confidentiality, privacy and compliance.</li>
+                            <li>Use and design data, databases and healthcare systems.</li>
+                            <li>Demonstrate and apply knowledge of the principles of personnel management.</li>
+                            <li>Develop a financial plan for a health information department.</li>
+                            <li>Demonstrate mastery of the principles of health information management.</li>
+                            <li>Analyze healthcare data, assimilate data and information.</li>
+                        </ul>
                     </div>
                 </div>
             </div> <!-- #learning-outcomes -->
+
+            <div class="accordion-item" id="resources">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#textbooks"
+                    aria-expanded="false" aria-controls="textbooks">
+                    <h3>Textbook(s) & Tools</h3>
+                </button>
+                <div id="textbooks" class="accordion-collapse collapse show" aria-labelledby="resources"
+                    data-bs-parent="#syllabus-content">
+                    <div class="accordion-body">
+                        <h4>Textbook(s)</h4>
+                        <p>
+                            California Community Colleges (CCC) has a shared goal supported by the Zero-Textbook-Cost
+                            (ZTC) program to “reduce the overall cost of education for students and decrease the time it
+                            takes students to complete degree programs offered by community colleges.”
+                        </p>
+                        <p>
+                            There are many excellent references and textbooks available to help students learn this
+                            subject, and this course will require some study and research initiative, but the study
+                            materials required and recommended for the class will rely on publicly available and open
+                            source resources.
+                        </p>
+                        <dl>
+                            <dt>Database Design - 2nd Edition</dt>
+                            <dd>Adrienne Watt, City University</dd>
+                            <dd>2014</dd>
+                            <dd>BCcampus</dd>
+                            <dd><a href="https://open.umn.edu/opentextbooks/textbooks/354">link</a></dd>
+
+                            <dt>Transact-SQL: The Building Blocks to SQL Server Programming</dt>
+                            <dd>Gregory A. Larsen</dd>
+                            <dd>2024</dd>
+                            <dd>redgate</dd>
+                            <dd><a
+                                    href="https://www.sqlservercentral.com/books/transact-sql-the-building-blocks-to-sql-server-programming-by-gregory-a-larsen">link</a>
+                            </dd>
+
+                            <dt>Learning SQL eBook (PDF)</dt>
+                            <dd><em>various</em></dd>
+                            <dd>RIP Tutorial</dd>
+                            <dd><a href="https://riptutorial.com/ebook/sql">link</a></dd>
+
+                            <dt>Essential SQL</dt>
+                            <dd>Krzysztof Kowalczyk</dd>
+                            <dd>Essential Programming Books</dd>
+                            <dd><a href="https://www.programming-books.io/essential/sql/">link</a></dd>
+                        </dl>
+                        <h4>Software Tools</h4>
+                        <p>
+                            We will be demonstrating and exercising database ecosystems including SQLite (open source)
+                            and Microsoft SQL Server and exploring various access mechanisms. All of these tools are
+                            either public domain or licensed at no cost for student use.
+                        </p>
+                        <p>
+                            In most cases, classroom computers will be configured with all relevant software and tools.
+                            Where applicable, installation of any or all of these to student-provided personal computers
+                            is allowed and will be discussed and described in class. Installation of these prior to
+                            class is not required or suggested.
+                        </p>
+                        <dl>
+                            <dt>Microsoft SQL Server 2022, Developer Edition</dt>
+                            <dd>
+                                This server product is easily installed on Windows PCs, and can be used in a Docker
+                                image on MacOS.
+                            </dd>
+                            <dt>SQLite</dt>
+                            <dd>file-based database for small applications and proof-of-concept</dd>
+                            <dt>Microsoft Azure Data Studio</dt>
+                            <dd></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div> <!-- #resources -->
+
 
             <div class="accordion-item" id="policies">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#policy"
