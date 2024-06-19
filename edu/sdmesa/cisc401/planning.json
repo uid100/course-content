@@ -1,0 +1,113 @@
+{
+    "modules":[
+        {
+            "id":1,
+            "name":"introduction to databases",
+            "topics":[
+                "file-based data storage",
+                "spreadsheets",
+                "set theory",
+                "rdbms",
+                "client-server architecture"
+            ],
+            "program_objective":{
+                "id": 2,
+                "outcome": "Use and design data, databases and healthcare systems."
+            },
+            "assignment":{
+                "discussion": "intro + concepts",
+                "read": ""
+            }
+        },
+        {
+            "id":2,
+            "name": "architecture",
+            "topics":[
+                "MS SQL Server & platforms",
+                "SQL (dialects) & T-SQL",
+                "CREATE DATABASE db",
+                "USE db",
+                "INSERT INTO .. VALUES ..",
+                "SELECT .. FROM .. WHERE .."
+            ],
+            "program_objective":{},
+            "assignment":{
+                "scripting": "tables & single table queries",
+                "read": ""
+            }
+        },
+        {
+            "id":3,
+            "name": "data modeling",
+            "topics":[
+                "data models"
+            ],
+            "program_objective":{},
+            "assignment":{
+                "diagram": "(Chen) ERDs",
+                "read": ""
+            }
+        },
+        {
+            "id":4,
+            "name": "business rules",
+            "topics":[
+                "WHERE clauses",
+                "data dictionaries"
+            ],
+            "program_objective":{},
+            "assignment":{
+                "diagram": "(Chen) ERDs",
+                "read": ""
+            }
+        },
+        {
+            "id":5,
+            "name": "infosec",
+            "topics":[
+                "data types",
+                ""
+            ],
+            "program_objective":{},
+            "assignment":{
+                "diagram": "(Chen) ERDs",
+                "read": ""
+            }
+        }
+    ],
+    "COR": {
+            "I": {"topic": "Introduction to Databases" },
+            "II": {"topic": "Database Architecture"},
+            "III": {"topic": "The Relational Database Model"},
+            "IV": {"topic": "Data Integration Needs",
+              "a": "Data modeling and data models",
+              "b": "Business rules",
+              "c": "Emerging data models: Big Data and NoSQL"},
+            "V": {"topic": "Data Dictionaries",
+              "a": "Definition",
+              "b": "Standardization"},
+            "VI": {"topic": "Health Information Exchange including Health Level 7 (HL7)"},
+            "VII": {"topic": "Customer Information",
+              "a": "Needs assessment",
+              "b": "Business rules"},
+            "VIII": {"topic": "Data Storage",
+              "a": "Evaluation",
+              "b": "Design",
+              "c": "Implementation"},
+            "IX": {"topic": "Database Architecture"},
+            "X": {"topic": "The Relational Database Model Structured Query Language (SQL)"},
+            "XI": {"topic": "Systems Development Life Cycle",
+              "a": "Evaluation",
+              "b": "Analysis",
+              "c": "Design",
+              "d": "Implementation",
+              "e": "Maintenance"},
+            "XII": {"topic": "The Database Life Cycle"},
+            "XIII": {"topic": "Business Intelligence and Data Warehouses"},
+            "XIV": {"topic": "Data Analytics",
+              "a": "Queries",
+              "b": "Data mining"},
+            "XV": {"topic": "Security"},
+            "XVI": {"topic": "Data Governance"}
+    }
+}
