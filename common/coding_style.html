@@ -4,94 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Importance of Best Practices for Style and Code Conventions</title>
+
+    <style>
+        .boxed-div {
+            border: 2px solid black;
+            /* Solid black border */
+            padding: 10px;
+            /* Padding inside the box */
+            width: 300px;
+            /* Width of the div */
+            margin: 20px auto;
+            /* Center the div */
+        }
+    </style>
 </head>
 
-<body>
-    <!DOCTYPE html>
-    <html lang="en">
+<body style="padding:20px;">
+    <h1>Importance of Best Practices for Style and Code Conventions</h1>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Lecture: Importance of Best Practices for Style and Code Conventions</title>
-    </head>
+    <h2>Introduction</h2>
+    <p>Writing clean, readable, and maintainable code is crucial for software development. Following best practices
+        for style and code conventions ensures that code is not only understandable to others but also less prone to
+        errors. These standards are especially important in collaborative environments where multiple developers
+        work on the same codebase.</p>
 
-    <body>
-        <h1>Importance of Best Practices for Style and Code Conventions</h1>
+    <h2>Why Are Code Conventions Important?</h2>
+    <p>Code conventions are a set of guidelines that dictate the style and structure of your code. Adhering to these
+        conventions offers several benefits:</p>
+    <ul>
+        <li><strong>Consistency:</strong> Consistent code is easier to read, review, and maintain. It reduces the
+            cognitive load on developers who read and modify the code.</li>
+        <li><strong>Collaboration:</strong> In a team environment, following a common set of conventions ensures
+            that everyone writes code in a similar manner, making collaboration smoother.</li>
+        <li><strong>Error Reduction:</strong> Following well-established patterns and practices can help prevent
+            common errors and bugs.</li>
+        <li><strong>Maintainability:</strong> Code that adheres to conventions is easier to extend and maintain over
+            time, especially as teams change or grow.</li>
+    </ul>
 
-        <h2>Introduction</h2>
-        <p>Writing clean, readable, and maintainable code is crucial for software development. Following best practices
-            for style and code conventions ensures that code is not only understandable to others but also less prone to
-            errors. These standards are especially important in collaborative environments where multiple developers
-            work on the same codebase.</p>
+    <h2>Language-Specific Style Guides</h2>
+    <p>Different programming languages have their own style guides, which are often used as the basis for
+        organizational standards. Although these standards may be tailored by different organizations, they are
+        usually based on the language's official style guide.</p>
+    <ul>
+        <li><strong>C#:</strong> <a
+                href="https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions">Microsoft
+                C# Coding Conventions</a></li>
+        <li><strong>C++:</strong> <a href="https://google.github.io/styleguide/cppguide.html">Google C++ Style
+                Guide</a></li>
+        <li><strong>Java:</strong> <a
+                href="https://www.oracle.com/java/technologies/javase/codeconventions-introduction.html">Oracle Java
+                Code Conventions</a></li>
+        <li><strong>Python:</strong> <a href="https://peps.python.org/pep-0008/">PEP 8 -- Style Guide for Python
+                Code</a></li>
+    </ul>
+    <p>For Java, the official language style guide can be found on the <a
+            href="https://www.oracle.com/java/technologies/javase/codeconventions-introduction.html">Oracle
+            website</a>.</p>
 
-        <h2>Why Are Code Conventions Important?</h2>
-        <p>Code conventions are a set of guidelines that dictate the style and structure of your code. Adhering to these
-            conventions offers several benefits:</p>
-        <ul>
-            <li><strong>Consistency:</strong> Consistent code is easier to read, review, and maintain. It reduces the
-                cognitive load on developers who read and modify the code.</li>
-            <li><strong>Collaboration:</strong> In a team environment, following a common set of conventions ensures
-                that everyone writes code in a similar manner, making collaboration smoother.</li>
-            <li><strong>Error Reduction:</strong> Following well-established patterns and practices can help prevent
-                common errors and bugs.</li>
-            <li><strong>Maintainability:</strong> Code that adheres to conventions is easier to extend and maintain over
-                time, especially as teams change or grow.</li>
-        </ul>
+    <h2>Key Elements of Code Conventions</h2>
+    <p>Some common elements of code conventions include:</p>
 
-        <h2>Language-Specific Style Guides</h2>
-        <p>Different programming languages have their own style guides, which are often used as the basis for
-            organizational standards. Although these standards may be tailored by different organizations, they are
-            usually based on the language's official style guide.</p>
-        <ul>
-            <li><strong>C#:</strong> <a
-                    href="https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions">Microsoft
-                    C# Coding Conventions</a></li>
-            <li><strong>C++:</strong> <a href="https://google.github.io/styleguide/cppguide.html">Google C++ Style
-                    Guide</a></li>
-            <li><strong>Java:</strong> <a
-                    href="https://www.oracle.com/java/technologies/javase/codeconventions-introduction.html">Oracle Java
-                    Code Conventions</a></li>
-            <li><strong>Python:</strong> <a href="https://peps.python.org/pep-0008/">PEP 8 -- Style Guide for Python
-                    Code</a></li>
-        </ul>
-        <p>For Java, the official language style guide can be found on the <a
-                href="https://www.oracle.com/java/technologies/javase/codeconventions-introduction.html">Oracle
-                website</a>.</p>
+    <h3>1. Identifiers</h3>
+    <ul>
+        <li><strong>Variable and Method Names:</strong> Use camelCase for variables and methods (e.g.,
+            <code>calculateTotalPrice</code>).
+        </li>
+        <li><strong>Class Names:</strong> Use PascalCase for class names (e.g., <code>CustomerAccount</code>).</li>
+        <li><strong>Constants:</strong> Use ALL_CAPS for constants (e.g., <code>MAX_SPEED</code>).</li>
+    </ul>
 
-        <h2>Key Elements of Code Conventions</h2>
-        <p>Some common elements of code conventions include:</p>
+    <h3>2. Whitespace</h3>
+    <ul>
+        <li><strong>Indentation:</strong> Use consistent indentation (e.g., 4 spaces per level in Python, Java, and
+            C#).</li>
+        <li><strong>Blank Lines:</strong> Use blank lines to separate logical sections of code.</li>
+        <li><strong>Line Length:</strong> Limit line length to 80-120 characters for better readability.</li>
+    </ul>
 
-        <h3>1. Identifiers</h3>
-        <ul>
-            <li><strong>Variable and Method Names:</strong> Use camelCase for variables and methods (e.g.,
-                <code>calculateTotalPrice</code>).</li>
-            <li><strong>Class Names:</strong> Use PascalCase for class names (e.g., <code>CustomerAccount</code>).</li>
-            <li><strong>Constants:</strong> Use ALL_CAPS for constants (e.g., <code>MAX_SPEED</code>).</li>
-        </ul>
+    <h3>3. Comments</h3>
+    <ul>
+        <li><strong>Inline Comments:</strong> Use comments to explain complex logic, but avoid stating the obvious
+            (e.g., <code>// Calculate the total price including tax</code>).</li>
+        <li><strong>Documentation Comments:</strong> Use documentation comments to describe the purpose of classes,
+            methods, and significant blocks of code.</li>
+        <li><strong>TODO Comments:</strong> Use TODO comments to mark sections of code that need further work (e.g.,
+            <code>// TODO: Refactor this method</code>).
+        </li>
+    </ul>
 
-        <h3>2. Whitespace</h3>
-        <ul>
-            <li><strong>Indentation:</strong> Use consistent indentation (e.g., 4 spaces per level in Python, Java, and
-                C#).</li>
-            <li><strong>Blank Lines:</strong> Use blank lines to separate logical sections of code.</li>
-            <li><strong>Line Length:</strong> Limit line length to 80-120 characters for better readability.</li>
-        </ul>
-
-        <h3>3. Comments</h3>
-        <ul>
-            <li><strong>Inline Comments:</strong> Use comments to explain complex logic, but avoid stating the obvious
-                (e.g., <code>// Calculate the total price including tax</code>).</li>
-            <li><strong>Documentation Comments:</strong> Use documentation comments to describe the purpose of classes,
-                methods, and significant blocks of code.</li>
-            <li><strong>TODO Comments:</strong> Use TODO comments to mark sections of code that need further work (e.g.,
-                <code>// TODO: Refactor this method</code>).</li>
-        </ul>
-
-        <h2>Code Review Checklist</h2>
-        <p>Here is a checklist that can be used during a code review to ensure adherence to best practices:</p>
-        <ul>
+    <h2>Code Review Checklist</h2>
+    <div class="boxed-div">
+        Sample Code Review Checklist:
+        <ul style="list-style-type: square;">
             <li>Are identifiers (variable names, method names, class names) consistent with the style guide?</li>
             <li>Is the code consistently indented and properly formatted?</li>
             <li>Are comments clear, concise, and helpful? Are there unnecessary comments?</li>
@@ -103,16 +109,37 @@
             <li>Are there any potential performance issues, such as unnecessary loops or memory allocations?</li>
             <li>Is the code secure? Are there any potential security vulnerabilities?</li>
         </ul>
+    </div>
 
-        <h2>Conclusion</h2>
-        <p>Following best practices for style and code conventions is essential for producing high-quality, maintainable
-            code. It enhances readability, reduces errors, and facilitates collaboration. Whether you are working alone
-            or as part of a team, adhering to these conventions is a professional standard that benefits everyone
-            involved in the development process.</p>
-    </body>
-
-    </html>
-
+    <h2>But does it really matter?</h2>
+    <p>
+        Imagine that you are working on a project with a team of developers. Each developer
+        has their own coding style. Some use tabs for indentation, while others use spaces.
+    </p>
+    <p>
+        Professional development teams must follow well well-established coding processes and
+        procedures. Part of that includes well-documented requirements for reviewing any new
+        or modified code. This ensures that the code is consistent, maintainable, and secure.
+    </p>
+    <p>
+        Without considering the details of the project, imagine that some code updates are
+        reviewed by another developer with a different opinion on indentations and line breaks
+        and spends an hour reformatting the code to match their style. These changes are returned
+        to the author and the author must spend time reviewing the changes to ensure that the
+        changes are correct and relevant and that the style is consistent. But if the code
+        review is not correct, then the developer might have to spend more time fixing the code,
+        leading to still more rounds of review and response and unproductive time spent.
+    </p>
+    <p>
+        Even trivial changes can add up and lead to significant time wasted and frustration,
+        and more importantly, cost. These costs are either absorbed by the company as lost revenue
+        or passed on to the customer in the form of higher prices, at the cost of eroded reputation.
+    </p>
+    <p>
+        By following a consistent coding style and conventions, you can avoid these issues and
+        ensure that your code is clean, readable, and maintainable. This will save time and effort
+        in the long run and contribute to a more efficient and productive development process.
+    </p>
 </body>
 
 </html>
