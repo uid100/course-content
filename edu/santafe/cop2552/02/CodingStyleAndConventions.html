@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="ic-flash-info">
+        <blockquote cite="Robert C. Martin, Clean Code" style="font-style: italic;">
+            Even bad code can function. But if code isn&rsquo;t clean, it can bring a development organization to its
+            knees. Every year, countless hours and significant resources are lost because of poorly written code. But it
+            doesn&rsquo;t have to be that way.
+        </blockquote>
+        <p>(Robert C. Martin in the book Clean Code)</p>
+
+        <p>
+            And it won't in this class! Here is how you can keep your code clean and readable so you can be more
+            effective.
+            These are basic skills that you must master to be successful in programming.
+        </p>
+    </div>
+
+    <h2>Naming Identifiers</h2>
+    <h3>Capitalization</h3>
+    <p>Use <strong>camelCase</strong> (not snake_case):</p>
+    <p><span><span style="text-decoration: underline;"><span
+                    style="background-color: #ffff00;"><strong>C</strong></span></span>lass<span
+                style="text-decoration: underline;"><span
+                    style="background-color: #ffff00;"><strong>N</strong></span></span>ame&nbsp;&nbsp;&nbsp; // class
+            names <strong>start</strong> with a capital letter</span><br /><br /><span><span
+                style="text-decoration: underline;"><span
+                    style="background-color: #ffff00;"><strong>v</strong></span></span>ariable<span
+                style="text-decoration: underline;"><span
+                    style="background-color: #ffff00;"><strong>N</strong></span></span>ame // variable names do
+            <strong>not</strong> start with a capital letter</span></p>
+    <p><span><span style="text-decoration: underline;"><span style="background-color: #ffff00;"><strong>
+                        m</strong></span></span>ethod<span style="text-decoration: underline;"><span
+                    style="background-color: #ffff00;"><strong>N</strong></span></span>ame&nbsp;&nbsp; // method names
+            do <strong>not</strong> start with a capital letter </span></p>
+    <h3>Describing Names<strong></strong></h3>
+    <p>Variable names should <strong>contain a noun</strong> and&nbsp; be <strong>self-explanatory</strong> - the saying
+        is: You have to name it, to claim it</p>
+    <pre><span>totTax // could be a potato tax, tottler tax?!?</span><br /><br /><span>totalTax // makes it clear that it's a total but is it an amount or a percentage?</span><br /><br /><span>totalTaxPercent // This is perfect if the variable contains 15 as in 15%</span><br /><br /><span>totalTaxRate // This is perfect if the variable contains 0.15 which is the decimal representation of 15%</span></pre>
+    <p>Watch:</p>
+    <p>Coding with John. (2022, January 26). <strong>How To Create Variables That Don't Suck - Writing Clean Java
+            Code</strong> [Video]. YouTube. <br /><a href="https://www.youtube.com/watch?v=eVpwH1SPl1g" target="_blank"
+            rel="noopener">https://www.youtube.com/watch?v=eVpwH1SPl1g</a></p>
+    <p><strong>Method names should contain a verb</strong>; for instance:</p>
+    <pre>&nbsp; &nbsp; /**<br />&nbsp; &nbsp; &nbsp;* Purpose: Change baby's diaper<br />  &nbsp; &nbsp;* @param newDiaper clean diaper for baby to wear<br />&nbsp; &nbsp; &nbsp;* @return the old diaper<br />&nbsp; &nbsp; &nbsp;*/<br />&nbsp; &nbsp; public Diaper <strong>change</strong>Diaper(Diaper newDiaper)<br />&nbsp; &nbsp; {<br />&nbsp; &nbsp; &nbsp; &nbsp; return null;<br />&nbsp; &nbsp; }</pre>
+    <p>The verb here is "change".</p>
+    <h3>Protecting Variables and Methods</h3>
+    <p><strong>Instance and static variables should be private</strong> for security reasons (and to support the
+        Open-Closed principle; see <a href="https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle" target="_blank"
+            rel="noopener">https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle</a>). For instance:</p>
+    <pre>  &nbsp; &nbsp;// A car has a paint color<br />&nbsp; &nbsp; &nbsp;<strong>private</strong> Color paintColor;</pre>
+    <p>Methods are most often public, but can be private, protected or have package-level protection.</p>
+    <h2>Indentation</h2>
+    <p>When we write java code we follow certain style guidelines to make the code easier to read. Here are some of
+        simple guides:</p>
+    <p><strong>Use { and } on separate lines</strong> and indent the lines in between (blue highlight):</p>
+    <p><span style="background-color: #ffff00;"><strong><span>{</span></strong></span><br /><span><span
+                style="font-family: courier new, courier; background-color: #3598db;">&nbsp;&nbsp; </span>// Print out
+            Hi to the user<br /><span style="font-family: courier new, courier; background-color: #3598db;">&nbsp;&nbsp;
+            </span>System.out.println("Hi");</span><br /><span style="background-color: #ffcc99;"><strong><span><span
+                        style="background-color: #ffff00;">}</span><br /></span></strong></span></p>
+    <p>Nested { } are also indented:</p>
+    <p><span style="font-family: courier new, courier;">public class MyClass</span><br /><span
+            style="font-family: courier new, courier;">{</span><br /><span
+            style="font-family: courier new, courier;"><span style="background-color: #3598db;">&nbsp;&nbsp;
+            </span><strong>p</strong>ublic static void main()</span><br /><span
+            style="font-family: courier new, courier;"><span style="background-color: #3598db;">&nbsp;&nbsp;
+            </span><strong>{</strong></span><br /><span style="font-family: courier new, courier;"><span
+                style="background-color: #3598db;">&nbsp;&nbsp; &nbsp; &nbsp; </span>// Do something<br /><span
+                style="background-color: #3598db;">&nbsp;&nbsp; &nbsp; &nbsp;
+            </span>System.out.println("Something");<br /></span><span style="font-family: courier new, courier;"><span
+                style="background-color: #ffff99;"><span style="background-color: #3598db;">&nbsp;&nbsp;
+                </span><strong>}</strong></span></span><br /><span
+            style="font-family: courier new, courier; background-color: #ffff00;">}</span></p>
+    <p>Note how the closing } is in the same column as the corresponding opening {.</p>
+    <p>The <strong>Tab</strong> key will automatically indent the lines the correct amount after a {.</p>
+    <h2><span>Commenting</span></h2>
+    <p><strong>Give meaningful comments:</strong></p>
+    <p>In general write one comment for each line of code, and place the comment <strong>above</strong> the
+        code.<br />In the comments, provide meaningful information that is not obvious from the source alone, such as:
+    </p>
+    <ul>
+        <ul>
+            <li>What a variable is going to be used for</li>
+        </ul>
+    </ul>
+    <p style="margin-left: 90px;">Do:</p>
+    <pre style="margin-left: 90px;"><span>// Holds what user types in</span><br /><span>String userInput;</span></pre>
+    <p style="margin-left: 90px;">Do <strong>not</strong>:</p>
+    <pre style="margin-left: 90px;"><span>// Declare variable</span><br /><span>String inp;</span></pre>
+    <ul>
+        <ul>
+            <li>What a line of code accomplishes</li>
+        </ul>
+    </ul>
+    <p style="margin-left: 90px;">Do:</p>
+    <pre
+        style="margin-left: 90px;"><span>// Calculate total amount from bill amount and tip percentage</span><br /><span>totalAmount = billAmount * (1 + tipPercentage/100);</span></pre>
+    <p style="margin-left: 90px;">Do <strong>not</strong>:</p>
+    <pre style="margin-left: 90px;"><span>// Do the calculation</span><br />ta = ba * (1 + tp/100);</pre>
+    <p><br />Often it is a great help to write the comment <em>before</em> the code, so that you have a clear idea of
+        what you want the code to do.</p>
+    <h2>Language Constructs</h2>
+    <p>General rule: Use the right language construct for the job.</p>
+    <h3>Loops</h3>
+    <ul>
+        <li>If the loop runs from one fixed value to another fixed value use a <strong>for</strong>-loop: <br />
+            <ul>
+                <li>
+                    <pre>for (int counter=0; counter&lt;10; counter++)
+{
+   ...
+}</pre>
+                    <span>Be sure to initialize the control variable in the <span
+                            style="font-family: courier new, courier;">for</span> statement (<span
+                            style="font-family: courier new, courier;">int counter=0</span>) and do not change it inside
+                        of the loop.</span>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <ul>
+        <li>If the program should always enter the loop.<br />
+            <ul>
+                <li>For instance, does the program need input before getting to a condition as when a user enters a
+                    invalid number.</li>
+                <li>&nbsp;In this case use:<br />
+                    <pre><span>do<br />{<br />&nbsp;&nbsp; ...<br />} while (...);</span></pre>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>&nbsp;</p>
+    <ul>
+        <li>Is it possible to never enter the loop?
+            <ul>
+                <li>For instance, if a file is empty so the loop does not need to run.</li>
+                <li>In this case use:
+                    <pre>while (...)<br />{<br />&nbsp;&nbsp; ...<br />};</pre>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <p>Never use break to break out of a loop, see below.</p>
+    <h3>Break, continue, instanceof, getClass, type casts</h3>
+    <p><strong>Never use break</strong> outside of a switch, and <strong>never use continue</strong>. Both break the
+        logical flow of the program and Java has better language constructs. Sometimes return will do what you need,
+        sometimes changing the type of loop is the best thing to do; often the program becomes simpler.</p>
+    <p>Programs should never have explicit conditionals on the types of data it processes. Do <strong>not</strong> use:
+    </p>
+    <pre>if (x instanceof Car) ...<br /><br />if (x.getClass().equals(...)) ...<br /><br />Car car = (Car)vehicle;</pre>
+    <p>There is one exception to this rule: the <strong>equals</strong> method. The signature for equals is:</p>
+    <pre>public boolean equals(Object other)</pre>
+    <p>which requires a check with <strong>instanceof</strong> (or similar) and a type cast to the local type to compare
+        instance variables/fields. See: <a
+            href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)"
+            target="_blank"
+            rel="noopener">https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Object.html#equals(java.lang.Object)</a>.
+        This is the <span style="background-color: #fffd00;"><strong>only</strong></span> place you can use
+        <strong>instanceof</strong>, everywhere else use polymorphism.<br />In this class there is no reason to use
+        <strong>getClass</strong>, instead polymorphism.
+    </p>
+    <h2>What Not To Do (Optional)</h2>
+    <p>Watch:<br />Coding with John. (n.d.). <em>How to Write Truly Terrible Java Code - Full Tutorial</em>. YouTube.
+        <br /><span class="https://www.youtube.com/watch?v=YpS0Jh5yqIw"><a
+                href="https://www.youtube.com/watch?v=YpS0Jh5yqIw" target="_blank"
+                rel="noopener">https://www.youtube.com/watch?v=YpS0Jh5yqIw</a> <br /></span>
+    </p>
+    <h2>References</h2>
+    <p>Martin, R. C. (2009). <i>Clean code: A handbook of agile software craftsmanship</i>. Upper Saddle River, NJ:
+        Prentice Hall. <br />See: <a
+            href="https://books.google.com/books?id=_i6bDeoCQzsC">https://books.google.com/books?id=_i6bDeoCQzsC</a></p>
+</body>
+
+</html>
