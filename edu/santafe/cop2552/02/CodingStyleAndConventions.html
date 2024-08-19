@@ -24,33 +24,57 @@
     </div>
 
     <h2>Naming Identifiers</h2>
+
+
     <h3>Capitalization</h3>
     <p>Use <strong>camelCase</strong> (not snake_case):</p>
-    <p><span><span style="text-decoration: underline;"><span
-                    style="background-color: #ffff00;"><strong>C</strong></span></span>lass<span
-                style="text-decoration: underline;"><span
-                    style="background-color: #ffff00;"><strong>N</strong></span></span>ame&nbsp;&nbsp;&nbsp; // class
-            names <strong>start</strong> with a capital letter</span><br /><br /><span><span
-                style="text-decoration: underline;"><span
-                    style="background-color: #ffff00;"><strong>v</strong></span></span>ariable<span
-                style="text-decoration: underline;"><span
-                    style="background-color: #ffff00;"><strong>N</strong></span></span>ame // variable names do
-            <strong>not</strong> start with a capital letter</span></p>
-    <p><span><span style="text-decoration: underline;"><span style="background-color: #ffff00;"><strong>
-                        m</strong></span></span>ethod<span style="text-decoration: underline;"><span
-                    style="background-color: #ffff00;"><strong>N</strong></span></span>ame&nbsp;&nbsp; // method names
-            do <strong>not</strong> start with a capital letter </span></p>
-    <h3>Describing Names<strong></strong></h3>
-    <p>Variable names should <strong>contain a noun</strong> and&nbsp; be <strong>self-explanatory</strong> - the saying
-        is: You have to name it, to claim it</p>
-    <pre><span>totTax // could be a potato tax, tottler tax?!?</span><br /><br /><span>totalTax // makes it clear that it's a total but is it an amount or a percentage?</span><br /><br /><span>totalTaxPercent // This is perfect if the variable contains 15 as in 15%</span><br /><br /><span>totalTaxRate // This is perfect if the variable contains 0.15 which is the decimal representation of 15%</span></pre>
+    <pre>
+    ClassName  // class names start with a capital letter (PascalCase)
+    variableName // variable names do not start with a capital letter
+    methodName  // method names do not start with a capital letter
+</pre>
+
+
+    <h3>Describing Names</h3>
+    <p>
+        Variable names should <strong>contain a noun</strong> and&nbsp; be <strong>self-explanatory</strong>
+        - the saying is: <em>You have to name it, to claim it</em>
+    </p>
+    <pre>
+        totTax // could be a potato tax, tottler tax?!?
+        totalTax // makes it clear that it's a total but is it an amount or a percentage?
+        totalTaxPercent // This is perfect if the variable contains 15 as in 15%
+        totalTaxRate // This is perfect if the variable contains 0.15 which is the decimal representation of 15%
+    </pre>
+
     <p>Watch:</p>
     <p>Coding with John. (2022, January 26). <strong>How To Create Variables That Don't Suck - Writing Clean Java
-            Code</strong> [Video]. YouTube. <br /><a href="https://www.youtube.com/watch?v=eVpwH1SPl1g" target="_blank"
-            rel="noopener">https://www.youtube.com/watch?v=eVpwH1SPl1g</a></p>
+            Code</strong> [Video]. YouTube.
+    </p>
+    <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/eVpwH1SPl1g?si=hrUXjejeB7w4jyvG"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </p>
+
     <p><strong>Method names should contain a verb</strong>; for instance:</p>
-    <pre>&nbsp; &nbsp; /**<br />&nbsp; &nbsp; &nbsp;* Purpose: Change baby's diaper<br />  &nbsp; &nbsp;* @param newDiaper clean diaper for baby to wear<br />&nbsp; &nbsp; &nbsp;* @return the old diaper<br />&nbsp; &nbsp; &nbsp;*/<br />&nbsp; &nbsp; public Diaper <strong>change</strong>Diaper(Diaper newDiaper)<br />&nbsp; &nbsp; {<br />&nbsp; &nbsp; &nbsp; &nbsp; return null;<br />&nbsp; &nbsp; }</pre>
-    <p>The verb here is "change".</p>
+    <pre>
+   /**
+    * Purpose: Change baby's diaper
+    * @param newDiaper clean diaper for baby to wear
+    * @return the old diaper
+    */
+    public Diaper changeDiaper(Diaper newDiaper)
+    {
+       return null;
+    }
+    </pre>
+
+    <p>
+        The verb here is "change".
+    </p>
+
     <h3>Protecting Variables and Methods</h3>
     <p><strong>Instance and static variables should be private</strong> for security reasons (and to support the
         Open-Closed principle; see <a href="https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle" target="_blank"
