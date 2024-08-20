@@ -293,78 +293,100 @@
                     //	return ???;
                     //}
                 </pre>
+            </li>
+        </ul>
 
-                <h4>{return type}:</h4>
-                <p>
-                    The return type of a method is the type of method being returned when the method is done executing.
-                    For example, it might return double, int, or boolean. If a method does not return data, it is void.
-                    For this max method, since it returns an element from an int array we know that it is returning an
-                    int.
-                </p>
+        <h4>{return type}:</h4>
+        <p>
+            The return type of a method is the type of method being returned when the method is done executing.
+            For example, it might return double, int, or boolean. If a method does not return data, it is void.
+            For this max method, since it returns an element from an int array we know that it is returning an
+            int.
+        </p>
 
-                <h4>{method name}:</h4>
-                <p>
-                    Methods should be lowercase. For this one, the tester method gives us a hint that we
-                    should name the method <strong>max</strong>.
-                </p>
+        <h4>{method name}:</h4>
+        <p>
+            Methods should be lowercase. For this one, the tester method gives us a hint that we
+            should name the method <strong>max</strong>.
+        </p>
 
-                <h4>{parameter type}:</h4>
-                <p>
-                    This can be a primitive type like int, double, boolean or arrays, Strings, or custom class types.
-                </p>
-                <p>&nbsp;</p>
-                <p>
-                    For this max method problem, the final method header will be:
-                <pre>
+        <h4>{parameter type}:</h4>
+        <p>
+            This can be a primitive type like int, double, boolean or arrays, Strings, or custom class types.
+        </p>
+        <p>&nbsp;</p>
+
+        <p>
+            For this max method problem, the final method header will be:
+        <pre>
                     public static int max(int[] array){
                     }
                 </pre>
-                </p>
-                <p>
+        </p>
+        <p>
 
-                    Once you have added this in M1Challenge.java, you should see the compile error not go away quite
-                    yet! That's because the method header expects the method to return a value and currently is is not.
-                    To silence the compiler while you are debugging and thinking about your logic, you can add some
-                    dummy return line similar to what was done with the first few methods. Add<strong> return
-                        -1</strong> inside the method to make the compiler happy for now.
-                </p>
-                <pre>
+            Once you have added this in M1Challenge.java, you should see the compile error not go away quite
+            yet! That's because the method header expects the method to return a value and currently is is not.
+            To silence the compiler while you are debugging and thinking about your logic, you can add some
+            dummy return line similar to what was done with the first few methods. Add<strong> return
+                -1</strong> inside the method to make the compiler happy for now.
+        </p>
+        <pre>
                     public static int max(int[] array){
                         return -1; //dummy return to make compiler happy while you think about the code!
                     }
                 </pre>
-                <p>&nbsp;</p>
-                <p>
-                    Searching through an array will require you to use an array to visit each element in the array known
-                    as a traversal. Below is a typical loop for array traversal.
-                <pre>
+        <p>&nbsp;</p>
+        <p>
+            Searching through an array will require you to use an array to visit each element in the array known
+            as a traversal. Below is a typical loop for array traversal.
+        <pre>
                     for(int i = 0; i &lt; array.length; i++){
                         
                     }
                 </pre>
-                </p>
+        </p>
 
-                <p>
-                    Let's combine this with the fact that we are looking for the largest element in the array. First, we
-                    can assume that the first element is the largest. As you walk the array, starting at the second
-                    element, check if that element is larger and mark it as the largest. Alter the for loop so that it
-                    can skip the first element since we will define that as our current maximum value. Below is the
-                    complete body of the max method along with the comments. The comments shown will showcase the type
-                    of comments you should be writing to earn full points on programming assignments in this class.
-                <pre>
-                    //assume first element in the array is the largest<br />int largest = array[0];<br /><br />//traverse the array starting at the 2nd element<br />for(int<strong> i = 1</strong>; i &lt; array.length; i++){<br /><br />  //check to see if any element is greater and update largest<br />  if(array[i] &gt; largest){<br />     largest = array[i];<br />  }<br />}<br /><br />//return the result<br />return largest</pre>
-                <p>Now repeat this process for the remaining methods shown in the
-                    <strong>TestM1Challenge.java.<br /><br /></strong>Workflow for the 2nd half of the programming
-                    challenge:<br />1: Look at the test method in TestM1Challenge.java and figure out what the method is
-                    that
-                    you are going to implement. <br />2. Implement the method in M1Challenge.java
-                </p>
-    </div>
-    </div>
-    <h4>&nbsp;</h4>
-    </div>
-    </div>
-    </div>
+        <p>
+            Let's combine this with the fact that we are looking for the largest element in the array. First, we
+            can assume that the first element is the largest. As you walk the array, starting at the second
+            element, check if that element is larger and mark it as the largest. Alter the for loop so that it
+            can skip the first element since we will define that as our current maximum value. Below is the
+            complete body of the max method along with the comments. The comments shown will showcase the type
+            of comments you should be writing to earn full points on programming assignments in this class.
+        <pre>
+                    //assume first element in the array is the largest
+                    int largest = array[0];
+                    
+                    //traverse the array starting at the 2nd element
+                    for(int<strong> i = 1</strong>; i &lt; array.length; i++){
+                        
+                        //check to see if any element is greater and update largest
+                        if(array[i] &gt; largest){
+                            largest = array[i];
+                        }
+                    }
+                    //return the result
+                    return largest;
+                </pre>
+        </p>
+        <p>
+            Now repeat this process for the remaining methods shown in the
+            <strong>TestM1Challenge.java.</strong>
+        </p>
+        <p>
+            Workflow for the 2nd half of the programming challenge:
+        <ul>
+            <li>
+                Look at the test method in TestM1Challenge.java and figure out what the method is that you
+                are going to implement.
+            </li>
+            <li>
+                Implement the method in M1Challenge.java
+            </li>
+        </ul>
+        </p>
+
 
     </div> <!-- #tasks -->
 
