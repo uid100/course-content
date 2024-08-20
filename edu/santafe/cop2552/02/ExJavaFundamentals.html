@@ -86,6 +86,288 @@
             </li>
         </ul>
     </div> <!-- #instructions -->
+    <div id="code-layout">
+        <h2>Code Layout</h2>
+        <p>
+            Module 1 programming assignment is set up as a JUnit assignment consisting of the challenge class called
+            <strong>M1Challenge.java</strong> and the test class called <strong>TestM1Challenge.java. </strong>This
+            simplistic setup is all you need to get started for this programming assignment. You will be reminded of the
+            use of these two files repeatedly throughout this document.
+        </p>
+        <h3>M1Challenge</h3>
+        <p>
+            This is where you will be implementing the code. In this assignment, you will be completing a couple of
+            methods and writing some from scratch.</p>
+        <h3>TestM1Challenge</h3>
+        <p>
+            This is a set of code that has been provided for you. The code is broken up into a series of test methods
+            that you will uncomment as you implement them in <strong>M1Challenge.java</strong></p>
+    </div> <!-- #code-layout -->
+    <div id="tasks">
+        <h2>Programming Tasks</h2>
+        <h3>M1Challenge.java</h3>
+        <p>
+            Let's take a look at the add method together in<strong> M1Challenge.java </strong>as shown below. The first
+            thing you will notice is the comment above the add method which provides <strong>Javadoc</strong> style
+            information. Javadoc is a built-in documentation generator that you can use in Java. If you type (above the
+            method) <strong>/**</strong> then press enter, it will autogenerate the stub for you. You can delete the
+            entire comment stub above the add method if you want to try this now on your own! <i>Side note: Sometimes
+                parameter names might slightly differ, but they will represent the same thing in your code
+                setup.</i><br /><br />
+        <pre>
+   /**
+    * Purpose: add two numbers
+    * @param a one number
+    * @param b another number
+    * @return the sum of a and b
+    */
+   public static int add(int a, int b)
+   {
+       return a + b;
+   }
+</pre>
+
+        <h3>TestM1Challenge.java</h3>
+        <p>
+            Now let's take a look at the corresponding test method under <strong>TestM1Challenge.java</strong> as shown
+            below.
+            The test method has two assertions that run and evaluates if the two expressions are equal otherwise an
+            <strong>AssertionError</strong> is thrown. <br /><br />AssertEquals(4, add(2, 2)): This checks if the return
+            of
+            add(2, 2) is equal to 4.<br />AssertEquals(0, add(2, -2)): This checks if the return of add(2, -2) is equal
+            to
+            0.
+        </p>
+        <pre>
+    @Test
+    void testAdd()
+    {
+        // add(..., ...) adds two numbers
+        // This checks that add(2, 2) returns 4.
+        assertEquals(4, add(2, 2));
+        // This checks that add(2, -2) returns 0.
+        assertEquals(0, add(2, -2));
+    }
+</pre>
+        <p>
+            Your workflow to complete this first programming challenge will involve editing both files as explained in
+            more detail below.
+        </p>
+        <p>
+            The first method, add, has been done for you! Let's complete one of the methods together so you can get
+            familiar with a potential workflow for completing a programming challenge. Your workflow will change halfway
+            through this programming challenge because you will go from completing provided methods to writing the full
+            methods.
+        </p>
+        <p>
+            For the first half of the programming challenge:
+        <ul>
+            <li> Implement the method </li>
+            <li> Uncomment and run the test method </li>
+        </ul>
+        </p>
+
+        <h4>multiply</h4>
+        <p>
+            The method multiply will return the product of the parameters a and b. You will find that there is a random
+            -11111 return provided in the method which is incorrect. This is provided so that the compiler is happy and
+            you are able to run the code without having to complete all of the methods yet. Finish the method and run
+            the project.
+            It will run the test class by default.
+        </p>
+        <pre>
+            /**
+             * Purpose: multiply two numbers
+             * @param a one number 
+             * @param b another number
+             * @return the product of a and b
+             */
+             public static int multiply(int a, int b)
+             {
+                // TODO: change this to make the tests pass
+                <span style="background-color: #ffff00; color: #000000;">return -11111; //Should be return a * b</span>
+            }
+        </pre>
+
+        <h4>getFirst:</h4>
+        <p>
+            This method has a single parameter named array. Access and return the first element. You will see that the
+            tester for this method is commented out in <strong>TestM1Challenge.java.</strong> Take the time now to
+            uncomment it then run the code. You will notice some very simplistic test cases have been written for this
+            method. Some small arrays have been created and initialized which are then utilized in the assertions.
+        </p>
+        <pre>
+            /**
+             * Purpose: return the first element in the given array
+             * 
+             * @param array to search
+             * @return first element
+             */
+             public static int getFirst(int[] array)
+             {
+                // TODO: change this method to make the tests pass
+                return -77777; <span style="background-color: #ffff00; color: #000000;">// should be array[0]</span>
+            }
+        </pre>
+
+        <h4>getLast, getMiddle</h4>
+        <p>
+            The process to complete these next two methods are similar to getFirst. Complete the method as described in
+            the comment. You are accessing a specific location in the array, but be sure not to hardcode a specific
+            number. It should be calculated based on the length of the given array.
+        </p>
+        <p>&nbsp;</p>
+        <h3>Workflow</h3>
+        <p>
+            The workflow for the 2nd half of the programming challenge:
+        <ul>
+            <li>
+                Look at the test method in TestM1Challenge.java and figure out what the method is that you are going to
+                implement.
+            </li>
+            <li>
+                Implement the method the method in M1Challenge.java
+            </li>
+        </ul>
+        </p>
+
+        <h3>max:</h3>
+        <ul>
+            <li>
+                Let's look at the provided test method together. You will see numerous assertions, a.k.a. multiple
+                tests, for this method. Each test uses an array which is then passed to the max method. If you have not
+                guessed already, this method will find the maximum element in the array and return that element (its
+                value, not position). This method, however, has not been written in
+                <strong>M1Challenge</strong>.<strong>java</strong> and thus will result in a compile error. You cannot
+                call a method that does not exist!
+                <pre>
+                    @Test
+                    void testMax()
+                    {
+                        int[] array1 = { 1 };
+                        // This checks that max returns 1 (the only element)
+                        assertEquals(1, max(array1));
+                        
+                        array1[0] = -2147483648;
+                        assertEquals(-2147483648, max(array1));
+                        
+                        int[] array2 = { 1, 2, 2147483647 };
+                        // This checks that max returns 2147483647, the largest element
+                        assertEquals(2147483647, max(array2));
+                        
+                        int[] array3 = { -1, 2, -2147483648 };
+                        // This checks that max returns 2, which is the largest element
+                        assertEquals(2, max(array3));
+                        
+                        int[] array4 = { -42, -2, -3 };
+                        // This checks that max returns -2, which is the largest element
+                        assertEquals(-2, max(array4));
+                        
+                        int[] array5 = { 3, 1, 2 };
+                        assertEquals(3, max(array5));
+                        
+                        int[] array6 = { 2, 1, 3 };
+                        assertEquals(3, max(array6));
+                        
+                        int[] array7 = { 2, 3, 1 };
+                        assertEquals(3, max(array7));
+                    }
+                </pre>
+            </li>
+            <li>
+                Based on how the method should work, let's write the method header together for this one. The template
+                for writing a method has been provided for you at the bottom of M1Challenge.java. You can copy-paste
+                this block of code and fill in the parts. For the code below, I replaced the question marks with what
+                each part represents for a Java method in case you need some hints! Let's do it together now.
+
+                <pre>
+                    // Use this template for the other methods
+                    /**
+                     * Purpose:
+                     * 
+                     * @param array
+                     * @return
+                     */
+                    //public static {return type} {method name}({parameter type}[] array)
+                    //{
+                    //	return ???;
+                    //}
+                </pre>
+
+                <h4>{return type}:</h4>
+                <p>
+                    The return type of a method is the type of method being returned when the method is done executing.
+                    For example, it might return double, int, or boolean. If a method does not return data, it is void.
+                    For this max method, since it returns an element from an int array we know that it is returning an
+                    int.
+                </p>
+
+                <h4>{method name}:</h4>
+                <p>
+                    Methods should be lowercase. For this one, the tester method gives us a hint that we
+                    should name the method <strong>max</strong>.
+                </p>
+
+                <h4>{parameter type}:</h4>
+                <p>
+                    This can be a primitive type like int, double, boolean or arrays, Strings, or custom class types.
+                </p>
+                <p>&nbsp;</p>
+                <p>
+                    For this max method problem, the final method header will be:
+                <pre>
+                    public static int max(int[] array){
+                    }
+                </pre>
+                </p>
+                <p>
+
+                    Once you have added this in M1Challenge.java, you should see the compile error not go away quite
+                    yet! That's because the method header expects the method to return a value and currently is is not.
+                    To silence the compiler while you are debugging and thinking about your logic, you can add some
+                    dummy return line similar to what was done with the first few methods. Add<strong> return
+                        -1</strong> inside the method to make the compiler happy for now.
+                </p>
+                <pre>
+                    public static int max(int[] array){
+                        return -1; //dummy return to make compiler happy while you think about the code!
+                    }
+                </pre>
+                <p>&nbsp;</p>
+                <p>
+                    Searching through an array will require you to use an array to visit each element in the array known
+                    as a traversal. Below is a typical loop for array traversal.
+                <pre>
+                    for(int i = 0; i &lt; array.length; i++){
+                        
+                    }
+                </pre>
+                </p>
+
+                <p>
+                    Let's combine this with the fact that we are looking for the largest element in the array. First, we
+                    can assume that the first element is the largest. As you walk the array, starting at the second
+                    element, check if that element is larger and mark it as the largest. Alter the for loop so that it
+                    can skip the first element since we will define that as our current maximum value. Below is the
+                    complete body of the max method along with the comments. The comments shown will showcase the type
+                    of comments you should be writing to earn full points on programming assignments in this class.
+                <pre>
+                    //assume first element in the array is the largest<br />int largest = array[0];<br /><br />//traverse the array starting at the 2nd element<br />for(int<strong> i = 1</strong>; i &lt; array.length; i++){<br /><br />  //check to see if any element is greater and update largest<br />  if(array[i] &gt; largest){<br />     largest = array[i];<br />  }<br />}<br /><br />//return the result<br />return largest</pre>
+                <p>Now repeat this process for the remaining methods shown in the
+                    <strong>TestM1Challenge.java.<br /><br /></strong>Workflow for the 2nd half of the programming
+                    challenge:<br />1: Look at the test method in TestM1Challenge.java and figure out what the method is
+                    that
+                    you are going to implement. <br />2. Implement the method in M1Challenge.java
+                </p>
+    </div>
+    </div>
+    <h4>&nbsp;</h4>
+    </div>
+    </div>
+    </div>
+
+    </div> <!-- #tasks -->
+
 </body>
 
 </html>
