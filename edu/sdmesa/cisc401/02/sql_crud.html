@@ -4,29 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to SQL</title>
+    <title>Introduction to Structured Query Language (SQL)</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            margin: 20px;
         }
 
         h1,
-        h2 {
-            color: #333;
+        h2,
+        h3 {
+            color: #2c3e50;
         }
 
         code {
-            background-color: #e8e8e8;
+            background-color: #ecf0f1;
             padding: 2px 4px;
             border-radius: 4px;
         }
 
         pre {
-            background-color: #e8e8e8;
+            background-color: #ecf0f1;
             padding: 10px;
             border-radius: 4px;
             overflow-x: auto;
@@ -35,67 +34,87 @@
 </head>
 
 <body>
-    <h1>Introduction to SQL</h1>
-    <p>
-        SQL (Structured Query Language) is a standard language for managing and manipulating databases.
-    </p>
-    <p>
-        A foundational concept in data science is known as CRUD operations.
+
+    <h1>Introduction to Structured Query Language (SQL)</h1>
+
+    <p><strong>Structured Query Language (SQL)</strong> is a standardized programming language used to manage and
+        manipulate relational databases. SQL was developed in the 1970s by IBM researchers Raymond Boyce and Donald
+        Chamberlin. It was originally called SEQUEL (Structured English Query Language) and was designed to retrieve and
+        manipulate data stored in IBM's early relational database systems. SQL has since become the standard language
+        for interacting with relational databases, and it is widely used in various industries for managing large
+        volumes of data.</p>
+
+    <h2>Why SQL is Used</h2>
+
+    <p>SQL is essential for interacting with relational databases, which organize data into tables. It allows users to
+        perform various operations such as querying data, updating records, and defining database structures. The
+        simplicity and efficiency of SQL make it the go-to language for database management. SQL is also highly
+        portable, meaning that queries written in SQL can be used across different database systems with minimal
+        modification.</p>
+
+    <h2>Sub-Languages of SQL</h2>
+
+    <p>SQL is composed of several sub-languages, each with a specific purpose:</p>
+
     <ul>
-        <li>Create</li>
-        <li>Read (or Retrieve)</li>
-        <li>Update</li>
-        <li>Delete</li>
+        <li><strong>Data Definition Language (DDL):</strong> This sub-language is used to define and modify the
+            structure of database objects, such as tables and indexes. Common DDL commands include <code>CREATE</code>,
+            <code>ALTER</code>, and <code>DROP</code>.
+        </li>
+        <li><strong>Data Manipulation Language (DML):</strong> This sub-language is used to retrieve and manipulate data
+            within the database. It includes commands like <code>SELECT</code>, <code>INSERT</code>,
+            <code>UPDATE</code>, and <code>DELETE</code>. These commands correspond to the CRUD (Create, Read, Update,
+            Delete) operations in database management.
+        </li>
+        <li><strong>Data Control Language (DCL):</strong> This sub-language is used to control access to data within the
+            database. It includes commands like <code>GRANT</code> and <code>REVOKE</code> that manage user permissions.
+        </li>
     </ul>
-    </p>
-    <p>
-        Starting with the basics of SQL operations, we will look at how to create tables and add and retrieve data.
-    </p>
 
-    <h2>Creating a Simple Table</h2>
-    <p>To create a table in SQL, we use the <code>CREATE TABLE</code> statement. Here is an example of creating a simple
-        table named <code>students</code>:</p>
-    <pre><code>CREATE TABLE students (
-    id INT PRIMARY KEY,
-    first_name VARCHAR(50),
-    last_name VARCHAR(50),
-    age INT
-);</code></pre>
+    <h3>Core DML Operations (CRUD)</h3>
 
-    <h2>CRUD Operations</h2>
-    <p>CRUD operations refer to the four basic operations we can perform on a database: Create, Read, Update, and
-        Delete.</p>
+    <p>The core DML operations that correspond to CRUD are:</p>
 
-    <h3>Create</h3>
-    <p>To insert data into a table, we use the <code>INSERT INTO</code> statement. Here is an example:</p>
-    <pre><code>INSERT INTO students (id, first_name, last_name, age)
-VALUES (1, 'John', 'Doe', 20);</code></pre>
+    <ul>
+        <li><strong>Create:</strong> <code>INSERT</code> - Adds new records to a table.</li>
+        <li><strong>Read:</strong> <code>SELECT</code> - Retrieves data from a table.</li>
+        <li><strong>Update:</strong> <code>UPDATE</code> - Modifies existing records in a table.</li>
+        <li><strong>Delete:</strong> <code>DELETE</code> - Removes records from a table.</li>
+    </ul>
 
-    <h3>Read</h3>
-    <p>To retrieve data from a table, we use the <code>SELECT</code> statement. Here are a few examples:</p>
-    <pre><code>-- Select all columns from the table
-SELECT * FROM students;
+    <h2>Example: CRUD Operations in SQL</h2>
 
--- Select specific columns from the table
-SELECT first_name, last_name FROM students;
+    <p>Below is a simple example demonstrating the basic CRUD operations in SQL:</p>
 
--- Select with a condition
-SELECT * FROM students WHERE age > 18;</code></pre>
+    <pre><code>-- Create a new table called 'Employees'
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Department VARCHAR(50)
+);
 
-    <h3>Update</h3>
-    <p>To update existing data in a table, we use the <code>UPDATE</code> statement. Here is an example:</p>
-    <pre><code>UPDATE students
-SET age = 21
-WHERE id = 1;</code></pre>
+-- Insert a new record into the 'Employees' table
+INSERT INTO Employees (EmployeeID, FirstName, LastName, Department)
+VALUES (1, 'John', 'Doe', 'HR');
 
-    <h3>Delete</h3>
-    <p>To delete data from a table, we use the <code>DELETE FROM</code> statement. Here is an example:</p>
-    <pre><code>DELETE FROM students
-WHERE id = 1;</code></pre>
+-- Read data from the 'Employees' table
+SELECT * FROM Employees;
 
-    <h2>Conclusion</h2>
-    <p>In this lecture, we have covered the basics of SQL operations, including creating a simple table and performing
-        CRUD operations. These fundamental skills are essential for managing and manipulating databases effectively.</p>
+-- Update a record in the 'Employees' table
+UPDATE Employees
+SET Department = 'Finance'
+WHERE EmployeeID = 1;
+
+-- Delete a record from the 'Employees' table
+DELETE FROM Employees
+WHERE EmployeeID = 1;
+</code></pre>
+
+    <p>This example demonstrates the basic SQL commands used to create a table, insert data into it, retrieve data,
+        update existing records, and delete records from the table. These operations form the foundation of database
+        management using SQL.</p>
+
 </body>
 
 </html>
