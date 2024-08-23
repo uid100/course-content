@@ -34,99 +34,102 @@
 </head>
 
 <body>
-    <div class="hero-unit">
-        <div class="page-header">
-            <h1>
-                SQL Basics
-            </h1>
-        </div>
+    <div class="container mt-5">
+        <h1 class="mb-4">SQL Basics</h1>
+
         <p>
             Structured Query Language (SQL) is a standardized programming language used to manage and manipulate
             relational databases. SQL is used to create, modify, and query databases, as well as to define and enforce
             data integrity constraints.
         </p>
+
+        <h3 class="alert alert-info">Module Objectives:</h3>
+        <ul>
+            <li>Understand the fundamentals of databases and database management systems (DBMS)</li>
+            <li>Learn to design and implement relational databases</li>
+            <li>Gain proficiency in SQL for data manipulation and querying</li>
+            <li>Utilize technology for data collection, storage, analysis and reporting of information.</li>
+        </ul>
+
+        <h3>Some History and Background</h3>
+        <blockquote>
+            <p>
+                Structured Query Language (SQL) is a special-purpose programming language designed for managing data
+                held in
+                a
+                Relational Database Management System (RDBMS). SQL-like languages can also be used in Relational Data
+                Stream
+                Management Systems (RDSMS), or in “not-only SQL” (NoSQL) databases.
+            </p>
+
+            <p>
+                SQL comprises of 3 major sub-languages:
+            </p>
+
+            <ol>
+                <li>Data Definition Language (DDL): to create and modify the structure of the database;</li>
+                <li>Data Manipulation Language (DML): to perform Read, Insert, Update and Delete operations on the data
+                    of
+                    the
+                    database;</li>
+                <li>Data Control Language (DCL): to control the access of the data stored in the database.</li>
+            </ol>
+
+            <p><a href="https://en.wikipedia.org/wiki/SQL">SQL article on Wikipedia</a></p>
+
+            <p>
+                The core DML operations are Create, Read, Update and Delete (CRUD for short) which are performed by the
+                statements INSERT, SELECT, UPDATE and DELETE.
+            </p>
+
+            <p>
+                There is also a (recently added) MERGE statement which can perform all 3 write operations (INSERT,
+                UPDATE,
+                DELETE).
+            </p>
+
+            <p><a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD article on Wikipedia</a></p>
+
+            <p>
+                Many SQL databases are implemented as client/server systems; the term “SQL server” describes such a
+                database.
+            </p>
+
+            <p>
+                At the same time, Microsoft makes a database that is named “SQL Server”. While that database speaks a
+                dialect of SQL, information specific to that database is not on topic in this tag but belongs into the
+                SQL
+                Server documentation.
+            </p>
+        </blockquote>
+        <p style="font-style: italic;">from <a
+                href="https://www.programming-books.io/essential/sql/overview-0fb0a192241a4799a82e124726c1ec54">
+                Essential SQL, Krzysztof Kowalczyk - Essential Programming Books
+            </a></p>
+
+        <hr />
+        <h4>Transact-SQL: The Building Blocks to SQL Server Programming</h4>
+        <p>
+            Gregory A. Larsen<br />
+            2024<br />
+            redgate<br />
+            <a href="https://www.sqlservercentral.com/books/transact-sql-the-building-blocks-to-sql-server-programming-by-gregory-a-larsen"
+                target="_blank">link</a>
+        </p>
+
+        <hr />
+        <h3 class="alert alert-info">ToDo:</h3>
+        <ul>
+            <li><strong>Read:</strong> Transact SQL, Ch.1-2</li>
+            <li><strong>Review:</strong> Chapter and Lecture Notes</li>
+            <li><strong>Install and Configure:</strong> SQL Server**</li>
+            <li><strong>Install and Configure:</strong> Azure Data Studio <span style="font-style: italic;">for Windows
+                    or
+                    MacOS</span></li>
+            <li><strong>Complete:</strong> Lab Exercise: Single Tables Queries</li>
+        </ul>
+        <p style="font-style: italic;">** see module 99.Student Resources for help</p>
     </div>
-
-    <h3 class="alert alert-info">Module Objectives:</h3>
-    <ul>
-        <li>Understand the fundamentals of databases and database management systems (DBMS)</li>
-        <li>Learn to design and implement relational databases</li>
-        <li>Gain proficiency in SQL for data manipulation and querying</li>
-        <li>Utilize technology for data collection, storage, analysis and reporting of information.</li>
-    </ul>
-
-    <h3>Some History and Background</h3>
-    <blockquote>
-        <p>
-            Structured Query Language (SQL) is a special-purpose programming language designed for managing data held in
-            a
-            Relational Database Management System (RDBMS). SQL-like languages can also be used in Relational Data Stream
-            Management Systems (RDSMS), or in “not-only SQL” (NoSQL) databases.
-        </p>
-
-        <p>
-            SQL comprises of 3 major sub-languages:
-        </p>
-
-        <ol>
-            <li>Data Definition Language (DDL): to create and modify the structure of the database;</li>
-            <li>Data Manipulation Language (DML): to perform Read, Insert, Update and Delete operations on the data of
-                the
-                database;</li>
-            <li>Data Control Language (DCL): to control the access of the data stored in the database.</li>
-        </ol>
-
-        <p><a href="https://en.wikipedia.org/wiki/SQL">SQL article on Wikipedia</a></p>
-
-        <p>
-            The core DML operations are Create, Read, Update and Delete (CRUD for short) which are performed by the
-            statements INSERT, SELECT, UPDATE and DELETE.
-        </p>
-
-        <p>
-            There is also a (recently added) MERGE statement which can perform all 3 write operations (INSERT, UPDATE,
-            DELETE).
-        </p>
-
-        <p><a href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete">CRUD article on Wikipedia</a></p>
-
-        <p>
-            Many SQL databases are implemented as client/server systems; the term “SQL server” describes such a
-            database.
-        </p>
-
-        <p>
-            At the same time, Microsoft makes a database that is named “SQL Server”. While that database speaks a
-            dialect of SQL, information specific to that database is not on topic in this tag but belongs into the SQL
-            Server documentation.
-        </p>
-    </blockquote>
-    <p style="font-style: italic;">from <a
-            href="https://www.programming-books.io/essential/sql/overview-0fb0a192241a4799a82e124726c1ec54">
-            Essential SQL, Krzysztof Kowalczyk - Essential Programming Books
-        </a></p>
-
-    <hr />
-    <h4>Transact-SQL: The Building Blocks to SQL Server Programming</h4>
-    <p>
-        Gregory A. Larsen<br />
-        2024<br />
-        redgate<br />
-        <a href="https://www.sqlservercentral.com/books/transact-sql-the-building-blocks-to-sql-server-programming-by-gregory-a-larsen"
-            target="_blank">link</a>
-    </p>
-
-    <hr />
-    <h3 class="alert alert-info">ToDo:</h3>
-    <ul>
-        <li><strong>Read:</strong> Transact SQL, Ch.1-2</li>
-        <li><strong>Review:</strong> Chapter and Lecture Notes</li>
-        <li><strong>Install and Configure:</strong> SQL Server**</li>
-        <li><strong>Install and Configure:</strong> Azure Data Studio <span style="font-style: italic;">for Windows or
-                MacOS</span></li>
-        <li><strong>Complete:</strong> Lab Exercise: Single Tables Queries</li>
-    </ul>
-    <p style="font-style: italic;">** see module 99.Student Resources for help</p>
 </body>
 
 </html>
