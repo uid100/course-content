@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Rules of Database Structure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+        }
+
+        h3 {
+            color: #34495e;
+        }
+
+        ul {
+            margin-bottom: 20px;
+        }
+
+        code {
+            background-color: #ecf0f1;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Basic Rules of Database Structure</h1>
+
+    <h2>1. Normalization</h2>
+    <p><strong>Definition:</strong> Normalization is the process of organizing data in a database to reduce redundancy
+        and improve data integrity. It involves dividing a database into two or more tables and defining relationships
+        between the tables.</p>
+    <h3>Key Concepts:</h3>
+    <ul>
+        <li><strong>First Normal Form (1NF):</strong> Ensure that each table column contains atomic (indivisible)
+            values, and each column has unique values.</li>
+        <li><strong>Second Normal Form (2NF):</strong> Ensure that the table is in 1NF and all non-key attributes are
+            fully functionally dependent on the primary key.</li>
+        <li><strong>Third Normal Form (3NF):</strong> Ensure that the table is in 2NF and all attributes are not only
+            dependent on the primary key but also independent of each other.</li>
+    </ul>
+
+    <h2>2. Primary Key</h2>
+    <p><strong>Definition:</strong> A primary key is a unique identifier for each record in a table. It ensures that
+        each record can be uniquely identified and retrieved.</p>
+    <h3>Rules:</h3>
+    <ul>
+        <li>The primary key must contain unique values.</li>
+        <li>It cannot contain <code>NULL</code> values.</li>
+        <li>There should be only one primary key in a table, though it can consist of multiple columns (composite key).
+        </li>
+    </ul>
+
+    <h2>3. Foreign Key</h2>
+    <p><strong>Definition:</strong> A foreign key is a field (or a collection of fields) in one table that uniquely
+        identifies a row of another table. It establishes a relationship between the two tables.</p>
+    <h3>Rules:</h3>
+    <ul>
+        <li>The foreign key must reference a valid, existing primary key in the related table.</li>
+        <li>Foreign keys ensure referential integrity, meaning that relationships between tables remain consistent.</li>
+    </ul>
+
+    <h2>4. Data Integrity</h2>
+    <p><strong>Definition:</strong> Data integrity ensures the accuracy and consistency of data in a database over its
+        entire lifecycle.</p>
+    <h3>Types:</h3>
+    <ul>
+        <li><strong>Entity Integrity:</strong> Ensures that each table has a unique primary key.</li>
+        <li><strong>Referential Integrity:</strong> Ensures that foreign keys accurately reference the primary key in
+            the related table.</li>
+        <li><strong>Domain Integrity:</strong> Ensures that all data entries are valid, fall within predefined ranges,
+            and adhere to the column data type.</li>
+    </ul>
+
+    <h2>5. Avoiding Redundancy</h2>
+    <p><strong>Definition:</strong> Redundancy refers to the unnecessary duplication of data within a database, which
+        can lead to inconsistencies.</p>
+    <h3>Approach:</h3>
+    <p>Through normalization, databases should minimize redundancy, ensuring that data is stored only once and
+        referenced appropriately.</p>
+
+    <h2>6. Consistent Naming Conventions</h2>
+    <p><strong>Definition:</strong> Consistent naming conventions make the database easier to understand and maintain.
+    </p>
+    <h3>Rules:</h3>
+    <ul>
+        <li>Use clear and descriptive names for tables, columns, and other database objects.</li>
+        <li>Stick to a consistent format (e.g., snake_case or camelCase).</li>
+        <li>Avoid using reserved keywords or special characters in names.</li>
+    </ul>
+
+    <h2>7. Proper Use of Indexes</h2>
+    <p><strong>Definition:</strong> Indexes are used to speed up the retrieval of data from a table.</p>
+    <h3>Rules:</h3>
+    <ul>
+        <li>Indexes should be used on columns that are frequently searched or used in WHERE clauses.</li>
+        <li>Avoid over-indexing, as this can slow down data modification operations like INSERT, UPDATE, and DELETE.
+        </li>
+    </ul>
+
+    <h2>8. Relational Integrity Constraints</h2>
+    <p><strong>Definition:</strong> These are rules that enforce the correct relationships between tables.</p>
+    <h3>Types:</h3>
+    <ul>
+        <li><strong>Primary Key Constraint:</strong> Ensures that the primary key is unique and not null.</li>
+        <li><strong>Foreign Key Constraint:</strong> Enforces referential integrity between tables.</li>
+        <li><strong>Unique Constraint:</strong> Ensures that all values in a column or a set of columns are unique.</li>
+        <li><strong>Check Constraint:</strong> Ensures that the values in a column satisfy a specific condition.</li>
+    </ul>
+
+    <h2>9. Scalability and Performance Considerations</h2>
+    <p><strong>Definition:</strong> The database structure should be designed to handle growth in data volume and the
+        number of users without a loss of performance.</p>
+    <h3>Approach:</h3>
+    <ul>
+        <li>Properly design tables to handle large volumes of data.</li>
+        <li>Use efficient queries and indexing strategies to maintain performance as the database scales.</li>
+    </ul>
+
+    <h2>10. Backup and Recovery</h2>
+    <p><strong>Definition:</strong> Regularly backing up data ensures that it can be recovered in the event of a
+        failure.</p>
+    <h3>Rules:</h3>
+    <ul>
+        <li>Implement a backup strategy that includes regular full, incremental, or differential backups.</li>
+        <li>Ensure that backups are stored securely and can be restored when needed.</li>
+    </ul>
+
+</body>
+
+</html>
