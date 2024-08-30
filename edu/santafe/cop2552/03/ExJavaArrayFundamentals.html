@@ -403,63 +403,64 @@
                             </div> <!-- #mirror -->
 
                             <hr />
-                            <h2><strong>flipVertical<br /></strong></h2>
-                            <p><img style="float: left;"
-                                    src="https://sdccd.instructure.com/courses/2441328/files/146891668/preview"
-                                    alt="Dall-E generated image of a puppy imagining itself upside down." width="320"
-                                    height="320"
-                                    data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146891668"
-                                    data-api-returntype="File" />Flip the image vertically so that it is
-                                upside-down. You
-                                may be tempted to swap Pixel objects, but for this assignment, just swap
-                                <i><strong>colors</strong></i> between Pixel objects. <br /><br />Shown to the
-                                left is
-                                Dall-E's artistic representation.
-                            </p>
-                            <h2><strong>&nbsp;</strong></h2>
-                        </div>
-                        <div class="panel-body">
-                            <p>&nbsp;</p>
+                            <div class="panel-body" id="flip">
+                                <h2>flipVertical</h2>
+                                <p><img style="float: left;"
+                                        src="https://sdccd.instructure.com/courses/2441328/files/146891668/preview"
+                                        alt="Dall-E generated image of a puppy imagining itself upside down."
+                                        width="320" height="320"
+                                        data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146891668"
+                                        data-api-returntype="File" />Flip the image vertically so that it is
+                                    upside-down. You
+                                    may be tempted to swap Pixel objects, but for this assignment, just swap
+                                    <i><strong>colors</strong></i> between Pixel objects. <br /><br />Shown to the
+                                    left is
+                                    Dall-E's artistic representation.
+                                </p>
+                                <h2><strong>&nbsp;</strong></h2>
+                            </div>
+                            <div class="panel-body">
+                                <p>&nbsp;</p>
 
-                            <hr />
-                            <h2><strong>blur</strong></h2>
-                            <p>This is a more challenging filter as you must consider a rectangular window that
-                                will move
-                                throughout the image.</p>
-                            <ol>
-                                <li>
-                                    <p>Take a 2x2 window (starting from the upper-left corner of the image) and
-                                        sum all the
-                                        red, green, and blue values separately for all the pixels in that
-                                        window. In a
-                                        2-by-2 window, there will be a total of 4 pixels for which to sum the
-                                        three separate
-                                        channels.</p>
-                                </li>
-                                <li>
-                                    <p>Take the sum found for each channel of all the pixels in the window and
-                                        divide them
-                                        by 4.</p>
-                                </li>
-                                <li>
-                                    <p>Set the red, green, and blue values of the top-left-most pixel of the
-                                        2-by-2 window
-                                        to be the value calculated from #2.</p>
-                                </li>
-                                <li>
-                                    <p>Perform this on the entire image moving the 2x2 window by one pixel each
-                                        time from
-                                        left-to-right and top-to-bottom where top-most will be row 0 and
-                                        left-most is column
-                                        0.</p>
-                                </li>
-                            </ol>
-                        </div>
-                    </div> <!-- #neg -->
+                                <hr />
+                                <h2><strong>blur</strong></h2>
+                                <p>This is a more challenging filter as you must consider a rectangular window that
+                                    will move
+                                    throughout the image.</p>
+                                <ol>
+                                    <li>
+                                        <p>Take a 2x2 window (starting from the upper-left corner of the image) and
+                                            sum all the
+                                            red, green, and blue values separately for all the pixels in that
+                                            window. In a
+                                            2-by-2 window, there will be a total of 4 pixels for which to sum the
+                                            three separate
+                                            channels.</p>
+                                    </li>
+                                    <li>
+                                        <p>Take the sum found for each channel of all the pixels in the window and
+                                            divide them
+                                            by 4.</p>
+                                    </li>
+                                    <li>
+                                        <p>Set the red, green, and blue values of the top-left-most pixel of the
+                                            2-by-2 window
+                                            to be the value calculated from #2.</p>
+                                    </li>
+                                    <li>
+                                        <p>Perform this on the entire image moving the 2x2 window by one pixel each
+                                            time from
+                                            left-to-right and top-to-bottom where top-most will be row 0 and
+                                            left-most is column
+                                            0.</p>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div> <!-- #neg -->
+                    </div>
                 </div>
             </div>
-        </div>
-    </div> <!-- #tasks -->
+        </div> <!-- #tasks -->
     </div> <!-- #exercise-content -->
 
 </body>
