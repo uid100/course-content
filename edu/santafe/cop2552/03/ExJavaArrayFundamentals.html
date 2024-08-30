@@ -207,10 +207,11 @@
                                         style="font-family: 'courier new', courier;">Pixel</span> objects from a <span
                                         style="font-family: 'courier new', courier;">DigitalPicture</span>.</p>
 
-                                <pre>public static void blackAndWhite(DigitalPicture picture)
-                                     {
-                                         Pixel[][] pixel2D = picture.getPixels2D();
-                                     }
+                                <pre>
+            public static void blackAndWhite(DigitalPicture picture)
+            {
+                Pixel[][] pixel2D = picture.getPixels2D();
+            }
                                 </pre>
                                 <p>In this code, pixel2D is now the two-dimensional array you are working with to be
                                     able to alter the individual pixels of an image. Continue to the next section to see
@@ -251,19 +252,19 @@
                                 </ol>
 
                                 <pre>
-                                    //Obtain a 2D array representation (pixels) of the picture
-                                    Pixel[][] pixel2D = picture.getPixels2D();
-                                    
-                                    //traverse the 2D array using somethine like a traditional nested for loop
-                                    for (int r = 0; r < pixel2D.length; r++)
-                                    {             
-                                        //traverse the rows
-                                        for (int c = 0; c < pixel2D[r].length; c++)
-                                        {  
-                                            //for each row, visit each column
-                                            pixel2D[r][c].setBlue(0);
-                                        }
-                                    }
+            //Obtain a 2D array representation (pixels) of the picture
+            Pixel[][] pixel2D = picture.getPixels2D();
+            
+            //traverse the 2D array using somethine like a traditional nested for loop
+            for (int r = 0; r < pixel2D.length; r++)
+            {             
+                //traverse the rows
+                for (int c = 0; c < pixel2D[r].length; c++)
+                {  
+                    //for each row, visit each column
+                    pixel2D[r][c].setBlue(0);
+                }
+            }
                                 </pre>
                             </div> <!-- #summer0 -->
 
@@ -282,16 +283,16 @@
                                         for-loop setup given from thefirst method.</i>
                                 </p>
                                 <pre>
-                                    //Code that goes inside nested for-loop
-                                    int val = pixel2D[r][c].getRed() + pixel2D[r][c] + ???;
-                                    
-                                    //part 2 - Calculate the average!
-                                    val = val / ???;
-                                    
-                                    //Part 3 - Set the new red, green, value to be the calculated average
-                                    pixel2D[r][c].setRed(val);
-                                    pixel2D[r][c].???
-                                    pixel2D[r][c].???
+            //Code that goes inside nested for-loop
+            int val = pixel2D[r][c].getRed() + pixel2D[r][c] + ???;
+            
+            //part 2 - Calculate the average!
+            val = val / ???;
+            
+            //Part 3 - Set the new red, green, value to be the calculated average
+            pixel2D[r][c].setRed(val);
+            pixel2D[r][c].???
+            pixel2D[r][c].???
                                 </pre>
 
                                 <p>If you want to run the GUI separately from the JUnit test, run the
@@ -340,7 +341,7 @@
                                     shown
                                     for red:
                                 <pre>
-                                        pixel2D[r][c].setRed(255 - pixel2D[r][c].getRed());
+            pixel2D[r][c].setRed(255 - pixel2D[r][c].getRed());
                                     </pre>
 
                                 <p>&nbsp;</p>
