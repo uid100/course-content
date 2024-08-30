@@ -20,12 +20,12 @@
 
         <div class="accordion" id="exercise-content">
             <div class="accordion-item" id="overview">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="ex-overview"
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ex-overview"
                     aria-expanded="false" aria-controls="ex-overview">
                     <h3>Overview</h3>
                 </button>
                 <div id="ex-overview" class="accordion-collapse collapse show" aria-labelledby="overview"
-                    data-bs-parent="exercise-content">
+                    data-bs-parent="#exercise-content">
                     <div class="accordion-body">
                         <div class="markdown markdown-main-panel" dir="ltr">
                             <p>Two-dimensional arrays (2D arrays) are a data structure that can be used to store
@@ -96,12 +96,12 @@
             </div> <!-- #overview -->
 
             <div class="accordion-item" id="setup">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="ex-setup"
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ex-setup"
                     aria-expanded="false" aria-controls="ex-setup">
                     <h3>Setup</h3>
                 </button>
                 <div id="ex-setup" class="accordion-collapse collapse show" aria-labelledby="setup"
-                    data-bs-parent="exercise-content">
+                    data-bs-parent="#exercise-content">
                     <div class="accordion-body">
                         <div id="s1" style="display: block;">
                             <h2>Setting Up Eclipse</h2>
@@ -139,12 +139,12 @@
             </div> <!-- #setup -->
 
             <div class="accordion-item" id="layout">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="ex-layout"
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ex-layout"
                     aria-expanded="false" aria-controls="ex-layout">
                     <h3>Layout</h3>
                 </button>
                 <div id="ex-layout" class="accordion-collapse collapse show" aria-labelledby="layout"
-                    data-bs-parent="exercise-content">
+                    data-bs-parent="#exercise-content">
                     <div class="accordion-body">
                         <div>
                             <p class="panel-body">In this programming assignment you will be working with mainly one
@@ -221,12 +221,12 @@
             </div> <!-- #layout -->
 
             <div class="accordion-item" id="tasks">
-                <button class="accordion-button" type="button" data-bs-toggle="tasks" data-bs-target="ex-tasks"
+                <button class="accordion-button" type="button" data-bs-toggle="tasks" data-bs-target="#ex-tasks"
                     aria-expanded="false" aria-controls="ex-tasks">
                     <h3>Tasks</h3>
                 </button>
                 <div id="ex-tasks" class="accordion-collapse collapse show" aria-labelledby="tasks"
-                    data-bs-parent="exercise-content">
+                    data-bs-parent="#exercise-content">
                     <div class="accordion-body">
                         <div class="panel-body">
                             <div id="summer0" class="panel-body summernote">
@@ -406,53 +406,42 @@
                             <div class="panel-body" id="flip">
                                 <h2>flipVertical</h2>
                                 <p><img style="float: left;"
-                                        src="https://sdccd.instructure.com/courses/2441328/files/146891668/preview"
+                                        src="https://uid100.github.io/course-content/images/puppy_flip.png"
                                         alt="Dall-E generated image of a puppy imagining itself upside down."
-                                        width="320" height="320"
-                                        data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146891668"
-                                        data-api-returntype="File" />Flip the image vertically so that it is
-                                    upside-down. You
-                                    may be tempted to swap Pixel objects, but for this assignment, just swap
-                                    <i><strong>colors</strong></i> between Pixel objects. <br /><br />Shown to the
-                                    left is
-                                    Dall-E's artistic representation.
-                                </p>
-                                <h2><strong>&nbsp;</strong></h2>
-                            </div>
-                            <div class="panel-body">
-                                <p>&nbsp;</p>
+                                        width="320" height="320" />
+                                    Flip the image vertically so that it is upside-down. You may be tempted to swap
+                                    Pixel objects, but for this assignment, just swap <i><strong>colors</strong></i>
+                                    between Pixel objects.</p>
+                                <p>Shown is Dall-E's artistic representation.</p>
+                            </div> <!-- #flip -->
+                            <p>&nbsp;</p>
 
-                                <hr />
-                                <h2><strong>blur</strong></h2>
-                                <p>This is a more challenging filter as you must consider a rectangular window that
-                                    will move
-                                    throughout the image.</p>
+                            <hr />
+                            <div class="panel-body" id="blur">
+                                <p>&nbsp;</p>
+                                <h2>blur</h2>
+                                <p>
+                                    This is a more challenging filter as you must consider a rectangular window that
+                                    will move throughout the image.</p>
                                 <ol>
                                     <li>
-                                        <p>Take a 2x2 window (starting from the upper-left corner of the image) and
-                                            sum all the
-                                            red, green, and blue values separately for all the pixels in that
-                                            window. In a
-                                            2-by-2 window, there will be a total of 4 pixels for which to sum the
-                                            three separate
-                                            channels.</p>
+                                        Take a 2x2 window (starting from the upper-left corner of the image) and sum
+                                        all the red, green, and blue values separately for all the pixels in that
+                                        window. In a 2-by-2 window, there will be a total of 4 pixels for which to
+                                        sum the three separate color channels.
                                     </li>
                                     <li>
-                                        <p>Take the sum found for each channel of all the pixels in the window and
-                                            divide them
-                                            by 4.</p>
+                                        Take the sum found for each channel of all the pixels in the window and
+                                        divide them by 4. (4 pixels in the combined, <em>blurred</em> area.)
                                     </li>
                                     <li>
-                                        <p>Set the red, green, and blue values of the top-left-most pixel of the
-                                            2-by-2 window
-                                            to be the value calculated from #2.</p>
+                                        Set the red, green, and blue values of the top-left-most pixel of the
+                                        2-by-2 window to be the value calculated from #2.
                                     </li>
                                     <li>
-                                        <p>Perform this on the entire image moving the 2x2 window by one pixel each
-                                            time from
-                                            left-to-right and top-to-bottom where top-most will be row 0 and
-                                            left-most is column
-                                            0.</p>
+                                        Perform this on the entire image moving the 2x2 window by one pixel each
+                                        time from left-to-right and top-to-bottom where top-most will be row 0 and
+                                        left-most is column 0.
                                     </li>
                                 </ol>
                             </div>
