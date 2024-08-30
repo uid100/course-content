@@ -343,119 +343,124 @@
                                     </pre>
 
                                 <p>&nbsp;</p>
-
-                                <hr />
-                                <h2><strong>makeSunset</strong></h2>
-                                <div class="panel-body">
-                                    <p>
-                                        This filter can enhance the red levels of a picture while decreasing the green
-                                        and blue values creating a sunset filter effect.</p>
-                                    <ol>
-                                        <li>
-                                            Get the RGB value of the pixel.
-                                        </li>
-                                        <li>
-                                            Calculate new values for red by multiplying the red value of all the
-                                            pixels by the multiplier <i>redIntensity</i> to "enhance" the red (since the
-                                            multiplier is <code> > 1.0 </code>).
-                                        </li>
-                                        <li>
-                                            Calculate new values for green, and blue by multiplying the the current
-                                            values by the multiplier, greenBlueReduction, to decrease their value (since
-                                            the multiplier is <code> > 1.0 </code>).
-                                        </li>
-                                        <li>
-                                            Update the pixel color values with the calculated values from steps 2 &amp;
-                                            3.
-                                        </li>
-                                    </ol>
-                                </div>
-                                <div class="panel-body">
-                                    <hr />
-                                    <h2><strong>flipHorizontal</strong></h2>
-                                    <p><strong><img style="float: left;"
-                                                src="https://uid100.github.io/course-content/images/flip_horiz.png"
-                                                alt="Robotic fish image mirrored from the left side to the right side."
-                                                width="363" height="363" />Flip the image so that instead of facing
-                                            left-to-right
-                                            it should now face right-to-left or vice versa.<br /><br /><em>Hint: Try
-                                                doing this for
-                                                a 4x4 2d array by hand or as a thought experiment. Would your loop that
-                                                iterates
-                                                through the columns go through all of them? (no :D)</em></strong></p>
-                                    <p>&nbsp;</p>
-
-                                    <p>Below are videos that discuss mirroring vs. flipping for a two-dimensional array.
-                                        The
-                                        concepts and algorithms for doing so are applicable to this problem, but not a
-                                        direct
-                                        copy-paste. You may be tempted to swap Pixel objects, but for this assignment,
-                                        just swap
-                                        <i><strong>colors</strong></i> between Pixel objects.<br /><br /><iframe
-                                            title="YouTube video player"
-                                            src="https://www.youtube.com/embed/X_kLsa1Qr04?si=zr62hfSAhMNpcT5H"
-                                            width="560" height="315" allowfullscreen="allowfullscreen"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-                                    </p>
-                                    <hr />
-                                    <h2><strong>flipVertical<br /></strong></h2>
-                                    <p><img style="float: left;"
-                                            src="https://sdccd.instructure.com/courses/2441328/files/146891668/preview"
-                                            alt="Dall-E generated image of a puppy imagining itself upside down."
-                                            width="320" height="320"
-                                            data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146891668"
-                                            data-api-returntype="File" />Flip the image vertically so that it is
-                                        upside-down. You
-                                        may be tempted to swap Pixel objects, but for this assignment, just swap
-                                        <i><strong>colors</strong></i> between Pixel objects. <br /><br />Shown to the
-                                        left is
-                                        Dall-E's artistic representation.
-                                    </p>
-                                    <h2><strong>&nbsp;</strong></h2>
-                                </div>
-                                <div class="panel-body">
-                                    <p>&nbsp;</p>
-
-                                    <hr />
-                                    <h2><strong>blur</strong></h2>
-                                    <p>This is a more challenging filter as you must consider a rectangular window that
-                                        will move
-                                        throughout the image.</p>
-                                    <ol>
-                                        <li>
-                                            <p>Take a 2x2 window (starting from the upper-left corner of the image) and
-                                                sum all the
-                                                red, green, and blue values separately for all the pixels in that
-                                                window. In a
-                                                2-by-2 window, there will be a total of 4 pixels for which to sum the
-                                                three separate
-                                                channels.</p>
-                                        </li>
-                                        <li>
-                                            <p>Take the sum found for each channel of all the pixels in the window and
-                                                divide them
-                                                by 4.</p>
-                                        </li>
-                                        <li>
-                                            <p>Set the red, green, and blue values of the top-left-most pixel of the
-                                                2-by-2 window
-                                                to be the value calculated from #2.</p>
-                                        </li>
-                                        <li>
-                                            <p>Perform this on the entire image moving the 2x2 window by one pixel each
-                                                time from
-                                                left-to-right and top-to-bottom where top-most will be row 0 and
-                                                left-most is column
-                                                0.</p>
-                                        </li>
-                                    </ol>
-                                </div>
                             </div> <!-- #neg -->
+
+                            <hr />
+                            <div class="panel-body id=" sun">
+                                <h2>makeSunset</h2>
+                                <p>
+                                    This filter can enhance the red levels of a picture while decreasing the green
+                                    and blue values creating a sunset filter effect.</p>
+                                <ol>
+                                    <li>
+                                        Get the RGB value of the pixel.
+                                    </li>
+                                    <li>
+                                        Calculate new values for red by multiplying the red value of all the
+                                        pixels by the multiplier <i>redIntensity</i> to "enhance" the red (since the
+                                        multiplier is <code> > 1.0 </code>).
+                                    </li>
+                                    <li>
+                                        Calculate new values for green, and blue by multiplying the the current
+                                        values by the multiplier, greenBlueReduction, to decrease their value (since
+                                        the multiplier is <code> > 1.0 </code>).
+                                    </li>
+                                    <li>
+                                        Update the pixel color values with the calculated values from steps 2 &amp;
+                                        3.
+                                    </li>
+                                </ol>
+
+                            </div> <!-- #sun -->
+
+                            <hr />
+                            <div class="panel-body" id="mirror">
+                                <hr />
+                                <h2><strong>Mirror</strong></h2>
+                                <p><strong><img style="float: left;"
+                                            src="https://uid100.github.io/course-content/images/flip_horiz.png"
+                                            alt="Robotic fish image mirrored from the left side to the right side."
+                                            width="363" height="363" />Flip the image so that instead of facing
+                                        left-to-right it should now face right-to-left or vice
+                                        versa.<br /><br /><em>Hint: Try doing this for a 4x4 2d array by hand or as a
+                                            thought experiment. Would your loop that iterates through the columns go
+                                            through all of them? (no :D)</em></strong></p>
+                                <p>&nbsp;</p>
+
+                                <p>
+                                    Below are links to resources that discuss mirroring vs. flipping for a
+                                    two-dimensional array. The concepts and algorithms for doing so are applicable to
+                                    this problem, but not a direct copy-paste. You may be tempted to swap Pixel objects,
+                                    but for this assignment, just swap <i><strong>colors</strong></i> between Pixel
+                                    objects.<br /><br />
+                                <ul>
+                                    <li>
+                                        <a href="https://www.youtube.com/watch?v=X_kLsa1Qr04>" target="_blank">YouTube
+                                            video on flipping and mirroring</a>
+                                    </li>
+                                </ul>
+                                </p>
+                            </div> <!-- #mirror -->
+
+                            <hr />
+                            <h2><strong>flipVertical<br /></strong></h2>
+                            <p><img style="float: left;"
+                                    src="https://sdccd.instructure.com/courses/2441328/files/146891668/preview"
+                                    alt="Dall-E generated image of a puppy imagining itself upside down." width="320"
+                                    height="320"
+                                    data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146891668"
+                                    data-api-returntype="File" />Flip the image vertically so that it is
+                                upside-down. You
+                                may be tempted to swap Pixel objects, but for this assignment, just swap
+                                <i><strong>colors</strong></i> between Pixel objects. <br /><br />Shown to the
+                                left is
+                                Dall-E's artistic representation.
+                            </p>
+                            <h2><strong>&nbsp;</strong></h2>
                         </div>
-                    </div>
+                        <div class="panel-body">
+                            <p>&nbsp;</p>
+
+                            <hr />
+                            <h2><strong>blur</strong></h2>
+                            <p>This is a more challenging filter as you must consider a rectangular window that
+                                will move
+                                throughout the image.</p>
+                            <ol>
+                                <li>
+                                    <p>Take a 2x2 window (starting from the upper-left corner of the image) and
+                                        sum all the
+                                        red, green, and blue values separately for all the pixels in that
+                                        window. In a
+                                        2-by-2 window, there will be a total of 4 pixels for which to sum the
+                                        three separate
+                                        channels.</p>
+                                </li>
+                                <li>
+                                    <p>Take the sum found for each channel of all the pixels in the window and
+                                        divide them
+                                        by 4.</p>
+                                </li>
+                                <li>
+                                    <p>Set the red, green, and blue values of the top-left-most pixel of the
+                                        2-by-2 window
+                                        to be the value calculated from #2.</p>
+                                </li>
+                                <li>
+                                    <p>Perform this on the entire image moving the 2x2 window by one pixel each
+                                        time from
+                                        left-to-right and top-to-bottom where top-most will be row 0 and
+                                        left-most is column
+                                        0.</p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div> <!-- #neg -->
                 </div>
-            </div> <!-- #tasks -->
-        </div> <!-- #exercise-content -->
+            </div>
+        </div>
+    </div> <!-- #tasks -->
+    </div> <!-- #exercise-content -->
 
 </body>
 
