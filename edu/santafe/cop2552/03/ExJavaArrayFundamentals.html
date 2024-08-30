@@ -230,64 +230,76 @@
                     <div class="accordion-body">
                         <div class="panel-body">
                             <div id="summer0" class="panel-body summernote">
-                                <h2><span><i>Before starting, be sure to download the latest copy of the project starter
-                                            code from
-                                            the repository. </i></span><br /><br /><strong>zeroBlue</strong></h2>
+                                <h2>zeroBlue</h2>
                                 <p>Let's walk through this filter together so you can get used to the setup! For
-                                    zeroBlue, you will
-                                    override the blue value of each pixel in the picture and set them to 0 (minimum
-                                    value).</p>
-                                <ol start="1" type="1">
+                                    zeroBlue, you will override the blue value of each pixel in the picture and set them
+                                    to 0 (minimum value).</p>
+                                <ol>
                                     <li>Recall that the first line of code for each "filter" is to grab the
-                                        two-dimensional
-                                        representation of the pixels contained in the picture.</li>
+                                        two-dimensional representation of the pixels contained in the picture.</li>
                                     <li>Traverse the two-dimensional array using nested for-loops.</li>
                                     <li>Access each position in the two-dimensional array and use the setter for the
-                                        color channel
-                                        of interest. In this case, you are altering the blue color channel so you should
-                                        use
-                                        <strong>setBlue</strong>. The value to set them to should be 0 to remove all the
-                                        blue from
-                                        the picture.
-                                    </li>
+                                        color channel of interest. In this case, you are altering the blue color channel
+                                        so you should use <strong>setBlue</strong>. The value to set them to should be 0
+                                        to remove all the blue from the picture.</li>
                                     <li>Run the PictureTester.java file and click on the zeroBlue button to run your
-                                        method on the
-                                        picture. You should see a pretty major difference unless you have color
-                                        blindness in a
-                                        specific color channel. If that is the case, please try altering another color
-                                        channel such
-                                        as removing the green or removing the red from the picture.</li>
+                                        method on the picture. You should see a pretty major difference unless you have
+                                        color blindness in a specific color channel. If that is the case, please try
+                                        altering another color channel such as removing the green or removing the red
+                                        from the picture.</li>
                                 </ol>
-                                <pre>//Obtain a 2D array representation (pixels) of the picture <br />Pixel[][] pixel2D = picture.getPixels2D();<br /><br />//traverse the 2D array using somethine like a traditional nested for loop<br />for (int r = 0; r &lt; pixel2D.length; r++) <br />{             //traverse the rows<br />	for (int c = 0; c &lt; pixel2D[r].length; c++) <br />        {  //for each row, visit each column<br />		pixel2D[r][c].setBlue(0);<br />	}<br />}</pre>
-                            </div>
-                            <div class="panel-body">
-                                <hr />
-                                <h2><strong>Black and White </strong></h2>
-                                <p><strong><img style="float: left;"
-                                            src="https://sdccd.instructure.com/courses/2441328/files/146892637/preview"
-                                            alt="Field of tulips with normal coloring in the left half and grayscale coloring in the right half."
-                                            width="370" height="370"
-                                            data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146892637"
-                                            data-api-returntype="File" /></strong></p>
-                                <p>When all three of the three channels' red, green, and blue values are equal, we get a
-                                    neutral
-                                    color or <i>grayscale! </i>To apply a grayscale filter on the image, find the
-                                    average value of
-                                    all the channels. Set this value as the value of each channel! I have started it for
-                                    you.
-                                    <i>Remember, the code below goes inside the nested for-loop setup given from the
-                                        first method.
-                                    </i>
+
+                                <pre>
+                                    //Obtain a 2D array representation (pixels) of the picture
+                                    Pixel[][] pixel2D = picture.getPixels2D();
+                                    
+                                    //traverse the 2D array using somethine like a traditional nested for loop
+                                    for (int r = 0; r < pixel2D.length; r++)
+                                    {             
+                                        //traverse the rows
+                                        for (int c = 0; c < pixel2D[r].length; c++)
+                                        {  
+                                            //for each row, visit each column
+                                            pixel2D[r][c].setBlue(0);
+                                        }
+                                    }
+                                </pre>
+                            </div> <!-- #summer0 -->
+
+                            <hr />
+                            <div class="panel-body" id="bw">
+                                <h2>Black and White</h2>
+                                <p>
+                                    <img style="float: left;"
+                                        src="https://uid100.github.io/course-content/images/tulips_to_BW.png" alt="Field of tulips with normal coloring in the left half and grayscale 
+                                                coloring in the right half." width="370" height="370" />
                                 </p>
-                                <pre>//Code that goes inside nested for-loop<br />int val = pixel2D[r][c].getRed() + pixel2D[r][c] + ???;<br /><br />//part 2 - Calculate the average!<br />val = val / ???;<br /><br />//Part 3 - Set the new red, green, value to be the calculated average<br />pixel2D[r][c].setRed(val);<br />pixel2D[r][c].???<br />pixel2D[r][c].???</pre>
+                                <p>When all three of the three channels' red, green, and blue values are equal, we get a
+                                    neutral color or <i>grayscale! </i>To apply a grayscale filter on the image, find
+                                    the average value of all the channels. Set this value as the value of each channel!
+                                    I have started it for you. <i>Remember, the code below goes inside the nested
+                                        for-loop setup given from thefirst method.</i>
+                                </p>
+                                <pre>
+                                    //Code that goes inside nested for-loop
+                                    int val = pixel2D[r][c].getRed() + pixel2D[r][c] + ???;
+                                    
+                                    //part 2 - Calculate the average!
+                                    val = val / ???;
+                                    
+                                    //Part 3 - Set the new red, green, value to be the calculated average
+                                    pixel2D[r][c].setRed(val);
+                                    pixel2D[r][c].???
+                                    pixel2D[r][c].???
+                                </pre>
+
                                 <p>If you want to run the GUI separately from the JUnit test, run the
                                     <strong>PictureTester</strong>.java file instead of the
-                                    <strong>TesterPictureLab</strong>.java
-                                    file. It is sometimes the case that you have multiple runnable Java classes. Once
-                                    you have
-                                    finished a "filter", you can check that it's working visually using this
-                                    PictureTester class.
+                                    <strong>TesterPictureLab</strong>.java file. It is sometimes the case that you have
+                                    multiple runnable Java classes. Once you have finished a "filter", you can check
+                                    that it's working visually using this PictureTester class.
                                 </p>
+
                                 <p>&nbsp;</p>
                                 <p>However, the GUI's buttons must be re-enabled since your filters are initially
                                     missing.</p>
@@ -306,55 +318,55 @@
                                         </ol>
                                     </li>
                                 </ol>
-                            </div>
-                            <div class="panel-body">
-                                <hr />
-                                <h2><strong>negative<br /></strong></h2>
-                                <p><strong><img style="float: left;"
-                                            src="https://sdccd.instructure.com/courses/2441328/files/146892432/preview"
-                                            alt="Sunset image with normal coloring on the left half and negative coloring on the right half."
-                                            width="378" height="378"
-                                            data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146892432"
-                                            data-api-returntype="File" /></strong></p>
-                                <p>A negative of an image is where each color (pixel) is its inverse.&nbsp;<span
-                                        style="font-size: 12pt;"><em>If you have ever worked with film and had them
-                                            developed you
-                                            may have seen them. Check out your parent's photo albums.</em></span> <span
-                                        style="font-size: 12pt;">They might have some there!</span></p>
-                                <p><br />For each pixels, take the value of a particular channel and subtract it from
-                                    255 as shown
-                                    for the red channel below. <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
-                                        style="font-family: 'Courier New';">pixel2D[r][c].setRed(255 -
-                                        pixel2D[r][c].getRed());</span></p>
+                            </div> <!-- #bw -->
+
+                            <hr />
+                            <div class="panel-body" id="neg">
+                                <h2>negative</h2>
+                                <p>
+                                    <img style="float: left;"
+                                        src="https://uid100.github.io/course-content/images/sunset_neg.png"
+                                        alt="Sunset image with normal coloring on the left half and negative coloring on the right half."
+                                        width="378" height="378" />
+                                </p>
+                                <p>
+                                    A negative of an image is where each color (pixel) is its inverse. <em>If you have
+                                        ever worked with film and had them developed you may have seen them. Check out
+                                        your parent's photo albums.</em></span> They might have some there!</p>
+                                <p>&nbsp;</p>
+                                <p>
+                                    For each pixel, take the value of a particular color and subtract it from 255 as
+                                    shown
+                                    for red:
+                                <pre>
+                                        pixel2D[r][c].setRed(255 - pixel2D[r][c].getRed());
+                                    </pre>
 
                                 <p>&nbsp;</p>
+
                                 <hr />
                                 <h2><strong>makeSunset</strong></h2>
                                 <div class="panel-body">
-                                    <p>This filter can enhance the red levels of a picture while decreasing the green
-                                        and blue
-                                        values creating a sunset filter effect.</p>
+                                    <p>
+                                        This filter can enhance the red levels of a picture while decreasing the green
+                                        and blue values creating a sunset filter effect.</p>
                                     <ol>
                                         <li>
-                                            <p>Get the RGB value of the pixel.</p>
+                                            Get the RGB value of the pixel.
                                         </li>
                                         <li>
-                                            <p>Calculate new values for red by multiplying the red value of all the
-                                                pixels by the
-                                                multiplier <i>redIntensity</i> to "enhance" the red (since the
-                                                multiplier is &gt;
-                                                1).</p>
+                                            Calculate new values for red by multiplying the red value of all the
+                                            pixels by the multiplier <i>redIntensity</i> to "enhance" the red (since the
+                                            multiplier is <code> > 1.0 </code>).
                                         </li>
                                         <li>
-                                            <p>Calculate new values for green, and blue by multiplying the the current
-                                                values by the
-                                                multiplier, greenBlueReduction, to decrease their value (since the
-                                                multiplier is
-                                                &lt; 1)</p>
+                                            Calculate new values for green, and blue by multiplying the the current
+                                            values by the multiplier, greenBlueReduction, to decrease their value (since
+                                            the multiplier is <code> > 1.0 </code>).
                                         </li>
                                         <li>
-                                            <p>Update the pixel color values with the calculated values from steps 2
-                                                &amp; 3.</p>
+                                            Update the pixel color values with the calculated values from steps 2 &amp;
+                                            3.
                                         </li>
                                     </ol>
                                 </div>
@@ -362,11 +374,9 @@
                                     <hr />
                                     <h2><strong>flipHorizontal</strong></h2>
                                     <p><strong><img style="float: left;"
-                                                src="https://sdccd.instructure.com/courses/2441328/files/146891128/preview"
+                                                src="https://uid100.github.io/course-content/images/flip_horiz.png"
                                                 alt="Robotic fish image mirrored from the left side to the right side."
-                                                width="363" height="363"
-                                                data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2441328/files/146891128"
-                                                data-api-returntype="File" />Flip the image so that instead of facing
+                                                width="363" height="363" />Flip the image so that instead of facing
                                             left-to-right
                                             it should now face right-to-left or vice versa.<br /><br /><em>Hint: Try
                                                 doing this for
@@ -440,7 +450,7 @@
                                         </li>
                                     </ol>
                                 </div>
-                            </div>
+                            </div> <!-- #neg -->
                         </div>
                     </div>
                 </div>
