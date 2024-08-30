@@ -147,52 +147,44 @@
                     data-bs-parent="#ex-layout">
                     <div class="accordion-body">
                         <div>
-                            <p class="panel-body">Module 2 programming assignment will have you working with mainly one
-                                file,<strong>
-                                    Logic.java</strong>. There are a lot of supporting class files for which there is
-                                documentation if
-                                you get curious, but you are not required to go through them. In short, this project
-                                setup allows you to
-                                work with images as two-dimensional arrays of Pixel objects. You do, however, need to be
-                                able to work
-                                with a Pixel object so the following is a summary of the class so you can work with the
-                                Pixels as if
-                                they are numbers.</p>
-                            <h2 class="panel-body"><strong>TesterPictureLab.java:</strong></h2>
-                            <p class="panel-body">The main runnable for programming assignments. This is what you will
-                                be running to get
+                            <p class="panel-body">In this programming assignment you will be working with mainly one
+                                file, <strong>Logic.java</strong>. There are a lot of supporting class files for which
+                                there is documentation if you get curious, but you are not required to go through them.
+                                In short, this project setup allows you to work with images as two-dimensional arrays of
+                                Pixel objects. You do, however, need to be able to work with a Pixel object so the
+                                following is a summary of the class so you can work with the Pixels as if they are
+                                numbers.</p>
+
+                            <h2>TesterPictureLab.java:</h2>
+                            <p>The main runnable for programming assignments. This is what you will be running to get
                                 the program to launch. This is also where you can change the file you wish to load for
-                                the program.</p>
-                            <h2 class="panel-body"><strong>PictureExplorer.java</strong></h2>
-                            <p class="panel-body">This is the class that handles a lot of the GUI-related functions of
-                                the JFrame you
-                                see pop up! Once you complete your filter, if you want to be able to use the buttons,
-                                you will go into
-                                this file and uncomment the appropriate line of code that will call your filter on a
-                                button click event.
-                            </p>
-                            <h2 class="panel-body"><strong>Pixel.java</strong>:</h2>
-                            <p class="panel-body">A pixel is the smallest unit of a display, in this case, of a picture.
-                                A picture is
-                                made up of hundreds, thousands, or millions of pixels to make up the entire image. For
-                                example, a
-                                <i>4K</i> image with a dimension of 3840 x 2160 has 8,294,400 pixels.
-                            </p>
+                                the program. No changes to this file should be required.</p>
+
+                            <h2>PictureExplorer.java</h2>
+                            <p>This is the class that handles a lot of the GUI-related functions of the JFrame you see
+                                pop up! Once you complete your filter, if you want to be able to use the buttons, you
+                                will go into this file and uncomment the appropriate line of code that will call your
+                                filter on a button click event. </p>
+
+                            <h2>Pixel.java</h2>
+                            <p>A pixel is the smallest unit of a display, in this case, of a picture. A picture is made
+                                up of hundreds, thousands, or millions of pixels to make up the entire image. For
+                                example, a <i>4K</i> image with a dimension of 3840 x 2160 has 8,294,400 pixels. </p>
                             <ul>
                                 <li>
                                     <p>A pixel has a color made up of the 3 colors red, green, and blue</p>
                                 </li>
                                 <li>
                                     <p>These colors can be retrieved using their corresponding getters: getRed,
-                                        getGreen, getBlue. An
-                                        example is shown below.</p>
-                                    <p>int greenValue = p.getGreen(); //assuming p is a Pixel object</p>
+                                        getGreen, getBlue. An example is shown.<br />
+                                    <pre>int greenValue = p.getGreen(); //assuming p is a Pixel object</pre>
+                                    </p>
                                 </li>
                                 <li>
                                     <p>These color values can also be set using their corresponding setters: setRed,
-                                        setGreen, setBlue.
-                                        An example is shown below.</p>
-                                    <p>p.setGreen(40);</p>
+                                        setGreen, setBlue. For example:<br />
+                                    <pre>p.setGreen(40);</pre>
+                                    </p>
                                 </li>
                                 <li>
                                     <p>The range of values for each color channel, red, green, and blue, is between 0
@@ -201,25 +193,27 @@
                                     <p>0 means no amount of color, and 255 is the maximum amount.</p>
                                 </li>
                             </ul>
-                            <h2 class="panel-body"><strong>Logic.java:</strong></h2>
+
+
+                            <h2>Logic.java:</h2>
                             <div class="panel-body">
                                 <p>This is the file you will mainly edit for this programming assignment. You are
-                                    completing methods
-                                    that work with the two-dimensional array of pixels. Let's discuss the basic setup.
-                                    The picture being
-                                    used is set up in<strong> PictureTester.java</strong> and is not necessarily
-                                    required to understand
-                                    the required traversal and operations in Logic.java. There is one line of code used
-                                    to get the
-                                    two-dimensional array of <span
-                                        style="font-family: 'courier new', courier;">Pixel</span> objects
-                                    from a <span style="font-family: 'courier new', courier;">DigitalPicture</span>.</p>
-                                <pre>public static void blackAndWhite(DigitalPicture picture) <br />{<br />   Pixel[][] pixel2D = picture.getPixels2D();<br /><br />}</pre>
-                                <p>In the code above, pixel2D is now the two-dimensional array you are working with to
-                                    be able to alter
-                                    the individual pixels of an image. Continue to the next section to see how this is
-                                    used in practice.
-                                </p>
+                                    completing methods that work with the two-dimensional array of pixels. Let's discuss
+                                    the basic setup. The picture being used is set up in<strong>
+                                        PictureTester.java</strong> and is not necessarily required to understand the
+                                    required traversal and operations in Logic.java. There is one line of code used to
+                                    get the two-dimensional array of <span
+                                        style="font-family: 'courier new', courier;">Pixel</span> objects from a <span
+                                        style="font-family: 'courier new', courier;">DigitalPicture</span>.</p>
+
+                                <pre>public static void blackAndWhite(DigitalPicture picture)
+                                     {
+                                         Pixel[][] pixel2D = picture.getPixels2D();
+                                     }
+                                </pre>
+                                <p>In this code, pixel2D is now the two-dimensional array you are working with to be
+                                    able to alter the individual pixels of an image. Continue to the next section to see
+                                    how this is used in practice. </p>
                             </div>
                         </div>
                     </div>
