@@ -14,8 +14,8 @@
 
 <body style="background-color: aliceblue;">
     <div id="page" style="margin: 20px;">
-        <h1>Healthcare Information Design</h1>
-        <h2>Objective</h2>
+        <h2>Healthcare Information Design</h2>
+        <h3>Objective</h3>
         <p>
             Consider any aspect of the healthcare industry, from patient care, medical billing, facilities
             management, compliance, or research. The data generated and managed in healthcare is vast, complex, and
@@ -28,8 +28,8 @@
             attributes, and the relationships between them that are essential for effective healthcare information
             management.
         </p>
-        <h2>Instructions</h2>
-        <h3>Part 1. Identify Key Entities, Attributes and Relationships (35 pts)</h3>
+        <h3>Instructions</h3>
+        <h4>Part 1. Identify Key Entities, Attributes and Relationships (35 pts)</h4>
         <p>
             In the context of a database, an <strong>entity</strong> is an object, concept, or thing in the real
             world that can be distinctly identified and stored as a record in a database. Entities are typically
@@ -60,7 +60,7 @@
             Format your response as a list or table, clearly identifying the entities, their attributes and data
             types, and the relationships between them.
         </p>
-        <h3>Part 2. Collaboration (15 pts)</h3>
+        <h4>Part 2. Collaboration (15 pts)</h4>
         <p>
             Review the responses of at least <strong>three of your peers</strong>. Provide constructive feedback on
             their entity identification, attribute definition, and relationship description. Offer suggestions for
@@ -112,34 +112,32 @@
      GenreName          |  VARCHAR(255) |  Name of the music genre.  
      Description        |  TEXT         |  Description of the genre.
 </pre>
-        <p>&nbsp;</p>
-        <pre>
-    <p>Relationships:</p>
-    <ul>
-        <li>
-            Songs → Artists:<br />
-            Each song is associated with one artist (ArtistID is a foreign key in the Songs table
-            pointing to ArtistID in the Artists table). An artist can have multiple songs (One-to-Many
-            relationship
-        </li>
-        <li>
-            Songs → Genres:<br />
-            Each song belongs to one genre (GenreID is a foreign key in the Songs table pointing to
-            GenreID in the Genres table). A genre can have multiple songs (One-to-Many relationship
-        </li>
-        <li>
-            Songs → Recording Companies:<br />
-            Each song is produced by one recording company (RecordingCompanyID is a
-            foreign key in the Songs table pointing to RecordingCompanyID in the RecordingCompanies table). A
-            recording company can produce multiple songs (One-to-Many relationship
-        </li>
-        <li>
-            Artists → Recording Companies:<br />
-            Each artist can be signed to one recording company (RecordingCompanyID is
-            a foreign key in the Artists table pointing to RecordingCompanyID in the RecordingCompanies table). A
-            recording company can have multiple artists (One-to-Many relationship).
-        </li>
-    </ul>
+        <p>Relationships:</p>
+        <ul>
+            <li>
+                Songs → Artists:<br />
+                Each song is associated with one artist (ArtistID is a foreign key in the Songs table
+                pointing to ArtistID in the Artists table). An artist can have multiple songs (One-to-Many
+                relationship
+            </li>
+            <li>
+                Songs → Genres:<br />
+                Each song belongs to one genre (GenreID is a foreign key in the Songs table pointing to
+                GenreID in the Genres table). A genre can have multiple songs (One-to-Many relationship
+            </li>
+            <li>
+                Songs → Recording Companies:<br />
+                Each song is produced by one recording company (RecordingCompanyID is a
+                foreign key in the Songs table pointing to RecordingCompanyID in the RecordingCompanies table). A
+                recording company can produce multiple songs (One-to-Many relationship
+            </li>
+            <li>
+                Artists → Recording Companies:<br />
+                Each artist can be signed to one recording company (RecordingCompanyID is
+                a foreign key in the Artists table pointing to RecordingCompanyID in the RecordingCompanies table). A
+                recording company can have multiple artists (One-to-Many relationship).
+            </li>
+        </ul>
 
     </div> <!-- #page -->
 
