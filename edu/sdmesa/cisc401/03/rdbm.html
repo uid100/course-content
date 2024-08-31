@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relational Database Concepts</title>
+</head>
+
+<body>
+    <h1>Relational Database</h1>
+    <p>A <strong>relational database</strong> is a type of database that stores and provides access to data points that
+        are related to one another. It is based on the relational model, which organizes data into one or more tables
+        (or "relations") of columns and rows, with a unique key identifying each row. Each table represents a different
+        type of entity, such as a person, a product, or an order, and relationships between tables are established
+        through foreign keys.</p>
+
+    <h2>Key Concepts</h2>
+
+    <hr />
+    <h3>Set Theory</h3>
+    <p>Relational databases are grounded in set theory, which is the mathematical study of sets, or collections of
+        distinct objects. In the context of databases, tables can be viewed as sets of rows (or tuples). Operations like
+        selection, projection, and join, which are fundamental to relational databases, are derived from operations on
+        sets in set theory.</p>
+
+    <hr />
+    <h3>Predicate Logic</h3>
+    <p>Predicate logic (or first-order logic) is used to express the conditions that data must satisfy. In a relational
+        database, queries often use predicates to filter data based on certain conditions. For example, a SQL
+        <code>WHERE</code> clause can be seen as applying a logical predicate to select specific rows from a table.
+    </p>
+
+    <hr />
+    <h3>Values</h3>
+    <p>In a relational database, a value is a single piece of data. It corresponds to a cell in a table. For example, in
+        a table representing employees, the value in the "Name" column for a specific employee might be "John Doe."</p>
+
+    <hr />
+    <h3>Tuples</h3>
+    <p>A tuple is a finite ordered list of elements. In the context of a relational database, a tuple is a single row
+        within a table, representing a specific entity or instance of that table’s entity type. For instance, a row in
+        an "Employees" table is a tuple that might consist of values such as an employee ID, name, and job title.</p>
+
+    <hr />
+    <h3>Relations</h3>
+    <p>A relation in a relational database is a set of tuples. Each relation is represented as a table. The relation’s
+        schema defines the structure of the table, including the columns (attributes) and the types of values they can
+        hold. The relational model allows operations like selecting, joining, and aggregating data from one or more
+        relations.</p>
+
+    <hr />
+    <h2>Example</h2>
+    <p>Consider a relational database for a hospital:</p>
+    <ul>
+        <li><strong>Relation (Table)</strong>: <code>Personnel</code></li>
+        <li><strong>Schema</strong>: <code>Personnel(ID, Name, Title, RoleID)</code></li>
+        <li><strong>Tuples (Rows)</strong>: Each row represents an employee with specific values for ID, Name, Title,
+            and RoleID.</li>
+        <li><strong>Values</strong>: For a specific employee, values might be <code>ID=123</code>,
+            <code>Name='John Doe'</code>, <code>Title='Dr.'</code>, <code>RoleID=1</code>.
+        </li>
+    </ul>
+
+    <p>By using set theory, you can perform operations like selecting all doctors, and by using predicate logic, you can
+        apply conditions like "where Title is 'Dr.'". These operations help manage and retrieve data in a relational
+        database efficiently.</p>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is a Schema?</title>
+</head>
+
+<body>
+    <h1>What is a Schema?</h1>
+    <p>A <strong>schema</strong> in the context of databases is a blueprint or structure that defines the organization
+        of data within a database. It specifies how data is stored, the types of data that can be held, the
+        relationships between different data entities, and the rules for how the data can be manipulated.</p>
+
+    <h2>Key Aspects of a Schema</h2>
+
+    <h3>Tables</h3>
+    <p>A schema defines the tables within a database. Each table represents a specific entity (e.g., employees,
+        products) and consists of columns and rows.</p>
+
+    <h3>Columns (Attributes)</h3>
+    <p>Within each table, a schema defines the columns, also known as attributes. Each column has a name and a data
+        type, which specifies the kind of data that can be stored in that column (e.g., integer, string, date).</p>
+
+    <h3>Relationships</h3>
+    <p>A schema outlines the relationships between tables. For example, it may define foreign keys that link rows in one
+        table to rows in another table, establishing a relationship between those entities (e.g., an order linked to a
+        customer).</p>
+
+    <h3>Constraints</h3>
+    <p>A schema includes rules and constraints that ensure data integrity. Common constraints include primary keys,
+        which uniquely identify each row in a table, and foreign keys, which enforce referential integrity between
+        tables.</p>
+
+    <h3>Indexes</h3>
+    <p>The schema may also define indexes, which are structures that improve the speed of data retrieval operations by
+        providing quick access to rows in a table.</p>
+
+    <h3>Views</h3>
+    <p>A schema can include views, which are virtual tables created by querying data from one or more tables. Views do
+        not store data themselves but provide a way to present data in a specific format or subset.</p>
+
+    <h2>Example</h2>
+    <p>Consider a database schema for a hospital:</p>
+    <ul>
+        <li><strong>Tables</strong>: <code>Patients</code>, <code>Doctors</code>, <code>Appointments</code></li>
+        <li><strong>Columns</strong>:</li>
+        <ul>
+            <li><code>Patients</code>: <code>PatientID</code>, <code>Name</code>, <code>DateOfBirth</code>,
+                <code>Address</code></li>
+            <li><code>Doctors</code>: <code>DoctorID</code>, <code>Name</code>, <code>Specialty</code></li>
+            <li><code>Appointments</code>: <code>AppointmentID</code>, <code>PatientID</code>, <code>DoctorID</code>,
+                <code>AppointmentDate</code></li>
+        </ul>
+        <li><strong>Relationships</strong>: The <code>Appointments</code> table has foreign keys <code>PatientID</code>
+            and <code>DoctorID</code> that link to the <code>Patients</code> and <code>Doctors</code> tables,
+            respectively.</li>
+    </ul>
+
+    <p>The schema serves as the framework that defines how all these components fit together to manage the hospital’s
+        data effectively.</p>
+</body>
+
+</html>

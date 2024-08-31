@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client-Server Architecture</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/course-content/scss/styles.css" rel="stylesheet">
+</head>
+
+<body style="background-color: aliceblue;">
+    <div id="page" style="margin: 20px;">
+        <h1>Database Architecture: </h1>
+        <p>
+            Database architecture refers to the design and structure of a database system. It includes the overall
+            layout
+            of the database, the relationships between its components, and the principles that govern its operation.
+        </p>
+        <div id="concepts" class="accordion">
+            <h3>Key Concepts</h3>
+            <div id="rdbms" class="accordion-item">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#rdbms-info"
+                    aria-expanded="false" aria-controls="rdbms-info">
+                    <h3>Relational Database Management System (RDBMS):</h3>
+                </button>
+                <div id="rdbms-info" class="accordion-collapse collapse show" aria-labelledby="rdbms"
+                    data-bs-parent="#concepts" style="margin:20px;">
+                    <p>
+                        A Relational Database Management System (RDBMS) is a software system that provides access to a
+                        relational database. It was conceptualized by Edgar F. Codd in 1970, based on set theory and
+                        first-order predicate logic.
+                    </p>
+                    <p>
+                        <strong>Set theory</strong> is the mathematical study of sets, or collections of distinct
+                        objects.
+                        In the context of databases, tables can be viewed as sets of rows (or tuples).
+                    </p>
+                    <p>
+                        <strong>Predicate logic</strong> (or first-order logic) is used to express the conditions that
+                        data
+                        must satisfy. Predicate logic is most easily seen in the WHERE clause of a SQL query, where
+                        conditions are applied to filter data.
+                    </p>
+                    <p>
+                        An RDBMS such as SQL Server or MySQL is a database management system that is based on the
+                        relational
+                        model, which is based on set theory and predicate logic. The relational model organizes data
+                        into
+                        tables of rows and columns, with a unique key identifying each row. This model is widely used in
+                        modern database systems.
+                    </p>
+                    <p>
+                        The relational model is based on the concept of relations, which are sets of tuples. Each tuple
+                        represents a
+                        single row in a table, with each column in the table representing a different attribute. The
+                        relational
+                        model
+                        allows for complex queries and operations on the data, such as joining tables together or
+                        filtering
+                        rows
+                        based
+                        on certain criteria.
+                    </p>
+                    <p>
+                        The database engine of an RDBMS is responsible for managing the data stored in the database. It
+                        handles
+                        the
+                        heavy lifting of storing, retrieving, and updating data, as well as enforcing constraints and
+                        ensuring
+                        data
+                        integrity. It is a highly efficient and reliable system that shields the user from the
+                        complexities
+                        of
+                        data
+                        storage and retrieval.
+                    </p>
+                    <p>
+                        When we interact with a database, we typically use a database client, such as a command-line
+                        interface
+                        or a
+                        graphical user interface. This client communicates with the database engine to send queries and
+                        receive
+                        results.
+                    </p>
+                </div> <!-- #rdbms-info -->
+            </div> <!-- #rdbms -->
+
+            <div id="client-server-architecture" class="accordion-item">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#client-server-info" aria-expanded="false" aria-controls="client-server">
+                    <h3>Client-Server Architecture: </h3>
+                </button>
+                <div id="client-server-info" class="accordion-collapse collapse show" aria-labelledby="client-server"
+                    data-bs-parent="#concepts" style="margin:20px;">
+                    <p>
+                        In the realm of computing, the client-server architecture plays a pivotal role. Imagine placing
+                        a
+                        food
+                        delivery order via an app: your smartphone (the client) interacts with the restaurant's computer
+                        (the
+                        server). This interaction exemplifies the essence of client-server architecture.
+                    </p>
+                    <p>
+                        So, what exactly is client-server architecture? It's a system where clients (devices like your
+                        smartphone or
+                        computer) request services or resources from servers (systems that provide those services).
+                        These
+                        servers
+                        handle requests and respond with the necessary data, creating dynamic and effective
+                        interactions.
+                    </p>
+                    <div id="server-definition"
+                        style="border: 1px solid #ccc; padding: 10px; margin-top: 20px; width: 50%; margin-left:auto; margin-right: auto;">
+                        <h4 style="font-style: italic;">What is a Server?</h4>
+                        <p>A <strong>server</strong> is any <em>service</em> or entity which will deliver a predictable
+                            response
+                            to
+                            a
+                            well-formed request</p>
+                    </div> <!-- #server-definition -->
+
+                    <h2>Components of Client-Server Model:</h2>
+                    <p>
+                        The client-server model enables seamless resource sharing and communication across networks,
+                        including
+                        the
+                        Internet. It's the backbone of various online services, from websites to email servers.
+                    </p>
+                    <p>
+                        In the context of databases, the client-server model is particularly relevant. Modern database
+                        architectures
+                        often adopt this model, dividing functions between client-side and server-side components. For
+                        instance,
+                        the
+                        database server hosts the DBMS (Database Management System) and the actual database, managing
+                        data
+                        storage
+                        and
+                        queries.
+                    </p>
+                    <p>
+                        Whether you're building web applications, managing data, or handling transactions, understanding
+                        client-server architecture is essential.
+                    </p>
+                </div> <!-- #client-server-info -->
+            </div> <!-- #client-server-architecture -->
+
+            <div id="entities" class="accordion-item">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#entities-info"
+                    aria-expanded="false" aria-controls="entities-info">
+                    <h3>Entities:</h3>
+                </button>
+                <div id="entities-info" class="accordion-collapse collapse show" aria-labelledby="entities"
+                    data-bs-parent="#concepts" style="margin:20px;">
+                    <h3>Understanding Entities in a Database</h3>
+
+                    <p>In the context of a database, an <strong>entity</strong> is an object, concept, or thing in the
+                        real world that can be distinctly identified and stored as a record in a database. Entities are
+                        typically represented by tables in a relational database, where each row in the table
+                        corresponds to a specific instance of the entity.</p>
+
+                    <h4>Key Characteristics of an Entity:</h4>
+
+                    <ul>
+                        <li><strong>Distinct Identity</strong>: Each entity must have a distinct identity, allowing it
+                            to
+                            be uniquely identified.</li>
+                        <li><strong>Attributes</strong>: Entities have attributes, which are properties or
+                            characteristics
+                            of the entity.</li>
+                        <li><strong>Instance</strong>: An instance of an entity is a specific, individual example of
+                            that entity.</li>
+                        <li><strong>Relationships</strong>: Entities often have relationships with other entities,
+                            defining how they are connected.</li>
+
+                    </ul>
+
+
+                    <h4>Example:</h4>
+                    <p>Consider a database for an e-commerce platform:</p>
+
+                    <ul>
+                        <li><strong>Entity</strong>: <code>Product</code>
+                            <ul>
+                                <li><strong>Attributes</strong>: <code>ProductID</code>, <code>Name</code>,
+                                    <code>Description</code>, <code>Price</code>, <code>StockQuantity</code>
+                                </li>
+                                <li><strong>Instance</strong>: A specific product in the database, such as a laptop with
+                                    <code>ProductID=101</code>, <code>Name='Laptop'</code>,
+                                    <code>Description='15-inch display, 8GB RAM'</code>, <code>Price=799.99</code>,
+                                    <code>StockQuantity=25</code>.
+                                </li>
+                            </ul>
+                        </li>
+                        <li><strong>Entity</strong>: <code>Customer</code>
+                            <ul>
+                                <li><strong>Attributes</strong>: <code>CustomerID</code>, <code>Name</code>,
+                                    <code>Email</code>, <code>PhoneNumber</code>
+                                </li>
+                                <li><strong>Instance</strong>: A specific customer in the database, such as
+                                    <code>CustomerID=1</code>, <code>Name='Jane Doe'</code>,
+                                    <code>Email='jane.doe@example.com'</code>, <code>PhoneNumber='555-1234'</code>.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <p>In this context, "Product" and "Customer" are entities because they represent objects in the real
+                        world that the database needs to track, each with their own set of attributes and relationships
+                        to other entities.</p>
+
+                </div> <!-- #rdbms-info -->
+            </div> <!-- #entities -->
+
+
+        </div> <!-- #concepts -->
+
+        <h3 class="alert alert-info">ToDo:</h3>
+        <ul>
+            <li><strong>Read:</strong> Database Design, Ch.1-3</li>
+            <li><strong>Review:</strong> Lecture Notes and Module Content</li>
+            <li><strong>Contribute:</strong> Data Design Discussion</li>
+        </ul>
+    </div> <!-- #page -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
