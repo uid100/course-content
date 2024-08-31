@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Data Design</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/course-content/scss/styles.css" rel="stylesheet">
+</head>
+
+<body style="background-color: aliceblue;">
+    <div id="page" style="margin: 20px;">
+        <h1>Healthcare Information Design</h1>
+        <h2>Objective</h2>
+        <p>
+            Consider any aspect of the healthcare industry, from patient care, medical billing, facilities
+            management, compliance, or research. The data generated and managed in healthcare is vast, complex, and
+            critical to the delivery of quality care. Designing databases to manage this data is a crucial aspect of
+            healthcare information systems.
+        </p>
+        <p>
+            As healthcare professionals, understanding how data is organized, stored, and managed in a healthcare
+            database is crucial. This discussion will help you identify key data entities, their associated fields and
+            attributes, and the relationships between them that are essential for effective healthcare information
+            management.
+        </p>
+        <h2>Instructions</h2>
+        <h3>Part 1. Identify Key Entities, Attributes and Relationships (35 pts)</h3>
+        <p>
+            In the context of a database, an <strong>entity</strong> is an object, concept, or thing in the real
+            world that can be distinctly identified and stored as a record in a database. Entities are typically
+            represented by tables in a relational database, where each row in the table corresponds to a specific
+            instance of the entity.
+        </p>
+        <p>
+            Consider any aspect of healthcare delivery, such as patient care, treatment management, billing, and
+            public health reporting. Identify at least five entities (e.g., Patient, Doctor, Appointment,
+            Medication, Insurance, LabTest) that would be crucial to managing healthcare information in a database.
+        </p>
+        <p>
+            For each entity, define the key <strong>attributes</strong> or fields that are essential for
+            representing and managing the data associated with that entity.
+        </p>
+        <p>
+            Attributes are the specific pieces of information that describe or characterize an entity. For example,
+            the Patient entity might have attributes such as Patient ID, Name, Date of Birth, primary care provider.
+        </p>
+        <p>
+            Finally, identify and describe the <strong>relationships</strong> between these entities. Relationships
+            define how the entities are connected or related to each other in the database. For example, a Patient
+            entity may have a relationship with an Appointment entity, indicating that a patient can have multiple
+            appointments. The Appointment entity may have a relationship with a Doctor entity, indicating that a
+            doctor can have multiple appointments.
+        </p>
+        <p>
+            Format your response as a list or table, clearly identifying the entities, their attributes and data
+            types, and the relationships between them.
+        </p>
+        <h3>Part 2. Collaboration (15 pts)</h3>
+        <p>
+            Review the responses of at least <strong>three of your peers</strong>. Provide constructive feedback on
+            their entity identification, attribute definition, and relationship description. Offer suggestions for
+            improvement or additional insights that could enhance their database design, or where any of your
+            entities or attributes might be related to theirs.
+        </p>
+        <h3>Example</h3>
+        <p>
+            Here is an example of 4 non-healthcare-related entities, attributes, and relationships to help you get
+            started:
+        </p>
+
+        <pre>
+    Songs
+    Attribute Name      |  Data Type    |  Description
+    -----------------------------------------------------
+     SongID             |  INT          |  Unique identifier for each song.
+     Title              |  VARCHAR(255) |  Title of the song.
+     Duration           |  TIME         |  Length of the song.
+     ReleaseDate        |  DATE         |  Date the song was released.
+     ArtistID           |  INT          |  Link to Artists table.
+     GenreID            |  INT          |  Link to Genres table.
+     RecordingCompanyID |  INT          |  Link to RecordingCompanies table.
+</pre>
+        <pre>
+    Artists
+    Attribute Name      |  Data Type    |  Description
+    -----------------------------------------------------
+     ArtistID           |  INT          |  Unique identifier for each artist.    
+     Name               |  VARCHAR(255) |  Name of the artist.
+     BirthDate          |  DATE         |  Date of birth of the artist.
+     Country            |  VARCHAR(255) |  Country of origin.
+     RecordingCompanyID |  INT          |  Link to RecordingCompanies table.
+</pre>
+        <pre>
+    Recording Companies
+    Attribute Name      |  Data Type    |  Description
+    -----------------------------------------------------
+     RecordingCompanyID |  INT          |  Unique identifier for each company.
+     CompanyName        |  VARCHAR(255) |  Name of the recording company.
+     FoundedDate        |  DATE         |  Date the company was founded.
+     Country            |  VARCHAR(255) |  Country where the company is based.
+</pre>
+        <pre>
+    Genres
+    Attribute Name      |  Data Type    |  Description
+    -----------------------------------------------------
+     GenreID            |  INT          |  Unique identifier for each genre.
+     GenreName          |  VARCHAR(255) |  Name of the music genre.  
+     Description        |  TEXT         |  Description of the genre.
+</pre>
+        <p>&nbsp;</p>
+        <pre>
+    <p>Relationships:</p>
+    <ul>
+        <li>
+            Songs → Artists:<br />
+            Each song is associated with one artist (ArtistID is a foreign key in the Songs table
+            pointing to ArtistID in the Artists table). An artist can have multiple songs (One-to-Many
+            relationship
+        </li>
+        <li>
+            Songs → Genres:<br />
+            Each song belongs to one genre (GenreID is a foreign key in the Songs table pointing to
+            GenreID in the Genres table). A genre can have multiple songs (One-to-Many relationship
+        </li>
+        <li>
+            Songs → Recording Companies:<br />
+            Each song is produced by one recording company (RecordingCompanyID is a
+            foreign key in the Songs table pointing to RecordingCompanyID in the RecordingCompanies table). A
+            recording company can produce multiple songs (One-to-Many relationship
+        </li>
+        <li>
+            Artists → Recording Companies:<br />
+            Each artist can be signed to one recording company (RecordingCompanyID is
+            a foreign key in the Artists table pointing to RecordingCompanyID in the RecordingCompanies table). A
+            recording company can have multiple artists (One-to-Many relationship).
+        </li>
+    </ul>
+
+    </div> <!-- #page -->
+
+</body>
+
+</html>
