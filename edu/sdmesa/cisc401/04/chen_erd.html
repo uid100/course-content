@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chen ERD</title>
+</head>
+
+<body>
+    <h1>Chen ERD</h1>
+    <p>A <strong>Chen ERD</strong> refers to an Entity-Relationship Diagram (ERD) style that follows the methodology
+        proposed by Peter Chen in 1976. It is one of the earliest and most widely used models for ERDs. Chen's ERD
+        notation is used to visually represent the relationships between data entities in a database.</p>
+
+    <h2>Key Elements in Chen's ERD:</h2>
+    <ul>
+        <li><strong>Entities</strong>:
+            <ul>
+                <li>Represented as rectangles.</li>
+                <li>These are objects or things in the system that have a distinct existence (e.g., <em>Person</em>,
+                    <em>Department</em>).</li>
+            </ul>
+        </li>
+        <li><strong>Attributes</strong>:
+            <ul>
+                <li>Represented as ovals and connected to their entity with lines.</li>
+                <li>They describe properties or characteristics of an entity (e.g., <em>Name</em>, <em>Age</em>,
+                    <em>Salary</em>).</li>
+            </ul>
+        </li>
+        <li><strong>Relationships</strong>:
+            <ul>
+                <li>Represented as diamonds.</li>
+                <li>Describe how two or more entities are related (e.g., <em>Works in</em>, <em>Manages</em>).</li>
+                <li>Can show cardinality (e.g., one-to-many, many-to-many).</li>
+            </ul>
+        </li>
+        <li><strong>Primary Key</strong>:
+            <ul>
+                <li>The unique identifier for an entity, often underlined in the entity's attribute list.</li>
+            </ul>
+        </li>
+        <li><strong>Cardinality</strong>:
+            <ul>
+                <li>Expressed as symbols near the entities (e.g., "1" for one-to-one, "M" for many).</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h3>Example:</h3>
+    <p>In a simple Chen ERD, if you have an entity <strong>Doctor</strong> related to another entity
+        <strong>Hospital</strong> through a relationship <strong>Works At</strong>, it would look like this:</p>
+    <ul>
+        <li><strong>Doctor</strong> (Entity) ⟶ <strong>Works At</strong> (Relationship) ⟶ <strong>Hospital</strong>
+            (Entity)</li>
+        <li>Attributes like <em>DoctorID</em>, <em>DoctorName</em>, etc., are represented as ovals around the
+            <strong>Doctor</strong> entity. Similarly, <em>HospitalName</em>, <em>Location</em>, etc., would be
+            attributes of <strong>Hospital</strong>.</li>
+    </ul>
+
+    <p>Chen’s ERD notation is particularly detailed and often used in academic contexts due to its ability to clearly
+        express complex relationships.</p>
+</body>
+
+</html>
