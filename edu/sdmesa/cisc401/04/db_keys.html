@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primary Keys, Foreign Keys, and Relationships</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        h2 {
+            color: #2F4F4F;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 5px;
+            border-radius: 4px;
+        }
+
+        .key {
+            font-weight: bold;
+            color: #2e8b57;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Primary Keys, Foreign Keys, and Relationships</h2>
+
+    <h3><span class="key">Primary Key</span></h3>
+    <p>A <code>Primary Key</code> is a unique identifier for each record in a database table. It must contain unique
+        values and cannot be NULL. It ensures that each row in the table can be uniquely identified. Typically, primary
+        keys are used in queries to retrieve or manipulate specific records.</p>
+    <ul>
+        <li>There can be only one primary key per table.</li>
+        <li>It can consist of a single column or multiple columns (composite key).</li>
+    </ul>
+    <p>Example:</p>
+    <pre>
+        <code>
+        CREATE TABLE Patients (
+            PatientID INT PRIMARY KEY,
+            FirstName NVARCHAR(50),
+            LastName NVARCHAR(50)
+        );
+        </code>
+    </pre>
+
+    <h3><span class="key">Foreign Key</span></h3>
+    <p>A <code>Foreign Key</code> is a field (or collection of fields) in one table that uniquely identifies a row in
+        another table. It is a way to establish a link between the data in two tables. The table containing the foreign
+        key is referred to as the "child" table, while the table with the primary key is the "parent" table.</p>
+    <ul>
+        <li>Foreign keys can have duplicate values.</li>
+        <li>They enforce referential integrity, ensuring that data is consistent across tables.</li>
+    </ul>
+    <p>Example:</p>
+    <pre>
+        <code>
+        CREATE TABLE Appointments (
+            AppointmentID INT PRIMARY KEY,
+            PatientID INT,
+            AppointmentDate DATETIME,
+            FOREIGN KEY (PatientID) REFERENCES Patients(PatientID)
+        );
+        </code>
+    </pre>
+
+    <h3><span class="key">Relationships</span></h3>
+    <p><code>Relationships</code> define how tables interact with each other through primary and foreign keys. The main
+        types of relationships are:</p>
+    <ul>
+        <li><b>One-to-One</b>: A record in one table corresponds to a single record in another table.</li>
+        <li><b>One-to-Many</b>: A record in one table can relate to multiple records in another table (the most common
+            relationship).</li>
+        <li><b>Many-to-Many</b>: Multiple records in one table relate to multiple records in another table. This usually
+            requires a junction table.</li>
+    </ul>
+    <p>Example (One-to-Many relationship):</p>
+    <pre>
+        <code>
+        CREATE TABLE Doctors (
+            DoctorID INT PRIMARY KEY,
+            DoctorName NVARCHAR(50)
+        );
+
+        CREATE TABLE Patients (
+            PatientID INT PRIMARY KEY,
+            DoctorID INT,
+            FirstName NVARCHAR(50),
+            LastName NVARCHAR(50),
+            FOREIGN KEY (DoctorID) REFERENCES Doctors(DoctorID)
+        );
+        </code>
+    </pre>
+</body>
+
+</html>
