@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steps to Create Relational Database Tables from ERD</title>
+</head>
+
+<body>
+
+    <h1>Steps to Create Relational Database Tables from Chen Format Entity Relationship Diagrams</h1>
+
+    <ol>
+        <li>
+            <h2>Identify Entities</h2>
+            <p>Entities in a Chen ERD are represented as rectangles. Each entity will become a table in the relational
+                database.</p>
+            <p><strong>Entity → Table</strong>: For each entity, create a table. The table will have columns for each
+                attribute of the entity, with one of the attributes typically serving as the <strong>primary
+                    key</strong> (PK).</p>
+            <pre><code>CREATE TABLE Person (
+    ID INT PRIMARY KEY,
+    Name VARCHAR(100),
+    DOB DATE
+);</code></pre>
+        </li>
+
+        <li>
+            <h2>Define Attributes</h2>
+            <p>Attributes of entities are shown as ovals in the Chen diagram. Each attribute will become a column in the
+                corresponding table.</p>
+            <p><strong>Attributes → Columns</strong>: For each attribute, create a column in the corresponding entity
+                table. Define appropriate data types (e.g., <code>INT</code>, <code>VARCHAR</code>, <code>DATE</code>,
+                etc.) based on the attribute's nature.</p>
+            <p><strong>Multi-valued Attributes</strong>: If an attribute can have multiple values (represented by double
+                ovals), you may need to create a separate table for that attribute with a foreign key reference to the
+                original table.</p>
+            <pre><code>CREATE TABLE PhoneNumbers (
+    PersonID INT,
+    PhoneNumber VARCHAR(20),
+    FOREIGN KEY (PersonID) REFERENCES Person(ID)
+);</code></pre>
+        </li>
+
+        <li>
+            <h2>Define Relationships</h2>
+            <p>Relationships in the Chen diagram are represented as diamonds. These indicate associations between two or
+                more entities. In a relational database, relationships are implemented using <strong>foreign
+                    keys</strong>.</p>
+
+            <h3>a. One-to-One (1:1) Relationship</h3>
+            <p>Add a foreign key from one entity to the other. Optionally, both tables can reference each other if
+                needed.</p>
+            <pre><code>CREATE TABLE Passport (
+    PassportID INT PRIMARY KEY,
+    PersonID INT,
+    FOREIGN KEY (PersonID) REFERENCES Person(ID)
+);</code></pre>
+
+            <h3>b. One-to-Many (1:N) Relationship</h3>
+            <p>Add a foreign key from the "many" side (child table) to the "one" side (parent table).</p>
+            <pre><code>CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY,
+    CustomerID INT,
+    OrderDate DATE,
+    FOREIGN KEY (CustomerID) REFERENCES Customer(CustomerID)
+);</code></pre>
+
+            <h3>c. Many-to-Many (M:N) Relationship</h3>
+            <p>Create a <strong>junction (bridge) table</strong> that includes foreign keys from both entities involved
+                in the relationship. The junction table handles the many-to-many relationship.</p>
+            <pre><code>CREATE TABLE StudentCourse (
+    StudentID INT,
+    CourseID INT,
+    PRIMARY KEY (StudentID, CourseID),
+    FOREIGN KEY (StudentID) REFERENCES Student(StudentID),
+    FOREIGN KEY (CourseID) REFERENCES Course(CourseID)
+);</code></pre>
+        </li>
+
+        <li>
+            <h2>Handle Weak Entities</h2>
+            <p>Weak entities do not have their own primary key and depend on a strong (regular) entity. In Chen
+                notation, they are represented with a double rectangle.</p>
+            <p>Create a table for the weak entity and use a composite key involving the primary key of the related
+                strong entity and any attributes of the weak entity.</p>
+            <pre><code>CREATE TABLE OrderItem (
+    OrderID INT,
+    ItemID INT,
+    Quantity INT,
+    PRIMARY KEY (OrderID, ItemID),
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID)
+);</code></pre>
+        </li>
+
+        <li>
+            <h2>Specify Keys and Constraints</h2>
+            <ul>
+                <li><strong>Primary Keys (PK)</strong>: Identify the primary key for each table based on the unique
+                    identifier of the entity in the ERD.</li>
+                <li><strong>Foreign Keys (FK)</strong>: Define foreign key constraints for relationships between
+                    entities.</li>
+                <li><strong>Unique Constraints</strong>: Apply where needed for attributes that must be unique (e.g.,
+                    email, phone number).</li>
+                <li><strong>Not Null</strong>: Ensure that mandatory attributes are marked as <code>NOT NULL</code> in
+                    the database schema.</li>
+            </ul>
+        </li>
+
+        <li>
+            <h2>Normalize Tables</h2>
+            <p>While translating the ERD into relational tables, it’s essential to check if the tables adhere to
+                normalization principles. This involves:</p>
+            <ul>
+                <li>Removing redundant data</li>
+                <li>Ensuring that each table deals with a single entity or concept</li>
+                <li>Eliminating partial and transitive dependencies</li>
+            </ul>
+        </li>
+
+        <li>
+            <h2>Create Additional Indexes</h2>
+            <p>Once tables and relationships are defined, create indexes for attributes that are frequently queried,
+                such as foreign keys or any columns used in <code>JOIN</code> operations.</p>
+        </li>
+
+        <li>
+            <h2>Generate SQL Schema</h2>
+            <p>After mapping entities, attributes, and relationships, write the SQL <code>CREATE TABLE</code> statements
+                to implement the structure in the relational database.</p>
+        </li>
+    </ol>
+
+</body>
+
+</html>
