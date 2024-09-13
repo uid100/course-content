@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Overview</h2>
+    <p>An <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/ArrayList.html">ArrayList</a>
+        is like an array whose size can grow or shrink as needed, unlike an array whose size is fixed.</p>
+    <h2>Use Cases</h2>
+    <p>ArrayLists are useful when you don't know how many items will need to be stored in an array, and can be used
+        anywhere that an array might be used. Like arrays, ArrayLists can only hold one type of data.</p>
+    <h2>Java Arraylist Class</h2>
+    <h3>To use an ArrayList:</h3>
+    <div
+        style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+        <pre style="margin: 0; line-height: 125%;"><span style="color: #008800;">import</span> <span style="color: #0e84b5;">java.util.ArrayList</span><span style="color: #333333;">;</span>
+</pre>
+    </div>
+    <h3>To declare and instantiate an ArrayList:</h3>
+    <p>ArrayLists can hold any type; just specify the type when declaring and instantiating the ArrayList</p>
+    <p>To create an ArrayList of type String:</p>
+    <div
+        style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+        <pre style="margin: 0; line-height: 125%;">ArrayList<span style="color: #333333;">&lt;</span>String<span style="color: #333333;">&gt;</span> myArrayList <span style="color: #333333;">=</span> <span style="color: #008800;">new</span> ArrayList<span style="color: #333333;">&lt;</span>String<span style="color: #333333;">&gt;();</span>
+</pre>
+    </div>
+    <p>To create an ArrayList of type MyClass</p>
+    <div
+        style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+        <pre style="margin: 0; line-height: 125%;">ArrayList<span style="color: #333333;">&lt;</span>MyClass<span style="color: #333333;">&gt;</span> myArrayList <span style="color: #333333;">=</span> <span style="color: #008800;">new</span> ArrayList<span style="color: #333333;">&lt;</span>MyClass<span style="color: #333333;">&gt;();</span>
+</pre>
+    </div>
+    <p>ArrayLists have methods to add, get, set, and remove items. To determine how many items are in an ArrayList, use
+        the size method.</p>
+    <h2>Java Code Example</h2>
+    <div
+        style="background: #ffffff; overflow: auto; width: auto; border: solid gray; border-width: .1em .1em .1em .8em; padding: .2em .6em;">
+        <pre style="margin: 0; line-height: 125%;"><span style="color: #008800;">import</span> <span style="color: #0e84b5;">java.util.ArrayList</span><span style="color: #333333;">;</span>
+<span style="color: #008800;">import</span> <span style="color: #0e84b5;">java.util.Collections</span><span style="color: #333333;">;</span>
+
+<span style="color: #008800;">public</span> <span style="color: #008800;">class</span> <span style="color: #bb0066;">ArrayListExample</span>
+<span style="color: #333333;">{</span>
+   <span style="color: #008800;">public</span> <span style="color: #008800;">static</span> <span style="color: #333399;">void</span> <span style="color: #0066bb;">main</span><span style="color: #333333;">(</span>String<span style="color: #333333;">[]</span> args<span style="color: #333333;">)</span>
+   <span style="color: #333333;">{</span>
+      <span style="color: #888888;">// create an ArrayList to hold Strings</span>
+      ArrayList<span style="color: #333333;">&lt;</span>String<span style="color: #333333;">&gt;</span> computerScientists <span style="color: #333333;">=</span> <span style="color: #008800;">new</span> ArrayList<span style="color: #333333;">&lt;</span>String<span style="color: #333333;">&gt;();</span>
+      
+      <span style="color: #888888;">// add items to the ArrayList</span>
+      computerScientists<span style="color: #333333;">.</span><span style="color: #0000cc;">add</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"Grace Hopper"</span><span style="color: #333333;">);</span>
+      computerScientists<span style="color: #333333;">.</span><span style="color: #0000cc;">add</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"Bill Gates"</span><span style="color: #333333;">);</span>
+      computerScientists<span style="color: #333333;">.</span><span style="color: #0000cc;">add</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"Frances Allen"</span><span style="color: #333333;">);</span>
+      computerScientists<span style="color: #333333;">.</span><span style="color: #0000cc;">add</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"Ada Lovelace"</span><span style="color: #333333;">);</span>
+      computerScientists<span style="color: #333333;">.</span><span style="color: #0000cc;">add</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"Valerie Taylor"</span><span style="color: #333333;">);</span>
+      
+      <span style="color: #888888;">// sort the list</span>
+      <span style="color: #888888;">// If using a custom type, it needs to implement Comparable</span>
+      Collections<span style="color: #333333;">.</span><span style="color: #0000cc;">sort</span><span style="color: #333333;">(</span>computerScientists<span style="color: #333333;">);</span>
+      
+      <span style="color: #888888;">// print the list</span>
+      System<span style="color: #333333;">.</span><span style="color: #0000cc;">out</span><span style="color: #333333;">.</span><span style="color: #0000cc;">println</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"Alphabetized list:"</span><span style="color: #333333;">);</span>
+      <span style="color: #008800;">for</span> <span style="color: #333333;">(</span><span style="color: #333399;">int</span> i <span style="color: #333333;">=</span> <span style="color: #0000dd;">0</span><span style="color: #333333;">;</span> i <span style="color: #333333;">&lt;</span> computerScientists<span style="color: #333333;">.</span><span style="color: #0000cc;">size</span><span style="color: #333333;">();</span> i<span style="color: #333333;">++)</span>
+      <span style="color: #333333;">{</span>
+         <span style="color: #888888;">// use "get" to retrieve the item at location i</span>
+         System<span style="color: #333333;">.</span><span style="color: #0000cc;">out</span><span style="color: #333333;">.</span><span style="color: #0000cc;">println</span><span style="color: #333333;">(</span>computerScientists<span style="color: #333333;">.</span><span style="color: #0000cc;">get</span><span style="color: #333333;">(</span>i<span style="color: #333333;">));</span>
+      <span style="color: #333333;">}</span>
+      
+      <span style="color: #888888;">// remove the middle item (0-indexing)</span>
+      computerScientists<span style="color: #333333;">.</span><span style="color: #0000cc;">remove</span><span style="color: #333333;">(</span><span style="color: #0000dd;">2</span><span style="color: #333333;">);</span>
+      
+      <span style="color: #888888;">// change the first item</span>
+      computerScientists<span style="color: #333333;">.</span><span style="color: #0000cc;">set</span><span style="color: #333333;">(</span><span style="color: #0000dd;">0</span><span style="color: #333333;">,</span> <span style="background-color: #fff0f0;">"Your Professor"</span><span style="color: #333333;">);</span>
+      
+      <span style="color: #888888;">// print the list using a for-each loop</span>
+      System<span style="color: #333333;">.</span><span style="color: #0000cc;">out</span><span style="color: #333333;">.</span><span style="color: #0000cc;">println</span><span style="color: #333333;">(</span><span style="background-color: #fff0f0;">"\nMiddle item removed, first item changed:"</span><span style="color: #333333;">);</span>
+      <span style="color: #008800;">for</span><span style="color: #333333;">(</span>String <span style="color: #997700;">name:</span> computerScientists<span style="color: #333333;">)</span>
+      <span style="color: #333333;">{</span>
+         System<span style="color: #333333;">.</span><span style="color: #0000cc;">out</span><span style="color: #333333;">.</span><span style="color: #0000cc;">println</span><span style="color: #333333;">(</span>name<span style="color: #333333;">);</span>
+      <span style="color: #333333;">}</span>
+   <span style="color: #333333;">}</span>
+<span style="color: #333333;">}</span>
+</pre>
+    </div>
+    <p>&nbsp;</p>
+    <h2 style="margin-left: 1cm; text-indent: -1cm;">More Resources</h2>
+    <p>Banas,&nbsp;D. (n.d.). <em>Java Video Tutorial 11</em>. YouTube. <span
+            class="https://www.youtube.com/watch?v=IEqvmsqjpT0"><a href="https://www.youtube.com/watch?v=IEqvmsqjpT0"
+                target="_blank" rel="noopener">https://www.youtube.com/watch?v=IEqvmsqjpT0</a><br /></span></p>
+    <p><span class="https://www.youtube.com/watch?v=IEqvmsqjpT0">Coding with John. (2021, January 23). <em>Array vs.
+                ArrayList in Java Tutorial - What's The Difference?</em> [Video]. YouTube. <span
+                class="https://www.youtube.com/watch?v=NbYgm0r7u6o"><a
+                    href="https://www.youtube.com/watch?v=NbYgm0r7u6o" target="_blank"
+                    rel="noopener">https://www.youtube.com/watch?v=NbYgm0r7u6o</a>&nbsp;</span> </span></p>
+    <p id="newarea" class=""><em>Java ArrayList</em>. (n.d.). W3Schools Online Web Tutorials. <span
+            class="https://www.w3schools.com/java/java_arraylist.asp"><a
+                href="https://www.w3schools.com/java/java_arraylist.asp" target="_blank"
+                rel="noopener">https://www.w3schools.com/java/java_arraylist.asp</a>&nbsp;</span></p>
+    <p>&nbsp;</p>
+</body>
+
+</html>
