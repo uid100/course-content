@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Database Schema-Based Constraints</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1,
+        h2 {
+            color: #333;
+        }
+
+        ul {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Database Schema-Based Constraints</h1>
+
+    <h2>1. Domain Constraints</h2>
+    <p>
+        Domain constraints define the permissible values for a given column in a database table. These are the
+        restrictions on the type, format, or range of values that can be stored in a column.
+    <ul>
+        <li><strong>Data Type:</strong> Specifies the type of data (e.g., INTEGER, VARCHAR, DATE).</li>
+        <li><strong>Range:</strong> Restricts values to a specific range (e.g., salary must be between 1000 and 5000).
+        </li>
+        <li><strong>Format:</strong> Ensures that values adhere to a particular format (e.g., email addresses must
+            follow an "abc@domain.com" format).</li>
+    </ul>
+    </p>
+
+    <h2>2. Key Constraints</h2>
+    <p>
+        Key constraints ensure the uniqueness and identification of data within a table.
+    <ul>
+        <li><strong>Primary Key:</strong> A column or a combination of columns that uniquely identify a record in the
+            table. It cannot contain NULL values.</li>
+        <li><strong>Unique Key:</strong> Ensures that the values in a column or group of columns are unique across all
+            rows, but unlike the primary key, it can allow NULL values.</li>
+    </ul>
+    </p>
+
+    <h2>3. NULL Constraints</h2>
+    <p>
+        NULL constraints define whether or not a column can accept NULL values.
+    <ul>
+        <li><strong>NOT NULL:</strong> Ensures that a column cannot have a NULL value; a value must be provided for
+            every record.</li>
+        <li><strong>NULL:</strong> Allows a column to have NULL values (though this is often implicit unless constrained
+            otherwise).</li>
+    </ul>
+    </p>
+
+    <h2>4. Entity Integrity</h2>
+    <p>
+        Entity integrity ensures that each row in a table can be uniquely identified. This is typically enforced by a
+        <strong>primary key</strong>, which ensures no two rows can have the same primary key value and that it cannot
+        be NULL.
+    </p>
+
+    <h2>5. Referential Integrity Constraints</h2>
+    <p>
+        Referential integrity constraints are rules that ensure consistency between tables. They typically involve
+        relationships between primary and foreign keys.
+    <ul>
+        <li><strong>Foreign Key:</strong> A column or set of columns in one table that references the primary key in
+            another table. This ensures that a record in one table corresponds to a valid record in the related table.
+        </li>
+        <li><strong>Cascade Delete/Update:</strong> When a record in the parent table is deleted or updated, the related
+            records in the child table may also be automatically deleted or updated.</li>
+    </ul>
+    </p>
+
+</body>
+
+</html>
