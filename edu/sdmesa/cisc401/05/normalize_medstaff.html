@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client-Server Architecture</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/course-content/scss/styles.css" rel="stylesheet">
+</head>
+
+<body style="background-color: aliceblue;">
+    <div id="page" style="margin: 20px;">
+
+        <h1>Normalization - An Example</h1>
+        <p>
+            Let's revisit the MedStaff.sql data base from a prior module.
+        </p>
+
+        <div id="normalization" class="accordion-item">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#denormalized-info"
+                aria-expanded="false" aria-controls="denormalized-info">
+                <h3>Denormalized</h3>
+            </button>
+            <div id="denormalized-info" class="accordion-collapse collapse show" aria-labelledby="denormalized"
+                data-bs-parent="#normalization" style="margin:20px;">
+                <p>
+                    The MedStaff database is a simple example of a denormalized database. The MedStaff table contains
+                    information about medical staff, including their ID, name, specialty, and department. The table is
+                    denormalized because it contains repeating groups of data, such as the department and specialty
+                    columns, which could be separated into their own tables.
+                </p>
+                <p>
+                    Denormalized databases can be easier to query and maintain, but they can also lead to data
+                    inconsistencies and redundancy. By normalizing the MedStaff database, we can reduce redundancy and
+                    improve data integrity.
+                </p>
+                <pre style="border: solid; margin:auto; width:50%;">
+CREATE TABLE MedicalStaff (
+    personnel_id INT PRIMARY KEY,
+    full_name VARCHAR(100) NOT NULL,
+    role_name VARCHAR(50) NOT NULL,
+    specialty_name VARCHAR(100) NULL,
+    hospital_name VARCHAR(100) NOT NULL,
+    show_movie VARCHAR(100) NOT NULL,
+    location VARCHAR(100) NOT NULL
+);
+                </pre>
+            </div> <!-- #validation-info -->
+        </div> <!-- #validation -->
+
+        <div id="1NF" class="accordion-item">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#1NF-info"
+                aria-expanded="false" aria-controls="1NF-info">
+                <h3>1NF</h3>
+            </button>
+            <div id="1NF-info" class="accordion-collapse collapse show" aria-labelledby="1NF"
+                data-bs-parent="#normalization" style="margin:20px;">
+                <p>
+                    The MedStaff database is not in First Normal Form (1NF) because it contains repeating groups of data
+                    in the specialty and department columns. To normalize the database, we need to separate these
+                    repeating groups into their own tables and establish relationships between them.
+                </p>
+                <p>
+                    To transform the MedicalStaff table into First Normal Form (1NF), we need to ensure that each column
+                    contains atomic values, meaning each column holds only a single value and does not contain multiple
+                    pieces of data. In the provided table, the full_name column contains multiple pieces of information
+                    (first name, last name, etc.), so we will split it into separate columns.
+                </p>
+                <pre style="border: solid; margin:auto; width:50%;">
+                    CREATE TABLE MedicalStaff (
+                        personnel_id INT PRIMARY KEY,
+                        first_name VARCHAR(50) NOT NULL,
+                        last_name VARCHAR(50) NOT NULL,
+                        role_name VARCHAR(50) NOT NULL,
+                        specialty_name VARCHAR(100) NULL,
+                        hospital_name VARCHAR(100) NOT NULL,
+                        show_movie VARCHAR(100) NOT NULL,
+                        location VARCHAR(100) NOT NULL
+                    );
+                </pre>
+
+                <p>
+                    The full_name column has been split into first_name and last_name, ensuring that each field contains
+                    only a single piece of information, thus adhering to 1NF.
+                </p>
+                <p>
+                    Now, the table is in First Normal Form because each column contains atomic values, and each row is
+                    uniquely identified by the personnel_id.
+                </p>
+            </div> <!-- #1NF-info -->
+        </div> <!-- #1NF -->
+
+        <div id="2NF" class="accordion-item"></div>
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#2NF-info"
+            aria-expanded="false" aria-controls="2NF-info">
+            <h3>2NF</h3>
+        </button>
+        <div id="2NF-info" class="accordion-collapse collapse show" aria-labelledby="2NF"
+            data-bs-parent="#normalization" style="margin:20px;">
+            <p>
+                To normalize the MedicalStaff table into Second Normal Form (2NF), we need to ensure that:
+            </p>
+            <ol>
+                <li>The table is in First Normal Form (1NF).</li>
+                <li>There are no partial dependencies, meaning all non-key columns must depend on the entire primary
+                    key.</li>
+            </ol>
+            <p>
+                In your current table, the personnel_id is the primary key, but columns like hospital_name, show_movie,
+                and
+                location do not directly depend on the individual personnel_id. Instead, these columns depend on the
+                hospital, meaning that we should separate these into their own table to remove the partial dependencies.
+            </p>
+
+            <h3>Step-by-Step Normalization to 2NF</h3>
+            <ol>
+                <li>Create a new table for hospitals, since information like hospital_name, location, and show_movie
+                    depends on
+                    the hospital, not the personnel.</li>
+                <li>Create a separate table for specialties, as the same specialty may apply to multiple personnel.</li>
+            </ol>
+            <h3>Normalized Tables in 2NF:</h3>
+            <ol>
+                <li>MedicalStaff Table (Personnel Information)
+                    <pre>
+            CREATE TABLE MedicalStaff (
+                personnel_id INT PRIMARY KEY,
+                first_name VARCHAR(50) NOT NULL,
+                last_name VARCHAR(50) NOT NULL,
+                role_name VARCHAR(50) NOT NULL,
+                specialty_id INT NULL,
+                hospital_id INT NOT NULL,
+                FOREIGN KEY (specialty_id) REFERENCES Specialties(specialty_id),
+                FOREIGN KEY (hospital_id) REFERENCES Hospitals(hospital_id)
+            );
+        </pre>
+                </li>
+                <li>Hospitals Table
+                    <pre>
+            CREATE TABLE Hospitals (
+                hospital_id INT PRIMARY KEY,
+                hospital_name VARCHAR(100) NOT NULL,
+                location VARCHAR(100) NOT NULL,
+                show_movie VARCHAR(100) NOT NULL
+            );
+        </pre>
+                </li>
+                <li>Specialties Table
+                    <pre>
+            CREATE TABLE Specialties (
+                specialty_id INT PRIMARY KEY,
+                specialty_name VARCHAR(100) NOT NULL
+            );
+        </pre>
+                </li>
+            </ol>
+            <h3>Explanation</h3>
+            <ol>
+                <li>The MedicalStaff table now focuses only on personnel-specific information, with foreign keys
+                    referencing the
+                    Hospitals and Specialties tables.</li>
+                <li>The Hospitals table holds hospital-specific information like the hospital_name, location, and
+                    show_movie, which were
+                    removed from the MedicalStaff table.</li>
+                <li>The Specialties table holds specialty-specific data. The MedicalStaff table now references
+                    specialty_id to avoid
+                    repeating specialty names across multiple personnel.</li>
+            </ol>
+            <p>
+
+                By splitting the data this way, the table is now in Second Normal Form (2NF), as all non-key columns in
+                the
+                MedicalStaff table depend entirely on the primary key (personnel_id) without any partial dependencies.
+            </p>
+        </div> <!-- #2NF-info -->
+    </div> <!-- #2NF -->
+
+
+    <div id="3NF" class="accordion-item"></div>
+    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#3NF-info"
+        aria-expanded="false" aria-controls="3NF-info">
+        <h3>3NF</h3>
+    </button>
+    <div id="3NF-info" class="accordion-collapse collapse show" aria-labelledby="3NF" data-bs-parent="#normalization"
+        style="margin:20px;">
+
+
+
+        <p>
+            To normalize the MedicalStaff table into Third Normal Form (3NF), we need to ensure that:
+        </p>
+        <ol>
+            <li>The table is in Second Normal Form (2NF).</li>
+            <li>There are no transitive dependencies, meaning all non-key columns depend only on the primary key and not
+                on other non-key columns.</li>
+        </ol>
+        <p>
+            Looking at the tables in 2NF, the Hospitals table contains columns that might have a transitive dependency:
+            show_movie is dependent on hospital_name, rather than directly on the hospital_id. To normalize to 3NF, we
+            need to remove any such dependencies by ensuring that every non-key attribute depends only on the primary
+            key.
+        </p>
+        <h3>Step-by-Step Normalization to 3NF</h3>
+        <ol>
+            <li>Remove the show_movie column from the Hospitals table and create a new table for hospital shows.</li>
+        </ol>
+        <h3>Normalized Tables in 3NF:</h3>
+        <ol>
+            <li>MedicalStaff Table (Personnel Information)<br>
+                This remains the same as in 2NF.
+                <pre>
+                    CREATE TABLE MedicalStaff (
+                        personnel_id INT PRIMARY KEY,
+                        first_name VARCHAR(50) NOT NULL,
+                        last_name VARCHAR(50) NOT NULL,
+                        role_name VARCHAR(50) NOT NULL,
+                        specialty_id INT NULL,
+                        hospital_id INT NOT NULL,
+                        FOREIGN KEY (specialty_id) REFERENCES Specialties(specialty_id),
+                        FOREIGN KEY (hospital_id) REFERENCES Hospitals(hospital_id)
+                    );                    
+        </pre>
+            </li>
+            <li>Hospitals Table (No Transitive Dependencies)<br>
+                The show_movie column has been removed.
+                <pre>
+            CREATE TABLE Hospitals (
+                hospital_id INT PRIMARY KEY,
+                hospital_name VARCHAR(100) NOT NULL,
+                location VARCHAR(100) NOT NULL
+            );
+        </pre>
+            </li>
+            <li>Specialties Table <br>
+                This is also unchanged.
+                <pre>
+                    CREATE TABLE Specialties (
+                        specialty_id INT PRIMARY KEY,
+                        specialty_name VARCHAR(100) NOT NULL
+                    );                    
+                </pre>
+            </li>
+            <li>HospitalShows Table<br>
+                This new table holds the show_movie information.
+                <pre>
+            CREATE TABLE HospitalShows (
+                hospital_id INT PRIMARY KEY,
+                show_movie VARCHAR(100) NOT NULL
+            );
+        </pre>
+            </li>
+        </ol>
+        <h3>Explanation</h3>
+        <ol>
+            <li>The MedicalStaff, Hospitals, and Specialties tables remain largely unchanged from 2NF, as they do not
+                contain any transitive dependencies.</li>
+            <li>The new HospitalShows table removes the transitive dependency from the Hospitals table. Now, the
+                show_movie column is linked directly to the hospital_id in a separate table, ensuring that the only
+                columns in Hospitals are directly related to the hospital itself (i.e., hospital_name and location).
+            </li>
+        </ol>
+        <p>
+            With these changes, the schema is now in Third Normal Form (3NF). Every non-key column is fully dependent on
+            the primary key and there are no transitive dependencies. This reduces redundancy and improves the database
+            structure, ensuring that data is both normalized and efficient to query.
+        </p>
+    </div> <!-- #3NF-info -->
+    </div> <!-- #3NF -->
+    </div> <!-- #page -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
