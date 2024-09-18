@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A lesson on how to use Javadoc comments in Java">
+    <title>Using Javadoc Comments in Java</title>
+</head>
+<body>
+    <header>
+        <h1>Using Javadoc Comments in Java</h1>
+        <p>Javadoc is a tool used for generating API documentation in HTML format from Java source code. It allows developers to explain the purpose and usage of their code clearly. By following a consistent structure, Javadoc comments make code easier to understand and maintain.</p>
+    </header>
+
+    <section>
+        <h2>Why Use Javadoc?</h2>
+        <ul>
+            <li>It helps developers and users understand the purpose and structure of the code.</li>
+            <li>It generates standardized HTML documentation from source code.</li>
+            <li>It makes maintenance easier by allowing detailed, up-to-date information directly within the code.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Basic Structure of Javadoc Comments</h2>
+        <p>Javadoc comments begin with <code>/**</code> and end with <code>*/</code>. Inside, we can add descriptions, tags like <code>@param</code>, <code>@return</code>, <code>@author</code>, and <code>@version</code> to provide additional details about the code.</p>
+        <h3>Example of a Javadoc Comment for a Class:</h3>
+        <pre><code>
+/**
+ * This class represents a simple Calculator.
+ * It can perform basic arithmetic operations like addition and subtraction.
+ * 
+ * @author John Doe
+ * @version 1.0
+ */
+public class Calculator {
+    // Class code here
+}
+        </code></pre>
+
+        <h3>Example of a Javadoc Comment for a Method:</h3>
+        <pre><code>
+/**
+ * Adds two integers and returns the result.
+ *
+ * @param a the first integer
+ * @param b the second integer
+ * @return the sum of the two integers
+ */
+public int add(int a, int b) {
+    return a + b;
+}
+        </code></pre>
+    </section>
+
+    <section>
+        <h2>Important Javadoc Tags</h2>
+        <p>Javadoc provides several tags to include detailed information:</p>
+        <ul>
+            <li><strong>@author:</strong> Specifies the author of the class or method.</li>
+            <li><strong>@version:</strong> Specifies the version of the class or method.</li>
+            <li><strong>@param:</strong> Describes the parameters for a method.</li>
+            <li><strong>@return:</strong> Describes the return type of a method.</li>
+            <li><strong>@throws:</strong> Describes any exceptions thrown by a method.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>When to Use Javadoc</h2>
+        <ul>
+            <li>At the top of every file: Document the file, author, and version.</li>
+            <li>For every class: Document the purpose of the class, author, and version.</li>
+            <li>For every method: Document the purpose, parameters, and return values.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Generating Javadoc Documentation</h2>
+        <p>To generate Javadoc documentation, use the following command in the terminal:</p>
+        <pre><code>javadoc -d doc_directory file.java</code></pre>
+        <p>This will generate HTML documentation in the specified directory. For more details, refer to:</p>
+        <ul>
+            <li><a href="https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html" target="_blank">Oracle Javadoc Tool Guide</a></li>
+            <li><a href="https://www.tutorialspoint.com/java/java_documentation.htm" target="_blank">Tutorials Point: Java Documentation</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>By following these practices, your code will be well-documented and easier to maintain.</p>
+    </footer>
+</body>
+</html>
