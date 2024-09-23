@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Table JOIN</title>
+</head>
+
+<body>
+    <h1>Understanding Table JOINs</h1>
+    <p>
+        In SQL Server, a <strong>table JOIN</strong> is a way to combine data from two or more tables based on a related
+        column between them.
+    </p>
+    <p>
+        This allows us to query information that is spread across multiple tables. Joins are
+        essential when we need to analyze or report on data that is stored separately for efficiency or organization.
+    </p>
+
+    <h2>Types of Joins</h2>
+    <ul>
+        <li><strong>INNER JOIN</strong>: Returns only the rows where there is a match in both tables.</li>
+        <li><strong>OUTER JOINs</strong>
+            <ul>
+
+                <li><strong>LEFT JOIN (or LEFT OUTER JOIN)</strong>: Returns all rows from the left table and the
+                    matching rows
+                    from the right table. If there is no match, NULL values are returned from the right table.</li>
+                <li><strong>RIGHT JOIN (or RIGHT OUTER JOIN)</strong>: Returns all rows from the right table and the
+                    matching
+                    rows from the left table. If there is no match, NULL values are returned from the left table.</li>
+                <li><strong>FULL JOIN (or FULL OUTER JOIN)</strong>: Returns all rows when there is a match in either
+                    left or
+                    right table. If there is no match, NULL values are returned.</li>
+            </ul>
+        </li>
+        <li><strong>CROSS JOIN</strong>: Returns the Cartesian product of the two tables, i.e., all possible
+            combinations of rows from both tables.</li>
+    </ul>
+
+    <h2>When and Why Joins are Useful</h2>
+    <p>
+        In a medical database, information is often stored in different tables to avoid duplication and to make
+        data
+        management more efficient. For example, we might have the following tables:
+    </p>
+    <ul>
+        <li><strong>Patients</strong>: Stores patient details.</li>
+        <li><strong>Doctors</strong>: Stores doctor information.</li>
+        <li><strong>Appointments</strong>: Contains data about appointments between patients and doctors.</li>
+        <li><strong>Billing</strong>: Stores billing information for patient appointments.</li>
+        <li><strong>Insurance</strong>: Contains insurance details for patients.</li>
+    </ul>
+    <p>
+        To get a complete view of a patient's visit, including the doctor they saw, their billing information,
+        and their
+        insurance details, we need to <strong>join</strong> these tables together.
+    </p>
+
+    <h2>Example Use Cases</h2>
+    <ul>
+        <li><strong>INNER JOIN</strong>: When we want to find all appointments where there is matching data for
+            both the
+            patient and doctor.</li>
+        <pre>
+SELECT Patients.Name, Doctors.Name, Appointments.Date
+FROM Patients
+INNER JOIN Appointments ON Patients.PatientID = Appointments.PatientID
+INNER JOIN Doctors ON Appointments.DoctorID = Doctors.DoctorID;
+        </pre>
+
+        <li><strong>LEFT JOIN</strong>: When we want a list of all patients, along with their appointments (if
+            any).
+            Even if a patient has no appointments, they will still appear in the result.</li>
+        <pre>
+SELECT Patients.Name, Appointments.Date
+FROM Patients
+LEFT JOIN Appointments ON Patients.PatientID = Appointments.PatientID;
+        </pre>
+
+        <li><strong>RIGHT JOIN</strong>: When we want to see all doctors, including those who may not have any
+            appointments yet.</li>
+        <pre>
+SELECT Doctors.Name, Appointments.Date
+FROM Doctors
+RIGHT JOIN Appointments ON Doctors.DoctorID = Appointments.DoctorID;
+        </pre>
+    </ul>
+
+    <div style="width: 70%; margin: 0 auto;">
+        <img src="tableJoins.png" alt="Table Joins" style="width: 100%;" alt="types of SQL joins">
+    </div>
+    <h2>Practice Exercise</h2>
+    <p>
+        Consider the following tables:
+    </p>
+    <ul>
+        <li><strong>Students</strong>: Contains student information.</li>
+        <li><strong>Courses</strong>: Contains course details.</li>
+        <li><strong>Enrollments</strong>: Contains data about student enrollments in courses.</li>
+    </ul>
+    <p>
+        Write SQL queries to answer the following questions:
+    </p>
+    <ol>
+        <li>Find the names of all students who are enrolled in the course "CISC 401".</li>
+        <li>Find the names of all students who are not enrolled in any course.</li>
+        <li>Find the names of all courses along with the number of students enrolled in each course.</li>
+    </ol>
+</body>
+
+</html>
