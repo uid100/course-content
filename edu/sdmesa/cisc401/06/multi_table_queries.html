@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced SQL Topics</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="/course-content/scss/styles.css" rel="stylesheet">
+</head>
+
+<body style="background-color: aliceblue;">
+    <div id="page" style="margin: 20px;">
+
+        <h1>Using table JOINs and subqueries</h1>
+        <p>
+            In SQL, data is often stored across multiple related tables, and querying data from these tables
+            simultaneously is essential for complex database operations. Two common techniques to achieve this are
+            <strong>JOIN</strong>s and <strong>subqueries</strong>.
+        </p>
+        <h2 class="alert alert-info">JOINs</h2>
+        <p>
+            A JOIN is a SQL operation that combines rows from two or more tables based on a related column, such as
+            a shared foreign key. There are several types of JOINs, including:
+        </p>
+        <ul>
+            <li><strong>INNER JOIN</strong>: Returns only the rows with matching values in both tables.</li>
+            <li><strong>LEFT JOIN (LEFT OUTER JOIN)</strong>: Returns all rows from the left table and matching rows
+                from
+                the right table; unmatched rows from the right are returned as NULL.</li>
+            <li><strong>RIGHT JOIN (RIGHT OUTER JOIN)</strong>: Returns all rows from the right table and matching rows
+                from
+                the left; unmatched rows from the left are returned as NULL.</li>
+            <li><strong>FULL OUTER JOIN</strong>: Returns all rows from both tables, with NULLs where there are no
+                matches.</li>
+            <li><strong>CROSS JOIN</strong>: Returns the Cartesian product of two tables (all possible combinations of
+                rows).</li>
+        </ul>
+        <p>
+            JOINs are used to retrieve data from multiple tables based on a related column between them. They are
+            essential for querying complex relationships and fetching data that spans multiple tables.
+        </p>
+        <h2 class="alert alert-info">Subqueries</h2>
+        <p>
+            A subquery is a query nested inside another query, often used to filter, aggregate, or calculate data.
+        </p>
+        <p>
+            Subqueries can:
+        </p>
+        <ul>
+            <li>Return a single value (scalar subqueries).</li>
+            <li>Return a list of values (used with IN or EXISTS).</li>
+            <li>Be used in the FROM clause as a derived table.</li>
+        </ul>
+        <p>
+            Subqueries are powerful when you need to:
+        </p>
+        <ul>
+            <li>Compare aggregated data to individual rows.</li>
+            <li>Fetch related data indirectly or with complex conditions.</li>
+        </ul>
+        <p>
+            Both joins and subqueries are fundamental for efficiently querying multi-table relationships, allowing you
+            to
+            retrieve meaningful and relevant data.
+        </p>
+        <h3 class="alert alert-info">ToDo:</h3>
+        <ul>
+            <li><strong>Read:</strong> Transact-SQL (Larsen), Ch.4&5 The Mathematics of SQL</li>
+            <li><strong>Review:</strong> Lecture Notes and Module Content</li>
+            <li><strong>Practice:</strong> SQL queries with JOINs and subqueries</li>
+            <li><strong>Complete:</strong> Exercise: Table JOINs and subqueries</li>
+            <li><strong>Complete:</strong> Quiz 2</li>
+        </ul>
+    </div> <!-- #page -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
