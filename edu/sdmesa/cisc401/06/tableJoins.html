@@ -102,11 +102,57 @@ RIGHT JOIN Appointments ON Doctors.DoctorID = Appointments.DoctorID;
     <p>
         Write SQL queries to answer the following questions:
     </p>
-    <ol>
-        <li>Find the names of all students who are enrolled in the course "CISC 401".</li>
-        <li>Find the names of all students who are not enrolled in any course.</li>
-        <li>Find the names of all courses along with the number of students enrolled in each course.</li>
-    </ol>
+
+    <details>
+        <summary>Find the names of all students who are enrolled in the course "CISC 401"</summary>
+        <p>
+            To find the names of all students enrolled in the course "CISC 401", we need to join the Students and
+            Enrollments tables with the Courses table. The query would look like this:
+        </p>
+        <pre>
+SELECT Students.Name
+FROM Students
+INNER JOIN Enrollments ON Students.StudentID = Enrollments.StudentID
+INNER JOIN Courses ON Enrollments.CourseID = Courses.CourseID
+WHERE Courses.CourseName = 'CISC 401';
+        </pre>
+    </details>
+
+    <details>
+        <summary>Find the names of all students who are not enrolled in any course</summary>
+        <p>
+            To find the names of all students who are not enrolled in any course, we can use a LEFT JOIN between the
+            Students and Enrollments tables and filter out the rows where the EnrollmentID is NULL (indicating no
+            enrollment):
+        </p>
+        <pre>
+SELECT Students.Name
+FROM Students
+LEFT JOIN Enrollments ON Students.StudentID = Enrollments.StudentID
+WHERE Enrollments.EnrollmentID IS NULL;
+        </pre>
+    </details>
+
+    <details>
+        <summary>Find the names of all courses along with the number of students enrolled in each course</summary>
+        <p>
+            To find the names of all courses along with the number of students enrolled in each course, we need to
+            join the Courses and Enrollments tables and use an aggregate function to count the number of students:
+        </p>
+        <pre>
+SELECT Courses.CourseName, COUNT(Enrollments.StudentID) AS NumStudents
+FROM Courses
+LEFT JOIN Enrollments ON Courses.CourseID = Enrollments.CourseID
+GROUP BY Courses.CourseName;
+        </pre>
+    </details>
+
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
 </body>
 
 </html>
