@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Understanding Subqueries in SQL Server</title>
+</head>
+
+<body style="padding:20px; background-color: aliceblue;">
+    <h1>Subqueries in SQL Server</h1>
+    <p>
+        A <strong>subquery</strong> is a query nested inside another query. It allows you to perform a
+        query and use its result in another query. Subqueries can be placed in SELECT, WHERE, FROM, or other clauses to
+        refine or filter results. Essentially, subqueries are used to answer more complex questions by breaking them
+        into smaller, manageable parts.
+    </p>
+    <p>
+        Like other SELECT queries you have seen, subqueries can return a single value, multiple values or table values
+    </p>
+
+    <h2>Types of Subqueries</h2>
+    <ul>
+        <li><strong>Scalar Subquery</strong>: Returns a single value and is often used in SELECT or WHERE clauses.</li>
+        <li><strong>Multivalue Subquery</strong>: Returns multiple values, such as a tuple.</li>
+        <li><strong>Table Subquery</strong>: Returns a result set and is typically used in the FROM clause (also called
+            a derived table).</li>
+    </ul>
+    <p>
+        Subqueries can also be categorized based on their relationship with the outer query:
+    </p>
+    <ul>
+        <li><strong>Correlated Subquery</strong>: A subquery that references columns from the outer query and is
+            re-evaluated for each row of the outer query.</li>
+        <li><strong>Non-correlated Subquery</strong> (or independent subquery): A subquery that can be evaluated
+            independently of the outer query
+    </ul>
+
+    <h2>When and Why Subqueries are Useful</h2>
+    <p>
+        Subqueries may be useful when you need to perform intermediate calculations, filtering, or
+        lookups before performing the main query. For example, you might want to find the patients who have the most
+        appointments, or retrieve only the doctors with a certain specialty who have available appointments.
+    </p>
+
+    <h2>Example Use Cases</h2>
+
+    <h3>1. Scalar Subquery</h3>
+    <p>
+        You can use a subquery to find a single value, such as the maximum bill amount for a patient, and use it in the
+        main query.
+    </p>
+    <pre>
+SELECT Name, (SELECT MAX(BillAmount) FROM Billing WHERE Billing.PatientID = Patients.PatientID) AS MaxBill
+FROM Patients;
+    </pre>
+    <p>This query returns each patient's name along with the maximum bill amount for that patient.</p>
+
+    <h3>2. Table Subquery</h3>
+    <p>
+        A subquery can also be used to create a temporary result set (a derived table). For example, to find all
+        patients who have more than 3 appointments, we can first calculate the appointment count and use it in the outer
+        query.
+    </p>
+    <pre>
+SELECT Name
+FROM Patients
+WHERE PatientID IN (SELECT PatientID FROM Appointments GROUP BY PatientID HAVING COUNT(*) > 3);
+    </pre>
+    <p>This subquery counts appointments for each patient, and the main query retrieves patients with more than 3
+        appointments.</p>
+
+    <h3>3. Correlated Subquery</h3>
+    <p>
+        Correlated subqueries are more advanced and allow you to reference the outer query's data. For example, if you
+        want to find all appointments where the billing amount is higher than the average billing amount for that
+        specific patient:
+    </p>
+    <pre>
+SELECT AppointmentID, BillAmount
+FROM Billing AS b
+WHERE BillAmount > (SELECT AVG(BillAmount) FROM Billing WHERE PatientID = b.PatientID);
+    </pre>
+    <p>This query checks if the bill for each appointment is higher than the average bill for that patient.</p>
+
+    <p>&nbsp;</p>
+    <p>
+        Subqueries allow you to answer complex questions in SQL by breaking them into smaller queries. In a medical
+        database, they can be used to filter data based on specific conditions, perform calculations, or make
+        comparisons that are not easily handled by a single query. Whether you need to analyze appointments, billing, or
+        doctor availability, subqueries are a powerful tool to enhance your SQL queries.
+    </p>
+</body>
+
+</html>
