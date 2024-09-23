@@ -1,5 +1,5 @@
 --1. List Patients and Their Doctors
--- Objective: Retrieve the full names of all patients along with the full names of their respective doctors.
+-- Objective: Retrieve the full names of all patients of Dr. Ashley Mitchell.
 SELECT 
     Patients.FirstName AS PatientFirstName, 
     Patients.LastName AS PatientLastName,
@@ -10,7 +10,9 @@ FROM
 JOIN 
     Appointments ON Patients.PatientID = Appointments.PatientID
 JOIN 
-    Doctors ON Appointments.DoctorID = Doctors.DoctorID;
+    Doctors ON Appointments.DoctorID = Doctors.DoctorID
+WHERE
+    Doctors.FirstName = 'Ashley' AND Doctors.LastName = 'Mitchell'
 
 -- 2. Find Patients with Allergies
 -- Objective: Retrieve the list of patients who have recorded allergies.
@@ -24,8 +26,8 @@ FROM
 JOIN 
     Allergies ON Patients.PatientID = Allergies.PatientID;
 
--- 3. List All Doctors Without Departments
--- Objective: Find all doctors who are not assigned to any department.
+-- 3. Find Doctors Within Specific Departments
+-- Objective: Which Doctors (First and Last Name) are in Paediatrics or Paediatric surgery?
 SELECT 
     FirstName, 
     LastName 
@@ -34,8 +36,8 @@ FROM
 WHERE 
     DepartmentID IS NULL;
 
--- 4. Find Patients with No Insurance Coverage
--- Objective: Retrieve a list of patients who do not have any insurance coverage.
+-- 4. Find Patients with specific Insurance Coverage
+-- Objective: Retrieve a list of patients from the database insured by Aetna.
 SELECT 
     Patients.FirstName, 
     Patients.LastName 
@@ -44,9 +46,9 @@ FROM
 LEFT JOIN 
     Insurance ON Patients.InsuranceID = Insurance.InsuranceID
 WHERE 
-    Insurance.InsuranceID IS NULL;
+    Insurance.ProviderName like 'Aetna';
 
--- 5. Doctors Who Have Treated More Than 10 Patients
+-- XXXX. Doctors Who Have Treated More Than 10 Patients
 -- Objective: List doctors who have treated more than 10 patients.
 SELECT 
     Doctors.FirstName, 
@@ -65,7 +67,8 @@ HAVING
 -- Objective: Retrieve the insurance provider details of all patients treated by a specific doctor.
 SELECT 
     Patients.FirstName, 
-    Patients.LastName, 
+    Patients.LastName,
+    'Dr.' + Doctors.FirstName + ' ' + Doctors.LastName, 
     Insurance.ProviderName, 
     Insurance.PolicyNumber
 FROM 
@@ -76,8 +79,8 @@ JOIN
     Appointments ON Patients.PatientID = Appointments.PatientID
 JOIN 
     Doctors ON Appointments.DoctorID = Doctors.DoctorID
-WHERE 
-    Doctors.DoctorID = 1;  -- Replace with specific DoctorID
+WHERE
+    Doctors.LastName like 'Hernandez'
 
 -- 7. Patients with Multiple Appointments
 -- Objective: Find patients who have multiple appointments.
@@ -100,8 +103,7 @@ SELECT
     Doctors.FirstName, 
     Doctors.LastName, 
     Medications.MedicationName, 
-    Prescriptions.Dosage, 
-    Prescriptions.Frequency
+    Prescriptions.Dosage
 FROM 
     Doctors
 JOIN 
@@ -249,3 +251,21 @@ WHERE
 ```
 
 These exercises are simpler, focusing on common scenarios involving basic joins and querying specific records across related tables.
+
+
+
+
+SELECT 
+    count(Patients.PatientID), DepartmentName
+FROM 
+    Patients
+JOIN 
+    Appointments ON Patients.PatientID = Appointments.PatientID
+JOIN 
+    Doctors ON Appointments.DoctorID = Doctors.DoctorID
+JOIN 
+    Departments ON Doctors.DepartmentID = Departments.DepartmentID
+WHERE
+    DepartmentName like 'rad%'
+GROUP BY
+    DepartmentName

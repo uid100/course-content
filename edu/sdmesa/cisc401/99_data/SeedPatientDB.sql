@@ -2979,3 +2979,706 @@ VALUES
 
 
 -- Seed the Appointments table
+INSERT INTO Appointments
+    (PatientID, DoctorID, Date, Purpose, Status)
+VALUES
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2012-7-2', 'Consultation', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2012-5-16', 'Consultation', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2016-3-10', 'Follow-up', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2019-5-18', 'Emergency', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2009-2-24', 'Physical', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2015-9-4', 'Consultation', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2010-10-21', 'Follow-up', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2014-9-9', 'Physical', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2002-12-27', 'Outpatient Procedure', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2019-8-27', 'Consultation', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2023-6-23', 'Physical', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2018-4-8', 'Follow-up', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2002-2-11', 'Emergency', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2003-5-18', 'Consultation', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2017-6-27', 'Emergency', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2019-9-19', 'Consultation', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2002-10-26', 'Outpatient Procedure', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2018-4-10', 'Follow-up', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2005-1-20', 'Consultation', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2002-2-22', 'Follow-up', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2001-2-23', 'Emergency', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2022-9-9', 'Emergency', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2006-11-19', 'Outpatient Procedure', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2014-8-22', 'Consultation', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2010-10-4', 'Outpatient Procedure', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2006-4-1', 'Consultation', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2022-4-12', 'Follow-up', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2013-1-4', 'Follow-up', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2001-10-21', 'Emergency', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2000-2-21', 'Follow-up', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2012-2-12', 'Physical', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2019-1-7', 'Follow-up', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2015-4-24', 'Physical', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2017-7-20', 'Physical', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2002-4-3', 'Consultation', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2013-3-2', 'Emergency', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2001-10-4', 'Outpatient Procedure', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2008-6-24', 'Outpatient Procedure', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2022-11-7', 'Physical', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2005-6-17', 'Consultation', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2019-8-22', 'Follow-up', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2015-11-14', 'Emergency', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2020-6-13', 'Consultation', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2017-12-1', 'Outpatient Procedure', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2010-12-2', 'Emergency', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2004-4-25', 'Outpatient Procedure', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2019-5-22', 'Consultation', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2022-5-13', 'Outpatient Procedure', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2000-10-7', 'Consultation', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2007-4-21', 'Outpatient Procedure', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2022-11-19', 'Outpatient Procedure', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2012-12-19', 'Outpatient Procedure', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2005-8-3', 'Consultation', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2014-9-16', 'Emergency', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2001-8-11', 'Consultation', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2001-7-7', 'Emergency', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2023-3-1', 'Outpatient Procedure', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2010-1-7', 'Physical', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2021-9-20', 'Physical', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2003-10-21', 'Follow-up', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2008-12-6', 'Physical', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2012-11-3', 'Physical', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2014-2-28', 'Consultation', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2020-9-27', 'Consultation', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2004-5-28', 'Physical', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2001-4-22', 'Consultation', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2011-10-28', 'Physical', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2022-11-15', 'Outpatient Procedure', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2017-3-7', 'Outpatient Procedure', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2000-3-5', 'Consultation', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2010-6-23', 'Physical', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2019-1-2', 'Consultation', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2004-10-10', 'Consultation', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2017-3-10', 'Physical', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2023-4-2', 'Consultation', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2016-12-3', 'Consultation', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2010-5-14', 'Physical', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2017-8-16', 'Consultation', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2003-8-4', 'Outpatient Procedure', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2001-5-11', 'Follow-up', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2020-10-13', 'Physical', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2002-4-24', 'Follow-up', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2012-1-4', 'Outpatient Procedure', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2014-8-26', 'Emergency', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2013-2-12', 'Follow-up', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2018-3-14', 'Follow-up', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2003-2-27', 'Physical', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2021-4-4', 'Outpatient Procedure', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2008-4-21', 'Physical', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2019-3-4', 'Follow-up', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2012-6-18', 'Follow-up', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2019-8-5', 'Emergency', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2020-11-14', 'Emergency', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2021-6-27', 'Outpatient Procedure', 'cancelled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2020-11-28', 'Follow-up', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2000-6-23', 'Consultation', 'completed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2001-9-5', 'Consultation', 'missed'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2012-10-10', 'Outpatient Procedure', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2002-9-28', 'Physical', 'rescheduled'),
+    ((SELECT TOP 1
+            patientid
+        FROM Patients
+        ORDER BY NEWID()), (SELECT TOP 1
+            DoctorID
+        FROM Doctors
+        ORDER BY NEWID()), '2007-3-2', 'Consultation', 'rescheduled');
