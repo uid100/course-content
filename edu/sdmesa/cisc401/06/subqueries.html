@@ -88,6 +88,84 @@ WHERE BillAmount > (SELECT AVG(BillAmount) FROM Billing WHERE PatientID = b.Pati
         comparisons that are not easily handled by a single query. Whether you need to analyze appointments, billing, or
         doctor availability, subqueries are a powerful tool to enhance your SQL queries.
     </p>
+
+    <h2>Practice Exercise</h2>
+    <p>
+        Consider the following tables:
+    </p>
+    <ul>
+        <li><strong>Students</strong>: Contains student information.</li>
+        <li><strong>Courses</strong>: Contains course details.</li>
+        <li><strong>Enrollments</strong>: Contains data about student enrollments in courses.</li>
+    </ul>
+    <p>
+        Write SQL queries to answer the following questions:
+    </p>
+
+    <details>
+        <summary>Find Students Enrolled in More Than 3 Courses</summary>
+        <p>
+            To find students who are enrolled in more than 3 courses, we can use a subquery to count the number of
+            enrollments for each student and filter the results accordingly:
+        </p>
+        <pre>
+SELECT Name
+FROM Students
+WHERE StudentID IN (
+    SELECT StudentID
+    FROM Enrollments
+    GROUP BY StudentID
+        HAVING COUNT(*) > 3
+);
+        </pre>
+    </details>
+
+    <details>
+        <summary>Find Courses with No Enrollments</summary>
+        <p>
+            To find courses with no enrollments, we can use a subquery to check if the course ID exists in the
+            Enrollments table:
+        </p>
+        <pre>
+SELECT CourseName
+FROM Courses
+WHERE CourseID NOT IN (
+    SELECT CourseID 
+    FROM Enrollments
+);
+        </pre>
+    </details>
+
+    <details>
+        <summary>Find Students Enrolled in the Same Courses as a Specific Student</summary>
+        <p>
+            To find students who are enrolled in the same courses as a specific student (e.g., StudentID = 999), we can
+            use a subquery to get the list of courses for the specific student and compare it with other students'
+            course
+            lists:
+        </p>
+        <pre>
+SELECT Name
+FROM Students
+WHERE StudentID IN (
+    SELECT StudentID
+    FROM Enrollments
+    WHERE CourseID IN (
+        SELECT CourseID
+        FROM Enrollments
+        WHERE StudentID = 999
+    )
+);
+        </pre>
+    </details>
+
+
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+    <p>&nbsp;</p>
+
 </body>
 
 </html>
