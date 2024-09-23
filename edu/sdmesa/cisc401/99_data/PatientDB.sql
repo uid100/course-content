@@ -1,5 +1,9 @@
 -- Create PatientRecordsDB if it does not exist
-IF NOT EXISTS (SELECT * FROM sys.databases WHERE name = 'PatientRecordsDB')
+USE master;
+GO
+IF NOT EXISTS (SELECT *
+FROM sys.databases
+WHERE name = 'PatientRecordsDB')
 BEGIN
     CREATE DATABASE PatientRecordsDB;
 END;
@@ -10,9 +14,12 @@ USE PatientRecordsDB;
 GO
 
 -- Create Patient Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Patients')
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'Patients')
 BEGIN
-    CREATE TABLE Patients (
+    CREATE TABLE Patients
+    (
         PatientID INT PRIMARY KEY IDENTITY(1,1),
         FirstName NVARCHAR(50),
         LastName NVARCHAR(50),
@@ -21,31 +28,102 @@ BEGIN
         ContactInfo NVARCHAR(100),
         Address NVARCHAR(100),
         EmergencyContact NVARCHAR(100),
-        InsuranceID INT,
-        CONSTRAINT FK_Patients_Insurance FOREIGN KEY (InsuranceID) REFERENCES Insurance(InsuranceID)
+        InsuranceID INT
+        -- Will add FK later
+        -- CONSTRAINT FK_Patients_Insurance FOREIGN KEY (InsuranceID) REFERENCES Insurance(InsuranceID)
     );
 END;
 
--- Create Medical History Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'MedicalHistory')
+-- Create Doctors Table
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'Doctors')
 BEGIN
-    CREATE TABLE MedicalHistory (
+    CREATE TABLE Doctors
+    (
+        DoctorID INT PRIMARY KEY IDENTITY(1,1),
+        FirstName NVARCHAR(50),
+        LastName NVARCHAR(50),
+        SpecialtyID INT,
+        ContactInfo NVARCHAR(100),
+        DepartmentID INT
+        -- Will add FK later
+        -- CONSTRAINT FK_Doctors_Specialty FOREIGN KEY (SpecialtyID) REFERENCES Specialties(SpecialtyID),
+        -- CONSTRAINT FK_Doctors_Department FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID)
+    );
+END;
+
+-- Create Insurance Table
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'Insurance')
+BEGIN
+    CREATE TABLE Insurance
+    (
+        InsuranceID INT PRIMARY KEY IDENTITY(1,1),
+        PatientID INT,
+        ProviderName NVARCHAR(100),
+        PolicyNumber NVARCHAR(50),
+        CoverageDetails NVARCHAR(MAX)
+        -- Will add FK later
+        -- CONSTRAINT FK_Insurance_Patients FOREIGN KEY (PatientID) REFERENCES Patients(PatientID)
+    );
+END;
+
+-- Create Departments Table
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'Departments')
+BEGIN
+    CREATE TABLE Departments
+    (
+        DepartmentID INT PRIMARY KEY IDENTITY(1,1),
+        DepartmentName NVARCHAR(100),
+        HeadOfDepartmentID INT,
+        ContactInfo NVARCHAR(100)
+        -- Will add FK later
+        -- CONSTRAINT FK_Departments_Doctors FOREIGN KEY (HeadOfDepartmentID) REFERENCES Doctors(DoctorID)
+    );
+END;
+
+-- Now that key tables are created, use ALTER TABLE to add foreign keys
+
+-- Add foreign keys to Patients table
+ALTER TABLE Patients
+ADD CONSTRAINT FK_Patients_Insurance FOREIGN KEY (InsuranceID) REFERENCES Insurance(InsuranceID);
+
+-- Add foreign keys to Doctors table
+ALTER TABLE Doctors
+ADD CONSTRAINT FK_Doctors_Department FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID);
+
+-- Create Medical History Table
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'MedicalHistory')
+BEGIN
+    CREATE TABLE MedicalHistory
+    (
         HistoryID INT PRIMARY KEY IDENTITY(1,1),
         PatientID INT,
         Condition NVARCHAR(100),
         DiagnosisDate DATE,
         Treatment NVARCHAR(100),
         DoctorID INT,
-        Notes NVARCHAR(MAX),
-        CONSTRAINT FK_MedicalHistory_Patients FOREIGN KEY (PatientID) REFERENCES Patients(PatientID),
-        CONSTRAINT FK_MedicalHistory_Doctors FOREIGN KEY (DoctorID) REFERENCES Doctors(DoctorID)
+        Notes NVARCHAR(MAX)
     );
+    -- Add foreign keys
+    ALTER TABLE MedicalHistory
+    ADD CONSTRAINT FK_MedicalHistory_Patients FOREIGN KEY (PatientID) REFERENCES Patients(PatientID),
+        CONSTRAINT FK_MedicalHistory_Doctors FOREIGN KEY (DoctorID) REFERENCES Doctors(DoctorID)
 END;
 
 -- Create Appointments Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Appointments')
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'Appointments')
 BEGIN
-    CREATE TABLE Appointments (
+    CREATE TABLE Appointments
+    (
         AppointmentID INT PRIMARY KEY IDENTITY(1,1),
         PatientID INT,
         DoctorID INT,
@@ -58,25 +136,13 @@ BEGIN
     );
 END;
 
--- Create Doctors Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Doctors')
-BEGIN
-    CREATE TABLE Doctors (
-        DoctorID INT PRIMARY KEY IDENTITY(1,1),
-        FirstName NVARCHAR(50),
-        LastName NVARCHAR(50),
-        SpecialtyID INT,
-        ContactInfo NVARCHAR(100),
-        DepartmentID INT,
-        CONSTRAINT FK_Doctors_Specialty FOREIGN KEY (SpecialtyID) REFERENCES Specialties(SpecialtyID),
-        CONSTRAINT FK_Doctors_Department FOREIGN KEY (DepartmentID) REFERENCES Departments(DepartmentID)
-    );
-END;
-
 -- Create Medical Procedures Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'MedicalProcedures')
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'MedicalProcedures')
 BEGIN
-    CREATE TABLE MedicalProcedures (
+    CREATE TABLE MedicalProcedures
+    (
         ProcedureID INT PRIMARY KEY IDENTITY(1,1),
         PatientID INT,
         DoctorID INT,
@@ -90,9 +156,12 @@ BEGIN
 END;
 
 -- Create Medications Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Medications')
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'Medications')
 BEGIN
-    CREATE TABLE Medications (
+    CREATE TABLE Medications
+    (
         MedicationID INT PRIMARY KEY IDENTITY(1,1),
         MedicationName NVARCHAR(100),
         Dosage NVARCHAR(50)
@@ -100,9 +169,12 @@ BEGIN
 END;
 
 -- Create Prescriptions Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Prescriptions')
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'Prescriptions')
 BEGIN
-    CREATE TABLE Prescriptions (
+    CREATE TABLE Prescriptions
+    (
         PrescriptionID INT PRIMARY KEY IDENTITY(1,1),
         PatientID INT,
         MedicationID INT,
@@ -119,9 +191,12 @@ BEGIN
 END;
 
 -- Create Billing Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Billing')
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'Billing')
 BEGIN
-    CREATE TABLE Billing (
+    CREATE TABLE Billing
+    (
         BillingID INT PRIMARY KEY IDENTITY(1,1),
         PatientID INT,
         ServiceProvided NVARCHAR(100),
@@ -136,9 +211,12 @@ BEGIN
 END;
 
 -- Create Lab Results Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'LabResults')
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'LabResults')
 BEGIN
-    CREATE TABLE LabResults (
+    CREATE TABLE LabResults
+    (
         LabResultID INT PRIMARY KEY IDENTITY(1,1),
         PatientID INT,
         TestType NVARCHAR(100),
@@ -152,9 +230,12 @@ BEGIN
 END;
 
 -- Create Allergies Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Allergies')
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'Allergies')
 BEGIN
-    CREATE TABLE Allergies (
+    CREATE TABLE Allergies
+    (
         AllergyID INT PRIMARY KEY IDENTITY(1,1),
         PatientID INT,
         AllergyType NVARCHAR(100),
@@ -164,35 +245,13 @@ BEGIN
     );
 END;
 
--- Create Insurance Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Insurance')
-BEGIN
-    CREATE TABLE Insurance (
-        InsuranceID INT PRIMARY KEY IDENTITY(1,1),
-        PatientID INT,
-        ProviderName NVARCHAR(100),
-        PolicyNumber NVARCHAR(50),
-        CoverageDetails NVARCHAR(MAX),
-        CONSTRAINT FK_Insurance_Patients FOREIGN KEY (PatientID) REFERENCES Patients(PatientID)
-    );
-END;
-
--- Create Departments Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Departments')
-BEGIN
-    CREATE TABLE Departments (
-        DepartmentID INT PRIMARY KEY IDENTITY(1,1),
-        DepartmentName NVARCHAR(100),
-        HeadOfDepartmentID INT,
-        ContactInfo NVARCHAR(100),
-        CONSTRAINT FK_Departments_Doctors FOREIGN KEY (HeadOfDepartmentID) REFERENCES Doctors(DoctorID)
-    );
-END;
-
 -- Create Visits Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Visits')
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'Visits')
 BEGIN
-    CREATE TABLE Visits (
+    CREATE TABLE Visits
+    (
         VisitID INT PRIMARY KEY IDENTITY(1,1),
         PatientID INT,
         DoctorID INT,
@@ -205,43 +264,54 @@ BEGIN
 END;
 
 -- Create Vitals Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Vitals')
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'Vitals')
 BEGIN
-    CREATE TABLE Vitals (
+    CREATE TABLE Vitals
+    (
         VitalsID INT PRIMARY KEY IDENTITY(1,1),
         PatientID INT,
         BloodPressure NVARCHAR(20),
         HeartRate INT,
         Temperature DECIMAL(5, 2),
         DateMeasured DATE,
-        MeasuredBy INT,  -- Could reference staff or nurse
+        MeasuredBy INT,
+        -- Could reference staff or nurse
         CONSTRAINT FK_Vitals_Patients FOREIGN KEY (PatientID) REFERENCES Patients(PatientID)
     );
 END;
 
 -- Create Immunizations Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'Immunizations')
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'Immunizations')
 BEGIN
-    CREATE TABLE Immunizations (
+    CREATE TABLE Immunizations
+    (
         ImmunizationID INT PRIMARY KEY IDENTITY(1,1),
         PatientID INT,
         VaccineName NVARCHAR(100),
         VaccinationDate DATE,
-        AdministeredBy INT,  -- Could reference DoctorID or NurseID
+        AdministeredBy INT,
+        -- Could reference DoctorID or NurseID
         Notes NVARCHAR(MAX),
         CONSTRAINT FK_Immunizations_Patients FOREIGN KEY (PatientID) REFERENCES Patients(PatientID)
     );
 END;
 
 -- Create Emergency Contacts Table
-IF NOT EXISTS (SELECT * FROM INFORMATION_SCHEMA.TABLES WHERE TABLE_NAME = 'EmergencyContacts')
+IF NOT EXISTS (SELECT *
+FROM INFORMATION_SCHEMA.TABLES
+WHERE TABLE_NAME = 'EmergencyContacts')
 BEGIN
-    CREATE TABLE EmergencyContacts (
+    CREATE TABLE EmergencyContacts
+    (
         ContactID INT PRIMARY KEY IDENTITY(1,1),
         PatientID INT,
         ContactName NVARCHAR(100),
         Relationship NVARCHAR(50),
-        Phone NVARCHAR(15),
+        Phone NVARCHAR(25),
         Address NVARCHAR(100),
         CONSTRAINT FK_EmergencyContacts_Patients FOREIGN KEY (PatientID) REFERENCES Patients(PatientID)
     );
