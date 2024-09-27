@@ -4,91 +4,268 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>front-page</title>
-
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        .rounded-card {
-            border-radius: 10px;
-            /* round corners */
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
-            /* Adding a shadow */
-            position: relative;
-        }
-    </style>
+    <title>Document</title>
 </head>
 
 <body>
-    <div id="top" style="display:none;"></div>
-    <div id="front-page" style="background-color: cornflowerblue; ">
-        <div id="course-header" style="background-color: #023867; margin-bottom: 10px;">
-            <div id="cover-image" style="width: 40%; margin:auto; padding-bottom: 10px;">
-                <figure style="text-align: center;">
-                    <img src="https://uid100.github.io/course-content/images/server_room.jpg"
-                        style="margin:auto; padding:10px; object-fit: contain; height:80%; width:100%;"
-                        alt="server room:  www.pexels.com/photo/black-hardwares-on-data-server-room-4597280" />
-                    <figcaption style="text-align:center; color:white;">
-                        Database Mangement and Design<br />
-                        for Healthcare Professionals
-                    </figcaption>
-                </figure>
-            </div> <!-- #cover-image -->
-        </div> <!-- #course-header -->
-
-        <div id="cisc401">
-            <!-- <div id="cisc401" style="margin:2px,20px,2px,20px;"> -->
-            <h1 style="padding:20px;">CISC 401</h1>
-        </div> <!-- #cisc401 -->
-        <div class="container mt-4">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-10 col-sm-11 mb-4">
-                    <div id="term" class="card rounded-card" style="height:11rem;">
-                        <iframe type="text/html" style="
-                                width: 100%;
-                                height: 100%;
-                                border: none;
-                            " src="term.html" allowfullscreen>
-                        </iframe>
-                    </div> <!-- #term -->
-
-                    <div id="catalog-description" class="card rounded-card mt-4" style="height:22rem;">
-                        <iframe type="text/html" style="
-                                width: 100%;
-                                height: 100%;
-                                border: none;
-                                object-fit: contain;
-                            " src="catalog.html" allowfullscreen>
-                        </iframe>
-                    </div> <!-- #catalog-description -->
-
-                    <div id="instructor-about" class="card rounded-card mt-4" style="height:30rem;">
-                        <iframe type="text/html" style="
-                                    width: 100%;
-                                    height: 100%;
-                                    border: none;
-                                    object-fit: contain;
-                                " src="/course-content/common/instructor.html" allowfullscreen>
-                        </iframe>
-                    </div> <!-- #instructor-about -->
-
-                    <div id="contact" class="card rounded-card mt-4" style="height:52rem;">
-                        <iframe type="text/html" style="
-                                    width: 100%;
-                                    height: 100%;
-                                    border: none;
-                                    object-fit: contain;
-                                " src="/course-content/edu/sdmesa/cisc401/00/contact.html" allowfullscreen>
-                        </iframe>
-                    </div> <!-- #contact -->
-                </div> <!-- #col -->
-            </div> <!-- #row -->
-        </div> <!-- #container -->
-    </div> <!-- #front-page -->
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+    <div id="homepage-cop2552">
+        <div id="page-header">
+            <figure id="college-logo"><img src="https://courses.sfcollege.edu/courses/479330/files/52979966/preview"
+                    alt="Santa Fe College Logo" width="400"
+                    data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/files/52979966"
+                    data-api-returntype="File" />
+                <figcaption>Object-Oriented Programming 2 (Using Java)</figcaption>
+            </figure>
+            <figure id="cover-image"><img style="display: block; margin-left: auto; margin-right: auto;"
+                    src="https://courses.sfcollege.edu/courses/479330/files/52979848/preview"
+                    alt="Software Development - Cover Picture" width="20%"
+                    data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/files/52979848"
+                    data-api-returntype="File" />
+                <figcaption>&nbsp;</figcaption>
+            </figure>
+        </div>
+    </div>
+    <div id="course-description">
+        <div id="course-description-shadow" style="margin: 50px 15% 50px 15%; background-color: deepskyblue;">
+            <div id="description"
+                style="position: relative; top: -10px; right: -10px; padding: 20px; background: lightskyblue;">
+                <h3>About (COP 2552) <span style="background-color: orange;">Spring 2024</span></h3>
+                <p>This course is a continuation of structured programming concepts using the <strong>Java</strong>
+                    programming language. This includes techniques for algorithm development, coding and testing. This
+                    course teaches advanced object-oriented programming concepts including classes and objects,
+                    exception handling, advanced file I/O, inheritance and polymorphism, JavaFX, and the use of
+                    databases within an application. Students will create event-driven applications to reinforce new
+                    concepts and material presented in each chapter.</p>
+                <p>Each chapter will be in a module that will provide you with lecture notes, PowerPoint slides for note
+                    taking, videos and code demonstrations that illustrate/apply the chapter concepts. Additionally, you
+                    will find links to any quizzes or other assignments for the chapter.</p>
+            </div>
+        </div>
+    </div>
+    <div id="instructor">
+        <div id="instr-shadow" style="margin: 50px 15% 50px 15%; background-color: deepskyblue;">
+            <div id="instr-panel"
+                style="position: relative; top: -10px; right: -10px; padding: 20px; background: lightskyblue;">
+                <h2>Instructor</h2>
+                <h3>Dan Sullivan</h3>
+                <div id="profile">
+                    <p>Over 30 years professional experience as a software engineer and program manager. I have worked
+                        for large and small companies. <a style="color: navy; font-style: italic;"
+                            href="https://courses.sfcollege.edu/courses/479330/pages/instructor"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/pages/instructor"
+                            data-api-returntype="Page"> More about me. </a></p>
+                    <figure style="height: 175px; width: 200px; padding: 10px; margin-left: auto; margin-right: auto;">
+                        <img id="picture-of-instructor" style="display: block; margin: auto;"
+                            src="https://courses.sfcollege.edu/courses/479330/files/52979844/preview"
+                            alt="picture of instructor" width="200" height="150"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/files/52979844"
+                            data-api-returntype="File" />
+                        <figcaption
+                            style="text-align: center; font-style: italic; margin-left: auto; margin-right: auto;">Dan
+                            Sullivan&nbsp;&nbsp;MSCS, PMP</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="online">
+        <div id="online-shadow" style="margin: 50px 15% 50px 15%; background-color: deepskyblue;">
+            <div id="online-panel"
+                style="position: relative; top: -10px; right: -10px; padding: 20px; background: lightskyblue;">
+                <h2>Staying in Touch</h2>
+                <div id="online-classes" class="ic-flash-info">
+                    <p><strong>Remote</strong> <em>distance-learning</em> does not mean independent learning.</p>
+                    <p><strong>Online</strong> does not mean <em>self-paced</em>.</p>
+                </div>
+                <p>You can send email through Canvas, or visit me during office hours. Office hours are open
+                    discussions. All are welcome to bring your questions, or stop in to say "hello." Other times may be
+                    arranged also.</p>
+                <p>There are multiple channels in my Discord channel also. This is a great place to connect with other
+                    student and ask (and answer) questions at any hour of the day.</p>
+                <p>&nbsp;</p>
+                <h3>Office Hours (Zoom)</h3>
+                <div style="text-align: center;"><a style="color: navy;"
+                        href="https://sfcollege.zoom.us/j/97223861750?pwd=Tit3OG9UV3hVVnlmV2ZCYVhId1Y5UT09"
+                        target="_blank" rel="noopener"> <img
+                            src="https://courses.sfcollege.edu/courses/479330/file_contents/course%20files/images/zoom-icon.png"
+                            alt="Zoom icon" width="40" height="40" /><br />Wed 2P EST </a></div>
+                <h3>Class Discussion</h3>
+                <div style="text-align: center;"><span title="Discord is an instant messaging social platform.
+                          Come and visit with me and others from class.
+                          It is a great place to engage with others and ask and answer questions.
+                          Come look around."> <a style="color: darkblue;" href="https://discord.gg/MpHjV4qgxZ"
+                            target="_blank" rel="noopener"> <img
+                                src="https://courses.sfcollege.edu/courses/479330/file_contents/course%20files/images/discord-logo.png"
+                                alt="discord link image" width="40" height="40" /><br />Discord <em>hover for more</em>
+                        </a> </span></div>
+            </div>
+        </div>
+    </div>
+    <div id="get-started">
+        <div id="start-here-shadow" style="margin: 50px 15% 50px 15%; background-color: deepskyblue;">
+            <div id="start-here"
+                style="position: relative; top: -10px; right: -10px; padding: 20px; background: lightskyblue;">
+                <h3>Getting Started</h3>
+                <dl>
+                    <dt>FIRST: <span class="ic-badge ic-badge--success">1</span></dt>
+                    <dd><strong>Always</strong> check for any new announcements. Recent announcements will be linked at
+                        the top of <em>this</em> homepage. If you missed something or want to go back and read an
+                        earlier announcements, they are always available from the Canvas menu.
+                        <div>
+                            <p>&nbsp;</p>
+                        </div>
+                    </dd>
+                    <dt>NEXT: <span class="ic-badge ic-badge--success">2</span></dt>
+                    <dd><strong>Click</strong> to expand each of the sections above to read more about about the course
+                        and your instructor. Check out the Discord channel to say "Hello."
+                        <div>
+                            <p>&nbsp;</p>
+                        </div>
+                    </dd>
+                    <dt>THEN: <span class="ic-badge ic-badge--success">3</span></dt>
+                    <dd><strong>Read</strong> the Course Syllabus &amp; Outline
+                        <p style="text-align: center;"><a class="icon-star-light btn btn-primary"
+                                style="background-color: blue; color: white;"
+                                href="https://courses.sfcollege.edu/courses/479330/assignments/syllabus"> Syllabus </a>
+                        </p>
+                    </dd>
+                    <dt>FINALLY: <span class="ic-badge ic-badge--success">4</span></dt>
+                    <dd><strong>Go to</strong> Module 1
+                        <p style="text-align: center;"><a class="icon-module btn btn-success"
+                                style="background-color: green; color: white;"
+                                href="https://courses.sfcollege.edu/courses/479330/modules"
+                                data-api-returntype="[Module]"
+                                data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules"> Start
+                                Here </a></p>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div id="module-links">
+        <p>&nbsp;</p>
+        <table style="border-collapse: collapse; border-width: 0; margin-left: auto; margin-right: auto; width: 90%;">
+            <caption>module-links</caption>
+            <colgroup>
+                <col style="width: 10%;" />
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="col">week of:</th>
+                    <th scope="col"></th>
+                </tr>
+                <tr>
+                    <td>19-Aug</td>
+                    <td><a title="Module 1 - Chapter 2:  Java Fundamentals"
+                            href="https://courses.sfcollege.edu/courses/479330/modules/2008799"
+                            data-course-type="modules" data-published="true"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules/2008799"
+                            data-api-returntype="Module">Module 1 - Chapter 2: Java Fundamentals</a></td>
+                </tr>
+                <tr>
+                    <td>26-Aug</td>
+                    <td><a title="Module 2 - Chapter 3:  A First Look at Classes and Objects"
+                            href="https://courses.sfcollege.edu/courses/479330/modules/2008801"
+                            data-course-type="modules" data-published="true"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules/2008801"
+                            data-api-returntype="Module">Module 2 - Chapter 3: A First Look at Classes and Objects</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2-Sep</td>
+                    <td><a title="Module 3 - Chapter 4:  Decision Structures"
+                            href="https://courses.sfcollege.edu/courses/479330/modules/2008803"
+                            data-course-type="modules" data-published="true"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules/2008803"
+                            data-api-returntype="Module">Module 3 - Chapter 4: Decision Structures</a></td>
+                </tr>
+                <tr>
+                    <td>9-Sep</td>
+                    <td><a title="Module 4 - Chapter 5:  Loops and Files"
+                            href="https://courses.sfcollege.edu/courses/479330/modules/2008805"
+                            data-course-type="modules" data-published="true"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules/2008805"
+                            data-api-returntype="Module">Module 4 - Chapter 5: Loops and Files</a></td>
+                </tr>
+                <tr>
+                    <td>16-Sep</td>
+                    <td><a title="Module 5 - Chapter 6: A Second Look at Classes"
+                            href="https://courses.sfcollege.edu/courses/479330/modules/2008807"
+                            data-course-type="modules" data-published="true"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules/2008807"
+                            data-api-returntype="Module">Module 5 - Chapter 6: A Second Look at Classes</a></td>
+                </tr>
+                <tr>
+                    <td>23-Sep</td>
+                    <td><a title="Module 6 - Chapter 7&amp;8: Arrays and the ArrayList Class and Text Processing and Wrapper Classes"
+                            href="https://courses.sfcollege.edu/courses/479330/modules/2008809"
+                            data-course-type="modules" data-published="true"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules/2008809"
+                            data-api-returntype="Module">Module 6 - Chapter 7&amp;8: Arrays and the ArrayList Class and
+                            Text Processing and Wrapper Classes</a></td>
+                </tr>
+                <tr>
+                    <td>30-Sep</td>
+                    <td><a title="Module 7 - Chapter 9:  Inheritance"
+                            href="https://courses.sfcollege.edu/courses/479330/modules/2008811"
+                            data-course-type="modules" data-published="true"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules/2008811"
+                            data-api-returntype="Module">Module 7 - Chapter 9: Inheritance</a></td>
+                </tr>
+                <tr>
+                    <td>7-Oct</td>
+                    <td><a title="Module 8 - Chapter 10:  Exceptions and Advanced File I/O"
+                            href="https://courses.sfcollege.edu/courses/479330/modules/2008813"
+                            data-course-type="modules" data-published="true"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules/2008813"
+                            data-api-returntype="Module">Module 8 - Chapter 10: Exceptions and Advanced File I/O</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>14-Oct</td>
+                    <td><a title="Module 9 - Chapter 11: JavaFX: GUI Programming and Basic Controls"
+                            href="https://courses.sfcollege.edu/courses/479330/modules/2008815"
+                            data-course-type="modules" data-published="true"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules/2008815"
+                            data-api-returntype="Module">Module 9 - Chapter 11: JavaFX: GUI Programming and Basic
+                            Controls</a></td>
+                </tr>
+                <tr>
+                    <td>28-Oct</td>
+                    <td><a title="Module 10 - Chapter 12: JavaFX: Advanced Controls"
+                            href="https://courses.sfcollege.edu/courses/479330/modules/2008817"
+                            data-course-type="modules" data-published="true"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules/2008817"
+                            data-api-returntype="Module">Module 10 - Chapter 12: JavaFX: Advanced Controls</a></td>
+                </tr>
+                <tr>
+                    <td>11-Nov</td>
+                    <td><a title="Module 11 - Chapter 13: Recursion"
+                            href="https://courses.sfcollege.edu/courses/479330/modules/2008819"
+                            data-course-type="modules" data-published="true"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules/2008819"
+                            data-api-returntype="Module">Module 11 - Chapter 13: Recursion</a></td>
+                </tr>
+                <tr>
+                    <td>2-Dec</td>
+                    <td><a title="Module 12 - Chapter 15:  Databases"
+                            href="https://courses.sfcollege.edu/courses/479330/modules/2008821"
+                            data-course-type="modules" data-published="true"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules/2008821"
+                            data-api-returntype="Module">Module 12 - Chapter 15: Databases</a></td>
+                </tr>
+                <tr>
+                    <td>9-Dec</td>
+                    <td><a title="Module 13 - Wrap-up and Final Exams"
+                            href="https://courses.sfcollege.edu/courses/479330/modules/2008823"
+                            data-course-type="modules" data-published="true"
+                            data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/modules/2008823"
+                            data-api-returntype="Module">Module 13 - Wrap-up and Final Exams</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 
 </html>
