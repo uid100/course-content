@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        td {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Survey</h2>
+    <p>Thank you for participating in this survey. Please answer the following questions:</p>
+    <div id="q1">
+        <h3>Question 1</h3>
+        <p>
+            This materials and target technology for this course is intentionally cross-platform compatible.
+            I do test and verify the materials on different operating systems.
+        </p>
+        <p>
+            So that I can better understand the diversity of the student population, please indicate the
+            operating system you use most often.:
+        </p>
+        <!-- create an inline set of radio buttons -->
+        <input type="radio" id="windows" name="os" value="windows">
+        <label for="windows">Windows</label>
+        <input type="radio" id="mac" name="os" value="mac">
+        <label for="mac">Mac</label>
+        <input type="radio" id="linux" name="os" value="linux">
+        <label for="linux">Linux</label>
+    </div>
+    <div id="q2">
+        <h3>Question 2</h3>
+        <p>
+            As part of preparing for the exercises in these modules, you were asked to install and configure
+            the Java Development Kit (JDK) and the Eclipse Integrated Development Environment (IDE) using the
+            instructions provided in the course materials.
+        </p>
+        <p>
+            Approximately how long did it take you to complete the installation steps?:
+        </p>
+        <!-- create an inline set of radio buttons -->
+        <input type="radio" id="one-hour" name="one-hour" value=1>
+        <label for="one-hour">&lt;1 hour</label>
+        <input type="radio" id="one-to-two-hours" name="one-to-two-hours" value=2>
+        <label for="one-to-two-hours">1-2 hours</label>
+        <input type="radio" id="two-hours" name="two-hours" value=3>
+        <label for="two-hours">&gt;2 hours</label>
+    </div>
+    <div id="q3">
+        <h3>Question 3</h3>
+        <p>
+            The course materials include a series of exercises that are designed to help you learn the
+            Java programming language and the Eclipse IDE. These exercises are designed to be completed
+            in a specific order to build on the knowledge gained in the previous exercises.
+        </p>
+        <p>
+            So that I can better understand the time commitment required to complete the exercises, and
+            to better plan for future modules, please indicate how much time you typically spend on the
+            weekly exercises.:
+        </p>
+        <!-- create an inline set of radio buttons -->
+        <input type="radio" id="one-hour" name="one-hour" value=1>
+        <label for="one-hour">&lt;1 hour</label>
+        <input type="radio" id="one-to-two-hours" name="one-to-two-hours" value=2>
+        <label for="one-to-two-hours">1-2 hours</label>
+        <input type="radio" id="two-hours" name="two-hours" value=3>
+        <label for="two-hours">&gt;2 hours</label>
+    </div>
+    <div id="q4">
+        <h3>Question 4</h3>
+        <p>
+            Think about the instructions provided for the exercises. How would you rate the clarity of the
+            instructions?:
+        </p>
+        <!-- create an inline set of radio buttons -->
+        <input type="radio" id="very-clear" name="very-clear" value=1>
+        <label for="very-clear">Very clear</label>
+        <input type="radio" id="clear" name="clear" value=1>
+        <label for="clear">Clear</label>
+        <input type="radio" id="somewhat-clear" name="somewhat-clear" value=1>
+        <label for="somewhat-clear">Somewhat clear</label>
+        <input type="radio" id="unclear" name="unclear" value=1>
+        <label for="unclear">Not at all clear</label>
+    </div>
+    <div id="q5">
+        <h3>Question 5</h3>
+        <p>
+            The weekly exercises are intended to help you practice the concepts, and also to challenge your
+            understanding of the material. They are designed to be <em>simple</em> (as in not complex), but
+            still require you to think about the problem and how to solve it.
+        </p>
+        <p>
+            In other words, the experience of completing the exercises should be <em>challenging</em>, and
+            at times, <em>mildly frustrating</em>. It is expected that sometimes you will need to ask for
+            help. That is part of the learning process, part of this course, and part of the collaborative
+            nature of our industry.
+        </p>
+        <p>
+            How long is <em>long enough</em> to spend on an exercise before asking for help is a personal
+            decision. However, I would like to know how long you typically spend on an exercise before
+            asking for help?
+        </p>
+        <!-- create an inline set of radio buttons -->
+        <input type="radio" id="one-hour" name="one-hour" value=1>
+        <label for="one-hour">&lt;1 hour</label>
+        <input type="radio" id="one-to-two-hours" name="one-to-two-hours" value=2>
+        <label for="one-to-two-hours">1-2 hours</label>
+        <input type="radio" id="two-hours" name="two-hours" value=3>
+        <label for="two-hours">2-4 hours</label>
+        <input type="radio" id="four-hours" name="four-hours" value=4>
+        <label for="four-hours">&gt;4 hours</label>
+    </div>
+</body>
+
+</html>
