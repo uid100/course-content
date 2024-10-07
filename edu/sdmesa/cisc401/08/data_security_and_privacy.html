@@ -7,140 +7,170 @@
     <title>Document</title>
 </head>
 
-<body>
-    ### **Lesson Plan: Data Security and Privacy in Healthcare**
+<body style="background-color: aliceblue;">
+    <h2>Data Security and Privacy in Healthcare</h2>
 
-    ---
+    <h3>Objective</h3>
+    <p>
+        Understand
+    <ol>
+        <li>
+            the critical importance of data security in healthcare,
+        </li>
+        <li>
+            the role of HIPAA compliance,
+        </li>
+        <li>
+            key encryption techniques and access control mechanisms,
+        </li>
+        <li>
+            designing a secure healthcare database.
+        </li>
+    </ol>
+    </p>
 
-    #### **Objective:**
-    By the end of the session, participants will understand the critical importance of data security in healthcare, the
-    role of HIPAA compliance, key encryption techniques, access control, and how to design a secure healthcare database.
+    <h3>Data Security in Healthcare</h3>
 
-    ---
+    <details>
+        <summary>Importance</summary>
+        <ul>
+            <li>
+                Healthcare data is highly sensitive, containing personal, medical, and financial information.
+            </li>
+            <li>
+                Cyberattacks in healthcare have increased significantly, leading to financial loss, identity theft, and
+                compromise of patient privacy.
+            </li>
+            <li>
+                The ethical and legal responsibilities of healthcare organizations to protect patient data.
+            </li>
+        </ul>
+        <p>&nbsp;</p>
+        <p>Discussion</p>
+        <ul>
+            <li>
+                <em>Why do you think healthcare data is targeted more than other types of data?</em>
+            </li>
+        </ul>
+    </details>
+    <details>
+        <summary>Regulatory Compliance</summary>
+        <h3>HIPAA Compliance and Healthcare Regulations</h3>
+        <ul>
+            <li>
+                <strong>Overview of HIPAA</strong>
+                <ul>
+                    <li>Health Insurance Portability and Accountability Act (HIPAA) purpose and scope.</li>
+                    <li>Protected Health Information (PHI):
+                        <p style="width:80%; margin:10px auto; border: black solid 1px">
+                            Individually identifiable health information that is transmitted or maintained in any form
+                            or medium (electronic, oral, or paper) by a covered entity or its business associates,
+                            excluding certain educational and employment records. Includes personal identifiers, medical
+                            history, test results, etc.
+                        </p>
+                    </li>
+                    <li>HIPAA Privacy Rule: controls how PHI can be used and disclosed.</li>
+                    <li>HIPAA Security Rule: standards for the protection of electronic PHI (ePHI).</li>
+                    <li>HIPAA Breach Notification Rule: guidelines for responding to data breaches.</li>
+                    <li>Consequences for non-compliance: fines, legal action, loss of reputation.</li>
+                </ul>
+            </li>
+        </ul>
 
-    ### **1. Introduction to Data Security in Healthcare (10 minutes)**
+        <h3>Key Regulations and Guidelines</h3>
+        <ul>
+            Other relevant frameworks
+            <li>General Data Protection Regulation (GDPR) (if applicable globally).</li>
+            <li>HITECH Act (Health Information Technology for Economic and Clinical Health).</li>
+        </ul>
 
-    **A. Importance of Data Security in Healthcare**
-    - *Discussion Points:*
-    - Healthcare data is highly sensitive, containing personal, medical, and financial information.
-    - Cyberattacks in healthcare have increased significantly, leading to financial loss, identity theft, and compromise
-    of patient privacy.
-    - The ethical and legal responsibilities of healthcare organizations to protect patient data.
-    - Examples of data breaches in healthcare (e.g., ransomware attacks on hospitals).
+        <h3>Case Study</h3>
+        <ul>
+            Discussion
+            <li>
+                <a
+                    href="https://www.hhs.gov/hipaa/for-professionals/compliance-enforcement/agreements/anthem/index.html">
+                    Anthem Pays OCR $16 Million in Record HIPAA Settlement Following Largest Health Data Breach in
+                    History
+                </a>
+            </li>
+        </ul>
+    </details>
+    <details>
+        <summary>Encryption and Access Control</summary>
+        <h3>Encryption and Access Control</h3>
+        <p>Key Concepts</p>
+        <ul>
+            <li>Data Encryption
+                <p style="width:80%; margin:10px auto; border: black solid 1px">
+                    The process of converting plaintext data into a scrambled format (ciphertext) using algorithms to
+                    prevent unauthorized access.</p>
+                <ul>
+                    Types of encryption
+                    <li>Symmetric encryption (private key)</li>
+                    <li>Asymmetric encryption (private key/public key)</li>
+                </ul>
+            </li>
+            <li>Vulernabilities
+                <ul>
+                    <li>Data storage
+                        <p style="width:80%; margin:10px auto; border: black solid 1px">
+                            Involves storing information in a format that can be accessed and used. Data can be stored
+                            in databases, which structure data by similarity or group affiliation, or in electronic
+                            records, which allow data to be accessed from multiple locations.</p>
+                    </li>
+                    <li>Data processing
+                        <p style="width:80%; margin:10px auto; border: black solid 1px">
+                            Involves manipulating data to produce information. Data processing can be done manually or
+                            electronically and involves a range of operations performed on data, including collection,
+                            recording, organization, and storage.</p>
+                    </li>
+                    <li>
+                        Data transmission
+                        <p style="width:80%; margin:10px auto; border: black solid 1px">
+                            Involves transferring data between devices or systems, usually over a network. Data
+                            transmission requires a sender, receiver, message, medium, and protocol. The medium is the
+                            physical path used to transmit data, such as a cable or wireless connection. The protocol is
+                            a set of rules that govern the format, timing, and sequencing of the data transmission..</p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
 
-    **Activity:**
-    - **Class Discussion:** “Why do you think healthcare data is targeted more than other types of data?” Encourage
-    students to brainstorm and discuss.
 
-    ---
+        <h3>Access Control Mechanisms</h3>
+        <ul>
+            <li>Role-Based Access Control (RBAC): Restricting data access based on roles (e.g., doctors, nurses,
+                admins).</li>
+            <li>The Principle of Least Privilege: only granting users the minimum level of access needed for their role.
+            </li>
+            <li>Multifactor Authentication (MFA): adding an extra layer of security.</li>
+            <li>Auditing and monitoring access logs to identify potential security threats.</li>
+        </ul>
+    </details>
 
-    ### **2. HIPAA Compliance and Healthcare Regulations (15 minutes)**
+    <details>
+        <summary>Secure Database Design Principles</summary>
 
-    **A. Overview of HIPAA**
-    - *Key Elements:*
-    - **Health Insurance Portability and Accountability Act (HIPAA)** – purpose and scope.
-    - **Protected Health Information (PHI)** – definition and examples.
-    - **HIPAA Privacy Rule** – controlling how PHI can be used and disclosed.
-    - **HIPAA Security Rule** – standards for the protection of electronic PHI (ePHI).
-    - **HIPAA Breach Notification Rule** – guidelines for responding to data breaches.
-    - Consequences for non-compliance: fines, legal action, loss of reputation.
+        <h3>Core Principles of Secure Database Design</h3>
+        <ul>
+            <li>Separation of Duties: Ensuring different roles within a healthcare system have appropriate access to
+                only what
+                they need.</li>
+            <li>Data Minimization: Only collect and store data that is necessary for healthcare operations.</li>
+            <li>Normalization: Reducing redundancy to minimize the attack surface for breaches.</li>
+            <li>Database Encryption: Encrypting sensitive fields in the database (e.g., SSN, medical records).</li>
+            <li>Audit Logging: Maintaining detailed logs of data access and modifications.</li>
+        </ul>
+        <h3>Security Best Practices for Healthcare Databases</h3>
+        <ul>
+            <li>Input Validation: Protecting against SQL Injection and other attacks.</li>
+            <li>Stored Procedures: Using stored procedures to reduce risk.</li>
+            <li>Access Controls at the Database Level: Applying fine-grained controls to restrict who can view or edit
+                specific data fields.</li>
+        </ul>
+    </details>
 
-    **B. Key Regulations and Guidelines**
-    - *Other relevant frameworks:*
-    - **General Data Protection Regulation (GDPR)** (if applicable globally).
-    - **HITECH Act** (Health Information Technology for Economic and Clinical Health).
-
-    **Activity:**
-    - **Case Study:** Review a case of HIPAA violation. Discuss how the breach occurred and what could have been done
-    differently.
-
-    ---
-
-    ### **3. Encryption and Access Control (20 minutes)**
-
-    **A. Importance of Encryption in Healthcare**
-    - *Key Concepts:*
-    - Definition of encryption and why it's critical for securing healthcare data.
-    - **Types of Encryption:**
-    - **Symmetric encryption** – pros and cons.
-    - **Asymmetric encryption** – how public and private keys work.
-    - **Data at rest vs. data in transit** – how to secure both.
-    - **Real-world use cases** of encryption in electronic health records (EHR), emails, and cloud storage.
-
-    **B. Access Control Mechanisms**
-    - **Role-Based Access Control (RBAC):**
-    - Restricting data access based on roles (e.g., doctors, nurses, admins).
-    - The Principle of Least Privilege – only granting users the minimum level of access needed for their role.
-    - **Multifactor Authentication (MFA)** – adding an extra layer of security.
-    - Importance of auditing and monitoring access logs to identify potential security threats.
-
-    **Activity:**
-    - **Hands-On Demo:** Encrypt a healthcare dataset using basic encryption tools (demonstration of AES encryption).
-    Discuss how this data can only be accessed by authorized personnel with decryption keys.
-
-    ---
-
-    ### **4. Secure Database Design Principles (25 minutes)**
-
-    **A. Core Principles of Secure Database Design**
-    - **Separation of Duties:** Ensuring different roles within a healthcare system have appropriate access to only what
-    they need.
-    - **Data Minimization:** Only collect and store data that is necessary for healthcare operations.
-    - **Normalization:** Reducing redundancy to minimize the attack surface for breaches.
-    - **Database Encryption:** Encrypting sensitive fields in the database (e.g., SSN, medical records).
-    - **Audit Logging:** Maintaining detailed logs of data access and modifications.
-
-    **B. Security Best Practices for Healthcare Databases**
-    - **Input Validation:** Protecting against SQL Injection and other attacks.
-    - **Stored Procedures:** Using stored procedures to reduce risk.
-    - **Access Controls at the Database Level:** Applying fine-grained controls to restrict who can view or edit
-    specific data fields.
-
-    **Activity:**
-    - **Group Activity:** Participants work in groups to design a secure schema for a healthcare database. They should
-    consider encryption, access control, and auditing practices.
-
-    ---
-
-    ### **5. Wrap-up and Review (10 minutes)**
-
-    **A. Key Takeaways:**
-    - The significance of data security in protecting patient privacy.
-    - Compliance with HIPAA and the consequences of violations.
-    - Using encryption and access control as layers of defense.
-    - Implementing secure design principles in healthcare databases.
-
-    **B. Q&A Session:**
-    Open the floor for questions and clarifications on any of the topics covered.
-
-    **Homework/Project:**
-    - Create a security policy for a fictional healthcare organization, outlining the rules for access control, data
-    encryption, and incident response.
-
-    ---
-
-    ### **Assessment:**
-    - Class Participation (10%)
-    - Case Study Analysis (15%)
-    - Group Activity on Secure Database Design (25%)
-    - Homework/Project (50%)
-
-    ---
-
-    ### **Resources:**
-    - **Reading Material:**
-    - HIPAA Compliance Guide
-    - Articles on encryption technologies and healthcare data security.
-
-    - **Tools for Practice:**
-    - Online encryption tools (for hands-on encryption demo).
-    - SQL server for secure database design exercises.
-
-    ---
-
-    This lesson plan provides a comprehensive overview of healthcare data security, emphasizing practical applications
-    and regulations to ensure students understand both the theoretical and technical aspects of securing healthcare
-    data.
 </body>
 
 </html>
