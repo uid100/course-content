@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Vulnerabilities in Cybersecurity</title>
+</head>
+
+<body style="background-color: aliceblue;">
+    <h1>Data Vulnerabilities in Cybersecurity</h1>
+
+    <h2>Overview</h2>
+    <p>
+        Introduce concept of data vulnerabilities in cybersecurity, explore different types of vulnerabilities, and
+        discuss how cybercriminals exploit them.
+    </p>
+    <p>
+        Understand key vulnerability exploitation methods such as SQL injection, buffer overflows, cross-site scripting
+        (XSS), and open-source exploit kits.
+    </p>
+
+    <h3>Objectives</h3>
+    <ul>
+        <li>Understand what a data vulnerability is and how it impacts cybersecurity.</li>
+        <li>Identify and explain different methods cybercriminals use to exploit vulnerabilities.</li>
+        <li>Analyze examples of common vulnerabilities, such as SQL injection, buffer overflows, XSS, and open-source
+            exploit kits.</li>
+    </ul>
+
+    <hr />
+    <h2>Data Vulnerabilities</h2>
+    <p>
+        A <strong>data vulnerability</strong> in cybersecurity is a weakness in a system, software, or
+        network that can be exploited by cybercriminals to gain unauthorized access to sensitive data.
+    </p>
+    <p>
+        Vulnerabilities can arise from flaws in the system design, software bugs, or human error. When
+        exploited, vulnerabilities can lead to data breaches, unauthorized access, and theft of information.
+    </p>
+
+    <hr />
+
+    <h2>Common exploit methods</h2>
+    <ul>
+        <li><strong>SQL Injection</strong>
+            <p style="width: 80%; border: black 1px">
+                A method where attackers manipulate SQL queries to execute unauthorized
+                database commands.
+            </p>
+            <details>
+                <summary>Explanation</summary>
+                <p>
+                    SQL injection attacks occur when attackers insert malicious SQL code into input fields
+                    on a website to manipulate the database queries. This allows them to access, modify, or
+                    delete data in the database.
+                </p>
+                <p>
+                    SQL Injection is a type of cyberattack where an attacker manipulates a web application's SQL
+                    queries by injecting malicious SQL code into input fields, such as login forms, search bars, or
+                    URL parameters. By exploiting vulnerabilities in how SQL queries are handled, attackers can gain
+                    unauthorized access to databases, manipulate data, or even destroy information.
+                </p>
+                <p>
+                    SQL Injection occurs when user input is incorrectly handled or not properly sanitized before
+                    being included in a SQL query. If the application trusts this input, the malicious SQL code can
+                    execute unintended commands, such as retrieving confidential data, altering records, or
+                    bypassing authentication.
+                </p>
+                <ul>
+                    Common SQL Injection Attack Goals:
+                    <li>Extract sensitive data (e.g., usernames, passwords, personal information)</li>
+                    <li>Bypass authentication (e.g., login without proper credentials)</li>
+                    <li>Modify or delete data (e.g., updating or deleting records)</li>
+                    <li>Execute administrative operations (e.g., creating new user accounts)</li>
+                </ul>
+                <h3>Simple Example of SQL Injection</h3>
+                <p>
+                    Imagine a login form where a user provides a username and password. A typical SQL query to check
+                    login credentials might look like this:
+                    ```sql
+                    SELECT * FROM users WHERE username = 'user' AND password = 'password';
+                    ```
+                </p>
+                <p>
+                    In this case, the username and password are taken from the user input and inserted into the SQL
+                    query.
+                </p>
+                <p>
+                    Now, consider what happens if the input fields are not properly validated or sanitized. An
+                    attacker can input malicious code instead of a valid username or password. For example, if the
+                    attacker enters the following into the username field:
+                    ```sql
+                    ' OR '1' = '1
+                    ```
+                </p>
+                <p>
+                    The resulting query becomes:
+                    ```sql
+                    SELECT * FROM users WHERE username = '' OR '1' = '1' AND password = '';
+                    ```
+                </p>
+                <p>
+                    This query does something very different than intended. The condition OR '1' = '1' will always
+                    evaluate as true, meaning that the query returns all users from the users table and grants the
+                    attacker access without needing a valid password.
+                </p>
+                <p>
+                    This is a simple example of SQL injection, but it illustrates how a small oversight in input
+                    validation can lead to a significant security vulnerability.
+                </p>
+
+            </details>
+            <p>&nbsp;</p>
+        </li>
+        <li><strong>Buffer Overflows</strong>
+            <p style="width: 80%; border: black 1px">
+                A method where attackers exploit the overflow of memory buffers to
+                execute malicious code.
+            </p>
+            <details>
+                <summary>Explanation</summary>
+                <p>
+                    Buffer overflows occur when a program writes more data to a buffer than it can hold, causing the
+                    excess data to overflow into adjacent memory locations. Attackers can exploit this vulnerability
+                    to inject and execute malicious code, leading to system crashes, unauthorized access, or
+                    arbitrary code execution.
+                </p>
+                <p>
+                    Buffer overflows are a common vulnerability in software applications, especially those written
+                    in
+                    low-level languages like C and C++. By carefully crafting input data to exceed the buffer's
+                    capacity, attackers can overwrite critical memory addresses, manipulate program flow, and
+                    compromise the system's security.
+                </p>
+                <p>
+                    Buffer overflows can have serious consequences, such as allowing attackers to gain control of a
+                    system, escalate privileges, or launch denial-of-service attacks. To prevent buffer overflow
+                    vulnerabilities, developers should implement secure coding practices, input validation, and
+                    memory protection mechanisms.
+                </p>
+            </details>
+            <p>&nbsp;</p>
+        </li>
+        <li><strong>Cross-Site Scripting (XSS)</strong>
+            <p style="width: 80%; border: black 1px">
+                A method where attackers inject malicious scripts into
+                websites that other users access.
+            </p>
+            <details>
+                <summary>Explanation</summary>
+                <p>
+                    Cross-Site Scripting (XSS) is a type of web vulnerability where attackers inject malicious
+                    scripts
+                    into web pages viewed by other users. By exploiting XSS vulnerabilities, attackers can steal
+                    sensitive information, hijack user sessions, deface websites, or launch phishing attacks.
+                </p>
+                <p>
+                    XSS attacks occur when web applications fail to properly validate and sanitize user input before
+                    displaying it to other users. Attackers can inject scripts, such as JavaScript, into input
+                    fields
+                    or URLs, which are then executed by unsuspecting users' browsers.
+                </p>
+                <p>
+                    There are several types of XSS attacks, including reflected XSS, stored XSS, and DOM-based XSS.
+                    Each type targets different vulnerabilities in web applications and can have varying impacts on
+                    users and systems.
+                </p>
+                <p>
+                    To prevent XSS attacks, developers should implement input validation, output encoding, and
+                    security headers in their web applications. Users can protect themselves by being cautious of
+                    suspicious links, enabling browser security features, and using content security policies.
+                </p>
+            </details>
+            <p>&nbsp;</p>
+        </li>
+        <li><strong>Open-Source Exploit Kits</strong>
+            <p style="width: 80%; border: black 1px">
+                Tools that cybercriminals use to automate the discovery of
+                known vulnerabilities in web applications.
+            </p>
+            <details>
+                <summary>Explanation</summary>
+                <p>
+                    Open-source exploit kits are software tools used by cybercriminals to automate the discovery and
+                    exploitation of known vulnerabilities in web applications. These kits contain pre-built
+                    exploits, payloads, and attack scripts that can be used to compromise systems and steal
+                    sensitive
+                    data.
+                </p>
+                <p>
+                    Exploit kits are designed to target common vulnerabilities, such as SQL injection, XSS, and
+                    buffer overflows, in popular web applications and frameworks. By scanning the internet for
+                    vulnerable sites and launching automated attacks, cybercriminals can infect users with malware,
+                    steal credentials, or take control of compromised systems.
+                </p>
+                <p>
+                    Some famous exploit kits include Metasploit, Exploit Pack, and Blackhole. These kits have been
+                    responsible for numerous high-profile data breaches and cyberattacks, highlighting the
+                    importance
+                    of securing web applications against known vulnerabilities.
+                </p>
+                <ul>
+                    <li>Explain how open-source exploit kits work and why they are dangerous.</li>
+                    <li>Discuss famous exploit kits (e.g., Metasploit) and their impact on cybersecurity.</li>
+                </ul>
+            </details>
+            <p>&nbsp;</p>
+        </li>
+    </ul>
+
+</body>
+
+</html>
