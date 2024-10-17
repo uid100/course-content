@@ -97,30 +97,31 @@
                     <strong>Test and save your <code>CreateTables.sql</code> script file for submission.</strong>
                 </p>
                 <pre>
-    - Create the Staff table
+-- Staff
+    DROP TABLE IF EXISTS Staff
     CREATE TABLE Staff (
-        staff_id INT PRIMARY KEY AUTO_INCREMENT,
+        staff_id INT PRIMARY KEY IDENTITY(1,1),
         first_name VARCHAR(50),
         last_name VARCHAR(50),
         role VARCHAR(50),
         department_id INT,
-        contact_number VARCHAR(20),
+        contact_number VARCHAR(20)
         FOREIGN KEY (department_id) REFERENCES Department(department_id)
     );
         </pre>
                 <p>&nbsp;</p>
                 <pre>
-    - Create the Department table
+    -- Create the Department table
     CREATE TABLE . . .
         </pre>
                 <p>&nbsp;</p>
                 <pre>
-    - Create the Shifts table
+    -- Create the Shifts table
     CREATE TABLE . . .
         </pre>
                 <p>&nbsp;</p>
                 <pre>
-    - Create the Schedule table
+    -- Create the Schedule table
     CREATE TABLE . . .
         </pre>
         </div> <!-- #step2 -->
@@ -147,13 +148,13 @@
                     <strong>Test and save your <code>InsertValues.sql</code> script file for submission.</strong>
                 </p>
                 <pre>
-    - Insert sample data into the Department table
+    -- Insert sample data into the Department table
     INSERT INTO Department (department_name)
     VALUES ('Emergency'), ('Pediatrics'), ('Surgery');
         </pre>
                 <p>&nbsp;</p>
                 <pre>
-    - Insert sample data into the Staff table
+    -- Insert sample data into the Staff table
     INSERT INTO Staff (first_name, last_name, role, department_id, contact_number)
     VALUES ('John', 'Doe', 'Doctor', 1, '123-456-7890'),
            ('Jane', 'Smith', 'Nurse', 1, '987-654-3210'),
@@ -162,7 +163,7 @@
         </pre>
                 <p>&nbsp;</p>
                 <pre>
-    - Insert sample data into the Shifts table
+    -- Insert sample data into the Shifts table
     INSERT INTO Shifts (start_time, end_time, shift_name)
     VALUES ('08:00:00', '16:00:00', 'Day Shift'),
            ('16:00:00', '00:00:00', 'Evening Shift'),
@@ -170,7 +171,7 @@
         </pre>
                 <p>&nbsp;</p>
                 <pre>
-    - Insert sample data into the Schedule table
+    -- Insert sample data into the Schedule table
     INSERT INTO Schedule (staff_id, shift_id, shift_date, department_id)
     VALUES (1, 1, '2024-10-11', 1),
            (2, 2, '2024-10-11', 1),
@@ -203,7 +204,7 @@
                     <strong>Test and save your <code>StaffingSchedule.sql</code> script file for submission.</strong>
                 </p>
                 <pre style="display:none;">
-    - Query to generate the staffing schedule for the Emergency department over the week
+    -- Query to generate the staffing schedule for the Emergency department over the week
     SELECT s.first_name, s.last_name, s.role, d.department_name, sh.shift_name, sc.shift_date
     FROM Schedule sc
     JOIN Staff s ON sc.staff_id = s.staff_id
@@ -232,7 +233,7 @@
                     <strong>Test and save your <code>Overlap.sql</code> script file for submission.</strong>
                 </p>
                 <pre style="display: none;">
-    - Query to find staff with overlapping shifts
+    -- Query to find staff with overlapping shifts
     SELECT s1.staff_id, s1.first_name, s1.last_name, sc1.shift_date, sh1.shift_name, sh2.shift_name
     FROM Schedule sc1
     JOIN Schedule sc2 ON sc1.staff_id = sc2.staff_id
