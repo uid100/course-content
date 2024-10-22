@@ -7,7 +7,7 @@
     <title>NoSQL</title>
 </head>
 
-<body style="background-color: aliceblue;">
+<body style="background-color: aliceblue; padding:20px;">
 
     <div id="header">
         <h1>NoSQL Databases</h1>
@@ -28,6 +28,7 @@
             column-family stores, and graph databases, each suited for different use cases.
         </p>
     </div> <!-- #header -->
+    <hr>
     <div id="characteristics">
         <h2>Key Characteristics of NoSQL Databases</h2>
         <p>Key characteristics of NoSQL databases include:</p>
@@ -45,6 +46,7 @@
             </li>
         </ul>
     </div> <!-- #characteristics -->
+    <hr>
     <div id="types">
         <h2>Types of NoSQL Databases</h2>
         <p>NoSQL databases come in various forms, each suited for different types of data models and use cases. Let's
@@ -68,67 +70,74 @@
                 Example: Neo4j.</li>
         </ul>
     </div> <!-- #types -->
-    <div id="use-cases">
-        <h2>Use Cases for NoSQL in Healthcare</h2>
-        <p>NoSQL databases offer powerful solutions to the unique challenges in healthcare, where data is often complex,
-            heterogeneous, and voluminous. Key use cases include:</p>
-        <ul>
-            <li><strong>Electronic Health Records (EHR)</strong><br>
-                Storing patient records with flexible schemas that can evolve over time.</li>
-            <li><strong>Medical IoT Data</strong><br>
-                Handling sensor data from wearable devices and medical equipment, which generates large streams of
-                real-time information.</li>
-            <li><strong>Genomic Data</strong><br>
-                Managing massive datasets for research and precision medicine, where
-                relationships between genes and clinical information can be explored.</li>
-            <li><strong>Healthcare Analytics</strong><br>
-                Powering analytics applications to improve patient care, optimize
-                hospital operations, and support predictive modeling.</li>
-        </ul>
+    <hr <div id="use-cases">
+    <h2>Use Cases for NoSQL in Healthcare</h2>
+    <p>NoSQL databases offer powerful solutions to the unique challenges in healthcare, where data is often complex,
+        heterogeneous, and voluminous. Key use cases include:</p>
+    <ul>
+        <li><strong>Electronic Health Records (EHR)</strong><br>
+            Storing patient records with flexible schemas that can evolve over time.</li>
+        <li><strong>Medical IoT Data</strong><br>
+            Handling sensor data from wearable devices and medical equipment, which generates large streams of
+            real-time information.</li>
+        <li><strong>Genomic Data</strong><br>
+            Managing massive datasets for research and precision medicine, where
+            relationships between genes and clinical information can be explored.</li>
+        <li><strong>Healthcare Analytics</strong><br>
+            Powering analytics applications to improve patient care, optimize
+            hospital operations, and support predictive modeling.</li>
+    </ul>
     </div> <!-- #use-cases -->
-    <div id="example">
-        <h2>Hands-On: Setting up and Querying a NoSQL Database</h2>
-        <p>
-            Set up a NoSQL database using MongoDB, a popular <em>document-based</em>
-            NoSQL system. Follow these steps:
-        </p>
-        <ol>
-            <li><strong>Installation</strong><br>
-                Install MongoDB on your machine, or use a cloud-hosted solution like MongoDB Atlas.</li>
-            <li><strong>Creating a Database</strong><br>
-                Once installed, create a database using the <code>use</code> command:
-                <pre>use healthcareDB</pre>
-            </li>
-            <li><strong>Inserting Documents</strong><br>
-                Insert patient records as JSON-like documents:
-                <pre>db.patients.insertOne({
+    <hr <div id="example">
+    <h2>Demonstration: Setting up and Querying a NoSQL Database</h2>
+    <p>
+        Set up a NoSQL database using MongoDB, a popular <em>document-based</em>
+        NoSQL system. Follow these steps:
+    </p>
+    <ol>
+        <li><strong>Installation</strong><br>
+            Install MongoDB on your machine, or use a cloud-hosted solution like MongoDB Atlas.</li>
+        <li><strong>Creating a Database</strong><br>
+            Once installed, create a database using the <code>use</code> command:
+            <pre>use healthcareDB</pre>
+        </li>
+        <li><strong>Inserting Documents</strong><br>
+            Insert patient records as JSON-like documents:
+            <pre>db.patients.insertOne({
     name: "John Doe",
     age: 45,
     condition: "Hypertension",
     medications: ["Lisinopril", "Aspirin"]
 })</pre>
-            </li>
-            <li><strong>Querying Data</strong><br>
-                Perform basic queries to retrieve patient information:
-                <pre>db.patients.find({ age: { $gte: 40 } })</pre>
-            </li>
-            <li><strong>Aggregation</strong><br>
-                Use aggregation queries to analyze the data:
-                <pre>db.patients.aggregate([
+        </li>
+        <li><strong>Querying Data</strong><br>
+            Perform basic queries to retrieve patient information:
+            <pre>db.patients.find({ age: { $gte: 40 } })</pre>
+        </li>
+        <li><strong>Aggregation</strong><br>
+            Use aggregation queries to analyze the data:
+            <pre>db.patients.aggregate([
     { $match: { condition: "Hypertension" } },
     { $group: { _id: null, avgAge: { $avg: "$age" } } }
 ])</pre>
-            </li>
-        </ol>
+        </li>
+    </ol>
     </div> <!-- #example -->
+    <hr>
     <div id="summary">
         <h2>Summary</h2>
+        <p>
+            "Not-Only-SQL" databases provide a flexible alternative to traditional relational databases.
+        </p>
         <p>
             NoSQL databases provide flexibility and power, especially for modern applications like those in healthcare,
             where the ability to scale and handle a variety of data formats is essential. Using NoSQL, you can
             develop efficient, scalable, tailored solutions.</p>
     </div> <!-- #summary -->
-
+    <hr>
+    <p>
+        <a href="https://www.youtube.com/watch?v=0buKQHokLK8" target="_blank">How do NoSQL databases work?</a>
+    </p>
 
 </body>
 
