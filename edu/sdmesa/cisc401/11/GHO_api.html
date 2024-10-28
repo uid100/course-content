@@ -126,68 +126,101 @@
         </details>
     </div> <!-- #intro -->
     <hr>
+    <div id="exercise">
+        <details open>
+            <summary>Discussion</summary>
+            <ol>
+                <li>Initial Post (30 points)
+                    <p>
+                        Explore the GHO API and find a dataset that interests you. Use the API to retrieve the data and
+                        analyze it to gain insights into the global health situation. Share your findings with the
+                        class.
+                    </p>
+                    <p>
+                        Include the URI you used to retrieve the data, including the indicator code and query filters,
+                        and any key insights you gained from the data.
+                    </p>
+                    <p>
+                        What are the key insights you gained from the data? How do they relate to the global health
+                        situation?
+                    </p>
+                </li>
+                <li>Response Posts (10 points each)
+                    <p>
+                        Respond to at least two of your classmates' posts with thoughtful feedback and suggestions.
+                        Share your own thoughts on the data they presented.
+                    </p>
+                </li>
+            </ol>
 
-    <h2>Exercise</h2>
-    <p>
-        Explore the GHO API and find a dataset that interests you. Use the API to retrieve the data and analyze it to
-        gain insights into the global health situation. Share your findings with the class.
-    </p>
 
-    <h2>Sample Queries</h2>
-    <p>
-        Here are three sample queries for exploring WHO data using the GHO API, along with analysis questions for each.
-    </p>
-    <p>
-        You can use these as starting points to get ideas. Change them for your own results.
-    </p>
+            <h2>Sample Queries</h2>
+            <p>
+                Here are three sample queries for exploring WHO data using the GHO API, along with analysis questions
+                for each.
+            </p>
+            <p>
+                You can use these as starting points to get ideas. Change them for your own results.
+            </p>
 
-    <div id="example1">
-        <h3>Life Expectancy Analysis</h3>
-        <p>
-            Query: Retrieve "Life expectancy at birth" (e.g., WHOSIS_000001).
-        </p>
-        <p>
-            Analysis: What are the trends in life expectancy across different regions over the last decade?
-            Are there significant differences by gender?
-        </p>
-        <p>
-            <a href="https://ghoapi.azureedge.net/api/WHOSIS_000001?filter=data(TimeDimensionBegin)%20ge%202013-01-01"
-                target="_blank">
-                https://ghoapi.azureedge.net/api/WHOSIS_000001?filter=data(TimeDimensionBegin) ge 2013-01-01
-            </a>
-        </p>
-    </div> <!-- #example1 -->
+            <div id="example1">
+                <details>
+                    <summary>example 1</summary>
+                    <h3>Life Expectancy Analysis</h3>
+                    <p>
+                        Query: Retrieve "Life expectancy at birth" (e.g., WHOSIS_000001).
+                    </p>
+                    <p>
+                        Analysis: What are the trends in life expectancy across different regions over the last decade?
+                        Are there significant differences by gender?
+                    </p>
+                    <p>
+                        <a href="https://ghoapi.azureedge.net/api/WHOSIS_000001?filter=data(TimeDimensionBegin)%20ge%202013-01-01"
+                            target="_blank">
+                            https://ghoapi.azureedge.net/api/WHOSIS_000001?filter=data(TimeDimensionBegin) ge 2013-01-01
+                        </a>
+                    </p>
+                </details>
+            </div> <!-- #example1 -->
 
-    <div id="example2">
-        <h3>Mortality Rates due to Air Pollution</h3>
-        <p>
-            Query: Filter for "Ambient air pollution attributable deaths" (indicator code available).
-        </p>
-        <p>
-            Analysis: How have air pollution-related mortality rates changed, especially in urban areas?
-        </p>
-        <p>
-            https://ghoapi.azureedge.net/api/indicator_code'<br>
-            try:
-            <code>https://ghoapi.azureedge.net/api/Indicator?$filter=contains(IndicatorName,%27AMBIENT%27)</code><br>
-            Things to consider: How many different indicators are there? How are they different?
-        </p>
-    </div> <!-- #example2 -->
+            <div id="example2">
+                <details>
+                    <summary>example 2</summary>
+                    <h3>Mortality Rates due to Air Pollution</h3>
+                    <p>
+                        Query: Filter for "Ambient air pollution attributable deaths" (indicator code available).
+                    </p>
+                    <p>
+                        Analysis: How have air pollution-related mortality rates changed, especially in urban areas?
+                    </p>
+                    <p>
+                        https://ghoapi.azureedge.net/api/indicator_code'<br>
+                        try:
+                        <code>https://ghoapi.azureedge.net/api/Indicator?$filter=contains(IndicatorName,%27AMBIENT%27)</code><br>
+                        Things to consider: How many different indicators are there? How are they different?
+                    </p>
+                </details>
+            </div> <!-- #example2 -->
 
-    <div id="example3">
-        <h3>Maternal Mortality Ratios </h3>
-        <p>
-            Query: Retrieve data on maternal mortality ratios
-        </p>
-        <p>
-            Analysis: How does maternal mortality correlate with access to healthcare services?
-        </p>
-        <p>ß
-            <a href="https://ghoapi.azureedge.net/api/MORT_MATERNALNUM" target="_blank">
-                https://ghoapi.azureedge.net/api/MORT_MATERNALNUM
-            </a>
-        </p>
-    </div> <!-- #example3 -->
+            <div id="example3">
+                <details>
+                    <summary>example 3</summary>
+                    <h3>Maternal Mortality Ratios </h3>
+                    <p>
+                        Query: Retrieve data on maternal mortality ratios
+                    </p>
+                    <p>
+                        Analysis: How does maternal mortality correlate with access to healthcare services?
+                    </p>
+                    <p>
+                        <a href="https://ghoapi.azureedge.net/api/MORT_MATERNALNUM" target="_blank">
+                            https://ghoapi.azureedge.net/api/MORT_MATERNALNUM
+                        </a>
+                    </p>
+                </details>
+            </div> <!-- #example3 -->
+        </details>
+    </div> <!-- #exercise -->
 </body>
 
 </html>
