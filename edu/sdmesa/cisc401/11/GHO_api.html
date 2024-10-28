@@ -9,109 +9,124 @@
 
 <body style="padding:20px; background-color: aliceblue;">
     <h1>Global Health Observatory API</h1>
-    <p>
-        The Global Health Observatory (GHO) is the World Health Organization's portal providing access to data and
-        analyses for monitoring the global health situation.
-    </p>
-    <p>
-        The GHO data repository contains an extensive list of indicators, which can be selected by theme or through
-        a multi-dimension query functionality.
-    </p>
-    <p>
-        It is the World Health Organization's main health statistics repository.
-    </p>
-    <p>
-        The GHO provides access to data from WHO's Member States. The data repository is updated on a regular basis to
-        provide users with the most recent data available.
-    </p>
-    <p>
-        The GHO data repository provides access to over 50 datasets on priority health topics including:
-    <ul>
-        <li>mortality and burden of diseases</li>
-        <li>the Millennium Development Goals:
+    <div id="intro">
+        <details>
+            <summary>Introduction</summary>
+            <p>
+                The Global Health Observatory (GHO) is the World Health Organization's portal providing access to data
+                and
+                analyses for monitoring the global health situation.
+            </p>
+            <p>
+                The GHO data repository contains an extensive list of indicators, which can be selected by theme or
+                through
+                a multi-dimension query functionality.
+            </p>
+            <p>
+                It is the World Health Organization's main health statistics repository.
+            </p>
+            <p>
+                The GHO provides access to data from WHO's Member States. The data repository is updated on a regular
+                basis
+                to
+                provide users with the most recent data available.
+            </p>
+            <p>
+                The GHO data repository provides access to over 50 datasets on priority health topics including:
             <ul>
-                <li>nutrition</li>
-                <li>child health</li>
-                <li>maternal and reproductive health</li>
-                <li>immunization</li>
-                <li>HIV/AIDS</li>
-                <li>tuberculosis</li>
-                <li>malaria</li>
-                <li>neglected diseases</li>
-                <li>water and sanitation</li>
+                <li>mortality and burden of diseases</li>
+                <li>the Millennium Development Goals:
+                    <ul>
+                        <li>nutrition</li>
+                        <li>child health</li>
+                        <li>maternal and reproductive health</li>
+                        <li>immunization</li>
+                        <li>HIV/AIDS</li>
+                        <li>tuberculosis</li>
+                        <li>malaria</li>
+                        <li>neglected diseases</li>
+                        <li>water and sanitation</li>
+                    </ul>
+                </li>
+                <li>non communicable diseases and risk factors</li>
+                <li>epidemic-prone diseases</li>
+                <li>health systems</li>
+                <li>environmental health</li>
+                <li>violence and injuries</li>
+                <li>equity</li>
+                <li><em>others</em></li>
             </ul>
-        </li>
-        <li>non communicable diseases and risk factors</li>
-        <li>epidemic-prone diseases</li>
-        <li>health systems</li>
-        <li>environmental health</li>
-        <li>violence and injuries</li>
-        <li>equity</li>
-        <li><em>others</em></li>
-    </ul>
-    <p>
-        The GHO data repository is available through a number of flexible tools, including an API that allows users to
-        access the data in a variety of formats, including XML, JSON, and CSV.
-    </p>
-    <p>
-        API provides access to the data repository through a number of endpoints, including the following:
-    </p>
-    <ul>
-        <li>
-            Start here: <br>
-            <a href="https://www.who.int/data/gho/info/gho-odata-api"
-                target="_blank">https://www.who.int/data/gho/info/gho-odata-api</a><br>
-            <em>What are the "dimension" codes?
-                <a href="https://ghoapi.azureedge.net/api/Dimension" target="_blank">(Example 1)</a></em><br>
-            <em>What are "indicators"?
-                <a href="https://ghoapi.azureedge.net/api/Indicator" target="_blank">(Example 3)</a></em><br>
-            &nbsp;
-        </li>
-        <li>
-            Get a list of available regions:<br>
-            <a href="" https://ghoapi.azureedge.net/api/Dimension/REGION/DimensionValues"
-                target="_blank">https://ghoapi.azureedge.net/api/Dimension/REGION/DimensionValues</a><br>
-            &nbsp;
-        </li>
+            <p>
+                The GHO data repository is available through a number of flexible tools, including an API that allows
+                users
+                to
+                access the data in a variety of formats, including XML, JSON, and CSV.
+            </p>
+            <p>
+                API provides access to the data repository through a number of endpoints, including the following:
+            </p>
+            <ul>
+                <li>
+                    Start here: <br>
+                    <a href="https://www.who.int/data/gho/info/gho-odata-api"
+                        target="_blank">https://www.who.int/data/gho/info/gho-odata-api</a><br>
+                    <em>What are the "dimension" codes?
+                        <a href="https://ghoapi.azureedge.net/api/Dimension" target="_blank">(Example 1)</a></em><br>
+                    <em>What are "indicators"?
+                        <a href="https://ghoapi.azureedge.net/api/Indicator" target="_blank">(Example 3)</a></em><br>
+                    &nbsp;
+                </li>
+                <li>
+                    Get a list of available regions:<br>
+                    <a href="" https://ghoapi.azureedge.net/api/Dimension/REGION/DimensionValues"
+                        target="_blank">https://ghoapi.azureedge.net/api/Dimension/REGION/DimensionValues</a><br>
+                    &nbsp;
+                </li>
 
 
-    </ul>
-    <div style="display: none;">
-        <ul>
-            <li>
-                <a
-                    href="https://ghoapi.azureedge.net/api/Indicator?$filter=contains(IndicatorName,%20%27Nurs%27)">https://ghoapi.azureedge.net/api/Indicator?$filter=contains(IndicatorName,%20%27Nurs%27)</a>
-            </li>
-            <li>
-                <a
-                    href="https://ghoapi.azureedge.net/api/DIMENSION/VEHICLESTANDARD/DimensionValues">https://ghoapi.azureedge.net/api/DIMENSION/VEHICLESTANDARD/DimensionValues</a>
-            </li>
-            <li>
-                <code>
+            </ul>
+            <div style="display: none;">
+                <ul>
+                    <li>
+                        <a
+                            href="https://ghoapi.azureedge.net/api/Indicator?$filter=contains(IndicatorName,%20%27Nurs%27)">https://ghoapi.azureedge.net/api/Indicator?$filter=contains(IndicatorName,%20%27Nurs%27)</a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://ghoapi.azureedge.net/api/DIMENSION/VEHICLESTANDARD/DimensionValues">https://ghoapi.azureedge.net/api/DIMENSION/VEHICLESTANDARD/DimensionValues</a>
+                    </li>
+                    <li>
+                        <code>
                     https://ghoapi.azureedge.net/api/HWF_0010?$filter=SpatialDim eq 'USA' and date(TimeDimensionBegin) ge
                     2018-01-01 and date(TimeDimensionBegin) lt 2022-01-01
                 </code>
-            </li>
-            <li>
-                <code>
+                    </li>
+                    <li>
+                        <code>
                     https://ghoapi.azureedge.net/api/HRH_01?$filter=SpatialDim eq 'USA' and date(TimeDimensionBegin) ge
                     2014-01-01
                 </code>
-            </li>
-            <li>
-                <code>
+                    </li>
+                    <li>
+                        <code>
                     https://ghoapi.azureedge.net/api/HWF_0010?$filter=SpatialDim%20eq%20%27USA%27%20and%20date(TimeDimensionBegin)%20ge%202000-01-01%20and%20date(TimeDimensionBegin)%20lt%202012-01-01
                 </code>
-            </li>
-        </ul>
-    </div>
-    <p>
-        The GHO API provides access to a wide range of data, including data on health workforce, health systems, and
-        health financing. The API allows users to filter the data by country, date, and other dimensions, and to
-        retrieve the data in a variety of formats, including XML, JSON, and CSV. The API is designed to be flexible and
-        easy to use, and provides access to a wealth of data on global health.
-    </p>
+                    </li>
+                </ul>
+            </div>
+            <p>
+                The GHO API provides access to a wide range of data, including data on health workforce, health systems,
+                and
+                health financing. The API allows users to filter the data by country, date, and other dimensions, and to
+                retrieve the data in a variety of formats, including XML, JSON, and CSV. The API is designed to be
+                flexible
+                and
+                easy to use, and provides access to a wealth of data on global health.
+            </p>
+        </details>
+    </div> <!-- #intro -->
     <hr>
+
     <h2>Exercise</h2>
     <p>
         Explore the GHO API and find a dataset that interests you. Use the API to retrieve the data and analyze it to
