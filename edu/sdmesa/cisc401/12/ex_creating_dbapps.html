@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="padding:20px; background-color: aliceblue;">
+    <h1>Building Database Applications</h1>
+    <hr>
+    <h2>Exercise: Create a Database Application using SQL Server and Python</h2>
+    <h3>Objective</h3>
+    <p>
+        In this exercise, you will create a simple database application using SQL Server as the database management
+        system
+        (DBMS) and Python as the programming language. This application will demonstrate the basic functionalities of
+        connecting to a database, executing queries, and displaying results using Python.
+    </p>
+    <details>
+        <summary>Create Database and Populate Tables</summary>
+        <p>
+            1. Create a new database named: <code>scheduledb</code> using Azure Data Studio
+        </p>
+        <p>
+            2. Download, inspect and run the attached SQL scripts to create the database schema and populate the tables
+            with
+            sample data.
+        </p>
+        <ul>
+            <li>CreateTables.sql</li>
+            <li>InsertData.sql</li>
+        </ul>
+        <p>
+            3. Add another record to the <code>Staff</code> table with your first and last name.
+        </p>
+        <p>
+            Query the <code>Staff</code> table to verify that the new record has been added successfully and to view the
+            assigned <code>staff_id</code>.
+        </p>
+        <p>
+            <strong>Record</strong> this query and response in a new MS Word document.
+        </p>
+    </details>
+
+    <details>
+        <summary>Step 2. Download and install Python and the pyodbc module</summary>
+        <p>
+            1. Download and install Python from the official website: <a href="https://www.python.org/downloads/">Python
+                Downloads</a>
+        </p>
+        <p>
+            2. Open a command prompt and install the <code>pyodbc</code> module using the following command:
+        </p>
+        <pre>
+            <code>pip install pyodbc</code>
+        </pre>
+        <p>
+            3. Download the provided Python script <code>dbapp.py</code> and save it to your local machine.
+        <ul>
+            <li>dbapp.py</li>
+        </ul>
+        </p>
+    </details>
+
+    <details>
+        <summary>Step 3. Run the Python script to demonstrate database connection</summary>
+        <p>
+            1. Find and run the app: <code>IDLE</code> which installed with Pyhton.
+        </p>
+        <p>
+            On MacOS, it is likely located in a folder named Python3.x in the Applications folder.
+        </p>
+        <p>
+            On Windows, use the Start menu to find and run newly installed IDLE.
+        </p>
+        <p>
+            2. Open the <code>dbapp.py</code> script in IDLE and review the contents.
+        </p>
+        <p>
+            3. Run the script by selecting <code>Run > Run Module</code> from the menu or pressing <code>F5</code>.
+        </p>
+        <p>
+            Enter First and Last names in the app when it launches to see the work schedule for that staff member.
+        </p>
+        <p>
+            <strong>Display</strong> work schedule for 3 different staff members. Add this to your MS Word document.
+        </p>
+        <p>
+            Login with your (added) name and staff id. What displays for your work schedule?
+        </p>
+    </details>
+    <p>
+        Submit the Word Document demonstrating the working database application.
+    </p>
+</body>
+
+</html>
