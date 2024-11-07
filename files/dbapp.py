@@ -9,37 +9,72 @@ import tkinter as tk
 from tkinter import messagebox
 import pyodbc
 
+DATABASE_NAME = 'scheduledb'
+
+
+def is_windows():
+    import platform
+    return platform.system() == 'Windows'
+
+
+def sql_server_driver():
+    driver_name = ''
+    driver_names = [
+        x for x in pyodbc.drivers() if x.endswith('SQL Server')]
+    if driver_names:
+        driver_name = driver_names[0]  # use the first driver found
+    else:
+        print("No pyodbc driver found for SQL Server. Exiting.")
+        return None
+    return driver_name
+
 
 def connect_to_db():
     try:
-        conn = pyodbc.connect(
-            'DRIVER={ODBC Driver 18 for SQL Server};'
-            'SERVER=localhost;'
-            'Encrypt=no;'
-            'DATABASE=scheduledb;'  # Replace with your database name
-            'UID=sa;'  # Replace with your SQL Server username
-            'PWD=reallyStrongPwd123'   # Replace with your SQL Server password
-        )
+        if is_windows():
+            conn = pyodbc.connect(
+                f'DRIVER={sql_server_driver()};'
+                'SERVER=localhost;'
+                'Encrypt=no;'
+                'TRUSTED_CONNECTION=yes;'
+            )
+        else:
+            conn = pyodbc.connect(
+                f'DRIVER={sql_server_driver()};'
+                'SERVER=localhost;'
+                'Encrypt=no;'
+                'UID=sa;'  # Replace with your SQL Server username
+                'PWD=reallyStrongPwd123'   # Replace with your SQL Server password
+            )
         return conn
     except pyodbc.Error as e:
-        print("Database connection error:", e)
+        messagebox.showerror(
+            "Database Error", "Could not connect to the database.")
         return None
 
 
 class dbApp:
     def __init__(self, gui):
+        # Connect to the database server
         self.conn = connect_to_db()
         if not self.conn:
-            messagebox.showerror(
-                "Database Error", "Could not connect to the database.")
             gui.destroy()
             return
-        else:
-            messagebox.showinfo(
-                "Database Connection", "Connected to the database.")
-            self.cursor = self.conn.cursor()
 
+        print("Connected to the database driver.")
         self.cursor = self.conn.cursor()
+
+        # Connect to the user database
+        try:
+            self.cursor.execute(f"USE {DATABASE_NAME};")
+            print(f"Connected to {DATABASE_NAME} database.")
+        except pyodbc.Error as e:
+            print("Database error:", e)
+            messagebox.showerror(
+                "Database Error", f"Could not connect to {DATABASE_NAME}. {e}")
+            gui.destroy()
+            return
+
         self.gui = gui
         self.login_page()
 
