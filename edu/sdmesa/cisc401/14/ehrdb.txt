@@ -1,9 +1,0 @@
-write instructions for a student database exercise:
-1. Write a script to: create a new database with the tables described.
-- name the database: 'EHR_DB_[StudentName]'
-(hint: connect to your local SQL Server, open a new query in the master database and use the CREATE and USE commands.)
-- create the tables from the provided table diagram. Be sure the data types, and foreign key constraints are correct. Use IDENTITY(1,1) for your tables. read more about it here (https://www.geeksforgeeks.org/how-to-turn-identity_insert-on-and-off-using-sql-server/)
-2. Write a second script to add seed data to the tables. There should be at least 20 new records in each table.
-
-Both the create and insert scripts should run without user intervention. You can use the RESET script in the "Student Resources"
-module to reset and erase your database while you are testing your scripts.
