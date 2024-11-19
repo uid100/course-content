@@ -75,7 +75,10 @@
                     <ol>
                         <li><code>CREATE</code> the new database.</li>
                         <li><code>USE</code> the newly created database.</li>
-                        <li>Define the tables and relationships based on the provided diagram.</li>
+                        <li>Define the tables and relationships based on the
+                            <a href="file:///Users/dan/proj/uid100.github.io/course-content/edu/sdmesa/cisc401/14/ehr_erd.html"
+                                target="_blank">provided diagram</a>.
+                        </li>
                     </ol>
                 </li>
                 <li>Ensure:
@@ -125,6 +128,7 @@ CREATE TABLE Appointments (
                 <li>Populate the tables with at least <strong>20 records per table</strong>.</li>
                 <li>Make sure data in related tables (e.g., foreign key columns) match.</li>
                 <li>Use meaningful and consistent data for fields such as names and dates.</li>
+                <li>Hint: remember to include the <code>USE</code> command at the top of your script.</li>
             </ul>
         </li>
         <li>
@@ -138,6 +142,9 @@ CREATE TABLE Appointments (
 
     <h3>Sample Code Snippet for Part 2:</h3>
     <pre>
+-- Use the database
+USE EHR_DB_StudentName;
+
 -- Insert seed data into Patients
 INSERT INTO Patients (FirstName, LastName, DateOfBirth)
 VALUES 
