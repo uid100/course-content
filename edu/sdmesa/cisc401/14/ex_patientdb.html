@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Database Exercise</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+            padding: 20px;
+            background-color: aliceblue;
+        }
+
+        h1,
+        h2 {
+            color: #0056b3;
+        }
+
+        code {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 2px 4px;
+            font-family: monospace;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            padding: 10px;
+            overflow: auto;
+            font-family: monospace;
+        }
+
+        ul {
+            margin: 10px 0;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Patient Database Exercise</h1>
+
+    <h2>Goal</h2>
+    <p>Create, populate, and query a database using SQL scripts based on the following steps.
+        Ensure that your scripts are fully executable without manual intervention.</p>
+    <hr>
+
+    <h2>Part 1: Create the Database and Tables</h2>
+
+    <h3>Steps:</h3>
+    <ol>
+        <li>
+            <strong>Create Your Database with a Unique Name</strong>
+            <ul>
+                <li>Use the naming convention: <code>EHR_DB_[YourName]</code>.
+                    Replace <code>[YourName]</code> with your actual name.</li>
+                <li>Example: Student Amanda Adams' database name will be <code>EHR_DB_AmandaAdams</code>.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Write the <em>Create</em> Script</strong>
+            <ul>
+                <li>Connect to your local SQL Server.</li>
+                <li>Open a new query window in the <code>master</code> database.</li>
+                <li>Write a script to:
+                    <ol>
+                        <li><code>CREATE</code> the new database.</li>
+                        <li><code>USE</code> the newly created database.</li>
+                        <li>Define the tables and relationships based on the provided diagram.</li>
+                    </ol>
+                </li>
+                <li>Ensure:
+                    <ul>
+                        <li>Primary key columns use <code>IDENTITY(1,1)</code> for auto-incrementing.</li>
+                        <li>Foreign key constraints are correctly established.</li>
+                    </ul>
+                </li>
+                <li>Reference: Use <a
+                        href="https://www.geeksforgeeks.org/how-to-turn-identity_insert-on-and-off-using-sql-server/"
+                        target="_blank">this guide</a> to understand the <code>IDENTITY</code> feature.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Sample Code Snippet for Part 1:</h3>
+    <pre>
+-- Create and use the database
+CREATE DATABASE EHR_DB_StudentName;
+USE EHR_DB_StudentName;
+
+-- Create tables (replace with actual table definitions based on the provided diagram)
+CREATE TABLE Patients (
+    PatientID INT IDENTITY(1,1) PRIMARY KEY,
+    FirstName NVARCHAR(50) NOT NULL,
+    LastName NVARCHAR(50) NOT NULL,
+    DateOfBirth DATE NOT NULL
+);
+
+CREATE TABLE Appointments (
+    AppointmentID INT IDENTITY(1,1) PRIMARY KEY,
+    PatientID INT NOT NULL,
+    AppointmentDate DATETIME NOT NULL,
+    FOREIGN KEY (PatientID) REFERENCES Patients(PatientID)
+);
+
+-- Add other tables as described in the diagram
+    </pre>
+
+    <h2>Part 2: Seed the Tables with Data</h2>
+
+    <h3>Steps:</h3>
+    <ol>
+        <li>
+            <strong>Write a Second Script:</strong>
+            <ul>
+                <li>Populate the tables with at least <strong>20 records per table</strong>.</li>
+                <li>Make sure data in related tables (e.g., foreign key columns) match.</li>
+                <li>Use meaningful and consistent data for fields such as names and dates.</li>
+            </ul>
+        </li>
+        <li>
+            <strong>Test Your Script:</strong>
+            <ul>
+                <li>Run the script after resetting your database with the provided RESET script.</li>
+                <li>Ensure that it runs without errors.</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h3>Sample Code Snippet for Part 2:</h3>
+    <pre>
+-- Insert seed data into Patients
+INSERT INTO Patients (FirstName, LastName, DateOfBirth)
+VALUES 
+('John', 'Doe', '1985-03-15'),
+('Jane', 'Smith', '1990-07-22'),
+-- Add 18 more rows here
+;
+
+-- Insert seed data into Appointments
+INSERT INTO Appointments (PatientID, AppointmentDate)
+VALUES 
+(1, '2024-01-10 10:00:00'),
+(2, '2024-01-11 14:30:00'),
+-- Add 18 more rows here
+;
+
+-- Add inserts for other tables
+    </pre>
+
+    <h2>Part 3: Query Your Database</h2>
+    <p>Using your tables, write SQL queries to answer the following questions.
+        Ensure your queries are correct and efficient.</p>
+    <pre>
+    <code>
+        --1. List all patients along with their insurance provider names.
+
+
+        --2. Find all appointments for a specific doctor (e.g., DoctorID = 1)
+        --   and include patient names and appointment dates.
+
+
+        --3. Get the total number of appointments each doctor has.
+
+
+        --4. List all prescriptions along with patient names, doctor names, 
+        --   and medication names.
+
+
+        --5. Get the total billing amount for each patient.
+
+
+        --6. Find all lab results for a specific patient (e.g., PatientID = 1) 
+        --   including test types and results.
+
+
+        --7. Find all appointments scheduled within a specific date range 
+        --   (‘2024-01-01’ to ‘2024-12-31’).
+
+
+        --8. List all patients who have been prescribed a specific medication 
+        --   (MedicationID = 1).
+
+
+        --9. Get the number of patients each insurance provider covers.
+
+
+        --10. Find the total number of lab tests conducted by each doctor.
+
+    </code>
+</pre>
+
+
+    <h2>General Tips</h2>
+    <ul>
+        <li><strong>Run Independently:</strong> All three scripts (create, insert, query) should run independently
+            without requiring manual inputs.</li>
+        <li><strong>Error Handling:</strong> Test for and resolve any issues, such as foreign key violations or
+            invalid data types.</li>
+        <li><strong>Resetting the Database:</strong> Use the provided RESET script in the "Student Resources"
+            module to delete and recreate your database while testing.</li>
+    </ul>
+
+    <h2>Submit</h2>
+    <ol>
+        <li>A script named <code>Create_EHR_DB_[YourName].sql</code> to create the database and tables.</li>
+        <li>A script named <code>Seed_EHR_DB_[YourName].sql</code> to insert at least 20 records per table.</li>
+        <li>A script named <code>Query_EHR_DB_[YourName].sql</code> to answer the 10 results from part 3.</li>
+    </ol>
+</body>
+
+</html>
