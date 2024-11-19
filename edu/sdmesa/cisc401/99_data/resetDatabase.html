@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="padding:20px; background-color: aliceblue;">
+    <p>
+        Here’s a SQL script to purge and delete a SQL Server database for development purposes. Use this script with
+        caution, as it permanently deletes the specified database and its contents.
+    </p>
+    <h2>
+        SQL Script: Purge and Delete a Database</h2>
+    <p>
+        This script checks if the specified database exists, disconnects all users, and then drops the database. It’s a
+        safe way to reset a database before running creation or migration scripts.
+    </p>
+    <pre><code>
+-- Specify the database name
+DECLARE @DatabaseName NVARCHAR(128) = 'YourDatabaseName'
+
+-- Check if the database exists
+IF EXISTS (SELECT 1 FROM sys.databases WHERE name = @DatabaseName)
+BEGIN
+    PRINT 'Database exists. Proceeding to remove it.'
+
+    -- Set the database to SINGLE_USER mode to disconnect all users
+    DECLARE @SQL NVARCHAR(MAX)
+    SET @SQL = 'ALTER DATABASE [' + @DatabaseName + '] SET SINGLE_USER WITH ROLLBACK IMMEDIATE;'
+    EXEC sp_executesql @SQL
+
+    -- Drop the database
+    SET @SQL = 'DROP DATABASE [' + @DatabaseName + '];'
+    EXEC sp_executesql @SQL
+
+    PRINT 'Database has been successfully deleted.'
+END
+ELSE
+BEGIN
+    PRINT 'Database does not exist. No action taken.'
+END
+</code></pre>
+    <h3>Instructions</h3>
+    <ol>
+        <li>Replace <code>YourDatabaseName</code> with the name of the database you want to delete.</li>
+        <li>Run the script in your SQL client connected to your server.</li>
+    </ol>
+
+    <h3>How It Works</h3>
+    <ol>
+        <li>Check if the database exists: The script first verifies if the database exists in the server using the
+            <code>sys.databases</code> system view.
+        </li>
+        <li>Disconnect users: It sets the database to <code>SINGLE_USER</code> mode, which disconnects any active
+            connections and rolls back uncommitted transactions.</li>
+        <li>Drop the database: The database is deleted using the <code>DROP DATABASE</code> command.</li>
+        <li>Handle non-existent databases: If the database doesn’t exist, it outputs a message without performing any
+            operations.</li>
+    </ol>
+    <p>
+        By resetting the database this way, you can cleanly prepare for running creation and migration scripts during
+        development or testing.
+    </p>
+</body>
+
+</html>
