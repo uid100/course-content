@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient EHR Database Tables</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: aliceblue;
+            padding: 20px;
+        }
+
+        .card-header {
+            background-color: blue;
+            color: white;
+        }
+
+        .card {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- Patients Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">Patients</div>
+                    <div class="card-body">
+                        <p>PatientID (INT, PK)</p>
+                        <p>FirstName (VARCHAR(50), NOT NULL)</p>
+                        <p>LastName (VARCHAR(50), NOT NULL)</p>
+                        <p>DateOfBirth (DATE, NOT NULL)</p>
+                        <p>Gender (CHAR(1), NOT NULL)</p>
+                        <p>PhoneNumber (VARCHAR(15))</p>
+                        <p>Email (VARCHAR(100))</p>
+                        <p>InsuranceID (INT, FK)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Doctors Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">Doctors</div>
+                    <div class="card-body">
+                        <p>DoctorID (INT, PK)</p>
+                        <p>FirstName (VARCHAR(50), NOT NULL)</p>
+                        <p>LastName (VARCHAR(50), NOT NULL)</p>
+                        <p>Specialization (VARCHAR(100), NOT NULL)</p>
+                        <p>DepartmentID (INT, FK)</p>
+                        <p>PhoneNumber (VARCHAR(15))</p>
+                        <p>Email (VARCHAR(100))</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Departments Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">Departments</div>
+                    <div class="card-body">
+                        <p>DepartmentID (INT, PK)</p>
+                        <p>Name (VARCHAR(100), NOT NULL)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Insurance Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">Insurance</div>
+                    <div class="card-body">
+                        <p>InsuranceID (INT, PK)</p>
+                        <p>ProviderName (VARCHAR(100), NOT NULL)</p>
+                        <p>PolicyNumber (VARCHAR(50), NOT NULL)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Appointments Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">Appointments</div>
+                    <div class="card-body">
+                        <p>AppointmentID (INT, PK)</p>
+                        <p>PatientID (INT, FK)</p>
+                        <p>DoctorID (INT, FK)</p>
+                        <p>AppointmentDate (DATETIME, NOT NULL)</p>
+                        <p>Reason (VARCHAR(255))</p>
+                    </div>
+                </div>
+            </div>
+            <!-- MedicalRecords Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">MedicalRecords</div>
+                    <div class="card-body">
+                        <p>RecordID (INT, PK)</p>
+                        <p>PatientID (INT, FK)</p>
+                        <p>DoctorID (INT, FK)</p>
+                        <p>Diagnosis (VARCHAR(255), NOT NULL)</p>
+                        <p>Treatment (VARCHAR(255), NOT NULL)</p>
+                        <p>RecordDate (DATETIME, NOT NULL)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Medications Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">Medications</div>
+                    <div class="card-body">
+                        <p>MedicationID (INT, PK)</p>
+                        <p>MedicationName (VARCHAR(100), NOT NULL)</p>
+                        <p>Dosage (VARCHAR(50), NOT NULL)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Prescriptions Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">Prescriptions</div>
+                    <div class="card-body">
+                        <p>PrescriptionID (INT, PK)</p>
+                        <p>PatientID (INT, FK)</p>
+                        <p>DoctorID (INT, FK)</p>
+                        <p>MedicationID (INT, FK)</p>
+                        <p>PrescriptionDate (DATETIME, NOT NULL)</p>
+                        <p>Dosage (VARCHAR(50), NOT NULL)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Billing Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">Billing</div>
+                    <div class="card-body">
+                        <p>BillID (INT, PK)</p>
+                        <p>PatientID (INT, FK)</p>
+                        <p>Amount (DECIMAL(10, 2), NOT NULL)</p>
+                        <p>BillDate (DATETIME, NOT NULL)</p>
+                        <p>Paid (BIT, NOT NULL)</p>
+                    </div>
+                </div>
+            </div>
+            <!-- LabResults Card -->
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">LabResults</div>
+                    <div class="card-body">
+                        <p>LabResultID (INT, PK)</p>
+                        <p>PatientID (INT, FK)</p>
+                        <p>DoctorID (INT, FK)</p>
+                        <p>TestType (VARCHAR(100), NOT NULL)</p>
+                        <p>Result (VARCHAR(255), NOT NULL)</p>
+                        <p>TestDate (DATETIME, NOT NULL)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
