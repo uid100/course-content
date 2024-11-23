@@ -41,20 +41,39 @@
             width: 80%;
         }
 
-        .header {
+        header {
+            position: relative;
+            height: 80px;
+            background: url('https://uid100.github.io/course-content/images/sfc_logo_vertical_black.png') no-repeat center center;
+            background-size: auto 80px;
+            opacity: 0.75;
+            /* 25% transparent */
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
-            margin-left: auto;
-            margin-right: auto;
+        }
+
+        header h4 {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            z-index: 1;
+            /* Ensure the text stays above the background */
+            color: black;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.8);
+            /* Optional: semi-transparent background for text */
+            padding: 5px 10px;
+            border-radius: 5px;
         }
     </style>
 </head>
 
 <body>
     <div id="syllabus-template" style="padding:30px;">
-        <div class="header">
-            <img src="https://uid100.github.io/course-content/images/sfc-logo-vertical-black.png" style="width: 100px;"
-                alt="Santa Fe College logo">
-        </div>
+        <header>
+            <h4>IT/E PROGRAMS<br>SYLLABUS</h4>
+        </header>
 
         <table>
             <tr>
