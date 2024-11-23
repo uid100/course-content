@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Cards</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .card-header,
+        .card-footer {
+            background-color: #007bff;
+            color: white;
+        }
+
+        body {
+            padding: 20px;
+        }
+
+
+        dl {
+            display: grid;
+            grid-template-columns: max-content auto;
+            column-gap: 10px;
+        }
+
+        dt {
+            grid-column-start: 1;
+        }
+
+        dd {
+            grid-column-start: 2;
+        }
+
+        iframe {
+            border: none;
+            width: 100%;
+            height: calc(100% - 20px);
+            /* Adjust iframe height to fit within the card */
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Proposed curriculum changes</h2>
+    <hr>
+    <h3 style="text-align: center;">
+        SAN DIEGO COMMUNITY COLLEGE DISTRICT<br>
+        CITY, MESA, AND MIRAMAR COLLEGES<br>
+        ASSOCIATE DEGREE COURSE OUTLINE
+    </h3>
+
+    <h4 style="text-transform: capitalize;">Section I</h4>
+    <dl>
+        <dt>SUBJECT AREA AND COURSE NUMBER:</dt>
+        <dd>Computer and Information Sciences 179</dd>
+
+        <dt>COURSE TITLE:</dt>
+        <dd>Introduction to Python Programming</dd>
+
+        <dt>UNITS:</dt>
+        <dd>4 Grade Only</dd>
+
+        <dt>CATALOG COURSE DESCRIPTION:</dt>
+        <dd>
+            <div class="container mt-5">
+                <div class="row">
+                    <!-- Existing -->
+                    <div class="col-md-6" style="height: 60px;">
+                        <div class="card">
+                            <div class="card-header">
+                                Existing
+                            </div>
+                            <div class="card-body">
+                                <iframe src="outline_20220315.html"></iframe>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://www.curricunet.com/SDCCD/reports/course_outline.cfm?courses_id=28888&rpt=rpt"
+                                    target="_blank" style="color:navy;">
+                                    2022-03-15</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Proposed -->
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header">
+                                Proposed
+                            </div>
+                            <div class="card-body">
+                                <iframe src="outline_20241121.html"></iframe>
+                            </div>
+                            <div class="card-footer">
+                                2024-11-21
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </dd>
+    </dl>
+    <hr>
+    <div class="container mt-5">
+        <div class="row">
+            <!-- First Card -->
+            <div class="col-md-6" style="height: 60px;">
+                <div class="card">
+                    <div class="card-header">
+                        Existing
+                    </div>
+                    <div class="card-body">
+                        <iframe src="outline_20220315.html"></iframe>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.curricunet.com/SDCCD/reports/course_outline.cfm?courses_id=28888&rpt=rpt"
+                            target="_blank" style="color:navy;">
+                            2022-03-15</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Card -->
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        Proposed
+                    </div>
+                    <div class="card-body">
+                        <iframe src="outline_20241121.html"></iframe>
+                    </div>
+                    <div class="card-footer">
+                        2024-11-21
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <!-- First Card -->
+            <div class="col-md-6" height="700px;">
+                <div class="card">
+                    <div class="card-header">
+                        Existing
+                    </div>
+                    <div class="card-body">
+                        <iframe src="outline_20220315.html"></iframe>
+                    </div>
+                    <div class="card-footer">
+                        <a href="https://www.curricunet.com/SDCCD/reports/course_outline.cfm?courses_id=28888&rpt=rpt"
+                            target="_blank" style="color:navy;">
+                            2022-03-15</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Card -->
+            <div class="col-md-6">
+                <div class="card" height="700px;">
+                    <div class="card-header">
+                        Proposed
+                    </div>
+                    <div class="card-body">
+                        <iframe src="outline_20241121.html"></iframe>
+                    </div>
+                    <div class="card-footer">
+                        2024-11-21
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
