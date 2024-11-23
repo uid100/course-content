@@ -9,7 +9,7 @@
         table {
             width: 90%;
             border-collapse: collapse;
-            border: 1px;
+            border: 1px solid black;
         }
 
         th,
@@ -81,7 +81,7 @@
 
         <table border="1">
             <tr>
-                <td colspan="2" class="col-35">First Row: Spanning First Two Columns</td>
+                <td id="courseTitle" colspan="2" class="col-35">First Row: Spanning First Two Columns</td>
                 <td class="col-35">Third Column</td>
             </tr>
             <tr>
@@ -90,8 +90,8 @@
                 <td class="col-35">Row 2, Column 3</td>
             </tr>
             <tr>
-                <td class="col-35">Row 3, Column 1</td>
-                <td class="col-30">Row 3, Column 2</td>
+                <td class="instructorName col-35">Row 3, Column 1</td>
+                <td class="instructorEmail col-30">Row 3, Column 2</td>
                 <td class="col-35">Row 3, Column 3</td>
             </tr>
             <tr>
@@ -103,6 +103,8 @@
                 <td colspan="3">Fifth Row: Spanning All Three Columns</td>
             </tr>
         </table>
+
+        <p>&nbsp;</p>
 
         <table border="1">
             <tbody>
@@ -171,7 +173,25 @@
             }
         }
 
-        // Load the content on page load
+        async function loadCourseDetails() {
+            try {
+                // Fetch the JSON file
+                const response = await fetch('content.json');
+                const data = await response.json();
+
+                // Populate table cells with JSON data
+                document.getElementById('schedule').textContent = data.schedule;
+                document.getElementById('location').textContent = data.location;
+                document.getElementById('courseTitle').textContent = data.courseTitle;
+                document.getElementById('instructorName').textContent = data.instructorName;
+                document.getElementById('instructorEmail').textContent = data.instructorEmail;
+            } catch (error) {
+                console.error('Error loading table data:', error);
+            }
+        }
+
+        // Load table data on page load
+        loadCourseDetails();
         loadContent();
     </script>
 </body>
