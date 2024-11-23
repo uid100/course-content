@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,59 +10,92 @@
             width: 100%;
             border-collapse: collapse;
         }
-        th, td {
+
+        th,
+        td {
             padding: 10px;
             vertical-align: top;
         }
+
         th {
             width: 20%;
             background-color: #f4f4f4;
             text-align: left;
             font-weight: bold;
         }
+
         td {
             width: 80%;
         }
     </style>
 </head>
+
 <body>
-    <h1>Course Syllabus</h1>
-    <table border="1">
-        <tbody>
+    <div id="syllabus-template" style="padding:30px;">
+        <h1>Course Syllabus</h1>
+
+        <table>
             <tr>
-                <th>Course Description</th>
-                <td id="courseDescription"></td>
+                <td colspan="2" class="col-35">First Row: Spanning First Two Columns</td>
+                <td class="col-35">Third Column</td>
             </tr>
             <tr>
-                <th>Prerequisites</th>
-                <td id="prerequisites"></td>
+                <td class="col-35">Row 2, Column 1</td>
+                <td class="col-30">Row 2, Column 2</td>
+                <td class="col-35">Row 2, Column 3</td>
             </tr>
             <tr>
-                <th>Course Objectives Reflecting Expected Student Learning Outcomes</th>
-                <td id="courseObjectives"></td>
+                <td class="col-35">Row 3, Column 1</td>
+                <td class="col-30">Row 3, Column 2</td>
+                <td class="col-35">Row 3, Column 3</td>
             </tr>
             <tr>
-                <th>Required Course Materials</th>
-                <td id="requiredMaterials"></td>
+                <td class="col-35">Row 4, Column 1</td>
+                <td class="col-30">Row 4, Column 2</td>
+                <td class="col-35">Row 4, Column 3</td>
             </tr>
             <tr>
-                <th>Recommended Course Materials</th>
-                <td id="recommendedMaterials"></td>
+                <td colspan="3">Fifth Row: Spanning All Three Columns</td>
             </tr>
-            <tr>
-                <th>Course Expectations</th>
-                <td id="courseExpectations"></td>
-            </tr>
-            <tr>
-                <th>Policy on AI</th>
-                <td id="policyAI"></td>
-            </tr>
-            <tr>
-                <th>Grading Scale and Calculation</th>
-                <td id="gradingScale"></td>
-            </tr>
-        </tbody>
-    </table>
+        </table>
+
+        <table border="1">
+            <tbody>
+                <tr>
+                    <th>Course Description</th>
+                    <td id="courseDescription"></td>
+                </tr>
+                <tr>
+                    <th>Prerequisites</th>
+                    <td id="prerequisites"></td>
+                </tr>
+                <tr>
+                    <th>Course Objectives Reflecting Expected Student Learning Outcomes</th>
+                    <td id="courseObjectives"></td>
+                </tr>
+                <tr>
+                    <th>Required Course Materials</th>
+                    <td id="requiredMaterials"></td>
+                </tr>
+                <tr>
+                    <th>Recommended Course Materials</th>
+                    <td id="recommendedMaterials"></td>
+                </tr>
+                <tr>
+                    <th>Course Expectations</th>
+                    <td id="courseExpectations"></td>
+                </tr>
+                <tr>
+                    <th>Policy on AI</th>
+                    <td id="policyAI"></td>
+                </tr>
+                <tr>
+                    <th>Grading Scale and Calculation</th>
+                    <td id="gradingScale"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <!-- #syllabus-template -->
 
     <script>
         const contentMapping = {
@@ -96,5 +130,5 @@
         loadContent();
     </script>
 </body>
-</html>
 
+</html>
