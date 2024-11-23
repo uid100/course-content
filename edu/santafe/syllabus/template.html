@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Information</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            vertical-align: top;
+        }
+        th {
+            width: 20%;
+            background-color: #f4f4f4;
+            text-align: left;
+            font-weight: bold;
+        }
+        td {
+            width: 80%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Course Syllabus</h1>
+    <table border="1">
+        <tbody>
+            <tr>
+                <th>Course Description</th>
+                <td id="courseDescription"></td>
+            </tr>
+            <tr>
+                <th>Prerequisites</th>
+                <td id="prerequisites"></td>
+            </tr>
+            <tr>
+                <th>Course Objectives Reflecting Expected Student Learning Outcomes</th>
+                <td id="courseObjectives"></td>
+            </tr>
+            <tr>
+                <th>Required Course Materials</th>
+                <td id="requiredMaterials"></td>
+            </tr>
+            <tr>
+                <th>Recommended Course Materials</th>
+                <td id="recommendedMaterials"></td>
+            </tr>
+            <tr>
+                <th>Course Expectations</th>
+                <td id="courseExpectations"></td>
+            </tr>
+            <tr>
+                <th>Policy on AI</th>
+                <td id="policyAI"></td>
+            </tr>
+            <tr>
+                <th>Grading Scale and Calculation</th>
+                <td id="gradingScale"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        const contentMapping = {
+            courseDescription: "course-description.html",
+            prerequisites: "prerequisites.html",
+            courseObjectives: "course-objectives.html",
+            requiredMaterials: "required-materials.html",
+            recommendedMaterials: "recommended-materials.html",
+            courseExpectations: "course-expectations.html",
+            policyAI: "policy-ai.html",
+            gradingScale: "grading-scale.html"
+        };
+
+        async function loadContent() {
+            for (const [id, filePath] of Object.entries(contentMapping)) {
+                try {
+                    const response = await fetch(filePath);
+                    if (response.ok) {
+                        const htmlContent = await response.text();
+                        document.getElementById(id).innerHTML = htmlContent;
+                    } else {
+                        document.getElementById(id).innerHTML = `<p style="color: red;">Failed to load content: ${filePath}</p>`;
+                    }
+                } catch (error) {
+                    console.error("Error loading content:", error);
+                    document.getElementById(id).innerHTML = `<p style="color: red;">Error loading content: ${filePath}</p>`;
+                }
+            }
+        }
+
+        // Load the content on page load
+        loadContent();
+    </script>
+</body>
+</html>
+
