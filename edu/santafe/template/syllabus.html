@@ -174,13 +174,10 @@
         }
 
         async function loadCourseDetails() {
-            console.log('read from content.json')
             try {
                 // Fetch the JSON file
                 const response = await fetch('content.json');
                 const data = await response.json();
-
-                console.log(data);
 
                 // Populate table cells with JSON data
                 document.getElementById('schedule').textContent = data.schedule;
