@@ -244,6 +244,14 @@
                     <td class="col-80;" id="gradingScale"></td>
                 </tr>
                 <tr>
+                    <th>Submitting Work</th>
+                    <td class="col-80;" id="submittingWork"></td>
+                </tr>
+                <tr>
+                    <th>Plagiarism</th>
+                    <td class="col-80;" id="plagiarism"></td>
+                </tr>
+                <tr>
                     <th>Course Schedule Overview (Tentative)</th>
                     <td class="col-80;" id="scheduleOverview"></td>
                 </tr>
@@ -283,13 +291,15 @@
     <script>
         const contentMapping = {
             courseDescription: "course-description.html",
-            prerequisites: "prerequisites.html",
             courseObjectives: "course-objectives.html",
             expectations: "expectations.html",
-            policyAI: "policy-ai.html",
-            softwareTools: "software-tools.html",
-            gradingScale: "grading-scale.html",
             gettingHelp: "getting-help.html",
+            gradingScale: "grading-scale.html",
+            plagiarism: "plagiarism.html",
+            policyAI: "policy-ai.html",
+            prerequisites: "prerequisites.html",
+            softwareTools: "software-tools.html",
+            submittingWork: "submitting-work.html"
         };
 
         async function loadContent() {
