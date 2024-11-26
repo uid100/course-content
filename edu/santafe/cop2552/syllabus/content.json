@@ -7,5 +7,15 @@
     "instructorName": "Dan Sullivan",
     "instructorEmail": "dsullivan@sfcollege.edu",
     "officeLocation": "Zoom - <em>online only</em>",
-    "officeHours": "Wednesdays 2:00pm - 3:00pm"
+    "officeHours": "Wednesdays 2:00pm - 3:00pm",
+    "textbook": 
+        [
+            {
+                "title": "Starting Out with Java: Early Objects, 6th edition",
+                "author": "Tony Gaddis",
+                "year": 2018,
+                "publisher": "Pearson",
+                "isbn": "978-0-13-446201-1"
+            }
+        ]
 }

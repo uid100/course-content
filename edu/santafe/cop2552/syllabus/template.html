@@ -125,7 +125,7 @@
                     <span id="classLocation"></span>
                 </td>
                 <td class="col-32">
-                    <strong>Course Credits:</strong>
+                    <strong>Course Credits:</strong><br>
                     <span id="courseCredits"></span>
                 </td>
             </tr>
@@ -195,7 +195,22 @@
                 </tr>
                 <tr>
                     <th>Required Course Materials</th>
-                    <td class="col-80;" id="requiredMaterials"></td>
+                    <td class="col-80;" id="requiredMaterials">
+                        <dl>
+                            Text:
+                            <dt>Title:</dt>
+                            <dd id="title-0"></dd>
+                            <dt>Author:</dt>
+                            <dd id="author-0"></dd>
+                            <dt>ISBN:</dt>
+                            <dd id="isbn-0"></dd>
+                            <dt>Publisher:</dt>
+                            <dd id="publisher-0"></dd>
+                            <dt>Year:</dt>
+                            <dd id="year-0"></dd>
+                        </dl>
+                        <p>&nbsp;</p>
+                    </td>
                 </tr>
                 <tr>
                     <th>Recommended Course Materials</th>
@@ -295,6 +310,11 @@
                 document.getElementById('instructorEmail').textContent = data.instructorEmail;
                 document.getElementById('officeLocation').textContent = data.officeLocation;
                 document.getElementById('officeHours').textContent = data.officeHours;
+                document.getElementById('title-0').textContent = data.textbook[0].title;
+                document.getElementById('author-0').textContent = data.textbook[0].author;
+                document.getElementById('isbn-0').textContent = data.textbook[0].isbn;
+                document.getElementById('publisher-0').textContent = data.textbook[0].publisher;
+                document.getElementById('year-0').textContent = data.textbook[0].year;
             } catch (error) {
                 console.error('Error loading table data:', error);
             }
