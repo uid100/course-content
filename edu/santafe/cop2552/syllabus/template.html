@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Information</title>
+    <style>
+        table {
+            width: 90%;
+            border-collapse: collapse;
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        th {
+            width: 20%;
+            background-color: #f4f4f4;
+            text-align: left;
+            font-weight: bold;
+        }
+
+        .col-20 {
+            width: 20%;
+        }
+
+        .col-30 {
+            width: 30%;
+        }
+
+        .col-35 {
+            width: 35%;
+        }
+
+        .col-80 {
+            width: 80%;
+        }
+
+        header {
+            position: relative;
+            height: 80px;
+            background: url('https://uid100.github.io/course-content/images/sfc_logo_vertical_black.png') no-repeat center center;
+            background-size: auto 80px;
+            /* opacity: 0.50; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        header h4 {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            z-index: 1;
+            /* Ensure the text stays above the background */
+            color: black;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.7);
+            /* Optional: semi-transparent background for text */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="syllabus-template" style="padding:30px;">
+        <header>
+            <h4>
+                <p>&nbsp;</p>
+                IT/E PROGRAMS<br>
+                SYLLABUS<br>
+                <p>&nbsp;</p>
+            </h4>
+        </header>
+
+        <table border="1">
+            <tr>
+                <td id="courseTitle" colspan="2" class="col-35">
+                    <strong>Course Title, Number and Section:</strong><br>
+                </td>
+                <td id="courseTerm" class="col-35">
+                    <strong>Course Year and Term:</strong><br>
+                </td>
+            </tr>
+            <tr>
+                <td id="location" class="col-35">Row 2, Column 1</td>
+                <td id="schedule" class="col-30">Row 2, Column 2</td>
+                <td class="col-35">Row 2, Column 3</td>
+            </tr>
+            <tr>
+                <td id="instructorName" class="col-35">Row 3, Column 1</td>
+                <td id="instructorEmail" class=" col-30">Row 3, Column 2</td>
+                <td class="col-35">Row 3, Column 3</td>
+            </tr>
+            <tr>
+                <td class="col-35">Row 4, Column 1</td>
+                <td class="col-30">Row 4, Column 2</td>
+                <td class="col-35">Row 4, Column 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">Fifth Row: Spanning All Three Columns</td>
+            </tr>
+        </table>
+
+        <p>&nbsp;</p>
+
+        <table border="1">
+            <tbody>
+                <tr>
+                    <th>Course Description</th>
+                    <td class="col-80;" id="courseDescription"></td>
+                </tr>
+                <tr>
+                    <th>Prerequisites</th>
+                    <td class="col-80;" id="prerequisites"></td>
+                </tr>
+                <tr>
+                    <th>Course Objectives Reflecting Expected Student Learning Outcomes</th>
+                    <td class="col-80;" id="courseObjectives"></td>
+                </tr>
+                <tr>
+                    <th>Required Course Materials</th>
+                    <td class="col-80;" id="requiredMaterials"></td>
+                </tr>
+                <tr>
+                    <th>Recommended Course Materials</th>
+                    <td class="col-80;" id="recommendedMaterials"></td>
+                </tr>
+                <tr>
+                    <th>Course Expectations</th>
+                    <td class="col-80;" id="courseExpectations"></td>
+                </tr>
+                <tr>
+                    <th>Policy on AI</th>
+                    <td class="col-80;" id="policyAI"></td>
+                </tr>
+                <tr>
+                    <th>Grading Scale and Calculation</th>
+                    <td class="col-80;" id="gradingScale"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <!-- #syllabus-template -->
+
+    <script>
+        const contentMapping = {
+            courseDescription: "course-description.html",
+            prerequisites: "prerequisites.html",
+            courseObjectives: "course-objectives.html",
+            requiredMaterials: "required-materials.html",
+            recommendedMaterials: "recommended-materials.html",
+            courseExpectations: "course-expectations.html",
+            policyAI: "policy-ai.html",
+            gradingScale: "grading-scale.html"
+        };
+
+        async function loadContent() {
+            for (const [id, filePath] of Object.entries(contentMapping)) {
+                try {
+                    const response = await fetch(filePath);
+                    if (response.ok) {
+                        const htmlContent = await response.text();
+                        document.getElementById(id).innerHTML = htmlContent;
+                    } else {
+                        document.getElementById(id).innerHTML = `<p style="color: red;">Failed to load content: ${filePath}</p>`;
+                    }
+                } catch (error) {
+                    console.error("Error loading content:", error);
+                    document.getElementById(id).innerHTML = `<p style="color: red;">Error loading content: ${filePath}</p>`;
+                }
+            }
+        }
+
+        async function loadCourseDetails() {
+            try {
+                // Fetch the JSON file
+                const response = await fetch('content.json');
+                const data = await response.json();
+
+                // Populate table cells with JSON data
+                document.getElementById('courseTitle').textContent += data.courseTitle;
+                document.getElementById('courseTerm').textContent += data.courseTerm;
+                document.getElementById('schedule').textContent = data.schedule;
+                document.getElementById('location').textContent = data.location;
+                document.getElementById('instructorName').textContent = data.instructorName;
+                document.getElementById('instructorEmail').textContent = data.instructorEmail;
+            } catch (error) {
+                console.error('Error loading table data:', error);
+            }
+        }
+
+        // Load table data on page load
+        loadCourseDetails();
+        loadContent();
+    </script>
+</body>
+
+</html>
