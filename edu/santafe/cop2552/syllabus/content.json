@@ -1,8 +1,11 @@
 {
     "courseTitle": "COP2552.0M1 Object-Oriented Programming 2",
     "courseTerm": "Spring 2025",
-    "schedule": "online",
-    "location": "WEB",
+    "meetingSchedule": "online",
+    "classLocation": "WEB",
+    "courseCredits": 3,
     "instructorName": "Dan Sullivan",
-    "instructorEmail": "dsullivan@sfcollege.edu"
+    "instructorEmail": "dsullivan@sfcollege.edu",
+    "officeLocation": "Zoom - <em>online only</em>",
+    "officeHours": "Wednesdays 2:00pm - 3:00pm"
 }

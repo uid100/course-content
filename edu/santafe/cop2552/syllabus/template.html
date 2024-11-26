@@ -37,6 +37,14 @@
             width: 35%;
         }
 
+        .col-45 {
+            width: 45%;
+        }
+
+        .col-55 {
+            width: 55%;
+        }
+
         .col-80 {
             width: 80%;
         }
@@ -48,9 +56,9 @@
             background-size: auto 80px;
             /* opacity: 0.50; */
             display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+            align-items: left;
+            justify-content: left;
+            text-align: left;
         }
 
         header h4 {
@@ -81,24 +89,55 @@
 
         <table border="1">
             <tr>
-                <td colspan="2" class="col-35">
+                <td class="col-55">
                     <strong>Course Title, Number and Section:</strong><br />
                     <span id="courseTitle"></span>
                 </td>
-                <td class="col-35">
+                <td class="col-45">
                     <strong>Course Year and Term:</strong><br>
                     <span id="courseTerm"></span>
                 </td>
             </tr>
             <tr>
-                <td id="location" class="col-35">Row 2, Column 1</td>
-                <td id="schedule" class="col-30">Row 2, Column 2</td>
-                <td class="col-35">Row 2, Column 3</td>
+                <td class="col-34">
+                    <strong>Course Meeting Day(s) and Time(s):</strong><br>
+                    <span id="meetingSchedule"></span>
+                </td>
+                <td class="col-34">
+                    <strong>Class Location:</strong><br>
+                    <span id="classLocation"></span>
+                </td>
+                <td class="col-32">
+                    <strong>Course Credits:</strong>
+                    <span id="courseCredits"></span>
+                </td>
+            </tr>
+            <tr> <!-- blank -row -->
+                <td colspan="3"></td>
+            </tr> <!-- blank row -->
+            <tr>
+                <td class="col-34">
+                    <strong>Instructor Name:</strong><br>
+                    <span id="instructorName"></span>
+                </td>
+                <td class="col-34">
+                    <strong>Instructor Email Address:</strong><br>
+                    <span id="instructorEmail"></span>
+                </td>
+                <td class="col-32"></td>
             </tr>
             <tr>
-                <td id="instructorName" class="col-35">Row 3, Column 1</td>
-                <td id="instructorEmail" class=" col-30">Row 3, Column 2</td>
-                <td class="col-35">Row 3, Column 3</td>
+                <td class="col-55">
+                    <strong>Instructor Office Location and Campus Site:</strong><br />
+                    <span id="officeLocation"></span>
+                </td>
+                <td class="col-45">
+                    <strong>Instructor Office Hours:</strong><br>
+                    <span id="officeHours"></span>
+                </td>
+            </tr>
+            <tr>
+                <td colspan=3></td>
             </tr>
             <tr>
                 <td class="col-35">Row 4, Column 1</td>
@@ -188,10 +227,13 @@
                 // Populate table cells with JSON data
                 document.getElementById('courseTitle').textContent += data.courseTitle;
                 document.getElementById('courseTerm').textContent += data.courseTerm;
-                document.getElementById('schedule').textContent = data.schedule;
-                document.getElementById('location').textContent = data.location;
+                document.getElementById('meetingSchedule').textContent = data.meetingSchedule;
+                document.getElementById('classLocation').textContent = data.classLocation;
+                document.getElementById('courseCredits').textContent = data.courseCredits;
                 document.getElementById('instructorName').textContent = data.instructorName;
                 document.getElementById('instructorEmail').textContent = data.instructorEmail;
+                document.getElementById('officeLocation').textContent = data.officeLocation;
+                document.getElementById('officeHours').textContent = data.officeHours;
             } catch (error) {
                 console.error('Error loading table data:', error);
             }
