@@ -51,9 +51,9 @@ function initializeTimeline(jsonPath) {
             document.getElementById('current-marker').style.left = `${currentPosition}%`;
 
             // Set labels
-            document.getElementById('start-label').textContent = start.toDateString();
-            document.getElementById('end-label').textContent = end.toDateString();
-            document.getElementById('current-label').textContent = today.toDateString();
+            document.getElementById('start-label').textContent = start.toLocaleDateString() //toDateString();
+            document.getElementById('end-label').textContent = end.toLocaleDateString();
+            // document.getElementById('current-label').textContent = today.toLocaleDateString();
 
             document.getElementById('start-label').style.left = '0%';
             document.getElementById('end-label').style.left = '100%';
