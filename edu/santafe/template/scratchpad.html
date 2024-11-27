@@ -11,12 +11,21 @@
 <body>
     <div id="homepage">
         <header>
-            <figure id="college-logo"><img src="https://courses.sfcollege.edu/courses/479330/files/52979966/preview"
-                    alt="Santa Fe College Logo" width="400"
-                    data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/files/52979966"
-                    data-api-returntype="File" />
-                <figcaption>Object-Oriented Programming 2 (Using Java)</figcaption>
-            </figure>
+            <div id="page-header" style="background-color:white; width:100%;">
+                <figure id="college-logo">
+                    <img src="../images/sfcollege_logo.png" alt="Santa Fe College Logo" width="400" />
+                </figure>
+
+                <div class="timeline">
+                    <div class="line"></div>
+                    <div id="start-marker" class="marker"></div>
+                    <div id="end-marker" class="marker"></div>
+                    <div id="current-marker" class="marker current-marker"></div>
+
+                    <div id="start-label" class="label"></div>
+                    <div id="end-label" class="label"></div>
+                    <div id="current-label" class="label"></div>
+                </div> <!-- #timeline -->
         </header>
         <nav>
             <ul>
@@ -39,6 +48,7 @@
     <script src="../js/content.js"></script>
     <script>
         setPageTitleFromJSON('content.json');
+        initializeTimeline('content.json');
     </script>
 </body>
 
