@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page title</title>
+    <link rel="stylesheet" href="../css/content.css">
+</head>
+
+<body>
+    <div id="homepage">
+        <header>
+            <figure id="college-logo"><img src="https://courses.sfcollege.edu/courses/479330/files/52979966/preview"
+                    alt="Santa Fe College Logo" width="400"
+                    data-api-endpoint="https://courses.sfcollege.edu/api/v1/courses/479330/files/52979966"
+                    data-api-returntype="File" />
+                <figcaption>Object-Oriented Programming 2 (Using Java)</figcaption>
+            </figure>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="scratchpad.html">Scratchpad</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Scratchpad</h2>
+            <p>Use this page to test out your code.</p>
+            <textarea id="code" rows="10" cols="50"></textarea>
+            <button id="run">Run</button>
+            <div id="output"></div>
+        </main>
+        <footer>
+            <p>&copy; 2020 Santa Fe College</p>
+        </footer>
+    </div> <!-- #homepage -->
+    <script src="../js/content.js"></script>
+    <script>
+        setPageTitleFromJSON('content.json');
+    </script>
+</body>
+
+</html>
