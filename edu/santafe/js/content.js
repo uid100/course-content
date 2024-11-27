@@ -54,6 +54,7 @@ function initializeTimeline(jsonPath) {
             document.getElementById('start-label').textContent = start.toLocaleDateString() //toDateString();
             document.getElementById('end-label').textContent = end.toLocaleDateString();
             // document.getElementById('current-label').textContent = today.toLocaleDateString();
+            document.getElementById('current-label').textContent = 'today';
 
             document.getElementById('start-label').style.left = '0%';
             document.getElementById('end-label').style.left = '100%';
