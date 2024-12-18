@@ -13,6 +13,7 @@
         <a id="college-link" href="#" target="_blank">
             <img id="college-logo" class="logo" src="" alt="College Logo" />
         </a>
+
         <div id="cover-image">
             <figure><img src="/course-content/images/programmer.jpg"
                     alt="Programmer develop code doodle concept, developer Free Vector" />
@@ -21,10 +22,24 @@
                     </a></figcaption>
             </figure>
         </div>
+
+        <div class="timeline">
+            <div class="line"></div>
+            <div id="start-marker" class="marker"></div>
+            <div id="end-marker" class="marker"></div>
+            <div id="current-marker" class="marker current-marker"></div>
+
+            <div id="start-label" class="label"></div>
+            <div id="end-label" class="label"></div>
+            <div id="current-label" class="label"></div>
+        </div> <!-- #timeline -->
+
     </div>
     <h1>Python</h1>
 
     <script src="/course-content/common/js/local.js"></script>
+    <script src="../js/content.js"></script>
+    <script> initializeTimeline('content.json'); </script>
 </body>
 
 </html>
