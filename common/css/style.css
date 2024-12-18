@@ -6,37 +6,31 @@ body {
     padding: 40px;
 }
 
-logo {
-    display: block;
-    width: 25%;
-}
-
-cover-image {
-    display: block;
+#cover-image {
     margin: 0 auto;
-    width: 50vw;
+    width: 40%;
     max-width: 100%;
-    /* prevents overflow */
     height: auto;
-}
-
-figure {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    object-fit: cover;
     overflow: hidden;
 }
 
-.cover img {
+#cover-image figure {
+    /* margin: 0;
+    padding: 0; */
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+
+#cover-image img {
+    display: block;
     width: 100%;
     height: auto;
     object-fit: cover;
     overflow: hidden;
-    display: block;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
 }
+
 
 .shadow {
     margin: 50px 15% 50px 15%;
@@ -53,4 +47,9 @@ figure {
     background-color: #8fcff7;
     border: 2px solid #74a2bf;
     font-style: italic;
+}
+
+.logo {
+    display: block;
+    width: 25%;
 }
