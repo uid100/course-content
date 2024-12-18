@@ -5,6 +5,11 @@ body {
     padding: 40px;
 }
 
+logo {
+    display: block;
+    width: 35%;
+}
+
 .shadow {
     margin: 50px 15% 50px 15%;
     background-color: #D8C3A5;

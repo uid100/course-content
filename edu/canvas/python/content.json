@@ -1,0 +1,8 @@
+{
+    "courseNumber": "CSIT 175",
+    "courseTitle": "Python Programming",
+    "college": {
+        "name": "Palomar College",
+        "logoPath": "~/images/palomar-logo.png"
+    }
+}
