@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    /* background-color: white; */
+    margin: 0;
+    padding: 40px;
+}
+
+.shadow {
+    margin: 50px 15% 50px 15%;
+    background-color: #D8C3A5;
+}
+
+.letter {
+    position: relative;
+    top: -10px;
+    left: -7px;
+    padding: 20px;
+    background-color: linen;
+    border: 2px solid #D8C3A5;
+    font-style: italic;
+}
