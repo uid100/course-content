@@ -1,6 +1,8 @@
 {
-    "courseNumber": "CSIT 175",
-    "courseTitle": "Python Programming",
+    "courseNumber": "CISC 179",
+    "courseTitle": "Intro Python Programming",
+    "courseId": "85003",
+    "canvasId": 1234,
     "college": {
         "name": "San Diego Mesa College",
         "logoPath": "/course-content/images/sdmesa-college-logo.jpg",
