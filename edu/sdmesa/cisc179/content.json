@@ -1,0 +1,119 @@
+{
+    "title": "Introduction to Python Programming",
+    "units": 4,
+    "courseNumber": "CISC 179",
+    "courseTitle": "CISC 179 Introduction to Python Programming",
+    "instructorName": "Dan Sullivan",
+    "instructorEmail": "dsullivan@sdccd.edu",
+    "description": {
+        "catalog": 
+            "This is an introductory course in programming using the Python language and incorporating the fundamentals of object oriented programming. Topics include the use and programming of the mouse, windows, forms, menus, dialog boxes, icons, buttons, text fields, files, graphics, and other components of the Windows environment. Students learn to analyze user needs and requirements; design the user interface; assign properties to objects in the user interface; code event procedures; test and debug completed programs and applications; and complete final user documentation. This course is intended for Computer and Information Sciences majors or anyone interested in the Python programming language.",
+        "source": {
+            "path": "https://www.sdmesa.edu/academics/v2/courses/course.html?id=CISC179"
+        } 
+    },
+    "outcomes": {
+        "ext": "Course Learning Outcomes",
+        "source": {
+            "canvas": "Mesa BTC",
+            "path": "https://sdccd.instructure.com/courses/2421868/files/149299313"
+        },
+        "CLOs": [
+            "Understand from a Python perspective the control of program flow based on the conditional evaluation of a Boolean expression.",
+            "Use Python to provide an if...else structure as a solution to a software problem.",
+            "Understand from a Python perspective the control of program flow with a looping structure.",
+            "Use Python to provide a looping structure as a solution to a software problem."
+        ]
+    },
+    "objectives": {
+        "ext": "Student Learning Outcomes",
+        "source": {
+            "canvas": "Mesa BTC",
+            "path": "https://sdccd.instructure.com/courses/2421868/files/149299313"
+        },
+        "SLOs": [
+            "Identify the components of the Python development environment",
+            "Identify basic properties of controls used in designing mobile applications, forms, and desktop interfaces",
+            "Use menus, forms, and dialog boxes in a Python program",
+            "Integrate graphics in menus and forms",
+            "Write, test, debug, and document Python event procedure coding",
+            "Determine the event procedure required to develop a Windows application after the visual interfaces have been developed",
+            "Use data files to save and retrieve data to a secondary storage device",
+            "Create and demonstrate the conversion of programs into executable and/or web-enabled applications",
+            "Complete procedural design documentation necessary to code Python programs",
+            "Systematically design and implement introductory-level Python programs from given specifications, such as problem descriptions, user stories, design criteria, input/output scenarios, functional or unit tests, pseudo code, modeling language specifications or diagrams.",
+            "Articulate the purpose and working of a introductory-level Python program, and its language constructs and data structures, such as through diagrams (for instance, flowcharts, Unified Modelling Language (UML) diagrams or entity-relationship (ER) diagrams), code comments, screencast videos, interactive computing notebooks (for instance, Jupyter notebooks), or written or oral communication.",
+            "Document external interfaces of introductory-level Python functions and methods (the application programming interface (API)), and the inner working of introductory-level Python functions and methods by in-code comments.",
+            "Systematically test and debug introductory-level Python programs required to validate Python programs by interactively entering arguments, utilizing functional or unit tests, running programs in a test environment, or using a debug environment (for instance, a debugger in an integrated development environment (IDE)).",
+            "Develop introductory-level Python programs using industry recognized tools, such as code editors, command lines (Read, execute, print loop, REPL), emulators, or integrated development environments (IDE).",
+            "Create a fully functional, interactive introductory-level Python program incorporating a substantial set of topics from the course."
+        ]
+    },
+    "outline": {
+        "proposed": {
+            "modules": [
+                {
+                    "title": "Module 1: Getting Started: Python Programming",
+                    "topics": [
+                        "Introduction to Python",
+                        "Sequential Processing",
+                        "Python Development Environment",
+                        "Writing 'Good' Python Code",
+                        "Python Syntax",
+                        "Python Variables",
+                        "Python Data Types",
+                        "Python Operators",
+                        "Python Control Structures",
+                        "Python Functions",
+                        "Python Modules",
+                        "Python Classes and Objects",
+                        "Python File I/O",
+                        "Python Exception Handling"
+                    ]
+                },
+                {
+                    "title": "Module 2: Python GUI Programming",
+                    "topics": [
+                        "Introduction to GUI Programming",
+                        "Python GUI Libraries",
+                        "Python Tkinter",
+                        "Python GUI Widgets",
+                        "Python GUI Events",
+                        "Python GUI Layouts",
+                        "Python GUI Menus",
+                        "Python GUI Dialogs",
+                        "Python GUI Graphics"
+                    ]
+                },
+                {
+                    "title": "Module 3: Python Web Programming",
+                    "topics": [
+                        "Introduction to Web Programming",
+                        "Python Web Frameworks",
+                        "Python Flask",
+                        "Python Web Forms",
+                        "Python Web Events",
+                        "Python Web Layouts",
+                        "Python Web Menus",
+                        "Python Web Dialogs",
+                        "Python Web Graphics"
+                    ]
+                },
+                {
+                    "title": "Module 4: Python Mobile Programming",
+                    "topics": [
+                        "Introduction to Mobile Programming",
+                        "Python Mobile Frameworks",
+                        "Python Kivy",
+                        "Python Mobile Widgets",
+                        "Python Mobile Events",
+                        "Python Mobile Layouts",
+                        "Python Mobile Menus",
+                        "Python Mobile Dialogs",
+                        "Python Mobile Graphics"
+                    ]
+                }
+            ]
+        }
+    }
+}
