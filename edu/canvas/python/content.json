@@ -3,6 +3,6 @@
     "courseTitle": "Python Programming",
     "college": {
         "name": "Palomar College",
-        "logoPath": "~/images/palomar-logo.png"
+        "logoPath": "/course-content/images/palomar-logo.png"
     }
 }
