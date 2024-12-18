@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    console.log("DOM content loaded.");
     // The path to the JSON file
     const jsonFilePath = "../content.json";
 
