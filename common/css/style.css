@@ -48,7 +48,9 @@ figure {
     top: -10px;
     left: -7px;
     padding: 20px;
-    background-color: linen;
-    border: 2px solid #D8C3A5;
+    /* background-color: linen;
+    border: 2px solid #D8C3A5; */
+    background-color: #8fcff7;
+    border: 2px solid #74a2bf;
     font-style: italic;
 }
