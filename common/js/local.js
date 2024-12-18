@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
             if (!response.ok) {
                 throw new Error(`Error loading JSON file: ${response.statusText}`);
             }
-            console.log("JSON file loaded successfully.");
             return response.json();
         })
         .then(data => {
