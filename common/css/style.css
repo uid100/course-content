@@ -34,6 +34,12 @@ body {
     text-align: center;
 }
 
+#footer {
+    text-align: center;
+    font-style: italic;
+    margin-top: 50px;
+}
+
 .shadow {
     margin: 50px 15% 50px 15%;
     background-color: #D8C3A5;
