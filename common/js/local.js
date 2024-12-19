@@ -109,7 +109,13 @@ async function loadAndRenderJSON() {
 
 document.addEventListener("DOMContentLoaded", () => {
     // The path to the JSON file
-    const jsonFilePath = "../content.json";
+    // const jsonFilePath = "../content.json";
+    const jsonFilePath = getQueryParam('file');
+
+    if (!jsonFilePath) {
+        document.getElementById('content').textContent = "Error: No JSON file specified.";
+        return;
+    }
 
     // Fetch the JSON file
     fetch(jsonFilePath)
@@ -154,6 +160,9 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 console.error("Website link not found in JSON.");
             }
+
+            // configure timeline
+            initializeTimeline(jsonFilePath);
         })
         .catch(error => {
             console.error("Failed to load or parse JSON:", error);
