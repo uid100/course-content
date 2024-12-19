@@ -80,8 +80,16 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .then(data => {
             // Extract the logo path from the JSON
+            const courseTitle = data?.courseTitle;
             const logoPath = data?.college?.logoPath;
             const website = data?.college?.website;
+
+            // set the page title
+            if (courseTitle) {
+                document.courseTitle = courseTitle;
+            } else {
+                console.error("Course title not found in JSON.");
+            }
 
             // set the logo image source
             if (logoPath) {
