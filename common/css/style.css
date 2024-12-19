@@ -91,6 +91,10 @@ body {
     font-size: 12px;
 }
 
+.label.current {
+    top: 35%;
+}
+
 .current-marker {
     background-color: #FF5722;
 }
