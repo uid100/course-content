@@ -152,6 +152,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 hyflexLink.href = hyflexPage;
                 hyflexLink.textContent = "Hyflex";
                 hyflexElement.appendChild(hyflexLink);
+                const newTag = document.createElement("span");
+                newTag.textContent = " New!";
+                newTag.className = "highlight";
+                hyflexElement.appendChild(newTag);
             } else {
                 hyflexElement.setAttribute("hidden", true);
             }
