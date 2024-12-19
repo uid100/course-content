@@ -40,6 +40,10 @@ body {
     margin-top: 50px;
 }
 
+#section {
+    width: 50%;
+}
+
 .shadow {
     margin: 50px 15% 50px 15%;
     background-color: #D8C3A5;
