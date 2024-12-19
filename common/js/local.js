@@ -144,12 +144,14 @@ document.addEventListener("DOMContentLoaded", () => {
             loc.textContent = data?.schedule?.location;
 
             const hyflexElement = document.getElementById("hyflex");
-            const hyflexLink = data?.schedule?.hyflex;
-            if (hyflexLink) {
-                const hyflex = document.createElement("a");
-                hyflex.href = hyflexLink;
-                hyflex.textContent = "Hyflex Link";
-                hyflexElement.appendChild(hyflex);
+            const hyflex = data?.schedule?.hyflex || null;
+            if (hyflex) {
+                const hyflexPage = data?.canvas?.server
+                    + data?.canvas?.coursePath + "/hyflex";
+                const hyflexLink = document.createElement("a");
+                hyflexLink.href = hyflexPage;
+                hyflexLink.textContent = "Hyflex";
+                hyflexElement.appendChild(hyflexLink);
             } else {
                 hyflexElement.setAttribute("hidden", true);
             }

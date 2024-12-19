@@ -1,9 +1,12 @@
 {
+    "canvas": {
+        "server": "https://canvas.instructure.com",
+        "coursePath": "/courses/10873360"
+    },
     "courseNumber": "CS xxx",
     "courseTitle": "Intro Programming",
     "term": "Xxxxx 20xx",
     "courseId": 999,
-    "canvasId": 10873360,
     "college": {
         "name": "Canvas College",
         "logoPath": "/course-content/images/college-logo.jpg",
