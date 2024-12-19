@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // set the page title
             if (courseTitle) {
                 const titleElement = document.getElementById("courseTitle");
-                titleElement.src = courseTitle;
+                titleElement.textContent = courseTitle;
                 console.log("Course title set to:", courseTitle);
             } else {
                 console.error("Course title not found in JSON.");
