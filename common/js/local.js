@@ -65,6 +65,47 @@ function initializeTimeline(jsonPath) {
         });
 }
 
+// Function to extract query parameters
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+// Load JSON data and render content
+async function loadAndRenderJSON() {
+    const jsonFileName = getQueryParam('file');
+
+    if (!jsonFileName) {
+        document.getElementById('content').textContent = "Error: No JSON file specified.";
+        return;
+    }
+
+    try {
+        const response = await fetch(jsonFileName);
+        if (!response.ok) {
+            throw new Error(`Failed to fetch JSON file: ${response.statusText}`);
+        }
+        const data = await response.json();
+
+        // Update the page title and content
+        document.getElementById('pageTitle').textContent = data.title || "Default Title";
+        const contentDiv = document.getElementById('content');
+        contentDiv.innerHTML = ''; // Clear any existing content
+
+        if (data.items && Array.isArray(data.items)) {
+            data.items.forEach(item => {
+                const itemDiv = document.createElement('div');
+                itemDiv.textContent = item;
+                contentDiv.appendChild(itemDiv);
+            });
+        } else {
+            contentDiv.textContent = "No items found in the JSON file.";
+        }
+    } catch (error) {
+        console.error(error);
+        document.getElementById('content').textContent = "Error loading JSON file.";
+    }
+}
 
 document.addEventListener("DOMContentLoaded", () => {
     // The path to the JSON file
