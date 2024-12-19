@@ -86,7 +86,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // set the page title
             if (courseTitle) {
-                document.courseTitle = courseTitle;
+                const imgElement = document.getElementById("college-logo");
+                imgElement.src = courseTitle;
             } else {
                 console.error("Course title not found in JSON.");
             }
