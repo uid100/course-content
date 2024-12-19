@@ -1,0 +1,13 @@
+{
+    "courseNumber": "CSIT 175",
+    "courseTitle": "Intro Python Programming",
+    "courseId": 85003,
+    "canvasId": 10873360,
+    "college": {
+        "name": "Palomar College",
+        "logoPath": "/course-content/images/palomar-college-logo.jpg",
+        "website": "https://www2.palomar.edu/"
+    },
+    "startDate": "2025-02-01",
+    "endDate": "2025-03-29"
+}
