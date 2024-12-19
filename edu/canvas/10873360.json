@@ -1,13 +1,24 @@
 {
-    "courseNumber": "CSIT 175",
-    "courseTitle": "Intro Python Programming",
-    "courseId": 85003,
+    "courseNumber": "CS xxx",
+    "courseTitle": "Python Programming",
+    "term": "Xxxxx 20xx",
+    "courseId": 999,
     "canvasId": 10873360,
     "college": {
-        "name": "Palomar College",
-        "logoPath": "/course-content/images/palomar-college-logo.jpg",
-        "website": "https://www2.palomar.edu/"
+        "name": "Canvas College",
+        "logoPath": "/course-content/images/college-logo.jpg",
+        "website": "https://www.google.com/"
     },
     "startDate": "2025-02-01",
-    "endDate": "2025-03-29"
+    "endDate": "2025-03-29",
+    "schedule": {
+        "day": "",
+        "time": "",
+        "location": "Web"
+    },
+    "instructor": {
+        "firstName": "Dan",
+        "lastName": "Sullivan",
+        "email": "uid100@officewires.com"
+    }
 }

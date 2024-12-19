@@ -1,0 +1,24 @@
+{
+    "courseNumber": "CSIT 175",
+    "courseTitle": "Python Programming",
+    "term": "Fall 2024",
+    "courseId": 32928,
+    "canvasId": 55278,
+    "college": {
+        "name": "Palomar College",
+        "logoPath": "/course-content/images/palomar-college-logo.jpg",
+        "website": "https://www2.palomar.edu/"
+    },
+    "startDate": "2024-08-26",
+    "endDate": "2024-12-23",
+    "schedule": {
+        "day": "Monday",
+        "time": "6:00 PM - 9:05 PM",
+        "location": "RBEC"
+    },
+    "instructor": {
+        "firstName": "Dan",
+        "lastName": "Sullivan",
+        "email": "dsullivan1@palomar.edu"
+    }
+}

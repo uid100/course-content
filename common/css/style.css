@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: white;
-    /* background-color: blue; */
     margin: 0;
     padding: 40px;
 }
@@ -31,6 +30,9 @@ body {
     overflow: hidden;
 }
 
+#course-title {
+    text-align: center;
+}
 
 .shadow {
     margin: 50px 15% 50px 15%;
