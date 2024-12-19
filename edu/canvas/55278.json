@@ -14,7 +14,8 @@
     "schedule": {
         "day": "Tuesday",
         "time": "6:00 PM - 9:05 PM",
-        "location": "RCC"
+        "location": "RCC",
+        "hyflex": "zoom.us/j/1234567890"
     },
     "instructor": {
         "firstName": "Dan",

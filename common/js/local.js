@@ -131,12 +131,27 @@ document.addEventListener("DOMContentLoaded", () => {
             const logoPath = data?.college?.logoPath;
             const website = data?.college?.website;
 
-            // set the page title
+            // set the page content
             if (courseTitle) {
                 const titleElement = document.getElementById("course-title");
                 titleElement.textContent = courseTitle;
             } else {
                 console.error("Course title not found in JSON.");
+            }
+            const sched = document.getElementById("schedule");
+            sched.textContent = data?.schedule?.day + " " + data?.schedule?.time;
+            const loc = document.getElementById("location");
+            loc.textContent = data?.schedule?.location;
+
+            const hyflexElement = document.getElementById("hyflex");
+            const hyflexLink = data?.schedule?.hyflex;
+            if (hyflexLink) {
+                const hyflex = document.createElement("a");
+                hyflex.href = hyflexLink;
+                hyflex.textContent = "Hyflex Link";
+                hyflexElement.appendChild(hyflex);
+            } else {
+                hyflexElement.setAttribute("hidden", true);
             }
 
             // set the logo image source
