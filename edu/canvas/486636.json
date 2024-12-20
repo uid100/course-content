@@ -1,0 +1,28 @@
+{
+    "canvas": {
+        "server": "https://courses.sfcollege.edu/",
+        "coursePath": "/courses/486636"
+    },
+    "courseNumber": "CIS 4083",
+    "courseTitle": "Intro to Cloud Computing",
+    "term": "Spring 2025",
+    "courseId": "CIS4083_0M1_W25",
+    "college": {
+        "name": "Santa Fe College",
+        "logoPath": "/course-content/images/santafe-college-logo.jpg",
+        "website": "https://www.sfcollege.edu/"
+    },
+    "startDate": "2024-01-08",
+    "endDate": "2025-05-03",
+    "gradesDue": "2025-05-05",
+    "schedule": {
+        "day": "",
+        "time": "",
+        "location": "Online"
+    },
+    "instructor": {
+        "firstName": "Dan",
+        "lastName": "Sullivan",
+        "email": "daniel.sullivan@sfcollege.edu"
+    }
+}
