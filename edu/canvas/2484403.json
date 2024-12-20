@@ -15,9 +15,9 @@
     "startDate": "2025-04-07",
     "endDate": "2025-06-02",
     "schedule": {
-        "day": "",
+        "day": "Online",
         "time": "",
-        "location": "Online"
+        "location": ""
     },
     "instructor": {
         "firstName": "Dan",

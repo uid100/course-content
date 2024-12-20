@@ -9,7 +9,7 @@
     "courseId": "CIS4083_0M1_W25",
     "college": {
         "name": "Santa Fe College",
-        "logoPath": "/course-content/images/santafe-college-logo.jpg",
+        "logoPath": "/course-content/images/santafe-college-logo.png",
         "website": "https://www.sfcollege.edu/"
     },
     "startDate": "2024-01-08",
