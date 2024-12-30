@@ -134,6 +134,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const courseNumber = data?.course?.courseNumber;
             const hyflex = data?.schedule?.hyflex || null;
             const coursePath = data?.canvas?.server + data?.canvas?.coursePath;
+            const textbookImagePath = data?.course?.textbook?.imagePath;
             const description = data?.course?.description;
             const logoPath = data?.college?.logoPath;
             const { firstName, lastName } = data?.instructor;
@@ -204,6 +205,18 @@ document.addEventListener("DOMContentLoaded", () => {
             // about course
             const courseAbout = document.getElementById("course-about");
             courseAbout.textContent = description;
+
+            // textbook image
+            if (instructorImagePath) {
+                // Replace `~` with the base path if necessary
+                const relativePath = instructorImagePath.replace(/^~\//, "");
+
+                // Set the src attribute of the image
+                const imgElement = document.getElementById("instructor-image");
+                imgElement.src = relativePath;
+            } else {
+                console.error("Instructor image path not found in JSON.");
+            }
 
             // instructor name
             const instructor = document.getElementById("instructor-name");
