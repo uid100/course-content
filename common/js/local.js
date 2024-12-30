@@ -207,15 +207,15 @@ document.addEventListener("DOMContentLoaded", () => {
             courseAbout.textContent = description;
 
             // textbook image
-            if (instructorImagePath) {
+            if (textbookImagePath) {
                 // Replace `~` with the base path if necessary
-                const relativePath = instructorImagePath.replace(/^~\//, "");
+                const relativePath = textbookImagePath.replace(/^~\//, "");
 
                 // Set the src attribute of the image
-                const imgElement = document.getElementById("instructor-image");
+                const imgElement = document.getElementById("textbook-image");
                 imgElement.src = relativePath;
             } else {
-                console.error("Instructor image path not found in JSON.");
+                console.error("Textbook image path not found in JSON.");
             }
 
             // instructor name
