@@ -30,6 +30,11 @@ body {
     overflow: hidden;
 }
 
+#about-course {
+    margin: 50px 15% 50px 15%;
+    background-color: #b1d9f7;
+}
+
 #course-title {
     text-align: center;
 }

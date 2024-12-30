@@ -3,22 +3,26 @@
         "server": "https://palomar.instructure.com",
         "coursePath": "/courses/55278"
     },
-    "courseNumber": "CSIT 175",
-    "courseTitle": "Python Programming",
-    "term": "Spring 2025",
-    "courseId": 32928,
     "college": {
         "name": "Palomar College",
         "logoPath": "/course-content/images/palomar-college-logo.jpg",
         "website": "https://www2.palomar.edu/"
     },
-    "startDate": "2025-01-27",
-    "endDate": "2025-05-22",
-    "schedule": {
-        "day": "Tuesday",
-        "time": "6:00 PM - 9:05 PM",
-        "location": "RCC",
-        "hyflex": "hyflex"
+    "course": {
+        "courseNumber": "CSIT 175",
+        "courseTitle": "Python Programming",
+        "section": {
+            "courseId": 32928,
+            "term": "Spring 2025",
+            "startDate": "2025-01-27",
+            "endDate": "2025-05-22",
+            "schedule": {
+                "day": "Tuesday",
+                "time": "6:00 PM - 9:05 PM",
+                "location": "RCC",
+                "hyflex": "hyflex"
+            },
+        }
     },
     "instructor": {
         "firstName": "Dan",

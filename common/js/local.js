@@ -126,9 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then(data => {
-            const term = data?.term;
             const courseTitle = data?.courseTitle;
-            const logoPath = data?.college?.logoPath;
             const website = data?.college?.website;
 
             // set the page content
@@ -138,12 +136,16 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 console.error("Course title not found in JSON.");
             }
+            const term = data?.course?.section?.term;
             const termElement = document.getElementById("term");
             termElement.textContent = term;
             const sched = document.getElementById("schedule");
-            sched.textContent = data?.schedule?.day + " " + data?.schedule?.time;
+            sched.textContent = data?.course?.section?.schedule?.day + " " + data?.schedule?.time;
             const loc = document.getElementById("location");
-            loc.textContent = data?.schedule?.location;
+            loc.textContent = data?.course?.section?.schedule?.location;
+            const courseNumber = data?.course?.courseNumber;
+            const courseNum = document.getElementById("course-number");
+            courseNum.textContent = courseNumber;
 
             const hyflexElement = document.getElementById("hyflex");
             const hyflex = data?.schedule?.hyflex || null;
@@ -163,6 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // set the logo image source
+            const logoPath = data?.college?.logoPath;
             if (logoPath) {
                 // Replace `~` with the base path if necessary
                 const relativePath = logoPath.replace(/^~\//, "");
