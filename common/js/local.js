@@ -151,6 +151,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const { firstName, lastName } = data?.instructor;
             const instructor = document.getElementById("instructor-name");
             instructor.textContent = `${firstName} ${lastName}`;
+            // instructor image
+            const instructorImg = document.getElementById("instructor-img");
+            instructorImg.src = data?.instructor?.imagePath;
 
             const hyflexElement = document.getElementById("hyflex");
             const hyflex = data?.schedule?.hyflex || null;
