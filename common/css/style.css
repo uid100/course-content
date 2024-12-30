@@ -30,7 +30,8 @@ body {
     overflow: hidden;
 }
 
-#about-course #about-instructor {
+#about-course,
+#about-instructor {
     margin: 50px 15% 50px 15%;
     background-color: #b1d9f7;
 }
