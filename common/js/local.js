@@ -215,7 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const relativePath = instructorImagePath.replace(/^~\//, "");
 
                 // Set the src attribute of the image
-                const imgElement = document.getElementById("instructor-img");
+                const imgElement = document.getElementById("instructor-image");
                 imgElement.src = relativePath;
             } else {
                 console.error("Instructor image path not found in JSON.");
