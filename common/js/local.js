@@ -136,6 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const coursePath = data?.canvas?.server + data?.canvas?.coursePath;
             const description = data?.course?.description;
             const { firstName, lastName } = data?.instructor;
+            const logoPath = data?.college?.logoPath;
+
 
             // set the page content
             if (courseTitle) {
@@ -188,7 +190,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
             // set the logo image source
-            const logoPath = data?.college?.logoPath;
             if (logoPath) {
                 // Replace `~` with the base path if necessary
                 const relativePath = logoPath.replace(/^~\//, "");
