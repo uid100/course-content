@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then(data => {
-            // Extract the logo path from the JSON
+            const term = data?.term;
             const courseTitle = data?.courseTitle;
             const logoPath = data?.college?.logoPath;
             const website = data?.college?.website;
@@ -138,6 +138,8 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 console.error("Course title not found in JSON.");
             }
+            const termElement = document.getElementById("term");
+            termElement.textContent = term;
             const sched = document.getElementById("schedule");
             sched.textContent = data?.schedule?.day + " " + data?.schedule?.time;
             const loc = document.getElementById("location");
