@@ -146,6 +146,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const courseNumber = data?.course?.courseNumber;
             const courseNum = document.getElementById("course-number");
             courseNum.textContent = courseNumber;
+            const { firstName, lastName } = data?.instructor;
+            const instructor = document.getElementById("instructor-name");
+            instructor.textContent = `${firstName} ${lastName}`;
 
             const hyflexElement = document.getElementById("hyflex");
             const hyflex = data?.schedule?.hyflex || null;
