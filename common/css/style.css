@@ -30,7 +30,8 @@ body {
     overflow: hidden;
 }
 
-#instructor-image {
+#instructor-image,
+#textbook-image {
     display: block;
     width: 20%;
     margin: 0 auto;
