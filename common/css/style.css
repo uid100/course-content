@@ -30,6 +30,13 @@ body {
     overflow: hidden;
 }
 
+#instructor-image {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
 #about-course,
 #about-instructor {
     margin: 50px 15% 50px 15%;
@@ -80,7 +87,7 @@ body {
 
 .logo {
     display: block;
-    width: 15%;
+    width: 20%;
 }
 
 .timeline {
