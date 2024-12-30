@@ -134,6 +134,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const courseNumber = data?.course?.courseNumber;
             const hyflex = data?.schedule?.hyflex || null;
             const coursePath = data?.canvas?.server + data?.canvas?.coursePath;
+            const textbookTitle = data?.course?.textbook?.title;
+            const textbookAuthor = data?.course?.textbook?.author;
             const textbookImagePath = data?.course?.textbook?.imagePath;
             const description = data?.course?.description;
             const logoPath = data?.college?.logoPath;
@@ -214,6 +216,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Set the src attribute of the image
                 const imgElement = document.getElementById("textbook-image");
                 imgElement.src = relativePath;
+                const bookTitle = textbookTitle + "<br>" + textbookAuthor;
+                const bookElement = document.getElementById("textbook-title");
+                bookElement.innerHTML = bookTitle;
             } else {
                 console.error("Textbook image path not found in JSON.");
             }
