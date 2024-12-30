@@ -127,6 +127,15 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .then(data => {
             const courseTitle = data?.course?.courseTitle;
+            const website = data?.college?.website;
+            const term = data?.course?.section?.term;
+            const meetingTime = data?.course?.section?.schedule?.day + " " + data?.course?.section?.schedule?.time;
+            const meetingLocation = data?.course?.section?.schedule?.location;
+            const courseNumber = data?.course?.courseNumber;
+            const hyflex = data?.schedule?.hyflex || null;
+            const coursePath = data?.canvas?.server + data?.canvas?.coursePath;
+            const description = data?.course?.description;
+            const { firstName, lastName } = data?.instructor;
 
             // set the page content
             if (courseTitle) {
@@ -137,25 +146,22 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // course section
-            const term = data?.course?.section?.term;
             const termElement = document.getElementById("term");
             termElement.textContent = term;
 
             const sched = document.getElementById("schedule");
-            sched.textContent = data?.course?.section?.schedule?.day + " " + data?.course?.section?.schedule?.time;
+            sched.textContent = meetingTime;
 
             const loc = document.getElementById("location");
-            loc.textContent = data?.course?.section?.schedule?.location;
-            const courseNumber = data?.course?.courseNumber;
+            loc.textContent = meetingLocation;
+
             const courseNum = document.getElementById("course-number");
             courseNum.textContent = courseNumber;
 
             // set the hyflex link
             const hyflexElement = document.getElementById("hyflex");
-            const hyflex = data?.schedule?.hyflex || null;
             if (hyflex) {
-                const hyflexPage = data?.canvas?.server
-                    + data?.canvas?.coursePath + "/hyflex";
+                const hyflexPage = coursePath + "/hyflex";
                 const hyflexLink = document.createElement("a");
                 hyflexLink.href = hyflexPage;
                 hyflexLink.textContent = "Hyflex";
@@ -170,10 +176,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // about course
             const courseAbout = document.getElementById("course-about");
-            courseAbout.textContent = data?.course?.description;
+            courseAbout.textContent = description;
 
-            // instructor
-            const { firstName, lastName } = data?.instructor;
+            // instructor name
             const instructor = document.getElementById("instructor-name");
             instructor.textContent = `${firstName} ${lastName}`;
 
@@ -196,7 +201,6 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // set the website link
-            const website = data?.college?.website;
             if (website) {
                 // Set the href attribute of the link
                 const linkElement = document.getElementById("college-link");
