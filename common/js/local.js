@@ -127,7 +127,6 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .then(data => {
             const courseTitle = data?.course?.courseTitle;
-            const website = data?.college?.website;
 
             // set the page content
             if (courseTitle) {
@@ -197,6 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // set the website link
+            const website = data?.college?.website;
             if (website) {
                 // Set the href attribute of the link
                 const linkElement = document.getElementById("college-link");
