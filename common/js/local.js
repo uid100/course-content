@@ -25,7 +25,7 @@ function initializeTimeline(jsonPath) {
             return response.json();
         })
         .then(data => {
-            const { startDate, endDate } = data;
+            const { startDate, endDate } = data?.course?.section;
 
             // Parse dates
             const start = new Date(startDate);
