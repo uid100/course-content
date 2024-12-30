@@ -29,6 +29,6 @@
         "firstName": "Dan",
         "lastName": "Sullivan",
         "email": "dsullivan1@palomar.edu",
-        "image": "/course-content/images/Dan_20070717.jpg"
+        "imagePath": "/course-content/images/Dan_20070717.jpg"
     }
 }
