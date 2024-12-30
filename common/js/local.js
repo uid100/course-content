@@ -135,8 +135,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const hyflex = data?.schedule?.hyflex || null;
             const coursePath = data?.canvas?.server + data?.canvas?.coursePath;
             const description = data?.course?.description;
-            const { firstName, lastName } = data?.instructor;
             const logoPath = data?.college?.logoPath;
+            const { firstName, lastName } = data?.instructor;
+            const instructorImagePath = data?.instructor?.imagePath;
 
 
             // set the page content
@@ -146,6 +147,30 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 console.error("Course title not found in JSON.");
             }
+
+            // set the logo image source
+            if (logoPath) {
+                // Replace `~` with the base path if necessary
+                const relativePath = logoPath.replace(/^~\//, "");
+
+                // Set the src attribute of the image
+                const imgElement = document.getElementById("college-logo");
+                imgElement.src = relativePath;
+            } else {
+                console.error("Logo path not found in JSON.");
+            }
+
+            // set the website link
+            if (website) {
+                // Set the href attribute of the link
+                const linkElement = document.getElementById("college-link");
+                linkElement.href = website;
+            } else {
+                console.error("Website link not found in JSON.");
+            }
+
+            // configure timeline
+            initializeTimeline(jsonFilePath);
 
             // course section
             const termElement = document.getElementById("term");
@@ -185,33 +210,16 @@ document.addEventListener("DOMContentLoaded", () => {
             instructor.textContent = `${firstName} ${lastName}`;
 
             // instructor image
-            const instructorImg = document.getElementById("instructor-img");
-            instructorImg.src = data?.instructor?.imagePath;
-
-
-            // set the logo image source
-            if (logoPath) {
+            if (instructorImagePath) {
                 // Replace `~` with the base path if necessary
-                const relativePath = logoPath.replace(/^~\//, "");
+                const relativePath = instructorImagePath.replace(/^~\//, "");
 
                 // Set the src attribute of the image
-                const imgElement = document.getElementById("college-logo");
+                const imgElement = document.getElementById("instructor-img");
                 imgElement.src = relativePath;
             } else {
-                console.error("Logo path not found in JSON.");
+                console.error("Instructor image path not found in JSON.");
             }
-
-            // set the website link
-            if (website) {
-                // Set the href attribute of the link
-                const linkElement = document.getElementById("college-link");
-                linkElement.href = website;
-            } else {
-                console.error("Website link not found in JSON.");
-            }
-
-            // configure timeline
-            initializeTimeline(jsonFilePath);
         })
         .catch(error => {
             console.error("Failed to load or parse JSON:", error);
