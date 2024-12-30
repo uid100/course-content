@@ -136,6 +136,8 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 console.error("Course title not found in JSON.");
             }
+
+            // course section
             const term = data?.course?.section?.term;
             const termElement = document.getElementById("term");
             termElement.textContent = term;
@@ -148,13 +150,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const courseNumber = data?.course?.courseNumber;
             const courseNum = document.getElementById("course-number");
             courseNum.textContent = courseNumber;
-            const { firstName, lastName } = data?.instructor;
-            const instructor = document.getElementById("instructor-name");
-            instructor.textContent = `${firstName} ${lastName}`;
-            // instructor image
-            const instructorImg = document.getElementById("instructor-img");
-            instructorImg.src = data?.instructor?.imagePath;
 
+            // set the hyflex link
             const hyflexElement = document.getElementById("hyflex");
             const hyflex = data?.schedule?.hyflex || null;
             if (hyflex) {
@@ -171,6 +168,20 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 hyflexElement.setAttribute("hidden", true);
             }
+
+            // about course
+            const courseAbout = document.getElementById("course-about");
+            courseAbout.textContent = data?.course?.description;
+
+            // instructor
+            const { firstName, lastName } = data?.instructor;
+            const instructor = document.getElementById("instructor-name");
+            instructor.textContent = `${firstName} ${lastName}`;
+
+            // instructor image
+            const instructorImg = document.getElementById("instructor-img");
+            instructorImg.src = data?.instructor?.imagePath;
+
 
             // set the logo image source
             const logoPath = data?.college?.logoPath;
