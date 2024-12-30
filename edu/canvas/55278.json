@@ -23,6 +23,13 @@
                 "location": "Palomar College,\nRamona Community Campus",
                 "hyflex": "hyflex"
             }
+        },
+        "textbook": {
+            "title": "Murach's Python Programming, 2nd Edition",
+            "author": "Urban & Murach",
+            "edition": "2nd",
+            "isbn": "",
+            "imagePath": "/course-content/images/murach_python_2d.jpg"
         }
     },
     "instructor": {
