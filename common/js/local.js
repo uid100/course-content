@@ -139,8 +139,10 @@ document.addEventListener("DOMContentLoaded", () => {
             const term = data?.course?.section?.term;
             const termElement = document.getElementById("term");
             termElement.textContent = term;
+
             const sched = document.getElementById("schedule");
-            sched.textContent = data?.course?.section?.schedule?.day + " " + data?.schedule?.time;
+            sched.textContent = data?.course?.section?.schedule?.day + " " + data?.course?.section?.schedule?.time;
+
             const loc = document.getElementById("location");
             loc.textContent = data?.course?.section?.schedule?.location;
             const courseNumber = data?.course?.courseNumber;
