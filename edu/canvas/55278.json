@@ -11,6 +11,7 @@
     "course": {
         "courseNumber": "CSIT 175",
         "courseTitle": "Python Programming",
+        "description": "This class is an introduction to programming and program design using the Python programming language.\n(Catalog:)\nProvides the knowledge and skills necessary to use the Python programming language to develop software for Desktop and Web applications Topics of study include the fundamentals of the language, using lists, dictionaries and creating functions and classes.\n\nEach module contains lecture notes, assignments and other resources. There are coding demonstrations and exercises every week to practice the content. Content in the each module will be augmented by the required textbook, as well as additional content.",
         "section": {
             "courseId": 32928,
             "term": "Spring 2025",
