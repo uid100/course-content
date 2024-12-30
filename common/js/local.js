@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return response.json();
         })
         .then(data => {
-            const courseTitle = data?.courseTitle;
+            const courseTitle = data?.course?.courseTitle;
             const website = data?.college?.website;
 
             // set the page content
