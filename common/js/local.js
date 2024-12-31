@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const instructor = document.getElementById("instructor-name");
             instructor.textContent = `${firstName} ${lastName}`;
             instructor = document.getElementById("instructor-about");
-            instructor.innerHTML = instructorAbout;
+            instructor.textContent = instructorAbout;
             instructor = document.getElementById("instructor-link");
             instructor.href = instructorLink;
 
