@@ -230,10 +230,10 @@ document.addEventListener("DOMContentLoaded", () => {
             // instructor name
             const instructor = document.getElementById("instructor-name");
             instructor.textContent = `${firstName} ${lastName}`;
-            instructor = document.getElementById("instructor-about");
-            instructor.textContent = instructorAbout;
-            instructor = document.getElementById("instructor-link");
-            instructor.href = instructorLink;
+            const aboutInstructor = document.getElementById("instructor-about");
+            aboutInstructor.textContent = instructorAbout;
+            const instructorUrl = document.getElementById("instructor-link");
+            instructorUrl.href = instructorLink;
 
             // instructor image
             if (instructorImagePath) {
