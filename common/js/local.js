@@ -260,6 +260,14 @@ document.addEventListener("DOMContentLoaded", () => {
             const discordLinkButton = document.getElementById("discord-link");
             discordLinkButton.textContent = discordServer;
             discordLinkButton.href = discordLinkUrl;
+
+            // syllabus link
+            const syllabusLink = document.getElementById("syllabus-button");
+            syllabusLink.href = coursePath + "/assignments/syllabus";
+
+            // modules link
+            const modulesLink = document.getElementById("modules-button");
+            modulesLink.href = coursePath + "/modules";
         })
         .catch(error => {
             console.error("Failed to load or parse JSON:", error);
