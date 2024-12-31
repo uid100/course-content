@@ -140,6 +140,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const description = data?.course?.description;
             const officeHours = data?.course?.contact?.officeHours?.schedule;
             const officeHoursLink = data?.course?.contact?.officeHours?.zoomLink;
+            const discordServer = data?.course?.contact?.discordLink?.label;
+            const discordLinkUrl = data?.course?.contact?.discordLink?.url;
             const logoPath = data?.college?.logoPath;
             const { firstName, lastName } = data?.instructor;
             const instructorImagePath = data?.instructor?.imagePath;
@@ -253,6 +255,11 @@ document.addEventListener("DOMContentLoaded", () => {
             const officeHoursButton = document.getElementById("office-hours-button");
             officeHoursButton.textContent = officeHours;
             officeHoursButton.href = officeHoursLink;
+
+            // discord link
+            const discordLinkButton = document.getElementById("discord-link");
+            discordLinkButton.textContent = discordServer;
+            discordLinkButton.href = discordLinkUrl;
         })
         .catch(error => {
             console.error("Failed to load or parse JSON:", error);
