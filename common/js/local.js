@@ -138,6 +138,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const textbookAuthor = data?.course?.textbook?.author;
             const textbookImagePath = data?.course?.textbook?.imagePath;
             const description = data?.course?.description;
+            const officeHours = data?.course?.contact?.officeHours?.schedule;
+            const officeHoursLink = data?.course?.contact?.officeHours?.zoomLink;
             const logoPath = data?.college?.logoPath;
             const { firstName, lastName } = data?.instructor;
             const instructorImagePath = data?.instructor?.imagePath;
@@ -246,6 +248,11 @@ document.addEventListener("DOMContentLoaded", () => {
             } else {
                 console.error("Instructor image path not found in JSON.");
             }
+
+            // office hours
+            const officeHoursButton = document.getElementById("office-hours-button");
+            officeHoursButton.textContent = officeHours;
+            officeHoursButton.href = officeHoursLink;
         })
         .catch(error => {
             console.error("Failed to load or parse JSON:", error);
