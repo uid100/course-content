@@ -58,12 +58,9 @@ body {
     margin-top: 50px;
 }
 
-#section {
-    width: 50%;
-}
-
+#section,
 #getting-started {
-    width: 70%;
+    width: 50%;
 }
 
 #hyflex {
