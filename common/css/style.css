@@ -38,6 +38,7 @@ body {
     border-radius: 50%;
 }
 
+#section,
 #about-course,
 #about-instructor {
     margin: 50px 15% 50px 15%;
