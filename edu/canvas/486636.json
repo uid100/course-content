@@ -3,22 +3,44 @@
         "server": "https://courses.sfcollege.edu/",
         "coursePath": "/courses/486636"
     },
-    "courseNumber": "CIS 4083",
-    "courseTitle": "Intro to Cloud Computing",
-    "term": "Spring 2025",
-    "courseId": "CIS4083_0M1_W25",
     "college": {
         "name": "Santa Fe College",
         "logoPath": "/course-content/images/santafe-college-logo.png",
         "website": "https://www.sfcollege.edu/"
     },
-    "startDate": "2025-01-08",
-    "endDate": "2025-05-03",
-    "gradesDue": "2025-05-05",
-    "schedule": {
-        "day": "Online",
-        "time": "",
-        "location": ""
+    "course": {
+        "courseNumber": "CIS 4083",
+        "courseTitle": "Intro to Cloud Computing",
+        "description": "This course is an introduction to cloud computing. Students will learn about the different types of cloud computing, the benefits of cloud computing, and the different cloud service providers. Students will also learn how to create and manage virtual machines in the cloud, how to create and manage storage in the cloud, and how to create and manage databases in the cloud. The course will also cover the different cloud computing models, such as Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS).",
+        "section": {
+            "courseId": "CIS4083_0M1_W25",
+            "term": "Spring 2025",
+            "startDate": "2025-01-08",
+            "endDate": "2025-05-03",
+            "gradesDue": "2025-05-05",
+            "schedule": {
+                "day": "Online",
+                "time": "",
+                "location": ""
+            }
+        },
+        "textbook": {
+            "title": "",
+            "author": "",
+            "edition": "",
+            "isbn": "",
+            "imagePath": ""
+        },
+        "contact": {
+            "officeHours": {
+                "schedule": "Wed 3P EST",
+                "zoomLink": "https://sfcollege.zoom.us/j/1234567890"
+            },
+            "discordLink": {
+                "label": "Code Bytes",
+                "url": "https://discord.gg/MpHjV4qgxZ"
+            }
+        }
     },
     "instructor": {
         "firstName": "Dan",

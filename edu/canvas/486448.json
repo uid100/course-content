@@ -3,22 +3,44 @@
         "server": "https://courses.sfcollege.edu/",
         "coursePath": "/courses/486448"
     },
-    "courseNumber": "COP 2552",
-    "courseTitle": "Object-Oriented Programming 2",
-    "term": "Spring 2025",
-    "courseId": "COP2552_0M1_W25",
     "college": {
         "name": "Santa Fe College",
         "logoPath": "/course-content/images/santafe-college-logo.png",
         "website": "https://www.sfcollege.edu/"
     },
-    "startDate": "2025-01-08",
-    "endDate": "2025-05-03",
-    "gradesDue": "2025-05-05",
-    "schedule": {
-        "day": "Online",
-        "time": "",
-        "location": ""
+    "course": {
+        "courseNumber": "COP 2552",
+        "courseTitle": "Object-Oriented Programming 2",
+        "description": "This course is a continuation of COP 2551. It covers advanced object-oriented programming concepts, including inheritance, polymorphism, and exception handling. Students will learn to use the Java programming language to develop software for desktop and web applications. Topics of study include the fundamentals of the language, using lists, dictionaries, and creating functions and classes. Each module contains lecture notes, assignments, and other resources. There are coding demonstrations and exercises every week to practice the content. Content in each module will be augmented by the required textbook, as well as additional content.",
+        "section": {
+            "courseId": "COP2552_0M1_W25",
+            "term": "Spring 2025",
+            "startDate": "2025-01-08",
+            "endDate": "2025-05-03",
+            "gradesDue": "2025-05-05",
+            "schedule": {
+                "day": "Online",
+                "time": "",
+                "location": ""
+            }
+        },
+        "textbook": {
+            "title": "",
+            "author": "",
+            "edition": "",
+            "isbn": "",
+            "imagePath": ""
+        },
+        "contact": {
+            "officeHours": {
+                "schedule": "Wed 2P EST",
+                "zoomLink": "https://sfcollege.zoom.us/j/1234567890"
+            },
+            "discordLink": {
+                "label": "Code Bytes",
+                "url": "https://discord.gg/MpHjV4qgxZ"
+            }
+        }
     },
     "instructor": {
         "firstName": "Dan",

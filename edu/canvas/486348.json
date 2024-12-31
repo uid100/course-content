@@ -3,26 +3,51 @@
         "server": "https://courses.sfcollege.edu/",
         "coursePath": "/courses/486348"
     },
-    "courseNumber": "CIS 4891",
-    "courseTitle": "Senior Project",
-    "term": "Spring 2025",
-    "courseId": "CIS4891_0M1_W25",
     "college": {
         "name": "Santa Fe College",
         "logoPath": "/course-content/images/santafe-college-logo.png",
         "website": "https://www.sfcollege.edu/"
     },
-    "startDate": "2025-01-08",
-    "endDate": "2025-05-03",
-    "gradesDue": "2025-05-05",
-    "schedule": {
-        "day": "Online",
-        "time": "",
-        "location": ""
+    "course": {
+        "courseNumber": "CIS 4891",
+        "courseTitle": "Senior Project",
+        "description": "This course is the capstone course for the Bachelor of Science in Technology Project Management program. Students will work in teams to complete a project for a real-world client. The project will be managed using the principles and practices of project management. The course will include a review of the project management body of knowledge, the development of a project plan, and the execution and control of the project. The course will also include a review of the principles of software engineering and the development of a software project.",
+        "section": {
+            "courseId": "CIS4891_0M1_W25",
+            "term": "Spring 2025",
+            "startDate": "2025-01-08",
+            "endDate": "2025-05-03",
+            "gradesDue": "2025-05-05",
+            "schedule": {
+                "day": "Online",
+                "time": "",
+                "location": ""
+            }
+        },
+        "textbook": {
+            "title": "",
+            "author": "",
+            "edition": "",
+            "isbn": "",
+            "imagePath": ""
+        },
+        "contact": {
+            "officeHours": {
+                "schedule": "Wed 1P EST",
+                "zoomLink": "https://sfcollege.zoom.us/j/1234567890"
+            },
+            "discordLink": {
+                "label": "Code Bytes",
+                "url": "https://discord.gg/MpHjV4qgxZ"
+            }
+        }
     },
     "instructor": {
         "firstName": "Dan",
         "lastName": "Sullivan",
-        "email": "daniel.sullivan@sfcollege.edu"
+        "email": "daniel.sullivan@sfcollege.edu",
+        "imagePath": "/course-content/images/Dan_20070717.jpg",
+        "about": "Over 30 years professional experience as a software engineer and program manager. I have worked for large and small companies.",
+        "url": "/course-content/common/instructor_more.html"
     }
 }

@@ -3,25 +3,50 @@
         "server": "https://palomar.instructure.com",
         "coursePath": "/courses/52720"
     },
-    "courseNumber": "CSIT 175",
-    "courseTitle": "Python Programming",
-    "term": "Fall 2024",
-    "courseId": 32928,
     "college": {
         "name": "Palomar College",
         "logoPath": "/course-content/images/palomar-college-logo.jpg",
         "website": "https://www2.palomar.edu/"
     },
-    "startDate": "2024-08-26",
-    "endDate": "2024-12-23",
-    "schedule": {
-        "day": "Monday",
-        "time": "6:00 PM - 9:05 PM",
-        "location": "RBEC"
+    "course" : {
+        "courseNumber": "CSIT 175",
+        "courseTitle": "Python Programming",
+        "description": "This class is an introduction to programming and program design using the Python programming language.\n\n(Catalog:)\nProvides the knowledge and skills necessary to use the Python programming language to develop software for Desktop and Web applications Topics of study include the fundamentals of the language, using lists, dictionaries and creating functions and classes.\n\nEach module contains lecture notes, assignments and other resources. There are coding demonstrations and exercises every week to practice the content. Content in the each module will be augmented by the required textbook, as well as additional content.",
+        "section": {
+            "courseId": 73103,
+            "term": "Fall 2024",
+            "startDate": "2024-08-26",
+            "endDate": "2024-12-23",
+            "schedule": {
+                "day": "Monday",
+                "time": "6:00 PM - 9:05 PM",
+                "location": "Palomar College,\nRancho Bernardo Education Center"
+            }
+        },
+        "textbook": {
+            "title": "Murach's Python Programming, 2nd Edition",
+            "author": "Urban & Murach",
+            "edition": "2nd",
+            "isbn": "",
+            "imagePath": "/course-content/images/Murach_Python_2d.jpg"
+        },
+        "contact": {
+            "officeHours": {
+                "schedule": "Wed 10A PST",
+                "zoomLink": "https://palomar-edu.zoom.us/j/82972508107?pwd=WnH7yZmAsS1qBGL0QQ8XuNxlmvVDRo.1"
+            },
+            "discordLink": {
+                "label": "Code Bytes",
+                "url": "https://discord.gg/MpHjV4qgxZ"
+            }
+        }
     },
     "instructor": {
         "firstName": "Dan",
         "lastName": "Sullivan",
-        "email": "dsullivan1@palomar.edu"
+        "email": "dsullivan1@palomar.edu",
+        "imagePath": "/course-content/images/Dan_20070717.jpg",
+        "about": "Over 30 years professional experience as a software engineer and program manager. I have worked for large and small companies.",
+        "url": "/course-content/common/instructor_more.html"
     }
 }
