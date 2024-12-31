@@ -206,7 +206,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // about course
             const courseAbout = document.getElementById("course-about");
-            courseAbout.textContent = description;
+            // replace newline with <br>
+            const htContent = description.replace(/\n/g, "<br>");
+            courseAbout.innerHTML = htContent;
 
             // textbook image
             if (textbookImagePath) {
