@@ -30,6 +30,16 @@
             "edition": "2nd",
             "isbn": "",
             "imagePath": "/course-content/images/Murach_Python_2d.jpg"
+        },
+        "contact": {
+            "officeHours": {
+                "schedule": "Wed 10A PST",
+                "zoomLink": "https://palomar-edu.zoom.us/j/82972508107?pwd=WnH7yZmAsS1qBGL0QQ8XuNxlmvVDRo.1"
+            },
+            "discordLink": {
+                "label": "Code Bytes",
+                "url": "https://discord.gg/MpHjV4qgxZ"
+            }
         }
     },
     "instructor": {
