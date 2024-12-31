@@ -45,7 +45,7 @@ body {
 #getting-started {
     margin: 50px 15% 50px 15%;
     background-color: #b1d9f7;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 #course-title {
@@ -60,6 +60,10 @@ body {
 
 #section {
     width: 50%;
+}
+
+#getting-started {
+    width: 70%;
 }
 
 #hyflex {
