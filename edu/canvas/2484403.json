@@ -3,21 +3,44 @@
         "server": "https://sdccd.instructure.com",
         "coursePath": "/courses/2484402"
     },
-    "courseNumber": "CISC 179",
-    "courseTitle": "Intro Python Programming",
-    "term": "Spring 2025 8wk2",
-    "courseId": 82884,
     "college": {
         "name": "San Diego Mesa College",
         "logoPath": "/course-content/images/sdmesa-college-logo.jpg",
         "website": "https://www.sdmesa.edu/"
     },
-    "startDate": "2025-04-07",
-    "endDate": "2025-06-02",
-    "schedule": {
-        "day": "Online",
-        "time": "",
-        "location": ""
+    "course": {
+        "courseNumber": "CISC 179",
+        "courseTitle": "Intro Python Programming",
+        "description": "This class is an introduction to programming and program design using the Python programming language.\n\n(Catalog:)\nProvides the knowledge and skills necessary to use the Python programming language to develop software for Desktop and Web applications Topics of study include the fundamentals of the language, using lists, dictionaries and creating functions and classes.\n\nEach module contains lecture notes, assignments and other resources. There are coding demonstrations and exercises every week to practice the content. Content in the each module will be augmented by the required textbook, as well as additional content.",
+        "section": {
+            "courseId": 85003,
+            "term": "Spring 2025 8wk2",
+            "startDate": "2025-04-07",
+            "endDate": "2025-06-02",
+            "gradesDue": "2025-06-04",
+            "schedule": {
+                "day": "Online",
+                "time": "",
+                "location": ""
+            }
+        },
+        "textbook": {
+            "title": "Murach's Python Programming, 2nd Edition",
+            "author": "Urban & Murach",
+            "edition": "2nd",
+            "isbn": "",
+            "imagePath": "/course-content/images/Murach_Python_2d.jpg"
+        },
+        "contact": {
+            "officeHours": {
+                "schedule": "Wed 12P PST",
+                "zoomLink": "https://sdccd-edu.zoom.us/j/82972508107?pwd=WnH7yZmAsS1qBGL0QQ8XuNxlmvVDRo.1"
+            },
+            "discordLink": {
+                "label": "Code Bytes",
+                "url": "https://discord.gg/MpHjV4qgxZ"
+            }
+        }
     },
     "instructor": {
         "firstName": "Dan",
