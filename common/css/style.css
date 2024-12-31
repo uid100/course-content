@@ -40,7 +40,9 @@ body {
 
 #section,
 #about-course,
-#about-instructor {
+#about-instructor,
+#contact,
+#getting-started {
     margin: 50px 15% 50px 15%;
     background-color: #b1d9f7;
 }
