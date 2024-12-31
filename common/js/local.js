@@ -141,6 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const logoPath = data?.college?.logoPath;
             const { firstName, lastName } = data?.instructor;
             const instructorImagePath = data?.instructor?.imagePath;
+            const instructorLink = data?.instructor?.url;
 
 
             // set the page content
@@ -228,6 +229,8 @@ document.addEventListener("DOMContentLoaded", () => {
             // instructor name
             const instructor = document.getElementById("instructor-name");
             instructor.textContent = `${firstName} ${lastName}`;
+            const instructorLinkElement = document.getElementById("instructor-about");
+            instructorLinkElement.href = instructorLink;
 
             // instructor image
             if (instructorImagePath) {
