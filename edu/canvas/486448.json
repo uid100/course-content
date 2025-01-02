@@ -29,7 +29,7 @@
             "author": "",
             "edition": "",
             "isbn": "",
-            "imagePath": ""
+            "imagePath": "/course-content/images/Gaddis_Java_6ed.jpg"
         },
         "contact": {
             "officeHours": {
@@ -45,6 +45,9 @@
     "instructor": {
         "firstName": "Dan",
         "lastName": "Sullivan",
-        "email": "daniel.sullivan@sfcollege.edu"
+        "email": "daniel.sullivan@sfcollege.edu",
+        "imagePath": "/course-content/images/Dan_20070717.jpg",
+        "about": "Over 30 years professional experience as a software engineer and program manager. I have worked for large and small companies.",
+        "url": "/course-content/common/instructor_more.html"
     }
 }
