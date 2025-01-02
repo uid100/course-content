@@ -26,11 +26,11 @@
             }
         },
         "textbook": {
-            "title": "",
+            "title": "no textbook required",
             "author": "",
             "edition": "",
             "isbn": "",
-            "imagePath": ""
+            "imagePath": "/course-content/images/Cloud2.jpg"
         },
         "contact": {
             "officeHours": {
