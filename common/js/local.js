@@ -127,6 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
         })
         .then(data => {
             const courseTitle = data?.course?.courseTitle;
+            const coverImagePath = data?.course?.coverImage;
             const website = data?.college?.website;
             const term = data?.course?.section?.term;
             const meetingTime = data?.course?.section?.schedule?.day + " " + data?.course?.section?.schedule?.time;
@@ -176,6 +177,18 @@ document.addEventListener("DOMContentLoaded", () => {
                 linkElement.href = website;
             } else {
                 console.error("Website link not found in JSON.");
+            }
+
+            // cover image
+            if (coverImagePath) {
+                // Replace `~` with the base path if necessary
+                const relativePath = coverImagePath.replace(/^~\//, "");
+
+                // Set the src attribute of the image
+                const imgElement = document.getElementById("cover-image");
+                imgElement.src = relativePath;
+            } else {
+                console.error("Cover image path not found in JSON.");
             }
 
             // configure timeline
