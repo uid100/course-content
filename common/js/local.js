@@ -240,6 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Set the src attribute of the image
                 const imgElement = document.getElementById("textbook-image");
                 imgElement.src = relativePath;
+
                 const bookTitle = textbookTitle + "<br>" + textbookAuthor;
                 const bookElement = document.getElementById("textbook-title");
                 bookElement.innerHTML = bookTitle;
