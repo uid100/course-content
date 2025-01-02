@@ -21,7 +21,7 @@ body {
     text-align: center;
 }
 
-#cover-image img {
+#cover-image {
     display: block;
     width: 100%;
     height: auto;
