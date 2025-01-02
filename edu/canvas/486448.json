@@ -25,9 +25,9 @@
             }
         },
         "textbook": {
-            "title": "",
-            "author": "",
-            "edition": "",
+            "title": "Getting Started with Java, Early Objects",
+            "author": "Gaddis",
+            "edition": "6th Ed",
             "isbn": "",
             "imagePath": "/course-content/images/Gaddis_Java_6ed.jpg"
         },
