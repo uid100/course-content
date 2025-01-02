@@ -181,12 +181,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // cover image
             if (coverImagePath) {
+                console.log("cover image path:", coverImagePath);
                 // Replace `~` with the base path if necessary
                 const relativePath = coverImagePath.replace(/^~\//, "");
 
                 // Set the src attribute of the image
                 const imgElement = document.getElementById("cover-image");
                 imgElement.src = relativePath;
+
+                const imgCaption = document.getElementById("cover-caption");
+                imgCaption.textContent = courseTitle + " Cover Image";
             } else {
                 console.error("Cover image path not found in JSON.");
             }
