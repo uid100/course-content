@@ -5,7 +5,7 @@ body {
     padding: 40px;
 }
 
-#cover-image {
+#page-cover-image {
     margin: 0 auto;
     width: 50%;
     max-width: 100%;
@@ -14,7 +14,7 @@ body {
     overflow: hidden;
 }
 
-#cover-image figure {
+#page-cover-image figure {
     /* margin: 0;
     padding: 0; */
     width: 100%;
