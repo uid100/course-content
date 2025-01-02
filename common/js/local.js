@@ -181,7 +181,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // cover image
             if (coverImagePath) {
-                console.log("cover image path:", coverImagePath);
                 // Replace `~` with the base path if necessary
                 const relativePath = coverImagePath.replace(/^~\//, "");
 
@@ -281,12 +280,10 @@ document.addEventListener("DOMContentLoaded", () => {
             // syllabus link
             const syllabusLink = document.getElementById("syllabus-button");
             syllabusLink.href = coursePath + "/assignments/syllabus";
-            console.log("syllabus link:", syllabusLink.href);
 
             // modules link
             const modulesLink = document.getElementById("modules-button");
             modulesLink.href = coursePath + "/modules";
-            console.log("modules link:", modulesLink.href);
         })
         .catch(error => {
             console.error("Failed to load or parse JSON:", error);
