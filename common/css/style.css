@@ -8,7 +8,7 @@ body {
 header {
     position: relative;
     height: 80px;
-    background: url('https://uid100.github.io/course-content/images/sfc_logo_vertical_black.png') no-repeat center center;
+    background: url('https://uid100.github.io/course-content/images/sfc_logo_vertical_blue.png') no-repeat left center;
     background-size: auto 80px;
     /* opacity: 0.50; */
     display: flex;
