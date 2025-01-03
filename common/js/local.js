@@ -73,7 +73,8 @@ function getQueryParam(param) {
 
 // Load JSON data and render content
 async function loadAndRenderJSON() {
-    const jsonFileName = getQueryParam('path') + "/content.json";
+    const jsonFilePath = getQueryParam('path');
+    const jsonFileName = jsonFilePath + "/content.json";
     console.log(jsonFileName);
 
     if (!jsonFileName) {
@@ -111,15 +112,15 @@ async function loadAndRenderJSON() {
 document.addEventListener("DOMContentLoaded", () => {
     // The path to the JSON file
     // const jsonFilePath = "../content.json";
-    const jsonFilePath = "../edu/" + getQueryParam('path') + "/content.json";
-
-    if (!jsonFilePath) {
+    const jsonFilePath = "../edu/" + getQueryParam('path');
+    const jsonFile = jsonFilePath + "/content.json";
+    if (!jsonFile) {
         document.getElementById('content').textContent = "Error: No JSON file specified.";
         return;
     }
 
     // Fetch the JSON file
-    fetch(jsonFilePath)
+    fetch(jsonFile)
         .then(response => {
             if (!response.ok) {
                 throw new Error(`Error loading JSON file: ${response.statusText}`);
