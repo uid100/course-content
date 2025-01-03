@@ -31,7 +31,9 @@ async function loadContent() {
 async function loadCourseDetails() {
     try {
         // Fetch the JSON file
-        const response = await fetch('content.json');
+        const jsonFileName = getQueryParam('path') + "/content.json";
+        console.log(jsonFileName);
+        const response = await fetch(jsonPath);
         const data = await response.json();
 
         // Populate table cells with JSON data
