@@ -46,10 +46,11 @@ async function loadCourseDetails() {
         // docTitle = data?.templates.syllabus?.title.replace(/\n/g, "<br>");
         // console.log(docTitle);
         // document.getElementById('document-title').innerHTML = docTitle;
-        document.getElementById('document-title').innerHTML = data?.templates?.syllabus?.title;
+        document.getElementById('document-title').innerHTML
+            = data?.templates?.syllabus?.title;
 
         // Populate table cells with JSON data
-        document.getElementById('courseTitle').textContent +=
+        document.getElementById('courseTitle').innerHTML +=
             data?.course?.section?.courseId + " "
             + data?.course?.courseTitle;
         document.getElementById('term').textContent += data?.course?.section?.term;
