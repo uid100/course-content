@@ -47,40 +47,40 @@ async function loadCourseDetails() {
 
         // Populate table cells with JSON data
         cell = document.getElementById('courseTitle');
-        cellContent = cell.textContent;
+        cellContent = cell.innerHTML;
         cellContent += data?.course?.section?.courseId
             + " " + data?.course?.courseTitle;
         cell.textContent = cellContent;
 
         cell = document.getElementById('term');
-        cellContent = cell.textContent;
+        cellContent = cell.innerHTML;
         cellContent += data?.course?.section?.term;
         cell.textContent = cellContent;
 
         cell = document.getElementById('schedule');
-        cellContent = cell.textContent;
+        cellContent = cell.innerHTML;
         cellContent += data?.course?.section?.schedule?.day
             + " " + data.course?.section?.schedule?.time;
         cell.textContent = cellContent;
 
         cell = document.getElementById('location');
-        cellContent = cell.textContent;
+        cellContent = cell.innerHTML;
         cellContent += data?.course?.section?.schedule?.location;
         cell.textContent = cellContent;
 
         cell = document.getElementById('units');
-        cellContent = cell.textContent;
+        cellContent = cell.innerHTML;
         cellContent += data?.course?.units;
         cell.textContent = cellContent;
 
         cell = document.getElementById('instructorName');
-        cellContent = cell.textContent;
+        cellContent = cell.innerHTML;
         cellContent += data?.instructor?.firstName
             + " " + data.instructor?.lastName;
         cell.textContent = cellContent;
 
         cell = document.getElementById('instructorEmail');
-        cellContent = cell.textContent;
+        cellContent = cell.innerHTML;
         cellContent += data?.instructor?.email;
         cell.textContent = cellContent;
 
