@@ -14,8 +14,8 @@ const contentMapping = {
 async function loadContent() {
     for (const [id, filePath] of Object.entries(contentMapping)) {
         try {
-            const jsonFilePath = getQueryParam('path');
-            const response = await fetch(filePath);
+            const jsonFilePath = "../edu/" + getQueryParam('path');
+            const response = await fetch(jsonFilePath + filePath);
             if (response.ok) {
                 const htmlContent = await response.text();
                 document.getElementById(id).innerHTML = htmlContent;
