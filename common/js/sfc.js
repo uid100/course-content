@@ -83,13 +83,13 @@ async function loadCourseDetails() {
 
         cell = document.getElementById('officeLocation');
         cellContent = cell.innerHTML;
-        cellContent += `${course?.contact?.officeHours?.location}`
-            + ` ${course?.contact?.officeHours?.zoomLink}`;
+        cellContent += `${data?.course?.contact?.officeHours?.location}`
+            + ` ${data?.course?.contact?.officeHours?.zoomLink}`;
         cell.innerHTML = cellContent;
 
         cell = document.getElementById('officeHours');
         cellContent = cell.innerHTML;
-        cellContent += `${course?.contact?.officeHours?.schedule}`;
+        cellContent += `${data?.course?.contact?.officeHours?.schedule}`;
         cell.innerHTML = cellContent;
     } catch (error) {
         console.error('Error loading table data:', error);
