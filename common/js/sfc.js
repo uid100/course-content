@@ -46,42 +46,39 @@ async function loadCourseDetails() {
             = data?.templates?.syllabus?.title;
 
         // Populate table cells with JSON data
-        cell = document.getElementById('courseTitle');
-        cellContent = cell.innerHTML;
-        cellContent += data?.course?.section?.courseId
-            + " " + data?.course?.courseTitle;
+        let cell = document.getElementById('courseTitle');
+        let cellContent = cell.innerHTML;
+        cellContent += `${data?.course?.section?.courseId} ${data?.course?.courseTitle}`;
         cell.innerHTML = cellContent;
 
         cell = document.getElementById('term');
         cellContent = cell.innerHTML;
-        cellContent += data?.course?.section?.term;
+        cellContent += `${data?.course?.section?.term}`;
         cell.innerHTML = cellContent;
 
         cell = document.getElementById('schedule');
         cellContent = cell.innerHTML;
-        cellContent += data?.course?.section?.schedule?.day
-            + " " + data.course?.section?.schedule?.time;
+        cellContent += `${data?.course?.section?.schedule?.day} ${data.course?.section?.schedule?.time}`;
         cell.innerHTML = cellContent;
 
         cell = document.getElementById('location');
         cellContent = cell.innerHTML;
-        cellContent += data?.course?.section?.schedule?.location;
+        cellContent += `${data?.course?.section?.schedule?.location}`;
         cell.innerHTML = cellContent;
 
         cell = document.getElementById('units');
         cellContent = cell.innerHTML;
-        cellContent += data?.course?.units;
+        cellContent += `${data?.course?.units}`;
         cell.innerHTML = cellContent;
 
         cell = document.getElementById('instructorName');
         cellContent = cell.innerHTML;
-        cellContent += data?.instructor?.firstName
-            + " " + data.instructor?.lastName;
+        cellContent += `${data?.instructor?.firstName} ${data?.instructor?.lastName}`;
         cell.innerHTML = cellContent;
 
         cell = document.getElementById('instructorEmail');
         cellContent = cell.innerHTML;
-        cellContent += data?.instructor?.email;
+        cellContent += `${data?.instructor?.email}`;
         cell.innerHTML = cellContent;
 
     } catch (error) {
