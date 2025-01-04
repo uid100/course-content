@@ -43,16 +43,17 @@ async function loadCourseDetails() {
         const response = await fetch(jsonFileName);
         const data = await response.json();
 
-        // docTitle = data?.templates.syllabus?.title.replace(/\n/g, "<br>");
-        // console.log(docTitle);
-        // document.getElementById('document-title').innerHTML = docTitle;
         document.getElementById('document-title').innerHTML
             = data?.templates?.syllabus?.title;
 
         // Populate table cells with JSON data
-        document.getElementById('courseTitle').innerHTML +=
-            data?.course?.section?.courseId + " "
-            + data?.course?.courseTitle;
+        cell = document.getElementById('courseTitle');
+        cellContent = cell.textContent;
+        cellContent += data?.course?.section?.courseId
+            + " " + data?.course?.courseTitle;
+        console.log(cellContent);
+        cell.textContent = cellContent;
+
         document.getElementById('term').textContent += data?.course?.section?.term;
         document.getElementById('schedule').textContent += data?.course?.section?.schedule?.day
             + " " + data.course?.section?.schedule?.time;
