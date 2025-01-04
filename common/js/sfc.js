@@ -46,7 +46,7 @@ async function loadCourseDetails() {
         // docTitle = data?.templates.syllabus?.title.replace(/\n/g, "<br>");
         // console.log(docTitle);
         // document.getElementById('document-title').innerHTML = docTitle;
-        document.getElementById('document-title').textContent = data?.templates?.syllabus?.title;
+        document.getElementById('document-title').innerHTML = data?.templates?.syllabus?.title;
 
         // Populate table cells with JSON data
         document.getElementById('courseTitle').textContent +=
