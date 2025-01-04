@@ -10,6 +10,11 @@ const contentMapping = {
     gradingScale: "grading-scale.html"
 };
 
+// Function to extract query parameters
+function getQueryParam(param) {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
 
 async function loadContent() {
     for (const [id, filePath] of Object.entries(contentMapping)) {
