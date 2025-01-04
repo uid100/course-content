@@ -54,7 +54,7 @@
     },
     "templates": {
         "syllabus": {
-            "title": "\nIT/E PROGRAMS\nSYLLABUS\n"
+            "title": "<p>&IT/E PROGRAMS</p><p>SYLLABUS</p><p>&nbsp;</p>"
         }
     }
 }
