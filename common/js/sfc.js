@@ -50,39 +50,39 @@ async function loadCourseDetails() {
         cellContent = cell.innerHTML;
         cellContent += data?.course?.section?.courseId
             + " " + data?.course?.courseTitle;
-        cell.textContent = cellContent;
+        cell.innerHTML = cellContent;
 
         cell = document.getElementById('term');
         cellContent = cell.innerHTML;
         cellContent += data?.course?.section?.term;
-        cell.textContent = cellContent;
+        cell.innerHTML = cellContent;
 
         cell = document.getElementById('schedule');
         cellContent = cell.innerHTML;
         cellContent += data?.course?.section?.schedule?.day
             + " " + data.course?.section?.schedule?.time;
-        cell.textContent = cellContent;
+        cell.innerHTML = cellContent;
 
         cell = document.getElementById('location');
         cellContent = cell.innerHTML;
         cellContent += data?.course?.section?.schedule?.location;
-        cell.textContent = cellContent;
+        cell.innerHTML = cellContent;
 
         cell = document.getElementById('units');
         cellContent = cell.innerHTML;
         cellContent += data?.course?.units;
-        cell.textContent = cellContent;
+        cell.innerHTML = cellContent;
 
         cell = document.getElementById('instructorName');
         cellContent = cell.innerHTML;
         cellContent += data?.instructor?.firstName
             + " " + data.instructor?.lastName;
-        cell.textContent = cellContent;
+        cell.innerHTML = cellContent;
 
         cell = document.getElementById('instructorEmail');
         cellContent = cell.innerHTML;
         cellContent += data?.instructor?.email;
-        cell.textContent = cellContent;
+        cell.innerHTML = cellContent;
 
     } catch (error) {
         console.error('Error loading table data:', error);
