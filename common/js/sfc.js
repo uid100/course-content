@@ -43,7 +43,7 @@ async function loadCourseDetails() {
         const response = await fetch(jsonFileName);
         const data = await response.json();
 
-        document.getElementById('document-title').textContent = data?.template?.syllabus?.title;
+        document.getElementById('document-title').textContent = data?.templates?.syllabus?.title;
 
         // Populate table cells with JSON data
         document.getElementById('courseTitle').textContent +=
