@@ -1,7 +1,6 @@
 const contentMapping = {
     studentLab: "student-lab.html",
     courseDescription: "course-description.html",
-    prerequisites: "prerequisites.html",
     courseObjectives: "course-objectives.html",
     gettingHelp: "getting-help.html",
     requiredMaterials: "required-materials.html",
@@ -91,6 +90,11 @@ async function loadCourseDetails() {
         cell = document.getElementById('officeHours');
         cellContent = cell.innerHTML;
         cellContent += `${data?.course?.contact?.officeHours?.schedule}`;
+        cell.innerHTML = cellContent;
+
+        cell = document.getElementById('prerequisites');
+        cellContent = cell.innerHTML;
+        cellContent += `${data?.course?.prerequisites}`;
         cell.innerHTML = cellContent;
     } catch (error) {
         console.error('Error loading table data:', error);
