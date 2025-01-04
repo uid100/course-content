@@ -39,8 +39,8 @@ async function loadCourseDetails() {
         const data = await response.json();
 
         // Populate table cells with JSON data
-        document.getElementById('schedule').textContent = data.course?.schedule.day + " " + data.course?.schedule.time;
-        document.getElementById('location').textContent = data.course?.schedule?.section?.location;
+        document.getElementById('schedule').textContent = data.course?.section?.schedule?.day + " " + data.course?.section?.schedule?.time;
+        document.getElementById('location').textContent = data.course?.section?.schedule?.location;
         document.getElementById('courseTitle').textContent = data.course?.courseTitle;
         document.getElementById('instructorName').textContent = data.instructor?.firstName + " " + data.instructor?.lastName;
         document.getElementById('instructorEmail').textContent = data.instructor?.email;
