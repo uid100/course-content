@@ -81,6 +81,16 @@ async function loadCourseDetails() {
         cellContent += `${data?.instructor?.email}`;
         cell.innerHTML = cellContent;
 
+        cell = document.getElementById('officeLocation');
+        cellContent = cell.innerHTML;
+        cellContent += `${course?.contact?.officeHours?.location}`
+            + ` ${course?.contact?.officeHours?.zoomLink}`;
+        cell.innerHTML = cellContent;
+
+        cell = document.getElementById('officeHours');
+        cellContent = cell.innerHTML;
+        cellContent += `${course?.contact?.officeHours?.schedule}`;
+        cell.innerHTML = cellContent;
     } catch (error) {
         console.error('Error loading table data:', error);
     }

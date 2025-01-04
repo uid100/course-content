@@ -35,8 +35,9 @@
         },
         "contact": {
             "officeHours": {
+                "location": "remote (Zoom)",
                 "schedule": "Wed 3P EST",
-                "zoomLink": "https://sfcollege.zoom.us/j/1234567890"
+                "zoomLink": "<a href=\"https://sfcollege.zoom.us/j/1234567890\">Zoom Link</a>"
             },
             "discordLink": {
                 "label": "Code Bytes",
