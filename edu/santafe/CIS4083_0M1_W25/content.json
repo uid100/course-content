@@ -21,9 +21,9 @@
             "endDate": "2025-05-03",
             "gradesDue": "2025-05-05",
             "schedule": {
-                "day": "Online",
-                "time": "n/a",
-                "location": ""
+                "day": "n/a",
+                "time": "",
+                "location": "Online"
             }
         },
         "textbook": {
