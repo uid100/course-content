@@ -1,4 +1,5 @@
 const contentMapping = {
+    studentLab: "student-lab.html",
     courseDescription: "course-description.html",
     prerequisites: "prerequisites.html",
     courseObjectives: "course-objectives.html",
