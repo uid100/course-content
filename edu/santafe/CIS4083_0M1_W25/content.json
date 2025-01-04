@@ -54,7 +54,7 @@
     },
     "templates": {
         "syllabus": {
-            "title": "<p>&IT/E PROGRAMS</p><p>SYLLABUS</p><p>&nbsp;</p>"
+            "title": "<p>&nbsp;</p><p>IT/E PROGRAMS</p><p>SYLLABUS</p><p>&nbsp;</p>"
         }
     }
 }
