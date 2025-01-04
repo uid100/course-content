@@ -74,7 +74,7 @@ function getQueryParam(param) {
 // Load JSON data and render content
 async function loadAndRenderJSON() {
     const jsonFilePath = getQueryParam('path');
-    const jsonFileName = jsonFilePath + "content.json";
+    const jsonFileName = "../edu/" + jsonFilePath + "content.json";
     console.log(jsonFileName);
 
     if (!jsonFileName) {
