@@ -74,16 +74,16 @@ function getQueryParam(param) {
 // Load JSON data and render content
 async function loadAndRenderJSON() {
     const jsonFilePath = getQueryParam('path');
-    const jsonFileName = "../edu/" + jsonFilePath + "content.json";
-    console.log(jsonFileName);
+    const jsonFile = "../edu/" + jsonFilePath + "content.json";
+    console.log(jsonFile);
 
-    if (!jsonFileName) {
+    if (!jsonFile) {
         document.getElementById('content').textContent = "Error: No JSON file specified.";
         return;
     }
 
     try {
-        const response = await fetch(jsonFileName);
+        const response = await fetch(jsonFile);
         if (!response.ok) {
             throw new Error(`Failed to fetch JSON file: ${response.statusText}`);
         }
@@ -111,7 +111,6 @@ async function loadAndRenderJSON() {
 
 document.addEventListener("DOMContentLoaded", () => {
     // The path to the JSON file
-    // const jsonFilePath = "../content.json";
     const jsonFilePath = "../edu/" + getQueryParam('path');
     const jsonFile = jsonFilePath + "content.json";
     if (!jsonFile) {
@@ -197,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // configure timeline
-            initializeTimeline(jsonFilePath);
+            initializeTimeline(jsonFile);
 
             // course section
             const termElement = document.getElementById("term");
