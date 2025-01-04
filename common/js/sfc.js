@@ -39,7 +39,6 @@ async function loadCourseDetails() {
         // Fetch the JSON file
         const jsonFilePath = "../edu/" + getQueryParam('path');
         const jsonFileName = jsonFilePath + "content.json";
-        console.log(jsonFileName);
         const response = await fetch(jsonFileName);
         const data = await response.json();
 
@@ -51,17 +50,40 @@ async function loadCourseDetails() {
         cellContent = cell.textContent;
         cellContent += data?.course?.section?.courseId
             + " " + data?.course?.courseTitle;
-        console.log(cellContent);
         cell.textContent = cellContent;
 
-        document.getElementById('term').textContent += data?.course?.section?.term;
-        document.getElementById('schedule').textContent += data?.course?.section?.schedule?.day
+        cell = document.getElementById('term');
+        cellContent = cell.textContent;
+        cellContent += data?.course?.section?.term;
+        cell.textContent = cellContent;
+
+        cell = document.getElementById('schedule');
+        cellContent = cell.textContent;
+        cellContent += data?.course?.section?.schedule?.day
             + " " + data.course?.section?.schedule?.time;
-        document.getElementById('location').textContent += data?.course?.section?.schedule?.location;
-        document.getElementById('units').textContent += data?.course?.units;
-        document.getElementById('instructorName').textContent += data?.instructor?.firstName
+        cell.textContent = cellContent;
+
+        cell = document.getElementById('location');
+        cellContent = cell.textContent;
+        cellContent += data?.course?.section?.schedule?.location;
+        cell.textContent = cellContent;
+
+        cell = document.getElementById('units');
+        cellContent = cell.textContent;
+        cellContent += data?.course?.units;
+        cell.textContent = cellContent;
+
+        cell = document.getElementById('instructorName');
+        cellContent = cell.textContent;
+        cellContent += data?.instructor?.firstName
             + " " + data.instructor?.lastName;
-        document.getElementById('instructorEmail').textContent += data?.instructor?.email;
+        cell.textContent = cellContent;
+
+        cell = document.getElementById('instructorEmail');
+        cellContent = cell.textContent;
+        cellContent += data?.instructor?.email;
+        cell.textContent = cellContent;
+
     } catch (error) {
         console.error('Error loading table data:', error);
     }
