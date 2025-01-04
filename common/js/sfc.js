@@ -44,13 +44,13 @@ async function loadCourseDetails() {
         const data = await response.json();
 
         // Populate table cells with JSON data
-        document.getElementById('courseTitle').textContent += data?.course?.courseTitle;
-        document.getElementById('schedule').textContent = data?.course?.section?.schedule?.day
+        document.getElementById('courseTitle').innerHTML += data?.course?.courseTitle;
+        document.getElementById('schedule').innerHTML += data?.course?.section?.schedule?.day
             + " " + data.course?.section?.schedule?.time;
-        document.getElementById('location').textContent = data?.course?.section?.schedule?.location;
-        document.getElementById('instructorName').textContent = data?.instructor?.firstName
+        document.getElementById('location').innerHTML += data?.course?.section?.schedule?.location;
+        document.getElementById('instructorName').innerHTML += data?.instructor?.firstName
             + " " + data.instructor?.lastName;
-        document.getElementById('instructorEmail').textContent = data?.instructor?.email;
+        document.getElementById('instructorEmail').innerHTML += data?.instructor?.email;
     } catch (error) {
         console.error('Error loading table data:', error);
     }
