@@ -10,7 +10,6 @@ const contentMapping = {
     courseSchedule: "course-schedule.html",
     classroomEtiquette: "classroom-etiquette.html",
     criticalDates: "critical-dates.html",
-    collegePolicies: "college-policies.html",
 };
 
 // Function to extract query parameters
