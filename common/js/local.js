@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const bookElement = document.getElementById("textbook-title");
                 bookElement.innerHTML = bookTitle;
             } else {
-                console.error("Textbook image path not found in JSON.");
+                console.log("Textbook image path not found in JSON.");
             }
 
             // instructor name
