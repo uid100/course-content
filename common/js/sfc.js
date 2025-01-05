@@ -19,6 +19,7 @@ function getQueryParam(param) {
 async function loadContent() {
     for (const [id, filePath] of Object.entries(contentMapping)) {
         try {
+            console.log("id:", id);
             const jsonFilePath = "../edu/" + getQueryParam('path');
             const response = await fetch(jsonFilePath + filePath);
             if (response.ok) {
