@@ -4,10 +4,13 @@ const contentMapping = {
     courseObjectives: "course-objectives.html",
     requiredMaterials: "required-materials.html",
     recommendedMaterials: "recommended-materials.html",
+    courseExpectations: "course-expectations.html",
     policyAI: "policy-ai.html",
     gradingScale: "grading-scale.html",
-    courseExpectations: "course-expectations.html",
-    gettingHelp: "getting-help.html",
+    courseSchedule: "course-schedule.html",
+    classroomEtiquette: "classroom-etiquette.html",
+    criticalDates: "critical-dates.html",
+    collegePolicies: "college-policies.html",
 };
 
 // Function to extract query parameters
