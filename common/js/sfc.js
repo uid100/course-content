@@ -5,7 +5,7 @@ const contentMapping = {
     requiredMaterials: "required-materials.html",
     recommendedMaterials: "recommended-materials.html",
     courseExpectations: "course-expectations.html",
-    policyAI: "policy-ai.html",
+    aiPolicy: "ai-policy.html",
     gradingScale: "grading-scale.html",
     courseSchedule: "course-schedule.html",
     classroomEtiquette: "classroom-etiquette.html",
