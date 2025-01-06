@@ -56,11 +56,13 @@ header h4 {
     margin: 0 0 10px 10px;
 }
 
+#policy .course-home,
 #syllabus-wrapper .course-home {
     width: auto;
     float: right;
 }
 
+#policy .course-home figure,
 #syllabus-wrapper #course-home figure {
     display: inline-block;
     /* float: right; */
@@ -68,6 +70,7 @@ header h4 {
     width: 250px;
 }
 
+#policy .course-home figcaption,
 #syllabus-wrapper #course-home figcaption {
     /* margin-top: 5px; */
     font-size: 14px;
