@@ -59,6 +59,16 @@ header h4 {
     float: right;
 }
 
+#syllabus-wrapper #course-home figure {
+    text-align: center;
+}
+
+#syllabus-wrapper #course-home figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+    text-align: center;
+}
+
 #instructor-image,
 #textbook-image {
     display: block;
