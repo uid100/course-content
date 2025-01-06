@@ -189,6 +189,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 const imgElement = document.getElementById("cover-image");
                 if (imgElement) { imgElement.src = relativePath; }
 
+                // set the homepage link from the course-home element
+                const homeLink = document.getElementById("course-home");
+                if (homeLink) { home.href = coursePath; }
+
                 const imgCaption = document.getElementById("cover-caption");
                 if (imgCaption) { imgCaption.textContent = courseTitle + " Cover Image"; }
             } else {
