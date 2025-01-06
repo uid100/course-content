@@ -23,7 +23,7 @@ async function loadContent() {
         try {
             console.log("id:", id);
             const jsonFilePath = getQueryParam('path');
-            const response = await fetch(jsonFilePath + '../' + filePath);
+            const response = await fetch(jsonFilePath + '/' + filePath);
             if (response.ok) {
                 const htmlContent = await response.text();
                 document.getElementById(id).innerHTML = htmlContent;
@@ -41,7 +41,8 @@ async function loadCourseDetails() {
     try {
         // Fetch the JSON file
         const jsonFilePath = getQueryParam('path');
-        const jsonFileName = jsonFilePath + "../content.json";
+        console.log("jsonFilePath:", jsonFilePath);
+        const jsonFileName = jsonFilePath + "/content.json";
         const response = await fetch(jsonFileName);
         const data = await response.json();
 
