@@ -22,7 +22,7 @@ async function loadContent() {
     for (const [id, filePath] of Object.entries(contentMapping)) {
         try {
             console.log("id:", id);
-            const jsonFilePath = "../../edu/" + getQueryParam('path');
+            const jsonFilePath = getQueryParam('path');
             const response = await fetch(jsonFilePath + filePath);
             if (response.ok) {
                 const htmlContent = await response.text();
@@ -40,7 +40,7 @@ async function loadContent() {
 async function loadCourseDetails() {
     try {
         // Fetch the JSON file
-        const jsonFilePath = "../../edu/" + getQueryParam('path');
+        const jsonFilePath = getQueryParam('path');
         const jsonFileName = jsonFilePath + "/content.json";
         const response = await fetch(jsonFileName);
         const data = await response.json();
