@@ -46,6 +46,11 @@ header h4 {
     object-fit: contain;
 }
 
+.course-home {
+    width: 220px;
+    float: right;
+}
+
 #instructor-image,
 #textbook-image {
     display: block;
