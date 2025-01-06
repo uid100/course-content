@@ -240,11 +240,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // Set the src attribute of the image
                 const imgElement = document.getElementById("textbook-image");
-                imgElement.src = relativePath;
+                if (imgElement) { imgElement.src = relativePath; }
 
                 const bookTitle = textbookTitle + "<br>" + textbookAuthor;
                 const bookElement = document.getElementById("textbook-title");
-                bookElement.innerHTML = bookTitle;
+                if (bookElement) { bookElement.innerHTML = bookTitle; }
             } else {
                 console.log("Textbook image path not found in JSON.");
             }
