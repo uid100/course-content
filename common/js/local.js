@@ -300,11 +300,16 @@ document.addEventListener("DOMContentLoaded", () => {
             const syllabusTemplate = document.getElementById("syllabus-template");
             if (syllabusTemplate) {
                 // syllabusTemplate.href = "https://uid100.github.io" + syllabusTemplatePath
-                syllabusTemplate.href = syllabusTemplatePath + "?path=" + getQueryParam('path');
+                syllabusTemplate.href = syllabusTemplatePath + #policy.course - home,;
             }
             const deptPolicies = document.getElementById("policies-template");
             if (deptPolicies) {
                 deptPolicies.href = policiesTemplatePath;
+            }
+            const onlineClassesLink = document.getElementById("online-classes");
+            if (onlineClassesLink) {
+                const hrefLink = onlineClassesLink.href
+                onlineClassesLink.href = hrefLink + #policy.course - home,;
             }
 
             // modules link
