@@ -224,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 newTag.className = "highlight";
                 hyflexElement.appendChild(newTag);
             } else {
-                hyflexElement.setAttribute("hidden", true);
+                if (hyflexElement) { hyflexElement.setAttribute("hidden", true); }
             }
 
             // about course
@@ -251,11 +251,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // instructor name
             const instructor = document.getElementById("instructor-name");
-            instructor.textContent = `${firstName} ${lastName}`;
+            if (instructor) { instructor.textContent = `${firstName} ${lastName}`; }
             const aboutInstructor = document.getElementById("instructor-about");
-            aboutInstructor.textContent = instructorAbout;
+            if (aboutInstructor) { aboutInstructor.textContent = instructorAbout; }
             const instructorUrl = document.getElementById("instructor-link");
-            instructorUrl.href = instructorLink;
+            if (instructorUrl) { instructorUrl.href = instructorLink; }
 
             // instructor image
             if (instructorImagePath) {
@@ -264,28 +264,32 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // Set the src attribute of the image
                 const imgElement = document.getElementById("instructor-image");
-                imgElement.src = relativePath;
+                if (imgElement) { imgElement.src = relativePath; }
             } else {
                 console.error("Instructor image path not found in JSON.");
             }
 
             // office hours
             const officeHoursButton = document.getElementById("office-hours-button");
-            officeHoursButton.textContent = officeHours;
-            officeHoursButton.href = officeHoursLink;
+            if (officeHoursButton) {
+                officeHoursButton.textContent = officeHours;
+                officeHoursButton.href = officeHoursLink;
+            }
 
             // discord link
             const discordLinkButton = document.getElementById("discord-link");
-            discordLinkButton.textContent = discordServer;
-            discordLinkButton.href = discordLinkUrl;
+            if (discordLinkButton) {
+                discordLinkButton.textContent = discordServer;
+                discordLinkButton.href = discordLinkUrl;
+            }
 
             // syllabus link
             const syllabusLink = document.getElementById("syllabus-button");
-            syllabusLink.href = coursePath + "/assignments/syllabus";
+            if (syllabusLink) { syllabusLink.href = coursePath + "/assignments/syllabus"; }
 
             // modules link
             const modulesLink = document.getElementById("modules-button");
-            modulesLink.href = coursePath + "/modules";
+            if (modulesLink) { modulesLink.href = coursePath + "/modules"; }
         })
         .catch(error => {
             console.error("Failed to load or parse JSON:", error);
