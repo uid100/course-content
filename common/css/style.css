@@ -151,7 +151,7 @@ header h4 {
     width: 20%;
 }
 
-#syllabus-wrapper .logo {
+#policy .logo #syllabus-wrapper .logo {
     width: 200px;
     height: auto;
     object-fit: contain;
