@@ -60,8 +60,8 @@ header h4 {
 }
 
 #syllabus-wrapper #course-home figure {
-    /* display: inline-block; */
-    float: right;
+    display: inline-block;
+    /* float: right; */
     text-align: center;
     width: 250px;
 }
