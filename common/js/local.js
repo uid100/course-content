@@ -141,6 +141,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const textbookTitle = data?.course?.textbook?.title;
             const textbookAuthor = data?.course?.textbook?.author;
             const textbookImagePath = data?.course?.textbook?.imagePath;
+            const syllabusTemplatePath = data?.templates?.syllabus?.path;
+            const policiesTemplatePath = data?.templates?.policies?.path;
             const description = data?.course?.description;
             const officeHours = data?.course?.contact?.officeHours?.schedule;
             const officeHoursLink = data?.course?.contact?.officeHours?.zoomLink;
@@ -295,6 +297,16 @@ document.addEventListener("DOMContentLoaded", () => {
             // syllabus link
             const syllabusLink = document.getElementById("syllabus-button");
             if (syllabusLink) { syllabusLink.href = coursePath + "/assignments/syllabus"; }
+
+            const syllabusTemplate = document.getElementById("syllabus-template");
+            if (syllabusTemplate) {
+                syllabusTemplate.href = "https://uid100.github.io" + syllabusTemplatePath
+                    + "?path=" + getQueryParam('path');
+            }
+            const deptPolicies = document.getElementById("policies-template");
+            if (deptPolicies) {
+                deptPolicies.href = "https://uid100.github.io" + policiesTemplatePath;
+            }
 
             // modules link
             const modulesLink = document.getElementById("modules-button");
