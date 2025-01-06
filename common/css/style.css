@@ -60,13 +60,14 @@ header h4 {
 }
 
 #syllabus-wrapper #course-home figure {
-    display: inline-block;
+    /* display: inline-block; */
+    float: right;
     text-align: center;
     width: 250px;
 }
 
 #syllabus-wrapper #course-home figcaption {
-    margin-top: 5px;
+    /* margin-top: 5px; */
     font-size: 14px;
     text-align: center;
 }
