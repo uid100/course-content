@@ -299,12 +299,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const syllabusTemplate = document.getElementById("syllabus-template");
             if (syllabusTemplate) {
-                syllabusTemplate.href = "https://uid100.github.io" + syllabusTemplatePath
-                    + "?path=" + getQueryParam('path');
+                // syllabusTemplate.href = "https://uid100.github.io" + syllabusTemplatePath
+                syllabusTemplate.href = syllabusTemplatePath + "?path=" + getQueryParam('path');
             }
             const deptPolicies = document.getElementById("policies-template");
             if (deptPolicies) {
-                deptPolicies.href = "https://uid100.github.io" + policiesTemplatePath;
+                deptPolicies.href = policiesTemplatePath;
             }
 
             // modules link
