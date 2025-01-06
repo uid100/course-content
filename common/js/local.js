@@ -112,7 +112,7 @@ async function loadAndRenderJSON() {
 document.addEventListener("DOMContentLoaded", () => {
     // The path to the JSON file
     const jsonFilePath = "../edu/" + getQueryParam('path');
-    const jsonFile = jsonFilePath + "content.json";
+    const jsonFile = jsonFilePath + "/content.json";
     if (!jsonFile) {
         document.getElementById('content').textContent = "Error: No JSON file specified.";
         return;
