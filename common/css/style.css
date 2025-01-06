@@ -41,9 +41,16 @@ header h4 {
 
 #cover-image {
     display: block;
-    width: 100%;
+    width: 200px;
     height: auto;
     object-fit: contain;
+    float: right;
+}
+
+#course-image {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
 }
 
 #instructor-image,
