@@ -47,6 +47,7 @@ header h4 {
     object-fit: contain;
 }
 
+#online-classes #cover-image,
 #syllabus-wrapper #cover-image {
     width: 250px;
     height: auto;
