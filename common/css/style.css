@@ -46,8 +46,16 @@ header h4 {
     object-fit: contain;
 }
 
-.course-home {
-    width: 220px;
+#syllabus-wrapper #cover-image {
+    width: 250px;
+    height: auto;
+    object-fit: contain;
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+#syllabus-wrapper .course-home {
+    width: auto;
     float: right;
 }
 
