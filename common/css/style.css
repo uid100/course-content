@@ -133,6 +133,14 @@ header h4 {
     width: 20%;
 }
 
+#syllabus-wrapper .logo {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
 .timeline {
     position: relative;
     margin: 50px 0;
