@@ -134,7 +134,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const meetingTime = data?.course?.section?.schedule?.day + " " + data?.course?.section?.schedule?.time;
             const meetingLocation = data?.course?.section?.schedule?.location;
             const courseNumber = data?.course?.courseNumber;
+            const courseId = data?.course?.section?.courseId;
             const hyflex = data?.schedule?.hyflex || null;
+            const units = data?.course?.units;
             const coursePath = data?.canvas?.server + data?.canvas?.coursePath;
             const textbookTitle = data?.course?.textbook?.title;
             const textbookAuthor = data?.course?.textbook?.author;
@@ -205,6 +207,9 @@ document.addEventListener("DOMContentLoaded", () => {
             // course section
             const termElement = document.getElementById("term");
             if (termElement) { termElement.textContent = term; }
+
+            const courseIdElement = document.getElementById("course-id");
+            if (courseIdElement) { courseIdElement.textContent = courseId; }
 
             const sched = document.getElementById("schedule");
             if (sched) { sched.textContent = meetingTime; }
