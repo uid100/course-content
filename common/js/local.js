@@ -75,7 +75,6 @@ function getQueryParam(param) {
 async function loadAndRenderJSON() {
     const jsonFilePath = getQueryParam('path');
     const jsonFile = "../edu/" + jsonFilePath + "/content.json";
-    console.log(jsonFile);
 
     if (!jsonFile) {
         document.getElementById('content').textContent = "Error: No JSON file specified.";
@@ -142,7 +141,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const textbookAuthor = data?.course?.textbook?.author;
             const textbookImagePath = data?.course?.textbook?.imagePath;
             const syllabusTemplatePath = data?.templates?.syllabus?.path;
-            console.log(syllabusTemplatePath);
             const policiesTemplatePath = data?.templates?.policies?.path;
             const description = data?.course?.description;
             const officeHours = data?.course?.contact?.officeHours?.schedule;
@@ -301,7 +299,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const syllabusTemplate = document.getElementById("syllabus-template");
             if (syllabusTemplate) {
-                console.log("still? " + syllabusTemplatePath);
                 syllabusTemplate.href = "https://uid100.github.io" + syllabusTemplatePath
                     + "?path=" + getQueryParam('path');
             }
