@@ -56,7 +56,12 @@
     },
     "templates": {
         "syllabus": {
-            "title": "<p>&nbsp;</p><p>IT/E PROGRAMS</p><p>SYLLABUS</p>"
+            "title": "<p>&nbsp;</p><p>IT/E PROGRAMS</p><p>SYLLABUS</p>",
+            "path": "/course-content/edu/santafe/ite_syllabus.html"
+        },
+        "policies": {
+            "title": "Department Policies",
+            "path": "/course-content/edu/santafe/ite-policies.html"
         }
     }
 }
