@@ -154,7 +154,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // set the page content
             if (courseTitle) {
                 const titleElement = document.getElementById("course-title");
-                titleElement.textContent = courseTitle;
+                if (titleElement) { titleElement.textContent = courseTitle; }
             } else {
                 console.error("Course title not found in JSON.");
             }
@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // Set the src attribute of the image
                 const imgElement = document.getElementById("college-logo");
-                imgElement.src = relativePath;
+                if (imgElement) { imgElement.src = relativePath; }
             } else {
                 console.error("Logo path not found in JSON.");
             }
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (website) {
                 // Set the href attribute of the link
                 const linkElement = document.getElementById("college-link");
-                linkElement.href = website;
+                if (linkElement) { linkElement.href = website; }
             } else {
                 console.error("Website link not found in JSON.");
             }
@@ -187,10 +187,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // Set the src attribute of the image
                 const imgElement = document.getElementById("cover-image");
-                imgElement.src = relativePath;
+                if (imgElement) { imgElement.src = relativePath; }
 
                 const imgCaption = document.getElementById("cover-caption");
-                imgCaption.textContent = courseTitle + " Cover Image";
+                if (imgCaption) { imgCaption.textContent = courseTitle + " Cover Image"; }
             } else {
                 console.error("Cover image path not found in JSON.");
             }
@@ -200,16 +200,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // course section
             const termElement = document.getElementById("term");
-            termElement.textContent = term;
+            if (termElement) { termElement.textContent = term; }
 
             const sched = document.getElementById("schedule");
-            sched.textContent = meetingTime;
+            if (sched) { sched.textContent = meetingTime; }
 
             const loc = document.getElementById("location");
-            loc.textContent = meetingLocation;
+            if (loc) { loc.textContent = meetingLocation; }
 
             const courseNum = document.getElementById("course-number");
-            courseNum.textContent = courseNumber;
+            if (courseNum) { courseNum.textContent = courseNumber; }
 
             // set the hyflex link
             const hyflexElement = document.getElementById("hyflex");
@@ -231,7 +231,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const courseAbout = document.getElementById("course-about");
             // replace newline with <br>
             const htContent = description.replace(/\n/g, "<br>");
-            courseAbout.innerHTML = htContent;
+            if (courseAbout) { courseAbout.innerHTML = htContent; }
 
             // textbook image
             if (textbookImagePath) {
