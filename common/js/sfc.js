@@ -23,6 +23,7 @@ async function loadContent() {
         try {
             console.log("id:", id);
             const jsonFilePath = getQueryParam('path');
+            console.log("file path:", jsonFilePath);
             const response = await fetch(jsonFilePath + '/' + filePath);
             if (response.ok) {
                 const htmlContent = await response.text();
