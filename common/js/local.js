@@ -53,7 +53,7 @@ function initializeTimeline(jsonPath) {
             // Set labels
             document.getElementById('start-label').textContent = start.toLocaleDateString() //toDateString();
             document.getElementById('end-label').textContent = end.toLocaleDateString();
-            document.getElementById('current-label').textContent = 'today:<br>' + today.toLocaleDateString();
+            document.getElementById('current-label').innerHTML = 'today:<br>' + today.toLocaleDateString();
             // document.getElementById('current-label').textContent = today.toLocaleDateString();
 
             document.getElementById('start-label').style.left = '0%';
