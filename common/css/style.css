@@ -5,7 +5,8 @@ body {
     padding: 40px;
 }
 
-header {
+#ite-policies header,
+#ite-syllabus-template header {
     position: relative;
     height: 110px;
     background: url('https://uid100.github.io/course-content/images/sfc_logo_vertical_blue.png') no-repeat left center;
