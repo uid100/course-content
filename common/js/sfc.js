@@ -43,7 +43,7 @@ async function loadCourseDetails() {
         // Fetch the JSON file
         const jsonFilePath = getQueryParam('path');
         console.log("jsonFilePath:", jsonFilePath);
-        const jsonFileName = jsonFilePath + "/content.json";
+        const jsonFileName = "../" + jsonFilePath + "/content.json";
         const response = await fetch(jsonFileName);
         const data = await response.json();
 
