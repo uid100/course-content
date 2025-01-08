@@ -22,7 +22,7 @@
             "endDate": "2025-05-03",
             "gradesDue": "2025-05-05",
             "schedule": {
-                "day": "n/a",
+                "day": "",
                 "time": "",
                 "location": "Online"
             }
