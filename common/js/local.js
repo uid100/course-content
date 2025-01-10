@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // set the hyflex link
             const hyflexElement = document.getElementById("hyflex");
-            if (hyflex) {
+            if (hyflex && hyflexElement) {
                 const hyflexPage = coursePath + "/hyflex";
                 const hyflexLink = document.createElement("a");
                 hyflexLink.href = hyflexPage;
