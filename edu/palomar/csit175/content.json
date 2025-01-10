@@ -29,10 +29,10 @@
             }
         },
         "textbook": {
-            "title": "",
-            "author": "",
+            "title": "Murach's Python Programming",
+            "author": "Urban and Murach",
             "edition": "2d Ed",
-            "isbn": "",
+            "isbn": "978-1-943872-74-9",
             "imagePath": "/course-content/images/Murach_Python_2d.jpg"
         },
         "contact": {
