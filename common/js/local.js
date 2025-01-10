@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (homeLink) { homeLink.href = coursePath; }
 
                 const imgCaption = document.getElementById("cover-caption");
-                if (imgCaption) { imgCaption.textContent = courseTitle + " Cover Image"; }
+                if (imgCaption) { imgCaption.textContent = courseTitle; }
             } else {
                 console.error("Cover image path not found in JSON.");
             }
