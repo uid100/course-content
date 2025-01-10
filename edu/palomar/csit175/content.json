@@ -1,6 +1,6 @@
 {
     "canvas": {
-        "server": "https://palomar.instructure.com/",
+        "server": "https://palomar.instructure.com",
         "coursePath": "/courses/55278"
     },
     "college": {
