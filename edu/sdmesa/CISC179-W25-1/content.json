@@ -1,0 +1,67 @@
+{
+    "canvas": {
+        "server": "https://sdccd.instructure.com",
+        "coursePath": "/courses/2483102"
+    },
+    "college": {
+        "name": "Palomar College",
+        "logoPath": "/course-content/images/sdmesa-college-logo.jpg",
+        "website": "https://www.sdmesa.edu/"
+    },
+    "course": {
+        "courseNumber": "CISC 179",
+        "courseTitle": "Introduction to Python Programming",
+        "units": 4,
+        "coverImage": "/course-content/images/programmer.jpg",
+        "description": "This is an introductory course in programming using the Python language and incorporating the fundamentals of object oriented programming. Topics include the use and programming of the mouse, windows, forms, menus, dialog boxes, icons, buttons, text fields, files, graphics, and other components of the Windows environment. Students learn to analyze user needs and requirements; design the user interface; assign properties to objects in the user interface; code event procedures; test and debug completed programs and applications; and complete final user documentation. This course is intended for Computer and Information Sciences majors or anyone interested in the Python programming language.",
+        "prerequisites": "(recommended) Computer and Information Sciences 181 with a grade of “C” or better, or equivalent.",
+        "section": {
+            "courseId": "CISC-179",
+            "term": "Spring 2025, first 8 week term",
+            "startDate": "2025-02-03:T08:00:00",
+            "endDate": "2025-03-29T08:00:00",
+            "gradesDue": "2025-04-10T08:00:00",
+            "schedule": {
+                "day": "",
+                "time": "",
+                "location": "online"
+            }
+        },
+        "textbook": {
+            "title": "Murach's Python Programming",
+            "author": "Urban and Murach",
+            "edition": "2d Ed",
+            "isbn": "978-1-943872-74-9",
+            "imagePath": "/course-content/images/Murach_Python_2d.jpg"
+        },
+        "contact": {
+            "officeHours": {
+                "location": "Remote",
+                "schedule": "Wed 3P - 5P PST",
+                "zoomLink": "<a href=\"https://sfcollege.zoom.us/s/92446820828?amp_device_id=b2176399-733a-4ab7-a3c5-32537c695ab3\">Zoom Link</a>"
+            },
+            "discordLink": {
+                "label": "Code Bytes",
+                "url": "https://discord.gg/MpHjV4qgxZ"
+            }
+        }
+    },
+    "instructor": {
+        "firstName": "Dan",
+        "lastName": "Sullivan",
+        "email": "dsullivan@sdccd.edu",
+        "imagePath": "/course-content/images/Dan_20070717.jpg",
+        "about": "Over 30 years professional experience as a software engineer and program manager. I have worked for large and small companies.",
+        "url": "/course-content/common/instructor_more.html"
+    },
+    "templates": {
+        "syllabus": {
+            "title": "<p>&nbsp;</p><p>SD Mesa College</p><p>SYLLABUS</p>",
+            "path": "/course-content/edu/sdmesa/syllabus.html"
+        },
+        "policies": {
+            "title": "Department Policies",
+            "path": "/course-content/edu/sdmesa/policies.html"
+        }
+    }
+}
