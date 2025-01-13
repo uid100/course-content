@@ -223,7 +223,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const courseNumItem = document.getElementById("course-num");
             console.log("course number\n");
-            if (courseNumItem) { courseNumItem.textContent = courseNum; }
+            if (courseNumItem) { courseNumItem.textContent = courseNumber; }
 
             const unitsElement = document.getElementById("units");
             console.log("units\n");
