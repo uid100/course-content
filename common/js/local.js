@@ -218,8 +218,14 @@ document.addEventListener("DOMContentLoaded", () => {
             const loc = document.getElementById("location");
             if (loc) { loc.textContent = meetingLocation; }
 
+            const courseNr = document.getElementById("course-number");
+            if (courseNum) { courseNr.textContent = courseNumber; }
+
             const courseNum = document.getElementById("course-number");
-            if (courseNum) { courseNum.textContent = courseNumber; }
+            if (courseNum) { courseNum.textContent = courseNum; }
+
+            const instructorId = document.getElementById("instructor");
+            if (instructorId) { instructorId.textContent = `${firstName} ${lastName}`; }
 
             // set the hyflex link
             const hyflexElement = document.getElementById("hyflex");
