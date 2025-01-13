@@ -219,10 +219,15 @@ document.addEventListener("DOMContentLoaded", () => {
             if (loc) { loc.textContent = meetingLocation; }
 
             const courseNr = document.getElementById("course-number");
-            if (courseNum) { courseNr.textContent = courseNumber; }
+            if (courseNr) { courseNr.textContent = courseNumber; }
 
             const courseNum = document.getElementById("course-number");
+            console.log("course number\n");
             if (courseNum) { courseNum.textContent = courseNum; }
+
+            const unitsElement = document.getElementById("units");
+            console.log("units\n");
+            if (unitsElement) { unitsElement.textContent = units; }
 
             const instructorId = document.getElementById("instructor");
             if (instructorId) { instructorId.textContent = `${firstName} ${lastName}`; }
