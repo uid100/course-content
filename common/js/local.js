@@ -218,12 +218,12 @@ document.addEventListener("DOMContentLoaded", () => {
             const loc = document.getElementById("location");
             if (loc) { loc.textContent = meetingLocation; }
 
-            const courseNr = document.getElementById("course-number");
-            if (courseNr) { courseNr.textContent = courseNumber; }
+            const courseNumberElement = document.getElementById("course-number");
+            if (courseNumberElement) { courseNumberElement.textContent = courseNumber; }
 
-            const courseNum = document.getElementById("course-number");
+            const courseNumItem = document.getElementById("course-num");
             console.log("course number\n");
-            if (courseNum) { courseNum.textContent = courseNum; }
+            if (courseNumItem) { courseNumItem.textContent = courseNum; }
 
             const unitsElement = document.getElementById("units");
             console.log("units\n");
