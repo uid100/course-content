@@ -148,10 +148,11 @@ header h4 {
 
 .logo {
     display: block;
-    width: 50%;
+    width: 20%;
 }
 
-#policy .logo #syllabus-wrapper .logo {
+#policy .logo,
+#syllabus-wrapper .logo {
     width: 200px;
     height: auto;
     object-fit: contain;
