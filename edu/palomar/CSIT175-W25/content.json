@@ -18,7 +18,7 @@
         "section": {
             "courseId": "CSIT-175",
             "term": "Spring 2025",
-            "startDate": "2025-01-27:T08:00:00",
+            "startDate": "2025-01-27T08:00:00",
             "endDate": "2025-05-22T08:00:00",
             "gradesDue": "2025-05-25T08:00:00",
             "schedule": {
