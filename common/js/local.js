@@ -292,7 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // office hours
             const officeHoursButton = document.getElementById("office-hours-button");
-            console.log("office hours" + officeHoursLink);
+            console.log("office hours: " + officeHoursLink);
             if (officeHoursButton) {
                 officeHoursButton.textContent = officeHours;
                 officeHoursButton.href = officeHoursLink;
