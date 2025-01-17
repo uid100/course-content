@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Python Interpreter</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body style="margin:30px">
+    <div id="header">
+        <h1>Background:<br>
+            Introduction to the Python Interpreter</h1>
+        <p>
+            Python is a powerful and easy-to-use programming language.
+        </p>
+        <p>
+            The Python interpreter allows you to execute Python commands interactively
+            or using scripted commands stored in source files.
+        </p>
+        <p>
+            Let's look at different ways to invoke the Python interpreter and
+            execute some simple commands.
+        </p>
+
+        <div style="width: 70%; margin:auto;">
+            <blockquote style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+                Python code runs in the Python interpreter.
+            </blockquote>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <div class="row justify-content-center mt-6">
+            <!-- REPL -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-center text-white">
+                        Using the Python Interpreter
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Invoking the Interactive Interpreter</h5>
+                        <p style="border: 1px solid #ccc; padding: 10px; margin:auto">
+                            <strong>REPL</strong> is an acronym for Read, Evaluate,
+                            Print, and Loop
+                        </p>
+                        <div class="card-text">
+                            <p>
+                                Python commands can be executed by entering them directly in the Python
+                                interpreter. This mode is called the Read-Evaluate-Print-Loop (REPL).
+                            </p>
+                            <p>
+                                To start the Python interpreter, simply type <code>python</code> or
+                                <code>python3</code> in your terminal, depending on your system
+                                configuration. Once started, you will see a prompt (e.g.,
+                                <code>&gt;&gt;&gt;</code>) where you can enter Python commands.
+                            </p>
+                            <pre>
+    $ python3
+    Python 3.x.x (default, yyyy-mm-dd, HH:MM:SS)
+    [GCC x.x.x] on linux
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
+                            </pre>
+
+                            <p>
+                                Try typing these simple examples of commands in this interactive mode:
+                            </p>
+                            <pre>
+    >>> print("Hello, World!")
+    Hello, World!
+    
+    >>> 2 + 2
+    4
+    
+    >>> name = "Alice"
+    >>> print(f"Hello, {name}!")
+    Hello, Alice!
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <!-- Command Line -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-center text-white">
+                        Using Python from the Command Line
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Run a Python command from the terminal</h5>
+                        <div class="card-text">
+                            <p>
+                                You can also execute a Python command directly from the terminal without entering
+                                the interactive mode by using the <code>-c</code> option. This is useful for quick
+                                tasks. If the path is configured correctly, you can run the Python command from
+                                Windows command line or the terminal in macos or a Linux shell.
+                            </p>
+                            <p>Try this simple example:</p>
+                            <pre>
+    $ python3 -c "print('Hello from the command line!')"
+    Hello from the command line!
+                            </pre>
+                            <p>And another example performing arithmetic:</p>
+                            <pre>
+    $ python3 -c "print(5 * 10)"
+    50
+                            </pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center mt-4">
+            <!-- Card 3 -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-center text-white">
+                        Running a Python (.py) file
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            Running a Python file from the terminal
+                        </h5>
+                        <div class="card-text">
+                            <p>
+                                Running a Python file from the command line cn be done by calling
+                                the Python interpreter with the file name as an argument.
+                            </p>
+                            <p>
+                                Steps:
+                            <ol>
+                                <li>Open your terminal or command prompt.</li>
+                                <li>Navigate to the folder where your Python file is saved.<br>
+                                    Use the <code>cd</code> command to change directories.
+                                    <pre>
+    cd path/to/your/file
+                                    </pre>
+                                </li>
+                                <li>Run the python file with the interpreter.<br>
+                                    <pre>
+    python filename.py
+                                    </pre>
+                                    Replace filename.py with the name of your Python file.
+                                </li>
+                            </ol>
+                            </p>
+                            <p>
+                                Example<br>
+                                If you have a Python file called TaxCalculator.py with this code:
+                            <pre>
+    python TaxCalculator.py
+                            </pre>
+                            <p>
+                                The Python interpreter will execute the code in the file and display the output.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>&nbsp;</p>
+        <p>
+            The important message is that Python runs your code, not the operating system.
+        </p>
+        <p>
+            Clicking on your Python file will probably not do what you expect it to.
+        </p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-QBRoMIrFL8VVQLohN72Q3tvKxd5fE8Nf4CX6EjP0OLxtnp3Up0Kn5TD9kkEZi9HY" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
