@@ -4,10 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>n-tier web apps</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
 </head>
 
 <body>
+    <div id="page-header">
+        <div class="row">
+            <div class="col-6 text-start">
+            </div> <!-- .col-6 -->
+            <div class="col-6 text-end">
+                <a id="course-home" href="#" target="parent">
+                    <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        <figcaption>home</figcaption>
+                    </figure>
+                </a> <!-- #course-home -->
+            </div> <!-- .row -->
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="timeline">
+                    <div class="line"></div>
+                    <div id="start-marker" class="marker"></div>
+                    <div id="end-marker" class="marker"></div>
+                    <div id="current-marker" class="marker current-marker"></div>
+
+                    <div id="start-label" class="label"></div>
+                    <div id="end-label" class="label"></div>
+                    <div id="current-label" class="label current"></div>
+                </div> <!-- #timeline -->
+            </div> <!-- .col-12 -->
+        </div> <!-- .row -->
+    </div> <!-- #page-header -->
+
     <div id="cloud-web-app" style="background: lightblue;"><br />
         <div id="header" style="padding: 20px;">
             <h2 class="alert alert-info">Build a web application using Azure web service PaaS</h2>
@@ -17,7 +47,8 @@
             <h3>Background</h3>
             <p>Microsoft provides many online learning resources for their popular certifications. You can see the list
                 <a style="color: navy;" href="https://learn.microsoft.com/en-us/certifications/">here.
-                    (learn.microsoft.com/en-us/certifications)</a></p>
+                    (learn.microsoft.com/en-us/certifications)</a>
+            </p>
             <p>The lab chosen for this module demonstrates typical service elements of an n-Tiered PaaS web application.
                 There is separation between the data, the data access layer, the business logic, and the presentation
                 layer. All of the code and the instructions are provided.</p>
@@ -197,7 +228,8 @@
                                 which is subject to change <em>all the time!</em><br />Last time I walked through this,
                                 I also had to go to the Advanced tab and select: <strong>Allow enabling anonymous access
                                     on individual containers</strong> before <strong>Review</strong> and
-                                <strong>Create</strong></li>
+                                <strong>Create</strong>
+                            </li>
                             <li>Select <strong>Create</strong> to create the storage account by using your specified
                                 configuration.<br /><em>Note: Wait for the create task to complete.</em></li>
                             <li>On the <strong>Overview blade,</strong> select the <strong>Go to resource</strong>
@@ -211,7 +243,8 @@
                                     **Note**: It doesn't matter which connection string you choose. They are
                                     interchangeable. </em></li>
                             <li>Paste the copied connection string value to a text editor. You'll need this later.
-                                <em>Microsoft recommends Notepad.</em></li>
+                                <em>Microsoft recommends Notepad.</em>
+                            </li>
                         </ol>
                     </div>
                 </div>
@@ -249,7 +282,8 @@
                                 </table>
                             </li>
                             <li>On the <strong>Containers</strong> blade, select the newly created
-                                <strong>images</strong> container.</li>
+                                <strong>images</strong> container.
+                            </li>
                             <li>On the <strong>images</strong> blade, select <strong>Upload</strong>.</li>
                             <li>In the <strong>Upload blob</strong> window, perform the following actions:
                                 <table class="table table-striped">
@@ -269,12 +303,14 @@
                                             <td><strong>File Explorer</strong> window</td>
                                             <td>unzip the downloaded file and select
                                                 <strong>Images\\grilledcheese.jpg</strong>, and then select
-                                                <strong>Open</strong></td>
+                                                <strong>Open</strong>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td><strong>Overwrite if files already exist</strong> check box</td>
                                             <td>Ensure that the check box is selected, and then select
-                                                <strong>Upload</strong></td>
+                                                <strong>Upload</strong>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -340,7 +376,8 @@
                                             <td><strong>Windows Plan (East US)</strong> section</td>
                                             <td>Select <strong>Create new</strong>, enter the value
                                                 <strong>ManagedPlan</strong> in the <strong>Name</strong> text box, and
-                                                then select <strong>OK</strong></td>
+                                                then select <strong>OK</strong>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td><strong>SKU and size</strong> section</td>
@@ -368,7 +405,8 @@
                             </li>
                             <li>On the <strong>Monitoring</strong> tab, in the <strong>Enable Application
                                     Insights</strong> section, select <strong>No</strong>, and then select
-                                <strong>Review + create</strong>.</li>
+                                <strong>Review + create</strong>.
+                            </li>
                             <li>On the <strong>Review + create</strong> tab, review the options that you selected during
                                 the previous steps.</li>
                             <li>Select <strong>Create</strong> to create the web app by using your specified
@@ -405,7 +443,8 @@
                                         <tr>
                                             <td><strong>Add/Edit application setting</strong> pop-up dialog</td>
                                             <td>In the <strong>Name</strong> text box, enter
-                                                <strong>StorageConnectionString</strong></td>
+                                                <strong>StorageConnectionString</strong>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td><strong>Value</strong> text box</td>
@@ -457,7 +496,8 @@
                             </li>
                             <li>In the <strong>ImagesController</strong> class on line 36, observe the
                                 <strong>Get</strong> method and the code used to retrieve all blobs asynchronously from
-                                the <strong>images</strong> container.</li>
+                                the <strong>images</strong> container.
+                            </li>
                             <li>In the <strong>ImagesController</strong> class on line 55, observe the
                                 <strong>Post</strong> method and the code used to persist an uploaded image to Storage.
                             </li>
@@ -482,7 +522,8 @@
                                 <p class="ic-flash-info"><em>12-Feb-2024</em> another update! (loving this!) If you have
                                     multiple accounts (I do) az config set ... doesn't work the same way anymore (it's
                                     listed as experimental) try using
-                                    <code>az account set --subscription "[subscr-id]"</code> instead.</p>
+                                    <code>az account set --subscription "[subscr-id]"</code> instead.
+                                </p>
                                 for more see https://learn.microsoft.com/en-us/cli/azure/account?view=azure-cli-latest
                             </li>
                             <li>Enter the following command, and then select Enter to find the apps that have the
@@ -510,7 +551,8 @@
                             </li>
                             <li>On the <strong>ManagedPlatform</strong> blade, select the
                                 <strong>imgapi</strong><i>[yourname]</i> web app that you created previously in this
-                                lab.</li>
+                                lab.
+                            </li>
                             <li>From the <strong>App Service</strong> blade, select <strong>Browse</strong><br /><i>
                                     <strong>Note</strong>: The <strong>Browse</strong> command will perform a GET
                                     request to the root of the website, which returns a JavaScript Object Notation
@@ -628,7 +670,8 @@
                             <li>
                                 <p>On the <strong>Monitoring</strong> tab, in the <strong>Enable Application
                                         Insights</strong> section, select <strong>No</strong>, and then select
-                                    <strong>Review + create</strong>.</p>
+                                    <strong>Review + create</strong>.
+                                </p>
                             </li>
                             <li>
                                 <p>From the <strong>Review + create</strong> tab, review the options that you selected
@@ -661,7 +704,8 @@
                             </li>
                             <li>
                                 <p>In the <strong>Configuration</strong> section, perform the following actions, select
-                                    <strong>Save</strong>, and then select <strong>Continue</strong>:</p>
+                                    <strong>Save</strong>, and then select <strong>Continue</strong>:
+                                </p>
                                 <table class="table table-striped">
                                     <caption>App Setting configuration</caption>
                                     <thead>
@@ -685,7 +729,8 @@
                                             <td>Enter the web app URL that you copied previously in this lab.
                                                 <strong>Note</strong>: Make sure you include the protocol
                                                 <strong>https://</strong>, in the URL that you copy into the
-                                                <strong>Value</strong> text box for this application setting</td>
+                                                <strong>Value</strong> text box for this application setting
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td><strong>Deployment slot setting</strong> text box</td>
@@ -710,7 +755,8 @@
                         <ol>
                             <li>
                                 <p>Open <strong>Visual Studio Code</strong> and <strong>Open Folder</strong> from the
-                                    <strong>File</strong> menu</p>
+                                    <strong>File</strong> menu
+                                </p>
                             </li>
                             <li>
                                 <p>Go to the <strong>Web</strong> folder from the project data and <strong>Select
@@ -724,17 +770,20 @@
                             <li>
                                 <p>On the <strong>Explorer</strong> pane of the <strong>Visual Studio Code</strong>
                                     window, expand the <strong>Pages</strong> folder, and then select the
-                                    <strong>Index.cshtml.cs</strong> file to open the file in the editor.</p>
+                                    <strong>Index.cshtml.cs</strong> file to open the file in the editor.
+                                </p>
                             </li>
                             <li>
                                 <p>In the editor, in the <strong>IndexModel</strong> class on line 30, observe the
                                     <strong>OnGetAsync</strong> method and the code used to retrieve the list of images
-                                    from the API.</p>
+                                    from the API.
+                                </p>
                             </li>
                             <li>
                                 <p>In the <strong>IndexModel</strong> class on line 41, observe the
                                     <strong>OnPostAsync</strong> method and the code used to stream an uploaded image to
-                                    the backend API.</p>
+                                    the backend API.
+                                </p>
                             </li>
                             <li>
                                 <p>login from a command prompt.</p>
@@ -753,7 +802,8 @@
                             </li>
                             <li>
                                 <p>Enter the following command, and then select Enter to list all the apps in your
-                                    <strong>ManagedPlatform</strong> resource group:</p>
+                                    <strong>ManagedPlatform</strong> resource group:
+                                </p>
                                 <div class="snippet-clipboard-content notranslate position-relative overflow-auto">
                                     <pre class="notranslate"><code>az webapp list --resource-group ManagedPlatform
     </code></pre>
@@ -761,7 +811,8 @@
                             </li>
                             <li>
                                 <p>Enter the following command, and then select Enter to find the apps that have the
-                                    <strong>imgweb*</strong> prefix:</p>
+                                    <strong>imgweb*</strong> prefix:
+                                </p>
                                 <div class="snippet-clipboard-content notranslate position-relative overflow-auto">
                                     <pre class="notranslate"><code>az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgweb')]"
     </code></pre>
@@ -787,7 +838,8 @@
                                     <p><span class="color-fg-accent">Note</span>: Replace the
                                         <em>&lt;name-of-your-web-app&gt;</em> placeholder with the name of the web app
                                         that you created previously in this lab. You recently queried this app&rsquo;s
-                                        name in the previous steps.</p>
+                                        name in the previous steps.
+                                    </p>
                                 </blockquote>
                                 <p>Wait for the deployment to complete before you continue with this lab.</p>
                             </li>
@@ -798,12 +850,14 @@
                             <li>
                                 <p>On the <strong>Resource groups</strong> blade, select the
                                     <strong>ManagedPlatform</strong> resource group that you created previously in this
-                                    lab.</p>
+                                    lab.
+                                </p>
                             </li>
                             <li>
                                 <p>On the <strong>ManagedPlatform</strong> blade, select the
                                     <strong>imgweb</strong><em>[yourname]</em> web app that you created previously in
-                                    this lab.</p>
+                                    this lab.
+                                </p>
                             </li>
                             <li>
                                 <p>On the <strong>App Service</strong> blade, select <strong>Browse</strong>.</p>
@@ -818,7 +872,8 @@
                                 <p>a. Select <strong>Browse</strong>.</p>
                                 <p>b. In the <strong>File Explorer</strong> window, browse to <strong>Allfiles
                                         (F):\Allfiles\Labs\01\Starter\Images</strong>, select the
-                                    <strong>bahnmi.jpg</strong> file, and then select <strong>Open</strong>.</p>
+                                    <strong>bahnmi.jpg</strong> file, and then select <strong>Open</strong>.
+                                </p>
                                 <p>c. Select <strong>Upload</strong>.</p>
                             </li>
                             <li>
@@ -856,7 +911,8 @@
                         <ol>
                             <li>
                                 <p>Navigage to the Azure portal and open your Storage Account &gt; Containers and the
-                                    <code>images</code> container.</p>
+                                    <code>images</code> container.
+                                </p>
                                 <p class="ic-flash-info">Take a (third) screenshot of this page.</p>
                                 <p>What do you notice about the resource Names?</p>
                             </li>
@@ -889,14 +945,16 @@
                                 <p>In the Azure portal, select the <strong>Cloud Shell</strong> icon to open a new Bash
                                     session. If Cloud Shell defaults to a PowerShell session, select
                                     <strong>PowerShell</strong>, and in the drop-down menu, select
-                                    <strong>Bash</strong>.</p>
+                                    <strong>Bash</strong>.
+                                </p>
                                 <blockquote>
                                     <p><span class="color-fg-accent">Note</span>: If this is the first time you're
                                         starting <strong>Cloud Shell</strong>, when prompted to select either
                                         <strong>Bash</strong> or <strong>PowerShell</strong>, select
                                         <strong>PowerShell</strong>. When you're presented with the <strong>You have no
                                             storage mounted</strong> message, select the subscription you're using in
-                                        this lab, and then select <strong>Create storage</strong>.</p>
+                                        this lab, and then select <strong>Create storage</strong>.
+                                    </p>
                                 </blockquote>
                             </li>
                         </ol>
@@ -904,7 +962,8 @@
                         <ol>
                             <li>
                                 <p>On the <strong>Cloud Shell</strong> pane, run the following command to delete the
-                                    <strong>ManagedPlatform</strong> resource group:</p>
+                                    <strong>ManagedPlatform</strong> resource group:
+                                </p>
                                 <div class="snippet-clipboard-content notranslate position-relative overflow-auto">
                                     <pre class="notranslate"><code>az group delete --name ManagedPlatform --no-wait --yes
     </code></pre>
