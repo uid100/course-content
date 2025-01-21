@@ -157,17 +157,15 @@
             </div> <!-- #prep -->
         </details>
         <details>
-            <summary>Ex. 1 Backend API</summary>
-            <div id="ex1" style="padding: 20px;">
-                <h2 class="alert alert-info">Exercise 1</h2>
-                <h3>Backend API</h3>
+            <summary>Exercise 1 - back-end</summary>
+            <div class="card" id="ex1" style="padding: 20px;">
+                <div class="card-header">
+                    <h2>Backend API</h2>
+                </div>
                 <p>Build a backend API by using the Azure Storage and the Web Apps feature of Azure App Service</p>
                 <div id="ex1-task1">
-                    <h4>Task 1: Open the Azure portal &nbsp;&nbsp; <span class="element_toggler btn" role="button"
-                            aria-controls="ex1task1detail" aria-label="Toggler toggle list visibility"
-                            aria-expanded="false">
-                            show/hide detail </span></h4>
-                    <div id="ex1task1detail" style="list-style: none; display: none;">
+                    <h4>Task 1: Open the Azure portal</h4>
+                    <div id="ex1task1detail">
                         <ol>
                             <li>Browse* to the Azure portal (https://portal.azure.com), and sign in with your account.
                             </li>
@@ -177,11 +175,8 @@
                     </div> <!-- #ex1task1detail -->
                 </div> <!-- #ex1-task1 -->
                 <div id="ex1-task2">
-                    <h4>Task 2: Create a Storage account &nbsp;&nbsp; <span class="element_toggler btn" role="button"
-                            aria-controls="ex1task2detail" aria-label="Toggler toggle list visibility"
-                            aria-expanded="false">
-                            show/hide detail </span></h4>
-                    <div id="ex1task2detail" style="list-style: none; display: none;">
+                    <h4>Task 2: Create a Storage account</h4>
+                    <div id="ex1task2detail">
                         <ol>
                             <li>In the Azure portal, use the <strong> Search resources, services, and docs </strong>
                                 text box to search for <strong>Storage Accounts</strong>, and then in the list of
@@ -264,11 +259,8 @@
                     </div> <!-- #ex1task2detail -->
                 </div> <!-- #ex1-task2 -->
                 <div id="ex1-task3">
-                    <h4>Task 3: Upload a sample blob &nbsp;&nbsp; <span class="element_toggler btn" role="button"
-                            aria-controls="ex1task3detail" aria-label="Toggler toggle list visibility"
-                            aria-expanded="false">
-                            show/hide detail </span></h4>
-                    <div id="ex1task3detail" style="list-style: none; display: none;">
+                    <h4>Task 3: Upload a sample blob</h4>
+                    <div id="ex1task3detail">
                         <p>Now that you have configured a <strong>Storage Account</strong> service, you can attach a
                             container and upload a <em>binary large object (blob),</em> in this case, image files.</p>
                         <ol>
@@ -337,11 +329,8 @@
                     </div> <!-- #ex1task3detail -->
                 </div> <!-- #ex1-task3 -->
                 <div id="ex1-task4">
-                    <h4>Task 4: Create a web app &nbsp;&nbsp; <span class="element_toggler btn" role="button"
-                            aria-controls="ex1task4detail" aria-label="Toggler toggle list visibility"
-                            aria-expanded="false">
-                            show/hide detail </span></h4>
-                    <div id="ex1task4detail" style="list-style: none; display: none;">
+                    <h4>Task 4: Create a web app</h4>
+                    <div id="ex1task4detail">
                         <ol>
                             <li>On the Azure portal's navigation pane, select <strong>Create a resource</strong>.</li>
                             <li>On the <strong>Create a resource</strong> blade, in the <strong>Search services and
@@ -435,11 +424,8 @@
                     </div>
                 </div> <!-- #ex1-task4 -->
                 <div id="ex1-task5">
-                    <h4>Task 5: Configure the web app &nbsp;&nbsp; <span class="element_toggler btn" role="button"
-                            aria-controls="ex1task5detail" aria-label="Toggler toggle list visibility"
-                            aria-expanded="false">
-                            show/hide detail </span></h4>
-                    <div id="ex1task5detail" style="list-style: none; display: none;">
+                    <h4>Task 5: Configure the web app</h4>
+                    <div id="ex1task5detail">
                         <ol>
                             <li>On the <strong>App Service</strong> blade, in the <strong>Settings</strong> section,
                                 select the <strong>Configuration</strong> link.</li>
@@ -492,11 +478,8 @@
                     </div>
                 </div> <!-- #ex1-task5 -->
                 <div id="ex1-task6">
-                    <h4>Task 6: Deploy an ASP.NET web application to Web Apps &nbsp;&nbsp; <span
-                            class="element_toggler btn" role="button" aria-controls="ex1task6detail"
-                            aria-label="Toggler toggle list visibility" aria-expanded="false"> show/hide detail </span>
-                    </h4>
-                    <div id="ex1task6detail" style="list-style: none; display: none;">
+                    <h4>Task 6: Deploy an ASP.NET web application to Web Apps</h4>
+                    <div id="ex1task6detail"">
                         <ol>
                             <li>Start Visual Studio (or Visual Studio Code)</li>
                             <li>On the <strong>File</strong> menu, select <strong>Open Folder</strong></li>
@@ -532,54 +515,54 @@
                             <li>At the command prompt, enter the following command, and then select Enter to list all
                                 the apps in your **ManagedPlatform** resource group:<br />
                                 <pre>az webapp list --resource-group ManagedPlatform</pre>
-                                <p class="ic-flash-info"><strong>Error:</strong> If you the command returns: Resource
-                                    group 'ManagedPlatform' could not be found<br />Check that the resource group name
-                                    matches of if you have multiple subscriptions, change the current subscription to
-                                    the correct one.<br />azure config set --subscription &lt;SubscriptionName&gt;</p>
-                                <p>&nbsp;</p>
-                                <p class="ic-flash-info"><em>12-Feb-2024</em> another update! (loving this!) If you have
-                                    multiple accounts (I do) az config set ... doesn't work the same way anymore (it's
-                                    listed as experimental) try using
-                                    <code>az account set --subscription "[subscr-id]"</code> instead.
-                                </p>
-                                for more see https://learn.microsoft.com/en-us/cli/azure/account?view=azure-cli-latest
-                            </li>
-                            <li>Enter the following command, and then select Enter to find the apps that have the
-                                <strong>imgapi\\*</strong> prefix:<br />
-                                <pre>az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgapi')]"</pre>
-                            </li>
-                            <li>Enter the following command, and then select Enter to render only the name of the single
-                                app that has the <strong>imgapi\*</strong> prefix:<br />
-                                <pre>az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgapi')].{Name:name}" --output tsv</pre>
-                            </li>
-                            <li>Change the current directory to the location of the <strong>API</strong> folder that
-                                contains the lab files</li>
-                            <li>To deploy the <strong>api.zip</strong> file to the new web app that you created,
-                                Enter:<br />
-                                <pre>az webapp deployment source config-zip --resource-group ManagedPlatform --src api.zip --name &lt;name-of-your-api-app&gt;</pre>
-                                <br /><i> <strong>Note</strong>: Replace the &lt;name-of-your-api-app\&gt; placeholder
-                                    with the name of the web app that you created previously in this lab. You queried
-                                    this app&rsquo;s name in the previous steps.<br />Wait for the deployment to
-                                    complete before you continue with this lab. </i>
-                            </li>
-                            <li>On the Azure portal's <strong>navigation</strong> pane, select the <strong>Resource
-                                    groups</strong> link.</li>
-                            <li>On the <strong>Resource groups</strong> blade, select the
-                                <strong>ManagedPlatform</strong> resource group that you created previously in this lab.
-                            </li>
-                            <li>On the <strong>ManagedPlatform</strong> blade, select the
-                                <strong>imgapi</strong><i>[yourname]</i> web app that you created previously in this
-                                lab.
-                            </li>
-                            <li>From the <strong>App Service</strong> blade, select <strong>Browse</strong><br /><i>
-                                    <strong>Note</strong>: The <strong>Browse</strong> command will perform a GET
-                                    request to the root of the website, which returns a JavaScript Object Notation
-                                    (JSON) array. This array should contain the URL for your single uploaded image in
-                                    your Storage account. </i></li>
+                                <p class=" ic-flash-info"><strong>Error:</strong> If you the command returns: Resource
+                        group 'ManagedPlatform' could not be found<br />Check that the resource group name
+                        matches of if you have multiple subscriptions, change the current subscription to
+                        the correct one.<br />azure config set --subscription &lt;SubscriptionName&gt;</p>
+                        <p>&nbsp;</p>
+                        <p class="ic-flash-info"><em>12-Feb-2024</em> another update! (loving this!) If you have
+                            multiple accounts (I do) az config set ... doesn't work the same way anymore (it's
+                            listed as experimental) try using
+                            <code>az account set --subscription "[subscr-id]"</code> instead.
+                        </p>
+                        for more see https://learn.microsoft.com/en-us/cli/azure/account?view=azure-cli-latest
+                        </li>
+                        <li>Enter the following command, and then select Enter to find the apps that have the
+                            <strong>imgapi\\*</strong> prefix:<br />
+                            <pre>az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgapi')]"</pre>
+                        </li>
+                        <li>Enter the following command, and then select Enter to render only the name of the single
+                            app that has the <strong>imgapi\*</strong> prefix:<br />
+                            <pre>az webapp list --resource-group ManagedPlatform --query "[?starts_with(name, 'imgapi')].{Name:name}" --output tsv</pre>
+                        </li>
+                        <li>Change the current directory to the location of the <strong>API</strong> folder that
+                            contains the lab files</li>
+                        <li>To deploy the <strong>api.zip</strong> file to the new web app that you created,
+                            Enter:<br />
+                            <pre>az webapp deployment source config-zip --resource-group ManagedPlatform --src api.zip --name &lt;name-of-your-api-app&gt;</pre>
+                            <br /><i> <strong>Note</strong>: Replace the &lt;name-of-your-api-app\&gt; placeholder
+                                with the name of the web app that you created previously in this lab. You queried
+                                this app&rsquo;s name in the previous steps.<br />Wait for the deployment to
+                                complete before you continue with this lab. </i>
+                        </li>
+                        <li>On the Azure portal's <strong>navigation</strong> pane, select the <strong>Resource
+                                groups</strong> link.</li>
+                        <li>On the <strong>Resource groups</strong> blade, select the
+                            <strong>ManagedPlatform</strong> resource group that you created previously in this lab.
+                        </li>
+                        <li>On the <strong>ManagedPlatform</strong> blade, select the
+                            <strong>imgapi</strong><i>[yourname]</i> web app that you created previously in this
+                            lab.
+                        </li>
+                        <li>From the <strong>App Service</strong> blade, select <strong>Browse</strong><br /><i>
+                                <strong>Note</strong>: The <strong>Browse</strong> command will perform a GET
+                                request to the root of the website, which returns a JavaScript Object Notation
+                                (JSON) array. This array should contain the URL for your single uploaded image in
+                                your Storage account. </i></li>
                         </ol>
                     </div>
                 </div> <!-- #ex1-task6 -->
-                <h3 class="alert alert-info">Review</h3>
+                <h3>Review</h3>
                 In this exercise, you:
                 <ul>
                     <li>created a storage account with a container and seeded it with data.</li>
