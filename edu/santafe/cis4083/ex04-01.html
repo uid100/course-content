@@ -141,10 +141,8 @@
                         VM-hosted learning environment. Instead, you will be creating the web service directly from your
                         computing environment and using your cloud service account.</p>
                     <p class="ic-flash-info">Cloud updates occur frequently, so you might encounter UI changes before
-                        this
-                        training content updates. If this occurs, adapt to the changes, and then work through them in
-                        the
-                        labs as needed.</p>
+                        this training content updates. If this occurs, adapt to the changes, and then work through them
+                        in the labs as needed.</p>
                     <h3>Required Files</h3>
                     <p>Check the list of what you will need to get started</p>
                     <ul>
@@ -458,8 +456,17 @@
                         <div id="ex1task5detail">
                             <ol>
                                 <li>On the <strong>App Service</strong> blade, in the <strong>Settings</strong> section,
-                                    select the <strong>Configuration</strong> link.</li>
-                                <li>In the <strong>Configuration</strong> section, perform the following actions, select
+                                    <span style="text-decoration: line-through;"> select the
+                                        <strong>Configuration</strong> link.</span><br>
+                                    <em>Updated: 22-Jan-2025</em> These settings were moved to the Environment variables
+                                    tab. There is currently no Configuration link a new link on the configuration blade,
+                                    that is subject to change.<br>
+                                    In the <strong>Settings</strong> section, select the <strong>Environment
+                                        variables</strong> link
+                                    and Connection strings, click the '+' to add a new connection string.
+                                </li>
+                                <li>In the <strong>Add/Edit</strong> connectiong string dialog, perform the following
+                                    actions, select
                                     <strong>Save</strong>, and then select <strong>Continue</strong>.
                                     <table class="table table-striped">
                                         <caption>web app settings</caption>
@@ -471,11 +478,11 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td><strong>Application settings</strong> tab</td>
-                                                <td>Select <strong>New application setting</strong></td>
+                                                <td><strong>Connection strings</strong> tab</td>
+                                                <td>Select <strong>New connection string</strong></td>
                                             </tr>
                                             <tr>
-                                                <td><strong>Add/Edit application setting</strong> pop-up dialog</td>
+                                                <td><strong>Add/Edit connection strings</strong> pop-up dialog</td>
                                                 <td>In the <strong>Name</strong> text box, enter
                                                     <strong>StorageConnectionString</strong>
                                                 </td>
@@ -486,28 +493,34 @@
                                                     Notepad</td>
                                             </tr>
                                             <tr>
+                                                <td><strong>Type</strong> drop-down list</td>
+                                                <td>Select <strong>Custom</strong></td>
+                                            </tr>
+                                            <tr>
                                                 <td><strong>Deployment slot setting</strong> text box</td>
-                                                <td>Keep the default value, and then select <strong>OK</strong> to close
-                                                    the
-                                                    pop-up dialog and return to the <strong>Configuration</strong>
-                                                    section
+                                                <td>Check this box</td>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <span style="font-style: italic;"> Be sure to <strong>Save</strong> your changes and
+                                    <span style="font-style: italic;"> Click Apply to <strong>Save</strong> your changes
+                                        and
                                         wait for your application settings to save before you continue. </span>
                                 </li>
-                                <li>On the <strong>App Service</strong> blade in the <strong>Settings</strong> section,
-                                    select the <strong>Properties</strong> link.</li>
+                                <li>On the <strong>App Service</strong> blade in the <strong>Settings</strong> *
+                                    section, select the <strong>Properties</strong> link.<br>
+                                    <em>Updated: 22-Jan-2025</em> The <strong>URL</strong> is now in the
+                                    <strong>Properties</strong> section.
+                                </li>
                                 <li>In the <strong>Properties</strong> section, copy the value of the
                                     <strong>URL</strong>
                                     hyperlink, and then paste it to Notepad. You'll use this value later in the
                                     lab.<br /><span style="font-style: italic;"> <strong>Note</strong>: At this point,
-                                        the
-                                        web server at this URL will return a placeholder webpage. You haven't deployed
-                                        any
-                                        code to the Web App yet. You'll deploy code to the Web App later in this lab.
+                                        the web server at this URL will return a placeholder webpage. You haven't
+                                        deployed any code to the Web App yet. You'll deploy code to the Web App later in
+                                        this lab.<br>
+                                        You can test the URL from your browser. There is nothing there, but the link
+                                        should work.
                                     </span>
                                 </li>
                             </ol>
