@@ -506,6 +506,9 @@
                                         the web server at this URL will return a placeholder webpage. You haven't
                                         deployed any code to the Web App yet. You'll deploy code to the Web App later in
                                         this lab.<br>
+                                        The application (API) expects an application environement variable called
+                                        <strong>StorageAccountName</strong> to be set to the connection string of the
+                                        storage account.<br>
                                         You can test the URL from your browser. There is nothing there, but the link
                                         should work.
                                     </span>
@@ -575,7 +578,7 @@
                                 contains the lab files</li>
                             <li>To deploy the <strong>api.zip</strong> file to the new web app that you created,
                                 Enter:<br />
-                                <pre>az webapp deployment source config-zip --resource-group ManagedPlatform --src api.zip --name &lt;name-of-your-api-app&gt;</pre>
+                                <pre>az webapp deploy --resource-group ManagedPlatform  --name &lt;name-of-your-api-app&gt; --type zip --src-path api.zip</pre>
                                 <br /><i> <strong>Note</strong>: Replace the &lt;name-of-your-api-app\&gt; placeholder
                                     with the name of the web app that you created previously in this lab. You queried
                                     this app&rsquo;s name in the previous steps.<br />Wait for the deployment to
