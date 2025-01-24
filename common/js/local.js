@@ -204,6 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // configure timeline
             const timelineElement = document.getElementsByClassName("timeline");
+            console.log("timeline: " + timelineElement.length + "\n");
             if (timelineElement) {
                 initializeTimeline(jsonFile);
             }
