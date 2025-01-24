@@ -203,7 +203,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // configure timeline
-            initializeTimeline(jsonFile);
+            const timelineElement = document.getElementsByClassName("timeline");
+            if (timelineElement) {
+                initializeTimeline(jsonFile);
+            }
 
             // course section
             const termElement = document.getElementById("term");
