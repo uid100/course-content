@@ -68,15 +68,25 @@
         </div> <!-- #overview -->
 
         <!-- <div id="tabs" class="enhanceable_content tabs"> -->
-        <div id="tabs">
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-link" href="#prep">First</a></li>
-                <li class="nav-item"><a class="nav-link" href="#ex1">Exercise 1</a></li>
-                <li class="nav-item"><a class="nav-link" href="#ex2">Exercise 2</a></li>
-                <li class="nav-item"><a class="nav-link" href="#ex3">Exercise 3</a></li>
-                <li class="nav-item"><a class="nav-link" href="#submit">Submit</a></li>
+        <div id="tabs" style="padding: 20px;">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation"><button class="nav-link active" id="pills-first"
+                        data-bs-toggle="pill" data-bs-target="#first" type="button" role="tab" aria-controls="prep"
+                        aria-selected="true">class="nav-link" href="#prep">First</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link" id="pills-ex1" data-bs-toggle="pill"
+                        data-bs-target="#ex1" type="button" role="tab" aria-controls="ex1"
+                        aria-selected="false">class="nav-link" href="#prep">Exercise 1</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link" id="pills-ex2" data-bs-toggle="pill"
+                        data-bs-target="#ex2" type="button" role="tab" aria-controls="ex2"
+                        aria-selected="false">class="nav-link" href="#prep">Exercise 2</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link" id="pills-ex3" data-bs-toggle="pill"
+                        data-bs-target="#ex3" type="button" role="tab" aria-controls="ex3"
+                        aria-selected="false">class="nav-link" href="#prep">Exercise 3</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link" id="pills-submit"
+                        data-bs-toggle="pill" data-bs-target="#submit" type="button" role="tab" aria-controls="submit"
+                        aria-selected="false">class="nav-link" href="#submit">Submit</button></li>
             </ul>
-            <div id="prep" style="padding: 20px;">
+            <div class="tab-pane active" id="prep" role="tabpanel" aria-labelledby="pills-first">
                 <h2 class="alert alert-info">Before You Begin</h2>
                 <div id="extensions" style="padding: 20px;">
                     <h3>File Extensions</h3>
@@ -124,7 +134,7 @@
                 </div>
                 <a style="font-style: italic; text-align: center;" href="#tabs">go to exercise 1</a>
             </div>
-            <div id="ex1" style="padding: 20px;">
+            <div class="tab-pane" id="ex1" role="tabpanel" aria-labelledby="pills-ex1">
                 <h2 class="alert alert-info">Exercise 1: Multiply 2 Numbers</h2>
                 <h3>A Guided Python Application</h3>
                 <div id="guided" class="ic-flash-info">
@@ -234,7 +244,7 @@
                 </div>
                 <a style="font-style: italic; text-align: center;" href="#tabs">go to exercise 2</a>
             </div>
-            <div id="ex2" style="padding: 20px;">
+            <div class="tab-pane" id="ex2" role="tabpanel" aria-labelledby="pills-ex2">
                 <h2 class="alert alert-info">Exercise 2: Kilometers to Miles Calculator</h2>
                 <p>In this exercise, you will create another Python application to convert kilometers to miles. Your
                     application must allow the user to enter the number of kilometers and then convert and display
@@ -257,7 +267,7 @@
                 </div>
                 <a style="font-style: italic; text-align: center;" href="#tabs">go to exercise 3</a>
             </div>
-            <div id="ex3" style="padding: 20px;">
+            <div class="tab-pane" id="ex3" role="tabpanel" aria-labelledby="pills-ex3">
                 <h2 class="alert alert-info">Exercise 3: Miles to Kilometers Calculator</h2>
                 <p>In this exercise, you will create another Python application to convert miles to kilometers. This
                     conversion is just the opposite of what you did in the last exercise! Your application must allow
@@ -281,7 +291,7 @@
                 <p>You will create the Python file the same way you did in exercise 1.</p>
                 <a style="font-style: italic; text-align: center;" href="#tabs">go to the next tab</a>
             </div>
-            <div id="submit" style="padding: 20px;">
+            <div class="tab-pane" id="submit" role="tabpanel" aria-labelledby="pills-submit">
                 <h2 class="alert alert-info">Before submitting your work</h2>
                 <div id="outline">
                     <h3>Outline</h3>
