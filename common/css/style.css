@@ -56,15 +56,15 @@ header h4 {
     margin: 0 0 10px 10px;
 }
 
+#lab-content {
+    padding: 20px;
+}
+
 #lab-content #cover-image {
     width: 50%;
     height: auto;
     object-fit: contain;
     margin: 0 0 10px 0;
-}
-
-#lab-content {
-    padding: 20px;
 }
 
 #policy .course-home,
