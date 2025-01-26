@@ -60,7 +60,7 @@ header h4 {
     padding: 20px;
 }
 
-#lab-content #cover-image {
+#lab-content .course-home {
     width: 40%;
     height: auto;
     object-fit: contain;
