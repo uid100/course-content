@@ -60,13 +60,6 @@ header h4 {
     padding: 20px;
 }
 
-#lab-content .course-home {
-    width: 40%;
-    height: auto;
-    object-fit: contain;
-    margin: 0 0 10px 0;
-}
-
 #policy .course-home,
 #syllabus-wrapper .course-home {
     width: auto;
@@ -86,6 +79,13 @@ header h4 {
     /* margin-top: 5px; */
     font-size: 14px;
     text-align: center;
+}
+
+#lab-content .course-home {
+    width: 40%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 0 10px 0;
 }
 
 #instructor-image,
