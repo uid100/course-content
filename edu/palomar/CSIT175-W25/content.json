@@ -16,7 +16,7 @@
         "description": "CSIT 175 Provides the knowledge and skills necessary to use the Python programming language to develop software for Desktop and Web applications.",
         "prerequisites": "(co-requisite) The lab section provides tutorials, lab exercises and programming projects intended to reinforce the programming and design concepts taught in the course. The lecture and lab will be taught as a single integrated course.",
         "section": {
-            "courseId": "CSIT-175",
+            "courseId": "CSIT-175 (32928/32929)",
             "term": "Spring 2025",
             "startDate": "2025-01-27T08:00:00",
             "endDate": "2025-05-22T08:00:00",
@@ -38,7 +38,7 @@
         "contact": {
             "officeHours": {
                 "location": "Remote",
-                "schedule": "Wed 1P - 3P PST",
+                "schedule": "Wed 1P - 2P PST",
                 "zoomLink": "<a href=\"https://sfcollege.zoom.us/s/92446820828?amp_device_id=b2176399-733a-4ab7-a3c5-32537c695ab3\">Zoom Link</a>"
             },
             "discordLink": {
