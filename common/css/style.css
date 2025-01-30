@@ -49,7 +49,7 @@ header h4 {
 
 #policy #cover-image,
 #syllabus-wrapper #cover-image {
-    width: 250px;
+    height: 150px;
     height: auto;
     object-fit: contain;
     float: right;
