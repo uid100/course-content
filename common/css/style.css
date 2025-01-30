@@ -50,7 +50,7 @@ header h4 {
 #policy #cover-image,
 #syllabus-wrapper #cover-image {
     height: 150px;
-    height: auto;
+    width: auto;
     object-fit: contain;
     float: right;
     margin: 0 0 10px 10px;
