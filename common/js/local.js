@@ -226,6 +226,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const sectionElement = document.getElementById("section-id");
             if (sectionElement && typeof (section) !== 'undefined') {
+                console.log("section: " + section + "\n");
                 sectionElement.textContent = section;
             }
 
