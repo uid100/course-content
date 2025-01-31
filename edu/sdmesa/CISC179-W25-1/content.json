@@ -34,7 +34,7 @@
             "CLO #3": "Understand from a Python perspective the control of program flow with a looping structure.",
             "CLO #4": "Use Python to provide a looping structure as a solution to a software problem"
         },
-        objectives": {
+        "objectives": {
             "LO #1": "Understand the basic concepts of programming.",
             "LO #2": "Understand the basic concepts of object-oriented programming.",
             "LO #3": "Understand the basic concepts of Python programming.",
