@@ -219,13 +219,15 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const courseIdElement = document.getElementById("course-id");
-            if (courseIdElement && courseId) {
+            if (courseIdElement && typeof (courseId) !== 'undefined') {
                 console.log("course id: " + courseId + "\n");
                 courseIdElement.textContent = courseId;
             }
 
             const sectionElement = document.getElementById("section-id");
-            if (sectionElement && section) { sectionElement.textContent = section; }
+            if (sectionElement && typeof (section) !== 'undefined') {
+                sectionElement.textContent = section;
+            }
 
             const sched = document.getElementById("schedule");
             if (sched) { sched.textContent = meetingTime; }
