@@ -153,6 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const instructorImagePath = data?.instructor?.imagePath;
             const instructorAbout = data?.instructor?.about;
             const instructorLink = data?.instructor?.url;
+            const outcomes = data?.course?.outcomes;
 
 
             // set the page content
@@ -252,7 +253,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const objectivesContainer = document.getElementById("objectives");
             if (objectivesContainer) {
-                outcomes = data?.course?.outcomes;
                 console.log("outcomes: " + outcomes + "\n");
                 if (outcomes) {
                     outcomes.forEach((outcome, index) => {
