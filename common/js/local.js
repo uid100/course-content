@@ -219,8 +219,10 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const courseIdElement = document.getElementById("course-id");
-            console.log("course id: " + courseId + "\n");
-            if (courseIdElement && courseId != null) { courseIdElement.textContent = courseId; }
+            if (courseIdElement && courseId) {
+                console.log("course id: " + courseId + "\n");
+                courseIdElement.textContent = courseId;
+            }
 
             const sectionElement = document.getElementById("section-id");
             if (sectionElement && section) { sectionElement.textContent = section; }
