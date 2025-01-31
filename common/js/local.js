@@ -250,6 +250,19 @@ document.addEventListener("DOMContentLoaded", () => {
             const instructorId = document.getElementById("instructor");
             if (instructorId) { instructorId.textContent = `${firstName} ${lastName}`; }
 
+            const objectivesContainer = document.getElementById("objectives");
+            if (objectivesContainer) {
+                outcomes = data?.course?.outcomes;
+                if (outcomes) {
+                    outcomes.forEach((outcome, index) => {
+                        const outcomeElement = document.createElement("li");
+                        outcomeElement.textContent = outcome;
+                        objectivesContainer.appendChild(outcomeElement);
+                    });
+                }
+            }
+
+
             // set the hyflex link
             const hyflexElement = document.getElementById("hyflex");
             if (hyflex && hyflexElement) {
