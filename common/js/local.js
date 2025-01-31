@@ -154,9 +154,6 @@ document.addEventListener("DOMContentLoaded", () => {
             const instructorAbout = data?.instructor?.about;
             const instructorLink = data?.instructor?.url;
             const outcomes = data?.course?.outcomes;
-            console.log("outcomes: " + outcomes + "\n");
-            console.log("stop\n");
-
 
             // set the page content
             if (courseTitle) {
@@ -254,15 +251,24 @@ document.addEventListener("DOMContentLoaded", () => {
             if (instructorId) { instructorId.textContent = `${firstName} ${lastName}`; }
 
             const objectivesContainer = document.getElementById("objectives");
-            if (objectivesContainer) {
+            if (objectivesContainer && outcomes) {
                 console.log("outcomes: " + outcomes + "\n");
-                if (outcomes) {
-                    outcomes.forEach((outcome, index) => {
-                        const outcomeElement = document.createElement("li");
-                        outcomeElement.textContent = outcome;
-                        objectivesContainer.appendChild(outcomeElement);
-                    });
-                }
+
+                const ol = document.createElement("ol");
+                Object.keys(outcomes).forEach((key, index) => {
+                    const outcome = outcomes[key];
+                    const outcomeElement = document.createElement("li");
+                    outcomeElement.textContent = outcome;
+                    ol.appendChild(outcomeElement);
+                });
+                objectivesContainer.appendChild(ol);
+
+
+                // outcomes.forEach((outcome, index) => {
+                //     const outcomeElement = document.createElement("li");
+                //     outcomeElement.textContent = outcome;
+                //     objectivesContainer.appendChild(outcomeElement);
+                // });
             }
 
 
