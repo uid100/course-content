@@ -212,6 +212,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // course section
             const termElement = document.getElementById("term");
+            console.log("term: " + term + "\n");
             if (termElement) { termElement.textContent = term; }
 
             const courseIdElement = document.getElementById("course-id");
