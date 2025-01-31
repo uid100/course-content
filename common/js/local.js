@@ -155,6 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const instructorLink = data?.instructor?.url;
             const outcomes = data?.course?.outcomes;
             console.log("outcomes: " + outcomes + "\n");
+            console.log("stop\n");
 
 
             // set the page content
