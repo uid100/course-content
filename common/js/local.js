@@ -253,6 +253,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const objectivesContainer = document.getElementById("objectives");
             if (objectivesContainer) {
                 outcomes = data?.course?.outcomes;
+                console.log("outcomes: " + outcomes + "\n");
                 if (outcomes) {
                     outcomes.forEach((outcome, index) => {
                         const outcomeElement = document.createElement("li");
