@@ -133,6 +133,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const meetingTime = data?.course?.section?.schedule?.day + " " + data?.course?.section?.schedule?.time;
             const meetingLocation = data?.course?.section?.schedule?.location;
             const courseNumber = data?.course?.courseNumber;
+            const section = data?.course?.section?.sectionNumber;
             const courseId = data?.course?.section?.courseId;
             const hyflex = data?.course?.section?.schedule?.hyflex || null;
             const units = data?.course?.units;
@@ -214,7 +215,10 @@ document.addEventListener("DOMContentLoaded", () => {
             if (termElement) { termElement.textContent = term; }
 
             const courseIdElement = document.getElementById("course-id");
-            if (courseIdElement) { courseIdElement.textContent = courseId; }
+            if (courseIdElement && courseId) { courseIdElement.textContent = courseId; }
+
+            const sectionElement = document.getElementById("section");
+            if (sectionElement && section) { courseIdElement.textContent = section; }
 
             const sched = document.getElementById("schedule");
             if (sched) { sched.textContent = meetingTime; }
