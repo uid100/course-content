@@ -298,10 +298,21 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // about course
-            const courseAbout = document.getElementById("course-about");
-            // replace newline with <br>
-            const htContent = description.replace(/\n/g, "<br>");
-            if (courseAbout) { courseAbout.innerHTML = htContent; }
+            // const courseAbout = document.getElementById("course-about");
+            // // replace newline with <br>
+            // const htContent = description.replace(/\n/g, "<br>");
+            // if (courseAbout) { courseAbout.innerHTML = htContent; }
+            if (courseAbout && Array.isArray(description)) { // Check if it's an array
+                description.forEach(paragraphText => {
+                    const paragraph = document.createElement('p');
+                    paragraph.textContent = paragraphText;  // Set text content (safer than innerHTML)
+                    courseAbout.appendChild(paragraph);
+                });
+            } else if (courseAbout) {
+                // Handle the case where description is not an array (e.g., log an error or display a default message)
+                console.error("Description is not an array.");
+                courseAbout.textContent = "Course description not available."; // Or some default message.
+            }
 
             // textbook image
             if (textbookImagePath) {
