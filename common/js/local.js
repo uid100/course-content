@@ -254,10 +254,10 @@ document.addEventListener("DOMContentLoaded", () => {
             const objectivesContainer = document.getElementById("objectives");
             if (objectivesContainer && typeof (objectives) !== 'undefined') {
                 const ol = document.createElement("ol");
-                Object.keys(objective).forEach((key, index) => {
+                Object.keys(objectives).forEach((key, index) => {
                     const objective = objectives[key];
                     const objectiveElement = document.createElement("li");
-                    objectiveElement.textContent = objectives;
+                    objectiveElement.textContent = objective;
                     ol.appendChild(objectiveElement);
                 });
                 objectivesContainer.appendChild(ol);
