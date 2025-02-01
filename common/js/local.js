@@ -153,6 +153,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const instructorImagePath = data?.instructor?.imagePath;
             const instructorAbout = data?.instructor?.about;
             const instructorLink = data?.instructor?.url;
+            const objectives = data?.course?.objectives;
             const outcomes = data?.course?.outcomes;
 
             // set the page content
@@ -251,7 +252,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (instructorId) { instructorId.textContent = `${firstName} ${lastName}`; }
 
             const objectivesContainer = document.getElementById("objectives");
-            if (objectivesContainer && objectives) {
+            if (objectivesContainer && typeof (objectives) !== 'undefined') {
                 const ol = document.createElement("ol");
                 Object.keys(objective).forEach((key, index) => {
                     const objective = objectives[key];
@@ -263,7 +264,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             const outcomesContainer = document.getElementById("outcomes");
-            if (outcomesContainer && outcomes) {
+            if (outcomesContainer && typeof (outcomes) !== 'undefined') {
                 const ol = document.createElement("ol");
                 Object.keys(outcomes).forEach((key, index) => {
                     const outcome = outcomes[key];
