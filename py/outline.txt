@@ -1,2 +1,99 @@
-Getting started with Python - Sequential Processing
-Conditional expressions - Working with Boolean expressions
+Getting started with Python - sequential processing
+Conditional expressions - working with boolean expressions
+Iteration - using for loops and while loops
+Modular code - writing and using functions
+Software testing
+data structures - arrays, lists and tuples
+File i/o
+exceptions and exception handling
+more collections - python dictionaries
+classes and objects
+inheritance
+web applications reading from APIs and writing flask apps
+
+Getting started with Python - sequential processing:
+
+Write and execute basic Python programs using sequential processing.
+Declare and initialize variables of various data types (integers, floats, strings, booleans).
+Perform arithmetic operations and assign the results to variables.
+Use input() and print() functions to interact with the user.
+Understand and apply operator precedence in Python expressions.
+Conditional expressions - working with boolean expressions:
+
+Evaluate boolean expressions using comparison operators (==, !=, <, >, <=, >=).
+Combine boolean expressions using logical operators (and, or, not).
+Write conditional statements (if, elif, else) to control program flow based on boolean conditions.
+Implement nested conditional statements.
+Understand the concept of truthiness and falsiness in Python.
+Iteration - using for loops and while loops:
+
+Use for loops to iterate over sequences (lists, tuples, strings, ranges).
+Use while loops to repeat code blocks until a condition is met.
+Control loop execution using break and continue statements.
+Implement nested loops.
+Choose appropriate loop types for different scenarios.
+Modular code - writing and using functions:
+
+Define and call functions with parameters and return values.
+Understand the concept of scope (local vs. global variables).
+Write functions that perform specific tasks and promote code reusability.
+Use docstrings to document functions.
+Decompose complex problems into smaller, manageable functions.
+Software testing:
+
+Understand the importance of software testing.
+Write basic unit tests using an appropriate testing framework (e.g., pytest, unittest).
+Identify and handle potential errors in code.
+Test functions with various inputs, including edge cases.
+Understand the concepts of test-driven development.
+Data structures - arrays, lists and tuples:
+
+Create and manipulate lists, tuples, and (if applicable) arrays.
+Access elements of lists, tuples, and arrays using indexing and slicing.
+Use list methods (append, insert, remove, etc.) to modify lists.
+Understand the differences between lists and tuples (mutability).
+Choose appropriate data structures for different needs.
+File I/O:
+
+Open and close files using appropriate file modes (read, write, append).
+Read data from files and write data to files.
+Process data read from files.
+Handle potential file I/O errors.
+Work with different file formats (e.g., text files, CSV files).
+Exceptions and exception handling:
+
+Understand the concept of exceptions in Python.
+Use try-except blocks to handle exceptions gracefully.
+Raise exceptions using the raise statement.
+Define custom exceptions (if applicable).
+Use finally blocks to ensure code execution regardless of exceptions.
+More collections - Python dictionaries:
+
+Create and manipulate dictionaries.
+Access values in dictionaries using keys.
+Use dictionary methods (keys, values, items) to work with dictionaries.
+Understand the concept of key-value pairs.
+Choose appropriate collection types for different data organization needs.
+Classes and objects:
+
+Define classes and create objects (instances of classes).
+Understand the concepts of attributes and methods.
+Use constructors (init) to initialize objects.
+Access and modify object attributes.
+Understand the difference between class attributes and instance attributes.
+Inheritance:
+
+Implement inheritance relationships between classes.
+Understand the concept of parent classes and child classes.
+Override methods in child classes.
+Use super() to call methods of parent classes.
+Understand the benefits of inheritance for code reuse and organization.
+Web applications reading from APIs and writing Flask apps:
+
+Make HTTP requests to retrieve data from APIs.
+Parse JSON or other data formats returned by APIs.
+Use the Flask framework to create simple web applications.
+Define routes and handle requests in Flask applications.
+Render HTML templates in Flask applications.
+
+
