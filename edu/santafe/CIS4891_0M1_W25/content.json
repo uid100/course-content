@@ -13,7 +13,9 @@
         "courseTitle": "Senior Capstone Project",
         "units": 3,
         "coverImage": "/course-content/images/programmer.jpg",
-        "description": "This course is the capstone course for the Bachelor of Science in Technology Project Management program. Students will work in teams to complete a project for a real-world client. The project will be managed using the principles and practices of project management. The course will include a review of the project management body of knowledge, the development of a project plan, and the execution and control of the project. The course will also include a review of the principles of software engineering and the development of a software project.",
+        "description": [
+            "This course is the capstone course for the Bachelor of Science in Technology Project Management program. Students will work in teams to complete a project for a real-world client. The project will be managed using the principles and practices of project management. The course will include a review of the project management body of knowledge, the development of a project plan, and the execution and control of the project. The course will also include a review of the principles of software engineering and the development of a software project."
+        ],
         "prerequisites": "CGS 4097, CNT 4502, COP 4813, ISM 3318",
         "section": {
             "courseId": "CIS4891_0M1_W25",

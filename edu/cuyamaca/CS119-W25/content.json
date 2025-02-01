@@ -13,7 +13,9 @@
         "courseTitle": "Program Design & Development",
         "units": 3,
         "coverImage": "/course-content/images/logic.png",
-        "description": "This class is an introduction to programming and program design using the Python programming language.",
+        "description": [
+            "This class is an introduction to programming and program design using the Python programming language."
+        ],
         "prerequisites": "(co-requisite) The lab section provides tutorials, lab exercises and programming projects intended to reinforce the programming and design concepts taught in the course. The lecture and lab will be taught as a single integrated course.",
         "section": {
             "sectionNumber": "4451 & 4452",

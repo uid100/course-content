@@ -13,7 +13,9 @@
         "courseTitle": "Python Programming",
         "units": 3,
         "coverImage": "/course-content/images/programmer.jpg",
-        "description": "CSIT 175 Provides the knowledge and skills necessary to use the Python programming language to develop software for Desktop and Web applications.",
+        "description": [
+            "CSIT 175 Provides the knowledge and skills necessary to use the Python programming language to develop software for Desktop and Web applications."
+            ],
         "prerequisites": "(co-requisite) The lab section provides tutorials, lab exercises and programming projects intended to reinforce the programming and design concepts taught in the course. The lecture and lab will be taught as a single integrated course.",
         "section": {
             "courseId": "CSIT-175 (32928/32929)",
