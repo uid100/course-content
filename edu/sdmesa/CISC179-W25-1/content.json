@@ -14,10 +14,8 @@
         "units": 4,
         "coverImage": "/course-content/images/programmer.jpg",
         "description": [
-            "This is an introductory course in programming using the Python language and incorporating the fundamentals of object oriented programming.",
-            "Topics include the use and programming of the mouse, windows, forms, menus, dialog boxes, icons, buttons, text fields, files, graphics, and other components of the Windows environment.",
-            "Students learn to analyze user needs and requirements; design the user interface; assign properties to objects in the user interface; code event procedures; test and debug completed programs and applications; and complete final user documentation.",
-            "This course is intended for Computer and Information Sciences majors or anyone interested in the Python programming language."
+            "(from the catalog:)",
+            "This is an introductory course in programming using the Python language and incorporating the fundamentals of object oriented programming. Topics include the use and programming of the mouse, windows, forms, menus, dialog boxes, icons, buttons, text fields, files, graphics, and other components of the Windows environment. Students learn to analyze user needs and requirements; design the user interface; assign properties to objects in the user interface; code event procedures; test and debug completed programs and applications; and complete final user documentation. This course is intended for Computer and Information Sciences majors or anyone interested in the Python programming language.",
         ],
         "prerequisites": "(recommended) Computer and Information Sciences 181 with a grade of “C” or better, or equivalent.",
         "section": {
