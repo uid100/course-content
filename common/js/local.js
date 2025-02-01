@@ -298,7 +298,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // about course
-            // const courseAbout = document.getElementById("course-about");
+            const courseAbout = document.getElementById("course-about");
             // // replace newline with <br>
             // const htContent = description.replace(/\n/g, "<br>");
             // if (courseAbout) { courseAbout.innerHTML = htContent; }
