@@ -251,30 +251,35 @@ document.addEventListener("DOMContentLoaded", () => {
             const instructorId = document.getElementById("instructor");
             if (instructorId) { instructorId.textContent = `${firstName} ${lastName}`; }
 
-            const objectivesContainer = document.getElementById("objectives");
-            if (objectivesContainer && typeof (objectives) !== 'undefined') {
-                const ol = document.createElement("ol");
-                Object.keys(objectives).forEach((key, index) => {
-                    const objective = objectives[key];
-                    const objectiveElement = document.createElement("li");
-                    objectiveElement.textContent = objective;
-                    ol.appendChild(objectiveElement);
-                });
-                objectivesContainer.appendChild(ol);
-            }
+            // if the objectives and outcomes are not defined, set the course-objectives div to hidden
+            if (typeof (objectives) === 'undefined' && typeof (outcomes) === 'undefined') {
+                const courseObjectives = document.getElementById("course-objectives");
+                if (courseObjectives) { courseObjectives.setAttribute("hidden", true); }
+            } else {
+                const objectivesContainer = document.getElementById("objectives");
+                if (objectivesContainer && typeof (objectives) !== 'undefined') {
+                    const ol = document.createElement("ol");
+                    Object.keys(objectives).forEach((key, index) => {
+                        const objective = objectives[key];
+                        const objectiveElement = document.createElement("li");
+                        objectiveElement.textContent = objective;
+                        ol.appendChild(objectiveElement);
+                    });
+                    objectivesContainer.appendChild(ol);
+                }
 
-            const outcomesContainer = document.getElementById("outcomes");
-            if (outcomesContainer && typeof (outcomes) !== 'undefined') {
-                const ol = document.createElement("ol");
-                Object.keys(outcomes).forEach((key, index) => {
-                    const outcome = outcomes[key];
-                    const outcomeElement = document.createElement("li");
-                    outcomeElement.textContent = outcome;
-                    ol.appendChild(outcomeElement);
-                });
-                outcomesContainer.appendChild(ol);
+                const outcomesContainer = document.getElementById("outcomes");
+                if (outcomesContainer && typeof (outcomes) !== 'undefined') {
+                    const ol = document.createElement("ol");
+                    Object.keys(outcomes).forEach((key, index) => {
+                        const outcome = outcomes[key];
+                        const outcomeElement = document.createElement("li");
+                        outcomeElement.textContent = outcome;
+                        ol.appendChild(outcomeElement);
+                    });
+                    outcomesContainer.appendChild(ol);
+                }
             }
-
 
             // set the hyflex link
             const hyflexElement = document.getElementById("hyflex");
