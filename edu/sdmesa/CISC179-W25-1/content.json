@@ -35,10 +35,18 @@
             "CLO #4": "Use Python to provide a looping structure as a solution to a software problem"
         },
         "objectives": {
-            "LO #1": "Understand the basic concepts of programming.",
-            "LO #2": "Understand the basic concepts of object-oriented programming.",
-            "LO #3": "Understand the basic concepts of Python programming.",
-            "LO #4": "Understand the basic concepts of Python programming."
+            "LO #1": "Write and execute basic Python programs that utilize sequential processing, variables, operators, and input/output functions.",
+            "LO #2": "Implement program logic using conditional statements based on boolean expressions.",
+            "LO #3": "Use loops to control the flow of iterative execution of code blocks.",
+            "LO #4": "Write and call reusable code blocks using functions with parameters, return values.",
+            "LO #5": "Identify, describe, and correct syntax, runtime, and logic errors in Python code, and understand how these error types are addressed in different testing phases.",
+            "LO #6": "Demonstrate use of simple data structures (lists, tuples, and arrays) to store and retrieve data.",
+            "LO #7": "Read and write data to and from text files using appropriate file handling techniques.",
+            "LO #8": "Utilize exception handling to gracefully manage errors and prevent program crashes.",
+            "LO #9": "Use dictionaries to store and access data using key-value pairs.",
+            "LO #10": "Design and implement object-oriented programs using classes, objects, attributes, and methods.",
+            "LO #11": "Utilize inheritance to create hierarchical relationships between classes to promote code reuse.",
+            "LO #12": "Develop basic web applications using Flask to interact with APIs and display data."
         },
         "textbook": {
             "title": "Murach's Python Programming",
