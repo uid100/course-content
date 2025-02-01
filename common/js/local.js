@@ -305,7 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
             if (courseAbout && Array.isArray(description)) { // Check if it's an array
                 description.forEach(paragraphText => {
                     const paragraph = document.createElement('p');
-                    paragraph.textContent = paragraphText;  // Set text content (safer than innerHTML)
+                    paragraph.textContent = paragraphText.replace(/\n/g, "<br>");  // Set text content (safer than innerHTML)
                     courseAbout.appendChild(paragraph);
                 });
             } else if (courseAbout) {
