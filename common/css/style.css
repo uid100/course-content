@@ -31,6 +31,17 @@ header h4 {
     border-radius: 5px;
 }
 
+.signpost {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: green 2px solid;
+    background-color: green;
+    color: white;
+    margin: auto;
+    text-align: center;
+}
+
 #page-cover-image {
     margin: 0 auto;
     width: 40%;
