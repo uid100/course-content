@@ -33,8 +33,8 @@ header h4 {
 
 .ordinals {
     display: inline-block;
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
     border-radius: 50%;
     border: green 2px solid;
     background-color: green;
