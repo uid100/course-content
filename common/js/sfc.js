@@ -84,10 +84,15 @@ async function loadCourseDetails() {
         cell.innerHTML = cellContent;
 
         cell = document.getElementById('officeLocation');
+        let officeLocation = data?.course?.contact?.officeHours?.location || "";
+        let zoomLink = data?.course?.contact?.officeHours?.zoomLink || "";
         cellContent = cell.innerHTML;
-        cellContent += `${data?.course?.contact?.officeHours?.location}`;
+        cellContent += officeLocation;
+
+        if (zoomLink) {
+            cellContent += `<br><a href="${zoomLink}">Zoom Link</a>`;
+        }
         cell.innerHTML = cellContent;
-        cell.href = `${data?.course?.contact?.officeHours?.zoomLink}`;
 
         cell = document.getElementById('officeHours');
         cellContent = cell.innerHTML;
