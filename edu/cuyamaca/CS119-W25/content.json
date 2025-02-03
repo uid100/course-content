@@ -30,10 +30,23 @@
             }
         },
         "outcomes": {
-
-        },
+            "CLO #1": "Decompose problems and design program solutions using flowcharts, pseudocode, models, or other tools.",
+            "CLO #2": "Properly code applications using the fundamental coding structures: sequence, selection, and loops."
+        }
         "objectives": {
-
+            "LO #1": "Use software engineering methodologies and practices to:\na. Decompose a complex problem into modular components using both procedural and object-oriented design practices.\nb. Define and provide examples of procedural abstraction.\nc. Define and provide examples of encapsulation.",
+            "LO #2": "Produce flowchart and pseudocode solutions to solve introductory level programming problems.",
+            "LO #3": "Design programs that utilize classes from the standard library (in Java this might include JTextField, DecimalFormat, Math, for example) to solve a variety of programming problems.",
+            "LO #4": "Design user-defined methods to augment the standard library in solving a variety of programming problems.",
+            "LO #5": "Discuss the difference between public and private access modifiers and their implications in programs.",
+            "LO #6": "Distinguish between local variables and class attributes and their accessibility implications.",
+            "LO #7": "Utilize all three fundamental programming structures–sequence, decision/selection, repetition–in solving programming problems.",
+            "LO #8": "Define the concept of \"inheritance\" in a programming perspective and provide examples of where it might be used.",
+            "LO #9": "Provide examples of \"polymorphic\" methods.",
+            "LO #10": "Identify the role and variety of constructor methods in programs.",
+            "LO #11": "Apply time management strategies critical for success in the business world.",
+            "LO #12": "Demonstrate critical problem-solving skills in the debugging of programs.",
+            "LO #13": "Trace program flow and predict outcomes."
         },
         "textbook": {
             "title": "An Object Oriented Approach to Programming Logic And Design",
