@@ -169,6 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const { firstName, lastName } = data?.instructor;
             const instructorImagePath = data?.instructor?.imagePath;
             const instructorAbout = data?.instructor?.about;
+            const instructorEmail = data?.instructor?.email;
             const instructorLink = data?.instructor?.url;
             const objectives = data?.course?.objectives;
             const outcomes = data?.course?.outcomes;
@@ -262,8 +263,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const instructorId = document.getElementById("instructor");
             if (instructorId) { instructorId.textContent = `${firstName} ${lastName}`; }
 
-            const instructorEmail = document.getElementById("instructor-email");
-            if (instructorEmail) { instructorEmail.textContent = data?.instructor?.email; }
+            const instructorEmailElement = document.getElementById("instructor-email");
+            if (instructorEmailElement) { instructorEmailElement.textContent = instructorEmail; }
 
             if (officeHours) { officeHours.textContent = officeHours; }
 
