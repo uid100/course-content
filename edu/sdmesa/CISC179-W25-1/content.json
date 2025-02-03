@@ -72,7 +72,8 @@
             "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
         },
         "requiredMaterialsPath": "/course-content/edu/sdmesa/CISC179-W25-1/required-materials.html",
-        "recommendedMaterialsPath": "/course-content/edu/sdmesa/CISC179-W25-1/recommended-materials.html"
+        "recommendedMaterialsPath": "/course-content/edu/sdmesa/CISC179-W25-1/recommended-materials.html",
+        "gradingDetailsPath": "/course-content/edu/sdmesa/CISC179-W25-1/grading-details.html"
     },
     "instructor": {
         "firstName": "Dan",
