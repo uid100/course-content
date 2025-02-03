@@ -1,3 +1,4 @@
+
 function setPageTitleFromJSON(jsonPath) {
     fetch(jsonPath)
         .then(response => {
@@ -108,6 +109,22 @@ async function loadAndRenderJSON() {
     }
 }
 
+async function loadContent(id, filePath) {
+    try {
+        const response = await fetch(filePath);
+        if (response.ok) {
+            const htmlContent = await response.text();
+            document.getElementById(id).innerHTML = htmlContent;
+        } else {
+            document.getElementById(id).innerHTML = `<p style="color: red;">Failed to load content: ${filePath}</p>`;
+        }
+    } catch (error) {
+        console.error("Error loading content:", error);
+        document.getElementById(id).innerHTML = `<p style="color: red;">Error loading content: ${filePath}</p>`;
+    }
+
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     // The path to the JSON file
     const jsonFilePath = "../edu/" + getQueryParam('path');
@@ -155,6 +172,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const instructorLink = data?.instructor?.url;
             const objectives = data?.course?.objectives;
             const outcomes = data?.course?.outcomes;
+            const requiredMaterialsPath = data?.course?.requiredMaterialsPath;
+            const recommendedMaterialsPath = data?.course?.recommendedMaterialsPath;
 
             // set the page content
             if (courseTitle) {
@@ -364,6 +383,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 discordLinkButton.textContent = discordServer;
                 discordLinkButton.href = discordLinkUrl;
             }
+
+            loadContent("req-materials", requiredMaterialsPath);
+            loadContent("rec-materials", recommendedMaterialsPath);
 
             // syllabus link
             const syllabusLink = document.getElementById("syllabus-button");
