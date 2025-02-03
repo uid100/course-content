@@ -266,7 +266,8 @@ document.addEventListener("DOMContentLoaded", () => {
             const instructorEmailElement = document.getElementById("instructor-email");
             if (instructorEmailElement) { instructorEmailElement.textContent = instructorEmail; }
 
-            if (officeHours) { officeHours.textContent = officeHours; }
+            const officeHoursElement = document.getElementById("office-hours");
+            if (officeHoursElement) { officeHoursElement.textContent = officeHours; }
 
             const officeLocation = document.getElementById("office-location");
             if (officeLocation) {
