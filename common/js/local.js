@@ -384,8 +384,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 discordLinkButton.href = discordLinkUrl;
             }
 
-            loadContent("req-materials", requiredMaterialsPath);
-            loadContent("rec-materials", recommendedMaterialsPath);
+            loadContent("required-materials", requiredMaterialsPath);
+            loadContent("recommended-materials", recommendedMaterialsPath);
 
             // syllabus link
             const syllabusLink = document.getElementById("syllabus-button");
