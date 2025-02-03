@@ -1,4 +1,4 @@
-const { type } = require("express/lib/response");
+// const { type } = require("express/lib/response");
 
 function setPageTitleFromJSON(jsonPath) {
     fetch(jsonPath)
