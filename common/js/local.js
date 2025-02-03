@@ -269,6 +269,9 @@ document.addEventListener("DOMContentLoaded", () => {
             const officeHoursElement = document.getElementById("office-hours");
             if (officeHoursElement) { officeHoursElement.textContent = officeHours; }
 
+            const zoomLinkElement = document.getElementById("zoom-link");
+            if (zoomLinkElement) { zoomLinkElement.href = officeHoursLink; }
+
             const officeLocation = document.getElementById("office-location");
             if (officeLocation) {
                 officeLocation.textContent = `${data?.course?.contact?.officeHours?.location}`
