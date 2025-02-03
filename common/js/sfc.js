@@ -90,7 +90,7 @@ async function loadCourseDetails() {
         cellContent += officeLocation;
 
         if (zoomLink) {
-            cellContent += `<br><a href="${zoomLink}">Zoom Link</a>`;
+            cellContent += `<a href="${zoomLink}">Zoom Link</a>`;
         }
         cell.innerHTML = cellContent;
 
