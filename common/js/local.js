@@ -280,8 +280,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const discordLinkElement = document.getElementById("discord-link");
             if (discordLinkElement) {
-                discordLinkElement.textContent = `${discordServer}` + " " +
-                    `${discordLinkUrl}`;
+                discordLinkElement.textContent = discordServer;
+                discordLinkElement.href = discordLinkUrl;
             }
 
             // if the objectives and outcomes are not defined, set the course-objectives div to hidden
