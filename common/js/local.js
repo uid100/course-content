@@ -1,3 +1,4 @@
+const { type } = require("express/lib/response");
 
 function setPageTitleFromJSON(jsonPath) {
     fetch(jsonPath)
@@ -112,11 +113,12 @@ async function loadAndRenderJSON() {
 async function loadContent(id, filePath) {
     try {
         const response = await fetch(filePath);
-        if (response.ok) {
+        const element = document.getElementById(id);
+        if (response.ok && typeof element !== 'undefined') {
             const htmlContent = await response.text();
-            document.getElementById(id).innerHTML = htmlContent;
+            element.innerHTML = htmlContent;
         } else {
-            document.getElementById(id).innerHTML = `<p style="color: red;">Failed to load content: ${filePath}</p>`;
+            element.innerHTML = `<p style="color: red;">Failed to load content: ${filePath}</p>`;
         }
     } catch (error) {
         console.error("Error loading content:", error);
@@ -386,6 +388,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 discordLinkButton.textContent = discordServer;
                 discordLinkButton.href = discordLinkUrl;
             }
+
 
             loadContent("required-materials", requiredMaterialsPath);
             loadContent("recommended-materials", recommendedMaterialsPath);
