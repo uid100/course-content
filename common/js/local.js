@@ -175,6 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const requiredMaterialsPath = data?.course?.requiredMaterialsPath;
             const recommendedMaterialsPath = data?.course?.recommendedMaterialsPath;
             const gradingDetailsPath = data?.course?.gradingDetailsPath;
+            const accomodationsPath = data?.course?.accomodationsPath;
             const topicOutlinePath = data?.course?.topicOutlinePath;
 
             // set the page content
@@ -390,6 +391,7 @@ document.addEventListener("DOMContentLoaded", () => {
             loadContent("recommended-materials", recommendedMaterialsPath);
             loadContent("grading-details", gradingDetailsPath);
             loadContent("topic-outline", topicOutlinePath);
+            loadContent("accomodations-details", accomodationsPath);
 
             // syllabus link
             const syllabusLink = document.getElementById("syllabus-button");
