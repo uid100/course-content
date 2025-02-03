@@ -5,6 +5,15 @@ body {
     padding: 40px;
 }
 
+dt {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 25px;
+}
+
 #ite-policies header,
 #ite-syllabus-template header {
     position: relative;
