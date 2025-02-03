@@ -17,6 +17,7 @@
             "This course is a continuation of COP 2551. It covers advanced object-oriented programming concepts, including inheritance, polymorphism, and exception handling. Students will learn to use the Java programming language to develop software for desktop and web applications. Topics of study include the fundamentals of the language, using lists, dictionaries, and creating functions and classes. Each module contains lecture notes, assignments, and other resources. There are coding demonstrations and exercises every week to practice the content. Content in each module will be augmented by the required textbook, as well as additional content."
         ],
         "prerequisites": "CGS 1821 and COP 2551 with a grade of C or better",
+        "accomodationsPath": "/course-content/edu/santafe/COP2552_0M1_W25/accommodations.html",
         "section": {
             "courseId": "COP2552_0M1_W25",
             "term": "Spring 2025",
