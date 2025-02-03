@@ -85,9 +85,9 @@ async function loadCourseDetails() {
 
         cell = document.getElementById('officeLocation');
         cellContent = cell.innerHTML;
-        cellContent += `${data?.course?.contact?.officeHours?.location}`
-            + ` ${data?.course?.contact?.officeHours?.zoomLink}`;
+        cellContent += `${data?.course?.contact?.officeHours?.location}`;
         cell.innerHTML = cellContent;
+        cell.href = `${data?.course?.contact?.officeHours?.zoomLink}`;
 
         cell = document.getElementById('officeHours');
         cellContent = cell.innerHTML;
