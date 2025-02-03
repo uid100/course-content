@@ -280,7 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const discordLinkElement = document.getElementById("discord-link");
             if (discordLinkElement) {
-                discordLinkElement.textContent = `${discordServer}` + ' link: '
+                discordLinkElement.textContent = `${discordServer}` + " " +
                     `${discordLinkUrl}`;
             }
 
