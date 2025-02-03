@@ -30,10 +30,22 @@
             }
         },
         "outcomes": {
-            "CLO #1": ""
+            "": ""
         },
         "objectives": {
-            "LO #1": ""
+            "LO #1": "Master the concepts and principles of cloud computing.",
+            "LO #2": "Explain the basic concepts of cloud computing.",
+            "LO #3": "Identify and distinguish cloud types.",
+            "LO #4": "Explain methods of managing cloud computing systems.",
+            "LO #5": "Identify standards, best practices, and policies of cloud computing management.",
+            "LO #6": "Describe cloud services; SaaS, PaaS, IaaS, IDaaS.",
+            "LO #7": "Perform a business impact analysis.",
+            "LO #8": "Identify advantages and disadvantages of cloud-based storage.",
+            "LO #9": "Explain best practices when collaborating in the clouds.",
+            "LO #10": "Demonstrate professional level skills in the areas of disaster recovery and business continuity and the cloud.",
+            "LO #11": "Explain service-oriented architectures and web services.",
+            "LO #12": "Master techniques of using Infrastructure-as-a-Service, (IaaS), Platform-as-a-Service (Paas) and Big Data systems.",
+            "LO #13": "Master the techniques of developing, deploying, and managing cloud applications major topics: Introduction background and history of cloud computing, cloud computing concepts, cloud computing models with virtualization background and history of virtualization, virtual machines, virtual networks, virtual storage IaaS system architecture, IaaS programming, PaaS System Architecture, PaaS Programming, Big Data system architecture and Big Data programming."
         },
         "textbook": {
             "title": "",
