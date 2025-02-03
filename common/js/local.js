@@ -1,4 +1,3 @@
-// const { type } = require("express/lib/response");
 
 function setPageTitleFromJSON(jsonPath) {
     fetch(jsonPath)
@@ -113,12 +112,11 @@ async function loadAndRenderJSON() {
 async function loadContent(id, filePath) {
     try {
         const response = await fetch(filePath);
-        const element = document.getElementById(id);
-        if (response.ok && typeof element !== 'undefined') {
+        if (response.ok) {
             const htmlContent = await response.text();
-            element.innerHTML = htmlContent;
+            document.getElementById(id).innerHTML = htmlContent;
         } else {
-            element.innerHTML = `<p style="color: red;">Failed to load content: ${filePath}</p>`;
+            document.getElementById(id).innerHTML = `<p style="color: red;">Failed to load content: ${filePath}</p>`;
         }
     } catch (error) {
         console.error("Error loading content:", error);
