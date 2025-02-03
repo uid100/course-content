@@ -174,6 +174,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const outcomes = data?.course?.outcomes;
             const requiredMaterialsPath = data?.course?.requiredMaterialsPath;
             const recommendedMaterialsPath = data?.course?.recommendedMaterialsPath;
+            const gradingDetailsPath = data?.course?.gradingDetailsPath;
 
             // set the page content
             if (courseTitle) {
@@ -386,6 +387,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             loadContent("required-materials", requiredMaterialsPath);
             loadContent("recommended-materials", recommendedMaterialsPath);
+            loadContent("grading-details", gradingDetailsPath);
 
             // syllabus link
             const syllabusLink = document.getElementById("syllabus-button");
