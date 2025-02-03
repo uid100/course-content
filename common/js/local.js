@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const requiredMaterialsPath = data?.course?.requiredMaterialsPath;
             const recommendedMaterialsPath = data?.course?.recommendedMaterialsPath;
             const gradingDetailsPath = data?.course?.gradingDetailsPath;
-            const accommodationsPath = data?.course?.accomodationsPath;
+            const accommodationsPath = data?.course?.accommodationsPath;
             const topicOutlinePath = data?.course?.topicOutlinePath;
 
             // set the page content
