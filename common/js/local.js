@@ -278,6 +278,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     + ` ${data?.course?.contact?.officeHours?.zoomLink}`;
             }
 
+            const discordLinkElement = document.getElementById("discord-link");
+            if (discordLinkElement) {
+                discordLinkElement.textContent = `${discordServer}` + ' link: '
+                    `${discordLinkUrl}`;
+            }
+
             // if the objectives and outcomes are not defined, set the course-objectives div to hidden
             if (typeof (objectives) === 'undefined' && typeof (outcomes) === 'undefined') {
                 const courseObjectives = document.getElementById("course-objectives");
