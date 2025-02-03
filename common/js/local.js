@@ -229,7 +229,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // configure timeline
             const timelineElement = document.getElementsByClassName("timeline");
-            console.log("timeline: " + timelineElement.length + "\n");
             if (timelineElement && timelineElement.length > 0) {
                 initializeTimeline(jsonFile);
             }
@@ -237,22 +236,13 @@ document.addEventListener("DOMContentLoaded", () => {
             // course section
             const termElement = document.getElementById("course-term");
 
-            if (termElement) {
-                console.log("term: " + term + "\n");
-                termElement.textContent = term;
-            }
+            if (termElement) { termElement.textContent = term; }
 
             const courseIdElement = document.getElementById("course-id");
-            if (courseIdElement && typeof (courseId) !== 'undefined') {
-                console.log("course id: " + courseId + "\n");
-                courseIdElement.textContent = courseId;
-            }
+            if (courseIdElement && typeof (courseId) !== 'undefined') { courseIdElement.textContent = courseId; }
 
             const sectionElement = document.getElementById("section-id");
-            if (sectionElement && typeof (section) !== 'undefined') {
-                console.log("section: " + section + "\n");
-                sectionElement.textContent = section;
-            }
+            if (sectionElement && typeof (section) !== 'undefined') { sectionElement.textContent = section; }
 
             const sched = document.getElementById("schedule");
             if (sched) { sched.textContent = meetingTime; }
@@ -264,11 +254,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if (courseNumberElement) { courseNumberElement.textContent = courseNumber; }
 
             const courseNumItem = document.getElementById("course-num");
-            console.log("course number\n");
             if (courseNumItem) { courseNumItem.textContent = courseNumber; }
 
             const unitsElement = document.getElementById("units");
-            console.log("units\n");
             if (unitsElement) { unitsElement.textContent = units; }
 
             const instructorId = document.getElementById("instructor");
@@ -386,7 +374,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // office hours
             const officeHoursButton = document.getElementById("office-hours-button");
-            console.log("office hours: " + officeHoursLink);
+            // console.log("office hours: " + officeHoursLink);
             if (officeHoursButton) {
                 officeHoursButton.textContent = officeHours;
                 officeHoursButton.href = officeHoursLink;
