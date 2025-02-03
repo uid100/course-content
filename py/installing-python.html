@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1. Sequential Processing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="install-python">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <div id="title" style="padding: 20px;">
+            <h2 class="bg-primary text-center text-white">Installing Python</h2>
+        </div> <!-- #title -->
+
+        <div id="tabs" style="padding: 20px;">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-overview" data-bs-toggle="pill" data-bs-target="#overview"
+                        type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-install" data-bs-toggle="pill" data-bs-target="#install"
+                        type="button" role="tab" aria-controls="install" aria-selected="false">Install</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-launch" data-bs-toggle="pill" data-bs-target="#launch"
+                        type="button" role="tab" aria-controls="launch" aria-selected="false">Launch</button>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="pills-overview">
+                    <div class="card">
+                        <div class="card-header bg-primary text-center text-white">
+                            Background
+                        </div> <!-- .card-header -->
+                        <div class="card-body">
+                            <div id="introduction">
+                                <p>
+                                    Applications written in Python are executed by the Python interpreter. The Python
+                                    interpreter is a program that reads Python code and executes it. The Python
+                                    interpreter is available for all major operating systems: Windows, MacOS, and Linux.
+                                </p>
+                                <p>
+                                    Python is an interpreted language, which means that the Python interpreter reads
+                                    and executes the code line by line. This is different from compiled languages like
+                                    C++ or Java, where the code is compiled into an executable file before it is run.
+                                </p>
+                                <!-- before installing python, check to see if it's already installed. -->
+                                <p>
+                                    Before installing Python, check to see if it is already installed on your computer.
+                                    Open a command prompt or terminal window and type <code>python --version</code> or
+                                    <code>python3 --version</code>. If Python is installed, you will see the version
+                                    number. If Python is not installed, you will see an error message.
+                                </p>
+                                <p style="font-style: italic;">
+                                    Note: if you are using Windows, you may be asked to install Python from the
+                                    Microsoft
+                                    Store. This is not recommended. Instead, download Python from the official Python
+                                    website.
+                                </p>
+                            </div> <!-- #introduction -->
+                        </div> <!-- .card-body -->
+                    </div> <!-- .card -->
+                </div> <!-- .tab-pane -->
+                <div class="tab-pane fade" id="install" role="tabpanel" aria-labelledby="pills-install">
+                    <div class="card">
+                        <div class="card-header bg-primary text-center text-white">
+                            Download and Install Python
+                        </div> <!-- .card-header -->
+                        <div class="card-body">
+                            <p>
+                                To install Python, follow these steps:
+                            </p>
+                            <ol>
+                                <li>
+                                    <p>Open a web browser and go to the <a
+                                            href="https://www.python.org/downloads/">Python download page</a>.
+                                    </p>
+                                    <p>
+                                        The Python download page will automatically detect your operating system and
+                                        display the appropriate download link for the your system. There are also links
+                                        to download the latest version of Python for other operating systems.
+                                    </p>
+                                </li>
+                                <li>
+                                    Click on the <strong>Download Python</strong> button to download the latest
+                                    version of Python for your computer. This installation download should not take
+                                    long.
+                                </li>
+                                <li>
+                                    Run the installer and follow the on-screen instructions to install Python on
+                                    your computer. Be sure to check the box that says <strong>Add Python to
+                                        PATH</strong>.
+                                    The option to run as administrator is optional, but not necessary.
+                                </li>
+                                <li>
+                                    Once the installation completes, again this should not take long. You have an option
+                                    to disable the path length limit. This is optional. If you are using very long
+                                    pathnames,
+                                    it may be useful, but this can usually be managed by organizing your files and
+                                    folders
+                                    so it is generally not necessary.
+                                </li>
+                                <li>
+                                    You can close the installer.
+                                </li>
+                            </ol>
+                            <img src="/course-content/py/images/install-python.png" alt="Python installer"
+                                class="img-fluid" style="width:60%; margin: 0 auto;">
+                            <p>
+                                That's it! You now have Python installed on your Windows 11 computer.
+                            </p>
+                        </div> <!-- #install-python -->
+                    </div> <!-- .card-body -->
+                </div> <!-- .card -->
+            </div> <!-- #install -->
+            <div class="tab-pane fade" id="launch" role="tabpanel" aria-labelledby="pills-launch">
+                <div class="card">
+                    <div class="card-header bg-primary text-center text-white">
+                        Running IDLE
+                    </div> <!-- .card-header -->
+                    <div class="card-body">
+                        <h3>Python's Integrated Development and Learning Environment</h3>
+                        <div id="launch-idle" class="ic-flash-info">
+                            <p>
+                                Python comes with an Integrated Development and Learning Environment (IDLE) that
+                                provides a graphical user interface for writing and running Python code. IDLE is
+                                included with the Python installation and is available on all major operating systems.
+                            </p>
+                            <p>
+                                To run IDLE, follow these steps:
+                            </p>
+                            <ol>
+                                From Windows:
+                                <li>
+                                    <p>Open the Start menu and type <strong>idle</strong> in the search box.</p>
+                                </li>
+                                <li>
+                                    <p>Click on the <strong>IDLE (Python 3.x.x)</strong> icon to launch IDLE.</p>
+                                </li>
+                                <li>
+                                    <p>Once IDLE is open, you can start writing and running Python code in the IDLE
+                                        editor window.</p>
+                                </li>
+                            </ol>
+                            <ol>
+                                From MacOS:
+                                <li>
+                                    <p>Open the Applications folder and double-click on the <strong>IDLE</strong> icon
+                                        to launch IDLE.</p>
+                                </li>
+                                <li>
+                                    <p>Once IDLE is open, you can start writing and running Python code in the IDLE
+                                        editor window.</p>
+                                </li>
+                            </ol>
+                            <p>
+                                That's it! You are now ready to start writing and running Python code in IDLE.
+                            </p>
+                            <ol>
+                                <li>Using the Menu items, create a new file and save it as <code>hello.py</code>.</li>
+                                <li>Write the following code in the editor window:
+                                    <pre><code>print("Hello, World!")</code></pre>
+                                </li>
+                                <li>Run the code by selecting <strong>Run &rarr; Run Module</strong> from the menu.</li>
+                                <li>The output <code>Hello, World!</code> should appear in the IDLE shell window.</li>
+                            </ol>
+                            <img src="/course-content/py/images/run-hello-world.png" alt="Running Hello, World! in IDLE"
+                                class="img-fluid" style="width:40%; margin: 0 auto;">
+
+                        </div> <!-- #launch-idle -->
+                    </div> <!-- .card-body -->
+                </div> <!-- .card -->
+            </div> <!-- #launch -->
+        </div> <!-- .tab-content -->
+    </div><!-- #tabs -->
+    </div> <!-- #labcontent -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
