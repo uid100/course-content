@@ -30,7 +30,8 @@
             }
         },
         "outcomes": {
-            "": ""
+            "CLO #1": "Identify standards, best practices, and policies of cloud computing management.",
+            "CLO #2": "Configure and Deploy cloud services including web applications, and serverless functions."
         },
         "objectives": {
             "LO #1": "Master the concepts and principles of cloud computing.",
