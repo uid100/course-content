@@ -178,6 +178,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const accommodationsPath = data?.course?.accommodationsPath;
             const topicOutlinePath = data?.course?.topicOutlinePath;
 
+
             // set the page content
             if (courseTitle) {
                 const titleElement = document.getElementById("course-title");
@@ -272,6 +273,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const instructorId = document.getElementById("instructor");
             if (instructorId) { instructorId.textContent = `${firstName} ${lastName}`; }
+
+            const instructorEmail = document.getElementById("instructor-email");
+            if (instructorEmail) { instructorEmail.textContent = data?.instructor?.email; }
+
+            if (officeHours) { officeHours.textContent = officeHours; }
+
+            const officeLocation = document.getElementById("office-location");
+            if (officeLocation) {
+                officeLocation.textContent = `${data?.course?.contact?.officeHours?.location}`
+                    + ` ${data?.course?.contact?.officeHours?.zoomLink}`;
+            }
 
             // if the objectives and outcomes are not defined, set the course-objectives div to hidden
             if (typeof (objectives) === 'undefined' && typeof (outcomes) === 'undefined') {

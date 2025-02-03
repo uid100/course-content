@@ -17,7 +17,6 @@
             "This course is an introduction to cloud computing. Students will learn about the different types of cloud computing, the benefits of cloud computing, and the different cloud service providers. Students will also learn how to create and manage virtual machines in the cloud, how to create and manage storage in the cloud, and how to create and manage databases in the cloud. The course will also cover the different cloud computing models, such as Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS)."
         ],
         "prerequisites": "CNT 4502 with a grade of C or better",
-        "accomodationsPath": "/course-content/edu/santafe/CIS4083_0M1_W25/accommodations.html",
         "section": {
             "courseId": "CIS4083_0M1_W25",
             "term": "Spring 2025",
@@ -29,6 +28,12 @@
                 "time": "",
                 "location": "Online"
             }
+        },
+        "outcomes": {
+            "CLO #1": ""
+        },
+        "objectives": {
+            "LO #1": ""
         },
         "textbook": {
             "title": "",
@@ -46,8 +51,14 @@
             "discordLink": {
                 "label": "Code Bytes",
                 "url": "https://discord.gg/MpHjV4qgxZ"
-            }
-        }
+            },
+            "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
+        },
+        "requiredMaterialsPath": "/course-content/edu/santafe/CIS4083_0M1_W25/required-materials.html",
+        "recommendedMaterialsPath": "/course-content/edu/santafe/CIS4083_0M1_W25/recommended-materials.html",
+        "gradingDetailsPath": "/course-content/edu/santafe/CIS4083_0M1_W25/grading-details.html",
+        "accommodationsPath": "/course-content/edu/santafe/CIS4083_0M1_W25/accommodations.html",
+        "topicOutlinePath": "/course-content/edu/santafe/CIS4083_0M1_W25/outline.html"
     },
     "instructor": {
         "firstName": "Dan",
