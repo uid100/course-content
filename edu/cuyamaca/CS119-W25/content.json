@@ -32,7 +32,7 @@
         "outcomes": {
             "CLO #1": "Decompose problems and design program solutions using flowcharts, pseudocode, models, or other tools.",
             "CLO #2": "Properly code applications using the fundamental coding structures: sequence, selection, and loops."
-        }
+        },
         "objectives": {
             "LO #1": "Use software engineering methodologies and practices to:\na. Decompose a complex problem into modular components using both procedural and object-oriented design practices.\nb. Define and provide examples of procedural abstraction.\nc. Define and provide examples of encapsulation.",
             "LO #2": "Produce flowchart and pseudocode solutions to solve introductory level programming problems.",
