@@ -78,6 +78,11 @@ header h4 {
     float: right;
 }
 
+#syllabus-wrapper .card-header {
+    background-color: #b1d9f7;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
 #policy .course-home figure,
 #syllabus-wrapper #course-home figure {
     display: inline-block;
