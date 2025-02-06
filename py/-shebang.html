@@ -78,6 +78,91 @@
                         </div> <!-- card-text -->
                     </div> <!-- card-body -->
                 </div> <!-- card -->
+                <div class="card mt-3">
+                    <div class="card-header bg-primary text-center text-white">
+                        Examples
+                    </div>
+                    <div class="card-body">
+                        <h4 class="card-title">Adding a Shebang to a Python Script</h4>
+                        <div class="card-text">
+                            <h5>Example 1.</h5>
+                            <ol>
+                                <li>
+                                    Write the script: <code>greeting.py</code>
+                                    <div style="margin: 10px 10px;">
+                                        <pre>#!/usr/bin/env python3
+
+# Example 1: A simple script to greet the user.
+
+def greet(name):
+    """Greets the user with a personalized message."""
+    print(f"Hello, {name}!")
+
+if __name__ == "__main__":
+    user_name = input("Enter your name: ")
+    greet(user_name)
+</pre>
+                                    </div>
+                                </li>
+                                <li>
+                                    Make the script executable:<br>
+                                    <code>chmod +x greeting.py</code>
+                                </li>
+                                <li>
+                                    Run the script:<br>
+                                    <code>./greeting.py</code>
+                                </li>
+                            </ol>
+                            <p>
+                                If everything is set up correctly, you should see <code>Hello, World!</code> printed to
+                                the terminal. This demonstrates the use of a shebang to specify the Python interpreter
+                                for the script.
+                            </p>
+
+                            <h5>Example 2.</h5>
+                            <ol>
+                                <li>
+                                    Write the script: <code>rectangle_area.py</code>
+                                    <div style="margin: 10px 10px;">
+                                        <pre>#!/usr/bin/env python3
+
+def calculate_rectangle_area(length, width):
+    """Calculates the area of a rectangle."""
+    if not isinstance(length, (int, float)) or not isinstance(width, (int, float)):
+        raise TypeError("Length and width must be numbers.")
+    if length <= 0 or width <= 0:
+        raise ValueError("Length and width must be positive.")
+    return length * width
+
+if __name__ == "__main__":
+    try:
+        length = float(input("Enter the length of the rectangle: "))
+        width = float(input("Enter the width of the rectangle: "))
+        area = calculate_rectangle_area(length, width)
+        print(f"The area of the rectangle is: {area}")
+    except ValueError as e:
+        print(f"Error: {e}")
+    except TypeError as e:
+        print(f"Error: {e}")
+                            </pre>
+                                    </div>
+                                </li>
+                                <li>
+                                    Make the script executable:<br>
+                                    <code>chmod +x rectangle_area.py</code>
+                                </li>
+                                <li>
+                                    Run the script:<br>
+                                    <code>./rectangle_area.py</code>
+                                </li>
+                            </ol>
+                            <div class="alert alert-warning" role="alert">
+                                <strong>Note:</strong> The shebang line is essential for running the script as an
+                                executable. Without it, the system won't know which interpreter to use.
+                            </div>
+                        </div> <!-- card-text -->
+                    </div> <!-- card-body -->
+                </div> <!-- card -->
             </div> <!-- col-md-8 -->
         </div> <!-- row -->
     </div>
