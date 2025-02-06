@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Interpreter Directive</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+
+</head>
+
+<body style="margin:30px">
+    <div class="container my-5">
+        <div class="row justify-content-center mt-6">
+            <!-- REPL -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header bg-primary text-center text-white">
+                        hashbang (shebang) directive
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">The Python Interpreter Directive: A Crucial First Step</h5>
+                        <div class="card-text">
+                            <p>
+                                The Python interpreter directive, often referred to as a "shebang" or "hashbang," is a
+                                special line placed at the very beginning of a Python script. It's a comment, but a
+                                special one, recognized and interpreted by the operating system, not the Python
+                                interpreter itself. Its primary purpose is to tell the system which interpreter should
+                                be used to execute the script. This is particularly important in Unix-like environments
+                                (Linux, macOS) where multiple versions of Python might be installed.
+                            </p>
+                            <p>
+                                The directive takes the form <code>#! /path/to/python_interpreter</code>. The
+                                <code>#!</code> signifies that it's a shebang, and
+                                <code>/path/to/python_interpreter</code> specifies the absolute path to the desired
+                                Python executable. For example, <code>#!/usr/bin/python3</code> instructs the system to
+                                use the Python 3 interpreter located at <code>/usr/bin/python3</code>.
+                            </p>
+                            <p>
+                                This ensures that the correct Python interpreter is used to run the script, regardless
+                                of the user's current environment or default Python version. This avoids potential
+                                compatibility issues and ensures consistent script execution. Without it, the system
+                                might try to execute the script using a different Python version, potentially leading to
+                                errors or unexpected behavior.
+                            </p>
+                            <p>
+                                A more flexible and recommended approach is to use <code>/usr/bin/env</code>.
+                            </p>
+                        </div> <!-- card-text -->
+                    </div> <!-- card-body -->
+                    <div class="card-body">
+                        <h5 class="card-title">Example: Using /usr/bin/env</h5>
+                        <div class="card-text">
+                            <p>
+                                Instead of hardcoding the absolute path to a specific Python interpreter, using
+                                <code>#!/usr/bin/env python3</code> is generally preferred. This approach leverages the
+                                <code>env</code> command, which searches the user's <code>PATH</code> environment
+                                variable for the first executable named <code>python3</code>. This offers several
+                                advantages:
+                            </p>
+                            <ul>
+                                <li><b>Portability:</b> Different systems might have Python 3 installed in different
+                                    locations. <code>/usr/bin/env</code> searches the <code>PATH</code>, so the script
+                                    will likely work across different systems as long as Python 3 is in the
+                                    <code>PATH</code>.
+                                </li>
+                                <li><b>Virtual Environments:</b> When working with virtual environments, each
+                                    environment typically has its own Python interpreter. Activating a virtual
+                                    environment modifies the <code>PATH</code> to include the environment's Python
+                                    executable. Using <code>/usr/bin/env python3</code> ensures that the correct Python
+                                    interpreter within the active virtual environment is used.</li>
+                                <li><b>Flexibility:</b> If you have multiple Python 3 versions installed, you can manage
+                                    which one is used by adjusting your <code>PATH</code>. This provides more control
+                                    than hardcoding a specific path.</li>
+                            </ul>
+                        </div> <!-- card-text -->
+                    </div> <!-- card-body -->
+                </div> <!-- card -->
+            </div> <!-- col-md-8 -->
+        </div> <!-- row -->
+    </div>
+
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
