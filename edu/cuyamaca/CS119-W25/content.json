@@ -59,7 +59,7 @@
             "officeHours": {
                 "location": "Remote",
                 "schedule": "Wed 2P - 330P PST",
-                "zoomLink": "<a href=\"https://gcccd-edu.zoom.us/j/86820196212?pwd=VkRFdW9JNlhNYlVWVWZWcm5rR1ZhUT09\">Zoom Link</a>"
+                "zoomLink": "https://gcccd-edu.zoom.us/j/86820196212?pwd=VkRFdW9JNlhNYlVWVWZWcm5rR1ZhUT09"
             },
             "discordLink": {
                 "label": "Code Bytes",
