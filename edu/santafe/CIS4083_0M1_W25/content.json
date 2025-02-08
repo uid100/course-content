@@ -14,7 +14,10 @@
         "units": 3,
         "coverImage": "/course-content/images/Cloud2.jpg",
         "description": [
-            "This course is an introduction to cloud computing. Students will learn about the different types of cloud computing, the benefits of cloud computing, and the different cloud service providers. Students will also learn how to create and manage virtual machines in the cloud, how to create and manage storage in the cloud, and how to create and manage databases in the cloud. The course will also cover the different cloud computing models, such as Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS)."
+            "This course is an introduction to cloud computing.",
+            "Students will learn about the different types of cloud computing, the benefits of cloud computing, and the different cloud service providers.",
+            "Students will also learn how to create and manage virtual machines in the cloud, how to create and manage storage in the cloud, and how to create and manage databases in the cloud.",
+            "The course will also cover the different cloud computing models, such as Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS)."
         ],
         "prerequisites": "CNT 4502 with a grade of C or better",
         "section": {
