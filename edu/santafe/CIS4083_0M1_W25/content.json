@@ -21,6 +21,7 @@
         ],
         "prerequisites": "CNT 4502 with a grade of C or better",
         "section": {
+            "sectionNumber": "OM1",
             "courseId": "CIS4083_0M1_W25",
             "term": "Spring 2025",
             "startDate": "2025-01-08T05:00:00",
