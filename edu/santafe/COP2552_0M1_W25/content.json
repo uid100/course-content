@@ -14,11 +14,18 @@
         "units": 3,
         "coverImage": "/course-content/images/programmer.jpg",
         "description": [
-            "This course is a continuation of COP 2551. It covers advanced object-oriented programming concepts, including inheritance, polymorphism, and exception handling. Students will learn to use the Java programming language to develop software for desktop and web applications. Topics of study include the fundamentals of the language, using lists, dictionaries, and creating functions and classes. Each module contains lecture notes, assignments, and other resources. There are coding demonstrations and exercises every week to practice the content. Content in each module will be augmented by the required textbook, as well as additional content."
+            "This course is a continuation of COP 2551.",
+            "It covers advanced object-oriented programming concepts, including inheritance, polymorphism, and exception handling.",
+            "Students will learn to use the Java programming language to develop software for desktop and web applications.",
+            "Topics of study include the fundamentals of the language, using lists, dictionaries, and creating functions and classes.",
+            "Each module contains lecture notes, assignments, and other resources.",
+            "There are coding demonstrations and exercises every week to practice the content.",
+            "Content in each module will be augmented by the required textbook, as well as additional content."
         ],
         "prerequisites": "CGS 1821 and COP 2551 with a grade of C or better",
         "accomodationsPath": "/course-content/edu/santafe/COP2552_0M1_W25/accommodations.html",
         "section": {
+            "sectionNumber": "0M1",
             "courseId": "COP2552_0M1_W25",
             "term": "Spring 2025",
             "startDate": "2025-01-08T05:00:00",
@@ -29,6 +36,12 @@
                 "time": "",
                 "location": "Online"
             }
+        },
+        "outcomes": {
+            "CLO #1": "."
+        },
+        "objectives": {
+            "LO #1": ""
         },
         "textbook": {
             "title": "Starting Out with Java: Early Objects",
@@ -46,8 +59,14 @@
             "discordLink": {
                 "label": "Code Bytes",
                 "url": "https://discord.gg/MpHjV4qgxZ"
-            }
-        }
+            },
+            "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
+        },
+        "requiredMaterialsPath": "/course-content/edu/santafe/COP2552_0M1_W25/required-materials.html",
+        "recommendedMaterialsPath": "/course-content/edu/santafe/COP2552_0M1_W25/recommended-materials.html",
+        "gradingDetailsPath": "/course-content/edu/santafe/COP2552_0M1_W25/grading-details.html",
+        "accommodationsPath": "/course-content/edu/santafe/COP2552_0M1_W25/accommodations.html",
+        "topicOutlinePath": "/course-content/edu/santafe/COP2552_0M1_W25/outline.html"
     },
     "instructor": {
         "firstName": "Dan",
