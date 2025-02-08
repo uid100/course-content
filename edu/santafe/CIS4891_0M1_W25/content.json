@@ -34,10 +34,21 @@
             }
         },
         "outcomes": {
-            "CLO #1": ""
+            "CLO #1": "Develop and implement a project assessment and needs analysis",
+            "CLO #2": "Develop a completed project plan",
+            "CLO #3": "Create and implement a project architecture document",
+            "CLO #4": "Develop a software project based on the needs analysis, project plan and the project architecture documents",
+            "CLO #5": "Test and implement the software project",
+            "CLO #6": "Develop appropriate user documentation",
+            "CLO #7": "Develop an update plan"
         },
         "objectives": {
-            "LO #1": ""
+            "LO #1": "Develop a project assessment and needs analysis",
+            "LO #2": "Develop a project plan",
+            "LO #3": "Develop a project architecture document",
+            "LO #4": "Develop a software project based on the needs analysis, project plan and the project architecture documents",
+            "LO #5": "Use standard configuration management tools to manage the project",
+            "LO #6": "Examine agile scrum project management artifacts"
         },
         "textbook": {
             "title": "",
