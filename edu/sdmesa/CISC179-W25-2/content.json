@@ -23,9 +23,9 @@
             "sectionNumber":85003,
             "courseId": "CISC-179 (85003)",
             "term": "Spring 2025, second 8 week term",
-            "startDate": "2025-02-03T08:00:00",
-            "endDate": "2025-03-29T08:00:00",
-            "gradesDue": "2025-04-10T08:00:00",
+            "startDate": "2025-03-29T08:00:00",
+            "endDate": "2025-06-02T08:00:00",
+            "gradesDue": "2025-06-02T08:00:00",
             "schedule": {
                 "day": "",
                 "time": "",
