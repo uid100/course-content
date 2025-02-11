@@ -1,7 +1,7 @@
 {
     "canvas": {
         "server": "https://sdccd.instructure.com",
-        "coursePath": "/courses/2483102"
+        "coursePath": "/courses/2484403"
     },
     "college": {
         "name": "San Diego Mesa College",
@@ -14,19 +14,18 @@
         "units": 4,
         "coverImage": "/course-content/images/programmer.jpg",
         "description": [
-            "(from the catalog:)",
-            "This is an introductory course in programming using the Python language and incorporating the fundamentals of object oriented programming. Topics include the use and programming of the mouse, windows, forms, menus, dialog boxes, icons, buttons, text fields, files, graphics, and other components of the Windows environment. Students learn to analyze user needs and requirements; design the user interface; assign properties to objects in the user interface; code event procedures; test and debug completed programs and applications; and complete final user documentation. This course is intended for Computer and Information Sciences majors or anyone interested in the Python programming language.",
+            "(from the catalog:)\nThis is an introductory course in programming using the Python language and incorporating the fundamentals of object oriented programming. Topics include the use and programming of the mouse, windows, forms, menus, dialog boxes, icons, buttons, text fields, files, graphics, and other components of the Windows environment. Students learn to analyze user needs and requirements; design the user interface; assign properties to objects in the user interface; code event procedures; test and debug completed programs and applications; and complete final user documentation. This course is intended for Computer and Information Sciences majors or anyone interested in the Python programming language.",
             "Activities will be conducted using current printed and online resources.",
             "Students will write, test, and debug Python programs that demonstrate their understanding of the course material."
         ],
         "prerequisites": "(recommended) Computer and Information Sciences 181 with a grade of “C” or better, or equivalent.",
         "section": {
-            "sectionNumber":85003,
-            "courseId": "CISC-179 (85003)",
-            "term": "Spring 2025, second 8 week term",
-            "startDate": "2025-04-07:T08:00:00",
-            "endDate": "2025-06-02T08:00:00",
-            "gradesDue": "2025-06-10T08:00:00",
+            "sectionNumber":82884,
+            "courseId": "CISC-179 (82884)",
+            "term": "Spring 2025, first 8 week term",
+            "startDate": "2025-02-03T08:00:00",
+            "endDate": "2025-03-29T08:00:00",
+            "gradesDue": "2025-04-10T08:00:00",
             "schedule": {
                 "day": "",
                 "time": "",
@@ -40,10 +39,18 @@
             "CLO #4": "Use Python to provide a looping structure as a solution to a software problem"
         },
         "objectives": {
-            "LO #1": "Understand the basic concepts of programming.",
-            "LO #2": "Understand the basic concepts of object-oriented programming.",
-            "LO #3": "Understand the basic concepts of Python programming.",
-            "LO #4": "Understand the basic concepts of Python programming."
+            "LO #1": "Write and execute basic Python programs that utilize sequential processing, variables, operators, and input/output functions.",
+            "LO #2": "Implement program logic using conditional statements based on boolean expressions.",
+            "LO #3": "Use loops to control the flow of iterative execution of code blocks.",
+            "LO #4": "Write and call reusable code blocks using functions with parameters, return values.",
+            "LO #5": "Identify, describe, and correct syntax, runtime, and logic errors in Python code, and understand how these error types are addressed in different testing phases.",
+            "LO #6": "Demonstrate use of simple data structures (lists, tuples, and arrays) to store and retrieve data.",
+            "LO #7": "Read and write data to and from text files using appropriate file handling techniques.",
+            "LO #8": "Utilize exception handling to gracefully manage errors and prevent program crashes.",
+            "LO #9": "Use dictionaries to store and access data using key-value pairs.",
+            "LO #10": "Design and implement object-oriented programs using classes, objects, attributes, and methods.",
+            "LO #11": "Utilize inheritance to create hierarchical relationships between classes to promote code reuse.",
+            "LO #12": "Develop basic web applications using Flask to interact with APIs and display data."
         },
         "textbook": {
             "title": "Murach's Python Programming",
@@ -55,15 +62,20 @@
         "contact": {
             "officeHours": {
                 "location": "Remote",
-                "schedule": "Wed 11A - 1P PST",
-                "zoomLink": "https://sfcollege.zoom.us/j/92446820828?pwd=NHNrYlNaZTBwUXk3Zy9BWnEzYzEydz09"
+                "schedule": "Wed & Fri 11A - 1P PST",
+                "zoomLink": "https://sdccd-edu.zoom.us/j/84311346086?pwd=eU51WG5KN2lBbWg5U3VVRThTTGc2QT09"
             },
             "discordLink": {
                 "label": "Code Bytes",
                 "url": "https://discord.gg/MpHjV4qgxZ"
             },
             "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
-        }
+        },
+        "requiredMaterialsPath": "/course-content/edu/sdmesa/CISC179-W25-1/required-materials.html",
+        "recommendedMaterialsPath": "/course-content/edu/sdmesa/CISC179-W25-1/recommended-materials.html",
+        "gradingDetailsPath": "/course-content/edu/sdmesa/CISC179-W25-1/grading-details.html",
+        "accommodationsPath": "/course-content/edu/sdmesa/CISC179-W25-1/accommodations.html",
+        "topicOutlinePath": "/course-content/edu/sdmesa/CISC179-W25-1/outline.html"
     },
     "instructor": {
         "firstName": "Dan",
