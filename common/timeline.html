@@ -5,7 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!-- <link rel="stylesheet" href="/course-content/common/css/style.css"> -->
+    <style>
+        .timeline {
+            display: block;
+            position: relative;
+            margin: 50px 0;
+            height: 100px;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .line {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background-color: #ddd;
+            transform: translateY(-50%);
+        }
+
+        .marker {
+            position: absolute;
+            top: 50%;
+            width: 10px;
+            height: 10px;
+            background-color: #007BFF;
+            border-radius: 50%;
+            transform: translateY(-50%);
+        }
+
+        .label {
+            position: absolute;
+            top: 65%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 12px;
+        }
+
+        .label.current {
+            top: 5%;
+        }
+
+        .current-marker {
+            background-color: #FF5722;
+        }
+    </style>
 </head>
 
 <body>
@@ -20,7 +67,65 @@
         <div id="current-label" class="label current"></div>
     </div> <!-- #timeline -->
 
-    <script src="/course-content/common/js/timeline.js"></script>
+    <!-- <script src="/course-content/common/js/timeline.js"></script> -->\
+    <script>
+        // Function to initialize the timeline
+        function showTimeLine(start, end, today) {
+            // Get timeline element
+            const timeline = document.querySelector('.timeline');
+
+            // Calculate total duration
+            const totalDuration = end - start;
+            const currentDuration = today - start;
+
+            // Prevent out-of-range calculations
+            const currentPosition = Math.max(
+                0,
+                Math.min((currentDuration / totalDuration) * 100, 100)
+            );
+
+            // Set marker positions
+            document.getElementById('start-marker').style.left = '0%';
+            document.getElementById('end-marker').style.left = '100%';
+            document.getElementById('current-marker').style.left = `${currentPosition}%`;
+
+            // Set labels
+            document.getElementById('start-label').textContent = start.toLocaleDateString() //toDateString();
+            document.getElementById('end-label').textContent = end.toLocaleDateString();
+            document.getElementById('current-label').innerHTML = 'today:<br>' + today.toLocaleDateString();
+            // document.getElementById('current-label').textContent = today.toLocaleDateString();
+
+            document.getElementById('start-label').style.left = '0%';
+            document.getElementById('end-label').style.left = '100%';
+            document.getElementById('current-label').style.left = `${currentPosition}%`;
+        }
+
+        // Function to get query parameters
+        function getQueryParams() {
+            const params = new URLSearchParams(window.location.search);
+            const start = params.get("start");
+            const end = params.get("end");
+
+            if (!start || !end) {
+                console.error("Start or End date is missing in the URL query parameters.");
+                return null;
+            }
+
+            return {
+                start: new Date(start),
+                end: new Date(end),
+            };
+        }
+
+        // Initialize timeline on page load
+        window.addEventListener("DOMContentLoaded", () => {
+            const dates = getQueryParams();
+            if (dates) {
+                const today = new Date();
+                showTimeLine(dates.start, dates.end, today);
+            }
+        });
+    </script>
 </body>
 
 </html>
