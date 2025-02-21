@@ -1,0 +1,84 @@
+{
+    "canvas": {
+        "server": "https://courses.sfcollege.edu",
+        "coursePath": "/courses/999"
+    },
+    "college": {
+        "name": "Santa Fe College",
+        "logoPath": "/course-content/images/santafe-college-logo.png",
+        "website": "https://www.sfcollege.edu/"
+    },
+    "course": {
+        "courseNumber": "COP 2551",
+        "courseTitle": "Object-Oriented Programming 1",
+        "units": 3,
+        "coverImage": "/course-content/images/programmer.jpg",
+        "description": [
+            "This course is ."
+        ],
+        "prerequisites": "  ",
+        "accomodationsPath": "/course-content/edu/santafe/COP2551_0M1_S25/accommodations.html",
+        "section": {
+            "academicCalendarLink": "https://www.sfcollege.edu/_media/Assets/sf/registrar/pdfs/calendars/2024-2025%20Academic%20Calendar.pdf",
+            "sectionNumber": "0M1",
+            "courseId": "COP2551_0M1_S25",
+            "term": "Summer 2025",
+            "startDate": "2025-05-12T05:00:00",
+            "endDate": "2025-05-03T05:00:00",
+            "gradesDue": "2025-08-15T05:00:00",
+            "schedule": {
+                "day": "n/a",
+                "time": "",
+                "location": "Online"
+            }
+        },
+        "outcomes": {
+            "CLO #1": "."
+        },
+        "objectives": {
+            "LO #1": ""
+        },
+        "textbook": {
+            "title": "",
+            "author": "",
+            "edition": "",
+            "isbn": "",
+            "imagePath": ""
+        },
+        "contact": {
+            "officeHours": {
+                "location": "Remote",
+                "schedule": "Wed 12P - 2P EST",
+                "zoomLink": "https://sfcollege.zoom.us/j/92446820828?pwd=NHNrYlNaZTBwUXk3Zy9BWnEzYzEydz09"
+            },
+            "discordLink": {
+                "label": "Code Bytes",
+                "url": "https://discord.gg/MpHjV4qgxZ"
+            },
+            "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
+        },
+        "requiredMaterialsPath": "/course-content/edu/santafe/COP2551_0M1_S25/required-materials.html",
+        "recommendedMaterialsPath": "/course-content/edu/santafe/COP2551_0M1_S25/recommended-materials.html",
+        "gradingDetailsPath": "/course-content/edu/santafe/COP2551_0M1_S25/grading-details.html",
+        "accommodationsPath": "/course-content/edu/santafe/COP2551_0M1_S25/accommodations.html",
+        "topicOutlinePath": "/course-content/edu/santafe/COP2551_0M1_S25/outline.html"
+    },
+    "instructor": {
+        "firstName": "Dan",
+        "lastName": "Sullivan",
+        "email": "daniel.sullivan@sfcollege.edu",
+        "imagePath": "/course-content/images/Dan_20070717.jpg",
+        "about": "Over 30 years professional experience as a software engineer and program manager. I have worked for large and small companies.",
+        "url": "/course-content/common/instructor_more.html"
+    },
+    "templates": {
+        "syllabus": {
+            "title": "<p>&nbsp;</p><p>IT/E PROGRAMS</p><p>SYLLABUS</p>",
+            "path": "/course-content/edu/santafe/ite_syllabus.html"
+        },
+        "policies": {
+            "title": "Department Policies",
+            "path": "/course-content/edu/santafe/ite-policies.html"
+        }
+    }
+}
