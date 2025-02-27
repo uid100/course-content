@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pychache</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+
+</head>
+
+<body style="margin:30px">
+    <div id="header">
+        <h1>
+            __pychache__: <i>What's this?</i>
+        </h1>
+
+        <p>
+            A question was asked in my email about this mysterious folder that appears in your project directory
+            after running Python code. The folder is called "__pychache__".
+        </p>
+        <hr>
+        <p style="font-style: italic;">
+            What is it? Why is it there? Can I delete it?
+        </p>
+        <hr>
+        <p>
+            As you have seen, when you run Python code, it runs in the interpreter and each command can be executed
+            one line at a time. From this perspective, it is easy to see that Python is an interpreted language.
+        </p>
+        <p>
+            But that is only part of the story.
+        </p>
+        <p>
+            Python is also a compiled language. When you run Python code, the Python interpreter compiles the code
+            into bytecode. This bytecode is then executed by the Python Virtual Machine (PVM).
+        </p>
+        <p>
+            If the code is to be imported for use in another program, the bytecode is saved in the "__pychache__"
+            folder. If the folder does not exist, Python will create it. The file is compiled and saved to a file with a
+            .pyc extension. The compiled code is also tagged with the version of Python that was used to compile it.
+        </p>
+        <p>
+            For instance, when I added my <coded>Methods.py</coded> file and imported it to another file, the bytecode
+            was saved in the "__pychache__" folder as <code>Methods.cpython-313.pyc</code>. Since I am using the latest
+            version of Python, which is currently 3.13, the file is tagged with "313".
+        </p>
+        <p>
+            Since the bytecode is saved in the "__pychache__" folder, it is not necessary to recompile the code each
+            time it is imported. This makes the code run faster.
+        </p>
+        <blockquote style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+            So, the "__pychache__" folder is a good thing. It makes your code run faster.
+        </blockquote>
+        <hr>
+        <p style="font-style: italic;">
+            Can you delete it? What happens if you do?
+        </p>
+        <p>
+            Yes, you can delete the "__pychache__" folder. If you do, Python will recompile the code each time it is
+            imported.
+            This will slow down the execution of your code, in most cases not very much, but it will slow it down.
+        </p>
+        <p>
+            If you are actively developing those imported module files, the code will be be recompiled each time you
+            import it
+            since it is being <i>saved</i> with a new timestamp. If you are actively working on a large project with a
+            lot of files,
+            it may be a good idea to delete the "__pychache__" folder once in a while to ensure that all of your code is
+            recompiled
+            and up-to-date.
+        </p>
+        <p>
+            If you are working on a small project, it is probably not necessary to delete the "__pychache__" folder.
+        </p>
+        <hr>
+        <p style="font-style: italic;">
+            Do I need to include these files when I submit the assignment?
+        </p>
+        <p>
+            The answer is it really doesn't matter. If they are not there, they will be when I review and run the code.
+            If they are included, it also will not make a difference. They may be deleted and recreated during code
+            review anyway.
+        </p>
+        <blockquote style="border: 1px solid #ccc; padding: 10px; margin: 10px 0;">
+            The "__pychache__" folder is a good thing. It makes your code run faster. But you can delete it if you want.
+            to.
+        </blockquote>
+
+</html>
