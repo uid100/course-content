@@ -1,0 +1,9 @@
+Denard Span,CF,545,174
+Brandon Belt,1B,533,127
+Buster Posey,C,535,176
+Hunter Pence,RF,485,174
+Brandon Crawford,SS,532,125
+Eduardo Nunez,3B,477,122
+Joe Panik,2B,475,138
+Jarrett Parker,LF,215,58
+Madison Bumgarner,P,103,21

@@ -1,0 +1,108 @@
+{
+    "modules" : {
+        "module 1": {
+            "week": 1,
+            "days": 13,
+            "title": "Applications and Data: Sequential Processing",
+            "state": "draft",
+            "read": "ch.1 & 2",
+            "pages": [
+                "variables", "self-documenting code", "set-up"
+            ]
+        },
+        "module 2": "Control Structures: Conditional Execution",
+        "module 3": "Control Structures: Iteration",
+        "module 4": "Modular Code",
+        "module 5": "Unit Testing and Debugging",
+        "module 6": "read: ch 1,2",
+        "module 7": "Data Processing: Arrays, Lists and Tuples",
+        "module 8": "File I/O & Exception Handling",
+        "module 9": "Dictionaries",
+        "module 10": "Classes & Objects",
+        "module 11": "Inheritance",
+        "module 12": "Web Applications"
+    },
+    "read": {
+        "Chapter 1": "An introduction to Python programming",
+        "Chapter 2": "How to write your first programs",
+        "Chapter 3": "How to code control statements",
+        "Chapter 4": "How to define and use functions and modules",
+        "Chapter 5": "How to test and debug a program",
+        "Chapter 6": "How to work with lists and tuples",
+        "Chapter 7": "How to work with file I/O",
+        "Chapter 8": "How to handle exceptions",
+        "Chapter 12": "How to work with Dictionaries",
+        "Chapter 14": "How to define your own classes",
+        "Chapter 15": "How to work with inheritance"
+    },
+    "exercises": {
+        "lab1":{
+            "objectives": "using variables, sequential code, console I/O",
+            "ex1": "multiply.py",
+            "ex2": "KmToMiles.py",
+            "ex3": "MilesToKm.py"
+        },
+        "lab2":{
+            "objectives": "variables, sequential code, console I/O",
+            "ex1": "textMessageCalculator.py",
+            "ex2": "mpg.py"
+        },
+        "lab3":{
+            "objectives": "if-elseif-else, selection structures, relational operators",
+            "ex1": "portraitStudio.py",
+            "ex2": "bmi.py",
+            "ex3": "coyoteInn.py"
+        },
+        "lab4":{
+            "objectives": "loops, assignment operators, random values",
+            "ex1": "exponent.py",
+            "ex2": "factorial.py",
+            "ex3": "investmentGrowth.py",
+            "ex4": "headsTails.py"
+        },
+        "lab5":{
+            "objectives": "varaiables, sequential code, console I/O",
+            "ex1": "zipSearch.py",
+            "ex2": "diceGame.py",
+            "ex3": "shippingCost",
+            "ex4": "diceGameV2"
+        },
+        "lab6":{
+            "objectives": "loops, methods, arrays, lists, parallel arrays",
+            "ex1": "methods.py",
+            "ex2": "coyoteTours.py"
+        },
+        "lab7":{
+            "objectives": "classes and objects",
+            "ex1": "Magazine.py, MagazineTest.py",
+            "ex2": "Pizza.py",
+            "ex3": "checkingAccount.py",
+            "ex4": "burger.py"
+        },
+        "lab8":{
+            "objectives": "classes and objects, inheritance",
+            "ex1": "Automobile.py RaceCar.py Convertible.py",
+            "ex2": "Player.py BaseballPlayer.py BasketballPlayer.py",
+            "ex3": "Person.py Employee.py Student.py"
+        },
+        "lab9":{
+            "objectives": "forms tkinter"
+        },
+        "lab10":{}
+    },
+    "pages": {
+        "homepage": 0,
+        "syllabus": 0,
+        "end module": 0,
+        "instructor": 0,
+        "faq": 0,
+        "variables": 1,
+        "set-up": 1,
+        "self-documenting code": 2
+    },
+    "notes": {
+        "about the textbook": {
+            "note": "need to add content about this edition..."
+        }
+    }
+}

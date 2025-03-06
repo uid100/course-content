@@ -1,0 +1,9 @@
+Denard,CF,545,174
+Joe,2B,475,138
+Buster,C,535,176
+Hunter,RF,485,174
+Brandon,SS,532,125
+Eduardo,3B,477,122
+Brandon,1B,533,127
+Jarrett,LF,215,58
+Madison,P,103,21

@@ -1,0 +1,157 @@
+<span id="49289" style="display: none;">Python</span>
+
+<div id="top" style="background-color: lightskyblue;">
+    <div id="header" style="padding: 20px; margin-bottom: 10px; ">
+        <div id="navigation" style="padding: 20px; width: 180px; height: 120px; font-size: 80%; 
+        text-align: center; font-style: italic; color: navy; float: right; 
+        background-color: aliceblue; border: 1px solid skyblue; display: block;">
+            <a href="/courses/49289/pages/homepage">
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/programmer.jpg" alt="homepage link" />
+                home
+            </a>
+        </div> <!-- #navigation -->
+    </div> <!-- #header -->
+    <div id="kludge" style="display:block;">
+        <!-- kludge -->
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div> <!-- #kludge -->
+
+    <div id="files" style="padding: 20px; ">
+        <h2 class="alert" style="margin-top: 10px;">File Types and Contents</h2>
+        <div id="bin">
+            <h3>Binary Files</h3>
+            <p>Binary files contain data in a format that is not intended for human-readable interpretation. They store
+                information in the form of sequences of bytes, which can represent any type of data, such as images,
+                videos, executables, or structured data like database files.</p>
+            <p>Example: A JPEG image file</p>
+            <pre>
+            <code>
+                FF D8 FF E0 00 10 4A 46 49 46 00 01 ...
+            </code>
+        </pre>
+            <p>Reasons to choose binary files:</p>
+            <ul>
+                <li>Efficiency: Binary files are more efficient for storing complex data structures or large amounts of
+                    data.</li>
+                <li>Performance: Reading and writing binary files can be faster compared to text files because there's
+                    no
+                    need for encoding or decoding.</li>
+                <li>Data Integrity: Binary files preserve the exact data without any modifications, making them suitable
+                    for
+                    critical data storage.</li>
+            </ul>
+        </div> <!-- #bin -->
+
+        <div id="txt">
+            <h3>Text Files</h3>
+            <p>Text files contain data that is structured as a sequence of lines or characters and are designed to be
+                human-readable. They can store plain text or text-based formats such as CSV, JSON, XML, or source code.
+            </p>
+            <p>Example: A text file containing a list of names</p>
+            <pre>
+            <code>
+                John
+                Alice
+                Bob
+                Emily
+            </code>
+        </pre>
+            <p>Reasons to choose text files:</p>
+            <ul>
+                <li>Human Readability: Text files are easy for humans to read and edit using any text editor.</li>
+                <li>Interoperability: Text files can be easily shared and parsed across different platforms and
+                    programming
+                    languages.</li>
+                <li>Configurability: Text files are commonly used for configuration files due to their simplicity and
+                    ease
+                    of editing.</li>
+            </ul>
+        </div> <!-- #txt -->
+
+        <div id="video">
+            <h3 class="alert">Resources</h3>
+
+            <h3>How does binary code work?</h3>
+            <p>
+                This short video provides a brief description of different types of files and how they are stored. Both
+                of these videos reference <em>hexadecimal</em> data. Hexadecimal is a number system which is another way
+                of expressing values. It does not change the values, just displays them differently.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wgbV6DLVezo?si=tad3Ft2BvcBUSpAU"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <h3>What is Data? File Formats</h3>
+            <p>
+                Here is a simple description of how text files and binary files store data.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ek9x9QRppW8?si=M5pCOQ_iaejR5bp8"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <h3>Binary data exercise: how to tell if a file is a jpeg?</h3>
+            <p>
+                This video describes working with binary files using code from another programming language. Watch (at
+                least) the first 5 minutes of the video to learn more about how jpeg images are stored and identified.
+                The rest of the video contains a code demo written in the C programming language. It may be of interest
+                to you, but it is optional viewing.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R_YPO5JwuXo?si=bNd3VMBnlUlNGTJu"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+
+        </div> <!-- #video -->
+    </div> <!-- #files -->
+
+    <div id="discussion" style="padding: 20px;">
+        <h2 class="alert" style="margin-top: 10px;">Discussion</h2>
+        <p>
+            As we have seen, files may be stored in different types of formats. Recall in lab 01, you were reminded to
+            set the configuration of your computer's file handler (File Explorer or Finder) to make sure that file
+            extensions are visible. These file extensions usually hint at the type of data a file contains. Part of your
+            computer's operating system configuration includes association instructions for the behavior of different
+            file types. For instance, your computer might use Microsoft Word by default for opening a .docx document or
+            Adobe Acrobat for .pdf files.
+        </p>
+        <p>
+            For now, we are going to keep our file reading and writing programming challenges to text data formats.
+        </p>
+        <p>
+            Text files which contain data meant to be processed by computers and programs, are usually formatted in a
+            well-organized file formats which are easily read and parsed by the computer, but still human-readable.
+        </p>
+        <hr />
+        <p>
+            Using the text book and other resources, investigate the descriptions of JSON, XML, and CSV files, their
+            similarities and differences.
+        </p>
+        <ol style="padding:10px;">
+            <li>
+                (30 points) In the space below, add your post, with at least 2 paragraphs describing these three
+                different text file formats, and why you think any of these <em>standards</em> might be good choices to
+                store data, rather than simple <em>free-form</em> text files, and what sort of data you might store with
+                them. Use examples. <br />
+                <span style="background-color: yellow;">
+                    You should have your initial post complete by Friday night, to give other students an opportunity to
+                    respond.
+                </span>
+            </li>
+            <li>
+                (10+10 points) After posting, add a thoughtful response to at least two other student posts,
+                expanding
+                or
+                questions ideas from their posts. Your replies should be thoughtful, meaningful, and respectful
+                class
+                discussion replies of at least a paragraph. Be constructive, stay on topic. I'm looking for
+                something
+                more
+                meaningful than "great job" and "I agree."
+            </li>
+        </ol>
+    </div> <!-- #discussion -->
+</div> <!-- #top -->

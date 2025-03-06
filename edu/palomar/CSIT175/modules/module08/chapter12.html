@@ -1,0 +1,152 @@
+<p style="display: none;">49289</p>
+<div id="top">
+    <div id="header" style="padding: 20px; margin-bottom: 10px; ">
+        <div id="navigation" style="padding: 20px; width: 180px; height: 120px; font-size: 80%; 
+        text-align: center; font-style: italic; color: navy; float: right; 
+        background-color: aliceblue; border: 1px solid skyblue; display: block;">
+            <a href="/courses/49289/pages/homepage">
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/programmer.jpg" alt="homepage link" />
+                home
+            </a>
+        </div> <!-- #navigation -->
+        <figure>
+            <img src="/courses/49289/file_contents/course%20files/course_image/textbook.jpg" alt="textbook cover">
+        </figure>
+    </div> <!-- #header -->
+
+    <h2 class="alert alert-info">Chapter 12 How to work with dictionaries</h2>
+
+    <p>
+        A dictionary in Python is a collection of key-value pairs. Each key is unique and associated with a value.
+    </p>
+    <ul>
+        Dictionaries are
+        <li>mutable,</li>
+        <li>unordered,</li>
+        <li>and can contain any data type as values.</li>
+    </ul>
+
+    <p class="ic-flash-info">
+        <strong><em>Mutable</em></strong> refers to the ability of an object to be changed after it is created. In the
+        context of dictionaries, being mutable means that you can modify the contents of the dictionary after it has
+        been created. This includes adding new key-value pairs, updating existing values associated with keys, and
+        removing key-value pairs
+    </p>
+    <p>&nbsp;</p>
+
+    <p class="ic-flash-info">
+        In Python, dictionaries are considered <strong><em>unordered</em></strong> data structures. This means that the
+        elements in a dictionary do not have a defined order. Unlike sequences such as lists or tuples, where elements
+        are stored in a specific order and accessed by index, the items in a dictionary are stored and retrieved by
+        their keys, and their order is not guaranteed. When you iterate over a dictionary or print its contents, you
+        might observe that the items are not necessarily displayed in the same order in which they were inserted.
+    </p>
+    <p>&nbsp;</p>
+
+    <h3>Creating Dictionaries</h3>
+    <p>
+        In Python, dictionaries are created using curly braces <code>{}</code>. You can initialize an empty dictionary
+        or
+        populate it with key-value pairs:</p>
+
+    <pre><code>
+# Creating an empty dictionary
+my_dict = {}
+
+# Creating a dictionary with initial key-value pairs
+my_dict = {'key1': 'value1', 'key2': 'value2'}
+</code></pre>
+
+    <h3>Accessing, Setting, Adding, and Deleting Items</h3>
+    <ul>
+        <li><strong>Accessing:</strong> You can access the value associated with a key using square brackets
+            <code>[]</code> or the <code>get()</code> method.
+        </li>
+        <li><strong>Setting:</strong> To set or update the value associated with a key, simply assign a new value to
+            that key.</li>
+        <li><strong>Adding:</strong> To add a new key-value pair, simply assign a value to a new key.</li>
+        <li><strong>Deleting:</strong> You can remove a key-value pair using the <code>del</code> keyword or the
+            <code>pop()</code> method.
+        </li>
+    </ul>
+
+    <h3>Looping Through Keys and Values</h3>
+    <p>You can iterate through a dictionary's keys, values, or key-value pairs using loops or methods like
+        <code>keys()</code>, <code>values()</code>, and <code>items()</code>:
+    </p>
+
+    <pre><code>
+# Looping through keys
+for key in my_dict:
+    print(key)
+
+# Looping through values
+for value in my_dict.values():
+    print(value)
+
+# Looping through key-value pairs
+for key, value in my_dict.items():
+    print(key, value)
+</code></pre>
+
+    <h3>Converting Between Dictionaries and Lists</h3>
+    <p>You can convert dictionaries to lists using methods like <code>list()</code> and <code>dict()</code> to convert
+        lists to dictionaries. When converting a dictionary to a list, you can choose to convert keys, values, or
+        key-value pairs.</p>
+
+    <p>&nbsp;</p>
+    <h2>Differences Between Dictionaries and Lists</h2>
+    <p>While both dictionaries and lists are used to store collections of data, they have different characteristics:</p>
+    <ul>
+        <li>Dictionaries use key-value pairs for data storage, while lists use ordered sequences of elements.</li>
+        <li>Dictionaries are unordered, so the order of items is not guaranteed, whereas lists maintain the order of
+            elements.</li>
+        <li>Dictionaries are preferred when data needs to be accessed quickly using unique keys, while lists are
+            suitable for maintaining an ordered collection of items.</li>
+    </ul>
+
+    <h2 class="alert alert-info">Dictionaries vs JSON</h2>
+    <p>
+        In a previous module we looked at JSON-formatted data files, key-value pairs which looked very similar to this,
+        but with some important differences.
+    </p>
+    <h2>Comparison: Python Dictionaries vs. JSON</h2>
+
+    <h3>Syntax</h3>
+    <p>Python dictionaries are defined using curly braces <code>{}</code> and colons <code>:</code> to separate keys and
+        values. JSON uses a similar syntax but with double quotes <code>"</code> around keys and values.</p>
+
+    <h3>Data Types</h3>
+    <p>Python dictionaries can contain any data type as keys or values, including integers, strings, lists, tuples,
+        other dictionaries, etc. JSON supports a subset of the data types available in Python, including strings,
+        numbers, booleans, arrays (lists in Python), and objects (equivalent to Python dictionaries).</p>
+
+    <h3>Usage</h3>
+    <p>Python dictionaries are a built-in data type used within Python programs to store and manipulate data. JSON is a
+        lightweight data interchange format used for transmitting data between a server and a web application, or
+        between different systems. It is language-independent and widely used for representing structured data.</p>
+
+    <h3>Serialization and Deserialization</h3>
+    <p>Python dictionaries can be easily converted to JSON strings using the <code>json.dumps()</code> function from the
+        <code>json</code> module, and JSON strings can be parsed into Python dictionaries using
+        <code>json.loads()</code>. This process is known as serialization (converting Python objects to JSON) and
+        deserialization (converting JSON back to Python objects).
+    </p>
+
+    <h3>Ordering</h3>
+    <p>Python dictionaries are unordered, meaning they do not preserve the order of elements. JSON objects, on the other
+        hand, are ordered collections of key-value pairs, meaning the order of elements is preserved when converting
+        between JSON and Python dictionaries.</p>
+    <p>&nbsp;</p>
+
+
+    <h2 class="alert alert-info">Video resources</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MZZSMaEAC2g?si=6wr4WaifkiNrkNyW"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    <a href="#top" style="font-style: italic;text-align: center;">top</a>
+</div> <!-- #top -->

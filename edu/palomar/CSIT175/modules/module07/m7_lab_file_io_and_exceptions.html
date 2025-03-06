@@ -1,0 +1,302 @@
+<span id="49289" style="display: none;">Python</span>
+
+<div id="top" style="background-color: lightskyblue;">
+    <div id="header" style="padding: 20px; margin-bottom: 10px; display: block; ">
+        <div id="navigation" style="padding: 20px; width: 180px; height: 120px; font-size: 80%; 
+        text-align: center; font-style: italic; color: navy; float: right; 
+        background-color: aliceblue; border: 1px solid skyblue; display: block;">
+            <a href="/courses/49289/pages/homepage">
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/programmer.jpg" alt="homepage link" />
+                home
+            </a>
+        </div> <!-- #navigation -->
+        <p>&nbsp;&nbsp;&nbsp;</p>
+    </div> <!-- #header -->
+
+    <div id="overview" style="padding: 20px;">
+        <h2 class="alert">Lab #7</h2>
+        <div id="introduction">
+            <p>This lab provides an opportunity to apply the concepts and principles presented in
+            <ul>
+                <li>chapter 7, <em>How to work with file I/O</em>, and</li>
+                <li>chapter 8, <em>How to handle exceptions</em></li>
+            </ul>
+            </p>
+        </div>
+        <div id="topics" style="padding: 40px;">
+            <ul>Topics:
+                <li>Creating applications in Python.</li>
+                <li>Working with lists and tuples</li>
+                <li>Importing modules</li>
+                <li>Using the Python standard library</li>
+                <li>Reading from a File</li>
+                <li>Writing to a File</li>
+                <li>Handling Exceptions</li>
+                <li>Storing Data</li>
+                <li>Python repetition (loop) structures</li>
+                <li>Random numbers</li>
+            </ul>
+        </div>
+    </div>
+    <div id="tabs" class="enhanceable_content tabs">
+        <p style="font-style: italic;">Click through each of the following tabs.</p>
+        <ul>
+            <li><a href="#ex1" style="color: navy;">Exercise 1</a></li>
+            <li><a href="#ex2" style="color: navy;">Exercise 2</a></li>
+            <li><a href="#ex3" style="color: navy;">Exercise 3</a></li>
+            <li><a href="#ex4" style="color: navy;">Exercise 4</a></li>
+        </ul>
+
+        <div id="ex1" style="padding: 20px; background-color: lightskyblue;">
+            <h2 class="alert">Exercise 1</h2>
+            <h3>Parse and count strings with File I/O</h3>
+            <div id="ex1-intro">
+                <h3>Description</h3>
+                <p>
+                    Start this exercise with the code as written. Enter the code as it is presented to demonstrate
+                    the fundamentals of reading and writing-- to and from text files.
+                </p>
+                <p>
+                    After it is tested,
+                <ul>
+                    <li>
+                        Add exception handling to validate the user inputs an integer at the file selection menu.
+                    </li>
+                    <li>
+                        Add exception handling to handle a FileNotFoundError if the code tries to open a file which does
+                        not exist.
+                    </li>
+                </ul>
+                </p>
+                <p>
+                    This lab will build on skills that you have already practiced in previous labs, including handling
+                    lists, tuples, function calls, and reading and writing data to the console.
+                </p>
+                <p>
+                    Just for fun, we'll read some song lyrics to find the most used words in a few different songs.
+                </p>
+                <h3>Analyzing Music Lyrics</h3>
+                <p>
+                    Steps:
+                </p>
+                <ol>
+                    <li>
+                        In this exercise, you are given some text files. Download them and move them to your lab folder.
+                        We will use simple song lyrics because they are readily available in text format without a lot
+                        of extra typing.
+                    </li>
+                    <li>
+                        In the demo code,
+                        <ol type="a">
+                            <li>Display a list of available text files</li>
+                            <li>Get the user's selection</li>
+                            <li>Open and read the text file and parse the strings into a Python list</li>
+                            <li>Loop through the list and each time a new string is found, add it to the list, or
+                                increase a counter if it is already on the list.</li>
+                            <li>Identify the most commonly used string, based on the highest occurrence count</li>
+                            <li>Display the results to the console</li>
+                            <li>Write the results to a new list and add the data to a .csv file</li>
+                        </ol>
+                    </li>
+                </ol>
+                <h4>Python Code</h4>
+                <p>
+                    You'll need your <code>Methods.py</code> module from a previous lab.
+                </p>
+                <p>
+                    Add the code for <code>max_value()</code> to Methods.
+                </p>
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/lab07/max_value.png"
+                    alt="max_value() function" />
+                <p>&nbsp;</p>
+                <p>
+                    Name this file <code>LyricsAnalyzer.py</code> or something meaningful. (Not "Exercise1.")
+                </p>
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/lab07/LyricsAnalyzer_a.png"
+                    alt="Lyrics Analyzer code part 1" />
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/lab07/LyricsAnalyzer_b.png"
+                    alt="Lyrics Analyzer code part 2" />
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/lab07/LyricsAnalyzer_c.png"
+                    alt="Lyrics Analyzer code part 3" />
+                <h4>Download</h4>
+                <ul>
+                    <!-- <li><a href="/courses/49289/file_contents/course%20files/course_image/lab07/herecomesthesun.txt"
+                            style="color:navy;" download>herecomesthesun.txt</a>
+                    </li>
+                    <li><a href="/courses/49289/file_contents/course%20files/course_image/lab07/lowdown.txt"
+                            style="color:navy;">lowdown.txt</a>
+                    </li>
+                    <li><a href="/courses/49289/file_contents/course%20files/course_image/lab07/threelittlebirds.txt"
+                            style="color:navy;">threelittlebirds.txt</a>
+                    </li> -->
+                    <li><a style="color:navy;" class="instructure_file_link instructure_scribd_file"
+                            href="/courses/49289/files/9104489" rel="noopener noreferrer">herecomesthesun.txt</a></li>
+                    <li><a style="color:navy;" class="instructure_file_link instructure_scribd_file"
+                            href="/courses/49289/files/9104490" rel="noopener noreferrer">lowdown.txt</a></li>
+                    <li><a style="color:navy;" class="instructure_file_link instructure_scribd_file"
+                            href="/courses/49289/files/9104491" rel="noopener noreferrer">threelittlebirds.txt</a></li>
+                </ul>
+                <h4>Reminder</h4>
+                <p>Remember to include your Methods.py module in your (zipped) lab folder.</p>
+            </div> <!-- #ex1-intro -->
+            <p style="font-style: italic; text-align: center; "><a href="#tabs" style="color:navy;">Go to Exercise
+                    2!</a></p>
+        </div> <!-- #ex1 -->
+
+        <div id="ex2" style="padding: 20px; background-color: lightskyblue;">
+            <h2 class="alert">Exercise 2</h2>
+            <h3>Votes!</h3>
+            <div id="ex2-intro">
+                <h4>Description</h4>
+                <p>
+                    For this exercise, the class has voted for a new <em>Official Chief Handshake Dissemination
+                        Officer</em> (classroom greeter) and the results are in a text file.
+                </p>
+                <p>
+                    Your objective: write a program ("<code>vote_counter.py</code>") to count the results.
+                <ol>
+                    <li>read the voting results from a text file,</li>
+                    <li>assemble the list of each of the names from the voting file (this will be a short list),</li>
+                    <li>count how many votes each person received</li>
+                    <li>and print the total vote count for each of the named candidates</li>
+                    <li>optional: calculate who received the most votes and announce the winner</li>
+                </ol>
+                </p>
+                <p>
+                    To keep it interesting, instead of downloading the voting results, use this code to build the voting
+                    list. The output of this file will be the input for your program.
+                </p>
+                <p>
+                    Note. This code is meant to generate test data. It includes values hard-coded for testing (names,
+                    random-seed). These may change for additional testing.
+                </p>
+                <p>Name this file <code>votes.py</code></p>
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/lab07/votes_py.png"
+                    alt="votes.py code" />
+                <p>
+                    Hint: you can use this code to read the file:
+                <pre>
+    with open("votes.txt", "r") as f:
+        votes = f.read().splitlines()
+                    </pre>
+                </p>
+                <p>
+                    Do not hard-code values in your solution. There may be any number of names and votes (lines) in the
+                    data file. The example data input is just one possibility. Use <code>find_string()</code> from your
+                    <strong>Methods</strong> module as you did in Ex.1 to build a list of distinct names and counts.
+                </p>
+                <p>
+                    Don't forget to include your name in the header comment block
+                </p>
+            </div> <!-- #ex2-intro -->
+            <h4>Reminder</h4>
+            <p>Include both <code>votes.py</code> and <code>vote_counter.py</code> in your (zipped) lab folder.</p>
+            <p style="font-style: italic; text-align: center;"><a href="#tabs" style="color:navy;">Go to Exercise 3!</a>
+            </p>
+        </div> <!-- #ex2 -->
+
+        <div id="ex3" style="padding: 20px; background-color: lightskyblue;">
+            <h2 class="alert">Exercise 3</h2>
+            <h3>Test Scores</h3>
+            <div id="ex3-intro">
+                <h4>Description</h4>
+                <p>
+                    Build a gradebook to track student assignment scores, calculate the score averge, and assign a
+                    letter grade. Write the student grades to a 'gradebook' as a CSV file.
+                </p>
+                <p>
+                    Start with the code given.
+                <ol>
+                    <li>
+                        Use a try-except block to determine if the file "test_scores.csv" exists. If it exists, give the
+                        user
+                        the option to overwrite the file, or exit the program.
+                    </li>
+                    <li>
+                        Move all hard-coded numbers to named constants
+                    </li>
+                </ol>
+                </p>
+                <p class="ic-flash-info">
+                    The so-called CSV (Comma Separated Values) format is the most common import and export format for
+                    spreadsheets and databases.
+                </p>
+                <p>
+                    Python's csv module includes <code>reader</code> and <code>writer</code> objects, with methods to
+                    work with each.
+                </p>
+            </div> <!-- #ex3-intro -->
+            <div id="ex3-code">
+                <h3>Python Implementation</h3>
+                <p>
+                    Name your file <code>test_scores.py</code>.
+                </p>
+                <p>
+                    By <em>seeding</em> the random number generator object with a known value, the sequence of
+                    random
+                    values will be repeatable. This method is helpful when testing your code.
+                </p>
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/lab07/gradebook_a.png"
+                    alt="gradebook code part 1" />
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/lab07/gradebook_b.png"
+                    alt="gradebook code part 2" />
+            </div> <!-- #ex-code -->
+            <p style="font-style: italic; text-align: center;"><a href="#tabs" style="color:navy;">Go to Exercise 4!</a>
+            </p>
+        </div> <!-- #ex3 -->
+
+        <div id="ex4" style="padding: 20px; background-color: lightskyblue;">
+            <h2 class="alert">Exercise 4</h2>
+            <h3>2023 MLB Post-season</h3>
+            <div id="ex4-intro">
+                <h4>Description</h4>
+                <p>
+                    After the Major League Baseball regular season, the teams with the best records match up to
+                    determine division, and league championships, and the final two teams play in the World Series.
+                </p>
+                <p>
+                    Dowload the data file linked below with the 2023 post-season game results, and write a program to
+                <ul>
+                    <li>Read the CSV file</li>
+                    <li>Create parallel arrays to track and contain
+                        <ul>
+                            <li>Names of the teams in the post-season</li>
+                            <li>Total runs for those teams</li>
+                            <li>Number of games won</li>
+                        </ul>
+                    </li>
+                    <li>Display to the screen
+                        <ul>
+                            <li>which team scored the most (cumulative) runs in the post-season and how many (total))
+                            </li>
+                            <li>which team scored the least number of (cumulative) runs in the post-season and how many
+                                (total)</li>
+                            <li>which team won the most number of games in post-season, how many</li>
+                            <li>which team won the least number of games in post-season, how many</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Use exception handling when you open the file for reading
+                    </li>
+                </ul>
+                </p>
+                <h4>Download</h4>
+                <ul>
+                    <li><a href="/courses/49289/file_contents/course%20files/course_image/lab07/mlb_postseason_2023_results.csv"
+                            style="color:navy;">mlb_postseason_2023_results.csv</a>
+                    </li>
+            </div> <!-- #ex4-intro -->
+            </p>
+        </div> <!-- #ex4 -->
+
+    </div>
+</div>
+</div> <!-- #top -->

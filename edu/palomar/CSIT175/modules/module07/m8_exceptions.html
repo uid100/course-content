@@ -1,0 +1,122 @@
+<span id="49289" style="display: none;">Python</span>
+
+<div id="top" style="background-color: lightskyblue;">
+    <div id="header" style="padding: 20px; margin-bottom: 10px; ">
+        <div id="navigation" style="padding: 20px; width: 180px; height: 120px; font-size: 80%; 
+        text-align: center; font-style: italic; color: navy; float: right; 
+        background-color: aliceblue; border: 1px solid skyblue; display: block;">
+            <a href="/courses/49289/pages/homepage">
+                <img style="margin-left: auto; margin-right: auto; padding-bottom: 0.5em;"
+                    src="/courses/49289/file_contents/course%20files/course_image/programmer.jpg" alt="homepage link" />
+                home
+            </a>
+        </div> <!-- #navigation -->
+    </div> <!-- #header -->
+    <div id="kludge" style="display:block;">
+        <!-- kludge -->
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+    </div> <!-- #kludge -->
+
+    <div id="exceptions" style="padding:20px;">
+
+        <h2 class="alert">Exceptions and Exception Handling</h2>
+        <p>
+            An exception in programming refers to an event that disrupts the normal flow of a program's instructions
+            during its execution. It typically occurs when an error or unexpected condition arises that prevents the
+            program from continuing its operation as expected.
+        </p>
+
+        <p>
+            Exception handling mechanisms allow programmers to anticipate and gracefully deal with such errors,
+            providing alternative paths for the program to follow when exceptions occur. This helps in maintaining
+            program stability and robustness, as well as improving user experience by providing informative error
+            messages.
+        </p>
+
+        <h3><em>Controlled</em> Execution</h3>
+        <p>
+            In this study of Python, we began by considering sequential instructions, giving the computer step-by-step
+            instructions to complete <em>simple</em> tasks. We expanded the discussion add conditional branching and
+            iteration using for and while loops before discussing modularization and moving blocks of code to functions
+            to make our code more robust, readable, and reusable.
+        </p>
+        <p>
+            You have seen how exceptions can occur, and if left <em>unhandled</em> will interrupt program execution.
+        </p>
+        <p>
+            In this chapter we will investigate ways to enable the program to recognize when an exception occurs, and to
+            continue to run or recover from an error instead of just halting execution.
+        </p>
+
+        <h3>Try-Except-Finally</h3>
+        <p>
+            In Python, the <code>try</code> statement is used to enclose the code that might raise an exception. The
+            <code>except</code> block is used to handle the exception, providing a fallback mechanism to deal with
+            errors. The <code>finally</code> block is optional and is always executed whether an exception occurs or
+            not. It's typically used for cleanup actions.
+        </p>
+        <p>Example:</p>
+        <pre>
+    <code>
+try:
+    # Code that might raise an exception
+    result = 10 / 0
+except ZeroDivisionError:
+    # Handling a specific exception
+    print("Division by zero error!")
+finally:
+    # Cleanup code
+    print("Execution completed.")
+    </code>
+</pre>
+
+        <h2>Handling Single Exception</h2>
+        <p>You can handle a specific exception type using a single <code>except</code> block. This block will only catch
+            the specified exception.</p>
+        <p>Example:</p>
+        <pre>
+    <code>
+try:
+    # Code that might raise an exception
+    file = open("nonexistent_file.txt", "r")
+except FileNotFoundError:
+    # Handling a specific exception
+    print("File not found error!")
+    </code>
+</pre>
+
+        <h2>Handling Multiple Exceptions</h2>
+        <p>You can handle multiple exception types using multiple <code>except</code> blocks or a single
+            <code>except</code> block with multiple exception types listed.
+        </p>
+        <p>Example using multiple <code>except</code> blocks:</p>
+        <pre>
+    <code>
+try:
+    # Code that might raise an exception
+    result = 10 / 0
+except ZeroDivisionError:
+    # Handling a specific exception
+    print("Division by zero error!")
+except Exception as e:
+    # Handling other exceptions
+    print(f"An error occurred: {e}")
+    </code>
+</pre>
+        <p>Example using a single <code>except</code> block with multiple exception types:</p>
+        <pre>
+    <code>
+try:
+    # Code that might raise an exception
+    file = open("nonexistent_file.txt", "r")
+except (FileNotFoundError, PermissionError):
+    # Handling multiple exceptions
+    print("File error occurred!")
+    </code>
+</pre>
+    </div> <!-- #exceptions -->
+
+</div> <!-- #top -->
