@@ -1,7 +1,7 @@
 {
     "canvas": {
         "server": "https://sdccd.instructure.com",
-        "coursePath": "/courses/2483102"
+        "coursePath": "/courses/2484403"
     },
     "college": {
         "name": "San Diego Mesa College",
@@ -21,12 +21,12 @@
         ],
         "prerequisites": "(recommended) Computer and Information Sciences 181 with a grade of “C” or better, or equivalent.",
         "section": {
-            "sectionNumber":82884,
-            "courseId": "CISC-179 (82884)",
-            "term": "Spring 2025, first 8 week term",
-            "startDate": "2025-02-03T08:00:00",
-            "endDate": "2025-03-29T08:00:00",
-            "gradesDue": "2025-04-10T08:00:00",
+            "sectionNumber":85003,
+            "courseId": "CISC-179 (85003)",
+            "term": "Spring 2025, second 8 week term",
+            "startDate": "2025-04-07T08:00:00",
+            "endDate": "2025-06-02T08:00:00",
+            "gradesDue": "2025-06-02T08:00:00",
             "schedule": {
                 "day": "",
                 "time": "",
