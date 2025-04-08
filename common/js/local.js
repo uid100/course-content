@@ -292,10 +292,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 const objectivesContainer = document.getElementById("objectives");
                 if (objectivesContainer && typeof (objectives) !== 'undefined') {
                     const ol = document.createElement("ol");
-                    Object.keys(objectives).forEach((key, index) => {
-                        const objective = objectives[key];
+                    objectives.forEach((objectiveObject) => {
                         const objectiveElement = document.createElement("li");
-                        objectiveElement.textContent = objective;
+                        objectiveElement.textContent = objectiveObject.objective;
                         ol.appendChild(objectiveElement);
                     });
                     objectivesContainer.appendChild(ol);
@@ -305,9 +304,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (outcomesContainer && typeof (outcomes) !== 'undefined') {
                     const ol = document.createElement("ol");
                     outcomes.forEach((outcomeObject) => {
-                        const outcome = `${outcomeObject.id}: ${outcomeObject.outcome}`;
+                        // const outcome = `${outcomeObject.id}: ${outcomeObject.outcome}`;
                         const outcomeElement = document.createElement("li");
-                        outcomeElement.textContent = outcome;
+                        outcomeElement.textContent = outcomeObject.outcome;
                         ol.appendChild(outcomeElement);
                     });
                     outcomesContainer.appendChild(ol);
