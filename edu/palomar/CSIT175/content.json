@@ -18,7 +18,10 @@
             "(catalog:)\nCSIT 175 Provides the knowledge and skills necessary to use the Python programming language to develop software for Desktop and Web applications.",
             "Topics of study include the fundamentals of the language, using lists, dictionaries and creating functions and classes.",
             "Enrolled students will access course materials and participate in class activities through Canvas"
-            ],
+
+
+
+        ],
         "prerequisites": "(co-requisite) Lecture and Lab must be taken concurrently. When you enroll in this class, you will also be automatically enrolled in the lab.",
         "section": {
             "sectionNumber": "32928 & 32929",
@@ -33,12 +36,12 @@
                 "location": "Ramona Education Center"
             }
         },
-        "outcomes": {
-            "CLO #1": "Understand the fundamentals of the Python programming language",
-            "CLO #2": "Write syntactically and semantically correct Python programs",
-            "CLO #3": "Create Python Desktop and Web applications",
-            "CLO #4": "Analyze program requirements and design solutions using Python"
-        },
+        "outcomes": [
+            {"id": "CLO #1", "outcome": "Understand the fundamentals of the Python programming language"},
+            {"id": "CLO #2", "outcome": "Write syntactically and semantically correct Python programs"},
+            {"id": "CLO #3", "outcome": "Create Python Desktop and Web applications"},
+            {"id": "CLO #4", "outcome": "Analyze program requirements and design solutions using Python"}
+        ],
         "objectives": {
             "LO #1": "Write and execute basic Python programs that utilize sequential processing, variables, operators, and input/output functions.",
             "LO #2": "Implement program logic using conditional statements based on boolean expressions.",
