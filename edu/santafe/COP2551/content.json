@@ -1,7 +1,7 @@
 {
     "canvas": {
-        "server": "https://courses.sfcollege.edu",
-        "coursePath": "/courses/999"
+        "server": "https://canvas.instructure.com",
+        "coursePath": "/courses/7099152"
     },
     "college": {
         "name": "Santa Fe College",
