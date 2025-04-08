@@ -33,26 +33,26 @@
                 "location": "online"
             }
         },
-        "outcomes": {
-            "CLO #1": "Understand from a Python perspective the control of program flow based on the conditional evaluation of a Boolean expression.",
-            "CLO #2": "Use Python to provide an if...else structure as a solution to a software problem.",
-            "CLO #3": "Understand from a Python perspective the control of program flow with a looping structure.",
-            "CLO #4": "Use Python to provide a looping structure as a solution to a software problem"
-        },
-        "objectives": {
-            "LO #1": "Write and execute basic Python programs that utilize sequential processing, variables, operators, and input/output functions.",
-            "LO #2": "Implement program logic using conditional statements based on boolean expressions.",
-            "LO #3": "Use loops to control the flow of iterative execution of code blocks.",
-            "LO #4": "Write and call reusable code blocks using functions with parameters, return values.",
-            "LO #5": "Identify, describe, and correct syntax, runtime, and logic errors in Python code, and understand how these error types are addressed in different testing phases.",
-            "LO #6": "Demonstrate use of simple data structures (lists, tuples, and arrays) to store and retrieve data.",
-            "LO #7": "Read and write data to and from text files using appropriate file handling techniques.",
-            "LO #8": "Utilize exception handling to gracefully manage errors and prevent program crashes.",
-            "LO #9": "Use dictionaries to store and access data using key-value pairs.",
-            "LO #10": "Design and implement object-oriented programs using classes, objects, attributes, and methods.",
-            "LO #11": "Utilize inheritance to create hierarchical relationships between classes to promote code reuse.",
-            "LO #12": "Develop basic web applications using Flask to interact with APIs and display data."
-        },
+        "outcomes": [
+            {"id": "CLO #1", "outcome": "Understand from a Python perspective the control of program flow based on the conditional evaluation of a Boolean expression."},
+            {"id": "CLO #2", "outcome": "Use Python to provide an if...else structure as a solution to a software problem."},
+            {"id": "CLO #3", "outcome": "Understand from a Python perspective the control of program flow with a looping structure."},
+            {"id": "CLO #4", "outcome": "Use Python to provide a looping structure as a solution to a software problem"}
+        ],
+        "objectives": [            
+            {"id": "LO  #1", "objective": "Write and execute basic Python programs that utilize sequential processing, variables, operators, and input/output functions."},
+            {"id": "LO  #2", "objective": "Implement program logic using conditional statements based on boolean expressions."},
+            {"id": "LO  #3", "objective": "Use loops to control the flow of iterative execution of code blocks."},
+            {"id": "LO  #4", "objective": "Write and call reusable code blocks using functions with parameters, return values."},
+            {"id": "LO  #5", "objective": "Identify, describe, and correct syntax, runtime, and logic errors in Python code, and understand how these error types are addressed in different testing phases."},
+            {"id": "LO  #6", "objective": "Demonstrate use of simple data structures (lists, tuples, and arrays) to store and retrieve data."},
+            {"id": "LO  #7", "objective": "Read and write data to and from text files using appropriate file handling techniques."},
+            {"id": "LO  #8", "objective": "Utilize exception handling to gracefully manage errors and prevent program crashes."},
+            {"id": "LO  #9", "objective": "Use dictionaries to store and access data using key-value pairs."},
+            {"id": "LO #10", "objective": "Design and implement object-oriented programs using classes, objects, attributes, and methods."},
+            {"id": "LO #11", "objective": "Utilize inheritance to create hierarchical relationships between classes to promote code reuse."},
+            {"id": "LO #12", "objective": "Develop basic web applications using Flask to interact with APIs and display data."}
+        ],
         "textbook": {
             "title": "Murach's Python Programming",
             "author": "Urban and Murach",
@@ -72,11 +72,11 @@
             },
             "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
         },
-        "requiredMaterialsPath": "/course-content/edu/sdmesa/CISC179-W25-1/required-materials.html",
-        "recommendedMaterialsPath": "/course-content/edu/sdmesa/CISC179-W25-1/recommended-materials.html",
-        "gradingDetailsPath": "/course-content/edu/sdmesa/CISC179-W25-1/grading-details.html",
-        "accommodationsPath": "/course-content/edu/sdmesa/CISC179-W25-1/accommodations.html",
-        "topicOutlinePath": "/course-content/edu/sdmesa/CISC179-W25-1/outline.html"
+        "requiredMaterialsPath": "/course-content/edu/sdmesa/CISC179/required-materials.html",
+        "recommendedMaterialsPath": "/course-content/edu/sdmesa/CISC179/recommended-materials.html",
+        "gradingDetailsPath": "/course-content/edu/sdmesa/CISC179/grading-details.html",
+        "accommodationsPath": "/course-content/edu/sdmesa/CISC179/accommodations.html",
+        "topicOutlinePath": "/course-content/edu/sdmesa/CISC179-/outline.html"
     },
     "instructor": {
         "firstName": "Dan",
