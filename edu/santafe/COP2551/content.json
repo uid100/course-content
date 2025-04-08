@@ -23,9 +23,7 @@
             "Each chapter will be in a module that will provide you with lecture notes, PowerPoint slides for note taking, videos and code demonstrations that illustrate/apply the chapter concepts. Additionally, you will find links to any quizzes or other assignments for the chapter."
         ],
         "prerequisites": "COP2000: Introduction to Programming,\nCOP2002: Programming Logic\n - each with a minimum grade of 'C'.",
-        "accomodationsPath": "/course-content/edu/santafe/COP2551_0M1_S25/accommodations.html",
         "section": {
-            "academicCalendarLink": "https://www.sfcollege.edu/_media/Assets/sf/registrar/pdfs/calendars/2024-2025%20Academic%20Calendar.pdf",
             "sectionNumber": "0M1",
             "courseId": "COP2551_0M1_S25",
             "term": "Summer 2025",
@@ -38,9 +36,12 @@
                 "location": "Online"
             }
         },
-        "outcomes": {
-            "CLO #1": "."
-        },
+        "outcomes": [
+            { "id": "CLO #1", "outcome": "Understand the fundamentals of programming with classes and objects."},
+            { "id": "CLO #2", "outcome": "Write syntactically and semantically correct C# programs."},
+            { "id": "CLO #3", "outcome": "Analyze program requirements and design solutions using OOP principles."}
+            
+        ],
         "objectives": {
             "LO #1": ""
         },
