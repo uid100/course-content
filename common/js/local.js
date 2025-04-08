@@ -304,7 +304,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const outcomesContainer = document.getElementById("outcomes");
                 if (outcomesContainer && typeof (outcomes) !== 'undefined') {
                     const ol = document.createElement("ol");
-                    outcomes.forEach(outcomeObject => {
+                    outcomes.forEach((outcomeObject) => {
                         const outcome = `${outcomeObject.id}: ${outcomeObject.outcome}`;
                         const outcomeElement = document.createElement("li");
                         outcomeElement.textContent = outcome;
