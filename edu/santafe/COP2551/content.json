@@ -40,11 +40,11 @@
             { "id": "CLO #1", "outcome": "Understand the fundamentals of programming with classes and objects."},
             { "id": "CLO #2", "outcome": "Write syntactically and semantically correct C# programs."},
             { "id": "CLO #3", "outcome": "Analyze program requirements and design solutions using OOP principles."}
-            
+
         ],
-        "objectives": {
-            "LO #1": ""
-        },
+        "objectives": [
+            { "id": "LO #1", "objective": "Write and execute basic C# programs that utilize sequential processing, variables, operators, and input/output functions."}
+        ],
         "textbook": {
             "title": "",
             "author": "",
