@@ -43,7 +43,18 @@
 
         ],
         "objectives": [
-            { "id": "LO #1", "objective": "Write and execute basic C# programs that utilize sequential processing, variables, operators, and input/output functions."}
+            { "id": "LO #1", "objective": "Write and execute basic C# programs that utilize sequential processing, variables, operators, and input/output functions."},
+            { "id": "LO #2", "objective": "Understand the program development cycle"},
+            { "id": "LO #3", "objective": "Understand forms, controls, and events"},
+            { "id": "LO #4", "objective": "Understand data types and variable scope"},
+            { "id": "LO #5", "objective": "Use the various types of selection structures"},
+            { "id": "LO #6", "objective": "Use the various types of repetition structures"},
+            { "id": "LO #7", "objective": "Use arrays and pointers to store character and numeric data"},
+            { "id": "LO #8", "objective": "Understand how to create and use functions"},
+            { "id": "LO #9", "objective": "Understand how sequential data files are opened, read to and from, deleted, and merged"},
+            { "id": "LO #10", "objective": "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism"},
+            { "id": "LO #11", "objective": "Understand the basic concepts of working with a database"},
+            { "id": "LO #12", "objective": "Understand the basic concepts of working with Language Integrated Query (LINQ)"}
         ],
         "textbook": {
             "title": "Microsoft Visual C# Step by Step, 10th Edition",
