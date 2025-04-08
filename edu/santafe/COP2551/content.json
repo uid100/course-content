@@ -28,8 +28,8 @@
             "courseId": "COP2551_0M1_S25",
             "term": "Summer 2025",
             "startDate": "2025-05-12T05:00:00",
-            "endDate": "2025-05-03T05:00:00",
-            "gradesDue": "2025-08-15T05:00:00",
+            "endDate": "2025-08-06T05:00:00",
+            "gradesDue": "2025-08-12T05:00:00",
             "schedule": {
                 "day": "n/a",
                 "time": "",
