@@ -1,0 +1,225 @@
+{
+  "modules": [
+    { "module": 1, "topic": "Introduction to C# and Visual Studio", 
+        "chapter": [1,2],
+        "content": [
+            "Introduction to C# and the .NET Framework",
+            "Understanding the Common Language Runtime (CLR) and Common Type System (CTS)",
+            "Setting up the development environment (Visual Studio)",
+            "Creating your first C# console application",
+            "Basic program structure: `using` directives, namespaces, classes, the `Main` method",
+            "Compiling and running C# code"
+        ],
+        "activities": [
+            "Install Visual Studio",
+            "Create and run a simple 'Hello, World!' program",
+            "Explore the Visual Studio IDE",
+            {
+              "todo": [
+                "chapter 1 and 2 quiz",
+                "ex 1: sequential processing"
+              ]
+            }
+        ]
+    },
+    { "module": 2, "topic": "Methods, Parameters and Scope", 
+        "chapter": [3] 
+    },
+    { "module": 3, "topic": "Control Flow - Decision Making", 
+        "chapter": [4] 
+    },
+    { "module": 4, "topic": "Control Flow - Loops", 
+        "chapter": [5] 
+    },
+    { "module": 5, "topic": "Exception Handling", 
+        "chapter": [6] 
+    },
+    { "module": 6, "topic": "Classes and Objects", 
+        "chapter": [7] 
+    },
+    { "module": 7, "topic": "Value types, References, Enumeration & Structs", 
+        "chapter": [8,9] 
+    },
+    { "module": 8, "topic": "Arrays and Collections", 
+        "chapter": [10,11] 
+    },
+    { "module": 9, "topic": "Inheritance", 
+        "chapter": [12] 
+    },
+    { "module": 10, "topic": "Polymorphism and Interfaces", 
+        "chapter": [13] 
+    },
+    { "module": 11, "topic": "Properties and fields, Encapsulation and Access Modifiers", 
+        "chapter": [15] 
+    }
+  ],
+  "modules_DRAFT": [
+    { "module": 1, "topic": "Getting Started with C# and the .NET Framework",
+      "subtopics": [
+        "Introduction to C# and the .NET Framework",
+        "Understanding the Common Language Runtime (CLR) and Common Type System (CTS)",
+        "Setting up the development environment (Visual Studio)",
+        "Creating your first C# console application",
+        "Basic program structure: `using` directives, namespaces, classes, the `Main` method",
+        "Compiling and running C# code"
+      ],
+      "correspondingChapters": "Typically Chapters 1 & 2",
+      "activities": [
+        "Install Visual Studio",
+        "Create and run a simple 'Hello, World!' program",
+        "Explore the Visual Studio IDE" 
+      ]
+    },
+    { "module": 2, "topic": "Data Types, Variables, and Operators",
+      "subtopics": [
+        "Value types (integers, floating-point numbers, booleans, `char`, `decimal`)",
+        "Reference types (introduction to objects and strings)",
+        "Declaring and initializing variables",
+        "Scope and lifetime of variables",
+        "Arithmetic, relational, and logical operators",
+        "Operator precedence",
+        "Type conversion (implicit and explicit casting)"
+      ],
+      "correspondingChapters": "Typically Chapters 3 & 4",
+      "activities": [
+        "Write programs that perform calculations",
+        "Compare values",
+        "Demonstrate type conversions"
+      ]
+    },
+    { "module": 3, "topic": "Control Flow - Decision Making",
+      "subtopics": [
+        "`if`, `else`, and `else if` statements",
+        "Nested `if` statements",
+        "The `switch` statement",
+        "Conditional operator (`?:`)"
+      ],
+      "correspondingChapters": "Typically Chapter 5",
+      "activities": [
+        "Create programs that make decisions based on user input or calculated values"
+      ]
+    },
+    { "module": 4, "topic": "Control Flow - Loops",
+      "subtopics": [
+        "`for` loops",
+        "`while` loops",
+        "`do-while` loops",
+        "`foreach` loops (introduction with arrays or strings)",
+        "`break` and `continue` statements"
+      ],
+      "correspondingChapters": "Typically Chapter 6",
+      "activities": [
+        "Write programs that repeat actions a specific number of times or until a condition is met"
+      ]
+    },
+    { "module": 5, "topic": "Working with Arrays and Collections (Introduction)",
+      "subtopics": [
+        "Declaring and initializing arrays",
+        "Accessing array elements",
+        "Iterating through arrays",
+        "Introduction to the `System.Collections` namespace (e.g., `ArrayList`)",
+        "Basic operations on collections (adding, accessing)"
+      ],
+      "correspondingChapters": "Typically Chapter 7 and potentially an early introduction to collections",
+      "activities": [
+        "Write programs that store and manipulate lists of data using arrays and basic collections"
+      ]
+    },
+    { "module": 6, "topic": "Introduction to Object-Oriented Programming (OOP)",
+      "subtopics": [
+        "The core principles of OOP: Encapsulation, Inheritance, Polymorphism",
+        "Classes and Objects: Defining classes, creating objects (instances)",
+        "Fields (instance variables) and Properties",
+        "Methods: Defining and calling methods",
+        "Constructors: Default and parameterized constructors"
+      ],
+      "correspondingChapters": "Typically Chapters 8 & 9",
+      "activities": [
+        "Design and implement simple classes with fields, properties, and methods",
+        "Create objects of these classes and interact with them"
+      ]
+    },
+    { "module": 7, "topic": "Encapsulation and Access Modifiers",
+      "subtopics": [
+        "Access modifiers: `public`, `private`, `protected`, `internal`",
+        "Controlling access to class members",
+        "Using properties to encapsulate data and provide controlled access (getters and setters)",
+        "Read-only and write-only properties"
+      ],
+      "correspondingChapters": "Building upon previous chapters, focusing on access modifiers and properties",
+      "activities": [
+        "Modify classes from the previous week to implement proper encapsulation using access modifiers and properties"
+      ]
+    },
+    { "module": 8, "topic": "Inheritance",
+      "subtopics": [
+        "Base classes and derived classes",
+        "The `:` syntax for inheritance",
+        "The `protected` access modifier",
+        "`virtual` and `override` keywords",
+        "The `base` keyword",
+        "Abstract classes and abstract methods",
+        "Sealed classes and methods"
+      ],
+      "correspondingChapters": "Typically Chapter 10",
+      "activities": [
+        "Design and implement class hierarchies using inheritance",
+        "Demonstrate the use of `virtual`, `override`, and `abstract` members"
+      ] 
+    },
+    { "module": 9, "topic": "Polymorphism and Interfaces",
+      "subtopics": [
+        "Understanding polymorphism ('many forms')",
+        "Method overriding (runtime polymorphism)",
+        "Upcasting and downcasting",
+        "The `is` and `as` operators",
+        "Interfaces: Defining and implementing interfaces",
+        "Interface inheritance",
+        "Polymorphism through interfaces"
+      ],
+      "correspondingChapters": "Typically Chapter 11",
+      "activities": [
+        "Create examples that demonstrate polymorphism using both inheritance and interfaces"
+      ]
+    },
+    { "module": 10, "topic": "Exception Handling",
+      "subtopics": [
+        "Understanding exceptions and error handling",
+        "The `try-catch-finally` block",
+        "Specific exception types",
+        "Throwing exceptions",
+        "Custom exception classes (introduction)"
+      ],
+      "correspondingChapters": "Typically Chapter 12",
+      "activities": [
+        "Write code that intentionally causes exceptions and implement proper exception handling"
+      ] 
+    },
+    { "module": 11, "topic": "Working with Collections (Generics)",
+      "subtopics": [
+        "Introduction to generics",
+        "Generic collections in the `System.Collections.Generic` namespace (e.g., `List<T>`, `Dictionary<TKey, TValue>`)",
+        "Benefits of using generics (type safety, performance)",
+        "Common generic collection types and their uses"
+      ],
+      "correspondingChapters": "Typically Chapter 13",
+      "activities": [
+        "Rewrite previous collection examples using generic collections",
+        "Explore the functionality of different generic collection types"
+      ]
+    },
+    { "module": 12, "topic": "Delegates, Events, and Lambda Expressions (Introduction)",
+      "subtopics": [
+        "Understanding delegates as type-safe function pointers",
+        "Declaring and using delegates",
+        "Introduction to events and the event-driven programming model",
+        "Basic syntax of lambda expressions as a concise way to create delegates"
+      ],
+      "correspondingChapters": "Typically Chapter 14 and potentially an introduction to events",
+      "activities": [
+        "Create simple examples using delegates and lambda expressions",
+        "Introduce the basic concept of event handling"
+      ]
+    }
+  ]
+}

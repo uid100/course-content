@@ -79,7 +79,7 @@
         "recommendedMaterialsPath": "/course-content/edu/santafe/COP2551/recommended-materials.html",
         "gradingDetailsPath": "/course-content/edu/santafe/COP2551/grading-details.html",
         "accommodationsPath": "/course-content/edu/santafe/COP2551/accommodations.html",
-        "topicOutlinePath": "/course-content/edu/santafe/COP2551/outline.html"
+        "topicOutlinePath": "/course-content/edu/santafe/COP2551/outline.html",
     },
     "instructor": {
         "firstName": "Dan",
