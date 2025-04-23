@@ -236,7 +236,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // course section
             const termElement = document.getElementById("course-term");
-
             if (termElement) { termElement.textContent = term; }
 
             const courseIdElement = document.getElementById("course-id");
