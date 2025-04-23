@@ -31,9 +31,9 @@
             "endDate": "2025-08-06T05:00:00",
             "gradesDue": "2025-08-12T05:00:00",
             "schedule": {
-                "day": "n/a",
+                "day": "no scheduled class meetings",
                 "time": "",
-                "location": "Online"
+                "location": "loc: Online"
             }
         },
         "outcomes": [
