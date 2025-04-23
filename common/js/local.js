@@ -110,9 +110,10 @@ async function loadAndRenderJSON() {
 }
 
 async function loadContent(id, filePath) {
+
     try {
         const response = await fetch(filePath);
-        if (response.ok) {
+        if (id && response.ok) {
             const htmlContent = await response.text();
             document.getElementById(id).innerHTML = htmlContent;
         } else {
