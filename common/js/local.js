@@ -119,7 +119,7 @@ async function loadContent(id, filePath) {
             document.getElementById(id).innerHTML = `<p style="color: red;">Failed to load content: ${filePath}</p>`;
         }
     } catch (error) {
-        console.error("Error loading content: ${id}", error);
+        console.error("Error loading content: id:" + id, error);
         document.getElementById(id).innerHTML = `<p style="color: red;">Error loading content: ${filePath}</p>`;
     }
 
