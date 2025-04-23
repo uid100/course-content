@@ -1,7 +1,7 @@
 {
     "canvas": {
         "server": "https://canvas.instructure.com",
-        "coursePath": "/courses/7099152"
+        "coursePath": "/courses/492106"
     },
     "college": {
         "name": "Santa Fe College",
@@ -75,11 +75,11 @@
             },
             "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
         },
-        "requiredMaterialsPath": "/course-content/edu/santafe/COP2551/required-materials.html",
-        "recommendedMaterialsPath": "/course-content/edu/santafe/COP2551/recommended-materials.html",
-        "gradingDetailsPath": "/course-content/edu/santafe/COP2551/grading-details.html",
-        "accommodationsPath": "/course-content/edu/santafe/COP2551/accommodations.html",
-        "topicOutlinePath": "/course-content/edu/santafe/COP2551/outline.html",
+        "requiredMaterialsPath": "/course-content/edu/santafe/cop2551/required-materials.html",
+        "recommendedMaterialsPath": "/course-content/edu/santafe/cop2551/recommended-materials.html",
+        "gradingDetailsPath": "/course-content/edu/santafe/cop2551/grading-details.html",
+        "accommodationsPath": "/course-content/edu/santafe/cop2551/accommodations.html",
+        "topicOutlinePath": "/course-content/edu/santafe/cop2551/outline.html"
     },
     "instructor": {
         "firstName": "Dan",
