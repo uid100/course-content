@@ -111,9 +111,15 @@ async function loadAndRenderJSON() {
 
 async function loadContent(id, filePath) {
 
+    // Check if the element with the given ID exists
+    const element = document.getElementById(id);
+    if (!element) {
+        console.warn(`Element with ID ${id} not found.`);
+        return;
+    }
     try {
         const response = await fetch(filePath);
-        if (id && response.ok) {
+        if (response.ok) {
             const htmlContent = await response.text();
             document.getElementById(id).innerHTML = htmlContent;
         } else {
