@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Intro to OOP in C# – Lab 01</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+        }
+
+        code,
+        pre {
+            background-color: #f4f4f4;
+            padding: 5px 8px;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+
+        pre {
+            overflow-x: auto;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Intro to Object-Oriented Programming in C# — Lab 01</h1>
+
+    <div class="section">
+        <h2>🧰 Step 1: Install .NET and C#</h2>
+        <p>Make sure you have the .NET SDK installed.</p>
+        <p><strong>Check installation:</strong></p>
+        <pre><code>dotnet --list-sdks</code></pre>
+        <p>If nothing is listed, install .NET from <a
+                href="https://dotnet.microsoft.com/download">https://dotnet.microsoft.com/download</a>.</p>
+    </div>
+
+    <div class="section">
+        <h2>📁 Step 2: Create Your Lab Folder Structure</h2>
+        <pre><code>mkdir labs
+cd labs
+
+mkdir lab01
+mkdir lab02
+...
+mkdir lab10</code></pre>
+        <p>Navigate to Lab 01:</p>
+        <pre><code>cd lab01</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>🚀 Step 3: Create Your First Console Application</h2>
+        <pre><code>dotnet new console</code></pre>
+        <p>Run it:</p>
+        <pre><code>dotnet run</code></pre>
+        <p><strong>Explore:</strong> Check out the generated files:
+        <ul>
+            <li>Program.cs</li>
+            <li>[ProjectName].csproj</li>
+            <li>bin/ and obj/ folders</li>
+        </ul>
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>🧮 Step 4: Create an Interactive Program – Multiply</h2>
+        <pre><code>dotnet new console -n multiply
+cd multiply</code></pre>
+        <p>Edit <code>Program.cs</code>:</p>
+        <pre><code>using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Declare variables
+        string response;
+        double number1, number2;
+        double product;
+
+        // Input
+        Console.Write("Enter the first number: ");
+        response = Console.ReadLine();
+        number1 = Convert.ToDouble(response);
+
+        Console.Write("Enter the second number: ");
+        response = Console.ReadLine();
+        number2 = Convert.ToDouble(response);
+
+        // Process
+        product = number1 * number2;
+
+        // Output
+        Console.WriteLine("The product is: " + product);
+    }
+}</code></pre>
+        <p>Run it:</p>
+        <pre><code>dotnet run</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>🚗 Step 5: Add Another Program – kmToMiles</h2>
+        <pre><code>cd ..
+dotnet new console -n kmToMiles
+cd kmToMiles</code></pre>
+        <p>Edit <code>Program.cs</code>:</p>
+        <pre><code>using System;
+
+class Program
+{
+    static void Main()
+    {
+        const double MILES_PER_KM = 0.62;
+
+        Console.Write("Enter distance in kilometers: ");
+        string input = Console.ReadLine();
+        double km = Convert.ToDouble(input);
+        double miles = km * MILES_PER_KM;
+
+        Console.WriteLine($"{km} kilometers is about {miles} miles.");
+    }
+}</code></pre>
+        <p>Run it:</p>
+        <pre><code>dotnet run</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>🛣️ Step 6: Another Program – milesToKm</h2>
+        <pre><code>cd ..
+dotnet new console -n milesToKm
+cd milesToKm</code></pre>
+        <p>Edit <code>Program.cs</code>:</p>
+        <pre><code>using System;
+
+class Program
+{
+    static void Main()
+    {
+        const double MILES_PER_KM = 0.62;
+
+        Console.Write("Enter distance in miles: ");
+        string input = Console.ReadLine();
+        double miles = Convert.ToDouble(input);
+        double km = miles / MILES_PER_KM;
+
+        Console.WriteLine($"{miles} miles is about {km} kilometers.");
+    }
+}</code></pre>
+        <p>Run it:</p>
+        <pre><code>dotnet run</code></pre>
+    </div>
+
+    <div class="section">
+        <h2>🎓 Summary</h2>
+        <p>By completing this lab, you’ve:</p>
+        <ul>
+            <li>Installed and verified .NET</li>
+            <li>Created multiple C# console applications</li>
+            <li>Practiced input/output and basic calculations</li>
+            <li>Learned to navigate folders and edit code</li>
+        </ul>
+        <p><strong>Next up:</strong> classes, methods, and objects in Lab 02!</p>
+    </div>
+
+</body>
+
+</html>
