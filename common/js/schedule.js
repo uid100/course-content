@@ -25,7 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     const schoolName = Object.keys(schoolObject)[0];
                     const courses = schoolObject[schoolName];
                     const listItem = document.createElement('li');
-                    listItem.innerHTML = `<strong>${schoolName}:</strong> ${courses.length > 0 ? '<ul>' + courses.map(course => `<li><a href="../../homepage.html?path=${encodeURIComponent(schoolName + '/' + course)}">${course}</a></li>`).join('') + '</ul>' : 'None'}`;
+                    listItem.innerHTML = `<strong>${schoolName}:</strong> ${courses.length > 0 ? '<ul>'
+                        + courses.map(course => `<li>
+                            <a href="../homepage.html?path=${encodeURIComponent(schoolName + '/' + course)}">
+                            ${course}</a></li>`).join('') + '</ul>' : 'None'}`;
                     termList.appendChild(listItem);
                 });
             });
