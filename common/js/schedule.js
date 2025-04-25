@@ -21,11 +21,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 scheduleContainer.appendChild(card);
 
                 const termList = document.getElementById(`${term.replace(/\s+/g, '-').toLowerCase()}-list`);
-                details.forEach(item => {
-                    const key = Object.keys(item)[0];
-                    const values = item[key];
+                details.forEach(schoolObject => {
+                    const schoolName = Object.keys(schoolObject)[0];
+                    const courses = schoolObject[schoolName];
                     const listItem = document.createElement('li');
-                    listItem.innerHTML = `<strong>${key}:</strong> ${values.length > 0 ? '<ul>' + values.map(val => `<li>${val}</li>`).join('') + '</ul>' : 'None'}`;
+                    listItem.innerHTML = `<strong>${schoolName}:</strong> ${courses.length > 0 ? '<ul>' + courses.map(course => `<li><a href="../../homepage.html?path=${encodeURIComponent(schoolName + '/' + course)}">${course}</a></li>`).join('') + '</ul>' : 'None'}`;
                     termList.appendChild(listItem);
                 });
             });
