@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('data/config.json')
+    fetch('schedule.json')
         .then(response => response.json())
         .then(data => {
             const scheduleContainer = document.getElementById('schedule-container');
