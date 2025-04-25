@@ -7,7 +7,7 @@
             {   "sdmesa": [ ] }
         ]},
         {"Fall 2025": [
-            { "cuyamaca": [ "CS119"   ] },
+            { "cuyamaca": [ "cs119"   ] },
             {  "palomar": [ "CSIT175" ] },
             {  "santafe": [ "COP2552", "COP4813" ] },
             {   "sdmesa": [ "COP401"  ] }
@@ -16,13 +16,13 @@
             {  "santafe": [ "COP2535", "COP2551", "COP2552" ] }
         ]},
         {"Spring 2025": [
-            { "cuyamaca": [ "CS119"   ] },
+            { "cuyamaca": [ "cs119"   ] },
             {  "palomar": [ "CSIT175" ] },
             {  "santafe": [ "CIS4083", "CIS4891", "COP2552" ] },
             {   "sdmesa": [ "CISC179 8wk1", "CISC179 8wk2" ] }
         ]},
         {"Fall 2024": [
-            { "cuyamaca": [ "CS119"   ] },
+            { "cuyamaca": [ "cs119"   ] },
             {  "palomar": [ "CSIT175" ] },
             {  "santafe": [ "COP2552" ] },
             {   "sdmesa": [ "COP401"  ] }
