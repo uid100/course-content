@@ -66,8 +66,7 @@ def index():
     if request.method == 'POST':
         monthly_deposit = request.form.get('monthly_deposit')
         annual_yield = request.form.get('annual_yield')
-        term_years = request.form.get(
-            'term_years')
+        term_years = request.form.get('term_years')
 
         final_value, total_investment, interest_earned, intermediate_data = calculate_future_value(
             monthly_deposit, annual_yield, term_years
@@ -85,7 +84,7 @@ def index():
                 intermediate_data=intermediate_data,
                 monthly_deposit=monthly_deposit,  # Pass input back to the template
                 annual_yield=annual_yield,
-                term_months=term_years
+                term_years=term_years
             )
 
     # Initial GET request
