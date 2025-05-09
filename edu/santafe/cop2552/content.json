@@ -37,12 +37,27 @@
                 "location": "Online"
             }
         },
-        "outcomes": {
-            "CLO #1": "."
-        },
-        "objectives": {
-            "LO #1": ""
-        },
+        "outcomes": [
+            { "id": "CLO #1", "outcome": "Understand the fundamentals of programming with classes and objects."},
+            { "id": "CLO #2", "outcome": "Write syntactically and semantically correct Java programs."},
+            { "id": "CLO #3", "outcome": "Analyze program requirements and design solutions using OOP principles."}
+        ],
+        "objectives": [
+            { "id": "LO #1", "objective": "Write and execute basic Java programs that utilize sequential processing, variables, operators, and input/output functions."},
+            { "id": "LO #2", "objective": "Understand the program development cycle"},
+            { "id": "LO #3", "objective": "Understand data types, variable scope, and file access"},
+            { "id": "LO #3", "objective": "Recognize the properties and behaviors of classes and objects"},
+            { "id": "LO #3", "objective": "Use the various types of selection structures"},
+            { "id": "LO #3", "objective": "Use the various types of repetition structures"},
+            { "id": "LO #3", "objective": "Use arrays and arraylists to store character and numeric data"},
+            { "id": "LO #3", "objective": "Understand how to create and use functions"},
+            { "id": "LO #3", "objective": "Understand how sequential data files are opened, read to and from, deleted, and merged"},
+            { "id": "LO #3", "objective": "Understand the basic concepts of an object-oriented languages including inheritance, encapsulation, and polymorphism"},
+            { "id": "LO #3", "objective": "Comprehend and use wrapper classes"},
+            { "id": "LO #3", "objective": "Know proper use of exception handling"},
+            { "id": "LO #3", "objective": "Understand and use JavaFX to create GUI-based applications"},
+            { "id": "LO #3", "objective": "Utilize a relational database within a Java application"}
+        ],
         "textbook": {
             "title": "Starting Out with Java: Early Objects",
             "author": "Gaddis",
