@@ -1,0 +1,104 @@
+{
+    "canvas": {
+        "server": "https://courses.sfcollege.edu",
+        "coursePath": "/courses/491918"
+    },
+    "college": {
+        "name": "Santa Fe College",
+        "logoPath": "/course-content/images/santafe-college-logo.png",
+        "website": "https://www.sfcollege.edu/"
+    },
+    "course": {
+        "courseNumber": "COP 2535",
+        "courseTitle": "Data Structures",
+        "units": 3,
+        "coverImage": "/course-content/images/data_struct.png",
+        "description": [
+            "(catalog:)",
+            "This course will focus on the design and analysis of data structures and the use of algorithms. Through the introduction of the most widely used data structures employed in solving commonly encountered problems, such as linked lists, binary trees, queues, and stacks, students will learn different ways to organize data for easy access and efficient manipulation. Algorithms to solve classic problems, such as searching, sorting, hashing, and graph algorithms will also be presented. This course assumes the student has a basic understanding of object-oriented programming in the C++ programming language.",
+            "Parallel: College Transfer (A.A. and A.S)",
+            "Each module contains lecture notes, assignments, and other resources.",
+            "There are coding demonstrations and exercises every week to practice the content.",
+            "Content in each module will be augmented by the required textbook, as well as additional content."
+        ],
+        "prerequisites": [
+            "COP 2000 Introduction to Programming",
+            "COP 2551 Object-Oriented Programming 1",
+            "COP 2552 Object-Oriented Programming 2",
+            "each with a minimum grade of C."
+        ],
+        "accomodationsPath": "/course-content/edu/santafe/COP2552_0M1_W25/accommodations.html",
+        "section": {
+            "sectionNumber": "0M1",
+            "courseId": "COP2535_0M1_S25",
+            "term": "Summer 2025",
+            "startDate": "2025-05-12:00:00",
+            "endDate": "2025-08-09:00:00",
+            "gradesDue": "2025-08-14T05:00:00",
+            "schedule": {
+                "day": "n/a",
+                "time": "",
+                "location": "Online"
+            }
+        },
+        "outcomes": [
+            { "id": "CLO #1", "outcome": "Describe and distinguish between the different types of data structures."},
+            { "id": "CLO #2", "outcome": "Implement and analyze algorithms for searching and sorting."},
+            { "id": "CLO #3", "outcome": "Describe and evaluate algorithm complexity as a functinon of data size."}
+        ],
+        "objectives": [
+            { "id": "LO #1", "objective": "Understand the goals of software design"},
+            { "id": "LO #2", "objective": "Describe and utilize an ADT"},
+            { "id": "LO #3", "objective": "Use unsorted lists to implement utility routines"},
+            { "id": "LO #4", "objective": "Use sorted lists using an array-based implementation"},
+            { "id": "LO #5", "objective": "Understand and implement stack operations"},
+            { "id": "LO #6", "objective": "Demonstrate the effect of queue operations"},
+            { "id": "LO #7", "objective": "Implement linked lists as an array of records"},
+            { "id": "LO #8", "objective": "Demonstrate how a binary tree can be represented in an array"},
+            { "id": "LO #9", "objective": "Implement a heap in a nonlinked tree representation in an array"},
+            { "id": "LO #10", "objective": "Compare the efficiency of the sorting and searching algorithms"}
+        ],
+        "textbook": {
+            "title": "Starting Out with C++: Early Objects",
+            "author": "Gaddis",
+            "edition": "10th Ed",
+            "isbn": "978-0-13-523500-3",
+            "imagePath": "/course-content/images/getstarted_cpp.jpg"
+        },
+        "contact": {
+            "officeHours": {
+                "location": "Remote",
+                "schedule": "Wed 12P - 2P EST",
+                "zoomLink": "https://sfcollege.zoom.us/j/92446820828?pwd=NHNrYlNaZTBwUXk3Zy9BWnEzYzEydz09"
+            },
+            "discordLink": {
+                "label": "Code Bytes",
+                "url": "https://discord.gg/MpHjV4qgxZ"
+            },
+            "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
+        },
+        "requiredMaterialsPath": "/course-content/edu/santafe/cop2535/required-materials.html",
+        "recommendedMaterialsPath": "/course-content/edu/santafe/cop2535/recommended-materials.html",
+        "gradingDetailsPath": "/course-content/edu/santafe/cop2535/grading-details.html",
+        "accommodationsPath": "/course-content/edu/santafe/cop2535/accommodations.html",
+        "topicOutlinePath": "/course-content/edu/santafe/cop2535/outline.html"
+    },
+    "instructor": {
+        "firstName": "Dan",
+        "lastName": "Sullivan",
+        "email": "daniel.sullivan@sfcollege.edu",
+        "imagePath": "/course-content/images/Dan_20070717.jpg",
+        "about": "Over 30 years professional experience as a software engineer and program manager. I have worked for large and small companies.",
+        "url": "/course-content/common/instructor_more.html"
+    },
+    "templates": {
+        "syllabus": {
+            "title": "<p>&nbsp;</p><p>IT/E PROGRAMS</p><p>SYLLABUS</p>",
+            "path": "/course-content/edu/santafe/ite_syllabus.html"
+        },
+        "policies": {
+            "title": "ITE Department Policies",
+            "path": "/course-content/edu/santafe/ite-policies.html"
+        }
+    }
+}
