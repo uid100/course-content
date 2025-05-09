@@ -41,12 +41,23 @@
                 "location": "Online"
             }
         },
-        "outcomes": {
-            "CLO #1": "."
-        },
-        "objectives": {
-            "LO #1": ""
-        },
+        "outcomes": [
+            { "id": "CLO #1", "outcome": "Describe and distinguish between the different types of data structures."},
+            { "id": "CLO #2", "outcome": "Implement and analyze algorithms for searching and sorting."},
+            { "id": "CLO #3", "outcome": "Describe and evaluate algorithm complexity as a functinon of data size."}
+        ],
+        "objectives": [
+            { "id": "LO #1", "objective": "Understand the goals of software design"},
+            { "id": "LO #2", "objective": "Describe and utilize an ADT"},
+            { "id": "LO #3", "objective": "Use unsorted lists to implement utility routines"},
+            { "id": "LO #4", "objective": "Use sorted lists using an array-based implementation"},
+            { "id": "LO #5", "objective": "Understand and implement stack operations"},
+            { "id": "LO #6", "objective": "Demonstrate the effect of queue operations"},
+            { "id": "LO #7", "objective": "Implement linked lists as an array of records"},
+            { "id": "LO #8", "objective": "Demonstrate how a binary tree can be represented in an array"},
+            { "id": "LO #9", "objective": "Implement a heap in a nonlinked tree representation in an array"},
+            { "id": "LO #10", "objective": "Compare the efficiency of the sorting and searching algorithms"}
+        ],
         "textbook": {
             "title": "Starting Out with C++: Early Objects",
             "author": "Gaddis",
