@@ -147,6 +147,10 @@ async function loadCourseDetails() {
         cellContent = cell.innerHTML;
         cellContent += `${data?.course?.prerequisites}`;
         cell.innerHTML = cellContent;
+
+        // update the objectives and outcomes
+        loadObjectivesAndOutcomes();
+
     } catch (error) {
         console.error('Error loading table data:', error);
     }
