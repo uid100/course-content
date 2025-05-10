@@ -18,6 +18,48 @@ function getQueryParam(param) {
     return urlParams.get(param);
 }
 
+// function to read content from JSON file and populate the HTML for objectives and outcomes.
+
+async function loadObjectivesAndOutcomes() {
+    try {
+        // Fetch the JSON file
+        const jsonFilePath = "../" + getQueryParam('path');
+        const jsonFileName = jsonFilePath + "/content.json";
+        const response = await fetch(jsonFileName);
+        const data = await response.json();
+
+        // Populate objectives and outcomes
+        const objectives = data?.course?.objectives;
+        const outcomes = data?.course?.outcomes;
+
+
+        const objectivesContainer = document.getElementById("objectives");
+        if (objectivesContainer && typeof (objectives) !== 'undefined') {
+            const ol = document.createElement("ol");
+            objectives.forEach((objectiveObject) => {
+                const objectiveElement = document.createElement("li");
+                objectiveElement.textContent = objectiveObject.objective;
+                ol.appendChild(objectiveElement);
+            });
+            objectivesContainer.appendChild(ol);
+        }
+
+        const outcomesContainer = document.getElementById("outcomes");
+        if (outcomesContainer && typeof (outcomes) !== 'undefined') {
+            const ol = document.createElement("ol");
+            outcomes.forEach((outcomeObject) => {
+                // const outcome = `${outcomeObject.id}: ${outcomeObject.outcome}`;
+                const outcomeElement = document.createElement("li");
+                outcomeElement.textContent = outcomeObject.outcome;
+                ol.appendChild(outcomeElement);
+            });
+            outcomesContainer.appendChild(ol);
+        }
+    } catch (error) {
+        console.error('Error loading objectives and outcomes:', error);
+    }
+}
+
 async function loadContent() {
     for (const [id, filePath] of Object.entries(contentMapping)) {
         try {
