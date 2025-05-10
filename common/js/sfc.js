@@ -6,8 +6,10 @@ const contentMapping = {
     recommendedMaterials: "recommended-materials.html",
     courseExpectations: "course-expectations.html",
     aiPolicy: "ai-policy.html",
+    // gradingScale: "grading-scale.html",
     gradingScale: "grading-details.html",
-    courseSchedule: "course-schedule.html",
+    // courseSchedule: "course-schedule.html",
+    courseSchedule: "outline.html",
     classroomEtiquette: "classroom-etiquette.html",
     criticalDates: "critical-dates.html",
 };
