@@ -98,5 +98,147 @@
             "title": "Department Policies",
             "path": "/course-content/edu/santafe/ite-policies.html"
         }
-    }
+    },
+    "chapters": [
+        {
+            "chapter": "1",
+            "title": "Welcome to C#",
+            "topics": [
+                "Writing your first C# program",
+                "Beginning programming with Visual Studio",
+                "Writing your first program using Visual Studio",
+                "Using namespaces",
+                "Commenting code",
+                "Creating a graphical application",
+                "Summary",
+                "Quick Reference"
+            ]
+        },
+        {
+            "chapter": "2",
+            "title": "Working with variables, operators, and expressions",
+            "topics": [
+                "Understanding statments",
+                "Using identifiers",
+                "Identifyind keywords",
+                "Using variables",
+                "Working with primitive data types",
+                "Using arithmetic operators",
+                "Incrementing and decrementing variables",
+                "Summary",
+                "Quick Reference"
+            ]
+        },
+        {
+            "chapter": "3",
+            "title": "Writing methods and applying scope",
+            "topics": [
+                "Creating methods",
+                "Calling methods",
+                "Applying scope",
+                "Using the Visual Studio Debugger to step through methods",
+                "Using optional parameters and named arguments",
+                "Summary",
+                "Quick Reference"
+            ]
+        },
+        {
+            "chapter": "4",
+            "title": "Using decision statements",
+            "topics": [
+                "Declaring boolean variables",
+                "Using Boolean operators",
+                "Using if statements to make decisions",
+                "Using switch statements",
+                "Using switch expressions and pattern matching",
+                "Summary",
+                "Quick Reference"
+            ]
+        },
+        {
+            "chapter": "5",
+            "title": "Using compound assignment operators and iteration statements",
+            "topics": [
+                "Using compound assignment operators",
+                "Writing while statments",
+                "Writing for statements",
+                "Writing do statements",
+                "Summary",
+                "Quick Reference"
+            ]
+        },
+        {
+            "chapter": "6",
+            "title": "Managing errors and exceptions",
+            "topics": [
+                "Trying code and catching exceptions",
+                "Using checked and unchecked integer arithmetic",
+                "Throwing exceptions",
+                "Using a finally block",
+                "Summary",
+                "Quick Reference"
+            ]
+        },
+        {
+            "chapter": "7",
+            "title": "Creating and managing classes and objects",
+            "topics": [
+                "Understanding classification",
+                "The purpose of encapsulation",
+                "Defining and using a class",
+                "Controlling accessibility",
+                "Working with constructors",
+                "Understanding static methods and data",
+                "Anonymous classes",
+                "Summary",
+                "Quick Reference"
+            ]
+        }
+    ],
+    "modules": [
+        {
+            "module": "1",
+            "title": ".NET/C# & Data types, Variables, and Operators"
+        },
+        {
+            "module": "2",
+            "title": "Methods and Scope"
+        },
+        {
+            "module": "3",
+            "title": "Control Flow - Decision Making"
+        },
+        {
+            "module": "4",
+            "title": "Control Flow - Loops"
+        },
+        {
+            "module": "5",
+            "title": "Exception Handling"
+        },
+        {
+            "module": "6",
+            "title": "Introduction to Object-Oriented Programming (OOP)"
+        },
+        {
+            "module": "7",
+            "title": "Value types, references, enums & structs"
+        },
+        {
+            "module": "8",
+            "title": "Working with Arrays and Collections (Introduction)"
+        },
+        {
+            "module": "9",
+            "title": "Inheritance"
+        },
+        {
+            "module": "10",
+            "title": "Polymorphism and Interfaces"
+        },
+        {
+            "module": "11",
+            "title": "Properties and fields, Encapsulation and Access Modifiers"
+        }
+    ]
 }
