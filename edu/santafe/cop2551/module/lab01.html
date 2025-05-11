@@ -2,121 +2,140 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Getting Started with C# and .NET (CLI)</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 1rem auto;
-            max-width: 800px;
-            padding: 0 1rem;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-
-        h1,
-        h2 {
-            color: #2c3e50;
-        }
-
-        code,
-        pre {
-            background-color: #e8f0fe;
-            padding: 0.3em 0.6em;
-            border-radius: 4px;
-            font-family: monospace;
-        }
-
-        pre {
-            background-color: #f0f0f0;
-            padding: 1em;
-            overflow-x: auto;
-        }
-
-        a {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        ul {
-            margin-top: 0;
-        }
-
-        .tip {
-            background-color: #e6f7ff;
-            border-left: 4px solid #1a73e8;
-            padding: 0.5em 1em;
-            margin: 1em 0;
-        }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
 </head>
 
 <body>
+    <div id="top"> </div>
+    <div id="lab-assignment-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
 
-    <h1>👩‍💻 Programming Student Setup Guide: .NET & C# (CLI-Based)</h1>
-    <p>This guide will help you get started with <strong>C# and .NET development</strong> using the <strong>Command Line
-            Interface (CLI)</strong>. It works on both <strong>macOS and Windows</strong>.</p>
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
 
-    <h2>✅ Step 1: Install .NET and C#</h2>
-    <p>You need the <strong>.NET SDK</strong> to compile and run C# programs.</p>
+        <h1>Lab 01: Start Writing Code with C#</h1>
+        <div class="container my-4 px-2">
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Overview (click to hide/show)
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="overview" class="collapse show">
+                    <div class="card-body">
+                        <p>In this lab, you will learn how to install and configure Visual Studio (Community Edition)
+                            and start creating applications using the Visual Studio IDE.</p>
+                        <p>Make sure to follow the instructions carefully and complete all tasks.</p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card -->
 
-    <h3>🔍 Check if it's already installed:</h3>
-    <pre><code>dotnet --list-sdks</code></pre>
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#first" aria-expanded="true" aria-controls="first">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        First
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="first" class="collapse show">
+                    <div class="card-body">
+                        <h2>Before You Begin</h2>
+                        <details>
+                            <summary>File Extensions</summary>
+                            <p>Make sure your system is configured to show File Extensions</p>
+                            <p>In Windows Explorer, go to the View tab and check the box for "File name extensions".</p>
+                            <p>In Mac Finder, go to Preferences > Advanced and check the box for "Show all filename
+                                extensions".</p>
+                        </details>
+                        <details>
+                            <summary>Lab Folder Structure</summary>
+                            <p>
+                                Before starting on any lab work for this class, take a few minutes to create a folder
+                                structure for your labs like the one shown below. Being organized is a critical survival
+                                skill in software development.
+                            </p>
+                            <p>
+                                If you are using the classroom lab computers, be sure to create this on your USB drive
+                                and be sure to save to it! Saving on the C: drive of the lab computers is a disaster
+                                waiting to happen!
+                            </p>
+                            <pre>
+                                📁 labs
+                                ├── 📁 lab01
+                                ├── 📁 lab02
+                                ├── 📁 lab03
+                                ├── 📁 lab04
+                                ├── 📁 lab05
+                                ├── 📁 lab06
+                                ├── 📁 lab07
+                                ├── 📁 lab08
+                                ├── 📁 lab09
+                                ├── 📁 lab10
+                                └── 📁 lab11
+                                </pre>
+                            <p>
+                                Notice that the folders are numbered "lab01", "lab02", and so on. If you number
+                                these using only a single digit, then when we labs 10, 11, and 12, the natural
+                                ordering of your folders will be lab1, lab10, lab11, lab12, lab2, lab3, ...
+                            </p>
+                            <p>
+                                This is because the computer sorts the folders in "alphabetical" order, not
+                                "numerical" order. So, lab1 comes before lab10, and lab2 comes after lab10.
+                            </p>
+                            <p>
+                                To avoid this problem, use 2 digit numbers for the lab folders. This way, when we
+                                get to lab10, the folders will be sorted in the correct order: lab01, lab02, lab03,
+                                lab04, lab05, lab06, lab07, lab08, lab09, lab10, lab11.
+                            </p>
+                        </details>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
 
-    <h3>🛠 If nothing is listed:</h3>
-    <p>Download and install the .NET SDK from:</p>
-    <p><a href="https://dotnet.microsoft.com/download" target="_blank">https://dotnet.microsoft.com/download</a></p>
-    <div class="tip">⚠️ Be sure to install the <strong>SDK</strong>, not just the runtime.</div>
-
-    <p>After installing, <strong>restart your terminal</strong> and run <code>dotnet --list-sdks</code> again to
-        confirm.</p>
-
-    <h2>✅ Step 2: Create Your First Console App</h2>
-    <pre><code>dotnet new console -o HelloWorld
-cd HelloWorld</code></pre>
-
-    <p>This creates a folder named <code>HelloWorld</code> with a basic C# app.</p>
-
-    <h2>✅ Step 3: Build and Run the App</h2>
-    <pre><code>dotnet run</code></pre>
-    <p>You should see:</p>
-    <pre><code>Hello, World!</code></pre>
-
-    <h2>✅ Step 4: Open the Project in a Code Editor</h2>
-    <p>If you're using <strong>Visual Studio Code</strong>, open the project like this:</p>
-    <pre><code>code .</code></pre>
-
-    <div class="tip">
-        💡 If <code>code</code> doesn’t work, install the VS Code CLI:<br />
-        In VS Code, press <kbd>Cmd+Shift+P</kbd> (Mac) or <kbd>Ctrl+Shift+P</kbd> (Windows), type <em>Shell
-            Command</em>, and choose “Install 'code' command in PATH”.
-    </div>
-
-    <h2>✅ Step 5: Edit and Experiment</h2>
-    <p>Open <code>Program.cs</code> and try editing the <code>Console.WriteLine</code> message.</p>
-    <p>Then run it again:</p>
-    <pre><code>dotnet run</code></pre>
-
-    <h2>✅ Step 6: Bonus – Check C# Version</h2>
-    <p>You can check your C# language version by inspecting the <code>&lt;LangVersion&gt;</code> in the
-        <code>.csproj</code> file, or check what your SDK supports here:</p>
-    <p><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version"
-            target="_blank">C# Language Version Documentation</a></p>
-
-    <h2>📌 Troubleshooting Tips</h2>
-    <ul>
-        <li>Use <code>dotnet --info</code> to get SDK and system details.</li>
-        <li>On macOS, check terminal permissions in <strong>System Settings &gt; Privacy &amp; Security</strong>.</li>
-        <li>On Windows, run Command Prompt or PowerShell as <strong>Administrator</strong> if you get permission errors.
-        </li>
-    </ul>
-
+            </div> <!-- .container -->
+            <div id="footer">
+                <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+                <p style="text-align: center;"><em>Use the [Next &gt;] button to continue on to the module
+                        overview.</em>
+                </p>
+            </div> <!-- #footer -->
+        </div> <!-- #lab-assignment-wrapper -->
+        <script src="/course-content/common/js/local.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
