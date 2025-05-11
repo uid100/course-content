@@ -52,7 +52,7 @@
                         aria-controls="overview">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Overview (click to hide/show)
+                        Overview (click each header to hide/show)
                     </button>
                 </div> <!-- .card-header -->
                 <div id="overview" class="collapse show">
@@ -62,7 +62,7 @@
                         <p>Make sure to follow the instructions carefully and complete all tasks.</p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card -->
+            </div> <!-- .card (overview) -->
 
             <div class="card">
                 <div class="card-header">
@@ -126,17 +126,162 @@
                         </details>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
+                <div id="first" class="collapse show">
+                    <div class="card-body">
+                        <h2>Before You Begin</h2>
+                        <details>
+                            <summary>File Extensions</summary>
+                            <p>Make sure your system is configured to show File Extensions</p>
+                            <p>In Windows Explorer, go to the View tab and check the box for "File name extensions".</p>
+                            <p>In Mac Finder, go to Preferences > Advanced and check the box for "Show all filename
+                                extensions".</p>
+                        </details>
+                        <details>
+                            <summary>Lab Folder Structure</summary>
+                            <p>
+                                Before starting on any lab work for this class, take a few minutes to create a folder
+                                structure for your labs like the one shown below. Being organized is a critical survival
+                                skill in software development.
+                            </p>
+                            <p>
+                                If you are using the classroom lab computers, be sure to create this on your USB drive
+                                and be sure to save to it! Saving on the C: drive of the lab computers is a disaster
+                                waiting to happen!
+                            </p>
+                            <pre>
+                                📁 labs
+                                ├── 📁 lab01
+                                ├── 📁 lab02
+                                ├── 📁 lab03
+                                ├── 📁 lab04
+                                ├── 📁 lab05
+                                ├── 📁 lab06
+                                ├── 📁 lab07
+                                ├── 📁 lab08
+                                ├── 📁 lab09
+                                ├── 📁 lab10
+                                └── 📁 lab11
+                                </pre>
+                            <p>
+                                Notice that the folders are numbered "lab01", "lab02", and so on. If you number
+                                these using only a single digit, then when we labs 10, 11, and 12, the natural
+                                ordering of your folders will be lab1, lab10, lab11, lab12, lab2, lab3, ...
+                            </p>
+                            <p>
+                                This is because the computer sorts the folders in "alphabetical" order, not
+                                "numerical" order. So, lab1 comes before lab10, and lab2 comes after lab10.
+                            </p>
+                            <p>
+                                To avoid this problem, use 2 digit numbers for the lab folders. This way, when we
+                                get to lab10, the folders will be sorted in the correct order: lab01, lab02, lab03,
+                                lab04, lab05, lab06, lab07, lab08, lab09, lab10, lab11.
+                            </p>
+                        </details>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card  (first) -->
 
-            </div> <!-- .container -->
-            <div id="footer">
-                <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
-                <p style="text-align: center;"><em>Use the [Next &gt;] button to continue on to the module
-                        overview.</em>
-                </p>
-            </div> <!-- #footer -->
-        </div> <!-- #lab-assignment-wrapper -->
-        <script src="/course-content/common/js/local.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ex1" aria-expanded="true" aria-controls="ex1">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise #1: Multiply
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ex1" class="collapse show">
+                    <div class="card-body">
+                        <h2>Exercise #1: Multiply</h2>
+                        <p>
+                            Use the dotnet CLI to create a new console application called "multiply". This will create a
+                            new
+                            folder called "multiply" with a new console application inside it. The folder will contain a
+                            Program.cs file and a .csproj file. The .csproj file is the project file that contains
+                            information
+                            about the project, such as the name, version, and dependencies. The Program.cs file is the
+                            main
+                            file that contains the code for the application.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ex1) -->
+
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ex2" aria-expanded="true" aria-controls="ex2">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise #2: Km to Miles
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ex2" class="collapse show">
+                    <div class="card-body">
+                        <h2>Exercise #2: Km to Miles</h2>
+                        <p>
+                            Use the dotnet CLI to create a new console application called "multiply". This will create a
+                            new
+                            folder called "multiply" with a new console application inside it. The folder will contain a
+                            Program.cs file and a .csproj file. The .csproj file is the project file that contains
+                            information
+                            about the project, such as the name, version, and dependencies. The Program.cs file is the
+                            main
+                            file that contains the code for the application.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ex2) -->
+
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ex3" aria-expanded="true" aria-controls="ex3">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise #3: Miles to Km
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ex3" class="collapse show">
+                    <div class="card-body">
+                        <h2>Exercise #3: Miles to Km</h2>
+                        <p>
+                            .
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ex3) -->
+
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#submit" aria-expanded="true" aria-controls="submit">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Review and Submit
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="submit" class="collapse show">
+                    <div class="card-body">
+                        <h2>Review and Submit</h2>
+                        <p>
+                            .
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (submit) -->
+
+
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+            <p style="text-align: center;"><em>Use the [Next &gt;] button to continue on to the module
+                    overview.</em>
+            </p>
+        </div> <!-- #footer -->
+    </div> <!-- #lab-assignment-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
