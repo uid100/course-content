@@ -76,6 +76,7 @@ function getQueryParam(param) {
 async function loadAndRenderJSON() {
     const jsonFilePath = getQueryParam('path');
     const jsonFile = "../edu/" + jsonFilePath + "/content.json";
+    const moduleNum = getQueryParam('module');
 
     if (!jsonFile) {
         document.getElementById('content').textContent = "Error: No JSON file specified.";
@@ -179,6 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const instructorEmail = data?.instructor?.email;
             const instructorLink = data?.instructor?.url;
             const objectives = data?.course?.objectives;
+            const moduleName = data?.course?.modules?.find(m => m.module === moduleNum)?.title;
             const outcomes = data?.course?.outcomes;
             const requiredMaterialsPath = data?.course?.requiredMaterialsPath;
             const recommendedMaterialsPath = data?.course?.recommendedMaterialsPath;
@@ -430,6 +432,12 @@ document.addEventListener("DOMContentLoaded", () => {
             if (onlineClassesLink) {
                 const hrefLink = onlineClassesLink.href
                 onlineClassesLink.href = hrefLink + "?path=" + getQueryParam('path');
+            }
+
+            // update the module name
+            const moduleNameElement = document.getElementById("module-title");
+            if (moduleNameElement) {
+                moduleNameElement.textContent = moduleName;
             }
 
             // modules link
