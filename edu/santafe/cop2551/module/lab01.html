@@ -64,7 +64,7 @@
                 </div> <!-- .collapse -->
             </div> <!-- .card (overview) -->
 
-            <div class="card">
+            <div class="card"> <!-- .card (first) -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
                         data-bs-toggle="collapse" data-bs-target="#first" aria-expanded="true" aria-controls="first">
@@ -139,7 +139,7 @@
                 </div> <!-- .collapse -->
             </div> <!-- .card  (first) -->
 
-            <div class="card">
+            <div class="card"> <!-- .card (ex1) -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
                         data-bs-toggle="collapse" data-bs-target="#ex1" aria-expanded="true" aria-controls="ex1">
@@ -152,7 +152,7 @@
                     <div class="card-body">
                         <h2>Exercise #1: Multiply</h2>
                         <ol id="ex1-steps">
-                            <li>
+                            <li> <!-- create the project -->
                                 <details>
                                     <summary>
                                         <h3>Create the project</h3>
@@ -166,33 +166,39 @@
                                     </p>
                                     <p>
                                         Use the template drop-down filters for language: C# and type: Console. You can
-                                        leave
-                                        platform settings to All.
+                                        leave platform settings to All.
                                     </p>
                                     <p>
                                         Select the Console Application template and click Next.
                                     </p>
                                     <p>
                                         Set the folder (directory) to your new lab folder (Lab01), Name your project
-                                        <code>multiply</code>. You can select to create the solution and project in the
-                                        same directory or not. It is up to you. Later on, you can compare the
-                                        differences.
-                                        Click Next.
+                                        <code>multiply</code>.
+                                    </p>
+                                    <p>
+                                        Uncheck the box for "Place solution and project in the same directory" if it is
+                                        checked and name the solution <code>Lab01</code>. This will enable you to keep
+                                        all of the lab projects in the same solution. Click Next.
                                     </p>
                                     <p>
                                         Check the box for "Do not use top-level statements" and click Create.
                                     </p>
                                     <p>
-                                        This will create a new folder called <code>multiply</code> with a new console
-                                        application inside it.
+                                        In the Solution Explorer within Visual Studio, you will see a <em>solution</em>
+                                        folder named Lab01 and a <em>project</em> folder named multiply.
                                     </p>
                                     <p>
-                                        The folder will contain a Program.cs file and a .csproj file.
+                                        Right-click the solution name (Lab01) and choose <strong>Open Folder in File
+                                            Explorer</strong> (or <strong>Finder</strong> in macOS). This will open the
+                                        folder where your solution is stored. The folder will contain a solution (.sln)
+                                        file, and a project folder. The project folder will have a Program.cs file and a
+                                        .csproj file, and new subfolders for binaries and object files. You can close
+                                        the File Explorer for now. We'll look at it again later.
                                     </p>
                                     <p>
-                                        The <code>.csproj</code> file is the project file that contains information
-                                        about
-                                        the project, such as the name, version, and dependencies.
+                                        The project <code>.csproj</code> file is the project file that contains
+                                        information
+                                        about the project, such as the name, version, and dependencies.
                                     </p>
                                     <p>
                                         The <code>Program.cs</code> file is the main file that contains the code for the
@@ -202,19 +208,16 @@
                                     <div style="font-style: italic; margin: 20px;">
                                         <p>
                                             Run this code to see the output. You can start it by clicking the green
-                                            arrow
-                                            (Start button) in the toolbar or by pressing <code>Ctrl + F5</code>. Or you
-                                            can
-                                            use either of the Start options in the Debug menu.
+                                            arrow (Start button) in the toolbar or by pressing <code>Ctrl + F5</code>.
+                                            Or you can use either of the Start options in the Debug menu.
                                         </p>
                                         <p>
                                             You have successfully created your first C# console application without
-                                            Writing
-                                            any code!
+                                            Writing any code!
                                     </div>
                                 </details>
-                            </li>
-                            <li>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
                                 <details>
                                     <summary>
                                         <h3>Edit the source code</h3>
@@ -304,8 +307,8 @@ class Program
                                         practice.
                                     </p>
                                 </details>
-                            </li>
-                            <li>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- run and test the program -->
                                 <details>
                                     <summary>
                                         <h3>Run and test the program</h3>
@@ -331,7 +334,7 @@ class Program
                                         number?
                                     </p>
                                 </details>
-                            </li>
+                            </li> <!-- run and test the program -->
                         </ol> <!-- #ex1-steps -->
                         <p style="font-style: italic; margin: 20px;">
                             Continue to the next exercise.
@@ -340,7 +343,7 @@ class Program
                 </div> <!-- .collapse -->
             </div> <!-- .card (ex1) -->
 
-            <div class="card">
+            <div class="card"> <!-- .card (ex2) -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
                         data-bs-toggle="collapse" data-bs-target="#ex2" aria-expanded="true" aria-controls="ex2">
@@ -353,20 +356,36 @@ class Program
                     <div class="card-body">
                         <h2>Exercise #2: Km to Miles</h2>
                         <ol>
-                            <li>
+                            <li> <!-- create the project -->
                                 <h3>Create the project</h3>
                                 <p>
-                                    Use Visual Studio to create another console application project. Your application
+                                    Use Visual Studio to create another console application project. This application
                                     will ask the user to enter a distance in kilometers and then convert it to miles.
+                                </p>
+                                <p>
+                                    This time, right-click the solution name (Lab01) and choose
+                                    <strong>Add &gt; New Project</strong>.
                                 </p>
                                 <p>
                                     Name it <code>kmToMiles</code>. It is important to use meaningful descriptive names
                                     for all your identifiers, including project names and variable names and constants,
                                     and soon classes and methods. <code>mylabex</code> is not a good name for a project
-                                    because it gives no indication of what the project is about.
+                                    because it gives no indication of what the project is about. This will create a new
+                                    project in the same solution folder.
                                 </p>
-                            </li>
-                            <li>
+                                <p>
+                                    Right-click the new project name (kmToMiles) in the Solution Explorer and choose
+                                    <strong>Set as Startup Project</strong>. Then, when you use the <strong>Run</strong>
+                                    button, this project will run instead of the previous one. If you want to switch
+                                    back
+                                    to run a different project, you can right-click the project name and choose
+                                    <strong>Set as Startup Project</strong> again, or you can choose Debug &gt; Start
+                                    Without Debugging from the menu to start another project without changing the
+                                    startup
+                                    project.
+                                </p>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
                                 <h3>Edit the source code</h3>
                                 <p>
                                     Open the <code>Program.cs</code> file in the editor.
@@ -417,8 +436,8 @@ class Program
                                     easier to read and understand. It also makes it easier to change the value of the
                                     constant in the future if needed.
                                 </p>
-                            </li>
-                            <li>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- run and test the program -->
                                 <h3>Run and test the program</h3>
                                 <p>
                                     Run the program by clicking the green arrow (Start button) in the toolbar or by
@@ -440,6 +459,7 @@ class Program
                                 <p>
                                     What happens if you enter a negative number? What happens if you enter zero?
                                 </p>
+                            </li> <!-- run and test the program -->
                         </ol>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
