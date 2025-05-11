@@ -52,7 +52,7 @@
                         aria-controls="overview">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Overview (click each header to hide/show)
+                        Overview (click each header to hide/show details)
                     </button>
                 </div> <!-- .card-header -->
                 <div id="overview" class="collapse show">
@@ -79,9 +79,12 @@
                         <details>
                             <summary>File Extensions</summary>
                             <p>Make sure your system is configured to show File Extensions</p>
-                            <p>In Windows Explorer, go to the View tab and check the box for "File name extensions".</p>
-                            <p>In Mac Finder, go to Preferences > Advanced and check the box for "Show all filename
-                                extensions".</p>
+                            <ul>
+                                <li>In Windows Explorer, go to the View tab and check the box for "File name
+                                    extensions".</li>
+                                <li>In Mac Finder, go to Preferences > Advanced and check the box for "Show all filename
+                                    extensions".</li>
+                            </ul>
                         </details>
                         <details>
                             <summary>Lab Folder Structure</summary>
@@ -140,16 +143,117 @@
                 <div id="ex1" class="collapse hide">
                     <div class="card-body">
                         <h2>Exercise #1: Multiply</h2>
-                        <p>
-                            Use the dotnet CLI to create a new console application called "multiply". This will create a
-                            new
-                            folder called "multiply" with a new console application inside it. The folder will contain a
-                            Program.cs file and a .csproj file. The .csproj file is the project file that contains
-                            information
-                            about the project, such as the name, version, and dependencies. The Program.cs file is the
-                            main
-                            file that contains the code for the application.
-                        </p>
+                        <ol>
+                            <li>
+                                <h3>Create the project</h3>
+                                <p>
+                                    Follow the steps in chapter to for:<br>
+                                    <span style="font-weight: bold">
+                                        Beginning programming with the Visual Studio 2022 environment<br>
+                                    </span>
+                                    to create a new project.
+                                </p>
+                                <p>
+                                    Use the template drop-down filters for language: C# and type: Console. You can leave
+                                    platform settings to All.
+                                </p>
+                                <p>
+                                    Select the Console Application template and click Next.
+                                </p>
+                                <p>
+                                    Set the folder (directory) to your new lab folder (Lab01), Name your project
+                                    <code>multiply</code>. You can select to create the solution and project in the
+                                    same directory or not. It is up to you. Later on, you can compare the differences.
+                                    Click Next.
+                                </p>
+                                <p>
+                                    Check the box for "Do not use top-level statements" and click Create.
+                                </p>
+                                <p>
+                                    This will create a new folder called <code>multiply</code> with a new console
+                                    application inside it.
+                                </p>
+                                <p>
+                                    The folder will contain a Program.cs file and a .csproj file.
+                                </p>
+                                <p>
+                                    The <code>.csproj</code> file is the project file that contains information about
+                                    the project, such as the name, version, and dependencies.
+                                </p>
+                                <p>
+                                    The <code>Program.cs</code> file is the main file that contains the code for the
+                                    application.
+                                </p>
+                                <p>&nbsp;</p>
+                                <div style="font-style: italic; margin: 20px;">
+                                    <p>
+                                        Run this code to see the output. You can start it by clicking the green arrow
+                                        (Start button) in the toolbar or by pressing <code>Ctrl + F5</code>. Or you can
+                                        use either of the Start options in the Debug menu.
+                                    </p>
+                                    <p>
+                                        You have successfully created your first C# console application without Writing
+                                        any code!
+                                </div>
+                            </li>
+                            <li>
+                                <h3>Edit the source code</h3>
+                                <p>
+                                    Open the <code>Program.cs</code> file in the editor. You will see a lot of code
+                                    that you did not write. This is the code that was generated for you by Visual
+                                    Studio.
+                                </p>
+                                <p>
+                                    Notice there are three "blocks" of code in the file.
+                                </p>
+                                <p>
+                                    The first block is the <em>namespace</em>. It is named the same as the project.
+                                </p>
+                                <p>
+                                    Inside this, the second block is the <em>class</em> <code>Program</code>. This is
+                                    the
+                                    main class of the program. It contains the <em>entry point</em> of the program and
+                                    it
+                                    is contained in the <code>namespace</code>.
+                                </p>
+                                <p>
+                                    The third block is the <em>method</em> <code>Main()</code>. This is the main method
+                                    of the program. It is where the program starts executing.
+                                </p>
+                                <p>
+                                    When you run the program, it will execute the code in the <code>Main()</code> method
+                                    and print the output, currently "Hello World!" to the console.
+                                </p>
+                                <p>
+                                    Use the editor to replace all the code with the following:
+                                </p>
+                                <pre>
+                                    using System;
+
+                                    class Program
+                                    {
+                                        static void Main()
+                                        {
+                                            int number1;
+                                            int number2;
+                                            int product;
+                                            string userInput;
+                                    
+                                            Console.Write("Enter the first number: ");
+                                            userInput = Console.ReadLine();
+                                            number1 = Convert.ToInt32(userInput);
+                                    
+                                            Console.Write("Enter the second number: ");
+                                            userInput = Console.ReadLine();
+                                            number2 = Convert.ToInt32(userInput);
+                                    
+                                            product = number1 * number2;
+                                    
+                                            Console.WriteLine($"The product of {number1} and {number2} is {product}.");
+                                        }
+                                    }
+                                </pre>
+                            </li>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (ex1) -->
