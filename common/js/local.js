@@ -418,6 +418,7 @@ document.addEventListener("DOMContentLoaded", () => {
             loadContent("accommodations-details", accommodationsPath);
 
             // syllabus link
+            console.log("syllabus...");
             const syllabusLink = document.getElementById("syllabus-button");
             if (syllabusLink) { syllabusLink.href = coursePath + "/assignments/syllabus"; }
 
@@ -429,6 +430,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 // set element to hidden
                 syllabusTemplate.setAttribute("hidden", true);
             }
+            console.log("policies...");
             const deptPolicies = document.getElementById("policies-template");
             if (deptPolicies) {
                 deptPolicies.href = policiesTemplatePath;
@@ -440,7 +442,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // update the module name
-            console.log("moduleNum: " + moduleNum + " moduleName: " + moduleName);
+            console.log("moduleNum: " + moduleNum);
+            console.log(" moduleName: " + moduleName);
             const moduleNameElement = document.getElementById("module-title");
             if (moduleNameElement) {
                 moduleNameElement.textContent = moduleName;
