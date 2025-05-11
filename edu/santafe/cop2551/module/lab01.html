@@ -153,89 +153,102 @@
                         <h2>Exercise #1: Multiply</h2>
                         <ol id="ex1-steps">
                             <li>
-                                <h3>Create the project</h3>
-                                <p>
-                                    Follow the steps in chapter to for:<br>
-                                    <span style="font-weight: bold">
-                                        Beginning programming with the Visual Studio 2022 environment<br>
-                                    </span>
-                                    to create a new project.
-                                </p>
-                                <p>
-                                    Use the template drop-down filters for language: C# and type: Console. You can leave
-                                    platform settings to All.
-                                </p>
-                                <p>
-                                    Select the Console Application template and click Next.
-                                </p>
-                                <p>
-                                    Set the folder (directory) to your new lab folder (Lab01), Name your project
-                                    <code>multiply</code>. You can select to create the solution and project in the
-                                    same directory or not. It is up to you. Later on, you can compare the differences.
-                                    Click Next.
-                                </p>
-                                <p>
-                                    Check the box for "Do not use top-level statements" and click Create.
-                                </p>
-                                <p>
-                                    This will create a new folder called <code>multiply</code> with a new console
-                                    application inside it.
-                                </p>
-                                <p>
-                                    The folder will contain a Program.cs file and a .csproj file.
-                                </p>
-                                <p>
-                                    The <code>.csproj</code> file is the project file that contains information about
-                                    the project, such as the name, version, and dependencies.
-                                </p>
-                                <p>
-                                    The <code>Program.cs</code> file is the main file that contains the code for the
-                                    application.
-                                </p>
-                                <p>&nbsp;</p>
-                                <div style="font-style: italic; margin: 20px;">
+                                <details>
+                                    <summary>Create the project</summary>
                                     <p>
-                                        Run this code to see the output. You can start it by clicking the green arrow
-                                        (Start button) in the toolbar or by pressing <code>Ctrl + F5</code>. Or you can
-                                        use either of the Start options in the Debug menu.
+                                        Follow the steps in chapter to for:<br>
+                                        <span style="font-weight: bold">
+                                            Beginning programming with the Visual Studio 2022 environment<br>
+                                        </span>
+                                        to create a new project.
                                     </p>
                                     <p>
-                                        You have successfully created your first C# console application without Writing
-                                        any code!
-                                </div>
+                                        Use the template drop-down filters for language: C# and type: Console. You can
+                                        leave
+                                        platform settings to All.
+                                    </p>
+                                    <p>
+                                        Select the Console Application template and click Next.
+                                    </p>
+                                    <p>
+                                        Set the folder (directory) to your new lab folder (Lab01), Name your project
+                                        <code>multiply</code>. You can select to create the solution and project in the
+                                        same directory or not. It is up to you. Later on, you can compare the
+                                        differences.
+                                        Click Next.
+                                    </p>
+                                    <p>
+                                        Check the box for "Do not use top-level statements" and click Create.
+                                    </p>
+                                    <p>
+                                        This will create a new folder called <code>multiply</code> with a new console
+                                        application inside it.
+                                    </p>
+                                    <p>
+                                        The folder will contain a Program.cs file and a .csproj file.
+                                    </p>
+                                    <p>
+                                        The <code>.csproj</code> file is the project file that contains information
+                                        about
+                                        the project, such as the name, version, and dependencies.
+                                    </p>
+                                    <p>
+                                        The <code>Program.cs</code> file is the main file that contains the code for the
+                                        application.
+                                    </p>
+                                    <p>&nbsp;</p>
+                                    <div style="font-style: italic; margin: 20px;">
+                                        <p>
+                                            Run this code to see the output. You can start it by clicking the green
+                                            arrow
+                                            (Start button) in the toolbar or by pressing <code>Ctrl + F5</code>. Or you
+                                            can
+                                            use either of the Start options in the Debug menu.
+                                        </p>
+                                        <p>
+                                            You have successfully created your first C# console application without
+                                            Writing
+                                            any code!
+                                    </div>
+                                </details>
                             </li>
                             <li>
-                                <h3>Edit the source code</h3>
-                                <p>
-                                    Open the <code>Program.cs</code> file in the editor. You will see a lot of code
-                                    that you did not write. This is the code that was generated for you by Visual
-                                    Studio.
-                                </p>
-                                <p>
-                                    Notice there are three "blocks" of code in the file.
-                                </p>
-                                <p>
-                                    The first block is the <em>namespace</em>. It is named the same as the project.
-                                </p>
-                                <p>
-                                    Inside this, the second block is the <em>class</em> <code>Program</code>. This is
-                                    the
-                                    main class of the program. It contains the <em>entry point</em> of the program and
-                                    it
-                                    is contained in the <code>namespace</code>.
-                                </p>
-                                <p>
-                                    The third block is the <em>method</em> <code>Main()</code>. This is the main method
-                                    of the program. It is where the program starts executing.
-                                </p>
-                                <p>
-                                    When you run the program, it will execute the code in the <code>Main()</code> method
-                                    and print the output, currently "Hello World!" to the console.
-                                </p>
-                                <p>
-                                    Use the editor to replace all the code with the following:
-                                </p>
-                                <pre style="margin: 20px;">
+                                <details>
+                                    <summary>Edit the source code</summary>
+                                    <p>
+                                        Open the <code>Program.cs</code> file in the editor. You will see a lot of code
+                                        that you did not write. This is the code that was generated for you by Visual
+                                        Studio.
+                                    </p>
+                                    <p>
+                                        Notice there are three "blocks" of code in the file.
+                                    </p>
+                                    <p>
+                                        The first block is the <em>namespace</em>. It is named the same as the project.
+                                    </p>
+                                    <p>
+                                        Inside this, the second block is the <em>class</em> <code>Program</code>. This
+                                        is
+                                        the
+                                        main class of the program. It contains the <em>entry point</em> of the program
+                                        and
+                                        it
+                                        is contained in the <code>namespace</code>.
+                                    </p>
+                                    <p>
+                                        The third block is the <em>method</em> <code>Main()</code>. This is the main
+                                        method
+                                        of the program. It is where the program starts executing.
+                                    </p>
+                                    <p>
+                                        When you run the program, it will execute the code in the <code>Main()</code>
+                                        method
+                                        and print the output, currently "Hello World!" to the console.
+                                    </p>
+                                    <p>
+                                        Use the editor to replace all the code with the following:
+                                    </p>
+                                    <pre style="margin: 20px;">
 using System;
 
 class Program
@@ -266,41 +279,52 @@ class Program
     }
 }
                                 </pre>
-                                <p>
-                                    The comments are there to explain what the code is doing. You can remove them if you
-                                    want. The <code>using System;</code> line is a directive that tells the compiler to
-                                    use the System namespace. This is where the Console class is defined.
-                                </p>
-                                <p>
-                                    Our simple program will prompt for two numbers. The result of multiplying the two
-                                    numbers is called the <em>product.</em>
-                                </p>
-                                <p>
-                                    Use of <code>number1</code>, <code>number2</code>, and <code>product</code> are
-                                    examples of <em>variables</em> with intentional names. The names are descriptive and
-                                    meaningful. They are not just random letters or numbers. This is a good programming
-                                    practice.
-                                </p>
+                                    <p>
+                                        The comments are there to explain what the code is doing. You can remove them if
+                                        you
+                                        want. The <code>using System;</code> line is a directive that tells the compiler
+                                        to
+                                        use the System namespace. This is where the Console class is defined.
+                                    </p>
+                                    <p>
+                                        Our simple program will prompt for two numbers. The result of multiplying the
+                                        two
+                                        numbers is called the <em>product.</em>
+                                    </p>
+                                    <p>
+                                        Use of <code>number1</code>, <code>number2</code>, and <code>product</code> are
+                                        examples of <em>variables</em> with intentional names. The names are descriptive
+                                        and
+                                        meaningful. They are not just random letters or numbers. This is a good
+                                        programming
+                                        practice.
+                                    </p>
+                                </details>
                             </li>
                             <li>
-                                <h3>Run and test the program</h3>
-                                <p>
-                                    Run the program by clicking the green arrow (Start button) in the toolbar or by
-                                    pressing <code>Ctrl + F5</code>. Or you can use either of the Start options in the
-                                    Debug menu.
-                                </p>
-                                <p>
-                                    Enter two integer numbers when prompted. The program will multiply them and display
-                                    the
-                                    result. Observe that the output result is formatted with the numbers you entered and
-                                    that the displayed result is the expected product of the two numbers.
-                                </p>
-                                <p>
-                                    Try entering some different numbers. What happens if you enter a decimal number?
-                                    What
-                                    happens if you enter a letter or a word? What happens if you enter a very large
-                                    number?
-                                </p>
+                                <details>
+                                    <summary>Run and test the program</summary>
+                                    <p>
+                                        Run the program by clicking the green arrow (Start button) in the toolbar or by
+                                        pressing <code>Ctrl + F5</code>. Or you can use either of the Start options in
+                                        the
+                                        Debug menu.
+                                    </p>
+                                    <p>
+                                        Enter two integer numbers when prompted. The program will multiply them and
+                                        display
+                                        the
+                                        result. Observe that the output result is formatted with the numbers you entered
+                                        and
+                                        that the displayed result is the expected product of the two numbers.
+                                    </p>
+                                    <p>
+                                        Try entering some different numbers. What happens if you enter a decimal number?
+                                        What
+                                        happens if you enter a letter or a word? What happens if you enter a very large
+                                        number?
+                                    </p>
+                                </details>
                             </li>
                         </ol> <!-- #ex1-steps -->
                         <p style="font-style: italic; margin: 20px;">
