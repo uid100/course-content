@@ -266,6 +266,23 @@ th {
     font-weight: bold;
 }
 
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    background-color: lightskyblue;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    font-weight: bold;
+}
+
+.card+.card {
+    margin-top: 1rem;
+}
+
+
 .col-20 {
     width: 20%;
 }
