@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started with C# and .NET (CLI)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 1rem auto;
+            max-width: 800px;
+            padding: 0 1rem;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1,
+        h2 {
+            color: #2c3e50;
+        }
+
+        code,
+        pre {
+            background-color: #e8f0fe;
+            padding: 0.3em 0.6em;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+
+        pre {
+            background-color: #f0f0f0;
+            padding: 1em;
+            overflow-x: auto;
+        }
+
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            margin-top: 0;
+        }
+
+        .tip {
+            background-color: #e6f7ff;
+            border-left: 4px solid #1a73e8;
+            padding: 0.5em 1em;
+            margin: 1em 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>👩‍💻 Programming Student Setup Guide: .NET & C# (CLI-Based)</h1>
+    <p>This guide will help you get started with <strong>C# and .NET development</strong> using the <strong>Command Line
+            Interface (CLI)</strong>. It works on both <strong>macOS and Windows</strong>.</p>
+
+    <h2>✅ Step 1: Install .NET and C#</h2>
+    <p>You need the <strong>.NET SDK</strong> to compile and run C# programs.</p>
+
+    <h3>🔍 Check if it's already installed:</h3>
+    <pre><code>dotnet --list-sdks</code></pre>
+
+    <h3>🛠 If nothing is listed:</h3>
+    <p>Download and install the .NET SDK from:</p>
+    <p><a href="https://dotnet.microsoft.com/download" target="_blank">https://dotnet.microsoft.com/download</a></p>
+    <div class="tip">⚠️ Be sure to install the <strong>SDK</strong>, not just the runtime.</div>
+
+    <p>After installing, <strong>restart your terminal</strong> and run <code>dotnet --list-sdks</code> again to
+        confirm.</p>
+
+    <h2>✅ Step 2: Create Your First Console App</h2>
+    <pre><code>dotnet new console -o HelloWorld
+cd HelloWorld</code></pre>
+
+    <p>This creates a folder named <code>HelloWorld</code> with a basic C# app.</p>
+
+    <h2>✅ Step 3: Build and Run the App</h2>
+    <pre><code>dotnet run</code></pre>
+    <p>You should see:</p>
+    <pre><code>Hello, World!</code></pre>
+
+    <h2>✅ Step 4: Open the Project in a Code Editor</h2>
+    <p>If you're using <strong>Visual Studio Code</strong>, open the project like this:</p>
+    <pre><code>code .</code></pre>
+
+    <div class="tip">
+        💡 If <code>code</code> doesn’t work, install the VS Code CLI:<br />
+        In VS Code, press <kbd>Cmd+Shift+P</kbd> (Mac) or <kbd>Ctrl+Shift+P</kbd> (Windows), type <em>Shell
+            Command</em>, and choose “Install 'code' command in PATH”.
+    </div>
+
+    <h2>✅ Step 5: Edit and Experiment</h2>
+    <p>Open <code>Program.cs</code> and try editing the <code>Console.WriteLine</code> message.</p>
+    <p>Then run it again:</p>
+    <pre><code>dotnet run</code></pre>
+
+    <h2>✅ Step 6: Bonus – Check C# Version</h2>
+    <p>You can check your C# language version by inspecting the <code>&lt;LangVersion&gt;</code> in the
+        <code>.csproj</code> file, or check what your SDK supports here:</p>
+    <p><a href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/configure-language-version"
+            target="_blank">C# Language Version Documentation</a></p>
+
+    <h2>📌 Troubleshooting Tips</h2>
+    <ul>
+        <li>Use <code>dotnet --info</code> to get SDK and system details.</li>
+        <li>On macOS, check terminal permissions in <strong>System Settings &gt; Privacy &amp; Security</strong>.</li>
+        <li>On Windows, run Command Prompt or PowerShell as <strong>Administrator</strong> if you get permission errors.
+        </li>
+    </ul>
+
+</body>
+
+</html>
