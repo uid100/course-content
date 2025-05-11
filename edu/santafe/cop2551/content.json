@@ -197,47 +197,47 @@
     ],
     "modules": [
         {
-            "module": 1,
+            "module": "1",
             "title": ".NET/C# & Data types, Variables, and Operators"
         },
         {
-            "module": 2,
+            "module": "2",
             "title": "Methods and Scope"
         },
         {
-            "module": 3,
+            "module": "3",
             "title": "Control Flow - Decision Making"
         },
         {
-            "module": 4,
+            "module": "4",
             "title": "Control Flow - Loops"
         },
         {
-            "module": 5,
+            "module": "5",
             "title": "Exception Handling"
         },
         {
-            "module": 6,
+            "module": "6",
             "title": "Introduction to Object-Oriented Programming (OOP)"
         },
         {
-            "module": 7,
+            "module": "7",
             "title": "Value types, references, enums & structs"
         },
         {
-            "module": 8,
+            "module": "8",
             "title": "Working with Arrays and Collections (Introduction)"
         },
         {
-            "module": 9,
+            "module": "9",
             "title": "Inheritance"
         },
         {
-            "module": 10,
+            "module": "10",
             "title": "Polymorphism and Interfaces"
         },
         {
-            "module": 11,
+            "module": "11",
             "title": "Properties and fields, Encapsulation and Access Modifiers"
         }
     ]
