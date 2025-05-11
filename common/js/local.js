@@ -188,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
             console.log("module-num: " + moduleNum);
             console.log("moduleNum type: ", typeof moduleNum);
             console.log("First module value: ", data.modules[0].module, " type: ", typeof data.course.modules[0].module);
-            const moduleName = data?.modules?.find(m => m.module === moduleNum)?.title;
+            const moduleName = data?.modules?.find(m => String(m.module) === String(moduleNum))?.title;
             console.log("module-name: " + moduleName);
             const outcomes = data?.course?.outcomes;
             const requiredMaterialsPath = data?.course?.requiredMaterialsPath;
