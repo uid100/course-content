@@ -1,5 +1,6 @@
 
 function setPageTitleFromJSON(jsonPath) {
+    console.log("page title");
     fetch(jsonPath)
         .then(response => {
             if (!response.ok) {
@@ -18,6 +19,7 @@ function setPageTitleFromJSON(jsonPath) {
 
 // Function to initialize the timeline
 function initializeTimeline(jsonPath) {
+    console.log("timeline");
     fetch(jsonPath)
         .then(response => {
             if (!response.ok) {
@@ -68,12 +70,14 @@ function initializeTimeline(jsonPath) {
 
 // Function to extract query parameters
 function getQueryParam(param) {
+    console.log("get: " + param);
     const urlParams = new URLSearchParams(window.location.search);
     return urlParams.get(param);
 }
 
 // Load JSON data and render content
 async function loadAndRenderJSON() {
+    console.log("loadAndRenderJSON");
     const jsonFilePath = getQueryParam('path');
     const jsonFile = "../edu/" + jsonFilePath + "/content.json";
     const moduleNum = getQueryParam('module');
@@ -111,7 +115,7 @@ async function loadAndRenderJSON() {
 }
 
 async function loadContent(id, filePath) {
-
+    console.log("loadContent: " + id);
     // Check if the element with the given ID exists
     const element = document.getElementById(id);
     if (!element) {
@@ -134,6 +138,7 @@ async function loadContent(id, filePath) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    console.log("DOMContentLoaded");
     // The path to the JSON file
     const jsonFilePath = "../edu/" + getQueryParam('path');
     const jsonFile = jsonFilePath + "/content.json";
