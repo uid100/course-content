@@ -127,6 +127,14 @@
                                 lab04, lab05, lab06, lab07, lab08, lab09, lab10, lab11.
                             </p>
                         </details>
+                        <details>
+                            <summary>Install Visual Studio</summary>
+                            <p>
+                                Make sure you have the latest version of Visual Studio installed. You can download it
+                                from the Microsoft website. There are more detailed steps in the student resources
+                                module.
+                            </p>
+                        </details>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card  (first) -->
@@ -227,58 +235,77 @@
                                 <p>
                                     Use the editor to replace all the code with the following:
                                 </p>
-                                <pre>
-                                    using System;
+                                <pre style="margin: 20px;">
+using System;
 
-                                    class Program
-                                    {
-                                        static void Main()
-                                        {
-                                            // Declare variables
-                                            int number1;
-                                            int number2;
-                                            int product;
-                                            string userInput;
-                                    
-                                            // Prompt user for input (note the space after the colon)
-                                            Console.Write("Enter the first number: ");
-                                            // Read user input, convert to int, and assign to a variable.
-                                            userInput = Console.ReadLine();
-                                            number1 = Convert.ToInt32(userInput);
-                                    
-                                            Console.Write("Enter the second number: ");
-                                            userInput = Console.ReadLine();
-                                            number2 = Convert.ToInt32(userInput);
-                                    
-                                            // assign the value of the product on the right to the variable on the left
-                                            product = number1 * number2;
-                                    
-                                            // Output the result. The $ sign allows you to use variables in the string.
-                                            Console.WriteLine($"The product of {number1} and {number2} is {product}.");
-                                        }
-                                    }
+class Program
+{
+    static void Main()
+    {
+        // Declare variables
+        int number1;
+        int number2;
+        int product;
+        string userInput;
+
+        // Prompt user for input (note the space after the colon)
+        Console.Write("Enter the first number: ");
+        // Read user input, convert to int, and assign to a variable.
+        userInput = Console.ReadLine();
+        number1 = Convert.ToInt32(userInput);
+
+        Console.Write("Enter the second number: ");
+        userInput = Console.ReadLine();
+        number2 = Convert.ToInt32(userInput);
+
+        // assign the value of the product on the right to the variable on the left
+        product = number1 * number2;
+
+        // Output the result. The $ sign allows you to use variables in the string.
+        Console.WriteLine($"The product of {number1} and {number2} is {product}.");
+    }
+}
                                 </pre>
                                 <p>
                                     The comments are there to explain what the code is doing. You can remove them if you
-                                    want.
-                                    The <code>using System;</code> line is a directive that tells the compiler to use
-                                    the
-                                    System namespace. This is where the Console class is defined.
+                                    want. The <code>using System;</code> line is a directive that tells the compiler to
+                                    use the System namespace. This is where the Console class is defined.
                                 </p>
                                 <p>
                                     Our simple program will prompt for two numbers. The result of multiplying the two
-                                    numbers
-                                    is called the <em>product.</em>
+                                    numbers is called the <em>product.</em>
                                 </p>
                                 <p>
                                     Use of <code>number1</code>, <code>number2</code>, and <code>product</code> are
-                                    examples of
-                                    <em>variables</em> with intentional names. The names are descriptive and meaningful.
-                                    They
-                                    are not just random letters or numbers. This is a good programming practice.
+                                    examples of <em>variables</em> with intentional names. The names are descriptive and
+                                    meaningful. They are not just random letters or numbers. This is a good programming
+                                    practice.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Run and test the program</h3>
+                                <p>
+                                    Run the program by clicking the green arrow (Start button) in the toolbar or by
+                                    pressing <code>Ctrl + F5</code>. Or you can use either of the Start options in the
+                                    Debug menu.
+                                </p>
+                                <p>
+                                    Enter two integer numbers when prompted. The program will multiply them and display
+                                    the
+                                    result. Observe that the output result is formatted with the numbers you entered and
+                                    that the displayed result is the expected product of the two numbers.
+                                </p>
+                                <p>
+                                    Try entering some different numbers. What happens if you enter a decimal number?
+                                    What
+                                    happens if you enter a letter or a word? What happens if you enter a very large
+                                    number?
                                 </p>
                             </li>
                         </ol> <!-- #ex1-steps -->
+                        <p style="font-style: italic; margin: 20px;">
+                            Continue to the next exercise.
+                        </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (ex1) -->
