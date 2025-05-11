@@ -322,16 +322,95 @@ class Program
                 <div id="ex2" class="collapse hide">
                     <div class="card-body">
                         <h2>Exercise #2: Km to Miles</h2>
-                        <p>
-                            Use the dotnet CLI to create a new console application called "multiply". This will create a
-                            new
-                            folder called "multiply" with a new console application inside it. The folder will contain a
-                            Program.cs file and a .csproj file. The .csproj file is the project file that contains
-                            information
-                            about the project, such as the name, version, and dependencies. The Program.cs file is the
-                            main
-                            file that contains the code for the application.
-                        </p>
+                        <ol>
+                            <li>
+                                <h3>Create the project</h3>
+                                <p>
+                                    Use Visual Studio to create another console application project. Your application
+                                    will ask the user to enter a distance in kilometers and then convert it to miles.
+                                </p>
+                                <p>
+                                    Name it <code>kmToMiles</code>. It is important to use meaningful descriptive names
+                                    for all your identifiers, including project names and variable names and constants,
+                                    and soon classes and methods. <code>mylabex</code> is not a good name for a project
+                                    because it gives no indication of what the project is about.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Edit the source code</h3>
+                                <p>
+                                    Open the <code>Program.cs</code> file in the editor.
+                                </p>
+                                <p>
+                                    Replace all the code with your solution.
+                                </p>
+                                <div style="margin:20px; border: 1px solid #ccc; padding: 10px;">
+                                    <p>
+                                        <strong> 1 kilometer = 0.62 miles.</strong>
+                                    </p>
+                                    <p>
+                                        This is the conversion factor that you are given. It must be in your code.
+                                        Do not lookup or calculate another. Using other values will produce unexpected
+                                        results.
+                                    </p>
+                                </div>
+                                <p>
+                                    <strong>Note:</strong> The formula for converting kilometers to miles is:<br>
+                                    <code>miles = kilometers * MILES_PER_KM</code>
+                                </p>
+                                <p>
+                                    <strong>Note:</strong> The constant <code>MILES_PER_KM</code> is a constant
+                                    variable that holds the value of 0.62. It is a good practice to use constants
+                                    for values that do not change in your program.
+                                </p>
+                                <p>
+                                    It is also common practice to use all uppercase letters for constant
+                                    identifiers (names).
+                                </p>
+                                <p>
+                                    In the last exercise, you created integer variables to hold the values of the
+                                    user inputs and the result. In this exercise, use double variables to store inputs,
+                                    outputs and constants.
+                                </p>
+                                <p>
+                                    To convert a string to a double, use the <code>Convert.ToDouble()</code> method.
+                                </p>
+                                <p>
+                                    Give consideration to the names of your variables. Use descriptive names that
+                                    indicate what the variable is used for. For example, <code>km</code> is a good name
+                                    for a variable that holds the value of kilometers.
+                                </p>
+                                <p>
+                                    Avoid using <em>magic numbers</em> (unnamed constant values) in your code. For
+                                    example, instead of using <code>0.62</code> in your code, use a constant variable
+                                    with a meaningful name, such as <code>MILES_PER_KM</code>. This makes your code
+                                    easier to read and understand. It also makes it easier to change the value of the
+                                    constant in the future if needed.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Run and test the program</h3>
+                                <p>
+                                    Run the program by clicking the green arrow (Start button) in the toolbar or by
+                                    pressing <code>Ctrl + F5</code>. Or you can use either of the Start options in the
+                                    Debug menu.
+                                </p>
+                                <p>
+                                    Enter a distance in kilometers when prompted. The program will convert it to miles
+                                    and display the result. Observe that the output result is formatted with the number
+                                    you entered and that the displayed result is the expected conversion of kilometers
+                                    to miles.
+                                </p>
+                                <p>
+                                    Try entering some different numbers. What happens if you enter a decimal number?
+                                    What
+                                    happens if you enter a letter or a word? What happens if you enter a very large
+                                    number?
+                                </p>
+                                <p>
+                                    What happens if you enter a negative number? What happens if you enter zero?
+                                </p>
+                        </ol>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (ex2) -->
@@ -348,9 +427,47 @@ class Program
                 <div id="ex3" class="collapse hide">
                     <div class="card-body">
                         <h2>Exercise #3: Miles to Km</h2>
-                        <p>
-                            .
-                        </p>
+                        <ol>
+                            <li>
+                                <h3>Create the project</h3>
+                                <p>
+                                    Use Visual Studio to create another console application project. Give it a
+                                    descriptive, meaningful name.
+                                </p>
+                                <p>
+                                    Your application will ask the user to enter a distance in miles and then convert it
+                                    to kilometers.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Edit the source code</h3>
+                                <p>
+                                    Open the <code>Program.cs</code> file in the editor.
+                                </p>
+                                <p>
+                                    Replace all the code with your solution.
+                                </p>
+                                <p>
+                                    Use the same conversion factor (1 kilometer = 0.62 miles) as in the previous
+                                    exercise. Adjust your formula and your code accordingly.
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Run and test the program</h3>
+                                <p>
+                                    Run the program and test with different values. Check that the format of the output
+                                    is
+                                    correct and that the conversion is correct.
+                                </p>
+                                <p>
+                                    Hint: the output values from your solution should be consistent with the inputs from
+                                    the previous exercise.
+                                </p>
+                                <p>
+                                    Test with a variety of inputs to confirm the correct results.
+                                </p>
+                            </li>
+                        </ol>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (ex3) -->
