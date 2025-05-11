@@ -435,6 +435,7 @@ document.addEventListener("DOMContentLoaded", () => {
             }
 
             // update the module name
+            console.log("moduleNum: " + moduleNum + " moduleName: " + moduleName);
             const moduleNameElement = document.getElementById("module-title");
             if (moduleNameElement) {
                 moduleNameElement.textContent = moduleName;
