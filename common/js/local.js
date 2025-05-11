@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const instructorLink = data?.instructor?.url;
             const objectives = data?.course?.objectives;
             console.log("module-num: " + moduleNum);
-            const moduleName = data?.course?.modules?.find(m => m.module === moduleNum)?.title;
+            const moduleName = data?.modules?.find(m => m.module === moduleNum)?.title;
             console.log("module-name: " + moduleName);
             const outcomes = data?.course?.outcomes;
             const requiredMaterialsPath = data?.course?.requiredMaterialsPath;
