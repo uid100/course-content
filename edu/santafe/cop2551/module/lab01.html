@@ -234,12 +234,15 @@
                                     {
                                         static void Main()
                                         {
+                                            // Declare variables
                                             int number1;
                                             int number2;
                                             int product;
                                             string userInput;
                                     
+                                            // Prompt user for input (note the space after the colon)
                                             Console.Write("Enter the first number: ");
+                                            // Read user input, convert to int, and assign to a variable.
                                             userInput = Console.ReadLine();
                                             number1 = Convert.ToInt32(userInput);
                                     
@@ -247,12 +250,33 @@
                                             userInput = Console.ReadLine();
                                             number2 = Convert.ToInt32(userInput);
                                     
+                                            // assign the value of the product on the right to the variable on the left
                                             product = number1 * number2;
                                     
+                                            // Output the result. The $ sign allows you to use variables in the string.
                                             Console.WriteLine($"The product of {number1} and {number2} is {product}.");
                                         }
                                     }
                                 </pre>
+                                <p>
+                                    The comments are there to explain what the code is doing. You can remove them if you
+                                    want.
+                                    The <code>using System;</code> line is a directive that tells the compiler to use
+                                    the
+                                    System namespace. This is where the Console class is defined.
+                                </p>
+                                <p>
+                                    Our simple program will prompt for two numbers. The result of multiplying the two
+                                    numbers
+                                    is called the <em>product.</em>
+                                </p>
+                                <p>
+                                    Use of <code>number1</code>, <code>number2</code>, and <code>product</code> are
+                                    examples of
+                                    <em>variables</em> with intentional names. The names are descriptive and meaningful.
+                                    They
+                                    are not just random letters or numbers. This is a good programming practice.
+                                </p>
                             </li>
                         </ol> <!-- #ex1-steps -->
                     </div> <!-- .card-body -->
