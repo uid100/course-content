@@ -45,7 +45,7 @@
 
         <h1>&nbsp;</h1>
         <div class="container my-4 px-2">
-            <div class="card">
+            <div class="card"> <!-- .card overview -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
                         data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
@@ -55,7 +55,7 @@
                         Chapter 1: Introduction to C#
                     </button>
                 </div> <!-- .card-header -->
-                <div id="overview" class="collapse show">
+                <div id="overview" class="collapse hide">
                     <div class="card-body">
                         <h3>Introduction</h3>
                         <p>
@@ -72,7 +72,7 @@
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (overview) -->
-            <div class="card"> <!-- .card -->
+            <div class="card"> <!-- .card ide-->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
                         data-bs-toggle="collapse" data-bs-target="#ide" aria-expanded="true" aria-controls="first">
@@ -91,7 +91,7 @@
                             multiple programming languages, including C#, and offers features like code editing,
                             debugging, and project management.
                         </p>
-                        <div style="padding: 20px; border='1px solid #ccc; background-color: #f9f9f9;">
+                        <div style="padding: 20px; border:1px solid #ccc; background-color: #f9f9f9;">
                             <p>
                                 An <strong>IDE</strong> is more than just a text editor, or a compiler. It is a complete
                                 environment for writing, testing, and debugging code. It includes a text editor, a
@@ -119,26 +119,27 @@
                                 coding within the IDE’s editor.
                             </p>
                         </div> <!-- .card-body -->
-                    </div> <!-- .collapse -->
-                </div> <!-- .card (IDE) -->
-                <div class="card"> <!-- .card -->
-                    <div class="card-header">
-                        <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                            data-bs-toggle="collapse" data-bs-target="#concepts" aria-expanded="true"
-                            aria-controls="concepts">
-                            <span class="icon"><i class="fas fa-chevron-down"></i></span>
-                            <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                            Concepts
-                        </button>
-                    </div> <!-- .card-header -->
-                    <div id="concepts" class="collapse hide">
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ide) -->
+            <div class="card"> <!-- .card concepts-->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#concepts" aria-expanded="true"
+                        aria-controls="concepts">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Concepts
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="concepts" class="collapse hide">
+                    <div class="card-body">
                         <h2>Key Concepts</h2>
                         <ul>
                             <li>
                                 Program Entry Point: Every C# console application begins execution from the Main
-                                method.
-                                It serves as the entry point of the program and typically resides in a class like
-                                Program.
+                                method. It serves as the entry point of the program and typically resides in a class
+                                like Program.
                             </li>
                             <li>
                                 Namespaces: Namespaces organize code into logical groups and prevent name conflicts.
@@ -156,7 +157,7 @@
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (concepts) -->
-            <div class="card"> <!-- .card -->
+            <div class="card"> <!-- .card comments-->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
                         data-bs-toggle="comments" data-bs-target="#comments" aria-expanded="true"
@@ -197,7 +198,7 @@ int sum = a + b;
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card (overview) -->
+            </div> <!-- .card (comments) -->
         </div> <!-- .container -->
         <div id="footer">
             <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
