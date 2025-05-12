@@ -91,58 +91,56 @@
                 </div> <!-- .card-header -->
                 <div id="identifiers" class="collapse hide">
                     <div class="card-body">
-                        <h2>IDE</h2>
-                        <h3>Visual Studio</h3>
+                        <h2>Working with identifiers</h2>
                         <p>
-                            Visual Studio is an integrated development environment (IDE) from Microsoft that provides
-                            developers with a comprehensive set of tools for building applications. It supports
-                            multiple programming languages, including C#, and offers features like code editing,
-                            debugging, and project management.
-                        </p>
-                        <div style="padding: 20px; border:1px solid #ccc; background-color: #f9f9f9;">
-                            <p>
-                                An <strong>IDE</strong> is more than just a text editor, or a compiler. It is a complete
-                                environment for writing, testing, and debugging code. It includes a text editor, a
-                                compiler, a debugger, and other tools that help you write and test your code.
-                            </p>
-                        </div>
-                        <p>
-                            Don't be overwhelmed by the number of features in Visual Studio. You will not use all of
-                            them at
-                            once. You will learn to use them as you need them. The IDE is designed to help you
-                            write code faster and more efficiently.
+                            A significant portion of the chapter deals with identifiers, the names you give to various
+                            elements
+                            in your code, such as variables, constants, classes, and methods.
                         </p>
                         <p>
-                            To start using C#, you need to install Visual Studio. The Community Edition is free
-                            and suitable for individual developers and small teams. Once installed, you can
-                            create a new project, select a template (e.g., Console App), and begin coding.
+                            The chapter details the rules for creating valid identifiers and perhaps doesn't go far
+                            enough to stress best practices for choosing descriptive and meaningful names. Consistent
+                            and clear naming conventions are crucial for code readability, maintainability, and
+                            collaboration, even extends to the importance of filename conventions for project
+                            organization.
                         </p>
                         <p>
-                            Visual Studio is the official integrated development environment (IDE) for .NET
-                            development.
-                            It
-                            provides a powerful interface for writing, testing, and debugging C# code. Developers
-                            typically
-                            start by creating a new project using a template, such as a Console App or Web App, and
-                            begin
-                            coding within the IDE’s editor.
+                            The purpose and content of your files and code should be clear from the names you choose.
+                            This is a skill that develops over time, but you should always strive to make your code
+                            as self-documenting as possible. This means that someone reading your code should be able
+                            to understand what it does without needing extensive comments or documentation.
+                        </p>
+                        <p>
+                            The chapter describes language keywords (reserved words with special meaning
+                            in C#) and that they are restricted from variable use, but rather than immediately
+                            memorizing a new vocabulary list, learn how you can use the IDE (Visual Studio)
+                            to help identify these while you are coding.
+                        </p>
+                        <p>
+                            We use variables to store and manipulate data. Through the semester we will learn more about
+                            selecting and using data types for short and long term memory storage. For now, make note of
+                            the subtle distinction between declaring (announcing a variable's name and type), assigning
+                            (giving a variable a value), and initializing (assigning an initial value during
+                            declaration).
+                        </p>
+                        <p style="text-align:center; padding:20px; border: 1px solid #ccc;">
+                            initialization = declaration + assignment
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card (ide) -->
-            <div class="card"> <!-- .card concepts-->
+            </div> <!-- .card identifiers -->
+            <div class="card"> <!-- .card math-->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#concepts" aria-expanded="true"
-                        aria-controls="concepts">
+                        data-bs-toggle="collapse" data-bs-target="#math" aria-expanded="true" aria-controls="math">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
                         Concepts
                     </button>
                 </div> <!-- .card-header -->
-                <div id="concepts" class="collapse hide">
+                <div id="math" class="collapse hide">
                     <div class="card-body">
-                        <h2>Key Concepts</h2>
+                        <h2>Data Types and Rules</h2>
                         <ul>
                             <li>
                                 Program Entry Point: Every C# console application begins execution from the Main
@@ -164,49 +162,7 @@
                         </ul>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card (concepts) -->
-            <div class="card"> <!-- .card comments-->
-                <div class="card-header">
-                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="comments" data-bs-target="#comments" aria-expanded="true"
-                        aria-controls="comments">
-                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
-                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Developer Best Practices: Comments
-                    </button>
-                </div> <!-- .card-header -->
-                <div id="comments" class="collapse hide">
-                    <div class="card-body">
-                        <h2>Developer Best Practices</h2>
-                        <p>
-                            Writing clear, concise comments is a key part of professional development. Use // for
-                            single-line comments and /* */ for multi-line comments. Good comments explain why code
-                            exists or how complex logic works—not what the code is doing, if it's already clear.
-                        </p>
-                        <p>
-                            Comments should be used to explain the purpose of the code, not to restate what the code
-                            does. For example, instead of writing:
-                        </p>
-                        <pre>
-// This code adds two numbers
-int sum = a + b;
-</pre>
-                        <p>
-                            You should write:
-                        </p>
-                        <pre>
-// Calculate the sum of two numbers
-int sum = a + b;
-</pre>
-                        <p>
-                            The extra explanation in the example code is for student benefit. For now, you should add
-                            any comments that help you understand the code. As you gain experience, you will learn to
-                            balance the need for comments with the need for clean, readable, <em>self-documenting</em>
-                            code.
-                        </p>
-                    </div> <!-- .card-body -->
-                </div> <!-- .collapse -->
-            </div> <!-- .card (comments) -->
+            </div> <!-- .card math -->
         </div> <!-- .container -->
         <div id="footer">
             <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
