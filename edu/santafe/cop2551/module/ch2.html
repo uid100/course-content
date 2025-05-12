@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="lab-assignment-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <h1>&nbsp;</h1>
+        <div class="container my-4 px-2">
+            <div class="card"> <!-- .card overview -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Chapter 1: Introduction to C#
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="overview" class="collapse hide">
+                    <div class="card-body">
+                        <h3>Introduction</h3>
+                        <p>
+                            C# (pronounced "C-sharp") is a modern, object-oriented programming language developed by
+                            Microsoft as part of its .NET platform. It is designed for building a wide range of
+                            applications, from desktop and web to mobile and cloud-based solutions. C# combines the
+                            power of C++ with the simplicity of Visual Basic, offering a versatile and
+                            developer-friendly syntax.
+                        </p>
+                        <p>
+                            Like other languages, C# is continuing to evolve and improve, with strong guidance from
+                            the community.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (overview) -->
+            <div class="card"> <!-- .card ide-->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ide" aria-expanded="true" aria-controls="first">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        IDE
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ide" class="collapse hide">
+                    <div class="card-body">
+                        <h2>IDE</h2>
+                        <h3>Visual Studio</h3>
+                        <p>
+                            Visual Studio is an integrated development environment (IDE) from Microsoft that provides
+                            developers with a comprehensive set of tools for building applications. It supports
+                            multiple programming languages, including C#, and offers features like code editing,
+                            debugging, and project management.
+                        </p>
+                        <div style="padding: 20px; border:1px solid #ccc; background-color: #f9f9f9;">
+                            <p>
+                                An <strong>IDE</strong> is more than just a text editor, or a compiler. It is a complete
+                                environment for writing, testing, and debugging code. It includes a text editor, a
+                                compiler, a debugger, and other tools that help you write and test your code.
+                            </p>
+                        </div>
+                        <p>
+                            Don't be overwhelmed by the number of features in Visual Studio. You will not use all of
+                            them at
+                            once. You will learn to use them as you need them. The IDE is designed to help you
+                            write code faster and more efficiently.
+                        </p>
+                        <p>
+                            To start using C#, you need to install Visual Studio. The Community Edition is free
+                            and suitable for individual developers and small teams. Once installed, you can
+                            create a new project, select a template (e.g., Console App), and begin coding.
+                        </p>
+                        <p>
+                            Visual Studio is the official integrated development environment (IDE) for .NET
+                            development.
+                            It
+                            provides a powerful interface for writing, testing, and debugging C# code. Developers
+                            typically
+                            start by creating a new project using a template, such as a Console App or Web App, and
+                            begin
+                            coding within the IDE’s editor.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ide) -->
+            <div class="card"> <!-- .card concepts-->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#concepts" aria-expanded="true"
+                        aria-controls="concepts">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Concepts
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="concepts" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Key Concepts</h2>
+                        <ul>
+                            <li>
+                                Program Entry Point: Every C# console application begins execution from the Main
+                                method. It serves as the entry point of the program and typically resides in a class
+                                like Program.
+                            </li>
+                            <li>
+                                Namespaces: Namespaces organize code into logical groups and prevent name conflicts.
+                                For
+                                example, System is a common namespace that provides basic functionality like
+                                input/output and string handling.
+                            </li>
+                            <li>
+                                Using Statement: The using directive allows easy access to types in a namespace
+                                without
+                                requiring full qualification. For instance, using System; lets you use
+                                Console.WriteLine() directly instead of System.Console.WriteLine().
+                            </li>
+                        </ul>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (concepts) -->
+            <div class="card"> <!-- .card comments-->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="comments" data-bs-target="#comments" aria-expanded="true"
+                        aria-controls="comments">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Developer Best Practices: Comments
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="comments" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Developer Best Practices</h2>
+                        <p>
+                            Writing clear, concise comments is a key part of professional development. Use // for
+                            single-line comments and /* */ for multi-line comments. Good comments explain why code
+                            exists or how complex logic works—not what the code is doing, if it's already clear.
+                        </p>
+                        <p>
+                            Comments should be used to explain the purpose of the code, not to restate what the code
+                            does. For example, instead of writing:
+                        </p>
+                        <pre>
+// This code adds two numbers
+int sum = a + b;
+</pre>
+                        <p>
+                            You should write:
+                        </p>
+                        <pre>
+// Calculate the sum of two numbers
+int sum = a + b;
+</pre>
+                        <p>
+                            The extra explanation in the example code is for student benefit. For now, you should add
+                            any comments that help you understand the code. As you gain experience, you will learn to
+                            balance the need for comments with the need for clean, readable, <em>self-documenting</em>
+                            code.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (comments) -->
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+            <p style="text-align: center;"><em>Use the [Next &gt;] button to continue on to the module
+                    overview.</em>
+            </p>
+        </div> <!-- #footer -->
+    </div> <!-- #lab-assignment-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
