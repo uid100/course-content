@@ -151,7 +151,7 @@ Greet("Alice", 30);
                         aria-controls="modular">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Parameters and Arguments
+                        Writing Modular Code
                     </button>
                 </div> <!-- .card-header -->
                 <div id="modular" class="collapse hide">
@@ -303,6 +303,66 @@ class Printer
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card scope -->
+
+            <div class="card"> <!-- .card opt-->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#scope" aria-expanded="true" aria-controls="scope">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Optional and named parameters
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="scope" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Using Optional and Named Parameters in C#</h2>
+                        <p>
+                            In C#, <strong>optional parameters</strong> allow you to omit arguments when calling a
+                            method. These parameters have default values defined in the method signature.
+                        </p>
+                        <pre style="padding:20px;"><code>
+void Greet(string name = "Guest")
+{
+    Console.WriteLine("Hello, " + name);
+}
+
+Greet();         // Output: Hello, Guest
+Greet("Alice");  // Output: Hello, Alice
+                        </code></pre>
+                        <p style="padding:20px; margin: 10px; border: 1px solid #ccc;">
+                            <strong>Important:</strong> Optional parameters must be defined after all required
+                            parameters in the method signature.
+                        </p>
+
+
+                        <h2>Named Parameters</h2>
+                        <p>
+                            <strong>Named parameters</strong> let you specify the name of the parameter when passing
+                            arguments, which improves readability and allows you to pass arguments in any order.
+                        </p>
+                        <pre style-="padding:20px;"><code>
+void DisplayInfo(string name, int age)
+{
+    Console.WriteLine(name + " is " + age + " years old.");
+}
+
+DisplayInfo(age: 30, name: "Bob");  // Output: Bob is 30 years old.
+                        </code></pre>
+
+                        <p>
+                            You can also combine <strong>named</strong> and <strong>optional</strong> parameters for
+                            more flexibility.
+                        </p>
+
+                        <p style="padding:20px; margin: 10px; border: 1px solid #ccc;">
+                            <strong>Note:</strong> Be cautious with optional parameters, as they can lead to
+                            ambiguity if overloaded methods have similar signatures. The C# compiler may not always
+                            be able to determine which method to call.
+                        </p>
+
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card opt -->
 
         </div> <!-- .container -->
         <div id="footer">
