@@ -218,6 +218,47 @@ class Program
                                         a value to anything. This makes sense since there is no calling method to return
                                         to.
                                     </p>
+                                    <h3>GetDimension()</h3>
+                                    <p>
+                                        While most of the code and syntax should be familiar to you, one line may look a
+                                        little different and is worth explaining.
+                                    </p>
+                                    <p>
+                                        <code>while (!double.TryParse(Console.ReadLine(), out value) || value &lt; 0)</code>
+                                    </p>
+                                    <p>
+                                        This line is a little more complex than the others. This line is part of a loop
+                                        that
+                                        keeps asking the user for input until they enter a valid positive number.
+                                    </p>
+                                    <h4>step-by-step:</h4>
+                                    <ol>
+                                        <li><code>Console.ReadLine()</code><br>
+                                            → Reads what the user types in the console as a string.
+                                        </li>
+                                        <li><code>double.TryParse(..., out value)</code><br>
+                                            → Tries to convert that string into a double number.<br>
+                                            → If it works, the result is stored in value.<br>
+                                            → It returns true if the conversion is successful, or false if it fails
+                                            (like if the user types letters).
+                                        </li>
+                                        <li><code>while (!double.TryParse(...))</code><br>
+                                            → The ! means "not".<br>
+                                            → So loop will continue to be true when the input is not a number.
+                                        </li>
+                                        <li><code>value < 0</code><br>
+                                            → This checks if the number is negative.
+                                        </li>
+                                        <li><code>||</code><br>
+                                            → The || operator means "or".<br>
+                                            → So the condition is true if either the input is not a number or it’s a
+                                            negative number.
+                                        </li>
+                                    </ol>
+                                    <h4>So the full meaning is:</h4>
+                                    <p>
+                                        "Keep asking the user until they type a number that is not negative."
+                                    </p>
                                 </details>
                             </li> <!-- edit the source code -->
                             <li> <!-- run and test the program -->
