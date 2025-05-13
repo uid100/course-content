@@ -155,20 +155,21 @@ class Program
                             <li> <!-- explain -->
                                 <details>
                                     <summary>Explanation</summary>
-                                    <p>Understanding the code</p>
+                                    <h2>Understanding the code</h2>
                                     <p>
                                         Most of the code and syntax should be familiar to you. The program uses the
                                         <code>double</code> data type to store the dimensions and volume of the box.
                                     </p>
+                                    <h3>Main()</h3>
                                     <p>
-                                        Main() is the entry point of the program. It calls the
-                                        <code>GetDimension()</code>
-                                        method three times to get the height, width, and depth of the box from the user.
-                                        <code>CalculateVolume</code> calculates the volume of the box using the formula
-                                        <code>volume = height * width * depth</code>. DisplayResults() outputs the
-                                        results
-                                        to the console.
+                                        <code>Main()</code> is the entry point of the program. It calls the
+                                        <code>GetDimension()</code> method three times to get the height, width, and
+                                        depth of the box from the user. <code>CalculateVolume</code> calculates the
+                                        volume of the box using the formula
+                                        <code>volume = height * width * depth</code>.
+                                        DisplayResults() outputs the results to the console.
                                     </p>
+                                    <h3>Method signatures</h3>
                                     <p>
                                         Notice the signature for each method.
                                     <ul>
@@ -186,6 +187,27 @@ class Program
                                         For each call to a methods, the compiler will look for a method with the same
                                         name and the same number and type of parameters. If it finds one, it will call
                                         that method.
+                                    </p>
+                                    <h3>Return values and types</h3>
+                                    <p>
+                                        From the method definitions, you can see that the <code>GetDimension()</code>
+                                        method
+                                        and the <code>CalculateVolume()</code> method return a <code>double</code>
+                                        value. And
+                                        in the code, there is a corresponding <code>return</code> statement in each of
+                                        those methods.
+                                    </p>
+                                    <p>
+                                        <code>DisplayResults()</code> and <code>Main()</code> are both declared with a
+                                        <code>void</code> return type. This means that they do not return a value. The
+                                        <em>Display</em> method is used to output to the console nothing is expected to
+                                        be
+                                        returned.
+                                    </p>
+                                    <p>
+                                        Since <code>Main()</code> is the entry point of the program, it does not return
+                                        a value to anything. This makes sense since there is no calling method to return
+                                        to.
                                     </p>
                                 </details>
                             </li> <!-- edit the source code -->
