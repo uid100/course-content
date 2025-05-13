@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="lab-assignment-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <h1>Lab 02: Define and use custom methods in C#</h1>
+        <p style="margin:10px;">
+            <strong>Objective:</strong> Practice creating methods with and without parameters, with and without return
+            values, including the use of optional parameters.
+        </p>
+        <div class="container my-4 px-2">
+            <div class="card"> <!-- .card (overview) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Overview (click each header to hide/show details)
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="overview" class="collapse show">
+                    <div class="card-body">
+                        <p>This assignment will guide you through writing a structured C# program that handles 3D object
+                            dimensions and calculates the volume. You will build on a basic program by adding methods of
+                            increasing complexity.</p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (overview) -->
+
+            <div class="card"> <!-- .card (ex1) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ex1" aria-expanded="true" aria-controls="ex1">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise #1: Dimensions (Guided Exercise)
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ex1" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise #1: Multiply</h2>
+                        <ol id="ex1-steps">
+                            <li> <!-- create the project -->
+                                <details>
+                                    <summary>Create the project</summary>
+                                    <p>
+                                        Create a new C# console application project in Visual Studio.
+                                    <ul>project name: boxDimensions</ul>
+                                    <ul>solution name: Lab02</ul>
+                                    </p>
+                                    <p>
+                                        Replace the source code with the following and update the header
+                                        with your information.:
+                                    </p>
+                                    <pre style="margin: 20px;"><code>
+/*
+* Author:        First Last Name
+* Date:          YYYY-MM-DD
+* Class:         Santa Fe College, COP2551 OOP-1 with C#
+* Assignment:    Lab 02 - Exercise #1 - Box Dimensions
+* Description:   C# console application that handles 3D object dimensions and 
+*                calculates the volume.
+*/
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        double height = GetDimension("height");
+        double width = GetDimension("width");
+        double depth = GetDimension("depth");
+
+        double volume = CalculateVolume(height, width, depth);
+
+        DisplayResults(height, width, depth, volume);
+    }
+
+    static double GetDimension(string name)
+    {
+        Console.Write($"Enter {name}: ");
+        double value;
+        while (!double.TryParse(Console.ReadLine(), out value) || value < 0)
+        {
+            Console.Write($"Invalid input. Please enter a positive number for {name}: ");
+        }
+        return value;
+    }
+
+    static double CalculateVolume(double height, double width, double depth)
+    {
+        return height * width * depth;
+    }
+
+    static void DisplayResults(double height, double width, double depth, double volume)
+    {
+        Console.WriteLine($"\nHeight: {height}");
+        Console.WriteLine($"Width : {width}");
+        Console.WriteLine($"Depth : {depth}");
+        Console.WriteLine($"Volume: {volume}");
+    }
+}
+                                            
+                                        </code>
+                                    </p>
+
+                                </details>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
+                                <details>
+                                    <summary>Edit the source code</summary>
+                                    <p>
+                                        Open the <code>Program.cs</code> file in the editor. You will see a lot of code
+                                        that you did not write. This is the code that was generated for you by Visual
+                                        Studio.
+                                    </p>
+                                    <p>
+                                        Notice there are three "blocks" of code in the file.
+                                    </p>
+                                    <p>
+                                        The first block is the <em>namespace</em>. It is named the same as the project.
+                                    </p>
+                                    <p>
+                                        Inside this, the second block is the <em>class</em> <code>Program</code>. This
+                                        is
+                                        the
+                                        main class of the program. It contains the <em>entry point</em> of the program
+                                        and
+                                        it
+                                        is contained in the <code>namespace</code>.
+                                    </p>
+                                    <p>
+                                        The third block is the <em>method</em> <code>Main()</code>. This is the main
+                                        method
+                                        of the program. It is where the program starts executing.
+                                    </p>
+                                    <p>
+                                        When you run the program, it will execute the code in the <code>Main()</code>
+                                        method
+                                        and print the output, currently "Hello World!" to the console.
+                                    </p>
+                                    <p>
+                                        Use the editor to replace all the code with the following:
+                                    </p>
+                                    <p>
+                                        Do not skip the header. This is required for all your assignments.
+                                        You can use this same format for all your assignments. Just update the
+                                        information for each assignment.
+                                    </p>
+                                    <pre style="margin: 20px;">
+/*
+* Author:        First Last Name
+* Date:          YYYY-MM-DD
+* Class:         Santa Fe College, COP2551 OOP-1 with C#
+* Assignment:    Lab 01 - Exercise #1 - Multiply
+* Description:   A simple C# console application that takes two integers as input 
+*                and prints their product to the console.
+*/
+
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Declare variables
+        int number1;
+        int number2;
+        int product;
+        string userInput;
+
+        // Prompt user for input (note the space after the colon)
+        Console.Write("Enter the first number: ");
+        // Read user input, convert to int, and assign to a variable.
+        userInput = Console.ReadLine();
+        number1 = Convert.ToInt32(userInput);
+
+        Console.Write("Enter the second number: ");
+        userInput = Console.ReadLine();
+        number2 = Convert.ToInt32(userInput);
+
+        // assign the value of the product on the right to the variable on the left
+        product = number1 * number2;
+
+        // Output the result. The $ sign allows you to use variables in the string.
+        Console.WriteLine($"The product of {number1} and {number2} is {product}.");
+    }
+}
+                                </pre>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- run and test the program -->
+                                <details>
+                                    <summary>Run and test the program</summary>
+                                    <p>
+                                        Run the program by clicking the green arrow (Start button) in the toolbar or by
+                                        pressing <code>Ctrl + F5</code>. Or you can use either of the Start options in
+                                        the
+                                        Debug menu.
+                                    </p>
+                                    <p>
+                                        Enter two integer numbers when prompted. The program will multiply them and
+                                        display
+                                        the
+                                        result. Observe that the output result is formatted with the numbers you entered
+                                        and
+                                        that the displayed result is the expected product of the two numbers.
+                                    </p>
+                                    <p>
+                                        Try entering some different numbers. What happens if you enter a decimal number?
+                                        What
+                                        happens if you enter a letter or a word? What happens if you enter a very large
+                                        number?
+                                    </p>
+                                </details>
+                            </li> <!-- run and test the program -->
+                        </ol> <!-- #ex1-steps -->
+                        <p style="font-style: italic; margin: 20px;">
+                            Continue to the next exercise.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ex1) -->
+
+            <div class="card"> <!-- .card (ex2) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ex2" aria-expanded="true" aria-controls="ex2">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise #2: Km to Miles
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ex2" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise #2: Km to Miles</h2>
+                        <ol>
+                            <li> <!-- create the project -->
+                                <details>
+                                    <summary>Create the project</summary>
+                                    <p>
+                                        Use Visual Studio to create another console application project. This
+                                        application
+                                        will ask the user to enter a distance in kilometers and then convert it to
+                                        miles.
+                                    </p>
+                                    <p>
+                                        This time, right-click the solution name (Lab01) in the Solution Explorer and
+                                        choose
+                                        <strong>Add &gt; New Project</strong>.
+                                    </p>
+                                    <p>
+                                        Name it <code>kmToMiles</code>. It is important to use meaningful descriptive
+                                        names
+                                        for all your identifiers, including project names and variable names and
+                                        constants,
+                                        and soon classes and methods. <code>mylabex</code> is not a good name for a
+                                        project
+                                        because it gives no indication of what the project is about. This will create a
+                                        new
+                                        project in the same solution folder.
+                                    </p>
+                                    <p>
+                                        Right-click the new project name (kmToMiles) in the Solution Explorer and choose
+                                        <strong>Set as Startup Project</strong>. Then, when you use the
+                                        <strong>Run</strong>
+                                        button, this project will run instead of the previous one. If you want to switch
+                                        back
+                                        to run a different project, you can right-click the project name and choose
+                                        <strong>Set as Startup Project</strong> again, or you can choose Debug &gt;
+                                        Start
+                                        Without Debugging from the menu to start another project without changing the
+                                        startup project.
+                                    </p>
+                                </details>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
+                                <details>
+                                    <summary>Edit the source code</summary>
+                                    <p>
+                                        Open the <code>Program.cs</code> file in the editor.
+                                    </p>
+                                    <p>
+                                        Replace all the code with your solution.
+                                    </p>
+                                    <div style="margin:20px; border: 1px solid #ccc; padding: 10px;">
+                                        <p>
+                                            <strong> 1 kilometer = 0.62 miles.</strong>
+                                        </p>
+                                        <p>
+                                            This is the conversion factor that you are given. It must be in your code.
+                                            Do not lookup or calculate another. Using other values will produce
+                                            unexpected
+                                            results.
+                                        </p>
+                                    </div>
+                                    <p>
+                                        <strong>Note:</strong> The formula for converting kilometers to miles is:<br>
+                                        <code>miles = kilometers * MILES_PER_KM</code>
+                                    </p>
+                                    <p>
+                                        <strong>Note:</strong> The constant <code>MILES_PER_KM</code> is a constant
+                                        variable that holds the value of 0.62. It is a good practice to use constants
+                                        for values that do not change in your program.
+                                    </p>
+                                    <p>
+                                        It is also common practice to use all uppercase letters for constant
+                                        identifiers (names).
+                                    </p>
+                                    <p>
+                                        In the last exercise, you created integer variables to hold the values of the
+                                        user inputs and the result. In this exercise, use double variables to store
+                                        inputs,
+                                        outputs and constants.
+                                    </p>
+                                    <p>
+                                        To convert a string to a double, use the <code>Convert.ToDouble()</code> method.
+                                    </p>
+                                    <p>
+                                        Give consideration to the names of your variables. Use descriptive names that
+                                        indicate what the variable is used for. For example, <code>km</code> is a good
+                                        name
+                                        for a variable that holds the value of kilometers.
+                                    </p>
+                                    <p>
+                                        Avoid using <em>magic numbers</em> (unnamed constant values) in your code. For
+                                        example, instead of using <code>0.62</code> in your code, use a constant
+                                        variable
+                                        with a meaningful name, such as <code>MILES_PER_KM</code>. This makes your code
+                                        easier to read and understand. It also makes it easier to change the value of
+                                        the
+                                        constant in the future if needed.
+                                    </p>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- run and test the program -->
+                                <details>
+                                    <summary>Run and test the program</summary>
+                                    <p>
+                                        Run the program by clicking the green arrow (Start button) in the toolbar or by
+                                        pressing <code>Ctrl + F5</code>. Or you can use either of the Start options in
+                                        the
+                                        Debug menu.
+                                    </p>
+                                    <p>
+                                        Enter a distance in kilometers when prompted. The program will convert it to
+                                        miles
+                                        and display the result. Observe that the output result is formatted with the
+                                        number
+                                        you entered and that the displayed result is the expected conversion of
+                                        kilometers
+                                        to miles.
+                                    </p>
+                                    <p>
+                                        Try entering some different numbers. What happens if you enter a decimal number?
+                                        What
+                                        happens if you enter a letter or a word? What happens if you enter a very large
+                                        number?
+                                    </p>
+                                    <p>
+                                        What happens if you enter a negative number? What happens if you enter zero?
+                                    </p>
+                                </details>
+                            </li> <!-- run and test the program -->
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ex2) -->
+
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ex3" aria-expanded="true" aria-controls="ex3">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise #3: Miles to Km
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ex3" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise #3: Miles to Km</h2>
+                        <ol>
+                            <li>
+                                <details>
+                                    <summary>Create the project</summary>
+                                    <p>
+                                        Use Visual Studio to add another console application project to your solution
+                                        folder. Give it a descriptive, meaningful name.
+                                    </p>
+                                    <p>
+                                        Your application will ask the user to enter a distance in miles and then convert
+                                        it to kilometers.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Edit the source code</summary>
+                                    <p>
+                                        Open the <code>Program.cs</code> file in the editor.
+                                    </p>
+                                    <p>
+                                        Replace all the code with your solution.
+                                    </p>
+                                    <p>
+                                        Use the same conversion factor (1 kilometer = 0.62 miles) as in the previous
+                                        exercise. Adjust your formula and your code accordingly.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Run and test the program</summary>
+                                    <p>
+                                        Run the program and test with different values. Check that the format of the
+                                        output
+                                        is
+                                        correct and that the conversion is correct.
+                                    </p>
+                                    <p>
+                                        Hint: the output values from your solution should be consistent with the inputs
+                                        from
+                                        the previous exercise.
+                                    </p>
+                                    <p>
+                                        Test with a variety of inputs to confirm the correct results.
+                                    </p>
+                                </details>
+                            </li>
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ex3) -->
+
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#submit" aria-expanded="true" aria-controls="submit">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Review and Submit
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="submit" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Review and Submit</h2>
+                        <ol>
+                            <li>
+                                <details>
+                                    <summary>Let's review</summary>
+                                    <p>
+                                        Open the solution folder in File Explorer (or Finder) and check the contents of
+                                        the
+                                        folder. You should see the following:
+                                    </p>
+                                    <p>
+                                        A folder named <code>Lab01</code> containing your solution file and project
+                                        folders
+                                        for each of the three projects you created. Each of those folders should contain
+                                        a
+                                        project file (.csproj) and a Program.cs file (along with other files and
+                                        folders).
+                                    </p>
+                                    <p>
+                                        In this lab exercise, you created three console applications to interact with a
+                                        console user, collecting user input, processing results, and displaying the
+                                        formatted output back to the user.
+                                    </p>
+                                    <p>
+                                        We emphasized the imprtance of using meaningful names for your projects,
+                                        variables, and
+                                        constants. We also emphasized the importance of using constants for values that
+                                        do
+                                        not change in your program.
+                                    </p>
+                                    <p>
+                                        Finally, we stressed the need to test your code with a variety of inputs to
+                                        confirm the
+                                        correct results. This is a critical skill in software development. You will be
+                                        expected to test your code with a variety of inputs in all future labs and
+                                        assignments.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Archive your work to a Zip file</summary>
+                                    <p>
+                                        Use File Explorer (or Finder) to navigate to the folder where your solution is
+                                        stored. Go to the folder above the Lab01 folder. Select the Lab01 folder and
+                                        right-click it.
+                                        Choose <strong>Send to &gt; Compressed (zipped) folder</strong> (or
+                                        <strong>Compress</strong> in macOS). This will create a new zip file with the
+                                        same
+                                        name as the folder. This is the file you will submit for grading.
+                                    </p>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Submit your work</summary>
+                                    <p>
+                                        Go to the Canvas course and navigate to the Lab01 assignment. Click the
+                                        <strong>Submit Assignment</strong> button. Choose the <code>Lab01.zip</code>
+                                        file you just created and click Submit.
+                                    </p>
+                                    <p>
+                                        If you have any questions or issues, please ask for help in the class online
+                                        discussion (Discord).
+                                    </p>
+                                    <p>
+                                        As a reminder, the assignment must be submitted to Canvas to be added to the
+                                        grading queue. Do not email the assignment to the instructor, or add to the
+                                        comments as an <em>attachment</em>.
+                                    </p>
+                                    <p>
+                                        Future assignments will be submitted in the same way, but will not likely be
+                                        written with as much detail as this one.
+                                    </p>
+                                </details>
+                            </li>
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (submit) -->
+
+
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+        </div> <!-- #footer -->
+    </div> <!-- #lab-assignment-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
