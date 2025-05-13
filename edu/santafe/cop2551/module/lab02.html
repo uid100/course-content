@@ -74,12 +74,12 @@
                         data-bs-toggle="collapse" data-bs-target="#ex1" aria-expanded="true" aria-controls="ex1">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #1: Dimensions (Guided Exercise)
+                        Exercise #1: Box Dimensions (Guided Exercise)
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex1" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #1: Multiply</h2>
+                        <h2>Exercise #1: Box Dimensions </h2>
                         <ol id="ex1-steps">
                             <li> <!-- create the project -->
                                 <details>
@@ -89,6 +89,13 @@
                                     <ul>project name: boxDimensions</ul>
                                     <ul>solution name: Lab02</ul>
                                     </p>
+                                    <p>
+                                        You will create a new solution folder for each of the assignments, which will
+                                        contain the different projects for each lab. Refer to the steps in the previous
+                                        lab for more detailed steps. It is important that you become comfortable with
+                                        easily creating, building, and running new projects and solutions.
+                                    </p>
+                                    <h3>Edit the source code</h3>
                                     <p>
                                         Replace the source code with the following and update the header
                                         with your information.:
@@ -142,93 +149,44 @@ class Program
         Console.WriteLine($"Volume: {volume}");
     }
 }
-                                            
-                                        </code>
-                                    </p>
-
+</code></pre>
                                 </details>
                             </li> <!-- create the project -->
-                            <li> <!-- edit the source code -->
+                            <li> <!-- explain -->
                                 <details>
-                                    <summary>Edit the source code</summary>
+                                    <summary>Explanation</summary>
+                                    <p>Understanding the code</p>
                                     <p>
-                                        Open the <code>Program.cs</code> file in the editor. You will see a lot of code
-                                        that you did not write. This is the code that was generated for you by Visual
-                                        Studio.
+                                        Most of the code and syntax should be familiar to you. The program uses the
+                                        <code>double</code> data type to store the dimensions and volume of the box.
                                     </p>
                                     <p>
-                                        Notice there are three "blocks" of code in the file.
+                                        Main() is the entry point of the program. It calls the
+                                        <code>GetDimension()</code>
+                                        method three times to get the height, width, and depth of the box from the user.
+                                        <code>CalculateVolume</code> calculates the volume of the box using the formula
+                                        <code>volume = height * width * depth</code>. DisplayResults() outputs the
+                                        results
+                                        to the console.
                                     </p>
                                     <p>
-                                        The first block is the <em>namespace</em>. It is named the same as the project.
+                                        Notice the signature for each method.
+                                    <ul>
+                                        <li><code>Main()</code></li>
+                                        <li><code>GetDimension(string)</code></li>
+                                        <li><code>CalculateVolume(double, double, double)</code></li>
+                                        <li><code>DisplayResults(double, double, double, double)</code></li>
+                                    </ul>
                                     </p>
                                     <p>
-                                        Inside this, the second block is the <em>class</em> <code>Program</code>. This
-                                        is
-                                        the
-                                        main class of the program. It contains the <em>entry point</em> of the program
-                                        and
-                                        it
-                                        is contained in the <code>namespace</code>.
+                                        There should be one, and only one <code>Main()</code> method in your program.
+                                        This is the entry point of the program. The program will not run without it.
                                     </p>
                                     <p>
-                                        The third block is the <em>method</em> <code>Main()</code>. This is the main
-                                        method
-                                        of the program. It is where the program starts executing.
+                                        For each call to a methods, the compiler will look for a method with the same
+                                        name and the same number and type of parameters. If it finds one, it will call
+                                        that method.
                                     </p>
-                                    <p>
-                                        When you run the program, it will execute the code in the <code>Main()</code>
-                                        method
-                                        and print the output, currently "Hello World!" to the console.
-                                    </p>
-                                    <p>
-                                        Use the editor to replace all the code with the following:
-                                    </p>
-                                    <p>
-                                        Do not skip the header. This is required for all your assignments.
-                                        You can use this same format for all your assignments. Just update the
-                                        information for each assignment.
-                                    </p>
-                                    <pre style="margin: 20px;">
-/*
-* Author:        First Last Name
-* Date:          YYYY-MM-DD
-* Class:         Santa Fe College, COP2551 OOP-1 with C#
-* Assignment:    Lab 01 - Exercise #1 - Multiply
-* Description:   A simple C# console application that takes two integers as input 
-*                and prints their product to the console.
-*/
-
-using System;
-
-class Program
-{
-    static void Main()
-    {
-        // Declare variables
-        int number1;
-        int number2;
-        int product;
-        string userInput;
-
-        // Prompt user for input (note the space after the colon)
-        Console.Write("Enter the first number: ");
-        // Read user input, convert to int, and assign to a variable.
-        userInput = Console.ReadLine();
-        number1 = Convert.ToInt32(userInput);
-
-        Console.Write("Enter the second number: ");
-        userInput = Console.ReadLine();
-        number2 = Convert.ToInt32(userInput);
-
-        // assign the value of the product on the right to the variable on the left
-        product = number1 * number2;
-
-        // Output the result. The $ sign allows you to use variables in the string.
-        Console.WriteLine($"The product of {number1} and {number2} is {product}.");
-    }
-}
-                                </pre>
                                 </details>
                             </li> <!-- edit the source code -->
                             <li> <!-- run and test the program -->
