@@ -67,20 +67,59 @@
                 </div> <!-- .collapse -->
             </div> <!-- .card (overview) -->
 
-            <div class="card"> <!-- .card identifiers-->
+            <div class="card"> <!-- .card methods-->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#identifiers" aria-expanded="true"
-                        aria-controls="identifiers">
+                        data-bs-toggle="collapse" data-bs-target="#methods" aria-expanded="true"
+                        aria-controls="methods">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        identifiers
+                        Methods
                     </button>
                 </div> <!-- .card-header -->
-                <div id="identifiers" class="collapse hide">
+                <div id="methods" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Writing and calling methods</h2>
+                        <p>
+                            A <strong>method</strong> is a named block of code that performs a specific task. In C#, all
+                            functions are defined as methods, usually inside a class or struct.
+                            While the terms "function" and "method" are sometimes used interchangeably, a method
+                            specifically refers to a function that is associated with an object or class.
+                        </p>
+                        <p>
+                            For example:
+                        </p>
+                        <pre><code class="language-csharp">
+                  class Greeter
+                  {
+                      // This is a method
+                      public void SayHello()
+                      {
+                          Console.WriteLine("Hello!");
+                      }
+                  }
+                          </code></pre>
+                        <p>
+                            Here, <code>SayHello</code> is a method defined inside the <code>Greeter</code> class. If
+                            this were a standalone function outside a class (which C# doesn't allow), it would just be a
+                            function.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card methods -->
+
+            <div class="card"> <!-- .card parms-->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#parms" aria-expanded="true" aria-controls="parms">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Parameters and Arguments
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="parms" class="collapse hide">
                     <div class="card-body">
                         <h2>Understanding Parameters vs. Arguments</h2>
-                        <p>
                         <p>
                             In C#, <strong>parameters</strong> are variables defined in the method declaration. They act
                             as placeholders for values the method can receive when it is called.
@@ -101,10 +140,89 @@
                             In the above example, <code>name</code> and <code>age</code> are parameters. The values
                             <code>"Alice"</code> and <code>30</code> are arguments.
                         </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card parms -->
+
+            <div class="card"> <!-- .card modular-->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#modular" aria-expanded="true"
+                        aria-controls="modular">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Parameters and Arguments
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="modular" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Why Modular Code Matters</h2>
+                        <p>
+                            Modular code is code that is divided into reusable parts—like methods. Writing modular code
+                            makes programs:
+                        </p>
+                        <ul>
+                            <li><strong>Easier to read</strong>: You can understand a program by reading short method
+                                names instead of long code blocks.</li>
+                            <li><strong>Reusable</strong>: Once written, a method can be called from multiple places
+                                without duplicating code.</li>
+                            <li><strong>Testable and maintainable</strong>: Smaller pieces of code are easier to debug,
+                                test, and update.</li>
+                        </ul>
+                        <p>
+                            Think of methods as building blocks. You can assemble them to build more complex features
+                            while keeping your code clean and organized.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card identifiers -->
+            </div> <!-- .card parms -->
+
+            <div class="card"> <!-- .card scope-->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#scope" aria-expanded="true" aria-controls="scope">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Parameters and Arguments
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="scope" class="collapse hide">
+                    <div class="card-body">
+                        <h2>What Is Variable Scope?</h2>
+                        <p>
+                            <strong>Scope</strong> refers to where a variable can be accessed in your code. In C#,
+                            variables can have different scopes depending on where they are declared:
+                        </p>
+                        <ul>
+                            <li><strong>Local scope</strong>: A variable declared inside a method can only be used
+                                within that method.</li>
+                            <li><strong>Class scope (field)</strong>: A variable declared in a class but outside any
+                                method is accessible to all methods in that class.</li>
+                        </ul>
+                        <pre><code class="language-csharp">
+                  class Example
+                  {
+                      int classLevelVar = 10; // Class scope
+                  
+                      void ShowScope()
+                      {
+                          int localVar = 5; // Local scope
+                          Console.WriteLine(localVar);       // OK
+                          Console.WriteLine(classLevelVar);  // OK
+                      }
+                  
+                      void AnotherMethod()
+                      {
+                          // Console.WriteLine(localVar);    // ERROR: localVar not in scope here
+                      }
+                  }
+                          </code></pre>
+                        <p>
+                            Understanding scope helps avoid bugs and makes your code easier to manage.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card scope -->
 
         </div> <!-- .container -->
         <div id="footer">
