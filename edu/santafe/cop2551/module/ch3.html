@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="content-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <h1>&nbsp;</h1>
+        <div class="container my-4 px-2">
+            <div class="card"> <!-- .card overview -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Chapter 3: Writing methods and applying scope
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="overview" class="collapse hide">
+                    <div class="card-body">
+                        <h3>Introduction</h3>
+                        <p>
+                            Chapter 3 introduces you to the essential building blocks of method usage in C#. You’ll
+                            learn how to define, call, and debug methods, manage data with parameters, and use features
+                            like optional parameters and named arguments.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (overview) -->
+
+            <div class="card"> <!-- .card identifiers-->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#identifiers" aria-expanded="true"
+                        aria-controls="identifiers">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        identifiers
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="identifiers" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Understanding Parameters vs. Arguments</h2>
+                        <p>
+                        <p>
+                            In C#, <strong>parameters</strong> are variables defined in the method declaration. They act
+                            as placeholders for values the method can receive when it is called.
+                            <br>
+                            <strong>Arguments</strong> are the actual values passed to the method when you call it.
+                        </p>
+                        <pre><code class="language-csharp">
+                      // Method with parameters
+                      void Greet(string name, int age)
+                      {
+                          Console.WriteLine($"Hello, {name}. You are {age} years old.");
+                      }
+                      
+                      // Calling the method with arguments
+                      Greet("Alice", 30);
+                              </code></pre>
+                        <p>
+                            In the above example, <code>name</code> and <code>age</code> are parameters. The values
+                            <code>"Alice"</code> and <code>30</code> are arguments.
+                        </p>
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card identifiers -->
+
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+        </div> <!-- #footer -->
+    </div> <!-- #content-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
