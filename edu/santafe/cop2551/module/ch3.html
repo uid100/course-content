@@ -55,7 +55,7 @@
                         Chapter 3: Writing methods and applying scope
                     </button>
                 </div> <!-- .card-header -->
-                <div id="overview" class="collapse hide">
+                <div id="overview" class="collapse show">
                     <div class="card-body">
                         <h3>Introduction</h3>
                         <p>
@@ -89,15 +89,15 @@
                         <p>
                             For example:
                         </p>
-                        <pre><code class="language-csharp">
-                  class Greeter
-                  {
-                      // This is a method
-                      public void SayHello()
-                      {
-                          Console.WriteLine("Hello!");
-                      }
-                  }
+                        <pre style="padding: 20px;"><code class="language-csharp">
+class Greeter
+{
+    // This is a method
+    public void SayHello()
+    {
+        Console.WriteLine("Hello!");
+    }
+}
                           </code></pre>
                         <p>
                             Here, <code>SayHello</code> is a method defined inside the <code>Greeter</code> class. If
@@ -126,15 +126,15 @@
                             <br>
                             <strong>Arguments</strong> are the actual values passed to the method when you call it.
                         </p>
-                        <pre><code class="language-csharp">
-                      // Method with parameters
-                      void Greet(string name, int age)
-                      {
-                          Console.WriteLine($"Hello, {name}. You are {age} years old.");
-                      }
-                      
-                      // Calling the method with arguments
-                      Greet("Alice", 30);
+                        <pre style="padding: 20px;"><code class="language-csharp">
+// Method with parameters
+void Greet(string name, int age)
+{
+    Console.WriteLine($"Hello, {name}. You are {age} years old.");
+}
+
+// Calling the method with arguments
+Greet("Alice", 30);
                               </code></pre>
                         <p>
                             In the above example, <code>name</code> and <code>age</code> are parameters. The values
@@ -175,7 +175,7 @@
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card parms -->
+            </div> <!-- .card modular -->
 
             <div class="card"> <!-- .card scope-->
                 <div class="card-header">
@@ -183,7 +183,7 @@
                         data-bs-toggle="collapse" data-bs-target="#scope" aria-expanded="true" aria-controls="scope">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Parameters and Arguments
+                        Variable Scope
                     </button>
                 </div> <!-- .card-header -->
                 <div id="scope" class="collapse hide">
@@ -199,26 +199,106 @@
                             <li><strong>Class scope (field)</strong>: A variable declared in a class but outside any
                                 method is accessible to all methods in that class.</li>
                         </ul>
-                        <pre><code class="language-csharp">
-                  class Example
-                  {
-                      int classLevelVar = 10; // Class scope
-                  
-                      void ShowScope()
-                      {
-                          int localVar = 5; // Local scope
-                          Console.WriteLine(localVar);       // OK
-                          Console.WriteLine(classLevelVar);  // OK
-                      }
-                  
-                      void AnotherMethod()
-                      {
-                          // Console.WriteLine(localVar);    // ERROR: localVar not in scope here
-                      }
-                  }
+                        <pre style="padding:20px;"><code class="language-csharp">
+class Example
+{
+    int classLevelVar = 10; // Class scope
+
+    void ShowScope()
+    {
+        int localVar = 5; // Local scope
+        Console.WriteLine(localVar);       // OK
+        Console.WriteLine(classLevelVar);  // OK
+    }
+
+    void AnotherMethod()
+    {
+        // Console.WriteLine(localVar);    // ERROR: localVar not in scope here
+    }
+}
                           </code></pre>
                         <p>
                             Understanding scope helps avoid bugs and makes your code easier to manage.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card scope -->
+
+            <div class="card"> <!-- .card signatures-->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#signatures" aria-expanded="true"
+                        aria-controls="signatures">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Method Signatures
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="signatures" class="collapse hide">
+                    <div class="card-body">
+                        <h2>What Is a Method Signature?</h2>
+                        <p>
+                            A <strong>method signature</strong> in C# is the combination of a method's
+                            <strong>name</strong> and its <strong>parameter list</strong> (types, number, and order of
+                            parameters). The return type is <em>not</em> part of the signature.
+                        </p>
+                        <p>Example of a method signature:</p>
+                        <pre><code class="language-csharp">
+                      void PrintMessage(string message)
+                          ↑       ↑
+                      Return  Name and Parameters = Method Signature
+                          </code></pre>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card signatures -->
+
+            <div class="card"> <!-- .card scope-->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#scope" aria-expanded="true" aria-controls="scope">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Method Overloading
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="scope" class="collapse hide">
+                    <div class="card-body">
+                        <h2>What Is Method Overloading?</h2>
+                        <p>
+                            <strong>Method overloading</strong> means creating multiple methods with the same name but
+                            different parameter lists (different number, type, or order of parameters). It allows the
+                            same method name to handle different types of input.
+                        </p>
+
+                        <p>Example of method overloading:</p>
+                        <pre style="padding:20px;"><code class="language-csharp">
+class Printer
+{
+    // Method 1: No parameters
+    public void Print()
+    {
+        Console.WriteLine("Printing default message.");
+    }
+
+    // Method 2: One string parameter
+    public void Print(string message)
+    {
+        Console.WriteLine(message);
+    }
+
+    // Method 3: One string and one int parameter
+    public void Print(string message, int copies)
+    {
+        for (int i = 0; i < copies; i++)
+        {
+            Console.WriteLine(message);
+        }
+    }
+}
+                          </code></pre>
+                        <p>
+                            All three methods are named <code>Print</code>, but they have different method signatures.
+                            The C# compiler uses the arguments you provide to determine which version to call.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
