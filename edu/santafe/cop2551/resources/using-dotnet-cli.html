@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Intro to C# - CLI Activity</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    h1, h2 {
+      color: #2c3e50;
+    }
+    pre {
+      background-color: #eee;
+      padding: 0.5rem;
+      border-radius: 5px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: Consolas, monospace;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Intro to C# Programming</h1>
+  <h2>Student Activity: Using the .NET CLI (Cross-Platform)</h2>
+
+  <section>
+    <p>This activity will help you get started with C# programming using the .NET Command Line Interface (CLI). These instructions work on both Windows and macOS.</p>
+  </section>
+
+  <section>
+    <h2>1. Check Installed SDKs</h2>
+    <p>Open a terminal or command prompt and type the following command to list the installed .NET SDKs:</p>
+    <pre><code>dotnet --list-sdks</code></pre>
+  </section>
+
+  <section>
+    <h2>2. Create a New Console App</h2>
+    <p>In your terminal:</p>
+    <ul>
+      <li>Create a new folder and navigate into it:</li>
+      <pre><code>mkdir MyFirstApp
+cd MyFirstApp</code></pre>
+
+      <li>Create a new console project:</li>
+      <pre><code>dotnet new console</code></pre>
+    </ul>
+    <p>Look at the files and folders that are added. This should be familiar.</p>
+  </section>
+
+  <section>
+    <h2>3. Explore Available Templates</h2>
+    <p>To see what other templates you can create with the CLI:</p>
+    <pre><code>dotnet new list</code></pre>
+  </section>
+
+  <section>
+    <h2>4. Build and Run the Program</h2>
+    <p>You can compile and run the program using:</p>
+    <pre><code>dotnet build</code></pre>
+    <p>or directly run it with:</p>
+    <pre><code>dotnet run</code></pre>
+  </section>
+
+  <section>
+    <h2>5. Edit and Re-Run</h2>
+    <p>Open the <code>Program.cs</code> file in a text editor and replace the contents with your own C# code. Save the file, then run:</p>
+    <pre><code>dotnet run</code></pre>
+  </section>
+
+  <section>
+    <h2>6. Observe and Reflect</h2>
+    <p>Notice that writing, compiling, and running your programs does not require an IDE. However, in most cases, using an IDE can make development easier and more efficient.</p>
+    <p>Sometimes it’s helpful to create the template framework using the CLI, and then open the project in an IDE (like Visual Studio, VS Code, or Rider) for further development.</p>
+  </section>
+
+</body>
+</html>
