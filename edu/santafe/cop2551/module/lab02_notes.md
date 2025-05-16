@@ -85,3 +85,16 @@ Here are some **simple C# programming exercise ideas** designed to help beginner
 ---
 
 Would you like these turned into full example code snippets or formatted into an HTML handout for students?
+
+Try this!
+
+from the macos terminal or from windows command line (CMD), run:
+
+cd labs
+dotnet new sln Lab01
+cd Lab01
+dotnet new console -o boxDimensions
+dotnet sln add boxDimensions/boxDimensions.csproj
+code .
+
+this will create the

@@ -94,12 +94,46 @@
                                     </p>
                                     <p>
                                         You may decide to use Visual Studio, Visual Studio Code (VS Code),
-                                        or create the project in the command line using the steps outlined
-                                        in the <strong>Student Resources</strong> module (0) in the course 
-                                        materials.
+                                        or from the command line using the following quick start process.
                                     </p>
-                                    <ul>project name: boxDimensions</ul>
-                                    <ul>solution name: Lab02</ul>
+                                    <div>
+                                        <h4>quick start:</h4>
+                                        <p>
+                                            Open a terminal window and navigate to the folder where you want to
+                                            create the project.
+                                        </p>
+                                        <p>
+                                        <code>cd labs</code>
+                                        </p>
+                                        <p>
+                                            Create a new solution folder for the lab and navigate into it.
+                                        </p>
+                                        <p>
+                                            <code>dotnet new sln Lab01</code>
+                                            <code>cd Lab01</code>
+                                            <code>dotnet new console -n boxDimensions</code><br>
+                                            <code>dotnet sln add boxDimensions/boxDimensions.csproj</code>
+                                        </p>
+                                        <p>
+                                            This will create the solution folder structure:
+                                        </p>
+                                        <p>
+                                            <code>Lab01</code><br>
+                                            <code>├── Lab01.sln</code><br>
+                                            <code>└── boxDimensions</code><br>
+                                            <code>    ├── boxDimensions.csproj</code><br>
+                                            <code>    └── Program.cs</code><br>
+                                        </p>
+                                        <p>
+                                            You can open the solution from Visual Studio, or from VS Code 
+                                            open the Command Palette (⇧⌘P) and select .NET:Open Solution
+                                        </p>
+                                    </div>
+                                    <p>
+                                        <ul>
+                                            <li>project name: boxDimensions</li>
+                                            <li>solution name: Lab02</li>
+                                        </ul>
                                     </p>
                                     <p>
                                         You will create a new solution folder for each of the assignments, which will
