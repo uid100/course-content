@@ -160,17 +160,6 @@ using System;
 
 class Program
 {
-    static void Main()
-    {
-        double height = GetDimension("height");
-        double width = GetDimension("width");
-        double depth = GetDimension("depth");
-
-        double volume = CalculateVolume(height, width, depth);
-
-        DisplayResults(height, width, depth, volume);
-    }
-
     static double GetDimension(string name)
     {
         Console.Write($"Enter {name}: ");
@@ -193,6 +182,17 @@ class Program
         Console.WriteLine($"Width : {width}");
         Console.WriteLine($"Depth : {depth}");
         Console.WriteLine($"Volume: {volume}");
+    }
+
+    static void Main()
+    {
+        double height = GetDimension("height");
+        double width = GetDimension("width");
+        double depth = GetDimension("depth");
+
+        double volume = CalculateVolume(height, width, depth);
+
+        DisplayResults(height, width, depth, volume);
     }
 }
 </code></pre>
