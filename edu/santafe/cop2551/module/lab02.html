@@ -395,30 +395,36 @@ class Program
                             <li> <!-- edit the source code -->
                                 <details>
                                     <summary>Write the source code (4 methods)</summary>
-                                    // area of a circle
+                                    <h3>Pass parameters to methods and return values</h3>
                                     <p>
                                         Inside the Program class, write a new method called <code>AreaOfCircle()</code>.
                                         This method should take a double parameter for the radius and an optional
                                         and return a double value for the area of the circle. The formula for the area of a circle is
                                         <code>area = Math.PI * radius * radius</code>.
                                     </p>
-                                    // circumference
                                     <p>
                                         Next, write a method called <code>CircumferenceOfCircle()</code>. This method
                                         should take a double parameter for the radius and an optional parameter for
-                                        the number of decimal places to round to. The method should return a double
+                                         the number of decimal places to round to. The method should return a double
                                         value for the circumference of the circle. The formula for the circumference of
                                         a circle is <code>circumference = 2 * Math.PI * radius</code>.
                                     </p>
-                                    // bool isEven and isOdd
+                                    <h3>Expression-bodied methods</h3>
                                     <p>
-                                        Next, write a method called <code>IsEven()</code>. This method should take an
-                                        int parameter and return a bool value indicating whether the number is even or
-                                        not. Check the input parameter by dividing by 2 and checking the remainder.
-                                        Return true of false. Write another method called <code>IsOdd()</code> that
+                                        Next, write an Expression-bodied method called <code>IsEven()</code>. This 
+                                        method should take an <code>int</code> parameter and return a <code>bool</code>
+                                        value indicating whether the number is even or not. Check the input parameter 
+                                        by dividing by 2 and checking the remainder. Return true or false.
+                                    </p>
+                                    <p>
+                                        Remember that an expression-bodied method is a shorthand way of writing a method
+                                        and does not require a <code>return</code> statement. 
+                                    </p>
+                                    <p>
+                                        Write another method called <code>IsOdd()</code> that
                                         does the same thing but checks if the number is odd.
                                     </p>
-                                    // optional parameters
+                                    <h3>Optional parameters</h3>
                                     <p>
                                         Finally, write a method called <code>DisplayResults()</code>. This method should
                                         take a string parameter for the name of the calculation, a double parameter for
