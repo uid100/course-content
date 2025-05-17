@@ -380,15 +380,43 @@ class Program
                             </li> <!-- create the project -->
                             <li> <!-- edit the source code -->
                                 <details>
-                                    <summary>Write the source code (3 methods)</summary>
+                                    <summary>Write the source code (4 methods)</summary>
+                                    // area of a circle
                                     <p>
                                         Inside the Program class, write a new method called <code>AreaOfCircle()</code>.
                                         This method should take a double parameter for the radius and an optional
                                         and return a double value for the area of the circle. The formula for the area of a circle is
                                         <code>area = Math.PI * radius * radius</code>.
                                     </p>
+                                    // circumference
                                     <p>
-                                        Next, write a method called <code>AreaOfRectangle()</code>. This method should take a double parameter for the width and 
+                                        Next, write a method called <code>CircumferenceOfCircle()</code>. This method
+                                        should take a double parameter for the radius and an optional parameter for
+                                        the number of decimal places to round to. The method should return a double
+                                        value for the circumference of the circle. The formula for the circumference of
+                                        a circle is <code>circumference = 2 * Math.PI * radius</code>.
+                                    </p>
+                                    // bool isEven and isOdd
+                                    <p>
+                                        Next, write a method called <code>IsEven()</code>. This method should take an
+                                        int parameter and return a bool value indicating whether the number is even or
+                                        not. Check the input parameter by dividing by 2 and checking the remainder.
+                                        Return true of false. Write another method called <code>IsOdd()</code> that
+                                        does the same thing but checks if the number is odd.
+                                    </p>
+                                    // optional parameters
+                                    <p>
+                                        Finally, write a method called <code>DisplayResults()</code>. This method should
+                                        take a string parameter for the name of the calculation, a double parameter for
+                                        the result, and an optional int parameter for the number of decimal places to
+                                        round to. The method should display the results in a formatted string.
+                                        Use the <code>Math.Round()</code> method to round the result to the specified
+                                        number of decimal places. If the optional parameter is not provided, use 2
+                                        decimal places by default.
+                                    </p>
+                                    <p>
+                                        The method should display the results in a formatted string. For example:
+                                        <code>Area of circle with radius 5 is 78.54</code>.
                                     </p>
                                 </details>
                             </li> <!-- edit the source code -->
@@ -396,7 +424,12 @@ class Program
                                 <details>
                                     <summary>Run and test the program</summary>
                                     <p>
-                                        .
+                                        Edit the <code>Main()</code> method to call each of the methods you just created.
+                                        Write lines (test cases) to test each of the methods and display the results.
+                                    </p>
+                                    <p>
+                                        Run the program and test each of the methods. Make sure to test the optional
+                                        parameters by calling the methods with and without the optional parameters.
                                     </p>
                                 </details>
                             </li> <!-- run and test the program -->
@@ -405,7 +438,7 @@ class Program
                 </div> <!-- .collapse -->
             </div> <!-- .card (ex2) -->
 
-            <div class="card">
+            <div class="card"> <!-- .card (ex3) -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
                         data-bs-toggle="collapse" data-bs-target="#ex3" aria-expanded="true" aria-controls="ex3">
@@ -422,7 +455,8 @@ class Program
                                 <details>
                                     <summary>Create the project</summary>
                                     <p>
-                                        .
+                                        As before, add another console application project to the solution.
+                                    
                                     </p>
                                 </details>
                             </li>
