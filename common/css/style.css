@@ -309,3 +309,10 @@ th {
     border-color: #bce8f1;
     border-radius: 4px;
 }
+pre {
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+}
