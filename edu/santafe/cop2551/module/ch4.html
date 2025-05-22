@@ -290,7 +290,7 @@ bool isLocked = !(hasKey || knowsPassword); // NOT operator
                         <h2>Boolean Conditional Control Statements in C#</h2>
 <p>Conditional control statements let a program <strong>choose different actions</strong> depending on whether a condition is <code>true</code> or <code>false</code>. These conditions are built with <strong>Boolean expressions</strong>.</p>
 
-  <h2>1. <code>if</code> Statement</h2>
+  <h2><code>if</code> Statement</h2>
   <p>The simplest form of conditional logic. It runs a block of code <strong>only if</strong> a condition is true.</p>
 
   <h3>Syntax:</h3>
@@ -306,7 +306,7 @@ if (score &gt;= 80)
     Console.WriteLine("You passed!");
 }</code></pre>
 
-  <h2>2. <code>if-else</code> Statement</h2>
+  <h2><code>if-else</code> Statement</h2>
   <p>Provides an alternate block of code to run <strong>if the condition is false</strong>.</p>
 
   <h3>Syntax:</h3>
@@ -330,7 +330,7 @@ else
     Console.WriteLine("You did not pass.");
 }</code></pre>
 
-  <h2>3. <code>if-else if-else</code> Chain</h2>
+  <h2><code>if-else if-else</code> Chain</h2>
   <p>Used when there are multiple conditions to check in sequence. The program will run the block for the <strong>first true condition</strong> it finds.</p>
 
   <h3>Syntax:</h3>
@@ -366,8 +366,30 @@ else
     Console.WriteLine("Grade: D or F");
 }</code></pre>
 
-  <p>These conditional structures help programs make decisions and respond to different situations dynamically.</p>
-
+                        <p>
+                            These conditional structures help programs make decisions and 
+                            respond to different situations dynamically.
+                        </p>
+                        <h3>Important things to remember:</h3>
+                        <ul>
+                            <li>
+                                An <code>if</code> statement does not always need to be followed by 
+                                an <code>else</code> statement.
+                            </li>
+                            <li>
+                                An <code>if</code> statement can be followed by multiple 
+                                <code>else if</code> statements.
+                            </li>
+                            <li>
+                                an <code>else-if</code> statement is still an <code>if</code>
+                                statement, so it must have a boolean expression to evaluate.
+                            </li>
+                            <li>
+                                The <em>optional</em> <code>else</code> statement must be the last
+                                statement in the <code>if</code> structure and does not include a 
+                                boolean expression.
+                            </li>
+                        </ul> 
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card if -->
