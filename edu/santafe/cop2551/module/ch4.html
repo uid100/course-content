@@ -176,7 +176,31 @@ if (hasPermission)
                 <div id="expressions" class="collapse hide">
                     <div class="card-body">
                         <h2>Boolean Expressions</h2>
-<p>A <strong>Boolean expression</strong> is any expression that results in a <code>bool</code> value.</p>
+                        <p>
+                            A <strong>Boolean expression</strong> is any expression that results 
+                            in a <code>bool</code> value.
+                        </p>
+                        <p>
+                            While <code>bool</code> variables can be useful, any variable type
+                            may be used to evaluate a Boolean expression.
+                        </p>
+                        <p>
+                            For example, the doorman at a nightclub doesn't need to know how old you 
+                            are, just whether you are old enough to enter. so <code>age &gt;= 21</code> 
+                            is a Boolean expression that evaluates to <code>true</code> or <code>false</code>, 
+                            not the actual numerical value. 
+                        </p>
+                        <p>
+                            If a parking spot is reserved for "John" then <code>name == "John"</code> is 
+                            a Boolean expression that evaluates whether or not the car's operator can park there.
+                        </p>
+                        <p>
+                            In both of these cases, the variables being evaluated are not <code>bool</code> types,
+                            but the expressions themselves are Boolean.
+                        </p>
+                        <p>
+                            Here are some examples of Boolean expressions:
+                        </p>
 
   <pre><code>int age = 20;
 bool isAdult = age &gt;= 18; // true
@@ -202,21 +226,6 @@ bool isTeen = age &gt;= 13 &amp;&amp; age &lt;= 19; // false
       <tr><td><code>&lt;=</code></td><td>Less or equal</td><td><code>8 &lt;= 6</code></td><td><code>false</code></td></tr>
     </tbody>
   </table>
-                    </div> <!-- .card-body -->
-                </div> <!-- .collapse -->
-            </div> <!-- .card expressions -->
-
-            <div class="card"> <!-- .card operators-->
-                <div class="card-header">
-                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#operators" aria-expanded="true" aria-controls="operators">
-                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
-                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Logical Operators
-                    </button>
-                </div> <!-- .card-header -->
-                <div id="operators" class="collapse hide">
-                    <div class="card-body">
                         <h2>Logical (Boolean) Operators</h2>
                         <p>These operators let you combine multiple Boolean values or expressions:</p>
   <table border="1" cellpadding="5">
@@ -264,7 +273,7 @@ bool isLocked = !(hasKey || knowsPassword); // NOT operator
 
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card operators -->
+            </div> <!-- .card expressions -->
 
             <div class="card"> <!-- .card if-->
                 <div class="card-header">
