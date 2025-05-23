@@ -359,7 +359,7 @@
                 </div> <!-- .card-header -->
                 <div id="ex3" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #3: Overloading methods</h2>
+                        <h2>Exercise #3: Using <code>switch-case</code> logic</h2>
                         <ol>
                             <li>
                                 <details>
@@ -369,8 +369,8 @@
                                     </p>
                                     <p>
                                         <ul>
-                                            <li>project name: <code>overloadingMethods</code></li>
-                                            <li>solution name: <code>Lab02</code></li>
+                                            <li>project name: <code>gradeAssignment</code></li>
+                                            <li>solution name: <code>Lab03</code></li>
                                         </ul>
                                     </p>
                                 </details>
@@ -379,37 +379,39 @@
                                 <details>
                                     <summary>Edit the source code</summary>
                                     <p>
-                                        Write overloaded methods to test the square of a number, using either
-                                        an int or a double.
+                                        Write a method called <code>letterGrade()</code> that takes a single
+                                        integer parameter and returns a string. The method should return the letter
+                                        grade for the given number. The letter grades are as follows:
+                                        <ul>
+                                            <li>A: 90-100</li>
+                                            <li>B: 80-89</li>
+                                            <li>C: 70-79</li>
+                                            <li>D: 60-69</li>
+                                            <li>F: 0-59</li>
+                                        </ul>
+                                    <p>
+                                        The method should use a <code>switch-case</code> statement to determine
+                                        the letter grade. The method should also use a <code>default</code> case
+                                        to handle invalid input.
                                     </p>
                                     <p>
-                                        Inside the Program class, write a new method called <code>Square()</code>.
-                                        This method should take an int parameter and return an int value for the
-                                        square of the number. The formula for the square of a number is
-                                        <code>square = number * number</code>.
+                                        The method should return the letter grade as a string. The method should
+                                        also return a message if the input is invalid.
                                     </p>
                                     <p>
-                                        Next, write another method called <code>Square()</code>. This method should
-                                        take a double parameter and return a double value for the square of the number.
-                                        The formula for the square of a number is <code>square = number * number</code>.
+                                        In the <code>Main()</code> method, call the <code>letterGrade()</code> method
+                                        and display the result.
                                     </p>
-                                    <p>
-                                        The two methods should have the same name but different parameter types. This
-                                        is called method overloading. The compiler will determine which method to
-                                        call based on the type of the argument passed to the method.
-                                    </p>
-                                    <p>
-                                        Edit the <code>Main()</code> method to call each of the methods you just
-                                        created. Write lines (test cases) to test each of the methods and display the
-                                        results.
                                 </details>
                             </li>
                             <li>
                                 <details>
                                     <summary>Run and test the program</summary>
                                     <p>
-                                        Run the program and test each of the methods. Test positive and negative
-                                        numbers, and zero, to confirm that the methods work correctly.
+                                        Run the program and test with different data, include small and large, positive
+                                        and negative numbers, and zero as method arguments.
+                                        </p>
+                                        <p> Test with invalid data, such as letters and symbols.
                                     </p>
                                 </details>
                             </li>
