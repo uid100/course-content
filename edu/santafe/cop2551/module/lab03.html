@@ -46,7 +46,8 @@
         <h1>Lab 03: Making decisions in C# code</h1>
         <p style="margin:10px;">
             <strong>Objective:</strong> Demonstrate use of conditional processing structures 
-            and boolean expressions.
+            and boolean expressions, including if-else statements, compound boolean expressions,
+            and switch statements.
         </p>
         <div class="container my-4 px-2">
             <div class="card"> <!-- .card (overview) -->
@@ -143,55 +144,13 @@
                                         Replace the source code with the following and update the header
                                         with your information.:
                                     </p>
-                                    <pre style="margin: 20px;"><code>
-/*
-* Author:        First Last Name
-* Date:          YYYY-MM-DD
-* Class:         Santa Fe College, COP2551 OOP-1 with C#
-* Assignment:    Lab 03 - Exercise #1 - Apples
-* Description:   C# console application that ranks the results of
-*                apple-harvesting using if-else statements.
-*/
-
-using System;
-
-class Program
-{
-    Random random = new Random();
-
-    // Declare variables
-    int Alex = random.Next(1, 101);
-    int Brian = random.Next(1, 101);
-    int Colin = random.Next(1, 101);
-
-    // Display the results
-    Console.WriteLine($"Alex harvested {Alex} apples.");
-    Console.WriteLine($"Brian harvested {Brian} apples.");
-    Console.WriteLine($"Colin harvested {Colin} apples.");
-    Console.WriteLine();
-
-    // Determine the winner
-    if (Alex > Brian && Alex > Colin)
-    {
-        Console.WriteLine("Alex is the winner!");
-    }
-    else if (Brian > Alex && Brian > Colin)
-    {
-        Console.WriteLine("Brian is the winner!");
-    }
-    else if (Colin > Alex && Colin > Brian)
-    {
-        Console.WriteLine("Colin is the winner!");
-    }
-    else
-    {
-        Console.WriteLine("It's a tie!");
-    }
-
-    Console.WriteLine("Press any key to exit.");
-    Console.ReadKey();
-}
-</code></pre>
+                                    <img src="/course-content/common/images/cop2551ex03.01.png" alt="Apple Counting source code" />
+                                    <p>
+                                        The program should randomly generate a number of apples for each of
+                                        three players. The program should then compare the results using
+                                        if-else statements to determine the winner.
+                                    </p>
+                                    
                                 </details>
                             </li> <!-- create the project -->
                             <li> <!-- explain -->
