@@ -146,148 +146,38 @@
                 </div> <!-- .card-header -->
                 <div id="ex1" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #1: Apple Counting </h2>
-                        <ol id="ex1-steps">
-                            <li> <!-- create the project -->
-                                <details>
-                                    <summary>Create the project</summary>
-                                    <p>
-                                        Start with the solution, create a project and add it to the solution.
-                                    </p>
-                                    <p>
-                                        Try this from the command line, or the terminal in macos.
-                                    </p>
-                                    <div>
-                                        <h4>quick start:</h4>
-                                        <p>
-                                            Open a terminal window and navigate to the folder where you want to
-                                            create the project.
-                                        </p>
-                                        <p>
-                                        <code>cd labs</code>
-                                        </p>
-                                        <p>
-                                            Create a new solution folder for the lab:
-                                        </p>
-                                        <p>
-                                            <code>dotnet new sln Lab03</code>
-                                        </p>
-                                        <p>
-                                            The result so far should look like this:
-                                        </p>
-                                        <p>
-                                            <code>Lab03</code><br>
-                                            <code>└── Lab03.sln</code><br>
-                                        </p>
-                                        <p>
-                                            Create a new console application project, and add it 
-                                            to the solution.
-                                        </p>
-                                        <p>
-                                            <code>cd Lab03</code><br>
-                                            <code>dotnet new console -n Apples</code><br>
-                                            <code>cd ..</code>
-                                            <code>dotnet sln add Apples/Apples.csproj</code>
-                                        </p>
-                                        <p>
-                                            Veryify the new folder structure:
-                                        </p>
-                                        <p>
-                                            <code>Lab03</code><br>
-                                            <code>├── Lab03.sln</code><br>
-                                            <code>└── Apples</code><br>
-                                            <code>&nbsp;&nbsp;&nbsp;&nbsp;├── Apples.csproj</code><br>
-                                            <code>&nbsp;&nbsp;&nbsp;&nbsp;└── Program.cs</code><br>
-                                        </p>
-                                        <p>
-                                            You can open the solution from Visual Studio, or from VS Code 
-                                            open the Command Palette (⇧⌘P) and select .NET:Open Solution
-                                        </p>
-                                    </div>
-                                    <h3>Edit the source code</h3>
-                                    <p>
-                                        Replace the source code with the following and update the header
-                                        with your information.:
-                                    </p>
-                                    <img 
-                                        src="/course-content/images/cop2551ex03.01.png" 
-                                        alt="Apple Counting source code" 
-                                        style="width: 100%; max-width: 800px;"
-                                        class="img-fluid"
-                                    />
-                                    <p>
-                                        The program should randomly generate a number of apples for each of
-                                        three players. The program should then compare the results using
-                                        if-else statements to determine the winner.
-                                    </p>
-                                    
-                                </details>
-                            </li> <!-- create the project -->
-                            <li> <!-- explain -->
-                                <details>
-                                    <summary>Explanation</summary>
-                                    <h2>Understanding the code</h2>
-                                    <h3>Random</h3>
-                                    <p>
-                                        The program uses the <code>Random</code> class to generate random numbers
-                                        between 1 and 100 for each of the three players. The program then compares
-                                        the results using if-else statements to determine the winner.
-                                    </p>
-                                    <p>
-                                        The code first creates a <code>new</code> instance of the <code>Random</code> class
-                                        and assigns it to the variable <code>random</code>. We need to do this just once
-                                        at the beginning of the program, so we can use it to generate random numbers.
-                                    </p>
-                                    <p>
-                                        The <code>Next()</code> method is then called on the <code>random</code> object to 
-                                        generate a random number between 1 and 100. 
-                                    </p>
-                                    <p>
-                                        The <code>Next()</code> method takes two arguments: the minimum and maximum values 
-                                        for the random number. In this case, the minimum value is 1 and the maximum value 
-                                        is 101. The maximum value is exclusive, so the random number will be between 1 and 100.
-                                    </p>
-                                    <h3>Boolean control statements</h3>
-                                    <p>
-                                        This is a very simple program, but it demonstrates the use of the
-                                        conditional <code>if</code> statement, the <code>else if</code> statement, and the
-                                        <code>else</code> statement. The program also uses the <code>Console.WriteLine()</code>
-                                    </p>
-                                    <p>
-                                        Remember that an <code>else-if</code> statement, just like an <code>if</code>
-                                        statement requires a boolean expression. The <code>else</code> statement does not.
-                                    </p>
-                                    <p>
-                                        Also, each of the boolean expressions evluates not just two integer values with 
-                                        a boolean operator, but also against a third integer value using the <code>&&</code>
-                                        operator. This is called a compound boolean expression.
-                                    </p>
-                                    <p>
-                                        The program uses the familiar "Press any key..." statement to pause the program
-                                        and wait for the user to press a key before exiting. This is a common practice
-                                        in console applications to allow the user to see the output before the program
-                                        closes.
-                                    </p>
-                                </details>
-                            </li> <!-- edit the source code -->
-                            <li> <!-- run and test the program -->
-                                <details>
-                                    <summary>Run and test the program</summary>
-                                    <p>
-                                        Run the program by clicking the green arrow (Start button) in the toolbar or by
-                                        pressing <code>Ctrl + F5</code>. Or you can use either of the Start options in
-                                        the Debug menu.
-                                    </p>
-                                    <p>
-                                        Confirm that the program runs and assigns random values to the three people and 
-                                        that the logic correctly determines the one with the most apples.
-                                    </p>
-                                </details>
-                            </li> <!-- run and test the program -->
-                        </ol> <!-- #ex1-steps -->
-                        <p style="font-style: italic; margin: 20px;">
-                            Continue to the next exercise.
+                        <h2>PIP installs Packages "PIP"</h2>
+                        <p>
+                            PIP is the package manager for Python. It allows you to install and manage 
+                            additional libraries and dependencies that are not included in the standard 
+                            Python library.
                         </p>
+                        <p>
+                            To install a package using PIP, you can use the following command:
+                        </p>
+                        <code><pre>
+                            C:\ > pip install requests
+                        </pre></code>
+                        <p>
+                            The same command works on macOS, but you may need to use <code>pip3</code> if 
+                            you have both Python 2.x and Python 3.x installed
+                        </p>
+                        <p>
+                            You can also use <code>python -m pip install requests</code>
+                        </p>
+                        <h3>Checking the installation</h3>
+                        <p>
+                            After installing a package, you can check if it was installed correctly by 
+                            trying to import it in Python.
+                        </p>
+                        <code><pre>
+                            C:\ > python
+                            Python 3.13.3 (default, Oct  1 2023, 12:00:00) [MSC v.1916 64 bit (AMD64)] on win32
+                            Type "help", "copyright", "credits" or "license" for more information.
+                            >>> import requests
+                            >>> print(requests.__version__)
+                            2.31.0
+                        </pre></code>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (pip) -->
