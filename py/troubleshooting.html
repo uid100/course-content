@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="lab-assignment-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <h1>Troubleshooting</h1>
+        <p style="margin:10px;">
+            <strong>Importing modules:</strong> Why doesn't my <code>import #####</code> statement work?
+        </p>
+        <div class="container my-4 px-2">
+            <div class="card"> <!-- .card (overview) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Where's Python installed?
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="overview" class="collapse show">
+                    <div class="card-body">
+                        <h3>Recently installed</h3>
+                        <p>
+                            Most external modules will be installed using PIP. Before you can use 
+                            PIP, you need to know where Python is installed on your system.
+                        </p>
+                        <p>
+                            Start with a terminal window.
+                        </p>
+                        <p>
+                            From Windows, you can use the Command Prompt or PowerShell.
+                        </p>
+                        <code><pre>
+                            C:\ > python --version
+                            Python 3.13.3
+                        </pre></code>
+                        <p>
+                            From macOS, you can use the Terminal app.
+                        </p>
+                        <code><pre>
+                            % python3 --version
+                            Python 3.13.3
+                        </pre></code>
+                        <p>
+                            As of today, the latest version of Python (shown) indicates the third maintenance 
+                            release of Python 3.13. You may have a different version installed. If it's recent, 
+                            it should be ok.
+                        </p>
+                        <h3>Not what I expected</h3>
+                        <p style="font-style: italic;">
+                            I installed Python, but the command doesn't work.
+                        </p>
+                        <p>
+                            There are a few reasons why the command might not work.
+                        </p>
+                        <p>
+                            If you just installed Python, the PATH environment variable may not be updated, or 
+                            it could not be recognized by the terminal. The command shell, either in Windows or
+                            macOS, needs to know where to find the Python executable. The shell itself only reads
+                            this environment variable when it starts up. So the first thing to try is to close 
+                            the terminal window, or command prompt, and open a new one. Then try the command again.
+                        </p>
+                        <p>
+                            If it still isn't working, make sure that the Python executable is in the PATH
+                            environment variable. You can check this by running the following command:
+                        </p>
+                        <code><pre>
+                            C:\ > echo %PATH%
+                            C:\Python39\;C:\Python39\Scripts\;...
+                        </pre></code>
+                        <p>The equivalent on macos is</p>
+                        <code><pre>
+                            % echo $PATH
+                            /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:...
+                        </pre></code>
+                        <p>
+                            If you see the path to the Python installation, then the command should work. If not,
+                            you may need to add it manually.
+                        </p>
+                        <p>
+                            Also, on some systems, <code>python</code> may be linked to <code>python3</code>, or 
+                            <code>python3.13</code>, or sometimes <code>py</code>.
+                        </p>
+                        <p>
+                            If you have multiple versions of Python installed, including Python 2.x, you may need to use
+                            <code>python3</code> or <code>py</code> to run the correct version.
+                        </p>
+                        <p>
+                            If you have more than one version installed and just want to check the version of Python 3, 
+                            try <code>which python</code> on macOS or Linux, or <code>where python</code> on Windows. 
+                            This will show you the path to the Python executable that is currently being used.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (overview) -->
+
+            <div class="card"> <!-- .card (pip) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ex1" aria-expanded="true" aria-controls="ex1">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Import requests
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ex1" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise #1: Apple Counting </h2>
+                        <ol id="ex1-steps">
+                            <li> <!-- create the project -->
+                                <details>
+                                    <summary>Create the project</summary>
+                                    <p>
+                                        Start with the solution, create a project and add it to the solution.
+                                    </p>
+                                    <p>
+                                        Try this from the command line, or the terminal in macos.
+                                    </p>
+                                    <div>
+                                        <h4>quick start:</h4>
+                                        <p>
+                                            Open a terminal window and navigate to the folder where you want to
+                                            create the project.
+                                        </p>
+                                        <p>
+                                        <code>cd labs</code>
+                                        </p>
+                                        <p>
+                                            Create a new solution folder for the lab:
+                                        </p>
+                                        <p>
+                                            <code>dotnet new sln Lab03</code>
+                                        </p>
+                                        <p>
+                                            The result so far should look like this:
+                                        </p>
+                                        <p>
+                                            <code>Lab03</code><br>
+                                            <code>└── Lab03.sln</code><br>
+                                        </p>
+                                        <p>
+                                            Create a new console application project, and add it 
+                                            to the solution.
+                                        </p>
+                                        <p>
+                                            <code>cd Lab03</code><br>
+                                            <code>dotnet new console -n Apples</code><br>
+                                            <code>cd ..</code>
+                                            <code>dotnet sln add Apples/Apples.csproj</code>
+                                        </p>
+                                        <p>
+                                            Veryify the new folder structure:
+                                        </p>
+                                        <p>
+                                            <code>Lab03</code><br>
+                                            <code>├── Lab03.sln</code><br>
+                                            <code>└── Apples</code><br>
+                                            <code>&nbsp;&nbsp;&nbsp;&nbsp;├── Apples.csproj</code><br>
+                                            <code>&nbsp;&nbsp;&nbsp;&nbsp;└── Program.cs</code><br>
+                                        </p>
+                                        <p>
+                                            You can open the solution from Visual Studio, or from VS Code 
+                                            open the Command Palette (⇧⌘P) and select .NET:Open Solution
+                                        </p>
+                                    </div>
+                                    <h3>Edit the source code</h3>
+                                    <p>
+                                        Replace the source code with the following and update the header
+                                        with your information.:
+                                    </p>
+                                    <img 
+                                        src="/course-content/images/cop2551ex03.01.png" 
+                                        alt="Apple Counting source code" 
+                                        style="width: 100%; max-width: 800px;"
+                                        class="img-fluid"
+                                    />
+                                    <p>
+                                        The program should randomly generate a number of apples for each of
+                                        three players. The program should then compare the results using
+                                        if-else statements to determine the winner.
+                                    </p>
+                                    
+                                </details>
+                            </li> <!-- create the project -->
+                            <li> <!-- explain -->
+                                <details>
+                                    <summary>Explanation</summary>
+                                    <h2>Understanding the code</h2>
+                                    <h3>Random</h3>
+                                    <p>
+                                        The program uses the <code>Random</code> class to generate random numbers
+                                        between 1 and 100 for each of the three players. The program then compares
+                                        the results using if-else statements to determine the winner.
+                                    </p>
+                                    <p>
+                                        The code first creates a <code>new</code> instance of the <code>Random</code> class
+                                        and assigns it to the variable <code>random</code>. We need to do this just once
+                                        at the beginning of the program, so we can use it to generate random numbers.
+                                    </p>
+                                    <p>
+                                        The <code>Next()</code> method is then called on the <code>random</code> object to 
+                                        generate a random number between 1 and 100. 
+                                    </p>
+                                    <p>
+                                        The <code>Next()</code> method takes two arguments: the minimum and maximum values 
+                                        for the random number. In this case, the minimum value is 1 and the maximum value 
+                                        is 101. The maximum value is exclusive, so the random number will be between 1 and 100.
+                                    </p>
+                                    <h3>Boolean control statements</h3>
+                                    <p>
+                                        This is a very simple program, but it demonstrates the use of the
+                                        conditional <code>if</code> statement, the <code>else if</code> statement, and the
+                                        <code>else</code> statement. The program also uses the <code>Console.WriteLine()</code>
+                                    </p>
+                                    <p>
+                                        Remember that an <code>else-if</code> statement, just like an <code>if</code>
+                                        statement requires a boolean expression. The <code>else</code> statement does not.
+                                    </p>
+                                    <p>
+                                        Also, each of the boolean expressions evluates not just two integer values with 
+                                        a boolean operator, but also against a third integer value using the <code>&&</code>
+                                        operator. This is called a compound boolean expression.
+                                    </p>
+                                    <p>
+                                        The program uses the familiar "Press any key..." statement to pause the program
+                                        and wait for the user to press a key before exiting. This is a common practice
+                                        in console applications to allow the user to see the output before the program
+                                        closes.
+                                    </p>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- run and test the program -->
+                                <details>
+                                    <summary>Run and test the program</summary>
+                                    <p>
+                                        Run the program by clicking the green arrow (Start button) in the toolbar or by
+                                        pressing <code>Ctrl + F5</code>. Or you can use either of the Start options in
+                                        the Debug menu.
+                                    </p>
+                                    <p>
+                                        Confirm that the program runs and assigns random values to the three people and 
+                                        that the logic correctly determines the one with the most apples.
+                                    </p>
+                                </details>
+                            </li> <!-- run and test the program -->
+                        </ol> <!-- #ex1-steps -->
+                        <p style="font-style: italic; margin: 20px;">
+                            Continue to the next exercise.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (pip) -->
+
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+        </div> <!-- #footer -->
+    </div> <!-- #lab-assignment-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
