@@ -42,15 +42,15 @@
                             From Windows, you can use the Command Prompt or PowerShell.
                         </p>
                         <code><pre>
-                            C:\ > python --version
-                            Python 3.13.3
+        C:\ > python --version
+        Python 3.13.3
                         </pre></code>
                         <p>
                             From macOS, you can use the Terminal app.
                         </p>
                         <code><pre>
-                            % python3 --version
-                            Python 3.13.3
+        % python3 --version
+        Python 3.13.3
                         </pre></code>
                         <p>
                             As of today, the latest version of Python (shown) indicates the third maintenance 
@@ -76,13 +76,13 @@
                             environment variable. You can check this by running the following command:
                         </p>
                         <code><pre>
-                            C:\ > echo %PATH%
-                            C:\Python39\;C:\Python39\Scripts\;...
+        C:\ > echo %PATH%
+        C:\Python39\;C:\Python39\Scripts\;...
                         </pre></code>
                         <p>The equivalent on macos is</p>
                         <code><pre>
-                            % echo $PATH
-                            /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:...
+        % echo $PATH
+        /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:...
                         </pre></code>
                         <p>
                             If you see the path to the Python installation, then the command should work. If not,
@@ -126,7 +126,7 @@
                             To install a package using PIP, you can use the following command:
                         </p>
                         <code><pre>
-                            C:\ > pip install requests
+        C:\ > pip install requests
                         </pre></code>
                         <p>
                             The same command works on macOS, but you may need to use <code>pip3</code> if 
@@ -141,30 +141,30 @@
                             trying to import it in Python.
                         </p>
                         <code><pre>
-                            C:\ > python
-                            Python 3.13.3 (default, Oct  1 2023, 12:00:00) [MSC v.1916 64 bit (AMD64)] on win32
-                            Type "help", "copyright", "credits" or "license" for more information.
-                            >>> import requests
-                            >>> print(requests.__version__)
-                            2.31.0
-                            >>> exit()
-                            C:\ >
+        C:\ > python
+        Python 3.13.3 (default, Oct  1 2023, 12:00:00) [MSC v.1916 64 bit (AMD64)] on win32
+        Type "help", "copyright", "credits" or "license" for more information.
+        >>> import requests
+        >>> print(requests.__version__)
+        2.31.0
+        >>> exit()
+        C:\ >
                         </pre></code>
                         <p>
                             Check the network connection.
                         </p>
                         <code><pre>
-                            c:\ > python
-                            >>> import requests
-                            >>> response = requests.get('https://zippopotam.us/us/90210')
-                            >>> print(response.status_code) # 200 means OK
-                            200
-                            >>> print(response.json())
-                            {'post code': '90210', 'country': 'United States', 'country abbreviation': 'US', 
-                             'places': [{'place name': 'Beverly Hills', 'state': 'California', 
-                                         'state abbreviation': 'CA'}]}
-                            >>> exit()
-                            c:\ >
+        c:\ > python
+        >>> import requests
+        >>> response = requests.get('https://zippopotam.us/us/90210')
+        >>> print(response.status_code) # 200 means OK
+        200
+        >>> print(response.json())
+        {'post code': '90210', 'country': 'United States', 'country abbreviation': 'US', 
+            'places': [{'place name': 'Beverly Hills', 'state': 'California', 
+                        'state abbreviation': 'CA'}]}
+        >>> exit()
+        c:\ >
                         </pre></code>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
