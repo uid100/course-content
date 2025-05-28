@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Exercise</title>
+    <title>import library</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="stylesheet" href="/course-content/common/css/style.css">
@@ -177,6 +177,20 @@
                             >>> import requests
                             >>> print(requests.__version__)
                             2.31.0
+                        </pre></code>
+                        <p>
+                            Check the network connection.
+                        </p>
+                        <code><pre>
+                            c:\ > python
+                            >>> import requests
+                            >>> response = requests.get('https://zippopotam.us/us/90210')
+                            >>> print(response.status_code) # 200 means OK
+                            200
+                            >>> print(response.json())
+                            {'post code': '90210', 'country': 'United States', 'country abbreviation': 'US', 
+                             'places': [{'place name': 'Beverly Hills', 'state': 'California', 
+                                         'state abbreviation': 'CA'}]}
                         </pre></code>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
