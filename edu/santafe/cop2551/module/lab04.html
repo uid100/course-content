@@ -43,11 +43,10 @@
             </div> <!-- .row -->
         </div> <!-- #page-header -->
 
-        <h1>Lab 03: Making decisions in C# code</h1>
+        <h1>Lab 04: Looping in C#</h1>
         <p style="margin:10px;">
-            <strong>Objective:</strong> Demonstrate use of conditional processing structures 
-            and boolean expressions, including if-else statements, compound boolean expressions,
-            and switch statements.
+            <strong>Objective:</strong> Demonstrate use of iteration control structures, including
+            <code>for</code>, <code>while</code>, and <code>do-while</code> loops.
         </p>
         <div class="container my-4 px-2">
             <div class="card"> <!-- .card (overview) -->
@@ -63,9 +62,10 @@
                 <div id="overview" class="collapse show">
                     <div class="card-body">
                         <p>
-                            This assignment will guide you through writing code using
-                            boolean expressions.
+                            Practice writing code using iteration control structures, including
+                            <code>for</code> loops and nested <code>for</code> loops.
                         </p>
+
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (overview) -->
@@ -76,12 +76,12 @@
                         data-bs-toggle="collapse" data-bs-target="#ex1" aria-expanded="true" aria-controls="ex1">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #1: Apple Harvest (Guided Exercise)
+                        Exercise #1: Multiplication Table
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex1" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #1: Apple Counting </h2>
+                        <h2>Exercise #1: Multiplication Table </h2>
                         <ol id="ex1-steps">
                             <li> <!-- create the project -->
                                 <details>
@@ -89,56 +89,17 @@
                                     <p>
                                         Start with the solution, create a project and add it to the solution.
                                     </p>
+                                    <ul>
+                                        <li>project name: <code>MultiplicationTable</code></li>
+                                        <li>solution name: <code>Lab04</code></li>
+                                    </ul>
                                     <p>
-                                        Try this from the command line, or the terminal in macos.
+                                        <code>Lab04</code><br>
+                                        <code>├── Lab04.sln</code><br>
+                                        <code>└── MultiplicationTable</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;├── MultiplicationTable.csproj</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;└── Program.cs</code><br>
                                     </p>
-                                    <div>
-                                        <h4>quick start:</h4>
-                                        <p>
-                                            Open a terminal window and navigate to the folder where you want to
-                                            create the project.
-                                        </p>
-                                        <p>
-                                        <code>cd labs</code>
-                                        </p>
-                                        <p>
-                                            Create a new solution folder for the lab:
-                                        </p>
-                                        <p>
-                                            <code>dotnet new sln --output Lab03</code>
-                                        </p>
-                                        <p>
-                                            The result so far should look like this:
-                                        </p>
-                                        <p>
-                                            <code>Lab03</code><br>
-                                            <code>└── Lab03.sln</code><br>
-                                        </p>
-                                        <p>
-                                            Create a new console application project, and add it 
-                                            to the solution.
-                                        </p>
-                                        <p>
-                                            <code>cd Lab03</code><br>
-                                            <code>dotnet new console -n Apples</code><br>
-                                            <code>cd ..</code>
-                                            <code>dotnet sln add Apples/Apples.csproj</code>
-                                        </p>
-                                        <p>
-                                            Veryify the new folder structure:
-                                        </p>
-                                        <p>
-                                            <code>Lab03</code><br>
-                                            <code>├── Lab03.sln</code><br>
-                                            <code>└── Apples</code><br>
-                                            <code>&nbsp;&nbsp;&nbsp;&nbsp;├── Apples.csproj</code><br>
-                                            <code>&nbsp;&nbsp;&nbsp;&nbsp;└── Program.cs</code><br>
-                                        </p>
-                                        <p>
-                                            You can open the solution from Visual Studio, or from VS Code 
-                                            open the Command Palette (⇧⌘P) and select .NET:Open Solution
-                                        </p>
-                                    </div>
                                     <h3>Edit the source code</h3>
                                     <p>
                                         Replace the source code with the following and update the header
