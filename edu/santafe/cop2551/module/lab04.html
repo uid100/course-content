@@ -279,23 +279,20 @@
                                 <details>
                                     <summary>Run and test the program</summary>
                                     <p>
-                                        Edit the <code>Main()</code> method to call each of the methods you just created.
-                                        Write lines (test cases) to test each of the methods and display the results.
+                                        Run the program and view the output.
                                     </p>
-                                    <p>
-                                        Run the program and test each of the methods. Make sure to test the optional
-                                        parameters by calling the methods with and without the optional parameters.
-                                    </p>
-                                    <p>
-                                        Here is an example of the output. The actual values will be different each time 
-                                        the code is run.
-                                    </p>
-                                    <img 
-                                        src="/course-content/images/cop2551ex03.02out.png" 
-                                        alt="XYGrid output" 
-                                        style="width: 100%; max-width: 800px;"
-                                        class="img-fluid"
-                                    />
+                                    <ul>
+                                    <li>
+                                        Change the limit counter to some other values. Try 2 and 6 and 10.
+                                        Does it still produce the expected output?
+                                    </li>
+                                    <li>
+                                        What happens if you set the limit counter to 1 or 0 or a negative 
+                                        number?
+                                    </li>
+                                    <li>
+                                        How do you declare a constant in C#?
+                                    </li>
                                 </details>
                             </li> <!-- run and test the program -->
                         </ol>
@@ -309,53 +306,92 @@
                         data-bs-toggle="collapse" data-bs-target="#ex3" aria-expanded="true" aria-controls="ex3">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #3: Overloading methods
+                        Exercise #3: Number Guessing Game
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex3" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #3: Using <code>switch-case</code> logic</h2>
+                        <h2>Exercise #3: Guessing game using a while loop</h2>
                         <ol>
                             <li>
                                 <details>
                                     <summary>Create the project</summary>
                                     <p>
-                                        As before, add another console application project to the solution.
+                                        Add another console application project to the solution.
                                     </p>
                                     <p>
                                         <ul>
-                                            <li>project name: <code>gradeAssignment</code></li>
-                                            <li>solution name: <code>Lab03</code></li>
+                                            <li>project name: <code>Guess</code></li>
+                                            <li>solution name: <code>Lab04</code></li>
                                         </ul>
+                                    </p>
+                                                                        <p>
+                                        <code>Lab04</code><br>
+                                        <code>├── Lab04.sln</code><br>
+                                        <code>└── . . .</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;├── . . .</code><br>
+                                        <code>└── . . .</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;├── . . .</code><br>
+                                        <code>└── IntegerTriangle</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;├── Guess.csproj</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;└── Program.cs</code><br>
                                     </p>
                                 </details>
                             </li>
                             <li>
                                 <details>
                                     <summary>Edit the source code</summary>
+
+                                <details>
+                                    <summary>Design and Write the source code</summary>
+                                    <h3>Objective</h3>
                                     <p>
-                                        Write a method called <code>letterGrade()</code> that takes a single
-                                        integer parameter and returns a string. The method should return the letter
-                                        grade for the given number. The letter grades are as follows:
-                                        <ul>
-                                            <li>A: 90-100</li>
-                                            <li>B: 80-89</li>
-                                            <li>C: 70-79</li>
-                                            <li>D: 60-69</li>
-                                            <li>F: 0-59</li>
-                                        </ul>
+                                        Create a simple number guessing game using a <code>while</code> loop.
+                                    </p>
+                                    <h3>Instructions</h3>
+                                    <ol>
+                                        <li>
+                                            Assign a secret number between 1 and 100 from a random integer generator.
+                                        </li>
+                                        <li>
+                                            Ask the user to guess the number..
+                                        </li>
+                                        <li>
+                                            Keep looping until the user guesses correctly.
+                                        </li>
+                                        <li>
+                                            For each incorrect guess, print:
+                                            <li>
+                                                "Too high!" if the guess is greater than the secret number.
+                                            </li>
+                                            <li>
+                                                "Too low!" if the guess is less than the secret number.
+                                            </li>
+                                        </li>
+                                        <li>
+                                            When the user guesses correctly, print "Congratulations! You guessed the number!"
+                                            and exit the loop.
+                                        </li>
+                                    </ol>
                                     <p>
-                                        The method should use a <code>switch-case</code> statement to determine
-                                        the letter grade. The method should also use a <code>default</code> case
-                                        to handle invalid input.
+                                        Just like using <code>for</code> loops, remember that every loop has three parts:
+                                        <bold>START, STOP, STEP</bold>. 
                                     </p>
                                     <p>
-                                        The method should return the letter grade as a string. The method should
-                                        also return a message if the input is invalid.
+                                        These are not always as obvious as they are in a <code>for</code> loop, but they 
+                                        are still there. In a <code>while</code> loop, the <code>STOP</code> condition may 
+                                        be the most important part. The loop will continue until the <code>STOP</code> 
+                                        condition is met.
                                     </p>
                                     <p>
-                                        In the <code>Main()</code> method of your program, call the <code>letterGrade()</code> method
-                                        and display the result.
+                                        Be sure that you can identify the <code>START</code>, <code>STOP</code>, and 
+                                        <code>STEP</code> parts of the loop in your code.
+                                    </p>
+                                    <p>
+                                        When, not if, you end up with an infinite loop, you can stop the program
+                                        by pressing <code>Ctrl + C</code> in the console window. It is usually 
+                                        because you forgot to change the value of the variable that is used in the
+                                        <code>STOP</code> condition.
                                     </p>
                                 </details>
                             </li>
@@ -363,10 +399,10 @@
                                 <details>
                                     <summary>Run and test the program</summary>
                                     <p>
-                                        Run the program and test with different data, include small and large, positive
-                                        and negative numbers, and zero as method arguments.
-                                        </p>
-                                        <p> Also, test with invalid data, such as letters and symbols.
+                                        Instead of hard-coding the upper limit of the random value,
+                                        use a constant in your code. While you are testing, you can
+                                        set this to a smaller value, like 10 or 20, to make it easier
+                                        to guess the number and see the output.
                                     </p>
                                 </details>
                             </li>
