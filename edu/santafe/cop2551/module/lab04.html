@@ -102,67 +102,85 @@
                                     </p>
                                     <h3>Edit the source code</h3>
                                     <p>
-                                        Replace the source code with the following and update the header
-                                        with your information.:
+                                        First, take a look at a simple for loop.
+                                    </p>
+                                    <pre><code>
+        using System;
+        using System;
+
+        class Program
+        {
+            static void Main()
+            {
+                // For loop from 1 to 10
+                for (int i = 1; i <= 10; i++)
+                {
+                    Console.WriteLine("Number: " + i);
+                }
+            }
+        }</code></pre>
+                                    <p>
+                                        Like the examples in the book, this simple program uses a <code>for</code> loop
+                                        to iterate from 1 to 10, printing each number to the console.
+                                    </p>
+                                    <p>
+                                        Another common use of <code>for</code> loops is in the context of nested loops.
+                                    </p>
+                                    <p>
+                                        Replace the source code with the following and add the header information as 
+                                        you did in the previous labs.
                                     </p>
                                     <img 
-                                        src="/course-content/images/cop2551ex03.01.png" 
-                                        alt="Apple Counting source code" 
+                                        src="/course-content/images/cop2551ex04.01.png" 
+                                        alt="Nested loop showing a multiplication table source code" 
                                         style="width: 100%; max-width: 800px;"
                                         class="img-fluid"
                                     />
                                     <p>
-                                        The program should randomly generate a number of apples for each of
-                                        three players. The program should then compare the results using
-                                        if-else statements to determine the winner.
+                                        Build and run the program to see the output.
                                     </p>
-                                    
+                                    <p>
+                                        The program uses a nested <code>for</code> loop to create a multiplication table
+                                        from 1 to 5. The outer loop iterates through the numbers 1 to 5, and the inner
+                                        loop multiplies each number by the current number in the outer loop.
+                                    </p>
+                                    <p>
+                                        In this simple example, the limits are hard-coded. In a more complex
+                                        program, these values should be set from variables to make the code more
+                                        useful and flexible.
+                                    </p>
                                 </details>
                             </li> <!-- create the project -->
                             <li> <!-- explain -->
                                 <details>
                                     <summary>Explanation</summary>
                                     <h2>Understanding the code</h2>
-                                    <h3>Random</h3>
                                     <p>
-                                        The program uses the <code>Random</code> class to generate random numbers
-                                        between 1 and 100 for each of the three players. The program then compares
-                                        the results using if-else statements to determine the winner.
+                                        The program uses a nested <code>for</code> loop to create a multiplication table.
+                                        The outer loop iterates through the numbers 1 to 5, and the inner loop multiplies
+                                        each number by the current number in the outer loop.
                                     </p>
                                     <p>
-                                        The code first creates a <code>new</code> instance of the <code>Random</code> class
-                                        and assigns it to the variable <code>random</code>. We need to do this just once
-                                        at the beginning of the program, so we can use it to generate random numbers.
+                                        In the <code>for</code> loop, remember that every loop has three parts:
+                                        <ul>
+                                            <li>Initialization:
+                                                <code>int i = 1</code> - This sets the starting point of the loop.
+                                            </li>
+                                            <li>Condition:
+                                                <code>i <= 5</code> - This checks if the loop should continue.
+                                            </li>
+                                            <li>Increment:
+                                                <code>i++</code> - This increases the value of <code>i</code> by 1 after each iteration.
+                                            </li>
+                                        </ul>
                                     </p>
                                     <p>
-                                        The <code>Next()</code> method is then called on the <code>random</code> object to 
-                                        generate a random number between 1 and 100. 
-                                    </p>
-                                    <p>
-                                        The <code>Next()</code> method takes two arguments: the minimum and maximum values 
-                                        for the random number. In this case, the minimum value is 1 and the maximum value 
-                                        is 101. The maximum value is exclusive, so the random number will be between 1 and 100.
-                                    </p>
-                                    <h3>Boolean control statements</h3>
-                                    <p>
-                                        This is a very simple program, but it demonstrates the use of the
-                                        conditional <code>if</code> statement, the <code>else if</code> statement, and the
-                                        <code>else</code> statement. The program also uses the <code>Console.WriteLine()</code>
-                                    </p>
-                                    <p>
-                                        Remember that an <code>else-if</code> statement, just like an <code>if</code>
-                                        statement requires a boolean expression. The <code>else</code> statement does not.
-                                    </p>
-                                    <p>
-                                        Also, each of the boolean expressions evluates not just two integer values with 
-                                        a boolean operator, but also against a third integer value using the <code>&&</code>
-                                        operator. This is called a compound boolean expression.
-                                    </p>
-                                    <p>
-                                        The program uses the familiar "Press any key..." statement to pause the program
-                                        and wait for the user to press a key before exiting. This is a common practice
-                                        in console applications to allow the user to see the output before the program
-                                        closes.
+                                        It may be helpful to think of these as:
+                                        <ol style="font-weight: bold;font-size: larger;">
+                                            <li>Start</li>
+                                            <li>Stop</li>
+                                            <li>Step</li>
+                                        </ol>
                                     </p>
                                 </details>
                             </li> <!-- edit the source code -->
@@ -173,10 +191,6 @@
                                         Run the program by clicking the green arrow (Start button) in the toolbar or by
                                         pressing <code>Ctrl + F5</code>. Or you can use either of the Start options in
                                         the Debug menu.
-                                    </p>
-                                    <p>
-                                        Confirm that the program runs and assigns random values to the three people and 
-                                        that the logic correctly determines the one with the most apples.
                                     </p>
                                 </details>
                             </li> <!-- run and test the program -->
@@ -194,95 +208,71 @@
                         data-bs-toggle="collapse" data-bs-target="#ex2" aria-expanded="true" aria-controls="ex2">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #2: Wandering across the map grid
+                        Exercise #2: Print a Right-Angled Triangle
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex2" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #2: Moving across an X-Y grid</h2>
+                        <h2>Exercise #2: Print a Right-Angled Triangle</h2>
                         <ol>
                             <li> <!-- create the project -->
                                 <details>
                                     <summary>Create the project</summary>
                                     <p>
-                                        From the solution folder (Lab03), create a new project and add it to the solution.
+                                        Create the project and add it to the solution.
                                     </p>
+                                    <ul>
+                                        <li>project name: <code>IntegerTriangle</code></li>
+                                        <li>solution name: <code>Lab04</code></li>
+                                    </ul>
                                     <p>
-                                        From the terminal:
-                                    </p>
-                                    <p>
-                                        <code>cd ..</code><br>
-                                        <code>dotnet new console -n XYGrid</code><br>
-                                        <code>dotnet sln add XYGrid/XYGrid.csproj</code>
-                                    </p>
-                                    <p>
-                                        <ul>
-                                            <li>project name: <code>XYGrid</code></li>
-                                            <li>solution name: <code>Lab03</code></li>
-                                        </ul>
-                                    </p>
-                                    <p>
-                                        The new project will appear in the solution explorer.
+                                        <code>Lab04</code><br>
+                                        <code>├── Lab04.sln</code><br>
+                                        <code>└── . . .</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;├── . . .</code><br>
+                                        <code>└── IntegerTriangle</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;├── IntegerTriangle.csproj</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;└── Program.cs</code><br>
                                     </p>
                                 </details>
                             </li> <!-- create the project -->
                             <li> <!-- edit the source code -->
                                 <details>
                                     <summary>Design and Write the source code</summary>
-                                    <h3>Moving across an X-Y grid</h3>
+                                    <h3>Objective</h3>
                                     <p>
-                                        Write a program that simulates moving across an X-Y grid. The program 
-                                        should start at the middle of the plot at position (0, 0) and keep track 
-                                        of the (X, Y) position. The tracker will move ten times, moving in one of
-                                        four directions: up, down, left, or right. The program should display the
-                                        new position after each move.
+                                        Display a right-angled triangle of numbers increasing in each row.
                                     </p>
-                                    <p>
-                                        Don't forget to add the required header information described in the 
+                                    <p> Example Output 
+                                        <code><pre>
+        1
+        1 2
+        1 2 3
+        1 2 3 4
+        1 2 3 4 5</pre></code></p>
+                                    <h3>Instructions</h3>
+                                    <ul>
+                                        <li>
+                                            Use nested <code>for</code> loops.<br>
+                                            <em>hint:</em> Use <code>i</code> for the outer loop control
+                                            variable and <code>j</code> for the inner loop.
+                                        </li>
+                                        <li>
+                                            Use a defined constant for the number of rows in the triangle.<br>
+                                            <code>5</code> is a good number for this. Use this for consistency.
+                                        </li>
+                                        <li>
+                                            The outer loop controls the rows.
+                                        </li>
+                                        <li>
+                                            The inner loop prints from 1 to the current row number.
+                                        </li>
+                                        <li>
+                                            Don't forget to add the required header information described in the 
                                         previous assignments.
-                                    <p>
-                                        Write a method called <code>Move()</code> and call it ten times. The method
-                                        should take two parameters: the current X and Y position and return the new
-                                        X and Y position as a tuple.
-                                    </p>
-                                    <p>
-                                        You may use a loop to call the method if you prefer, or you can keep it very 
-                                        simple as I did in the example.
-                                    </p>
-                                    <p>
-                                        Your code might look something like this:
-                                    </p>
-                                    <img 
-                                        src="/course-content/images/cop2551ex03.02src.png" 
-                                        alt="XYGrid source code" 
-                                        style="width: 100%; max-width: 800px;"
-                                        class="img-fluid"
-                                    />
-                                    <p>
-                                        The method should randomly select one of the four directions to move in, Up,
-                                        Down, Left, or Right, and also randomly select the number of steps, between 1 and 10, 
-                                        to move in that direction. The method should then calculate and return the new
-                                        X and Y position.
-                                    </p>
-                                    <p>
-                                        Each time the method is called, display the direction and number of steps to move.
-                                    </p>
-                                    <p>
-                                        Up, should increase the Y position by the number of steps, Down, should moved along
-                                        the Y axis in the negative direction. Left and Right should move positive and negative
-                                        along the X axis.
-                                    </p>
-                                    <p>
-                                        Finally, calculate and display the total distance traveled. And the final distance
-                                        from the starting position.
-                                    </p>
-                                    <p>
-                                        The total distance traveled is the sum of all the steps taken.
-                                    </p>
-                                    <p>
-                                        Use the Pythagorean theorem to calculate the distance from the starting position.
-                                        The formula is <code>distance = sqrt((x2 - x1)^2 + (y2 - y1)^2)</code>.
-                                    </p>
+                                        </li>
+                                    </ul>
+
                                 </details>
                             </li> <!-- edit the source code -->
                             <li> <!-- run and test the program -->
