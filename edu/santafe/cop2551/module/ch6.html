@@ -59,15 +59,245 @@
                     <div class="card-body">
                         <h3>Introduction</h3>
                         <p>
-                            In chapter 6 we will explore the fundamental concepts of exception handling in C#. 
+                            In chapter 6 we discuss the fundamental concepts of exception handling in C#. 
                             Exception handling is a crucial aspect of programming that allows developers to 
                             manage errors and unexpected situations gracefully, ensuring that applications 
                             can continue to run or fail safely without crashing.
                         </p>
+                        <h3 style="font-style: italic;">What is an exception?</h3>
+                        <p style="font-weight: bold;">
+                            An exception is an <em>unexpected</em> event that occurs during the execution.
+                            Anything outsid of the normal flow of the program is considered an exception.
+                        </p>
+                        <p>
+                            Trying to access a file that does not exist, is not necessarily an error,
+                            but it is an exception. The program can handle this situation gracefully by
+                            informing the user that the file is not found, rather than crashing or producing
+                            an unhandled error.
+                        </p>
+
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (overview) -->
 
+            <div class="card"> <!-- .card try -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#try" aria-expanded="true" aria-controls="try">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        The Try Block
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="try" class="collapse show">
+                    <div class="card-body">
+                        <p>
+                            The try block is used to wrap code that might throw an exception. 
+                            If an exception occurs within the try block, the program will jump to the catch block.
+                        </p>
+                        <p>
+                            The try block is a way to tell the program to "try" to execute the code, and if an exception occurs,
+                            it will be handled in the catch block.
+                        </p>
+                        <h3>Consider</h3>
+                        <p>
+                            Imagine walking into a classroom that you have never been in before. The lights are 
+                            off, and there are 3 switched on the wall next to the door. You have no idea which
+                            switch controls the lights, or if any of them do.
+                        </p>
+                        <p>
+                            If you flip a switch, there is no guarantee that the lights will turn on, or if something
+                            else will occur. There is some risk involved in flipping the switch, but it is a very low
+                            risk.
+                        </p>
+                        <p>
+                            There is an expectation that the switch will turn on the lights, but it is not guaranteed.
+                        </p>
+                        <p>
+                            This is what a <code>try</code> block is like. You are trying to execute some code. You
+                            have an expectation that the code will run without any issues, but there is a possibility
+                            that an exception will occur.
+                        </p>
+                        <p>
+                            Just like flipping the wall switch, you <strong>try</strong> the action, and wait to see
+                            if you get the expected result. If not, you handle the situation. In the case of the 
+                            lights, you might try another switch. In the case of the code, you handle the <em>likely</em> 
+                            possibilities. 
+                        </p>
+                        <p>
+                            If you are dividing two numbers, you may expect a rational number as a result, but if 
+                            the denominator is zero, you will get an exception. 
+                        </p>
+                        <p>
+                            So the first step is to <strong>try</strong> something with an expectation that it will
+                            work, but if not, you anticipate what could go wrong, starting with the most likely
+                            outcomes.
+                        </p>
+                        <p>
+                            This systematic <em>handling</em> of exceptions, from the most likely to the least likely,
+                            is the essence of exception handling.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (try) -->
+
+            <div class="card"> <!-- .card unhandled-exceptions -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#unhandled" aria-expanded="true"
+                        aria-controls="unhandled">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Unhandled Exceptions
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="unhandled" class="collapse show">
+                    <div class="card-body">
+                        <h3 style="font-style: italic;">Unhandled?</h3>
+                        <p>
+                            If you have ever called a technical support line, you have probably been asked to
+                            very rudimentary questions, starting at the very basic level while trying to resolve
+                            an issue. The support technician is usually working through a checklist of common issues.
+                            This is usually known as level-1 support.
+                        </p>
+                        <p>
+                            If the issue is not resolved at this level, the support technician may escalate the issue
+                            to a more experienced technician, who will then work through a more advanced checklist of
+                            common issues. This is usually known as level-2 support.
+                        </p>
+                        <p>
+                            This continues until the issue is resolved, or it is determined that the issue cannot be 
+                            resolved.
+                        </p>
+                        <p>
+                            If the issue is not resolved, the customer may lose patience, become frustrated,
+                            and give up and hang up the phone, unhappy.
+                        </p>
+                        <p>
+                            This is similar to how exception handling works in programming. 
+                        </p>
+                        <p>
+                            When an exception occurs, the program will first try to handle it using logic 
+                            built into that section of the code. If that logic cannot handle the exception,
+                            the program will look for a higher-level handler, in the code which called the
+                            current code. If it still cannot find a handler, it will continue to look in
+                            the higher-level code until it finds a handler that can handle the exception,
+                            or until it reaches the top level of the program, and if left unhandled,
+                            the program will crash, just like the customer hanging up the phone.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (unhandled-exceptions) -->
+            <div class="card" id="catch"> <!-- .card catch -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#catch" aria-expanded="true" aria-controls="catch">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        The Catch Block
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="catch" class="collapse show">
+                    <div class="card-body">
+                        <h3>Most likely, first</h3>
+                        <p>
+                            The catch block is used to handle exceptions that occur within the try block. 
+                            If an exception occurs, the program will jump to the (local) catch block and 
+                            execute the code within it.
+                        </p>
+                        <p>
+                            The catch block is a way to tell the program what to do if an exception occurs. 
+                            It is like a safety net that catches the exception and allows the program to 
+                            continue running.
+                        </p>
+                        <p>
+                            There may be multiple catch blocks, each handling different types of exceptions.
+                            When you <code>try</code> a block of code which has some risk of an exception,
+                            you can anticipate the most likely exceptions that may occur, and handle them
+                            in the catch block.
+                        </p>
+                        <h3>Generic exception handler</h3>
+                        <p>
+                            You have written code that you expect to run without any issues, but there are
+                            some things that may happen. You start by identifying the most likely and 
+                            <em>handle</em> those first.
+                        </p>
+                        <p>
+                            But after you have presented handlers for the most likely exceptions,
+                            and you still have not handled the exception, you can use a generic
+                            exception handler to catch any other exceptions that may occur.
+                        </p>
+                        <p>
+                            This is like having a catch-all for any exceptions that you did not anticipate.
+                            It is a way to ensure that your program does not crash, even if an unexpected
+                            exception occurs.
+                        </p>
+                        <p>
+                            The generic exception handler should be the last catch block
+                            in the sequence of catch blocks. It is a way to ensure that any
+                            unhandled exceptions are caught and handled gracefully.
+                        </p>
+                        <p>
+                            This is a way of saying, "Well, something went wrong, and we tried everything
+                            we could think of, but we don't want the program to crash, so we will
+                            just acknowledge the error and continue running."
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (catch) -->
+            <div class="card"> <!-- .card finally -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#finally" aria-expanded="true"
+                        aria-controls="finally">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        The Finally Block
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="finally" class="collapse show">
+                    <div class="card-body">
+                        <p>
+                            The finally block is used to execute code that should always run, regardless 
+                            of whether an exception occurred or not. It is like a cleanup crew that comes 
+                            in after the show is over, to make sure everything is in order.
+                        </p>
+                        <p>
+                            The finally block is a way to ensure that certain code is always executed, even 
+                            if an exception occurs. It is like a safety net that catches the exception and 
+                            allows the program to continue running.
+                        </p>
+                        <p>
+                            A common use case for the finally block is to close resources, such as files or
+                            database connections, that were opened in the try block.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (finally) -->
+            <div class="card" id="custom-exceptions"> <!-- .card custom-exceptions -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#custom-exceptions" aria-expanded="true"
+                        aria-controls="custom-exceptions">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Custom Exceptions
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="custom-exceptions" class="collapse show">
+                    <div class="card-body">
+                        <p>
+                            In addition to the built-in exceptions provided by C#, you can also create 
+                            your own custom exceptions. This is useful when you want to handle specific 
+                            errors that are not covered by the built-in exceptions.
+                        </p>
+                        <p>
+                            Custom exceptions can be created by inheriting from the <code>Exception</code> 
+                            class and adding any additional properties or methods that you need.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (custom-exceptions) -->
         </div> <!-- .container -->
         <div id="footer">
             <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
