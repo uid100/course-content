@@ -66,8 +66,7 @@
                             variable in a single step. For example, the <code>+=</code> operator adds a value to a variable
                             and assigns the result back to that variable, like this:
                             <code><pre>
-x += 5; // equivalent to x = x + 5;
-                            </pre></code>
+    x += 5; // equivalent to x = x + 5;</pre></code>
                         </p>
                         <p>
                             Iteration statements, also known as loops, allow you to execute a block of code multiple times
@@ -99,11 +98,11 @@ x += 5; // equivalent to x = x + 5;
                             These will likely be familiar to you, as they are used in most popular programming languages.
                             The most common compound assignment operators in C# are:
                             <ul>
-                                <li><code>+=</code> - Adds a value to a variable and assigns the result back to that variable.</li>
-                                <li><code>-=</code> - Subtracts a value from a variable and assigns the result back to that variable.</li>
-                                <li><code>*=</code> - Multiplies a variable by a value and assigns the result back to that variable.</li>
-                                <li><code>/=</code> - Divides a variable by a value and assigns the result back to that variable.</li>
-                                <li><code>%=</code> - Calculates the modulus of a variable with respect to a value and assigns the result back to that variable.</li>
+                                <li><code>+=</code> Adds a value to a variable and assigns the result back to that variable.</li>
+                                <li><code>-=</code> Subtracts a value from a variable and assigns the result back to that variable.</li>
+                                <li><code>*=</code> Multiplies a variable by a value and assigns the result back to that variable.</li>
+                                <li><code>/=</code> Divides a variable by a value and assigns the result back to that variable.</li>
+                                <li><code>%=</code> Calculates the modulus of a variable with respect to a value and assigns the result back to that variable.</li>
                             </ul>
                         </p>
                         <p>
@@ -138,7 +137,98 @@ x += 5; // equivalent to x = x + 5;
                 </div> <!-- .collapse -->
             </div> <!-- .card compound-assignment -->
 
+            <div class="card"> <!-- .card iteration -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#loops" aria-expanded="true"
+                        aria-controls="loops">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Iteration Statements - Loops
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="loops" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Iteration</h2>
+                        <p>
+                            To review, we began this programming discussion with the simple concept of sequential
+                            processing. The idea of doing one thing after another. That was deliberately step one.
+                        </p>
+                        <p>
+                            In step two, we introduced the idea of branching, or making decisions in our code.
+                            This allowed us to create more complex programs that could react to different conditions.
+                        </p>
+                        <p>
+                            Now, in step three, we will introduce the concept of iteration, or repeating a block of code
+                            multiple times. This is a powerful tool that allows us to process collections of data, perform
+                            repetitive tasks, and create more dynamic and flexible programs.
+                        </p>
+                        <p>
+                            In C#, iteration statements, also known as loops, allow you to execute a block of code multiple
+                            times based on a condition. This is useful for tasks that require repetition, such as processing
+                            items in a collection or performing calculations until a certain condition is met.
+                        </p>
+                        <h3>WHILE, FOR, DO-WHILE</h3>
+                        <p>
+                            Imagine that there are 1000 people waiting to buy concert tickets, but there are only 700 seats 
+                            available. The logic could be handled as a FOR loop through each of the tickets that are available 
+                            to sell. When the number sold equals the number available, the loop exits and the "sold out" sign 
+                            goes in the window. In this case, the number of tickets sold needs to be tracked with a counter, 
+                            also called an "iterator" that would start at 0 (tickets sold) and count up until the number is 
+                            at the end condition.
+                        </p>
+                        <p>
+                            Of course this could also be handled with a WHILE loop and instead of tracking number 
+                            of tickets sold, keep an eye on the number left available instead, and when that number 
+                            gets to zero (0), there are no more left to sell.
+                        </p>
+                        <p>
+                            From this example you can see that FOR loops and WHILE loops can are almost always 
+                            interchangeable. Which one you choose is sometimes a point of style, but usually 
+                            depends on which reads most with the clearest logic.
+                        </p>
+                        <p>
+                            If I know how many times I need to execute the loop and the number is the important 
+                            part of the control ( 10-pushups, 20-situps, 10-jumping jacks), then a FOR loop is 
+                            more appropriate, if the end condition is more important than the number of times 
+                            through the loop, then a WHILE loop makes more sense. Read each line of a file 
+                            WHILE there are still lines to read and an end condition is met. In this case, I do 
+                            not need to know how many lines there are, I just need to keep going, until I am done. 
+                            I could use a FOR loop, but a WHILE loop is more logical.
+                        </p>
+                        <p style="font-style: italic;">
+                            Read that last paragraph again, and think about it.
+                        </p>
+                            The Do-While loop is a special case of the While loop. The important distinction is 
+                            when the boolean end condition is evaluated.
+                        </p>
+                        <p>
+                            The Do-While loop will always execute at least once, because the condition is evaluated 
+                            after the first execution of the loop. This is useful when you want to ensure that the code 
+                            inside the loop runs at least once, regardless of the condition.
+                            </p>
+                        <p style="font-style: italic;">
+                            If the FOR and WHILE loops are interchangeable, then why do they both exist?<br>
+                            The answer is primarily for readability and clarity of logic.
+                        </p>
+                        <h3>FOR EACH</h3>
+                        <p>
+                            C# has another (fourth) type of loop structure, the FOREACH loop.
+                        </p>
+                        <p>
+                            This one is very useful to handle elements of a collection, but it works a little 
+                            differently than the three from this chapter. Rather than stepping through each 
+                            element, it uses a copy of each element.
+                        <p>
+                            This is a very important distinction. For now, we will just mention it and wait 
+                            until later to discuss it in more detail in the context of data collections.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card iteration -->
+
         </div> <!-- .container -->
+
         <div id="footer">
             <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
         </div> <!-- #footer -->
