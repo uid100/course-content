@@ -43,9 +43,9 @@
             </div> <!-- .row -->
         </div> <!-- #page-header -->
 
-        <h1>Lab 05: #####</h1>
+        <h1>Lab 05: Exception Handling</h1>
         <p style="margin:10px;">
-            <strong>Objective:</strong> Demonstrate #####
+            <strong>Objective:</strong> Use try-catch-finally blocks to handle exceptions in C# code.
         </p>
         <div class="container my-4 px-2">
             <div class="card"> <!-- .card (overview) -->
@@ -61,8 +61,8 @@
                 <div id="overview" class="collapse show">
                     <div class="card-body">
                         <p>
-                            This assignment will guide you through writing code using
-                            boolean expressions.
+                            In this lab, you will practice using exception handling in C# code. You will learn how to
+                            use try-catch-finally blocks to handle exceptions and how to create custom exceptions.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
@@ -74,132 +74,102 @@
                         data-bs-toggle="collapse" data-bs-target="#ex1" aria-expanded="true" aria-controls="ex1">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #1: Apple Harvest (Guided Exercise)
+                        Exercise #1: Division (Guided Exercise)
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex1" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #1: Apple Counting </h2>
+                        <h2>Exercise #1: Safe Division with Exception Handling</h2>
                         <ol id="ex1-steps">
                             <li> <!-- create the project -->
                                 <details>
                                     <summary>Create the project</summary>
                                     <p>
-                                        Start with the solution, create a project and add it to the solution.
+                                        <code>Lab05</code><br>
+                                        <code>├── Lab03.sln</code><br>
+                                        <code>└── Division</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;├── Division.csproj</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;└── Program.cs</code><br>
                                     </p>
+                                    <h3>Objective</h3>
                                     <p>
-                                        Try this from the command line, or the terminal in macos.
+                                        Use a try-catch block to handle potential exceptions when dividing 
+                                        two numbers entered by the user, including handling division by zero 
+                                        and invalid input.
                                     </p>
-                                    <div>
-                                        <h4>quick start:</h4>
-                                        <p>
-                                            Open a terminal window and navigate to the folder where you want to
-                                            create the project.
-                                        </p>
-                                        <p>
-                                        <code>cd labs</code>
-                                        </p>
-                                        <p>
-                                            Create a new solution folder for the lab:
-                                        </p>
-                                        <p>
-                                            <code>dotnet new sln Lab03</code>
-                                        </p>
-                                        <p>
-                                            The result so far should look like this:
-                                        </p>
-                                        <p>
-                                            <code>Lab03</code><br>
-                                            <code>└── Lab03.sln</code><br>
-                                        </p>
-                                        <p>
-                                            Create a new console application project, and add it 
-                                            to the solution.
-                                        </p>
-                                        <p>
-                                            <code>cd Lab03</code><br>
-                                            <code>dotnet new console -n Apples</code><br>
-                                            <code>cd ..</code>
-                                            <code>dotnet sln add Apples/Apples.csproj</code>
-                                        </p>
-                                        <p>
-                                            Veryify the new folder structure:
-                                        </p>
-                                        <p>
-                                            <code>Lab03</code><br>
-                                            <code>├── Lab03.sln</code><br>
-                                            <code>└── Apples</code><br>
-                                            <code>&nbsp;&nbsp;&nbsp;&nbsp;├── Apples.csproj</code><br>
-                                            <code>&nbsp;&nbsp;&nbsp;&nbsp;└── Program.cs</code><br>
-                                        </p>
-                                        <p>
-                                            You can open the solution from Visual Studio, or from VS Code 
-                                            open the Command Palette (⇧⌘P) and select .NET:Open Solution
-                                        </p>
-                                    </div>
-                                    <h3>Edit the source code</h3>
-                                    <p>
-                                        Replace the source code with the following and update the header
-                                        with your information.:
+                                    <h3>Instructions</h3>
+                                    <ol>
+                                        <li>Ask the user to enter two numbers: a numerator and a denominator.</li>
+                                        <li>Convert the input to integers using int.Parse() (or Convert.ToInt32()).</li>
+                                        <li>Perform division: numerator / denominator.</li>
+                                        <li>Use try-catch to:
+                                            <ol>
+                                                <li>Catch <code>DivideByZeroException</code> and display a message.</li>
+                                                <li>Catch <code>FormatException</code> for invalid input and display a message.</li>
+                                                <li>Catch any other exceptions and display a generic error message.</li>
+                                            </ol>
+                                        </li>
+                                        <li>Display a farewell message at the end using a finally block.</li>
+                                    </ol>
+                                    <h3>Example Output</h3>
+                                    <p> Case 1: Valid Input 
+                                        <code><pre>
+        Enter numerator: 10
+        Enter denominator: 2
+        Result: 5
+        Thank you for using the program!</pre></code>
+                                    </p>
+                                    <p> Case 2: Division by Zero 
+                                        <code><pre>
+        Enter numerator: 10
+        Enter denominator: 0
+        Error: Division by zero is not allowed.
+        Thank you for using the program!</pre></code>
+                                    </p>
+                                    <p> Case 3: Invalid Input 
+                                        <code><pre>
+        Enter numerator: ten
+        Enter denominator: 2
+        Error: Invalid input. Please enter a valid number.
+        Thank you for using the program!</pre></code>
                                     </p>
                                     <img 
-                                        src="/course-content/images/cop2551ex03.01.png" 
-                                        alt="Apple Counting source code" 
+                                        src="/course-content/images/cop2551ex05.01.png" 
+                                        alt="division exception handling source code" 
                                         style="width: 100%; max-width: 800px;"
                                         class="img-fluid"
                                     />
                                     <p>
-                                        The program should randomly generate a number of apples for each of
-                                        three players. The program should then compare the results using
-                                        if-else statements to determine the winner.
+                                        Don't forget to add the required header information.
                                     </p>
-                                    
                                 </details>
                             </li> <!-- create the project -->
                             <li> <!-- explain -->
                                 <details>
                                     <summary>Explanation</summary>
                                     <h2>Understanding the code</h2>
-                                    <h3>Random</h3>
                                     <p>
-                                        The program uses the <code>Random</code> class to generate random numbers
-                                        between 1 and 100 for each of the three players. The program then compares
-                                        the results using if-else statements to determine the winner.
+                                        The code uses a try-catch block to handle exceptions that may occur during the
+                                        division operation. The try block contains the code that may throw an exception,
+                                        while the catch blocks handle specific exceptions that may occur.
                                     </p>
                                     <p>
-                                        The code first creates a <code>new</code> instance of the <code>Random</code> class
-                                        and assigns it to the variable <code>random</code>. We need to do this just once
-                                        at the beginning of the program, so we can use it to generate random numbers.
+                                        The first catch block handles the <code>DivideByZeroException</code>, which occurs
+                                        when the denominator is zero. The second catch block handles the <code>FormatException</code>,
+                                        which occurs when the input cannot be converted to an integer. The third catch block
+                                        handles any other exceptions that may occur.
                                     </p>
                                     <p>
-                                        The <code>Next()</code> method is then called on the <code>random</code> object to 
-                                        generate a random number between 1 and 100. 
+                                        The finally block is executed regardless of whether an exception occurs or not. It
+                                        displays a farewell message to the user.
                                     </p>
                                     <p>
-                                        The <code>Next()</code> method takes two arguments: the minimum and maximum values 
-                                        for the random number. In this case, the minimum value is 1 and the maximum value 
-                                        is 101. The maximum value is exclusive, so the random number will be between 1 and 100.
-                                    </p>
-                                    <h3>Boolean control statements</h3>
-                                    <p>
-                                        This is a very simple program, but it demonstrates the use of the
-                                        conditional <code>if</code> statement, the <code>else if</code> statement, and the
-                                        <code>else</code> statement. The program also uses the <code>Console.WriteLine()</code>
+                                        The program uses <code>int.Parse()</code> to convert the input to an integer. If the
+                                        input is not a valid integer, a <code>FormatException</code> will be thrown.
                                     </p>
                                     <p>
-                                        Remember that an <code>else-if</code> statement, just like an <code>if</code>
-                                        statement requires a boolean expression. The <code>else</code> statement does not.
-                                    </p>
-                                    <p>
-                                        Also, each of the boolean expressions evluates not just two integer values with 
-                                        a boolean operator, but also against a third integer value using the <code>&&</code>
-                                        operator. This is called a compound boolean expression.
-                                    </p>
-                                    <p>
-                                        The program uses the familiar "Press any key..." statement to pause the program
-                                        and wait for the user to press a key before exiting. This is a common practice
-                                        in console applications to allow the user to see the output before the program
-                                        closes.
+                                        The program also uses <code>Console.ReadLine()</code> to read input from the user.
+                                        If the user enters a non-numeric value, a <code>FormatException</code> will be thrown.
                                     </p>
                                 </details>
                             </li> <!-- edit the source code -->
