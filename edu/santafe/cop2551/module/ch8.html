@@ -66,47 +66,6 @@
                 </div> <!-- .collapse -->
             </div> <!-- .card (overview) -->
 
-            <div class="card"> <!-- .card methods-->
-                <div class="card-header">
-                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#methods" aria-expanded="true"
-                        aria-controls="methods">
-                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
-                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Methods
-                    </button>
-                </div> <!-- .card-header -->
-                <div id="methods" class="collapse hide">
-                    <div class="card-body">
-                        <h2>Writing and calling methods</h2>
-                        <p>
-                            A <strong>method</strong> is a named block of code that performs a specific task. In C#, all
-                            functions are defined as methods, usually inside a class or struct.
-                            While the terms "function" and "method" are sometimes used interchangeably, a method
-                            specifically refers to a function that is associated with an object or class.
-                        </p>
-                        <p>
-                            For example:
-                        </p>
-                        <pre style="padding: 20px;"><code class="language-csharp">
-class Greeter
-{
-    // This is a method
-    public void SayHello()
-    {
-        Console.WriteLine("Hello!");
-    }
-}
-                          </code></pre>
-                        <p>
-                            Here, <code>SayHello</code> is a method defined inside the <code>Greeter</code> class. If
-                            this were a standalone function outside a class (which C# doesn't allow), it would just be a
-                            function.
-                        </p>
-                    </div> <!-- .card-body -->
-                </div> <!-- .collapse -->
-            </div> <!-- .card methods -->
-
         </div> <!-- .container -->
         <div id="footer">
             <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
