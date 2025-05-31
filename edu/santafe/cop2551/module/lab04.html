@@ -45,8 +45,7 @@
 
         <h1>Lab 04: Looping in C#</h1>
         <p style="margin:10px;">
-            <strong>Objective:</strong> Demonstrate use of iteration control structures, including
-            <code>for</code>, <code>while</code>, and <code>do-while</code> loops.
+            <strong>Objective:</strong> Demonstrate use of iteration control structures.
         </p>
         <div class="container my-4 px-2">
             <div class="card"> <!-- .card (overview) -->
@@ -87,7 +86,8 @@
                                 <details>
                                     <summary>Create the project</summary>
                                     <p>
-                                        Start with the solution, create a project and add it to the solution.
+                                        Start with a new solution, (<code>dotnet new sln --output Lab04</code>). 
+                                        Create a project and add it to the solution.
                                     </p>
                                     <ul>
                                         <li>project name: <code>MultiplicationTable</code></li>
@@ -105,7 +105,6 @@
                                         First, take a look at a simple for loop.
                                     </p>
                                     <pre><code>
-        using System;
         using System;
 
         class Program
@@ -259,7 +258,7 @@
                                         </li>
                                         <li>
                                             Use a defined constant for the number of rows in the triangle.<br>
-                                            <code>5</code> is a good number for this. Use this for consistency.
+                                            <code>5</code> is a good number for this. You can use this for consistency.
                                         </li>
                                         <li>
                                             The outer loop controls the rows.
@@ -281,18 +280,22 @@
                                     <p>
                                         Run the program and view the output.
                                     </p>
-                                    <ul>
-                                    <li>
-                                        Change the limit counter to some other values. Try 2 and 6 and 10.
-                                        Does it still produce the expected output?
-                                    </li>
-                                    <li>
-                                        What happens if you set the limit counter to 1 or 0 or a negative 
-                                        number?
-                                    </li>
-                                    <li>
-                                        How do you declare a constant in C#?
-                                    </li>
+                                    <p>
+                                        Some things to consider:
+                                        <ul>
+                                            <li>
+                                                Change the limit counter to some other values. Try 2 and 6 and 10.
+                                                Does it still produce the expected output?
+                                            </li>
+                                            <li>
+                                                What happens if you set the limit counter to 1 or 0 or a negative 
+                                                number?
+                                            </li>
+                                            <li>
+                                                How do you declare a constant in C#?
+                                            </li>
+                                        </ul>
+                                    </p>
                                 </details>
                             </li> <!-- run and test the program -->
                         </ol>
@@ -339,9 +342,6 @@
                                 </details>
                             </li>
                             <li>
-                                <details>
-                                    <summary>Edit the source code</summary>
-
                                 <details>
                                     <summary>Design and Write the source code</summary>
                                     <h3>Objective</h3>
@@ -507,7 +507,7 @@
                                     </p>
                                     <pre><code>
         password: Secret123
-        
+
         Enter your password: test
         Incorrect password. Try again.
         Enter your password: 123
