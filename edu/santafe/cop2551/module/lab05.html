@@ -247,66 +247,55 @@
                         data-bs-toggle="collapse" data-bs-target="#ex3" aria-expanded="true" aria-controls="ex3">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #3: Overloading methods
+                        Exercise #3: Throwing exceptions
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex3" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #3: Using <code>switch-case</code> logic</h2>
+                        <h2>Exercise #3: </h2>
                         <ol>
                             <li>
                                 <details>
                                     <summary>Create the project</summary>
                                     <p>
-                                        As before, add another console application project to the solution.
+                                        From the solution folder (Lab05), create a new project and add it to the solution.
                                     </p>
                                     <p>
                                         <ul>
-                                            <li>project name: <code>gradeAssignment</code></li>
-                                            <li>solution name: <code>Lab03</code></li>
+                                            <li>project name: <code>MonthName</code></li>
+                                            <li>solution name: <code>Lab05</code></li>
                                         </ul>
                                     </p>
-                                </details>
-                            </li>
-                            <li>
-                                <details>
-                                    <summary>Edit the source code</summary>
+                                    <h3>Objective</h3>
                                     <p>
-                                        Write a method called <code>letterGrade()</code> that takes a single
-                                        integer parameter and returns a string. The method should return the letter
-                                        grade for the given number. The letter grades are as follows:
-                                        <ul>
-                                            <li>A: 90-100</li>
-                                            <li>B: 80-89</li>
-                                            <li>C: 70-79</li>
-                                            <li>D: 60-69</li>
-                                            <li>F: 0-59</li>
-                                        </ul>
-                                    <p>
-                                        The method should use a <code>switch-case</code> statement to determine
-                                        the letter grade. The method should also use a <code>default</code> case
-                                        to handle invalid input.
+                                        Learn how to throw exceptions in C# and how to catch them in a try-catch block.
                                     </p>
+                                    <h3>Instructions</h3>
+                                    <ol>
+                                        <li>
+                                            Write a method <code>monthName</code> that:
+                                            <ul>
+                                                <li>Takes an integer <code>month</code> as a parameter.</li>
+                                                <li>Uses a switch expression to return the name of the month.</li>
+                                                <li>If the input is not between 1 and 12, throws an <code>ArgumentOutOfRangeException</code>.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            In the <code>Main()</code> method:
+                                            <ul>
+                                                <li>Ask the user to enter a month number (1–12).</li>
+                                                <li>Call the <code>monthName()</code> method with the user's input.</li>
+                                                <li>Catch and display any exceptions that occur.</li>
+                                            </ul>
+                                        </li>
+                                    </ol>
                                     <p>
-                                        The method should return the letter grade as a string. The method should
-                                        also return a message if the input is invalid.
+                                        Write a method `monthName(int month)` that returns the name of the month. If the 
+                                        input is not between 1 and 12, the method should throw an `ArgumentOutOfRangeException`.
                                     </p>
+                                    <h3>Example Output</h3>
                                     <p>
-                                        In the <code>Main()</code> method of your program, call the <code>letterGrade()</code> method
-                                        and display the result.
-                                    </p>
-                                </details>
-                            </li>
-                            <li>
-                                <details>
-                                    <summary>Run and test the program</summary>
-                                    <p>
-                                        Run the program and test with different data, include small and large, positive
-                                        and negative numbers, and zero as method arguments.
-                                        </p>
-                                        <p> Also, test with invalid data, such as letters and symbols.
-                                    </p>
-                                </details>
+                                        <code><pre>
                             </li>
                         </ol>
                     </div> <!-- .card-body -->
