@@ -74,7 +74,7 @@
                         data-bs-toggle="collapse" data-bs-target="#ex1" aria-expanded="true" aria-controls="ex1">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #1: Division (Guided Exercise)
+                        Exercise #1: Division  (try-catch-finally)
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex1" class="collapse hide">
@@ -133,12 +133,6 @@
         Error: Invalid input. Please enter a valid number.
         Thank you for using the program!</pre></code>
                                     </p>
-                                    <img 
-                                        src="/course-content/images/cop2551ex05.01.png" 
-                                        alt="division exception handling source code" 
-                                        style="width: 100%; max-width: 800px;"
-                                        class="img-fluid"
-                                    />
                                     <p>
                                         Don't forget to add the required header information.
                                     </p>
@@ -149,22 +143,23 @@
                                     <summary>Explanation</summary>
                                     <h2>Understanding the code</h2>
                                     <p>
-                                        The code uses a try-catch block to handle exceptions that may occur during the
+                                        The code will use a try-catch block to handle exceptions that may occur during the
                                         division operation. The try block contains the code that may throw an exception,
                                         while the catch blocks handle specific exceptions that may occur.
                                     </p>
                                     <p>
-                                        The first catch block handles the <code>DivideByZeroException</code>, which occurs
+                                        The first catch block should handle the <code>DivideByZeroException</code>, which occurs
                                         when the denominator is zero. The second catch block handles the <code>FormatException</code>,
                                         which occurs when the input cannot be converted to an integer. The third catch block
-                                        handles any other exceptions that may occur.
+                                        handles any other exceptions that may occur. The order of these catch blocks is important,
+                                        as the most specific exceptions should be caught first.
                                     </p>
                                     <p>
                                         The finally block is executed regardless of whether an exception occurs or not. It
                                         displays a farewell message to the user.
                                     </p>
                                     <p>
-                                        The program uses <code>int.Parse()</code> to convert the input to an integer. If the
+                                        The program should use <code>int.Parse()</code> to convert the input to an integer. If the
                                         input is not a valid integer, a <code>FormatException</code> will be thrown.
                                     </p>
                                     <p>
@@ -182,8 +177,7 @@
                                         the Debug menu.
                                     </p>
                                     <p>
-                                        Confirm that the program runs and assigns random values to the three people and 
-                                        that the logic correctly determines the one with the most apples.
+                                        Test the program with valid and invalid inputs.
                                     </p>
                                 </details>
                             </li> <!-- run and test the program -->
