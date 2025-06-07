@@ -64,6 +64,10 @@
                             In this lab, you will practice using exception handling in C# code. You will learn how to
                             use try-catch-finally blocks to handle exceptions and how to create custom exceptions.
                         </p>
+                        <p>
+                            As before, you will create a single solution with multiple projects. Each project will
+                            contain a separate exercise that demonstrates different aspects of exception handling.
+                        </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (overview) -->
@@ -195,7 +199,7 @@
                         data-bs-toggle="collapse" data-bs-target="#ex2" aria-expanded="true" aria-controls="ex2">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #2: Exceeding variable type limits
+                        Exercise #2: Using Checked Context for Overflow
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex2" class="collapse hide">
@@ -236,6 +240,28 @@
                                     </p>
                                 </details>
                             </li> <!-- create the project -->
+                            <li> <!-- explain -->
+                                <details>
+                                    <summary>Explanation</summary>
+                                    <h2>Understanding the code</h2>
+                                    <p>
+                                        The code will use a `checked` block to enable overflow detection. When an arithmetic
+                                        operation exceeds the limits of the data type, an `OverflowException` will be thrown.
+                                    </p>
+                                    <p>
+                                        The `try-catch` block will catch the `OverflowException` and display an error message.
+                                        This allows the program to handle the exception gracefully instead of crashing.
+                                    </p>
+                                </details>
+                            </li> <!-- explain -->
+                            <li> <!-- run and test the program -->
+                                <details>
+                                    <summary>Run and test the program</summary>
+                                    <p>
+                                        Test the program to ensure it correctly detects the overflow and displays the error message.
+                                    </p>
+                                </details>
+                            </li> <!-- run and test the program -->
                         </ol>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
@@ -289,20 +315,55 @@
                                             </ul>
                                         </li>
                                     </ol>
-                                    <p>
-                                        Write a method `monthName(int month)` that returns the name of the month. If the 
-                                        input is not between 1 and 12, the method should throw an `ArgumentOutOfRangeException`.
-                                    </p>
                                     <h3>Example Output</h3>
-                                    <p>
+                                    <p> Case 1: Valid Input
                                         <code><pre>
+        Enter a month number (1-12): 5
+        The month is: May</pre></code>
+                                    </p>
+                                    <p> Case 2: Invalid Input
+                                        <code><pre>
+        Enter a month number (1-12): 13
+        Error: Month must be between 1 and 12.</pre></code>
+                                    </p>
+                                    <p>
+                                        Don't forget to add the required header information.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Explanation</summary>
+                                    <h2>Understanding the code</h2>
+                                    <p>
+                                        The method <code>monthName</code> uses a switch expression to return the name of the month
+                                        based on the input number. If the input is not between 1 and 12, it throws an
+                                        <code>ArgumentOutOfRangeException</code>.
+                                    </p>
+                                    <p>
+                                        The <code>Main()</code> method prompts the user for input, calls the <code>monthName()</code>
+                                        method, and catches any exceptions that may occur.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Run and test the program</summary>
+                                    <p>
+                                        Run the program to ensure it correctly handles valid and invalid inputs.
+                                    </p>
+                                    <p>
+                                        Test the program with various inputs, including valid month numbers (1–12) and invalid
+                                        numbers (e.g., 0, 13, -1).
+                                    </p>
+                                </details>
                             </li>
                         </ol>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (ex3) -->
 
-            <div class="card">
+            <div class="card"> <!-- .card (submit) -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
                         data-bs-toggle="collapse" data-bs-target="#submit" aria-expanded="true" aria-controls="submit">
