@@ -103,7 +103,81 @@
         | + Method2(param: Type)  |
         ---------------------------
                         </code></pre>
-                        
+
+
+                        <h3>1️⃣ Top Section – Class Name</h3>
+                        <ul>
+                            <li>Contains the <strong>name of the class</strong></li>
+                            <li>Should be <strong>capitalized</strong> (e.g., <code>Student</code>, <code>Car</code>)</li>
+                            <li>Abstract classes may be shown in <em>italic</em></li>
+                        </ul>
+
+                        <h3>2️⃣ Middle Section – Attributes (Fields)</h3>
+                        <ul>
+                            <li>Lists the <strong>data members</strong> or <strong>fields</strong></li>
+                            <li>Each field includes:
+                            <ul>
+                                <li><strong>Visibility symbol</strong> (<code>-</code> for private, <code>+</code> for public, <code>#</code> for protected)</li>
+                                <li><strong>Field name</strong></li>
+                                <li><strong>Colon</strong> <code>:</code> followed by the <strong>data type</strong></li>
+                            </ul>
+                            </li>
+                        </ul>
+
+                        <pre>
+                        - name: string
+                        - age: int
+                        </pre>
+
+                        <h3>3️⃣ Bottom Section – Operations (Methods)</h3>
+                        <ul>
+                            <li>Lists the <strong>methods</strong> or <strong>behaviors</strong> of the class</li>
+                            <li>Each method includes:
+                            <ul>
+                                <li><strong>Visibility symbol</strong></li>
+                                <li><strong>Method name</strong></li>
+                                <li><strong>Parameter list</strong> (if any)</li>
+                                <li><strong>Colon</strong> <code>:</code> and the return type</li>
+                            </ul>
+                            </li>
+                        </ul>
+
+                        <pre>
+                        + GetName(): string
+                        + SetAge(age: int): void
+                        </pre>
+
+                        <h2>✅ Access levels</h2>
+                        <table>
+                            <tr>
+                            <th>Symbol</th>
+                            <th>Meaning</th>
+                            <th>C# Keyword</th>
+                            </tr>
+                            <tr>
+                            <td>+</td>
+                            <td>public</td>
+                            <td><code>public</code></td>
+                            </tr>
+                            <tr>
+                            <td>-</td>
+                            <td>private</td>
+                            <td><code>private</code></td>
+                            </tr>
+                            <tr>
+                            <td>#</td>
+                            <td>protected</td>
+                            <td><code>protected</code></td>
+                            </tr>
+                        </table>
+
+                        <h2>🧠 Example: UML Diagram for a <code>Book</code> Class</h2>
+
+                        <div class="uml-box">
+                            <div class="section">Book</div>
+                            <div class="section">- title: string<br>- author: string<br>- price: double</div>
+                            <div class="section">+ GetTitle(): string<br>+ SetPrice(p: double): void</div>
+                        </div>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
         </div> <!-- .container -->
