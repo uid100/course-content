@@ -79,7 +79,7 @@
                 </div> <!-- .card-header -->
                 <div id="ex1" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #1: Book class </h2>
+                        <h2>Exercise #1: A Book class </h2>
                         <ol id="ex1-steps">
                             <li> <!-- create the project -->
                                 <details>
@@ -240,12 +240,12 @@
                         data-bs-toggle="collapse" data-bs-target="#ex2" aria-expanded="true" aria-controls="ex2">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #2: Student class
+                        Exercise #2: Students
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex2" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #2: Overloading constructor</h2>
+                        <h2>Exercise #2: Overloading a constructor</h2>
                         <ol>
                             <li> <!-- create the project -->
                                 <details>
@@ -275,7 +275,7 @@
                                     <summary>Design and Write the source code</summary>
                                     <h3>Student</h3>
                                     <p>
-                                        Create a Student class -in its own file according to the following class diagram:
+                                        Create a Student class in its own file according to the following class diagram:
                                     </p>
                                     <img 
                                         src="/course-content/images/StudentClass.jpg" 
@@ -286,7 +286,8 @@
                                     </p>
                                     <p>
                                         If the <code>Student</code> class is created with name and id, 
-                                        call the second constructor with 'undeclared' as the third parameter.
+                                        call the second constructor from the first with 'undeclared' as the third parameter. 
+                                        Do not repeat code.
                                     </p>
                                     <p>
                                         In the second constructor, set the <code>Name</code> and <code>Id</code> 
@@ -296,9 +297,6 @@
                                     <p>
                                         Optional, GPA may be declared nullable and set to <code>null</code>
                                         or simply set to an initial value of <code>0.0</code>.
-                                    </p>
-                                    <p>
-                                        Don't forget to add the required header information.
                                     </p>
                                     <h3>Students</h3>
                                     <p>
@@ -316,6 +314,10 @@
                                         the details of the student, including the name, id, major, and GPA.
                                     </p>
                                     <p>
+                                        As before, the <code>ToString()</code> method should not print anything to 
+                                        the console.
+                                    </p>
+                                    <p>
                                         Change the major of one of the students using the <code>SetMajor()</code>
                                         method and display the details again.
                                     </p>
@@ -323,18 +325,24 @@
                                         Update the GPA of one of the students using the <code>SetGPA()</code>
                                         method and display the student details.
                                     </p>
+                                    <p style="font-style: italic;">
+                                        Don't forget to add the required header information to all of your source files!
+                                    </p>
                                 </details>
                             </li> <!-- edit the source code -->
                             <li> <!-- run and test the program -->
                                 <details>
                                     <summary>Run and test the program</summary>
                                     <p>
-                                        Run the program and verify that it creates the student objects and displays
-                                        their details correctly.
+                                        Run the program and verify that it creates the student objects, tests the public
+                                        methods and displays the details of the created objects correctly.
                                     </p>
                                 </details>
                             </li> <!-- run and test the program -->
                         </ol>
+                        <p style="font-style: italic; margin: 20px;">
+                            Continue to the next exercise.
+                        </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (ex2) -->
