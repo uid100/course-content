@@ -145,29 +145,71 @@
                                     <img 
                                         src="/course-content/images/cop2551ex06.01.jpg" 
                                         alt="Book exercise class diagram" 
-                                        style="width: 100%; max-width: 800px;"
-                                        class="img-fluid"
                                     />
                                     <h3>Edit the source code</h3>
                                     <p>
-                                        
+                                        Notice the class "overrides" the <code>ToString()</code> method.
+                                        This is a common practice in C# to provide a string representation of the
+                                        object. The <code>ToString()</code> method is called automatically when
+                                        the object is converted to a string, such as when it is printed to the console.
+                                    </p>
+                                    <p>
+                                        The <code>ToString()</code> method should return a string that contains
+                                        the details of a created object. By including this, you can format the output
+                                        to display what is important to the user.
+                                    </p>
+                                    <p>
+                                        Notice that the <code>ToString()</code> method returns a string, it does not 
+                                        print anything to the console.
+                                    </p>
+                                    <p style="font-style: italic;">
+                                        Do not forget to add the required header information for all of your source files!                                        
                                     </p>
                                     <img 
-                                        src="/course-content/images/cop2551ex03.01.png" 
-                                        alt="Apple Counting source code" 
-                                        style="width: 100%; max-width: 800px;"
-                                        class="img-fluid"
+                                        src="/course-content/images/Book_cs_src.png" 
+                                        alt="Book class source code" 
                                     />
                                     <p>
-                                        The program should randomly generate a number of apples for each of
-                                        three players. The program should then compare the results using
-                                        if-else statements to determine the winner.
+                                        The Bookshelf class contains the Main() method, which is the entry point.
+                                        Notice that the Main() method:
+                                        <ul>
+                                            <li>
+                                                <code>public</code> - this means that it can be called from outside the class.
+                                            </li>
+                                            <li>
+                                                <code>static</code> - this means that it can be called without creating an
+                                                instance of the class.
+                                            </li>
+                                            <li>
+                                                <code>void</code> - this means that it does not return a value. Where 
+                                                would it return the value to?
+                                            </li>
+                                            <li>
+                                                <code>Main()</code> - this is the name of the method. It is a special
+                                                method that is called when the program starts.
+                                            </li>
+                                        </ul>
                                     </p>
                                     <p>
                                         This time, we have two class files, both in the same namespace,
                                         and we have renamed the source code file to match the name of the
                                         class it contains, and given the classes more descriptive names.
                                     </p>
+                                    <p>
+                                        There can be only one <code>Main()</code> method in a project.
+                                    </p>
+                                    <p>
+                                        From the Main() method, create at least three instances of the
+                                        <code>Book</code> class and display the output from the 
+                                        <code>ToString()</code>. The example has two. Start with these.
+                                    </p>
+                                    <p style="font-style: italic;">
+                                        Do not forget to add the required header information for all of your source files!                                        
+                                    </p>
+                                    <img 
+                                        src="/course-content/images/Bookshelf_cs_src.png" 
+                                        alt="Bookshelf class source code - including Main() method." 
+                                    />
                                 </details>
                             </li> <!-- create the project -->
                             <li> <!-- explain -->
