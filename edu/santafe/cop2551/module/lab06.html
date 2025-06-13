@@ -397,22 +397,69 @@
                             <li>
                                 <details>
                                     <summary>Edit the source code</summary>
+                                    <h3>Product</h3>
                                     <p>
-                                        Create the Product class consistent with the following class diagram:                                        
+                                        Create the Product class according to the following class diagram:                                        
                                     </p>
                                     <img 
                                         src="/course-content/images/ProductClass.jpg" 
-                                        alt="Product class diagram" /
+                                        alt="Product class diagram" />
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                Notice that the underlined field <code>item</code> is a static field.
+                                                Initialize this to 1000
+                                            </li>
+                                            <li>
+                                                In the constructor:
+                                                <ul>
+                                                    <li>
+                                                        Increment the static field <code>item</code> by one and assign 
+                                                        the new value to the <em>id</em> instance field. Each item will
+                                                        have a unique id.
+                                                    </li>
+                                                    <li>
+                                                        Set the <em>name</em> and <em>price</em> instance fields to the
+                                                        values passed to the constructor.
+                                                    </li>
+                                                    <li>
+                                                        Set the <em>quantity</em> instance field to 0.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Create a method called <code>ToString()</code> that returns a string
+                                                representation of the product, including the id, name, price, and 
+                                                quantity in stock.                                                
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <h3>ProductCatalog</h3>
+                                    <p>
+                                        Create a ProductCatalog class containing a Main method.
+                                    </p>
+                                    <p>
+                                        In this class, create at least five products, each with a unique name, and price.
+                                    </p>
+                                    <p>
+                                        Add products to the catalog and display the details of each product.
+                                    </p>
+                                    <p>
+                                        Test the SellItem() method. It should return false if the quantity requested
+                                        is more than the quantity in stock, otherwise it should
+                                        reduce the quantity in stock by the quantity sold and return true.
+                                    </p>
+                                    <p>
+                                        Display the details of each product after selling an item.
+                                    </p>
                                 </details>
                             </li>
                             <li>
                                 <details>
                                     <summary>Run and test the program</summary>
                                     <p>
-                                        Run the program and test with different data, include small and large, positive
-                                        and negative numbers, and zero as method arguments.
-                                        </p>
-                                        <p> Also, test with invalid data, such as letters and symbols.
+                                        Run the program and demostrate product (objects) created, added to stock
+                                        and sold.
                                     </p>
                                 </details>
                             </li>
