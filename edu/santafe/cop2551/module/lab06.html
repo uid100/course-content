@@ -216,65 +216,13 @@
                                         <code>ToString()</code>. The example has two. Start with these.
                                     </p>
                                 </details>
-                            </li> <!-- create the project -->
-                            <li> <!-- explain -->
-                                <details>
-                                    <summary>Explanation</summary>
-                                    <h2>Understanding the code</h2>
-                                    <h3>Random</h3>
-                                    <p>
-                                        The program uses the <code>Random</code> class to generate random numbers
-                                        between 1 and 100 for each of the three players. The program then compares
-                                        the results using if-else statements to determine the winner.
-                                    </p>
-                                    <p>
-                                        The code first creates a <code>new</code> instance of the <code>Random</code> class
-                                        and assigns it to the variable <code>random</code>. We need to do this just once
-                                        at the beginning of the program, so we can use it to generate random numbers.
-                                    </p>
-                                    <p>
-                                        The <code>Next()</code> method is then called on the <code>random</code> object to 
-                                        generate a random number between 1 and 100. 
-                                    </p>
-                                    <p>
-                                        The <code>Next()</code> method takes two arguments: the minimum and maximum values 
-                                        for the random number. In this case, the minimum value is 1 and the maximum value 
-                                        is 101. The maximum value is exclusive, so the random number will be between 1 and 100.
-                                    </p>
-                                    <h3>Boolean control statements</h3>
-                                    <p>
-                                        This is a very simple program, but it demonstrates the use of the
-                                        conditional <code>if</code> statement, the <code>else if</code> statement, and the
-                                        <code>else</code> statement. The program also uses the <code>Console.WriteLine()</code>
-                                    </p>
-                                    <p>
-                                        Remember that an <code>else-if</code> statement, just like an <code>if</code>
-                                        statement requires a boolean expression. The <code>else</code> statement does not.
-                                    </p>
-                                    <p>
-                                        Also, each of the boolean expressions evluates not just two integer values with 
-                                        a boolean operator, but also against a third integer value using the <code>&&</code>
-                                        operator. This is called a compound boolean expression.
-                                    </p>
-                                    <p>
-                                        The program uses the familiar "Press any key..." statement to pause the program
-                                        and wait for the user to press a key before exiting. This is a common practice
-                                        in console applications to allow the user to see the output before the program
-                                        closes.
-                                    </p>
-                                </details>
                             </li> <!-- edit the source code -->
                             <li> <!-- run and test the program -->
                                 <details>
                                     <summary>Run and test the program</summary>
                                     <p>
-                                        Run the program by clicking the green arrow (Start button) in the toolbar or by
-                                        pressing <code>Ctrl + F5</code>. Or you can use either of the Start options in
-                                        the Debug menu.
-                                    </p>
-                                    <p>
-                                        Confirm that the program runs and assigns random values to the three people and 
-                                        that the logic correctly determines the one with the most apples.
+                                        Confirm that the program runs and instantiates your new objects and displays
+                                        the details to the screen.
                                     </p>
                                 </details>
                             </li> <!-- run and test the program -->
@@ -292,7 +240,7 @@
                         data-bs-toggle="collapse" data-bs-target="#ex2" aria-expanded="true" aria-controls="ex2">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #2: Wandering across the map grid
+                        Exercise #2: 
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex2" class="collapse hide">
@@ -417,12 +365,12 @@
                         data-bs-toggle="collapse" data-bs-target="#ex3" aria-expanded="true" aria-controls="ex3">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #3: Overloading methods
+                        Exercise #3: Product Catalog
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex3" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #3: Using <code>switch-case</code> logic</h2>
+                        <h2>Exercise #3: Using static class values</h2>
                         <ol>
                             <li>
                                 <details>
@@ -432,9 +380,17 @@
                                     </p>
                                     <p>
                                         <ul>
-                                            <li>project name: <code>gradeAssignment</code></li>
-                                            <li>solution name: <code>Lab03</code></li>
+                                            <li>project name: <code>ProductCatalog</code></li>
+                                            <li>solution name: <code>Lab06</code></li>
                                         </ul>
+                                    </p>
+                                    <p>
+                                        Name your project <code>ProductCatalog</code> and add it to the solution.
+                                    </p>
+                                    <p>
+                                        Create two class files, one for the <code>Product</code> class and one for the
+                                        <code>ProductCatalog</code> class. Each of these classes should have its own
+                                        source code file, named the same as the class it contains.
                                     </p>
                                 </details>
                             </li>
@@ -442,29 +398,11 @@
                                 <details>
                                     <summary>Edit the source code</summary>
                                     <p>
-                                        Write a method called <code>letterGrade()</code> that takes a single
-                                        integer parameter and returns a string. The method should return the letter
-                                        grade for the given number. The letter grades are as follows:
-                                        <ul>
-                                            <li>A: 90-100</li>
-                                            <li>B: 80-89</li>
-                                            <li>C: 70-79</li>
-                                            <li>D: 60-69</li>
-                                            <li>F: 0-59</li>
-                                        </ul>
-                                    <p>
-                                        The method should use a <code>switch-case</code> statement to determine
-                                        the letter grade. The method should also use a <code>default</code> case
-                                        to handle invalid input.
+                                        Create the Product class consistent with the following class diagram:                                        
                                     </p>
-                                    <p>
-                                        The method should return the letter grade as a string. The method should
-                                        also return a message if the input is invalid.
-                                    </p>
-                                    <p>
-                                        In the <code>Main()</code> method of your program, call the <code>letterGrade()</code> method
-                                        and display the result.
-                                    </p>
+                                    <img 
+                                        src="/course-content/images/ProductClass.png" 
+                                        alt="Product class diagram" /
                                 </details>
                             </li>
                             <li>
