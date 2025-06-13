@@ -240,94 +240,88 @@
                         data-bs-toggle="collapse" data-bs-target="#ex2" aria-expanded="true" aria-controls="ex2">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #2: 
+                        Exercise #2: Student class
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex2" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #2: Moving across an X-Y grid</h2>
+                        <h2>Exercise #2: Overloading constructor</h2>
                         <ol>
                             <li> <!-- create the project -->
                                 <details>
                                     <summary>Create the project</summary>
                                     <p>
-                                        From the solution folder (Lab03), create a new project and add it to the solution.
+                                        Create a new project and add it to the solution.
                                     </p>
-                                    <p>
-                                        From the terminal:
-                                    </p>
-                                    <p>
-                                        <code>cd ..</code><br>
-                                        <code>dotnet new console -n XYGrid</code><br>
-                                        <code>dotnet sln add XYGrid/XYGrid.csproj</code>
-                                    </p>
+
                                     <p>
                                         <ul>
-                                            <li>project name: <code>XYGrid</code></li>
-                                            <li>solution name: <code>Lab03</code></li>
+                                            <li>project name: <code>Students</code></li>
+                                            <li>solution name: <code>Lab06</code></li>
                                         </ul>
                                     </p>
                                     <p>
-                                        The new project will appear in the solution explorer.
+                                        Again, use two classes and two separate source code files.
+                                    </p>
+                                    <p>
+                                        The first should be named <code>Student.cs</code> and the second
+                                        could be named <code>Program.cs</code> or <code>Students.cs</code>
+                                        or something similar. As long as it is descriptive and meaningful.
                                     </p>
                                 </details>
                             </li> <!-- create the project -->
                             <li> <!-- edit the source code -->
                                 <details>
                                     <summary>Design and Write the source code</summary>
-                                    <h3>Moving across an X-Y grid</h3>
+                                    <h3>Student</h3>
                                     <p>
-                                        Write a program that simulates moving across an X-Y grid. The program 
-                                        should start at the middle of the plot at position (0, 0) and keep track 
-                                        of the (X, Y) position. The tracker will move ten times, moving in one of
-                                        four directions: up, down, left, or right. The program should display the
-                                        new position after each move.
-                                    </p>
-                                    <p>
-                                        Don't forget to add the required header information described in the 
-                                        previous assignments.
-                                    <p>
-                                        Write a method called <code>Move()</code> and call it ten times. The method
-                                        should take two parameters: the current X and Y position and return the new
-                                        X and Y position as a tuple.
-                                    </p>
-                                    <p>
-                                        You may use a loop to call the method if you prefer, or you can keep it very 
-                                        simple as I did in the example.
-                                    </p>
-                                    <p>
-                                        Your code might look something like this:
+                                        Create a Student class -in its own file according to the following class diagram:
                                     </p>
                                     <img 
-                                        src="/course-content/images/cop2551ex03.02src.png" 
-                                        alt="XYGrid source code" 
-                                        style="width: 100%; max-width: 800px;"
-                                        class="img-fluid"
+                                        src="/course-content/images/StudentClass.jpg" 
+                                        alt="Student class diagram"
                                     />
                                     <p>
-                                        The method should randomly select one of the four directions to move in, Up,
-                                        Down, Left, or Right, and also randomly select the number of steps, between 1 and 10, 
-                                        to move in that direction. The method should then calculate and return the new
-                                        X and Y position.
+                                        There are two constructors in the class diagram. 
                                     </p>
                                     <p>
-                                        Each time the method is called, display the direction and number of steps to move.
+                                        If the <code>Student</code> class is created with name and id, 
+                                        call the second constructor with 'undeclared' as the third parameter.
                                     </p>
                                     <p>
-                                        Up, should increase the Y position by the number of steps, Down, should moved along
-                                        the Y axis in the negative direction. Left and Right should move positive and negative
-                                        along the X axis.
+                                        In the second constructor, set the <code>Name</code> and <code>Id</code> 
+                                        fields from the parameters and call the <code>SetMajor()</code> method
+                                        to set the <code>Major</code> field.
                                     </p>
                                     <p>
-                                        Finally, calculate and display the total distance traveled. And the final distance
-                                        from the starting position.
+                                        Optional, GPA may be declared nullable and set to <code>null</code>
+                                        or simply set to an initial value of <code>0.0</code>.
                                     </p>
                                     <p>
-                                        The total distance traveled is the sum of all the steps taken.
+                                        Don't forget to add the required header information.
+                                    </p>
+                                    <h3>Students</h3>
+                                    <p>
+                                        Create another class containing a <code>Main()</code> method. 
+                                        Use this class to test the <code>Student</code> class.
                                     </p>
                                     <p>
-                                        Use the Pythagorean theorem to calculate the distance from the starting position.
-                                        The formula is <code>distance = sqrt((x2 - x1)^2 + (y2 - y1)^2)</code>.
+                                        In the <code>Main()</code> method, create at least three instances of the
+                                        <code>Student</code> class. Use the first constructor for at least one of them.
+                                        Use the second constructor for at least one of them.
+                                    </p>
+                                    <p>
+                                        Display the details of each student using the <code>ToString()</code> method.
+                                        The <code>ToString()</code> method should return a string that contains
+                                        the details of the student, including the name, id, major, and GPA.
+                                    </p>
+                                    <p>
+                                        Change the major of one of the students using the <code>SetMajor()</code>
+                                        method and display the details again.
+                                    </p>
+                                    <p>
+                                        Update the GPA of one of the students using the <code>SetGPA()</code>
+                                        method and display the student details.
                                     </p>
                                 </details>
                             </li> <!-- edit the source code -->
@@ -335,23 +329,9 @@
                                 <details>
                                     <summary>Run and test the program</summary>
                                     <p>
-                                        Edit the <code>Main()</code> method to call each of the methods you just created.
-                                        Write lines (test cases) to test each of the methods and display the results.
+                                        Run the program and verify that it creates the student objects and displays
+                                        their details correctly.
                                     </p>
-                                    <p>
-                                        Run the program and test each of the methods. Make sure to test the optional
-                                        parameters by calling the methods with and without the optional parameters.
-                                    </p>
-                                    <p>
-                                        Here is an example of the output. The actual values will be different each time 
-                                        the code is run.
-                                    </p>
-                                    <img 
-                                        src="/course-content/images/cop2551ex03.02out.png" 
-                                        alt="XYGrid output" 
-                                        style="width: 100%; max-width: 800px;"
-                                        class="img-fluid"
-                                    />
                                 </details>
                             </li> <!-- run and test the program -->
                         </ol>
