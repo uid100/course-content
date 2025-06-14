@@ -62,6 +62,53 @@
                             Chapter 8 looks at the fundamental concepts of value and reference types in C# 
                             and why they matter.                             
                         </p>
+                        <p>
+                            Understanding the difference between value types and referency types is important
+                            for effective memory management and application performance, but more importantly,
+                            understanding how the program handles and stores its data is important to being 
+                            able to select the right data types for each situation.
+                        </p>
+                        <p>
+                            If you consider library book storage, the books themselves are stored on shelves
+                            in rows and rooms. But they are indexed in a catalog that tells you where to find
+                            each book. The catalog is a reference to the book, while the book itself is a value.
+                        </p>
+                        <p>
+                            Rather than searching through every book on the shelf, you can look up the
+                            catalog to find the location of the book you want. This is similar to how value
+                            and reference types work in C#. Value types store the actual data. Data such as 
+                            integers, and doubles and booleans are examples of this. This data is stored on 
+                            what is called the <em>stack</em>. It is fast to access and manipulate, but it 
+                            is limited in size. Larger data elements, and data objects that might need to be
+                            more persistent across different parts of the program, are stored in what is called
+                            the <em>heap</em>. The heap is a larger area of memory that can store more complex
+                            data structures, such as classes and arrays. However, accessing data in the heap is
+                            slower than accessing data in the stack, because it requires a reference to the
+                            data's location in memory.
+                        </p>
+                        <p>
+                            It takes longer to go to the library shelf and find the book, but it contains more
+                            information than the index card in the catalog.
+                        </p>
+                        <p>
+                            The textbook has very good examples and explanations of value and reference types.
+                            I also recommend learning a little more about the stack and heap memory
+                            management in C#. This is a fundamental concept that will help you understand
+                            memory management in C# and other programming languages.
+                        </p>
+                        <p>
+                            Here is a short video that helps explain the differences between memory storage.
+                        </p>
+                        <iframe 
+                        width="560" height="315" 
+                        src="https://www.youtube.com/embed/ep2xOW52mDY?si=W7ugBupix_ql2oTC" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>
+                            A lot of the concepts and content in this chapter will help to explain the content
+                            in the next. Take your time to read through the chapter and consider the examples.
+                        </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (overview) -->
