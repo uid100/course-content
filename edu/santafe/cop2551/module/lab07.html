@@ -51,15 +51,6 @@
 
 
         <!--
-
-        
-### 🔹 **Part 1: Enums (Foundations & Practice)**
-
-#### 1. **Traffic Light Enum**
-* **Enum**: `TrafficLight { Red, Yellow, Green }`
-* **Exercise**:
-  * Write a method `NextLight(TrafficLight current)` that returns the next light in sequence.
-
 #### 2. **Days of the Week Scheduler**
 * **Enum**: `DayOfWeek { Sunday, Monday, ..., Saturday }`
   * today’s day and a (random < 7) number of days to skip ahead.
@@ -122,11 +113,10 @@
                 </div> <!-- .card-header -->
                 <div id="ex1" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #1: Traffic Light Controller </h2>
+                        <h2>Exercise #1: Traffic Light Controller (enum)</h2>
                         <ol id="ex1-steps">
                             <li> <!-- create the project -->
-                                <details>
-                                    <summary>Create the project</summary>
+                                <details><summary>Create the project</summary>
                                     <p>
                                         <ul>
                                             <li>Solution:  Lab07</li>
@@ -152,8 +142,7 @@
                                 </details>
                             </li> <!-- create the project -->
                             <li> <!-- edit the source code -->
-                                <details>
-                                    <summary>Design and create the source code</summary>
+                                <details><summary>Design and create the source code</summary>
                                     <h3>LightController.cs</h3>
                                     <ul>
                                     <li>
@@ -214,8 +203,7 @@
                                 </details>
                             </li> <!-- edit the source code -->
                             <li> <!-- run and test the program -->
-                                <details>
-                                    <summary>Run and test the program</summary>
+                                <details><summary>Run and test the program</summary>
                                     <p>
                                         The program builds and runs without errors or warnings. The program instantiates the 
                                         LightController object, exercises the instance methods and displays the values to the screen.
@@ -239,12 +227,12 @@
                         data-bs-toggle="collapse" data-bs-target="#ex2" aria-expanded="true" aria-controls="ex2">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #2: Students
+                        Exercise #2: Days
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex2" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #2: Overloading a constructor</h2>
+                        <h2>Exercise #2: Day of the Week Calculator (enum)</h2>
                         <ol>
                             <li> <!-- create the project -->
                                 <details>
@@ -252,89 +240,99 @@
                                     <p>
                                         Create a new project and add it to the solution.
                                     </p>
-
                                     <p>
                                         <ul>
-                                            <li>project name: <code>Students</code></li>
-                                            <li>solution name: <code>Lab06</code></li>
+                                            <li>project name: <code>Days</code></li>
+                                            <li>solution name: <code>Lab07</code></li>
                                         </ul>
-                                    </p>
-                                    <p>
-                                        Again, use two classes and two separate source code files.
-                                    </p>
-                                    <p>
-                                        The first should be named <code>Student.cs</code> and the second
-                                        could be named <code>Program.cs</code> or <code>Students.cs</code>
-                                        or something similar. As long as it is descriptive and meaningful.
                                     </p>
                                 </details>
                             </li> <!-- create the project -->
                             <li> <!-- edit the source code -->
                                 <details>
                                     <summary>Design and Write the source code</summary>
-                                    <h3>Student</h3>
+                                    <h3>DayCounter.cs</h3>
                                     <p>
-                                        Create a Student class in its own file according to the following class diagram:
-                                    </p>
-                                    <img 
-                                        src="/course-content/images/StudentClass.jpg" 
-                                        alt="Student class diagram"
-                                    />
-                                    <p>
-                                        There are two constructors in the class diagram. 
+                                        To keep things simple, use a single class for this exercise.
                                     </p>
                                     <p>
-                                        If the <code>Student</code> class is created with name and id, 
-                                        call the second constructor from the first with 'undeclared' as the third parameter. 
-                                        Do not repeat code.
+                                        Create a class called <code>DayCounter</code>. Reminder, the classname should match 
+                                        the filename.
                                     </p>
                                     <p>
-                                        In the second constructor, set the <code>Name</code> and <code>Id</code> 
-                                        fields from the parameters and call the <code>SetMajor()</code> method
-                                        to set the <code>Major</code> field.
+                                        Add an enum to the class file called <code>DayOfWeek</code> with the values:
+                                        <code>Sunday</code>, <code>Monday</code>, <code>Tuesday</code>, <code>Wednesday</code>, 
+                                        <code>Thursday</code>, <code>Friday</code>, and <code>Saturday</code>.
                                     </p>
                                     <p>
-                                        Optional, GPA may be declared nullable and set to <code>null</code>
-                                        or simply set to an initial value of <code>0.0</code>.
-                                    </p>
-                                    <h3>Students</h3>
-                                    <p>
-                                        Create another class containing a <code>Main()</code> method. 
-                                        Use this class to test the <code>Student</code> class.
+                                        In the class, create a <code>Main()</code> method that will be the entry point
+                                        for the program.
                                     </p>
                                     <p>
-                                        In the <code>Main()</code> method, create at least three instances of the
-                                        <code>Student</code> class. Use the first constructor for at least one of them.
-                                        Use the second constructor for at least one of them.
+                                        Get the current day of the week using the <code>DateTime.Now.DayOfWeek</code>
+                                        property and store it in a variable called <code>today</code>.
                                     </p>
                                     <p>
-                                        Display the details of each student using the <code>ToString()</code> method.
-                                        The <code>ToString()</code> method should return a string that contains
-                                        the details of the student, including the name, id, major, and GPA.
+                                        Prompt the user to enter a number of days to skip ahead (an integer).
+                                        Use a nullable value to store the user input.                                         
                                     </p>
                                     <p>
-                                        As before, the <code>ToString()</code> method should not print anything to 
-                                        the console.
+                                        Add a method called <code>CalculateDay(int daysToSkip)</code> that takes an integer
+                                        parameter representing the number of days to skip ahead. The method should return
+                                        the day of the week after skipping the specified number of days.
                                     </p>
                                     <p>
-                                        Change the major of one of the students using the <code>SetMajor()</code>
-                                        method and display the details again.
+                                        Use the modulo operator to calculate the new day of the week. The formula is:
+                                        <code>(today + daysToSkip) % 7</code>. This will give you the new day of the week
+                                        as an integer, which you can then convert to the corresponding enum value.
                                     </p>
                                     <p>
-                                        Update the GPA of one of the students using the <code>SetGPA()</code>
-                                        method and display the student details.
+                                        Display the result to the user, showing the current day and the day after skipping
+                                        the specified number of days.
                                     </p>
-                                    <p style="font-style: italic;">
-                                        Don't forget to add the required header information to all of your source files!
+                                    <p>
+                                        Things to consider:
+                                        <ul>
+                                            <li>
+                                                Do you need to cast the enum value to an integer to perform the modulo 
+                                                operation. You can use the <code>(int)</code> cast to convert the enum 
+                                                value to an integer?
+                                            </li>
+                                            <li>
+                                                How do you convert the result of the modulo operation back to the
+                                                enum value?
+                                            </li>
+                                            <li>
+                                                Does CalculateDay() needs to be a static method?
+                                            </li>
+                                        </ul> 
                                     </p>
+                                    <p></p>
                                 </details>
                             </li> <!-- edit the source code -->
                             <li> <!-- run and test the program -->
                                 <details>
                                     <summary>Run and test the program</summary>
                                     <p>
-                                        Run the program and verify that it creates the student objects, tests the public
-                                        methods and displays the details of the created objects correctly.
+                                        Run the program and test with a variety of user inputs.
+                                        <ul>
+                                            <li>
+                                                Does your program correctly calculate the day of the week 
+                                                after skipping the specified number of days?
+                                            </li>
+                                            <li>
+                                                Does it handle negative numbers correctly?
+                                            </li>
+                                            <li>
+                                                Does it handle zero (0) correctly?
+                                            </li>
+                                            <li>
+                                                Does it handle large numbers correctly?
+                                            </li>
+                                            <li>
+                                                Does your program handle invalid inputs gracefully?
+                                            </li>
+                                        </ul>
                                     </p>
                                 </details>
                             </li> <!-- run and test the program -->
