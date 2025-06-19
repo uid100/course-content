@@ -137,6 +137,66 @@
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
+
+            </div> <!-- .card (enum) -->
+
+            <div class="card"> <!-- .card struct -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#struct" aria-expanded="true"
+                        aria-controls="struct">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Structure
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="struct" class="collapse show">
+                    <div class="card-body">
+                        <h3>Structure</h3>
+                        <p>
+                            A structure is a user-defined value type that can contain data members and methods. 
+                            It is similar to a class, but it is a value type, which means that it is stored on the 
+                            stack rather than the heap.
+                        </p>
+                        <p>
+                            Structures are defined using the <code>struct</code> keyword, followed by the name of the 
+                            structure and a list of data members enclosed in curly braces.
+                        </p>
+                        <pre><code class="language-csharp">
+        struct Point
+        {
+            public int X;
+            public int Y;
+        }
+                        </code></pre>
+                        <p>
+                            You can use a structure to declare a variable of that type, and assign values to its
+                            data members.
+                        </p>
+                        <pre><code class="language-csharp">
+        Point p;
+        p.X = 10;
+        p.Y = 20;
+        Console.WriteLine($"Point: ({p.X}, {p.Y})");
+                        </code></pre>
+                        <p>
+                            Structures can also have methods, properties, and constructors, just like classes. 
+                            However, they are typically used for small data structures that do not require the 
+                            overhead of a class.
+                        </p>
+                        <p>
+                            Structures are useful for grouping related data together and providing a way to 
+                            manipulate that data in a meaningful way. They are often used to represent simple 
+                            data types such as points, rectangles, and colors.
+                        </p>
+                        <p>
+                            As with enumerations, structures are a powerful tool for improving the readability 
+                            and maintainability of your code. They allow you to define custom data types that 
+                            can be used to represent complex data structures in a clear and concise way.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (struct) -->
         </div> <!-- .container -->
         <div id="footer">
             <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
