@@ -51,14 +51,6 @@
 
 
         <!--
-#### 2. **Days of the Week Scheduler**
-* **Enum**: `DayOfWeek { Sunday, Monday, ..., Saturday }`
-  * today’s day and a (random < 7) number of days to skip ahead.
-  * Show what day it will be after skipping.
-  * hint you may need to cast values and use modulo operation.
-          DayOfWeek today = DateTime.Now.DayOfWeek;
-        Console.WriteLine("Today is: " + today);
-
 #### 3. **Point2D Struct**
   * Create two points and compute the distance between them.
 
@@ -108,7 +100,7 @@
                         data-bs-toggle="collapse" data-bs-target="#ex1" aria-expanded="true" aria-controls="ex1">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #1: TrafficLight
+                        Exercise #1: Traffic Light Controller
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex1" class="collapse hide">
@@ -145,68 +137,73 @@
                                 <details><summary>Design and create the source code</summary>
                                     <h3>LightController.cs</h3>
                                     <ul>
-                                    <li>
-                                        In the <code>LightController</code> class file, define an enum
-                                        called <code>TrafficLight</code> with the following values:
-                                        <code>Red</code>, <code>Yellow</code>, and <code>Green</code>.
-                                    </li>
-                                    <li>
-                                        Create the <code>LightController</code> class with a parameterless
-                                        constructor that initializes the current light to <code>Red</code>.
-                                    </li>
-                                    <li>
-                                        Add a method called <code>ChangeLight()</code> that changes the current
-                                        light (held in an instance variable) to the next light in the sequence.
-                                    </li>
-                                    <li>
-                                        <code>ChangeLight()</code> uses a switch statement to determine the
-                                        current light and change it to the next light in the sequence. If the 
-                                        light is <code>Red</code>, it changes to <code>Green</code>.
-                                        If the light is <code>Green</code>, it changes to <code>Yellow</code> 
-                                        and has a 2 second delay before changing to <code>Red</code>.
-                                        If the light is <code>Yellow</code>, it changes to <code>Red</code>. 
-                                        Define the delay value in milliseconds as a constant in the class.
-                                    </li>
-                                    <li>
-                                        To add a delay, add the following using directive at the top of the file:
-                                        <pre><code>
-        using System.Threading;
-                                        </code></pre>
-                                        Then, use the <code>Thread.Sleep()</code> method to pause the program
-                                        <pre><code>
-        Thread.Sleep(DELAY);
-                                        </code></pre>
-                                    </li>
-                                    <li>
-                                        Add a method called <code>GetCurrentLight()</code> that returns the current
-                                        light as a string.
-                                    </li>
+                                        <li>
+                                            In the <code>LightController</code> class file, define an enum
+                                            called <code>TrafficLight</code> with the following values:
+                                            <code>Red</code>, <code>Yellow</code>, and <code>Green</code>.
+                                        </li>
+                                        <li>
+                                            Create the <code>LightController</code> class with a parameterless
+                                            constructor that initializes the current light to <code>Red</code>.
+                                        </li>
+                                        <li>
+                                            Add a method called <code>ChangeLight()</code> that changes the current
+                                            light (held in an instance variable) to the next light in the sequence.
+                                        </li>
+                                        <li>
+                                            <code>ChangeLight()</code> uses a switch statement to determine the
+                                            current light and change it to the next light in the sequence. If the 
+                                            light is <code>Red</code>, it changes to <code>Green</code>.
+                                            If the light is <code>Green</code>, it changes to <code>Yellow</code> 
+                                            and has a 2 second delay before changing to <code>Red</code>.
+                                            If the light is <code>Yellow</code>, it changes to <code>Red</code>. 
+                                            Define the delay value in milliseconds as a constant in the class.
+                                        </li>
+                                        <li>
+                                            To add a delay, add the following using directive at the top of the file:
+                                            <pre><code>
+            using System.Threading;
+                                            </code></pre>
+                                            Then, use the <code>Thread.Sleep()</code> method to pause the program
+                                            <pre><code>
+            Thread.Sleep(DELAY);
+                                            </code></pre>
+                                        </li>
+                                        <li>
+                                            Add a method called <code>GetCurrentLight()</code> that returns the current
+                                            light as a string.
+                                        </li>
+                                    </ul>
                                     <h3>TrafficLightApp.cs</h3>
+                                    <ul>
+                                        <li>
+                                            In the <code>TrafficLightApp</code> class file, create a <code>Main()</code>
+                                            method that creates an instance of the <code>LightController</code> class.
+                                        </li>
+                                        <li>
+                                            In a continuous loop:
+                                            <ul>
+                                                <li>Display the current state of the traffic light</li>
+                                                <li>Prompt the user to select any key to continue, or 'Q' to quit</li>
+                                                <li>If the user selects 'Q' or 'q', exit the loop</li>
+                                                <li>Hint: Use a nullable value (ch.8) for the user input</li>
+                                                <li>Call the <code>ChangeLight()</code> method of the
+                                                    <code>LightController</code> object to change the light</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                     <p style="font-style: italic;">
                                         Do not forget to add the required header information for all of your source files!                                        
                                     </p>
-                                    <li>
-                                        In the <code>TrafficLightApp</code> class file, create a <code>Main()</code>
-                                        method that creates an instance of the <code>LightController</code> class.
-                                    </li>
-                                    <li>
-                                        In a continuous loop:
-                                        <ul>
-                                            <li>Display the current state of the traffic light</li>
-                                            <li>Prompt the user to select any key to continue, or 'Q' to quit</li>
-                                            <li>If the user selects 'Q' or 'q', exit the loop</li>
-                                            <li>Hint: Use a nullable value (ch.8) for the user input</li>
-                                            <li>Call the <code>ChangeLight()</code> method of the
-                                                <code>LightController</code> object to change the light</li>
-                                        </ul>
-                                    </li>
                                 </details>
                             </li> <!-- edit the source code -->
                             <li> <!-- run and test the program -->
                                 <details><summary>Run and test the program</summary>
                                     <p>
-                                        The program builds and runs without errors or warnings. The program instantiates the 
-                                        LightController object, exercises the instance methods and displays the values to the screen.
+                                        The program builds and runs without errors or warnings.
+                                    </p>
+                                    <p>The program instantiates the LightController object, exercises the 
+                                        instance methods, and displays the values to the screen.
                                     </p>
                                     <p style="font-style: italic;">
                                         Don't forget to add the required header information to all of your source files!
@@ -227,7 +224,7 @@
                         data-bs-toggle="collapse" data-bs-target="#ex2" aria-expanded="true" aria-controls="ex2">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #2: Days
+                        Exercise #2: Day Counter
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex2" class="collapse hide">
@@ -235,8 +232,7 @@
                         <h2>Exercise #2: Day of the Week Calculator (enum)</h2>
                         <ol>
                             <li> <!-- create the project -->
-                                <details>
-                                    <summary>Create the project</summary>
+                                <details><summary>Create the project</summary>
                                     <p>
                                         Create a new project and add it to the solution.
                                     </p>
@@ -249,8 +245,7 @@
                                 </details>
                             </li> <!-- create the project -->
                             <li> <!-- edit the source code -->
-                                <details>
-                                    <summary>Design and Write the source code</summary>
+                                <details><summary>Design and Write the source code</summary>
                                     <h3>DayCounter.cs</h3>
                                     <p>
                                         To keep things simple, use a single class for this exercise.
@@ -311,8 +306,7 @@
                                 </details>
                             </li> <!-- edit the source code -->
                             <li> <!-- run and test the program -->
-                                <details>
-                                    <summary>Run and test the program</summary>
+                                <details><summary>Run and test the program</summary>
                                     <p>
                                         Run the program and test with a variety of user inputs.
                                         <ul>
@@ -350,92 +344,101 @@
                         data-bs-toggle="collapse" data-bs-target="#ex3" aria-expanded="true" aria-controls="ex3">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #3: Product Catalog
+                        Exercise #3: slice of 'pi'
                     </button>
                 </div> <!-- .card-header -->
                 <div id="ex3" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #3: Using static class values</h2>
+                        <h2>Exercise #3: Estimate the value of pi using Monte Carlo method</h2>
                         <ol>
                             <li>
                                 <details>
                                     <summary>Create the project</summary>
                                     <p>
-                                        As before, add another console application project to the solution.
+                                        Add another console application project to the solution.
                                     </p>
                                     <p>
                                         <ul>
-                                            <li>project name: <code>ProductCatalog</code></li>
-                                            <li>solution name: <code>Lab06</code></li>
+                                            <li>project name: <code>PiEstimator</code></li>
+                                            <li>solution name: <code>Lab07</code></li>
                                         </ul>
                                     </p>
                                     <p>
-                                        Name your project <code>ProductCatalog</code> and add it to the solution.
+                                        Name your project <code>PiEstimator</code> and add it to the solution.
                                     </p>
                                     <p>
-                                        Create two class files, one for the <code>Product</code> class and one for the
-                                        <code>ProductCatalog</code> class. Each of these classes should have its own
-                                        source code file, named the same as the class it contains.
+                                        In statistical modeling, the Monte Carlo method is a
+                                        computational algorithm that relies on repeated random sampling to obtain
+                                        numerical results. The name is derived from the city of Monte Carlo in Monaco,
+                                        which is famous for its casinos and gambling.
+                                    </p>
+                                    <p>
+                                        In this exercise, you will use the Monte Carlo method to estimate the value of pi.
+                                        The idea is to randomly generate points in a square that contains a quarter circle,
+                                        and then calculate the ratio of points that fall inside the quarter circle to the total
+                                        number of points generated. This ratio can be used to estimate the value of pi.
+                                    </p>
+                                    <p>
+                                        Consider the following diagram:
+                                        <img 
+                                            src="/course-content/images/monte-carlo-pi.png"
+                                            style="width:50%; margin: 20px auto; display: block;" 
+                                            alt="Monte Carlo method for estimating pi" />
+                                    </p>
+                                    <p>
+                                        The quarter circle is inscribed in a square. The radius of the quarter circle
+                                        is equal to the length of the sides of the square. The area of the quarter circle
+                                        is equal to <code>π * r^2 / 4</code>, and the area of the square is equal to <code>r^2</code>.
+                                        Therefore, the ratio of the area of the quarter circle to the area of the square is
+                                        equal to <code>π / 4</code>. By randomly generating points in the square and counting
+                                        how many fall inside the quarter circle, we can estimate the value of pi.
                                     </p>
                                 </details>
                             </li>
                             <li>
                                 <details>
                                     <summary>Edit the source code</summary>
-                                    <h3>Product</h3>
+                                    <h3>PiEstimator.cs</h3>
                                     <p>
-                                        Create the Product class according to the following class diagram:                                        
-                                    </p>
-                                    <img 
-                                        src="/course-content/images/ProductClass.jpg" 
-                                        alt="Product class diagram" />
-                                    <p>
-                                        <ul>
-                                            <li>
-                                                Notice that the underlined field <code>item</code> is a static field.
-                                                Initialize this to 1000
-                                            </li>
-                                            <li>
-                                                In the constructor:
-                                                <ul>
-                                                    <li>
-                                                        Increment the static field <code>item</code> by one and assign 
-                                                        the new value to the <em>id</em> instance field. Each item will
-                                                        have a unique id.
-                                                    </li>
-                                                    <li>
-                                                        Set the <em>name</em> and <em>price</em> instance fields to the
-                                                        values passed to the constructor.
-                                                    </li>
-                                                    <li>
-                                                        Set the <em>quantity</em> instance field to 0.
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                Create a method called <code>ToString()</code> that returns a string
-                                                representation of the product, including the id, name, price, and 
-                                                quantity in stock.                                                
-                                            </li>
-                                        </ul>
-                                    </p>
-                                    <h3>ProductCatalog</h3>
-                                    <p>
-                                        Create a ProductCatalog class containing a Main method.
+                                        In this exercise, create a struct called <code>Point</code> that represents a point in
+                                        a 2D space. The struct should have two properties: <code>X</code> and <code>Y</code>, both of type
+                                        <code>double</code>. The struct should also have a constructor that takes two parameters
+                                        for the <code>X</code> and <code>Y</code> coordinates.
                                     </p>
                                     <p>
-                                        In this class, create at least five products, each with a unique name, and price.
+                                        In the <code>PiEstimator</code> class, create a method called <code>EstimatePi(int numberOfPoints)</code>
+                                        that takes an integer parameter representing the number of random points to generate.
+                                        The method should return an estimate of pi as a <code>double</code>.
                                     </p>
                                     <p>
-                                        Add products to the catalog and display the details of each product.
+                                        Inside the <code>EstimatePi()</code> method, use a loop to generate the specified number of random points.
+                                        For each point, generate a random <code>X</code> and <code>Y</code> coordinate between 0 and 1.
+                                        Use the <code>Random</code> class to generate random numbers (<code>double</code>).
                                     </p>
                                     <p>
-                                        Test the SellItem() method. It should return false if the quantity requested
-                                        is more than the quantity in stock, otherwise it should
-                                        reduce the quantity in stock by the quantity sold and return true.
+                                        Write another method to calculate the distance from the origin (0,0) to the point.
+                                        Use the Pythagorean theorem to calculate the distance:
+                                        <code>distance = Math.Sqrt(point.X * point.X + point.Y * point.Y)</code>.
                                     </p>
                                     <p>
-                                        Display the details of each product after selling an item.
+                                        Add a boolean method called <code>IsInsideQuarterCircle(Point point)</code>. Pass each generated 
+                                        random point (struct) to this method to determine if the point is in the circle (<code>true</code>) 
+                                        or outside of it (<code>false</code>).
+                                    </p>
+                                    <p>
+                                        From the loop, keep track of the number of points that fall inside the quarter circle.
+                                        After the loop is complete, calculate the ratio of points inside the quarter circle to the 
+                                        total number of points generated. Use this ratio to estimate the value of pi using the formula:
+                                        <code>piEstimate = 4 * (pointsInside / totalPoints)</code>.
+                                    </p>
+                                    <p>
+                                        Finally, return the estimated value of pi from the <code>EstimatePi()</code>
+                                        method.
+                                    </p>
+                                    <p>
+                                        In the <code>Main()</code> method, prompt the user to enter the number of points to generate
+                                        for the estimation. Use a nullable value to store the user input. Call the
+                                        <code>EstimatePi()</code> method with the user input and display the estimated value of pi to the user.
                                     </p>
                                 </details>
                             </li>
@@ -443,8 +446,8 @@
                                 <details>
                                     <summary>Run and test the program</summary>
                                     <p>
-                                        Run the program and demostrate product (objects) created, added to stock
-                                        and sold.
+                                        Run the program and test it with different numbers of points to generate.
+                                        The estimated value of pi should be close to the actual value of pi (3.14159...).
                                     </p>
                                 </details>
                             </li>
