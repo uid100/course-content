@@ -45,105 +45,36 @@
 
         <h1>Lab 07: enum and struct value types</h1>
         <p style="margin:10px;">
-            <strong>Objective:</strong> ....
+            <strong>Objective:</strong> use structs and enums to create readable, maintainable
+            code that models real-world objects and scenarios.
         </p>
 
 
         <!--
-        NOTES:
-        Here are several **student-friendly lab exercise ideas** for teaching and practicing **C# enums and structs as value types**, with progressive difficulty and real-world application:
 
----
-
+        
 ### 🔹 **Part 1: Enums (Foundations & Practice)**
 
 #### 1. **Traffic Light Enum**
-
 * **Enum**: `TrafficLight { Red, Yellow, Green }`
 * **Exercise**:
-
   * Write a method `NextLight(TrafficLight current)` that returns the next light in sequence.
-  * Use a `switch` or `enum` arithmetic.
-* **Goal**: Understand basic enum use and switch statements.
 
 #### 2. **Days of the Week Scheduler**
-
 * **Enum**: `DayOfWeek { Sunday, Monday, ..., Saturday }`
-* **Exercise**:
-
-  * Ask user for today’s day and a number of days to skip ahead.
+  * today’s day and a (random < 7) number of days to skip ahead.
   * Show what day it will be after skipping.
-* **Goal**: Work with enum as integers and enum casting.
+  * hint you may need to cast values and use modulo operation.
+          DayOfWeek today = DateTime.Now.DayOfWeek;
+        Console.WriteLine("Today is: " + today);
 
-#### 3. **Pizza Size Pricing**
-
-* **Enum**: `PizzaSize { Small = 1, Medium = 2, Large = 3 }`
-* **Exercise**:
-
-  * Ask for size and compute price based on enum values.
-* **Goal**: Use enums with custom integer values.
-
----
-
-### 🔹 **Part 2: Structs (Value Type and Design)**
-
-#### 4. **Point2D Struct**
-
-* **Struct**:
-
-  ```csharp
-  struct Point2D {
-      public int X;
-      public int Y;
-  }
-  ```
-* **Exercise**:
-
+#### 3. **Point2D Struct**
   * Create two points and compute the distance between them.
-* **Goal**: Create and use simple structs, emphasize value semantics.
-
-#### 5. **Student Record Struct**
-
-* **Struct**:
-
-  ```csharp
-  struct Student {
-      public string Name;
-      public int ID;
-      public double GPA;
-  }
-  ```
-* **Exercise**:
-
-  * Store an array of `Student` structs and compute average GPA.
-* **Goal**: Pass structs to methods, iterate over struct arrays.
-
-#### 6. **Bank Account Struct with TransactionType Enum**
-
-* **Enum**: `TransactionType { Deposit, Withdrawal }`
-* **Struct**:
-
-  ```csharp
-  struct Transaction {
-      public TransactionType Type;
-      public decimal Amount;
-  }
-  ```
-* **Exercise**:
-
-  * Simulate simple account with a balance.
-  * Apply a list of transactions.
-* **Goal**: Combine enums and structs, simulate logic.
-
----
 
 ### 🔹 **Part 3: Combined Enum + Struct Scenario Labs**
-
-#### 7. **Weather Forecast Report**
-
+#### 4. **Weather Forecast Report**
 * **Enum**: `WeatherCondition { Sunny, Cloudy, Rainy, Snowy }`
 * **Struct**:
-
   ```csharp
   struct Forecast {
       public string City;
@@ -152,51 +83,9 @@
       public int LowTemp;
   }
   ```
-* **Exercise**:
-
   * Input weather reports and display formatted forecast.
 * **Goal**: Use multiple enums and structs together.
-
-#### 8. **RPG Character Creator**
-
-* **Enum**: `CharacterClass { Warrior, Mage, Rogue }`
-* **Struct**:
-
-  ```csharp
-  struct Character {
-      public string Name;
-      public CharacterClass Class;
-      public int Health;
-      public int Mana;
-  }
-  ```
-* **Exercise**:
-
-  * Generate characters with default stats based on class.
-* **Goal**: Practice enums with switch-based logic and struct usage.
-
----
-
-### 🔹 Bonus Challenge
-
-#### 9. **Custom Color Mixer**
-
-* **Enum**: `ColorComponent { Red, Green, Blue }`
-* **Struct**:
-
-  ```csharp
-  struct Color {
-      public byte R, G, B;
-  }
-  ```
-* **Exercise**:
-
-  * Allow user to mix color components.
-  * Return a `Color` struct.
-* **Goal**: Struct data operations, byte types, bit logic.
-
-
-        -->
+-->
         <div class="container my-4 px-2">
             <div class="card"> <!-- .card (overview) -->
                 <div class="card-header">
