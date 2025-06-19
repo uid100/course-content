@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="lab-assignment-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <h1>Lab 07: enum and struct value types</h1>
+        <p style="margin:10px;">
+            <strong>Objective:</strong> ....
+        </p>
+
+
+        <!--
+        NOTES:
+        Here are several **student-friendly lab exercise ideas** for teaching and practicing **C# enums and structs as value types**, with progressive difficulty and real-world application:
+
+---
+
+### 🔹 **Part 1: Enums (Foundations & Practice)**
+
+#### 1. **Traffic Light Enum**
+
+* **Enum**: `TrafficLight { Red, Yellow, Green }`
+* **Exercise**:
+
+  * Write a method `NextLight(TrafficLight current)` that returns the next light in sequence.
+  * Use a `switch` or `enum` arithmetic.
+* **Goal**: Understand basic enum use and switch statements.
+
+#### 2. **Days of the Week Scheduler**
+
+* **Enum**: `DayOfWeek { Sunday, Monday, ..., Saturday }`
+* **Exercise**:
+
+  * Ask user for today’s day and a number of days to skip ahead.
+  * Show what day it will be after skipping.
+* **Goal**: Work with enum as integers and enum casting.
+
+#### 3. **Pizza Size Pricing**
+
+* **Enum**: `PizzaSize { Small = 1, Medium = 2, Large = 3 }`
+* **Exercise**:
+
+  * Ask for size and compute price based on enum values.
+* **Goal**: Use enums with custom integer values.
+
+---
+
+### 🔹 **Part 2: Structs (Value Type and Design)**
+
+#### 4. **Point2D Struct**
+
+* **Struct**:
+
+  ```csharp
+  struct Point2D {
+      public int X;
+      public int Y;
+  }
+  ```
+* **Exercise**:
+
+  * Create two points and compute the distance between them.
+* **Goal**: Create and use simple structs, emphasize value semantics.
+
+#### 5. **Student Record Struct**
+
+* **Struct**:
+
+  ```csharp
+  struct Student {
+      public string Name;
+      public int ID;
+      public double GPA;
+  }
+  ```
+* **Exercise**:
+
+  * Store an array of `Student` structs and compute average GPA.
+* **Goal**: Pass structs to methods, iterate over struct arrays.
+
+#### 6. **Bank Account Struct with TransactionType Enum**
+
+* **Enum**: `TransactionType { Deposit, Withdrawal }`
+* **Struct**:
+
+  ```csharp
+  struct Transaction {
+      public TransactionType Type;
+      public decimal Amount;
+  }
+  ```
+* **Exercise**:
+
+  * Simulate simple account with a balance.
+  * Apply a list of transactions.
+* **Goal**: Combine enums and structs, simulate logic.
+
+---
+
+### 🔹 **Part 3: Combined Enum + Struct Scenario Labs**
+
+#### 7. **Weather Forecast Report**
+
+* **Enum**: `WeatherCondition { Sunny, Cloudy, Rainy, Snowy }`
+* **Struct**:
+
+  ```csharp
+  struct Forecast {
+      public string City;
+      public WeatherCondition Condition;
+      public int HighTemp;
+      public int LowTemp;
+  }
+  ```
+* **Exercise**:
+
+  * Input weather reports and display formatted forecast.
+* **Goal**: Use multiple enums and structs together.
+
+#### 8. **RPG Character Creator**
+
+* **Enum**: `CharacterClass { Warrior, Mage, Rogue }`
+* **Struct**:
+
+  ```csharp
+  struct Character {
+      public string Name;
+      public CharacterClass Class;
+      public int Health;
+      public int Mana;
+  }
+  ```
+* **Exercise**:
+
+  * Generate characters with default stats based on class.
+* **Goal**: Practice enums with switch-based logic and struct usage.
+
+---
+
+### 🔹 Bonus Challenge
+
+#### 9. **Custom Color Mixer**
+
+* **Enum**: `ColorComponent { Red, Green, Blue }`
+* **Struct**:
+
+  ```csharp
+  struct Color {
+      public byte R, G, B;
+  }
+  ```
+* **Exercise**:
+
+  * Allow user to mix color components.
+  * Return a `Color` struct.
+* **Goal**: Struct data operations, byte types, bit logic.
+
+
+        -->
+        <div class="container my-4 px-2">
+            <div class="card"> <!-- .card (overview) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Overview (click each header to hide/show details)
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="overview" class="collapse show">
+                    <div class="card-body">
+                        <p>
+                            Create classes and instantiate objects in C#. This lab will guide you through
+                            creating a simple console application that demonstrates the use of classes and objects.
+                        </p>
+                        <p>
+                            The current SDK version is .NET 9.0. .NET 8.0 is the latest LTS (Long Term Support)
+                            version. Either of these versions can be used for this lab.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (overview) -->
+
+            <div class="card"> <!-- .card (ex1) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ex1" aria-expanded="true" aria-controls="ex1">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise #1: Books! (Guided Exercise)
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ex1" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise #1: A Book class </h2>
+                        <ol id="ex1-steps">
+                            <li> <!-- create the project -->
+                                <details>
+                                    <summary>Create the project</summary>
+                                    <p>
+                                        Start with the solution.
+                                    </p>
+                                    <p>
+                                        <code>mkdir Lab06</code><br>
+                                        <code>cd Lab06</code><br>
+                                        <code>dotnet new sln -n Lab06</code>
+                                    </p>
+                                    <p> 
+                                        Create a project and add it to the solution.
+                                    </p>
+                                    <p>
+                                        <code>dotnet new console -n BookShelf</code><br>
+                                        <code>dotnet sln Lab06.sln add BookShelf/BookShelf.csproj</code>
+                                    </p>
+                                    <p>
+                                        Rename the source files to something more descriptive this time and
+                                        add a new class file.
+                                    </p>
+                                    <p><em>macos:</em><br>
+                                    <p>
+                                        <code>mv Bookshelf/Program.cs Bookshelf/Bookshelf.cs</code><br>
+                                        <code>touch Bookshelf/Book.cs</code>
+                                    </p>
+                                    <p><em>windows:</em><br>
+                                    <p>
+                                        <code>ren Bookshelf\Program.cs Bookshelf.cs</code><br>
+                                        <code>echo '' > Bookshelf\Book.cs</code>
+                                    </p>
+                                    <p>
+                                        Veryify the new folder structure:
+                                    </p>
+                                    <p>
+                                        <code>Lab06</code><br>
+                                        <code>├── Lab06.sln</code><br>
+                                        <code>└── Bookshelf/</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;├── Book.cs</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;├── Bookshelf.csproj</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;└── Bookshelf.cs</code><br>
+                                    </p>
+                                    <p>
+                                        In previous labs we created a single file for the source code
+                                        and each was named <code>Program.cs</code>, which correctly matched
+                                        the name of the class.
+                                    </p>
+                                    <p>
+                                        It is best practice to name the source code file the same as the 
+                                        class it contains.
+                                    </p>
+                                </details>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
+                                <details>
+                                    <summary>Edit the source code</summary>
+                                    <p>
+                                        Edit <code>Books.cs</code> to create a class called <code>Book</code>. 
+                                        The class should have the following members:
+                                    </p>
+                                    <img 
+                                        src="/course-content/images/cop2551ex06.01.jpg" 
+                                        alt="Book exercise class diagram" 
+                                    />
+                                    <p>
+                                        This class may not match other definitions of Book objects. Use this Design
+                                        for the exercise.
+                                    </p>
+                                    <h3>Book.cs</h3>
+                                    <p style="font-style: italic;">
+                                        Do not forget to add the required header information for all of your source files!                                        
+                                    </p>
+                                    <img 
+                                        src="/course-content/images/Book_cs_src.png" 
+                                        alt="Book class source code" 
+                                    />
+                                    <p>
+                                        Notice the class "overrides" the <code>ToString()</code> method.
+                                        This is a common practice in C# to provide a string representation of the
+                                        object. The <code>ToString()</code> method is called automatically when
+                                        the object is converted to a string, such as when it is printed to the console.
+                                    </p>
+                                    <p>
+                                        The <code>ToString()</code> method should return a string that contains
+                                        the details of a created object. By including this, you can format the output
+                                        to display what is important to the user.
+                                    </p>
+                                    <p>
+                                        Notice that the <code>ToString()</code> method returns a string, it does not 
+                                        print anything to the console.
+                                    </p>
+                                    <h3>Bookshelf.cs</h3>
+                                    <p style="font-style: italic;">
+                                        Do not forget to add the required header information for all of your source files!                                        
+                                    </p>
+                                    <img 
+                                        src="/course-content/images/Bookshelf_cs_src.png" 
+                                        alt="Bookshelf class source code - including Main() method." 
+                                    />
+                                                                        <p>
+                                        The Bookshelf class contains the Main() method, which is the entry point.
+                                        Notice that the Main() method:
+                                        <ul>
+                                            <li>
+                                                <code>public</code> - this means that it can be called from outside the class.
+                                            </li>
+                                            <li>
+                                                <code>static</code> - this means that it can be called without creating an
+                                                instance of the class.
+                                            </li>
+                                            <li>
+                                                <code>void</code> - this means that it does not return a value. Where 
+                                                would it return the value to?
+                                            </li>
+                                            <li>
+                                                <code>Main()</code> - this is the name of the method. It is a special
+                                                method that is called when the program starts.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        This time, we have two class files, both in the same namespace,
+                                        and we have renamed the source code file to match the name of the
+                                        class it contains, and given the classes more descriptive names.
+                                    </p>
+                                    <p>
+                                        There can be only one <code>Main()</code> method in a project.
+                                    </p>
+                                    <p>
+                                        From the Main() method, create at least three instances of the
+                                        <code>Book</code> class and display the output from the 
+                                        <code>ToString()</code>. The example has two. Start with these.
+                                    </p>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- run and test the program -->
+                                <details>
+                                    <summary>Run and test the program</summary>
+                                    <p>
+                                        Confirm that the program runs and instantiates your new objects and displays
+                                        the details to the screen.
+                                    </p>
+                                </details>
+                            </li> <!-- run and test the program -->
+                        </ol> <!-- #ex1-steps -->
+                        <p style="font-style: italic; margin: 20px;">
+                            Continue to the next exercise.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ex1) -->
+
+            <div class="card"> <!-- .card (ex2) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ex2" aria-expanded="true" aria-controls="ex2">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise #2: Students
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ex2" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise #2: Overloading a constructor</h2>
+                        <ol>
+                            <li> <!-- create the project -->
+                                <details>
+                                    <summary>Create the project</summary>
+                                    <p>
+                                        Create a new project and add it to the solution.
+                                    </p>
+
+                                    <p>
+                                        <ul>
+                                            <li>project name: <code>Students</code></li>
+                                            <li>solution name: <code>Lab06</code></li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        Again, use two classes and two separate source code files.
+                                    </p>
+                                    <p>
+                                        The first should be named <code>Student.cs</code> and the second
+                                        could be named <code>Program.cs</code> or <code>Students.cs</code>
+                                        or something similar. As long as it is descriptive and meaningful.
+                                    </p>
+                                </details>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
+                                <details>
+                                    <summary>Design and Write the source code</summary>
+                                    <h3>Student</h3>
+                                    <p>
+                                        Create a Student class in its own file according to the following class diagram:
+                                    </p>
+                                    <img 
+                                        src="/course-content/images/StudentClass.jpg" 
+                                        alt="Student class diagram"
+                                    />
+                                    <p>
+                                        There are two constructors in the class diagram. 
+                                    </p>
+                                    <p>
+                                        If the <code>Student</code> class is created with name and id, 
+                                        call the second constructor from the first with 'undeclared' as the third parameter. 
+                                        Do not repeat code.
+                                    </p>
+                                    <p>
+                                        In the second constructor, set the <code>Name</code> and <code>Id</code> 
+                                        fields from the parameters and call the <code>SetMajor()</code> method
+                                        to set the <code>Major</code> field.
+                                    </p>
+                                    <p>
+                                        Optional, GPA may be declared nullable and set to <code>null</code>
+                                        or simply set to an initial value of <code>0.0</code>.
+                                    </p>
+                                    <h3>Students</h3>
+                                    <p>
+                                        Create another class containing a <code>Main()</code> method. 
+                                        Use this class to test the <code>Student</code> class.
+                                    </p>
+                                    <p>
+                                        In the <code>Main()</code> method, create at least three instances of the
+                                        <code>Student</code> class. Use the first constructor for at least one of them.
+                                        Use the second constructor for at least one of them.
+                                    </p>
+                                    <p>
+                                        Display the details of each student using the <code>ToString()</code> method.
+                                        The <code>ToString()</code> method should return a string that contains
+                                        the details of the student, including the name, id, major, and GPA.
+                                    </p>
+                                    <p>
+                                        As before, the <code>ToString()</code> method should not print anything to 
+                                        the console.
+                                    </p>
+                                    <p>
+                                        Change the major of one of the students using the <code>SetMajor()</code>
+                                        method and display the details again.
+                                    </p>
+                                    <p>
+                                        Update the GPA of one of the students using the <code>SetGPA()</code>
+                                        method and display the student details.
+                                    </p>
+                                    <p style="font-style: italic;">
+                                        Don't forget to add the required header information to all of your source files!
+                                    </p>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- run and test the program -->
+                                <details>
+                                    <summary>Run and test the program</summary>
+                                    <p>
+                                        Run the program and verify that it creates the student objects, tests the public
+                                        methods and displays the details of the created objects correctly.
+                                    </p>
+                                </details>
+                            </li> <!-- run and test the program -->
+                        </ol>
+                        <p style="font-style: italic; margin: 20px;">
+                            Continue to the next exercise.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ex2) -->
+
+            <div class="card"> <!-- .card (ex3) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ex3" aria-expanded="true" aria-controls="ex3">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise #3: Product Catalog
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ex3" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise #3: Using static class values</h2>
+                        <ol>
+                            <li>
+                                <details>
+                                    <summary>Create the project</summary>
+                                    <p>
+                                        As before, add another console application project to the solution.
+                                    </p>
+                                    <p>
+                                        <ul>
+                                            <li>project name: <code>ProductCatalog</code></li>
+                                            <li>solution name: <code>Lab06</code></li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        Name your project <code>ProductCatalog</code> and add it to the solution.
+                                    </p>
+                                    <p>
+                                        Create two class files, one for the <code>Product</code> class and one for the
+                                        <code>ProductCatalog</code> class. Each of these classes should have its own
+                                        source code file, named the same as the class it contains.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Edit the source code</summary>
+                                    <h3>Product</h3>
+                                    <p>
+                                        Create the Product class according to the following class diagram:                                        
+                                    </p>
+                                    <img 
+                                        src="/course-content/images/ProductClass.jpg" 
+                                        alt="Product class diagram" />
+                                    <p>
+                                        <ul>
+                                            <li>
+                                                Notice that the underlined field <code>item</code> is a static field.
+                                                Initialize this to 1000
+                                            </li>
+                                            <li>
+                                                In the constructor:
+                                                <ul>
+                                                    <li>
+                                                        Increment the static field <code>item</code> by one and assign 
+                                                        the new value to the <em>id</em> instance field. Each item will
+                                                        have a unique id.
+                                                    </li>
+                                                    <li>
+                                                        Set the <em>name</em> and <em>price</em> instance fields to the
+                                                        values passed to the constructor.
+                                                    </li>
+                                                    <li>
+                                                        Set the <em>quantity</em> instance field to 0.
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                Create a method called <code>ToString()</code> that returns a string
+                                                representation of the product, including the id, name, price, and 
+                                                quantity in stock.                                                
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <h3>ProductCatalog</h3>
+                                    <p>
+                                        Create a ProductCatalog class containing a Main method.
+                                    </p>
+                                    <p>
+                                        In this class, create at least five products, each with a unique name, and price.
+                                    </p>
+                                    <p>
+                                        Add products to the catalog and display the details of each product.
+                                    </p>
+                                    <p>
+                                        Test the SellItem() method. It should return false if the quantity requested
+                                        is more than the quantity in stock, otherwise it should
+                                        reduce the quantity in stock by the quantity sold and return true.
+                                    </p>
+                                    <p>
+                                        Display the details of each product after selling an item.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Run and test the program</summary>
+                                    <p>
+                                        Run the program and demostrate product (objects) created, added to stock
+                                        and sold.
+                                    </p>
+                                </details>
+                            </li>
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ex3) -->
+
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#submit" aria-expanded="true" aria-controls="submit">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Review and Submit
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="submit" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Review and Submit</h2>
+                        <ol>
+                            <li>
+                                <details>
+                                    <summary>Review</summary>
+                                    <p>
+                                        Review your code and make sure it is well organized, properly formatted,
+                                        and follows the naming conventions.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Zip the solution folder</summary>
+                                    <p>
+                                        Zip the solution folder <code>Lab06</code> and all of its contents. 
+                                        This should include the <code>.sln</code> file and all of the project folders.
+                                        Make sure to include all (3) of the projects you created for this lab.
+                                    </p>
+                                    <p>
+                                        The solution folder should look like this:
+                                    </p>
+                                    <p>
+                                        <code>Lab06</code><br>
+                                        <code>├── Lab06.sln</code><br>
+                                        <code>├── BookShelf</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;└── Book.cs</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;├── BookShelf.csproj</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;└── BookShelf.cs</code><br>
+                                        <code>├── Students</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;└── Student.cs</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;├── Students.csproj</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;└── Students.cs</code><br>
+                                        <code>└── ProductCatalog</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;└── Product.cs</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;├── ProductCatalog.csproj</code><br>
+                                        <code>&nbsp;&nbsp;&nbsp;&nbsp;└── ProductCatalog.cs</code><br>
+                                    </p>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Submit your work</summary>
+                                    <p>
+                                        Submit the zipped solution folder to the assignment submission link in
+                                        Canvas.
+                                    </p>
+                                </details>
+                            </li>
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (submit) -->
+
+
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+        </div> <!-- #footer -->
+    </div> <!-- #lab-assignment-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

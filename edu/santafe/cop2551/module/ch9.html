@@ -59,12 +59,84 @@
                     <div class="card-body">
                         <h3>Introduction</h3>
                         <p>
-                            Chapter 9 considers the use of enumeration types and structure value types.                             
+                            Chapter 9 builds on your understanding of value types and considers 
+                            the use of enumeration types and structure value types. In addition 
+                            to being value types, so they are handled efficiently on the stack,
+                            these two user-defined types provide a way to group related data
+                            and functionality together, and more than anything else, they are 
+                            useful for making your code more <em>readable and maintainable</em>.                           
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (overview) -->
 
+            <div class="card"> <!-- .card enum -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#enum" aria-expanded="true"
+                        aria-controls="enum">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Enumeration
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="enum" class="collapse show">
+                    <div class="card-body">
+                        <h3>Enumeration</h3>
+                        <p>
+                            An enumeration is a user-defined type that consists of a set of named constants. 
+                            It is used to define a variable that can hold a set of predefined values, making 
+                            the code more readable and maintainable.
+                        </p>
+                        <p>
+                            Enumerations are defined using the <code>enum</code> keyword, followed by the name of the 
+                            enumeration and a list of named constants enclosed in curly braces.
+                        </p>
+                        <pre><code class="language-csharp">
+        enum DayOfWeek
+        {
+            Sunday,
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday
+        }
+                        </code></pre>
+                        <p>
+                            You can use an enumeration to declare a variable of that type, and assign it one of the 
+                            predefined values.
+                        </p>
+                        <pre><code class="language-csharp">
+        DayOfWeek today = DayOfWeek.Monday;
+
+        if (today == DayOfWeek.Monday)
+        {
+            Console.WriteLine("It's Monday!");
+        }
+                        </code></pre>
+                        <p>
+                            Enumerations can also have an underlying type, which is the type of the values that the 
+                            enumeration can hold. By default, the underlying type is <code>int</code>, but you can specify 
+                            a different type using a colon.
+                        </p>
+                        <pre><code class="language-csharp">
+        enum ErrorCode : byte
+</code></pre>
+                        <p>
+                            As developers, we continuously strive to write code that is not only functional but also
+                            clear and maintainable. Enumerations play a crucial role in achieving this goal by providing
+                            a way to define a set of related constants that can be used to represent meaningful values
+                            in our code. They enhance the readability of our code, making it easier to understand and
+                            maintain over time.
+                        </p>
+                        <p>
+                            Readability is an ongoing objective. It is a skill that gets better with practice 
+                            and experience. Enumerations are a great addition to your skill set for this reason.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
         </div> <!-- .container -->
         <div id="footer">
             <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
