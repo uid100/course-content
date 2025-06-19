@@ -352,8 +352,7 @@
                         <h2>Exercise #3: Estimate the value of pi using Monte Carlo method</h2>
                         <ol>
                             <li>
-                                <details>
-                                    <summary>Create the project</summary>
+                                <details><summary>Create the project</summary>
                                     <p>
                                         Add another console application project to the solution.
                                     </p>
@@ -396,40 +395,71 @@
                                 </details>
                             </li>
                             <li>
-                                <details>
-                                    <summary>Edit the source code</summary>
+                                <details><summary>Edit the source code</summary>
                                     <h3>PiEstimator.cs</h3>
                                     <p>
-                                        In this exercise, create a struct called <code>Point</code> that represents a point in
-                                        a 2D space. The struct should have two properties: <code>X</code> and <code>Y</code>, both of type
-                                        <code>double</code>. The struct should also have a constructor that takes two parameters
-                                        for the <code>X</code> and <code>Y</code> coordinates.
+                                        For this exercise
+                                        <ul>
+                                            <li>
+                                                create a struct called <code>Point</code> that represents a point in
+                                                a 2D space.
+                                            </li>
+                                            <li>
+                                                The struct should have two properties: <code>X</code> and <code>Y</code>, 
+                                                both of type <code>double</code>.
+                                            </li>
+                                            <li>
+                                                The struct should also have a constructor that takes two parameters
+                                                for the <code>X</code> and <code>Y</code> coordinates.
+                                            </li>
                                     </p>
                                     <p>
-                                        In the <code>PiEstimator</code> class, create a method called <code>EstimatePi(int numberOfPoints)</code>
-                                        that takes an integer parameter representing the number of random points to generate.
-                                        The method should return an estimate of pi as a <code>double</code>.
+                                        In the <code>PiEstimator</code> class
+                                        <ul>
+                                            <li>
+                                                Create a method called <code>EstimatePi(int numberOfPoints)</code> that 
+                                                takes an integer parameter representing the number of random points to 
+                                                generate. Call this from <code>Main()</code>.
+                                            </li>
+                                            <li>
+                                                The method should return an estimate of pi as a <code>double</code>.
+                                            </li>
+                                            <li>
+                                                Create a method called <code>GenerateRandomPoint()</code> that generates
+                                                a random point in the square. Use the <code>Random</code> class to generate
+                                                random numbers for the <code>X</code> and <code>Y</code> coordinates.
+                                            </li>
+                                            <li>
+                                                The method should return a new instance of the <code>Point</code> struct.
+                                            </li>
+                                            <li>
+                                                 Inside the <code>EstimatePi()</code> method, use a loop to generate the 
+                                                 specified number of random points by calling the <code>GenerateRandomPoint()</code>
+                                                 method.
+                                            </li>
+                                            <li>
+                                                Add another method to calculate the distance from the origin (0,0) to the point.
+                                                Use the Pythagorean theorem to calculate the distance:
+                                                <code>distance = Math.Sqrt(point.X * point.X + point.Y * point.Y)</code><br>
+                                                <em>(what will you call this one?)</em>
+                                            </li>
+                                            <li>
+                                                Add a boolean method called <code>IsInsideQuarterCircle(Point point)</code>. 
+                                                Pass each generated random point (struct) to this method to determine if the point 
+                                                is in the circle (<code>true</code>) or outside of it (<code>false</code>). 
+                                                This method will call the distance method on the point. <br>
+                                                Refer back to the diagram above. If the distance from the origin to the Point
+                                                is less than the radius, which is 1, the the point is inside the quarter circle.
+                                            </li>
+                                            <li>
+                                                Keep track of the number of points that fall inside the quarter circle. After the 
+                                                loop is complete, calculate the ratio of points inside the quarter circle to the 
+                                                total number of points generated. Use this ratio to estimate the value of pi using 
+                                                the formula:
+                                                <code>piEstimate = 4 * (pointsInside / totalPoints)</code>.
+                                            </li>
+                                        </ul>
                                     </p>
-                                    <p>
-                                        Inside the <code>EstimatePi()</code> method, use a loop to generate the specified number of random points.
-                                        For each point, generate a random <code>X</code> and <code>Y</code> coordinate between 0 and 1.
-                                        Use the <code>Random</code> class to generate random numbers (<code>double</code>).
-                                    </p>
-                                    <p>
-                                        Write another method to calculate the distance from the origin (0,0) to the point.
-                                        Use the Pythagorean theorem to calculate the distance:
-                                        <code>distance = Math.Sqrt(point.X * point.X + point.Y * point.Y)</code>.
-                                    </p>
-                                    <p>
-                                        Add a boolean method called <code>IsInsideQuarterCircle(Point point)</code>. Pass each generated 
-                                        random point (struct) to this method to determine if the point is in the circle (<code>true</code>) 
-                                        or outside of it (<code>false</code>).
-                                    </p>
-                                    <p>
-                                        From the loop, keep track of the number of points that fall inside the quarter circle.
-                                        After the loop is complete, calculate the ratio of points inside the quarter circle to the 
-                                        total number of points generated. Use this ratio to estimate the value of pi using the formula:
-                                        <code>piEstimate = 4 * (pointsInside / totalPoints)</code>.
                                     </p>
                                     <p>
                                         Finally, return the estimated value of pi from the <code>EstimatePi()</code>
@@ -448,6 +478,28 @@
                                     <p>
                                         Run the program and test it with different numbers of points to generate.
                                         The estimated value of pi should be close to the actual value of pi (3.14159...).
+                                    </p>
+                                    <h3 style="font-style: italic;">why does it work?</h3>
+                                    <p>
+                                        Compare this diagram. 
+                                        <img 
+                                            src="/course-content/images/monte-carlo-pi-2.png"
+                                            style="width:50%; margin: 20px auto; display: block;" 
+                                            alt="Monte Carlo method for estimating pi" />
+                                    </p>
+                                    <p>
+                                        As the number of points increases, the total points will fill the square.
+                                        The area of the square is <code>1 * 1 = 1</code>.
+                                    </p>
+                                    <p>
+                                        The number of points inside the quarter circle will also increase. 
+                                        The area of the quarter circle is <code>π * r^2</code> divided by
+                                        <code>4</code>, where <code>r = 1</code>.
+                                    </p>
+                                    <p>
+                                        By extension, the ratio of the area inside the circle (number of points
+                                        inside the circle) to the area of the square (total points) should be
+                                        eventually be close to the value of <code>π</code> (3.14159...).
                                     </p>
                                 </details>
                             </li>
