@@ -59,139 +59,65 @@
                     <div class="card-body">
                         <h3>Introduction</h3>
                         <p>
-                            Chapter 11.                           
+                            Chapter 11 is relatively short.                           
+                        </p>
+                        <p>
+                            In this chapter, we will explore the concept of parameter arrays in C#. 
+                            Parameter arrays allow you to pass a variable number of arguments to a method, 
+                            making it easier to work with methods that require a flexible number of parameters.
+                        </p>
+                        <p>
+                            Again, the textbook is a good resource and reference for the topic. The author 
+                            compares the usage of parameter arrays to the use of overloaded methods. You should
+                            also consider the use of optional parameters.
+                        </p>
+                        <p>
+                            The material, of course, also covers the syntax and usage of the <code>params</code> 
+                            keyword, which is used to define a parameter array in a method signature.
+                        </p>
+                        <p>
+                            Honestly, I find the topic very interesting, but not as important as others. In fact, 
+                            the reason it was combined with the previous chapter is that I wanted you to be 
+                            introduced to it, but I did not want to spend a lot of time on it. 
+                        </p>
+                        <p>
+                            Read the chapter with a mindset of <em>introducing</em> the concept and using the 
+                            chapter as a reference for future use, rather than mastery of the topic.
+                        </p>
+                        <p>
+                            There may be some (multiple-choice) questions on the chapter quiz, but there are 
+                            not many, and these are high-level questions that shouldn't require extensive 
+                            study and practice. 
+                        </p>
+                        <p>
+                            I have seen parameter arrays used, but not commonly.
+                        </p>
+                        <p>
+                            Here is an example:
+                            <pre><code>
+        using System;
+
+        class Program
+        {
+            static void PrintNumbers(params int[] numbers) {
+                foreach (int num in numbers)
+                    Console.WriteLine(num);
+            }
+
+            static void Main()
+            {
+                PrintNumbers(1, 2, 3, 4);
+                PrintNumbers();
+
+                int[] myArray = { 10, 20, 30 };
+                PrintNumbers(myArray);
+            }
+        }
+                            </code></pre>
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (overview) -->
-
-            <div class="card"> <!-- .card enum -->
-                <div class="card-header">
-                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#enum" aria-expanded="true"
-                        aria-controls="enum">
-                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
-                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Enumeration
-                    </button>
-                </div> <!-- .card-header -->
-                <div id="enum" class="collapse show">
-                    <div class="card-body">
-                        <h3>Enumeration</h3>
-                        <p>
-                            An enumeration is a user-defined type that consists of a set of named constants. 
-                            It is used to define a variable that can hold a set of predefined values, making 
-                            the code more readable and maintainable.
-                        </p>
-                        <p>
-                            Enumerations are defined using the <code>enum</code> keyword, followed by the name of the 
-                            enumeration and a list of named constants enclosed in curly braces.
-                        </p>
-                        <pre><code class="language-csharp">
-        enum DayOfWeek
-        {
-            Sunday,
-            Monday,
-            Tuesday,
-            Wednesday,
-            Thursday,
-            Friday,
-            Saturday
-        }
-                        </code></pre>
-                        <p>
-                            You can use an enumeration to declare a variable of that type, and assign it one of the 
-                            predefined values.
-                        </p>
-                        <pre><code class="language-csharp">
-        DayOfWeek today = DayOfWeek.Monday;
-
-        if (today == DayOfWeek.Monday)
-        {
-            Console.WriteLine("It's Monday!");
-        }
-                        </code></pre>
-                        <p>
-                            Enumerations can also have an underlying type, which is the type of the values that the 
-                            enumeration can hold. By default, the underlying type is <code>int</code>, but you can specify 
-                            a different type using a colon.
-                        </p>
-                        <pre><code class="language-csharp">
-        enum ErrorCode : byte
-</code></pre>
-                        <p>
-                            As developers, we continuously strive to write code that is not only functional but also
-                            clear and maintainable. Enumerations play a crucial role in achieving this goal by providing
-                            a way to define a set of related constants that can be used to represent meaningful values
-                            in our code. They enhance the readability of our code, making it easier to understand and
-                            maintain over time.
-                        </p>
-                        <p>
-                            Readability is an ongoing objective. It is a skill that gets better with practice 
-                            and experience. Enumerations are a great addition to your skill set for this reason.
-                        </p>
-                    </div> <!-- .card-body -->
-                </div> <!-- .collapse -->
-
-            </div> <!-- .card (enum) -->
-
-            <div class="card"> <!-- .card struct -->
-                <div class="card-header">
-                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#struct" aria-expanded="true"
-                        aria-controls="struct">
-                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
-                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Structure
-                    </button>
-                </div> <!-- .card-header -->
-                <div id="struct" class="collapse show">
-                    <div class="card-body">
-                        <h3>Structure</h3>
-                        <p>
-                            A structure is a user-defined value type that can contain data members and methods. 
-                            It is similar to a class, but it is a value type, which means that it is stored on the 
-                            stack rather than the heap.
-                        </p>
-                        <p>
-                            Structures are defined using the <code>struct</code> keyword, followed by the name of the 
-                            structure and a list of data members enclosed in curly braces.
-                        </p>
-                        <pre><code class="language-csharp">
-        struct Point
-        {
-            public int X;
-            public int Y;
-        }
-                        </code></pre>
-                        <p>
-                            You can use a structure to declare a variable of that type, and assign values to its
-                            data members.
-                        </p>
-                        <pre><code class="language-csharp">
-        Point p;
-        p.X = 10;
-        p.Y = 20;
-        Console.WriteLine($"Point: ({p.X}, {p.Y})");
-                        </code></pre>
-                        <p>
-                            Structures can also have methods, properties, and constructors, just like classes. 
-                            However, they are typically used for small data structures that do not require the 
-                            overhead of a class.
-                        </p>
-                        <p>
-                            Structures are useful for grouping related data together and providing a way to 
-                            manipulate that data in a meaningful way. They are often used to represent simple 
-                            data types such as points, rectangles, and colors.
-                        </p>
-                        <p>
-                            As with enumerations, structures are a powerful tool for improving the readability 
-                            and maintainability of your code. They allow you to define custom data types that 
-                            can be used to represent complex data structures in a clear and concise way.
-                        </p>
-                    </div> <!-- .card-body -->
-                </div> <!-- .collapse -->
-            </div> <!-- .card (struct) -->
         </div> <!-- .container -->
         <div id="footer">
             <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
