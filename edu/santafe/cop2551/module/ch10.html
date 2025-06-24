@@ -59,144 +59,130 @@
                     <div class="card-body">
                         <h3>Introduction</h3>
                         <p>
-                            Chapter 9 builds on your understanding of value types and considers 
-                            the use of enumeration types and structure value types. In addition 
-                            to being value types, so they are handled efficiently on the stack,
-                            these two user-defined types provide a way to group related data
-                            and functionality together, and more than anything else, they are 
-                            useful for making your code more <em>readable and maintainable</em>.                           
+                            This chapter introduces arrays, which are a fundamental programming
+                            data structure that allows you to store and manipulate collections of data.
+                        </p>                         
+                        </p>
+                            Arrays are used to store multiple values of the same type in a single variable,
+                            making it easier to manage and manipulate large sets of data. They are particularly
+                            useful when you need to perform operations on a collection of items, such as sorting,
+                            searching, or iterating through a list of values.
+                        </p>
+                        <p>
+                            Specifically, the chapter highlights:
+                            <ul>
+                                <li>Declaring arrays</li>
+                                <li>Creating an array instance</li>
+                                <li>Storing and accessing data within arrays</li>
+                                <li>Copying arrays, and</li>
+                                <li>Multi-dimensional arrays</li>
+                            </ul>
+                        </p>
+                        <p>
+                            I believe this is a very important chapter, as arrays are a 
+                            fundamental concept used widely in programming. Take the time to 
+                            review the other resources provided in Canvas and in the chapter.
+                            Having a strong understanding of arrays will help you write more 
+                            efficient and organized code, especially when dealing with large datasets
+                            or complex data structures.
+                        </p>
+                        <h3 style="font-style: italic;">What's important?</h3>
+                        <h4>Declaring and initializing arrays</h4>
+                        <p>
+                            Notice that in C#, arrays can be declared in a few different ways. 
+                            All are valid, and all have their own use cases. The situation will 
+                            determine which is best. Sometimes, you may know the size of the 
+                            dataset but not the values, while other times you may know the
+                            values but not the size.
+                        </p>
+                        <p>
+                            While reading through the material, consider <em>when</em> and 
+                            <em>why</em> you might use one or another of these.
+                        </p>
+                        <h4>Accessing array values</h4>
+                        <p>
+                            An array index or subscript is used to identify a specific element
+                            stored in an array. The index is an integer value that
+                            represents the position of the element within the array. 
+                        </p>
+                        <p>
+                            Be careful not to confuse the index with the value stored in the array.
+                            The index is used to access the value, but it is not the value itself.
+                            For example, if you have an array of integers, the index might be 0,
+                            but the value at that index could be 42. The index is simply a way to
+                            reference the position of the value within the array.
+                        </p>
+                        <h4>Copying arrays</h4>
+                        <p>
+                            Copying arrays is a common operation in programming, and C# provides
+                            several methods to do this.
+                        </p>
+                        <p>
+                            The common terms used when copying arrays are <em>shallow</em> and
+                            <em>deep</em> copies. A shallow copy creates a new array that references
+                            the same elements as the original array, while a deep copy creates a new
+                            array that contains copies of the elements in the original array.
+                        </p>
+                        <p>
+                            Read that again.
+                        </p>
+                        <p>
+                            I was surprised that the book did not mention these, but they are 
+                            in common use so I wanted to make sure you are aware of them.
+                        </p>
+                        <p>
+                            Remember the difference between reference and value types. An array 
+                            is a reference type, meaning that when you copy an array, you are
+                            copying the reference to the array, not the actual elements. This means
+                            that if you modify the elements of the copied array, you are also modifying
+                            the elements of the original array.
+                        </p>
+                        <p>
+                            This is an important distinction and you need to be careful especially
+                            when passing arrays to methods or returning them from methods.
+                        </p>
+                        <p>
+                            If you want to manipulate the elements of an array without affecting
+                            the original array, you can create a deep copy of the array. That is 
+                            to make a new array and copy each of the elements to the new array. 
+                            This way, you can modify the elements of the new array without
+                            affecting the original array.
+                        </p>
+                        <h4>Multi-dimensional arrays</h4>
+                        <p>
+                            Multi-dimensional arrays are arrays that have more than one dimension. 
+                            This can mean two or more. Although most of the examples you see will 
+                            deal with two-dimensional arrays, you can create arrays with any number
+                            of dimensions.
+                        </p>
+                        <p>
+                            Again, the textbook's introduction is good, but it doesn't go too deep
+                            into the topic. The author does explain the distinction between multi-dimensional 
+                            arrays and jagged arrays.
+                        </p>
+                        <p>
+                            Jagged arrays (sometimes called "ragged" arrays) are also known as 
+                            arrays of arrays. That is to say, they are arrays that contain
+                            other arrays as their elements, which may contain different
+                            numbers of elements. This allows for more flexibility in storing
+                            data, as each sub-array can have a different length.
+                        </p>
+                        <p>
+                            In contrast, multi-dimensional arrays are more structured. Every 
+                            row or column or dimension has the same number of elements.
+                            This means that all rows have the same number of columns, and all
+                            columns have the same number of rows.
+                        </p>
+                        <p>
+                            Once again, which type you use will depend on the situation.
+                            Jagged arrays are useful when you need to store data that has
+                            varying lengths, so that you can save memory and avoid
+                            wasting space. Multi-dimensional arrays are useful when you need
+                            to store data in a structured way, such as in a table or grid format.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (overview) -->
-
-            <div class="card"> <!-- .card enum -->
-                <div class="card-header">
-                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#enum" aria-expanded="true"
-                        aria-controls="enum">
-                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
-                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Enumeration
-                    </button>
-                </div> <!-- .card-header -->
-                <div id="enum" class="collapse show">
-                    <div class="card-body">
-                        <h3>Enumeration</h3>
-                        <p>
-                            An enumeration is a user-defined type that consists of a set of named constants. 
-                            It is used to define a variable that can hold a set of predefined values, making 
-                            the code more readable and maintainable.
-                        </p>
-                        <p>
-                            Enumerations are defined using the <code>enum</code> keyword, followed by the name of the 
-                            enumeration and a list of named constants enclosed in curly braces.
-                        </p>
-                        <pre><code class="language-csharp">
-        enum DayOfWeek
-        {
-            Sunday,
-            Monday,
-            Tuesday,
-            Wednesday,
-            Thursday,
-            Friday,
-            Saturday
-        }
-                        </code></pre>
-                        <p>
-                            You can use an enumeration to declare a variable of that type, and assign it one of the 
-                            predefined values.
-                        </p>
-                        <pre><code class="language-csharp">
-        DayOfWeek today = DayOfWeek.Monday;
-
-        if (today == DayOfWeek.Monday)
-        {
-            Console.WriteLine("It's Monday!");
-        }
-                        </code></pre>
-                        <p>
-                            Enumerations can also have an underlying type, which is the type of the values that the 
-                            enumeration can hold. By default, the underlying type is <code>int</code>, but you can specify 
-                            a different type using a colon.
-                        </p>
-                        <pre><code class="language-csharp">
-        enum ErrorCode : byte
-</code></pre>
-                        <p>
-                            As developers, we continuously strive to write code that is not only functional but also
-                            clear and maintainable. Enumerations play a crucial role in achieving this goal by providing
-                            a way to define a set of related constants that can be used to represent meaningful values
-                            in our code. They enhance the readability of our code, making it easier to understand and
-                            maintain over time.
-                        </p>
-                        <p>
-                            Readability is an ongoing objective. It is a skill that gets better with practice 
-                            and experience. Enumerations are a great addition to your skill set for this reason.
-                        </p>
-                    </div> <!-- .card-body -->
-                </div> <!-- .collapse -->
-
-            </div> <!-- .card (enum) -->
-
-            <div class="card"> <!-- .card struct -->
-                <div class="card-header">
-                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#struct" aria-expanded="true"
-                        aria-controls="struct">
-                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
-                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Structure
-                    </button>
-                </div> <!-- .card-header -->
-                <div id="struct" class="collapse show">
-                    <div class="card-body">
-                        <h3>Structure</h3>
-                        <p>
-                            A structure is a user-defined value type that can contain data members and methods. 
-                            It is similar to a class, but it is a value type, which means that it is stored on the 
-                            stack rather than the heap.
-                        </p>
-                        <p>
-                            Structures are defined using the <code>struct</code> keyword, followed by the name of the 
-                            structure and a list of data members enclosed in curly braces.
-                        </p>
-                        <pre><code class="language-csharp">
-        struct Point
-        {
-            public int X;
-            public int Y;
-        }
-                        </code></pre>
-                        <p>
-                            You can use a structure to declare a variable of that type, and assign values to its
-                            data members.
-                        </p>
-                        <pre><code class="language-csharp">
-        Point p;
-        p.X = 10;
-        p.Y = 20;
-        Console.WriteLine($"Point: ({p.X}, {p.Y})");
-                        </code></pre>
-                        <p>
-                            Structures can also have methods, properties, and constructors, just like classes. 
-                            However, they are typically used for small data structures that do not require the 
-                            overhead of a class.
-                        </p>
-                        <p>
-                            Structures are useful for grouping related data together and providing a way to 
-                            manipulate that data in a meaningful way. They are often used to represent simple 
-                            data types such as points, rectangles, and colors.
-                        </p>
-                        <p>
-                            As with enumerations, structures are a powerful tool for improving the readability 
-                            and maintainability of your code. They allow you to define custom data types that 
-                            can be used to represent complex data structures in a clear and concise way.
-                        </p>
-                    </div> <!-- .card-body -->
-                </div> <!-- .collapse -->
-            </div> <!-- .card (struct) -->
         </div> <!-- .container -->
         <div id="footer">
             <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
