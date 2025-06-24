@@ -156,7 +156,7 @@
                             An array index, or subscript, is a <em>memory offset</em> from 
                             the starting memory address.
                         </p>
-                        <img src="/course-content/images/array.png"
+                        <img src="/course-content/images/array.png" style="margin:auto; margin-bottom: 1em;"
                             alt="Array Indexing" class="img-fluid" />
                         <p>
                             Consider the image. On a whiteboard, I can easily demonstrate 
@@ -256,13 +256,30 @@
                             fast access based on their index. You can retrieve elements by 
                             specifying their index within square brackets.
                         </p>
+                        <p>
                         <pre><code>
-                        // Retrieving elements from the array in Python
+                        # Python
                         myArray = [10, 20, 30]
                         print(myArray[0])  # Output: 10
                         print(myArray[2])  # Output: 30
-                            </code></pre>
-
+                        </code></pre>
+                        </p>
+                        <p>
+                        <pre><code>
+                        // C#
+                        int[] myArray = { 10, 20, 30 };
+                        Console.WriteLine(myArray[0]);  // Output: 10
+                        Console.WriteLine(myArray[2]);  // Output: 30
+                        </code></pre>
+                        </p>
+                        <p>
+                        <pre><code>
+                        // Java
+                        int[] myArray = { 10, 20, 30 };
+                        System.out.println(myArray[0]);  // Output: 10
+                        System.out.println(myArray[2]);  // Output: 30
+                        </code></pre>
+                        </p>
                         <p>
                             Arrays provide a convenient and efficient way to work with 
                             collections of data in programming, making them a valuable tool 
@@ -273,6 +290,15 @@
                             These rules for how to create and use arrays are important, 
                             but if you understand how arrays work, then the <em>why</em> 
                             they work will make sense, and the rules will make more sense.
+                        </p>
+                        <p>&nbsp;</p>
+                        <p>
+                            Later, you will learn about other data structures that
+                            can be used to store collections of data, such as lists, sets,
+                            and dictionaries. Each of these has its own rules and uses, but
+                            they all share the same fundamental concept of storing data in a
+                            structured way, and understanding arrays will help you
+                            grasp these other data structures more easily.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
