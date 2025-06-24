@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 9</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="content-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <h1>&nbsp;</h1>
+        <div class="container my-4 px-2">
+            <div class="card"> <!-- .card overview -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Chapter 9: enum and struct value types
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="overview" class="collapse show">
+                    <div class="card-body">
+                        <h3>Introduction</h3>
+                        <p>
+                            Chapter 9 builds on your understanding of value types and considers 
+                            the use of enumeration types and structure value types. In addition 
+                            to being value types, so they are handled efficiently on the stack,
+                            these two user-defined types provide a way to group related data
+                            and functionality together, and more than anything else, they are 
+                            useful for making your code more <em>readable and maintainable</em>.                           
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (overview) -->
+
+            <div class="card"> <!-- .card enum -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#enum" aria-expanded="true"
+                        aria-controls="enum">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Enumeration
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="enum" class="collapse show">
+                    <div class="card-body">
+                        <h3>Enumeration</h3>
+                        <p>
+                            An enumeration is a user-defined type that consists of a set of named constants. 
+                            It is used to define a variable that can hold a set of predefined values, making 
+                            the code more readable and maintainable.
+                        </p>
+                        <p>
+                            Enumerations are defined using the <code>enum</code> keyword, followed by the name of the 
+                            enumeration and a list of named constants enclosed in curly braces.
+                        </p>
+                        <pre><code class="language-csharp">
+        enum DayOfWeek
+        {
+            Sunday,
+            Monday,
+            Tuesday,
+            Wednesday,
+            Thursday,
+            Friday,
+            Saturday
+        }
+                        </code></pre>
+                        <p>
+                            You can use an enumeration to declare a variable of that type, and assign it one of the 
+                            predefined values.
+                        </p>
+                        <pre><code class="language-csharp">
+        DayOfWeek today = DayOfWeek.Monday;
+
+        if (today == DayOfWeek.Monday)
+        {
+            Console.WriteLine("It's Monday!");
+        }
+                        </code></pre>
+                        <p>
+                            Enumerations can also have an underlying type, which is the type of the values that the 
+                            enumeration can hold. By default, the underlying type is <code>int</code>, but you can specify 
+                            a different type using a colon.
+                        </p>
+                        <pre><code class="language-csharp">
+        enum ErrorCode : byte
+</code></pre>
+                        <p>
+                            As developers, we continuously strive to write code that is not only functional but also
+                            clear and maintainable. Enumerations play a crucial role in achieving this goal by providing
+                            a way to define a set of related constants that can be used to represent meaningful values
+                            in our code. They enhance the readability of our code, making it easier to understand and
+                            maintain over time.
+                        </p>
+                        <p>
+                            Readability is an ongoing objective. It is a skill that gets better with practice 
+                            and experience. Enumerations are a great addition to your skill set for this reason.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+
+            </div> <!-- .card (enum) -->
+
+            <div class="card"> <!-- .card struct -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#struct" aria-expanded="true"
+                        aria-controls="struct">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Structure
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="struct" class="collapse show">
+                    <div class="card-body">
+                        <h3>Structure</h3>
+                        <p>
+                            A structure is a user-defined value type that can contain data members and methods. 
+                            It is similar to a class, but it is a value type, which means that it is stored on the 
+                            stack rather than the heap.
+                        </p>
+                        <p>
+                            Structures are defined using the <code>struct</code> keyword, followed by the name of the 
+                            structure and a list of data members enclosed in curly braces.
+                        </p>
+                        <pre><code class="language-csharp">
+        struct Point
+        {
+            public int X;
+            public int Y;
+        }
+                        </code></pre>
+                        <p>
+                            You can use a structure to declare a variable of that type, and assign values to its
+                            data members.
+                        </p>
+                        <pre><code class="language-csharp">
+        Point p;
+        p.X = 10;
+        p.Y = 20;
+        Console.WriteLine($"Point: ({p.X}, {p.Y})");
+                        </code></pre>
+                        <p>
+                            Structures can also have methods, properties, and constructors, just like classes. 
+                            However, they are typically used for small data structures that do not require the 
+                            overhead of a class.
+                        </p>
+                        <p>
+                            Structures are useful for grouping related data together and providing a way to 
+                            manipulate that data in a meaningful way. They are often used to represent simple 
+                            data types such as points, rectangles, and colors.
+                        </p>
+                        <p>
+                            As with enumerations, structures are a powerful tool for improving the readability 
+                            and maintainability of your code. They allow you to define custom data types that 
+                            can be used to represent complex data structures in a clear and concise way.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (struct) -->
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+        </div> <!-- #footer -->
+    </div> <!-- #content-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
