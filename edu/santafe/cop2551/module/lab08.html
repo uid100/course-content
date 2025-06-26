@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="lab-assignment-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <h1>Lab 08: using arrays</h1>
+        <p style="margin:10px;">
+            <strong>Objective:</strong> create, fill, and manipulate arrays in C#.
+        </p>
+
+
+        <div class="container my-4 px-2">
+            <div class="card"> <!-- .card (overview) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Overview (click each header to hide/show details)
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="overview" class="collapse show">
+                    <div class="card-body">
+                        <p>
+                            Create and use arrays.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (overview) -->
+
+            <div class="card"> <!-- .card (ex1) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ex1" aria-expanded="true" aria-controls="ex1">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise #1: Prime numbers
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ex1" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise #1: Find and display prime numbers</h2>
+                        <ol id="ex1-steps">
+                            <li> <!-- create the project -->
+                                <details><summary>Create the project</summary>
+                                    <p>
+                                        <ul>
+                                            <li>Solution:  Lab08</li>
+                                            <li>Project: PrimeNumbers</li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        For this assignment, create a solution "Lab08" which will contain 
+                                        all the projects. Like before, the projects will all be .NET 
+                                        (Core, .NET8 or .NET9) console apps.
+                                    </p>
+                                    <p>
+                                        Refer to earlier labs for instructions on how to create a solution and
+                                        projects using either the CLI, or Visual Studio, or VS Code.
+                                    </p>
+                                </details>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
+                                <details><summary>Edit the source code</summary>
+                                    <h3>PrimeNumbers.cs</h3>
+                                    <p>
+                                    <ul>
+                                        <li>
+                                            Start with the code given. The methods have been blurred out. Replace these with
+                                            your code.
+                                        </li>
+                                        <li>
+                                            <img src="/course-content/images/prime_cs_pt1.jpg"
+                                                style="width:60%;" class="img-fluid"
+                                                alt="Prime Numbers code part 1 with blurred pieces">
+                                            <img src="/course-content/images/prime_cs_pt2.jpg"
+                                                style="width:60%;" class="img-fluid"
+                                                alt="Prime Numbers code part 2 with blurred pieces">
+                                            <img src="/course-content/images/prime_cs_pt3.jpg"
+                                                style="width:60%;" class="img-fluid"
+                                                alt="Prime Numbers code part 3 Main()">
+                                        </li>
+                                        <li>
+                                            The method <code>Trace.Assert()</code> is used to verify that the results
+                                            match the expected values.
+                                        </li>
+                                        <li>
+                                            Add the required header information to the source file as before.
+                                        </li>
+                                    </ul>
+                                    </p>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- run and test the program -->
+                                <details><summary>Run and test the program</summary>
+                                    <p>
+                                        The program builds and runs without errors or warnings.
+                                    </p>
+                                    <p>
+                                        The program runs without errors and returns the expected values.
+                                    </p>
+                                </details>
+                            </li> <!-- run and test the program -->
+                        </ol> <!-- #ex1-steps -->
+                        <p style="font-style: italic; margin: 20px;">
+                            Continue to the next exercise.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ex1) -->
+
+            <div class="card"> <!-- .card (ex2) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ex2" aria-expanded="true" aria-controls="ex2">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise #2: Day Counter
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ex2" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise #2: Day of the Week Calculator (enum)</h2>
+                        <ol>
+                            <li> <!-- create the project -->
+                                <details><summary>Create the project</summary>
+                                    <p>
+                                        Create a new project and add it to the solution.
+                                    </p>
+                                    <p>
+                                        <ul>
+                                            <li>project name: <code>Days</code></li>
+                                            <li>solution name: <code>Lab07</code></li>
+                                        </ul>
+                                    </p>
+                                </details>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
+                                <details><summary>Design and Write the source code</summary>
+                                    <h3>DayCounter.cs</h3>
+                                    <p>
+                                        To keep things simple, use a single class for this exercise.
+                                    </p>
+                                    <p>
+                                        Create a class called <code>DayCounter</code>. Reminder, the classname should match 
+                                        the filename.
+                                    </p>
+                                    <p>
+                                        Add an enum to the class file called <code>DayOfWeek</code> with the values:
+                                        <code>Sunday</code>, <code>Monday</code>, <code>Tuesday</code>, <code>Wednesday</code>, 
+                                        <code>Thursday</code>, <code>Friday</code>, and <code>Saturday</code>.
+                                    </p>
+                                    <p>
+                                        In the class, create a <code>Main()</code> method that will be the entry point
+                                        for the program.
+                                    </p>
+                                    <p>
+                                        Get the current day of the week using the <code>DateTime.Now.DayOfWeek</code>
+                                        property and store it in a variable called <code>today</code>.
+                                    </p>
+                                    <p>
+                                        Prompt the user to enter a number of days to skip ahead (an integer).
+                                        Use a nullable value to store the user input.                                         
+                                    </p>
+                                    <p>
+                                        Add a method called <code>CalculateDay(int daysToSkip)</code> that takes an integer
+                                        parameter representing the number of days to skip ahead. The method should return
+                                        the day of the week after skipping the specified number of days.
+                                    </p>
+                                    <p>
+                                        Use the modulo operator to calculate the new day of the week. The formula is:
+                                        <code>(today + daysToSkip) % 7</code>. This will give you the new day of the week
+                                        as an integer, which you can then convert to the corresponding enum value.
+                                    </p>
+                                    <p>
+                                        Display the result to the user, showing the current day and the day after skipping
+                                        the specified number of days.
+                                    </p>
+                                    <p>
+                                        Things to consider:
+                                        <ul>
+                                            <li>
+                                                Do you need to cast the enum value to an integer to perform the modulo 
+                                                operation. You can use the <code>(int)</code> cast to convert the enum 
+                                                value to an integer?
+                                            </li>
+                                            <li>
+                                                How do you convert the result of the modulo operation back to the
+                                                enum value?
+                                            </li>
+                                            <li>
+                                                Does CalculateDay() needs to be a static method?
+                                            </li>
+                                        </ul> 
+                                    </p>
+                                    <p></p>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- run and test the program -->
+                                <details><summary>Run and test the program</summary>
+                                    <p>
+                                        Run the program and test with a variety of user inputs.
+                                        <ul>
+                                            <li>
+                                                Does your program correctly calculate the day of the week 
+                                                after skipping the specified number of days?
+                                            </li>
+                                            <li>
+                                                Does it handle negative numbers correctly?
+                                            </li>
+                                            <li>
+                                                Does it handle zero (0) correctly?
+                                            </li>
+                                            <li>
+                                                Does it handle large numbers correctly?
+                                            </li>
+                                            <li>
+                                                Does your program handle invalid inputs gracefully?
+                                            </li>
+                                        </ul>
+                                    </p>
+                                </details>
+                            </li> <!-- run and test the program -->
+                        </ol>
+                        <p style="font-style: italic; margin: 20px;">
+                            Continue to the next exercise.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ex2) -->
+
+            <div class="card"> <!-- .card (ex3) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#ex3" aria-expanded="true" aria-controls="ex3">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise #3: slice of 'pi'
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="ex3" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise #3: Estimate the value of <code>π</code> using Monte Carlo method</h2>
+                        <ol>
+                            <li>
+                                <details><summary>Create the project</summary>
+                                    <p>
+                                        Add another console application project to the solution.
+                                    </p>
+                                    <p>
+                                        <ul>
+                                            <li>project name: <code>PiEstimator</code></li>
+                                            <li>solution name: <code>Lab07</code></li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        Name your project <code>PiEstimator</code> and add it to the solution.
+                                    </p>
+                                    <p>
+                                        In statistical modeling, the Monte Carlo method is a
+                                        computational algorithm that relies on repeated random sampling to obtain
+                                        numerical results. The name is derived from the city of Monte Carlo in Monaco,
+                                        which is famous for its casinos and gambling.
+                                    </p>
+                                    <p>
+                                        In this exercise, you will use the Monte Carlo method to estimate the value of pi.
+                                        The idea is to randomly generate points in a square that contains a quarter circle,
+                                        and then calculate the ratio of points that fall inside the quarter circle to the total
+                                        number of points generated. This ratio can be used to estimate the value of pi.
+                                    </p>
+                                    <p>
+                                        Consider the following diagram:
+                                        <img 
+                                            src="/course-content/images/monte-carlo-pi.png"
+                                            style="width:50%; margin: 20px auto; display: block;" 
+                                            alt="Monte Carlo method for estimating pi" />
+                                    </p>
+                                    <p>
+                                        The quarter circle is inscribed in a square. The radius of the quarter circle
+                                        is equal to the length of the sides of the square. The area of the quarter circle
+                                        is equal to <code>π * r^2 / 4</code>, and the area of the square is equal to <code>r^2</code>.
+                                        Therefore, the ratio of the area of the quarter circle to the area of the square is
+                                        equal to <code>π / 4</code>. By randomly generating points in the square and counting
+                                        how many fall inside the quarter circle, we can estimate the value of pi.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details><summary>Edit the source code</summary>
+                                    <h3>PiEstimator.cs</h3>
+                                    <p>
+                                        For this exercise
+                                        <ul>
+                                            <li>
+                                                create a struct called <code>Point</code> that represents a point in
+                                                a 2D space.
+                                            </li>
+                                            <li>
+                                                The struct should have two properties: <code>X</code> and <code>Y</code>, 
+                                                both of type <code>double</code>.
+                                            </li>
+                                            <li>
+                                                The struct should also have a constructor that takes two parameters
+                                                for the <code>X</code> and <code>Y</code> coordinates.
+                                            </li>
+                                    </p>
+                                    <p>
+                                        In the <code>PiEstimator</code> class
+                                        <ul>
+                                            <li>
+                                                Create a method called <code>EstimatePi(int numberOfPoints)</code> that 
+                                                takes an integer parameter representing the number of random points to 
+                                                generate. Call this from <code>Main()</code>.
+                                            </li>
+                                            <li>
+                                                The method should return an estimate of pi as a <code>double</code>.
+                                            </li>
+                                            <li>
+                                                Create a method called <code>GenerateRandomPoint()</code> that generates
+                                                a random point in the square. Use the <code>Random</code> class to generate
+                                                random numbers for the <code>X</code> and <code>Y</code> coordinates.
+                                            </li>
+                                            <li>
+                                                The method should return a new instance of the <code>Point</code> struct.
+                                            </li>
+                                            <li>
+                                                 Inside the <code>EstimatePi()</code> method, use a loop to generate the 
+                                                 specified number of random points by calling the <code>GenerateRandomPoint()</code>
+                                                 method.
+                                            </li>
+                                            <li>
+                                                Add another method to calculate the distance from the origin (0,0) to the point.
+                                                Use the Pythagorean theorem to calculate the distance:
+                                                <code>distance = Math.Sqrt(point.X * point.X + point.Y * point.Y)</code><br>
+                                                <em>(what will you call this one?)</em>
+                                            </li>
+                                            <li>
+                                                Add a boolean method called <code>IsInsideQuarterCircle(Point point)</code>. 
+                                                Pass each generated random point (struct) to this method to determine if the point 
+                                                is in the circle (<code>true</code>) or outside of it (<code>false</code>). 
+                                                This method will call the distance method on the point. <br>
+                                                Refer back to the diagram above. If the distance from the origin to the Point
+                                                is less than the radius, which is 1, the the point is inside the quarter circle.
+                                            </li>
+                                            <li>
+                                                Keep track of the number of points that fall inside the quarter circle. After the 
+                                                loop is complete, calculate the ratio of points inside the quarter circle to the 
+                                                total number of points generated. Use this ratio to estimate the value of pi using 
+                                                the formula:
+                                                <code>piEstimate = 4 * (pointsInside / totalPoints)</code>.
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    </p>
+                                    <p>
+                                        Finally, return the estimated value of pi from the <code>EstimatePi()</code>
+                                        method.
+                                    </p>
+                                    <p>
+                                        In the <code>Main()</code> method, prompt the user to enter the number of points to generate
+                                        for the estimation. Use a nullable value to store the user input. Call the
+                                        <code>EstimatePi()</code> method with the user input and display the estimated value of pi to the user.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Run and test the program</summary>
+                                    <p>
+                                        Run the program and test it with different numbers of points to generate.
+                                        The estimated value of pi should be close to the actual value of pi (3.14159...).
+                                    </p>
+                                    <h3 style="font-style: italic;">why does it work?</h3>
+                                    <p>
+                                        Compare this diagram. 
+                                        <img 
+                                            src="/course-content/images/monte-carlo-pi-2.png"
+                                            style="width:50%; margin: 20px auto; display: block;" 
+                                            alt="Monte Carlo method for estimating pi" />
+                                    </p>
+                                    <p>
+                                        As the number of points increases, the total points will fill the square.
+                                        The area of the square is <code>1 * 1 = 1</code>.
+                                    </p>
+                                    <p>
+                                        The number of points inside the quarter circle will also increase. 
+                                        The area of the quarter circle is <code>π * r^2</code> divided by
+                                        <code>4</code>, where <code>r = 1</code>.
+                                    </p>
+                                    <p>
+                                        By extension, the ratio of the area inside the circle (number of points
+                                        inside the circle) to the area of the square (total points) should be
+                                        eventually be close to the value of <code>π</code> (3.14159...).
+                                    </p>
+                                </details>
+                            </li>
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (ex3) -->
+
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#submit" aria-expanded="true" aria-controls="submit">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Review and Submit
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="submit" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Review and Submit</h2>
+                        <ol>
+                            <li>
+                                <details>
+                                    <summary>Review</summary>
+                                    <p>
+                                        Before you submit your files, go back through the instructions and make
+                                        sure you haven't forgotten anything. Did you include the updated header 
+                                        information in each of your source files? Are the project files named
+                                        correctly and are they all included in the solution (.sln) file?
+                                    </p>
+                                    <p>
+                                        Review your code and make sure it is well organized, properly formatted,
+                                        and follows the naming conventions.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Zip the solution folder</summary>
+                                    <p>
+                                        Zip the solution folder <code>Lab07</code> and all of its contents. 
+                                        This should include the <code>.sln</code> file and all of the project folders.
+                                        Make sure to include all (3) of the projects you created for this lab.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Submit your work</summary>
+                                    <p>
+                                        Submit the zipped solution folder to the assignment submission link in
+                                        Canvas.
+                                    </p>
+                                </details>
+                            </li>
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (submit) -->
+
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+        </div> <!-- #footer -->
+    </div> <!-- #lab-assignment-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
