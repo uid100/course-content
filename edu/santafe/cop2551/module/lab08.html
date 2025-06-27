@@ -182,6 +182,14 @@
                                         You can use the following code in your <code>Main()</code> method to test your
                                         methods. You can add more test cases if you like.
                                     </p>
+                                    <p>
+                                        The <code>Debug.Assert()</code> method is used to verify that the results
+                                        match the expected values. If the assertion fails, an error will be thrown.
+                                        This is a good way to test your methods without having to write a lot of code.
+                                        Note that the <code>Debug.Assert()</code> method is only executed in
+                                        debug mode, so it won't affect the release build of your program. Alternatively,
+                                        you can use <code>Trace.Assert()</code> which will run in both debug and release modes.
+                                    </p>
                                     <code><pre>
 using System.Diagnostics;
 using System;
