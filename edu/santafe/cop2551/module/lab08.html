@@ -84,7 +84,7 @@
                 </div> <!-- .card-header -->
                 <div id="utils" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise: Create the array utilities shown</h2>
+                        <h2>Exercise: Create the array utilities listed</h2>
                         <ol id="ex-utils-steps">
                             <li> <!-- create the project -->
                                 <details><summary>Create the project</summary>
@@ -167,10 +167,90 @@
                                             This method will take an 
                                         </li>
                                         <li>
-                                            Don't forget the required header information in all your source files.
+                                            <em>Don't forget the required header information in all your source files.</em>
                                         </li>
                                     </ul>
                                     </p>
+                                    <h4>Main()</h4>
+                                    <p>
+                                        You can use the following code in your <code>Main()</code> method to test your
+                                        methods. You can add more test cases if you like.
+                                    </p>
+                                    <code><pre>
+using System.Diagnostics;
+using System;
+namespace ArrayUtils
+{
+    class ArrayUtils
+    {
+        // methods go here
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] numbers = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            char[] letters = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j' };
+            int[,] matrix =
+            {
+                { 1, 2, 3, 4, 5 },
+                { 6, 7, 8, 9, 10 },
+                { 11, 12, 13, 14, 15 },
+                { 16, 17, 18, 19, 20 },
+                { 21, 22, 23, 24, 25 }
+            };
+            // Test contains()
+            Debug.Assert(ArrayUtils.contains(numbers, 5) == true);
+            Debug.Assert(ArrayUtils.contains(numbers, 11) == false);
+            Debug.Assert(ArrayUtils.contains(letters, 'c') == true);
+            Debug.Assert(ArrayUtils.contains(letters, 'z') == false);
+            // Test find()
+            Debug.Assert(ArrayUtils.find(numbers, 5) == 4);
+            Debug.Assert(ArrayUtils.find(numbers, 11) == -1);
+            Debug.Assert(ArrayUtils.find(letters, 'c') == 2);
+            Debug.Assert(ArrayUtils.find(letters, 'z') == -1);
+            // Test sum()
+            Debug.Assert(ArrayUtils.sum(numbers) == 55);
+            Debug.Assert(ArrayUtils.sum(new int[] { 1, 2, 3 }) == 6);
+            // Test addRow()
+            Debug.Assert(ArrayUtils.addRow(matrix, 0) == 15);
+            Debug.Assert(ArrayUtils.addRow(matrix, 1) == 40);
+            Debug.Assert(ArrayUtils.addRow(matrix, 2) == 65);
+            Debug.Assert(ArrayUtils.addRow(matrix, 3) == 90);
+            Debug.Assert(ArrayUtils.addRow(matrix, 4) == 115);
+            Debug.Assert(ArrayUtils.addRow(matrix, 5) == -1); // out of bounds
+            // Test reverse()
+            int[] reversedNumbers = ArrayUtils.reverse(numbers);
+            Debug.Assert(reversedNumbers[0] == 10);
+            Debug.Assert(reversedNumbers[1] == 9);
+            Debug.Assert(reversedNumbers[2] == 8);
+            Debug.Assert(reversedNumbers[3] == 7);
+            Debug.Assert(reversedNumbers[4] == 6);
+            Debug.Assert(reversedNumbers[5] == 5);
+            Debug.Assert(reversedNumbers[6] == 4);
+            Debug.Assert(reversedNumbers[7] == 3);
+            Debug.Assert(reversedNumbers[8] == 2);
+            Debug.Assert(reversedNumbers[9] == 1);
+            // Test isPalindrome()
+            Debug.Assert(ArrayUtils.isPalindrome(new char[] { 'a', 'b', 'c', 'b', 'a' }) == true);
+            Debug.Assert(ArrayUtils.isPalindrome(new char[] { 'a', 'b', 'c', 'd', 'e' }) == false);
+            // Test countValues()
+            char[] countedLetters = ArrayUtils.countValues(letters);
+            Debug.Assert(countedLetters[0] == 'a');
+            Debug.Assert(countedLetters[1] == 'b');
+            Debug.Assert(countedLetters[2] == 'c');
+            Debug.Assert(countedLetters[3] == 'd');
+            Debug.Assert(countedLetters[4] == 'e');
+            Debug.Assert(countedLetters[5] == 'f');
+            Debug.Assert(countedLetters[6] == 'g');
+            Debug.Assert(countedLetters[7] == 'h');
+            Debug.Assert(countedLetters[8] == 'i');
+            Debug.Assert(countedLetters[9] == 'j');
+            Console.WriteLine("All tests passed!");
+        }
+    }
+}
+</pre></code>
                                 </details>
                             </li> <!-- edit the source code -->
                             <li> <!-- run and test the program -->
