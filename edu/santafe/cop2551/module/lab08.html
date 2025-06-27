@@ -107,30 +107,67 @@
                             </li> <!-- create the project -->
                             <li> <!-- edit the source code -->
                                 <details><summary>Edit the source code</summary>
-                                    <h3>PrimeNumbers.cs</h3>
+                                    <h3>ArrayUtils.cs</h3>
                                     <p>
+                                        <strong>important!</strong> For these methods, use a loop for the solution, 
+                                        not the built-in methods like: <code>Contains()</code>, <code>IndexOf()</code>, 
+                                        or <code>Reverse()</code>. You can use the <code>Length</code> property to 
+                                        determine the size of the array, but you should not use any built-in methods 
+                                        to solve the problems.
+                                    </p>
+                                    <p>
+                                        In the class <code>ArrayUtils</code>, write the following <code>static</code>methods:
                                     <ul>
                                         <li>
-                                            Start with the code given. The methods have been blurred out. Replace these with
-                                            your code.
+                                            <code>bool contains()</code><br>
+                                            This method will take an array of integers and a single integer value.
+                                            It will return <code>true</code> if the value is found in the array,
+                                            otherwise it will return <code>false</code>.<br>
+                                            <em>Code this using a loop for the solution, not the builtin 
+                                            <code>Contains()</code></em> method.
                                         </li>
                                         <li>
-                                            <img src="/course-content/images/prime_cs_pt1.jpg"
-                                                style="width:60%;" class="img-fluid"
-                                                alt="Prime Numbers code part 1 with blurred pieces">
-                                            <img src="/course-content/images/prime_cs_pt2.jpg"
-                                                style="width:60%;" class="img-fluid"
-                                                alt="Prime Numbers code part 2 with blurred pieces">
-                                            <img src="/course-content/images/prime_cs_pt3.jpg"
-                                                style="width:60%;" class="img-fluid"
-                                                alt="Prime Numbers code part 3 Main()">
+                                            <code>int[] find()</code><br>
+                                            This method will take an array of integers and a single integer value.
+                                            It will return the index of the first occurrence of the value in the array.
+                                            If the value is not found, it will return -1.
                                         </li>
                                         <li>
-                                            The method <code>Trace.Assert()</code> is used to verify that the results
-                                            match the expected values.
+                                            <code>char[] find()</code><br>
+                                            Overload the <code>find()</code> method to take an array of characters
+                                            and a single character value.
                                         </li>
                                         <li>
-                                            Add the required header information to the source file as before.
+                                            <code>int sum()</code><br>
+                                            This method will take an array of integers and return the sum of all the
+                                            values in the array.
+                                        </li>
+                                        <li>
+                                            <code>int addRow()</code><br>
+                                            This method will take a 2D array of integers and return the sum of all the
+                                            values in the specified row. The row number will be passed as a parameter.
+                                            If the row number is out of bounds, it will return -1.<br>
+                                            <em>Hint: Can you reuse the <code>sum()</code> method for this?</em>
+                                        </li>
+                                        <li>
+                                            <code>char[] reverse()</code><br>
+                                            This method will take an array of integers and return a new array
+                                            containing the same values, but in reverse order.
+                                        </li>
+                                        <li>
+                                            <code>bool isPalindrome()</code><br>
+                                            This method will take an array of characters and return <code>true</code>
+                                            if the array is a palindrome, otherwise it will return <code>false</code>.
+                                            A palindrome is a sequence that reads the same forwards and backwards.
+                                            For example, the array <code>{ 'a', 'b', 'c', 'b', 'a' }</code> is a palindrome,
+                                            but the array <code>{ 'a', 'b', 'c', 'd', 'e' }</code> is not.
+                                        </li>
+                                        <li>
+                                            <code>char[] countValues()</code><br>
+                                            This method will take an 
+                                        </li>
+                                        <li>
+                                            Don't forget the required header information in all your source files.
                                         </li>
                                     </ul>
                                     </p>
@@ -369,7 +406,7 @@
                                             <li>Moonlight at Makeout Point</li>
                                             <li>Shy Girl Shuffle</li>
                                             <li>Rockin' with Rosie</li>
-                                            <li>We met at the Five and Dime</li>
+                                            <li>I saw her at the Malt Shop</li>
                                         </ol>
                                     </p>
                                     <p>
@@ -395,7 +432,8 @@
                                                 <ul>
                                                     <li>
                                                         The new <code>Insert()</code> method will take three parameters:
-                                                        The array of songs, the index to insert at, and the song title.
+                                                        The array continaing the song list, the song title, and its new
+                                                         position in the list.
                                                     </li>
                                                     <li>
                                                         The method will insert the song at the specified index, shifting
