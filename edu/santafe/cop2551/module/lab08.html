@@ -73,19 +73,19 @@
                 </div> <!-- .collapse -->
             </div> <!-- .card (overview) -->
 
-            <div class="card"> <!-- .card (ex1) -->
+            <div class="card"> <!-- .card (utils) -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#ex1" aria-expanded="true" aria-controls="ex1">
+                        data-bs-toggle="collapse" data-bs-target="#utils" aria-expanded="true" aria-controls="utils">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #1: Array utilities
+                        Exercise: Array utilities
                     </button>
                 </div> <!-- .card-header -->
-                <div id="ex1" class="collapse hide">
+                <div id="utils" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #1: Find and display prime numbers</h2>
-                        <ol id="ex1-steps">
+                        <h2>Exercise: Find and display prime numbers</h2>
+                        <ol id="ex-utils-steps">
                             <li> <!-- create the project -->
                                 <details><summary>Create the project</summary>
                                     <p>
@@ -146,27 +146,126 @@
                                     </p>
                                 </details>
                             </li> <!-- run and test the program -->
-                        </ol> <!-- #ex1-steps -->
+                        </ol> <!-- #ex-utils-steps -->
                         <p style="font-style: italic; margin: 20px;">
                             Continue to the next exercise.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card (ex1) -->
+            </div> <!-- .card (utils) -->
 
-            <div class="card"> <!-- .card (ex2) -->
+            <div class="card"> <!-- .card (grid) -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#ex2" aria-expanded="true" aria-controls="ex2">
+                        data-bs-toggle="collapse" data-bs-target="#grid" aria-expanded="true" aria-controls="grid">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #2: Prime numbers
+                        Exercise: 2D Array Grid
                     </button>
                 </div> <!-- .card-header -->
-                <div id="ex2" class="collapse hide">
+                    <div id="grid" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #2: Find and display prime numbers</h2>
-                        <ol id="ex2-steps">
+                        <h2>Exercise: 2-dimensional array grid</h2>
+                        <ol id="ex-grid-steps">
+                            <li> <!-- create the project -->
+                                <details><summary>Create the project</summary>
+                                    <p>
+                                        <ul>
+                                            <li>Solution:  Lab08</li>
+                                            <li>Project: RotateGrid</li>
+                                        </ul>
+                                    </p>
+                                </details>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
+                                <details><summary>Edit the source code</summary>
+                                    <h3>RotateGrid.cs</h3>
+                                    <p>
+                                        <ul>
+                                    <li>
+                                        Within the Main() method, declare a 2D array of integers, the same
+                                        number of rows as columns.
+                                    </li>
+                                    <li>
+                                        Write and call the method <code>SquareGrid()</code> to fill the array with
+                                        sequential integers, from left-to-right and top-to-bottom starting from 1.
+                                    </li>
+                                    <li>
+                                        Write and call the method <code>ShowMatrix()</code> to display the contents of
+                                        the array in a grid format.
+                                    </li>
+                                    <li>
+                                        Write and call the method <code>FlipMatrix()</code> to rotate the contents of the
+                                        array, so that the first row becomes a mirror of the last row and the last row 
+                                        has the reversed data from the first row. See example below.
+                                    </li>
+                                    <li>
+<code><pre>
+        const int SIZE = 10; // size of the square grid
+        matrix = SquareGrid(SIZE);
+        ShowMatrix(matrix);
+        FlipMatrix(matrix);
+        ShowMatrix(matrix);
+</pre></code>
+</li>
+</ul>
+</p>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- run and test the program -->
+                                <details><summary>Run and test the program</summary>
+                                    <p>
+                                        The program builds and runs without errors or warnings.
+                                    </p>
+                                    <p>
+                                        The expected output should look like this:
+                                        <code><pre>
+         1   2   3   4   5   6   7   8   9  10 
+        11  12  13  14  15  16  17  18  19  20 
+        21  22  23  24  25  26  27  28  29  30 
+        31  32  33  34  35  36  37  38  39  40 
+        41  42  43  44  45  46  47  48  49  50 
+        51  52  53  54  55  56  57  58  59  60 
+        61  62  63  64  65  66  67  68  69  70 
+        71  72  73  74  75  76  77  78  79  80 
+        81  82  83  84  85  86  87  88  89  90 
+        91  92  93  94  95  96  97  98  99 100 
+
+        100  99  98  97  96  95  94  93  92  91 
+        90  89  88  87  86  85  84  83  82  81 
+        80  79  78  77  76  75  74  73  72  71 
+        70  69  68  67  66  65  64  63  62  61 
+        60  59  58  57  56  55  54  53  52  51 
+        50  49  48  47  46  45  44  43  42  41 
+        40  39  38  37  36  35  34  33  32  31 
+        30  29  28  27  26  25  24  23  22  21 
+        20  19  18  17  16  15  14  13  12  11 
+        10   9   8   7   6   5   4   3   2   1 
+ </pre></code>
+                                    </p>
+                                </details>
+                            </li> <!-- run and test the program -->
+                        </ol> <!-- #ex-utils-steps -->
+                        <p style="font-style: italic; margin: 20px;">
+                            Continue to the next exercise.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (grid) -->
+
+            <div class="card"> <!-- .card (primes) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#primes" aria-expanded="true" aria-controls="primes">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise: Prime numbers
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="primes" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise: Find and display prime numbers</h2>
+                        <ol id="ex-primes-steps">
                             <li> <!-- create the project -->
                                 <details><summary>Create the project</summary>
                                     <p>
@@ -227,26 +326,26 @@
                                     </p>
                                 </details>
                             </li> <!-- run and test the program -->
-                        </ol> <!-- #ex2-steps -->
+                        </ol> <!-- #ex-primes-steps -->
                         <p style="font-style: italic; margin: 20px;">
                             Continue to the next exercise.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card (ex2) -->
+            </div> <!-- .card (primes) -->
 
-            <div class="card"> <!-- .card (ex3) -->
+            <div class="card"> <!-- .card (hits) -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#ex3" aria-expanded="true" aria-controls="ex3">
+                        data-bs-toggle="collapse" data-bs-target="#hits" aria-expanded="true" aria-controls="hits">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise #3: Hit Parade!
+                        Exercise: Hit Parade!
                     </button>
                 </div> <!-- .card-header -->
-                <div id="ex3" class="collapse hide">
+                <div id="hits" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise #3: Top-Ten Hits!</h2>
+                        <h2>Exercise: Top-Ten Hits!</h2>
                         <ol>
                             <li>
                                 <details><summary>Create the project</summary>
@@ -326,7 +425,8 @@
                                         </ul>
                                     </p>
 
-
+                                    <p>
+                                        <ul>
                                             <li></li>
                                             <li></li>
                                             <li>The Boy from Back Row High</li>
@@ -337,6 +437,8 @@
                                             <li>You Stole My Saddle Shoes</li>
                                             <li>Sweet Talk on Sunday Night</li>
                                             <li>The Melody of Me and You.</li>
+                                        </ul>
+                                    </p>
                                     <p style="font-style: italic;">
                                         None of these songs in the test data are intended to be real.
                                     </p>
@@ -376,7 +478,7 @@
                         </ol>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card (ex3) -->
+            </div> <!-- .card (hits) -->
 
             <div class="card">
                 <div class="card-header">
