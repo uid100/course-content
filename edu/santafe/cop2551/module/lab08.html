@@ -163,13 +163,19 @@
                                             but the array <code>{ 'a', 'b', 'c', 'd', 'e' }</code> is not.
                                         </li>
                                         <li>
-                                            <code>char[] countValues()</code><br>
-                                            This method will take an 
-                                        </li>
-                                        <li>
                                             <em>Don't forget the required header information in all your source files.</em>
                                         </li>
                                     </ul>
+                                    </p>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- run and test the program -->
+                                <details><summary>Run and test the program</summary>
+                                    <p>
+                                        The program builds and runs without errors or warnings.
+                                    </p>
+                                    <p>
+                                        The program runs without errors and returns the expected values.
                                     </p>
                                     <h4>Main()</h4>
                                     <p>
@@ -214,8 +220,6 @@ namespace ArrayUtils
             Debug.Assert(ArrayUtils.sum(new int[] { 1, 2, 3 }) == 6);
             // Test addRow()
             Debug.Assert(ArrayUtils.addRow(matrix, 0) == 15);
-            Debug.Assert(ArrayUtils.addRow(matrix, 1) == 40);
-            Debug.Assert(ArrayUtils.addRow(matrix, 2) == 65);
             Debug.Assert(ArrayUtils.addRow(matrix, 3) == 90);
             Debug.Assert(ArrayUtils.addRow(matrix, 4) == 115);
             Debug.Assert(ArrayUtils.addRow(matrix, 5) == -1); // out of bounds
@@ -223,43 +227,17 @@ namespace ArrayUtils
             int[] reversedNumbers = ArrayUtils.reverse(numbers);
             Debug.Assert(reversedNumbers[0] == 10);
             Debug.Assert(reversedNumbers[1] == 9);
-            Debug.Assert(reversedNumbers[2] == 8);
-            Debug.Assert(reversedNumbers[3] == 7);
-            Debug.Assert(reversedNumbers[4] == 6);
             Debug.Assert(reversedNumbers[5] == 5);
             Debug.Assert(reversedNumbers[6] == 4);
             Debug.Assert(reversedNumbers[7] == 3);
-            Debug.Assert(reversedNumbers[8] == 2);
             Debug.Assert(reversedNumbers[9] == 1);
             // Test isPalindrome()
             Debug.Assert(ArrayUtils.isPalindrome(new char[] { 'a', 'b', 'c', 'b', 'a' }) == true);
             Debug.Assert(ArrayUtils.isPalindrome(new char[] { 'a', 'b', 'c', 'd', 'e' }) == false);
-            // Test countValues()
-            char[] countedLetters = ArrayUtils.countValues(letters);
-            Debug.Assert(countedLetters[0] == 'a');
-            Debug.Assert(countedLetters[1] == 'b');
-            Debug.Assert(countedLetters[2] == 'c');
-            Debug.Assert(countedLetters[3] == 'd');
-            Debug.Assert(countedLetters[4] == 'e');
-            Debug.Assert(countedLetters[5] == 'f');
-            Debug.Assert(countedLetters[6] == 'g');
-            Debug.Assert(countedLetters[7] == 'h');
-            Debug.Assert(countedLetters[8] == 'i');
-            Debug.Assert(countedLetters[9] == 'j');
-            Console.WriteLine("All tests passed!");
         }
     }
 }
 </pre></code>
-                                </details>
-                            </li> <!-- edit the source code -->
-                            <li> <!-- run and test the program -->
-                                <details><summary>Run and test the program</summary>
-                                    <p>
-                                        The program builds and runs without errors or warnings.
-                                    </p>
-                                    <p>
-                                        The program runs without errors and returns the expected values.
                                     </p>
                                 </details>
                             </li> <!-- run and test the program -->
