@@ -81,12 +81,12 @@
                         aria-controls="vehicle">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Exercise 1: Vehicles - Derived Classes
+                        Exercise 1: Vehicles - Guided Exercise
                     </button>
                 </div> <!-- .card-header -->
                 <div id="vehicle" class="collapse hide">
                     <div class="card-body">
-                        <h2>Exercise 1: Base Class and Derived Classes (Guided Exercise)</h2>
+                        <h2>Exercise 1: Base Class and Derived Classes</h2>
                         <p>
                             In this exercise, you will create a base class called <code>Vehicle</code>
                             and derived classes as described below.
@@ -233,20 +233,22 @@
                             <li> <!-- edit the source code -->
                                 <details><summary>Design and create the source code</summary>
                                     <h4>Base Class</h4>
-                                    <p>
-                                        Create an abstract class named Shape. This class will serve as the 
-                                        blueprint for all geometric shapes in our hierarchy. It should contain 
-                                        common properties and an abstract method <code>GetArea()</code>for 
-                                        calculating the area.
-                                    </p>
-                                    <p>
-                                        Add a public property for the Name of the shape (e.g., "Circle", "Rectangle").
-                                    </p>
-                                    <p>
-                                        Define an abstract method called GetArea() that returns a double. This method 
-                                        will have no implementation in the base class, forcing derived classes to provide 
-                                        their own.  
-                                    </p>
+                                    <ul>
+                                        <li>
+                                            Create an abstract class named Shape. This class will serve as the
+                                            blueprint for all geometric shapes in our hierarchy. It should contain
+                                            common properties and an abstract method <code>GetArea()</code>for
+                                            calculating the area.
+                                        </li>
+                                        <li>
+                                            Add a public property for the Name of the shape (e.g., "Circle", "Rectangle").
+                                        </li>
+                                        <li>
+                                            Define an abstract method called GetArea() that returns a double. This method
+                                            will have no implementation in the base class, forcing derived classes to provide
+                                            their own.
+                                        </li>
+                                    </ul>
                                     <h4>Derived Classes</h4>
                                     <p>
                                         Create derived classes for each specific shape: Circle, Rectangle, and Triangle.
@@ -255,9 +257,8 @@
                                         Each derived class should implement the GetArea() method to calculate the area 
                                         of the specific shape.
                                     </p>
-                                    <h4 style="font-style: italic;">Optional</h4>
+                                    <h4 style="font-style: italic;">Optionally:</h4>
                                     <p>
-                                        Optionally:
                                         <ul>
                                             <li>Add more derived shape classes such as <code>Square</code> or <code>Ellipse</code>.</li>
                                             <li>Implement a method <code>GetPerimeter()</code> in the base class (<code>abstract</code> 
@@ -290,7 +291,7 @@
                 </div> <!-- .collapse -->
             </div> <!-- .card (shapes) -->
 
-            <div class="card"> <!-- .card (shapes) -->
+            <div class="card"> <!-- .card (submit) -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
                         data-bs-toggle="collapse" data-bs-target="#submit" aria-expanded="true" aria-controls="submit">
