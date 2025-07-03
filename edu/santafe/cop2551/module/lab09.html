@@ -73,18 +73,18 @@
                 </div> <!-- .collapse -->
             </div> <!-- .card (overview) -->
 
-            <!-- student exercise for the vehicle base class and derived classes -->
-            <div class="card">
+            <!-- guided exercise for the vehicle base class and derived classes -->
+            <div class="card"> <!-- .card (vehicle) -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#exercise1" aria-expanded="true"
-                        aria-controls="exercise1">
+                        data-bs-toggle="collapse" data-bs-target="#vehicle" aria-expanded="true"
+                        aria-controls="vehicle">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
                         Exercise 1: Vehicles - Derived Classes
                     </button>
                 </div> <!-- .card-header -->
-                <div id="exercise1" class="collapse hide">
+                <div id="vehicle" class="collapse hide">
                     <div class="card-body">
                         <h2>Exercise 1: Base Class and Derived Classes (Guided Exercise)</h2>
                         <p>
@@ -199,8 +199,98 @@
                         </ol>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card (exercise1) -->
-            <div class="card">
+            </div> <!-- .card (vehicle) -->
+
+            <div class="card"> <!-- .card (shapes) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#shapes" aria-expanded="true"
+                        aria-controls="shapes">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise 2: Shapes
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="shapes" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise 2: Shapes</h2>
+                        <p>
+                            In this exercise, you will create a base class called <code>Shape</code> and derived classes
+                             <code>Circle</code>, <code>Rectangle</code>, and <code>Triangle</code>.
+                        </p>
+                        <ol id="ex-shapes-steps">
+                            <li> <!-- create the project -->
+                                <details><summary>Create the project</summary>
+                                    <p>
+                                        Create a new project called <code>Shapes</code> in the same solution as the
+                                        previous exercise.
+                                    </p>
+                                    <p>
+                                        Each class should be in its own file. The file names should match the class names.
+                                    </p>
+                                </details>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
+                                <details><summary>Design and create the source code</summary>
+                                    <h4>Base Class</h4>
+                                    <p>
+                                        Create an abstract class named Shape. This class will serve as the 
+                                        blueprint for all geometric shapes in our hierarchy. It should contain 
+                                        common properties and an abstract method <code>GetArea()</code>for 
+                                        calculating the area.
+                                    </p>
+                                    <p>
+                                        Add a public property for the Name of the shape (e.g., "Circle", "Rectangle").
+                                    </p>
+                                    <p>
+                                        Define an abstract method called GetArea() that returns a double. This method 
+                                        will have no implementation in the base class, forcing derived classes to provide 
+                                        their own.  
+                                    </p>
+                                    <h4>Derived Classes</h4>
+                                    <p>
+                                        Create derived classes for each specific shape: Circle, Rectangle, and Triangle.
+                                    </p>
+                                    <p>
+                                        Each derived class should implement the GetArea() method to calculate the area 
+                                        of the specific shape.
+                                    </p>
+                                    <h4 style="font-style: italic;">Optional</h4>
+                                    <p>
+                                        Optionally:
+                                        <ul>
+                                            <li>Add more derived shape classes such as <code>Square</code> or <code>Ellipse</code>.</li>
+                                            <li>Implement a method <code>GetPerimeter()</code> in the base class (<code>abstract</code> 
+                                                or <code>virtual</code> depending on whether all shapes have a common perimeter calculation).</li>
+                                        </ul>
+                                    </p>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- test the classes -->
+                                <details><summary>Test the classes</summary>
+                                    <p>
+                                        Create a test <em>driver</em> file in the <code>Shapes</code> project.
+                                        In the <code>Main</code> method, create instances of each derived class and
+                                        demonstrate their functionality by calling their methods and displaying 
+                                        their properties.
+                                    </p>
+                                    <p>
+                                        <em>Optionally:</em>
+                                        <ul>
+                                            <li>Create a list of shapes and write a method to calculate the total area 
+                                                of all shapes in the list.</li>
+                                            <li>Use the <code>Debug.Assert()</code> method to verify your results against your 
+                                                calculated expected values.</li>
+                                        </ul>
+                                    </p>
+                                </details>
+                            </li> <!-- test the classes -->
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (shapes) -->
+
+            <div class="card"> <!-- .card (shapes) -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
                         data-bs-toggle="collapse" data-bs-target="#submit" aria-expanded="true" aria-controls="submit">
