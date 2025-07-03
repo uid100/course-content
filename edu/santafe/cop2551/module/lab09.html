@@ -89,7 +89,7 @@
                         <h2>Exercise 1: Vehicle Base Class and Derived Classes</h2>
                         <p>
                             In this exercise, you will create a base class called <code>Vehicle</code>
-                            and derived classes as described in the class diagram.
+                            and derived classes as described below.
                         </p>
                         <img src="/course-content/common/images/vehicle-inheritance.png"
                             alt="Vehicle Class Diagram" class="img-fluid mb-3" />
@@ -99,7 +99,7 @@
                                     <p>
                                         <ul>
                                             <li>Solution:  Lab09</li>
-                                            <li>Project: Vehicles</li>
+                                            <li>Project: Cars</li>
                                         </ul>
                                     </p>
                                     <p>
@@ -107,12 +107,15 @@
                                         <code>
                                             Lab09/
                                             └── Lab09.sln
-                                            └── Vehicles
+                                            └── Cars
                                                 ├── Car.cs
+                                                ├── CarsTestApp.cs
                                                 ├── Convertible.cs
-                                                ├── Dumptruck.cs
-                                                ├── Pickup.cs
-                                                └── Vehicles.csproj
+                                                ├── Motorcycle.cs
+                                                ├── Truck.cs
+                                                ├── Vehicle.cs
+                                                ├── VehicleApp.cs
+                                                └── Cars.csproj
                                         </code>
                                     </p>
                                 </details>
@@ -120,26 +123,58 @@
                             <li> <!-- edit the source code -->
                                 <details><summary>Edit the source code</summary>
                                     <p>
-                                        Create the <code>Vehicle</code> base class and derived classes as shown in the
-                                        class diagram. Implement the properties and methods as specified.
+                                        Create the base and derived classes as shown.
                                     </p>
+                                    <h4>Vehicle.cs</h4>
+                                    <img src="/course-content/common/images/vehicle-class.png"
+                                        alt="Vehicle Class Code" class="img-fluid mb-3" 
+                                        style="width: 80%; margin:auto;" />
+                                    <h4>Car.cs</h4>
+                                    <img src="/course-content/common/images/car-class.png"
+                                        alt="Car Class Code" class="img-fluid mb-3"
+                                        style="width: 80%; margin:auto;" />
+                                    <h4>Truck.cs</h4>
+                                    <img src="/course-content/common/images/truck-class.png"
+                                        alt="Truck Class Code" class="img-fluid mb-3"
+                                        style="width: 80%; margin:auto;" />
+                                    <h4>Motorcycle.cs</h4>
+                                    <img src="/course-content/common/images/motorcycle-class.png"
+                                        alt="Motorcycle Class Code" class="img-fluid mb-3"
+                                        style="width: 80%; margin:auto;" />
+                                    <h4>Convertible.cs</h4>
+                                    <img src="/course-content/common/images/convertible-class.png"
+                                        alt="Convertible Class Code" class="img-fluid mb-3"
+                                        style="width: 80%; margin:auto;" />
                                     <p>
-                                        Make sure to include appropriate constructors, properties, and methods in each class.
-                                        Use the <code>ToString()</code> method to return a string representation of each vehicle.
+                                        Make sure to include the <code>ToString()</code> method in each derived class
+                                        to display the details of the vehicle.
                                     </p>
                                 </details>
                             </li> <!-- edit the source code -->
                             <li> <!-- test the classes -->
                                 <details><summary>Test the classes</summary>
                                     <p>
-                                        Create a <code>Program.cs</code> file in the <code>Vehicles</code> project.
-                                        In the <code>Main</code> method, create instances of each derived class
-                                        (<code>Car</code>, <code>Truck</code>, <code>Motorcycle</code>) and
-                                        demonstrate their functionality by calling their methods and displaying their properties.
+                                        Create a test <em>driver</em> file in the <code>Vehicles</code> project.
+                                        In the <code>Main</code> method, create instances of each derived class and
+                                        demonstrate their functionality by calling their methods and displaying 
+                                        their properties.
                                     </p>
                                     <p>
-                                        For example, create a <code>Car</code> object and call its <code>ToString()</code> method
-                                        to display its details. Repeat this for the other derived classes.
+                                        Start with the code provided below in the <code>CarsTestApp.cs</code> file:
+                                    </p>
+                                    <h4>CarsTestApp.cs</h4>
+                                    <img src="/course-content/common/images/cars-test-app.png"
+                                        alt="Cars Test App Code" class="img-fluid mb-3"
+                                        style="width: 80%; margin:auto;" />
+                                    <p>
+                                        The code is not complete. Add multiple instances of each class and call their
+                                        methods to demonstrate their functionality.
+                                    </p>
+                                    <h4 style="font-style: italic;">Reminder!</h4>
+                                    <p>
+                                        Make sure to include the updated header information in each of your source files.
+                                        The header should include your name, date, course, and a brief description of the
+                                        file's purpose.
                                     </p>
                                 </details>
                             </li> <!-- test the classes -->
