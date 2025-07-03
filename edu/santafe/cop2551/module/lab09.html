@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="lab-assignment-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <h1>Lab 09: using class inheritance</h1>
+        <p style="margin:10px;">
+            <strong>Objective:</strong> extend base classes to derived classes in C#.
+        </p>
+
+
+        <div class="container my-4 px-2">
+            <div class="card"> <!-- .card (overview) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Overview (click each header to hide/show details)
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="overview" class="collapse show">
+                    <div class="card-body">
+                        <p>
+                            Design and implement a set of classes that demonstrate inheritance in C#.
+                        </p>
+                        <p>
+                            Click on the headers below to expand or collapse the details for each exercise. Read the 
+                            instructions carefully.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (overview) -->
+
+            <!-- student exercise for the vehicle base class and derived classes -->
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#exercise1" aria-expanded="true"
+                        aria-controls="exercise1">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise 1: Vehicle Base Class and Derived Classes
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="exercise1" class="collapse show">
+                    <div class="card-body">
+                        <h2>Exercise 1: Vehicle Base Class and Derived Classes</h2>
+                        <p>
+                            In this exercise, you will create a base class called <code>Vehicle</code>
+                            and derived classes as described in the class diagram.
+                        </p>
+                        <img src="/course-content/common/images/vehicle-inheritance.png"
+                            alt="Vehicle Class Diagram" class="img-fluid mb-3" />
+                        <ol id="ex-utils-steps">
+                            <li> <!-- create the project -->
+                                <details><summary>Create the project</summary>
+                                    <p>
+                                        <ul>
+                                            <li>Solution:  Lab09</li>
+                                            <li>Project: Vehicles</li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        Folder structure:<br>
+                                        <code>
+                                            Lab09/
+                                            └── Lab09.sln
+                                            └── Vehicles
+                                                ├── Vehicles.sln
+                                                ├── Vehicles.csproj
+                                                └── Vehicles.cs
+                                        </code>
+                                    </p>
+                                </details>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
+                                <details><summary>Edit the source code</summary>
+                                    <p>
+                                        Create the <code>Vehicle</code> base class and derived classes as shown in the
+                                        class diagram. Implement the properties and methods as specified.
+                                    </p>
+                                    <p>
+                                        Make sure to include appropriate constructors, properties, and methods in each class.
+                                        Use the <code>ToString()</code> method to return a string representation of each vehicle.
+                                    </p>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- test the classes -->
+                                <details><summary>Test the classes</summary>
+                                    <p>
+                                        Create a <code>Program.cs</code> file in the <code>Vehicles</code> project.
+                                        In the <code>Main</code> method, create instances of each derived class
+                                        (<code>Car</code>, <code>Truck</code>, <code>Motorcycle</code>) and
+                                        demonstrate their functionality by calling their methods and displaying their properties.
+                                    </p>
+                                    <p>
+                                        For example, create a <code>Car</code> object and call its <code>ToString()</code> method
+                                        to display its details. Repeat this for the other derived classes.
+                                    </p>
+                                </details>
+                            </li> <!-- test the classes -->
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (exercise1) -->
+            <div class="card">
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#submit" aria-expanded="true" aria-controls="submit">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Review and Submit
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="submit" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Review and Submit</h2>
+                        <ol>
+                            <li>
+                                <details>
+                                    <summary>Review</summary>
+                                    <p>
+                                        Before you submit your files, go back through the instructions and make
+                                        sure you haven't forgotten anything. Did you include the updated header 
+                                        information in each of your source files? Are the project files named
+                                        correctly and are they all included in the solution (.sln) file?
+                                    </p>
+                                    <p>
+                                        Review your code and make sure it is well organized, properly formatted,
+                                        and follows the naming conventions.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Zip the solution folder</summary>
+                                    <p>
+                                        Zip the solution folder and all of its contents. 
+                                        This should include the <code>.sln</code> file and all of the project folders.
+                                        Make sure to include all the projects you created for this lab.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Submit your work</summary>
+                                    <p>
+                                        Submit the zipped solution folder to the assignment submission link in
+                                        Canvas.
+                                    </p>
+                                </details>
+                            </li>
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (submit) -->
+
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+        </div> <!-- #footer -->
+    </div> <!-- #lab-assignment-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
