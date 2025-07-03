@@ -57,9 +57,95 @@
                 </div> <!-- .card-header -->
                 <div id="overview" class="collapse show">
                     <div class="card-body">
-                        <h3>Introduction</h3>
+                        <h2>Introduction</h2>
                         <p>
-                            
+                            <strong>Inheritance</strong> and <strong>polymorphism</strong> are two fundamental concepts 
+                            in object-oriented programming (OOP) that promote code reusability and flexibility.
+                        </p>
+
+                        <h3>Class Inheritance (Is-a Relationship)</h3>
+
+                        <p>
+                            Inheritance allows one class (called a <strong>derived</strong> or <strong>child</strong> class) 
+                            to inherit the properties and behaviors (fields and methods) of another class (called a 
+                            <strong>base</strong> or <strong>parent</strong> class).
+                        </p>
+                        <p>
+                            Imagine releasing a new product that is a variation of an existing company product.
+                            Instead of rewriting all the code, you can create a new class that inherits from the existing one,
+                            allowing you to reuse the code and add or override specific features. Yes, the new product (class)
+                            has new features, but it still retains the core functionality of the original product (class). In 
+                            fact, many new products might <em>evolve</em> from existing products, sharing common -and already
+                            tested and proven- functionality. There is no need to start over from scratch.
+                        </p>
+                        <p>
+                            The same is true for software development. Don't rewrite code that already works!
+                        </p>
+
+                        <h3>Key Points:</h3>
+                        <ul>
+                            <li>Use the <code>:</code> symbol to inherit from a base class.</li>
+                            <li>Inherited members can be accessed as if they were part of the derived class.</li>
+                            <li>Promotes <strong>code reuse</strong> and simplifies maintenance.</li>
+                        </ul>
+
+                        <h3>Example:</h3>
+        <pre><code>class Animal
+        {
+            public void Eat() =&gt; Console.WriteLine("Eating...");
+        }
+
+        class Dog : Animal
+        {
+            public void Bark() =&gt; Console.WriteLine("Barking...");
+        }
+</code></pre>
+
+                        <p>Here, <code>Dog</code> inherits the <code>Eat()</code> method from <code>Animal</code>.</p>
+
+                        <h2>🎭 Polymorphism (Many Forms)</h2>
+
+                        <p>
+                            Polymorphism allows methods to behave differently based on the object that invokes them. 
+                            It enables the same method name to perform different tasks.</p>
+
+                        <h2>Types:</h2>
+                        <ol>
+                            <li><strong>Compile-time polymorphism</strong> (method overloading)</li>
+                            <li><strong>Run-time polymorphism</strong> (method overriding with <code>virtual</code>/<code>override</code>)</li>
+                        </ol>
+
+                        <h3>Example of Run-time Polymorphism:</h3>
+                        <pre><code>class Animal
+        {
+            public virtual void Speak() =&gt; Console.WriteLine("Animal speaks");
+        }
+
+        class Dog : Animal
+        {
+            public override void Speak() =&gt; Console.WriteLine("Dog barks");
+        }
+
+        class Cat : Animal
+        {
+            public override void Speak() =&gt; Console.WriteLine("Cat meows");
+        }
+</code></pre>
+
+<pre><code>Animal myPet = new Dog();
+        myPet.Speak();  // Output: Dog barks
+</code></pre>
+
+                <h3>Benefits:</h3>
+                <ul>
+                    <li>Makes code more <strong>flexible</strong> and <strong>extensible</strong></li>
+                    <li>Enables <strong>dynamic behavior</strong> at runtime</li>
+                </ul>
+
+                <div class="note">
+                    <strong>Remember:</strong> Use <code>virtual</code> in the base class and <code>override</code> in the derived class to enable polymorphism.
+                </div>
+
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
