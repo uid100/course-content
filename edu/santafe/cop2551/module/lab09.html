@@ -226,6 +226,12 @@
                                         previous exercise.
                                     </p>
                                     <p>
+                                        <ul>
+                                            <li>Solution:  Lab09</li>
+                                            <li>Project: Shapes</li>
+                                        </ul>
+                                    </p>
+                                    <p>
                                         Each class should be in its own file. The file names should match the class names.
                                     </p>
                                 </details>
@@ -291,6 +297,79 @@
                 </div> <!-- .collapse -->
             </div> <!-- .card (shapes) -->
 
+            <!-- new card for exercise 3: Create a product catalog with a Product base class and 
+             derived classes for different types of products. Add fields for each derived class 
+             specific to the product type. Instantiate the derived classes and demonstrate their 
+             functionality with the ToString() method override -->
+            <div class="card"> <!-- .card (product catalog) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#product-catalog" aria-expanded="true"
+                        aria-controls="product-catalog">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise 3: Product Catalog
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="product-catalog" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise 3: Product Catalog</h2>
+                        <p>
+                            In this exercise, you will create a base class called <code>Product</code> and derived classes
+                            for different types of products.
+                        </p>
+                        <ol id="ex-product-steps">
+                            <li> <!-- create the project -->
+                                <details><summary>Create the project</summary>
+                                    <p>
+                                        Create a new project called <code>ProductCatalog</code> in the same solution as the
+                                        previous exercises.
+                                    </p>
+                                    <p>
+                                        <ul>
+                                            <li>Solution:  Lab09</li>
+                                            <li>Project: ProductCatalog</li>
+                                        </ul>
+                                    </p>
+                                </details>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
+                                <details><summary>Design and create the source code</summary>
+                                    <h4>Base Class</h4>
+                                    <ul>
+                                        <li>Create a base class named Product. </li>
+                                        <li>Add properties for common fields such as Name, Price, and Description.</li>
+                                        <li>Define a method ToString() to display product details.</li>
+                                    </ul>
+                                    <h4>Derived Classes</h4>
+                                    <ul>
+                                        <li>Create derived classes for specific product types, such as Electronics, Clothing, and Food.</li>
+                                        <li>Each derived class should have additional fields and methods specific to that product type.</li>
+                                        <li>Override the ToString() method in each derived class to display the specific details of the product.</li>
+                                    </ul>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- test the classes -->
+                                <details><summary>Test the classes</summary>
+                                    <p>
+                                        In exercise 1 above, you used the <code>List<T></code> data structure. This data type
+                                        is a much higher level data structure, but its usage is straightforward and similar to
+                                        arrays. In this exercise, you may use the <code>List<Product></code> structure, or you may
+                                        create an array of <code>Product</code> objects.
+                                    </p>
+                                    <p>
+                                        Create a <code>ProductCatalog</code> class to instantiate the derived classes and test 
+                                        their functionality. In the <code>Main</code> method, create instances of each derived class
+                                        and demonstrate their functionality by calling their methods and displaying 
+                                        their properties (using the <code>ToString()</code> method).
+                                    </p>
+                                </details>
+                            </li> <!-- test the classes -->
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (product catalog) -->
+
             <div class="card"> <!-- .card (submit) -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
@@ -317,6 +396,9 @@
                                         Review your code and make sure it is well organized, properly formatted,
                                         and follows the naming conventions.
                                     </p>
+                                    <p style="font-style: italic;">
+                                        Did you remember to include the required header comment block in each of your 
+                                        source files?
                                 </details>
                             </li>
                             <li>
