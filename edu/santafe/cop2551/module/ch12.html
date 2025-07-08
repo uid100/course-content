@@ -59,6 +59,19 @@
                     <div class="card-body">
                         <h2>Introduction</h2>
                         <p>
+                            In this chapter, we will explore the concepts of <strong>inheritance</strong> and 
+                            <strong>polymorphism</strong> in C#. These concepts are essential for creating 
+                            flexible and reusable code in object-oriented programming (OOP).
+                        </p>
+                        <p>
+                            The chapter also covers the use of <strong>protected</strong> access modifiers and
+                            <strong>extension methods</strong>, which enhance the functionality of classes without
+                            modifying their source code. 
+                        </p>
+                        <p>
+                            These are my chapter notes.
+                        </p>
+                        <p>
                             <strong>Inheritance</strong> and <strong>polymorphism</strong> are two fundamental concepts 
                             in object-oriented programming (OOP) that promote code reusability and flexibility.
                         </p>
@@ -122,6 +135,55 @@
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card -->
+
+            <div class="card"> <!-- .card protected -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#protected" aria-expanded="true"
+                        aria-controls="protected">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Protected Access
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="protected" class="collapse show">
+                    <div class="card-body">
+                        <h2>Protected Members</h2>
+
+                        <p>
+                            Protected members are accessible within the class they are declared in and by derived classes.
+                            They cannot be accessed from outside the class hierarchy.
+                        </p>
+                        <p>
+                            Reminder: review the difference between <code>public</code> and <code>private</code> access 
+                            modifiers. How are the different, why use them, when and why?
+                        </p>
+
+                        <h3>Example:</h3>
+<pre><code>
+        class Animal
+        {
+            protected void Sleep() =&gt; Console.WriteLine("Sleeping...");
+        }
+        class Dog : Animal
+        {
+            public void Rest()
+            {
+                Sleep();  // Accessing protected member from base class
+            }
+        }
+</code></pre>
+                        <p>
+                            In this example, the <code>Sleep()</code> method is protected in the <code>Animal</code> class, 
+                            allowing the <code>Dog</code> class to access it within its own method <code>Rest()</code>.
+                        </p>
+                        <p>
+                            The textbook author does a good job of explaining not only the how, but also the 
+                            why behind using protected members.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (protected) -->
 
             <div class="card"> <!-- .card extension_methods -->
                 <div class="card-header">
