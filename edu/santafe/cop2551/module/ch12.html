@@ -55,7 +55,7 @@
                         Chapter 12: Working with inheritance and polymorphism
                     </button>
                 </div> <!-- .card-header -->
-                <div id="overview" class="collapse show">
+                <div id="inheritance" class="collapse show">
                     <div class="card-body">
                         <h2>Introduction</h2>
                         <p>
@@ -70,15 +70,16 @@
                             to inherit the properties and behaviors (fields and methods) of another class (called a 
                             <strong>base</strong> or <strong>parent</strong> class).
                         </p>
+                        <p>&nbsp;</p>
                         <p>
-                            When describing and designing classes and objects, we mostly deal with "has-a" relationships.
+                            When describing and designing classes and objects, we have been implementing "has-a" relationships.
                         </p>
                         <p>
                             For example:
                             <ul><li> a car <strong>has-a</strong> engine, and a dog <strong>has-a</strong> owner.</li></ul>
                         </p>
                         <p>
-                            With inheritance, we deal with "is-a" relationships.
+                            With inheritance, we introduce the idea of "is-a" relationships.
                         </p>
                         <p>
                             For example:
@@ -116,14 +117,82 @@
             public void Bark() =&gt; Console.WriteLine("Barking...");
         }
 </code></pre>
-
+        
                         <p>Here, <code>Dog</code> inherits the <code>Eat()</code> method from <code>Animal</code>.</p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card -->
 
+            <div class="card"> <!-- .card extension_methods -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#extension_methods" aria-expanded="true"
+                        aria-controls="extension_methods">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Extension Methods
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="extension_methods" class="collapse show">
+                    <div class="card-body">
+                        <h2>Extension Methods</h2>
+
+                        <p>
+                            Extension methods allow you to add new methods to existing types without modifying 
+                            their source code. They are defined as static methods in a static class and use the 
+                            <code>this</code> keyword in the first parameter.
+                        </p>
+
+                        <h3>Example:</h3>
+<pre><code>
+        public static class StringExtensions
+        {
+            public static int WordCount(this string str)
+            {   
+                return str.Split(new[] { ' ', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries).Length;
+            }
+        }
+</code></pre>
+                        <p>
+                            You can use the extension method like this:
+                        </p>
+<pre><code>
+        string text = "Hello, world!";
+        int count = text.WordCount();  // Output: 2
+</code></pre>
+                        <h3>Benefits:</h3>
+                        <ul>
+                            <li>Enhances existing types without modifying them.</li>
+                            <li>Improves code readability and maintainability.</li>
+                            <li>Allows for cleaner and more expressive code.</li>
+                        </ul>
+
+                        <div class="note">
+                            <strong>Note:</strong> Extension methods are static methods, but they can be 
+                            called as if they were instance methods.
+                        </div>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (extension_methods) -->
+
+            <div class="card"> <!-- .card polymorphism -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#polymorphism" aria-expanded="true"
+                        aria-controls="polymorphism">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Polymorphism
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="polymorphism" class="collapse show">
+                    <div class="card-body">
                         <h2>Polymorphism (Many Forms)</h2>
 
                         <p>
                             Polymorphism allows methods to behave differently based on the object that invokes them. 
-                            It enables the same method name to perform different tasks.</p>
+                            It enables the same method name to perform different tasks.
+                        </p>
 
                         <h2>Types:</h2>
                         <ol>
