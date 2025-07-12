@@ -21,21 +21,24 @@
     "prerequisites": "(co-requisite) The lab section provides tutorials, lab exercises and programming projects intended to reinforce the programming and design concepts taught in the course. The lecture and lab will be taught as a single integrated course.",
     "section": {
       "sectionNumber": "0799 & 0800",
-      "*sectionNumber": "4451 & 4452",
-      "courseId": "CS119L-4452",
+      "courseId": "CS119L-0799",
       "term": "Fall 2025",
-      "*term": "Spring 2025",
       "startDate": "2025-08-18T08:00:00",
-      "*startDate": "2025-02-03T08:00:00",
       "endDate": "2025-12-13T08:00:00",
-      "*endDate": "2025-05-30T08:00:00",
       "gradesDue": "2025-06-06T08:00:00",
-      "*gradesDue": "2025-12-18T08:00:00",
       "schedule": {
         "day": "Tuesday",
         "time": " 6P - 9P",
         "location": "E-210"
-      },
+      }
+    },
+    "*section-Spring2025": {
+      "*sectionNumber": "4451 & 4452",
+      "*courseId": "CS119L-4452",
+      "*term": "Spring 2025",
+      "*startDate": "2025-02-03T08:00:00",
+      "*endDate": "2025-05-30T08:00:00",
+      "*gradesDue": "2025-12-18T08:00:00",
       "*schedule": {
         "day": "Thursday",
         "time": " 6P - 9P",
