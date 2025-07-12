@@ -128,11 +128,11 @@
       },
       "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
     },
-    "requiredMaterialsPath": "/course-content/edu/cuyamaca/CS119/required-materials.html",
-    "recommendedMaterialsPath": "/course-content/edu/cuyamaca/CS119/recommended-materials.html",
-    "gradingDetailsPath": "/course-content/edu/cuyamaca/CS119/grading-details.html",
-    "accommodationsPath": "/course-content/edu/cuyamaca/CS119/accommodations.html",
-    "topicOutlinePath": "/course-content/edu/cuyamaca/CS119/outline.html"
+    "requiredMaterialsPath": "/course-content/edu/cuyamaca/cs119/required-materials.html",
+    "recommendedMaterialsPath": "/course-content/edu/cuyamaca/cs119/recommended-materials.html",
+    "gradingDetailsPath": "/course-content/edu/cuyamaca/cs119/grading-details.html",
+    "accommodationsPath": "/course-content/edu/cuyamaca/cs119/accommodations.html",
+    "topicOutlinePath": "/course-content/edu/cuyamaca/cs119/outline.html"
   },
   "instructor": {
     "firstName": "Dan",
