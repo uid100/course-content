@@ -104,9 +104,14 @@
                             they should be implemented. This allows for flexibility and reusability in code design.
                         </p>
                         <p>
-                            You can write an application that will use a defined interface without knowing the details of how
+                            You can write an application that will implement a defined interface without knowing the details of how
                             the interface is implemented. This is the essence of polymorphism, where different classes can
                             be treated as instances of the same interface, allowing for more flexible and maintainable code.
+                        </p>
+                        <p>
+                            You can create new classes that implement the same interface, and they will be interchangeable
+                            with existing classes that implement the same interface. This promotes code reuse and makes it 
+                            easier to extend and modify your application without breaking existing functionality.
                         </p>
                         <p>
                             The implications of this are profound. You can create a class that implements an interface
@@ -115,6 +120,8 @@
                             means you can write code that is agnostic to the specific classes being used, as long as they 
                             adhere to the defined interface.
                         </p>
+                        <h3>Dependency Injection</h3>
+                        
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (protected) -->
@@ -126,47 +133,33 @@
                         aria-controls="extension_methods">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Extension Methods
+                        Dependency Injection
                     </button>
                 </div> <!-- .card-header -->
                 <div id="extension_methods" class="collapse show">
                     <div class="card-body">
-                        <h2>Extension Methods</h2>
-
+                        <h2>Dependency Injection</h2>
                         <p>
-                            Extension methods allow you to add new methods to existing types without modifying 
-                            their source code. They are defined as static methods in a static class and use the 
-                            <code>this</code> keyword in the first parameter.
+                            Dependency Injection (DI) is a design pattern that allows for the removal of hard-coded dependencies
+                            and makes it possible to change them at runtime or during testing. This is achieved by injecting
+                            dependencies into a class, rather than having the class create its own dependencies.
                         </p>
-
-                        <h3>Example:</h3>
-<pre><code>
-        public static class StringExtensions
-        {
-            public static int WordCount(this string str)
-            {   
-                return str.Split(new[] { ' ', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries).Length;
-            }
-        }
-</code></pre>
                         <p>
-                            You can use the extension method like this:
+                            By using interfaces, you can define a contract for the dependencies that your class needs,
+                            allowing you to inject different implementations of those dependencies at runtime. This promotes
+                            loose coupling between classes and makes your code more flexible and testable.
                         </p>
-<pre><code>
-        string text = "Hello, world!";
-        int count = text.WordCount();  // Output: 2
-</code></pre>
-                        <h3>Benefits:</h3>
-                        <ul>
-                            <li>Enhances existing types without modifying them.</li>
-                            <li>Improves code readability and maintainability.</li>
-                            <li>Allows for cleaner and more expressive code.</li>
-                        </ul>
-
-                        <div class="note">
-                            <strong>Note:</strong> Extension methods are static methods, but they can be 
-                            called as if they were instance methods.
-                        </div>
+                        <p>
+                            Another way of saying this is that you can write code that that uses an interface, and then
+                            select one of several classes that implements that interface. This allows you to change the
+                            behavior of your code at runtime.
+                        </p>
+                        <p>
+                            Imagine if your code is dependent on a class that is not available for testing, maybe another team
+                            is working on it, or it is a third-party library. By using an interface, you can create a mock
+                            implementation of that interface for testing purposes, allowing you to test your code without needing
+                            the actual implementation of the class.
+                        </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (extension_methods) -->
