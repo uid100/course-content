@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 13</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="content-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <h1>&nbsp;</h1>
+        <div class="container my-4 px-2">
+            <div class="card"> <!-- .card overview -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Chapter 13: Creating interfaces and defining abstract classes
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="inheritance" class="collapse show">
+                    <div class="card-body">
+                        <h2>Introduction</h2>
+                        <p>
+                            Chapter 13 starts with the statement:
+                            <blockquote>
+                                "Inheriting from a class is a powerful mechanism, but the real power of inheritance
+                                comes from inheriting from an interface."
+                            </blockquote>
+                        </p>
+                        <p>
+                            So just what is an interface?
+                        </p>
+                        <p>
+                            Consider the familiar image:<br>
+                            <img src="/course-content/common/images/controls.jpg" alt="Media Controls"
+                                class="img-fluid">
+                        </p>
+                        <p>
+                            You know what each button does because you have used them before. Even though you may not
+                            know how the buttons are implemented, you can use them because they have a defined interface.
+                            These buttons may control a CD player, a DVD player, or a streaming service, or even some 
+                            technology that has not been invented yet. The interface remains the same, allowing you to 
+                            use the controls without needing to know the details of how they work.
+                        </p>
+                        <p>
+                            Think about the controls in an automobile. If you travel to a different city and rent a car, 
+                            when you get in, you will likely know how to operate the controls without needing to read 
+                            the manual. The steering wheel, pedals, and gear shift all have a defined interface that you
+                            are familiar with. You know that turning the steering wheel will change the direction of the car,
+                            pressing the accelerator will increase speed, and pressing the brake will slow down or stop the car.
+                        </p>
+                        <p>
+                            This is not because it's the only way to design a car, but because the interface is standardized
+                            and familiar. Not that there aren't subtle differences between <em>instances</em> and 
+                            <em>implementations</em>, but the interface remains consistent.
+                        </p>
+                        <p>
+                            In programming, an interface serves a similar purpose. It defines a contract that classes
+                            can implement, specifying what methods and properties they must provide without dictating how
+                            they should be implemented. This allows for flexibility and reusability in code design.
+                        </p>
+                        <p>
+                            You can write an application that will use a defined interface without knowing the details of how
+                            the interface is implemented. This is the essence of polymorphism, where different classes can
+                            be treated as instances of the same interface, allowing for more flexible and maintainable code.
+                        </p>
+                        <p>
+                            The implications of this are profound. You can create a class that implements an interface
+                            without needing to know how the interface is implemented. This allows you to write code that can
+                            work with any class that implements the interface, regardless of its specific implementation. This
+                            means you can write code that is agnostic to the specific classes being used, as long as they adhere to the defined interface.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (protected) -->
+
+            <div class="card"> <!-- .card extension_methods -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#extension_methods" aria-expanded="true"
+                        aria-controls="extension_methods">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Extension Methods
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="extension_methods" class="collapse show">
+                    <div class="card-body">
+                        <h2>Extension Methods</h2>
+
+                        <p>
+                            Extension methods allow you to add new methods to existing types without modifying 
+                            their source code. They are defined as static methods in a static class and use the 
+                            <code>this</code> keyword in the first parameter.
+                        </p>
+
+                        <h3>Example:</h3>
+<pre><code>
+        public static class StringExtensions
+        {
+            public static int WordCount(this string str)
+            {   
+                return str.Split(new[] { ' ', '\n', '\r' }, StringSplitOptions.RemoveEmptyEntries).Length;
+            }
+        }
+</code></pre>
+                        <p>
+                            You can use the extension method like this:
+                        </p>
+<pre><code>
+        string text = "Hello, world!";
+        int count = text.WordCount();  // Output: 2
+</code></pre>
+                        <h3>Benefits:</h3>
+                        <ul>
+                            <li>Enhances existing types without modifying them.</li>
+                            <li>Improves code readability and maintainability.</li>
+                            <li>Allows for cleaner and more expressive code.</li>
+                        </ul>
+
+                        <div class="note">
+                            <strong>Note:</strong> Extension methods are static methods, but they can be 
+                            called as if they were instance methods.
+                        </div>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (extension_methods) -->
+
+            <div class="card"> <!-- .card polymorphism -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#polymorphism" aria-expanded="true"
+                        aria-controls="polymorphism">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Polymorphism
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="polymorphism" class="collapse show">
+                    <div class="card-body">
+                        <h2>Polymorphism (Many Forms)</h2>
+
+                        <p>
+                            Polymorphism allows methods to behave differently based on the object that invokes them. 
+                            It enables the same method name to perform different tasks.
+                        </p>
+
+                        <h2>Types:</h2>
+                        <ol>
+                            <li><strong>Compile-time polymorphism</strong> (method overloading)</li>
+                            <li><strong>Run-time polymorphism</strong> (method overriding with <code>virtual</code>/<code>override</code>)</li>
+                        </ol>
+
+                        <h3>Example of Run-time Polymorphism:</h3>
+                        <pre><code>
+        class Animal
+        {
+            public virtual void Speak() =&gt; Console.WriteLine("Animal speaks");
+        }
+
+        class Dog : Animal
+        {
+            public override void Speak() =&gt; Console.WriteLine("Dog barks");
+        }
+
+        class Cat : Animal
+        {
+            public override void Speak() =&gt; Console.WriteLine("Cat meows");
+        }
+</code></pre>
+
+<pre><code>
+        Animal myPet = new Dog();
+        myPet.Speak();  // Output: Dog barks
+</code></pre>
+
+                <h3>Benefits:</h3>
+                <ul>
+                    <li>Makes code more <strong>flexible</strong> and <strong>extensible</strong></li>
+                    <li>Enables <strong>dynamic behavior</strong> at runtime</li>
+                </ul>
+
+                <div class="note">
+                    <strong>Remember:</strong> Use <code>virtual</code> in the base class and <code>override</code> in the derived class to enable polymorphism.
+                </div>
+
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (overview) -->
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+        </div> <!-- #footer -->
+    </div> <!-- #content-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
