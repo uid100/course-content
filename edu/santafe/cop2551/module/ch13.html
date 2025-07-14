@@ -59,19 +59,18 @@
                     <div class="card-body">
                         <h2>Introduction</h2>
                         <p>
-                            Chapter 13 starts with the statement:
-                            <blockquote>
+                            Chapter 13 starts with:
+                            <blockquote style="padding:30px; font-style: italic;">
                                 "Inheriting from a class is a powerful mechanism, but the real power of inheritance
                                 comes from inheriting from an interface."
                             </blockquote>
                         </p>
-                        <p>
-                            So just what is an interface?
-                        </p>
+                        <h3>
+                            But, what is an interface?
+                        </h3>
                         <p>
                             Consider the familiar image:<br>
-                            <img src="/course-content/images/controls.jpg" alt="Media Controls"
-                                class="img-fluid">
+                            <img src="/course-content/images/controls.jpg" alt="Media Controls" class="img-fluid">
                         </p>
                         <p>
                             You know what each button does because you have used them before. Even though you may not
@@ -79,6 +78,12 @@
                             These buttons may control a CD player, a DVD player, or a streaming service, or even some 
                             technology that has not been invented yet. The interface remains the same, allowing you to 
                             use the controls without needing to know the details of how they work.
+                        </p>
+                        <p>
+                            So by extension, you could presumably create an application that uses these controls without
+                            knowing exactly how they are implemented, and be pretty confident that as technology evolves,
+                            the interface will very likely still work the same way. This is the essence of an interface 
+                            in programming.
                         </p>
                         <p>
                             Think about the controls in an automobile. If you travel to a different city and rent a car, 
@@ -106,7 +111,8 @@
                             The implications of this are profound. You can create a class that implements an interface
                             without needing to know how the interface is implemented. This allows you to write code that can
                             work with any class that implements the interface, regardless of its specific implementation. This
-                            means you can write code that is agnostic to the specific classes being used, as long as they adhere to the defined interface.
+                            means you can write code that is agnostic to the specific classes being used, as long as they 
+                            adhere to the defined interface.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
