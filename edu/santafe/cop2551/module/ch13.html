@@ -126,17 +126,17 @@
                 </div> <!-- .collapse -->
             </div> <!-- .card (protected) -->
 
-            <div class="card"> <!-- .card extension_methods -->
+            <div class="card"> <!-- .card dependency_injection -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#extension_methods" aria-expanded="true"
-                        aria-controls="extension_methods">
+                        data-bs-toggle="collapse" data-bs-target="#dependency_injection" aria-expanded="true"
+                        aria-controls="dependency_injection">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
                         Dependency Injection
                     </button>
                 </div> <!-- .card-header -->
-                <div id="extension_methods" class="collapse show">
+                <div id="dependency_injection" class="collapse show">
                     <div class="card-body">
                         <h2>Dependency Injection</h2>
                         <p>
@@ -162,70 +162,42 @@
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card (extension_methods) -->
+            </div> <!-- .card (dependency_injection) -->
 
-            <div class="card"> <!-- .card polymorphism -->
+            <div class="card"> <!-- .card abstract_classes -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#polymorphism" aria-expanded="true"
-                        aria-controls="polymorphism">
+                        data-bs-toggle="collapse" data-bs-target="#abstract_classes" aria-expanded="true"
+                        aria-controls="abstract_classes">
                         <span class="icon"><i class="fas fa-chevron-down"></i></span>
                         <span class="icon"><i class="fas fa-chevron-up"></i></span>
-                        Polymorphism
+                        abstract_classes
                     </button>
                 </div> <!-- .card-header -->
-                <div id="polymorphism" class="collapse show">
+                <div id="abstract_classes" class="collapse show">
                     <div class="card-body">
-                        <h2>Polymorphism (Many Forms)</h2>
+                        <h2>Abstract Classes</h2>
 
                         <p>
-                            Polymorphism allows methods to behave differently based on the object that invokes them. 
-                            It enables the same method name to perform different tasks.
+                            Abstract classes are classes that cannot be instantiated on their own and are meant to be
+                            subclassed. They can contain abstract methods (without implementation) that must be implemented
+                            by derived classes, as well as concrete methods (with implementation) that can be inherited.
                         </p>
-
-                        <h2>Types:</h2>
-                        <ol>
-                            <li><strong>Compile-time polymorphism</strong> (method overloading)</li>
-                            <li><strong>Run-time polymorphism</strong> (method overriding with <code>virtual</code>/<code>override</code>)</li>
-                        </ol>
-
-                        <h3>Example of Run-time Polymorphism:</h3>
-                        <pre><code>
-        class Animal
-        {
-            public virtual void Speak() =&gt; Console.WriteLine("Animal speaks");
-        }
-
-        class Dog : Animal
-        {
-            public override void Speak() =&gt; Console.WriteLine("Dog barks");
-        }
-
-        class Cat : Animal
-        {
-            public override void Speak() =&gt; Console.WriteLine("Cat meows");
-        }
-</code></pre>
-
-<pre><code>
-        Animal myPet = new Dog();
-        myPet.Speak();  // Output: Dog barks
-</code></pre>
-
-                <h3>Benefits:</h3>
-                <ul>
-                    <li>Makes code more <strong>flexible</strong> and <strong>extensible</strong></li>
-                    <li>Enables <strong>dynamic behavior</strong> at runtime</li>
-                </ul>
-
-                <div class="note">
-                    <strong>Remember:</strong> Use <code>virtual</code> in the base class and <code>override</code> in the derived class to enable polymorphism.
-                </div>
-
+                        <p>
+                            Abstract classes are useful when you want to provide a common base for a group of related classes,
+                            but you don't want to allow instantiation of the base class itself. They allow you to define
+                            shared behavior and properties while enforcing that derived classes implement specific methods.
+                        </p>
+                        <p>
+                            For example, you might have an abstract class called `Shape` that defines an abstract method
+                            `draw()`. Any class that inherits from `Shape` must implement the `draw()` method, but you cannot
+                            create an instance of `Shape` directly. Instead, you would create concrete classes like `Circle`
+                            and `Square` that inherit from `Shape` and provide their own implementations of the `draw()` method.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card (overview) -->
+            </div> <!-- .card (abstract_classes) -->
+
         </div> <!-- .container -->
         <div id="footer">
             <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
