@@ -44,9 +44,7 @@
         </div> <!-- #page-header -->
 
         <h1>Lab 10: Creating interfaces & defining abstract classes</h1>
-        <p style="margin:10px;">
-            <strong>Objective:</strong> create and implement interfaces and abstract classes in C#.
-        </p>
+
 
 
         <div class="container my-4 px-2">
@@ -63,9 +61,8 @@
                 <div id="overview" class="collapse show">
                     <div class="card-body">
                         <p>
-                            In this lab, you will learn how to create and implement interfaces 
-                            and abstract classes in C#. You will understand the differences 
-                            between interfaces and abstract classes, and when to use each one.
+                            Create and implement interfaces and and abstract classes. Test and compare
+                            their behavior in different scenarios.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
@@ -194,43 +191,37 @@
                                 <details><summary>Design and create the source code</summary>
                                     <ul>
                                         <li>
-                                            Create an abstract class named Employee with:
-                                            <ul>
-                                                <li>Fields: Name, EmployeeID</li>
-                                                <li>Constructor to set these fields</li>
-                                                <li>Abstract method: <code>decimal CalculateSalary()</code></li>
-                                                <li>Method: <code>void DisplayInfo()</code> – prints name, ID, and
-                                                    salary by calling <code>CalculateSalary()</code></li>
-                                            </ul>
-                                        </li>
-                                        <li>
-                                            Create concrete subclasses:
-                                           <ul>
-                                                <li>SalariedEmployee
-                                                    <ul>
-                                                    <li>Additional field: MonthlySalary</li>
-                                                        <li>Implements CalculateSalary() to return MonthlySalary</li>
-                                                    </ul>
-                                                </li>
-                                                <li>HourlyEmployee
-                                                    <ul>
-                                                        <li>Additional fields: HourlyRate, HoursWorked</li>
-                                                        <li>Implements CalculateSalary() to return HourlyRate * HoursWorked</li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
                                         </li>
                                     </ul>
                                     <p>
                                         <ol>
-                                            <li>
-                                                Define the abstract class Employee.
+                                            <li>Create an abstract class named Employee with:
+                                                <ul>
+                                                    <li>Fields: Name, EmployeeID</li>
+                                                    <li>Constructor to set these fields</li>
+                                                    <li>Abstract method: <code>decimal CalculateSalary()</code></li>
+                                                    <li>Method: <code>void DisplayInfo()</code> – prints name, ID, and
+                                                        salary by calling <code>CalculateSalary()</code></li>
+                                                </ul>
                                             </li>
-                                            <li>
-                                                Implement both subclasses with appropriate constructors and method overrides.
+                                            <li>Implement both concrete subclasses with appropriate constructors 
+                                                and method overrides.
+                                                <ul>
+                                                    <li>SalariedEmployee
+                                                        <ul>
+                                                        <li>Additional field: MonthlySalary</li>
+                                                            <li>Implements CalculateSalary() to return MonthlySalary</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>HourlyEmployee
+                                                        <ul>
+                                                            <li>Additional fields: HourlyRate, HoursWorked</li>
+                                                            <li>Implements CalculateSalary() to return HourlyRate * HoursWorked</li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
                                             </li>
-                                            <li>
-                                                In Main():
+                                            <li>In Main():
                                                 <ul>
                                                     <li>Create a list of Employee objects.</li>
                                                     <li>Add instances of SalariedEmployee and HourlyEmployee to the list.</li>
