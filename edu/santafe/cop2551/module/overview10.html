@@ -50,12 +50,12 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-8" id="topicsColumn">
-                            <h5 id="chapterTitle">Chapter 12 - class inheritance</h5>
+                            <h5 id="chapterTitle">Chapter 13 - Interfaces and Abstract Classes</h5>
                             <ul id="topicsList">
-                                <li>Understanding inheritance and its benefits</li>
-                                <li>Creating base and derived classes</li>
-                                <li>Overriding methods and properties</li>
-                                <li>Using the <code>base</code> keyword</li>
+                                <li>Understanding interfaces and abstract classes</li>
+                                <li>Defining and implementing interfaces</li>
+                                <li>Creating abstract classes and methods</li>
+                                <li>Using the <code>abstract</code> keyword</li>
                                 <li>Implementing polymorphism</li>
                             </ul>
                         </div> <!-- #topicsColumn -->
@@ -64,22 +64,31 @@
                         </div> <!-- #textbookImageColumn -->
                     </div> <!-- .row -->
                     <div>
-                        <h5>Inheritance</h5>
+                        <h5>Interfaces and Abstract Classes</h5>
                         <div style="padding: 20px;">
                             <p>
-                                Class inheritance is one of the (4) fundamental principles of object-oriented 
-                                programming (OOP). It allows you to create a new class that is based on an existing class,
-                                inheriting its properties and methods while also allowing you to extend or modify its behavior.
+                                Interfaces and abstract classes are essential concepts in object-oriented programming (OOP).
+                                They allow you to define contracts for what a class can do, without specifying how it does it.
                             </p>
                             <p>
-                                Inheritance promotes code reusability and can make your code more organized and easier to maintain.
+                                An interface is a contract that defines a set of methods and properties that a class must implement.
+                                It allows for a high level of abstraction and enables polymorphism.
                             </p>
                             <p>
-                                While working through this module, remember the programming principle of <em>Don't Repeat 
-                                Yourself (DRY)</em>. If you find yourself writing the same code multiple times, or tempted 
-                                to copy and paste code, consider whether inheritance can help you avoid redundancy.
+                                Abstract classes, on the other hand, are classes that cannot be instantiated on their own and may contain
+                                both abstract methods (without implementation) and concrete methods (with implementation).
                             </p>
-                            
+                            <p>
+                                These OOP concepts are a step above the basic class and object structures you have learned so far.
+                                They provide a way to create more flexible and reusable code by allowing different classes to share 
+                                a common interface or base class. 
+                            </p>
+                            <p>
+                                Understanding interfaces, particularly, is commonly used for designing and implementing robust, reusable
+                                software components. They allow different classes to be interchangeable as long as they implement the same
+                                interface, which is a key aspect of polymorphism in OOP. In addition to <em>future-proofing</em> your code,
+                                these concepts will help to ensure your code remains easily testable and extensible.
+                            </p>
                         </div> <!-- .text-center -->
                     </div>
                 </div> <!-- .card-body -->
@@ -93,7 +102,7 @@
                         <div class="col-md-8" id="topicsColumn">
                             <div id="todo-list">
                                 <ol style="margin-left: 10%;">TODO list
-                                    <li><strong>Read</strong> Chapters 12</li>
+                                    <li><strong>Read</strong> Chapters 13</li>
                                     <li><strong>Review</strong> Chapter notes</li>
                                     <li><strong>Complete</strong> Chapter Quiz</li>
                                     <li><strong>Complete</strong> Lab exercise</li>
