@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 15</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="content-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <h1>&nbsp;</h1>
+        <div class="container my-4 px-2">
+            <div class="card"> <!-- .card overview -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Chapter 15: Immplementing properties to access fields
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="properties class="collapse show">
+                    <div class="card-body">
+                        <h2>Properties</h2>
+                        <p>
+                            
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (protected) -->
+
+            <div class="card"> <!-- .card dependency_injection -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#dependency_injection" aria-expanded="true"
+                        aria-controls="dependency_injection">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Dependency Injection
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="dependency_injection" class="collapse show">
+                    <div class="card-body">
+                        <h2>Dependency Injection</h2>
+                        <p>
+                            Dependency Injection (DI) is a design pattern that allows for the removal of hard-coded dependencies
+                            and makes it possible to change them at runtime or during testing. This is achieved by injecting
+                            dependencies into a class, rather than having the class create its own dependencies.
+                        </p>
+                        <p>
+                            By using interfaces, you can define a contract for the dependencies that your class needs,
+                            allowing you to inject different implementations of those dependencies at runtime. This promotes
+                            loose coupling between classes and makes your code more flexible and testable.
+                        </p>
+                        <p>
+                            Another way of saying this is that you can write code that that uses an interface, and then
+                            select one of several classes that implements that interface. This allows you to change the
+                            behavior of your code at runtime.
+                        </p>
+                        <p>
+                            Imagine if your code is dependent on a class that is not available for testing, maybe another team
+                            is working on it, or it is a third-party library. By using an interface, you can create a mock
+                            implementation of that interface for testing purposes, allowing you to test your code without needing
+                            the actual implementation of the class.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (dependency_injection) -->
+
+            <div class="card"> <!-- .card abstract_classes -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#abstract_classes" aria-expanded="true"
+                        aria-controls="abstract_classes">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        abstract_classes
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="abstract_classes" class="collapse show">
+                    <div class="card-body">
+                        <h2>Abstract Classes</h2>
+
+                        <p>
+                            Abstract classes are classes that cannot be instantiated on their own and are meant to be
+                            subclassed. They can contain abstract methods (without implementation) that must be implemented
+                            by derived classes, as well as concrete methods (with implementation) that can be inherited.
+                        </p>
+                        <p>
+                            Abstract classes are useful when you want to provide a common base for a group of related classes,
+                            but you don't want to allow instantiation of the base class itself. They allow you to define
+                            shared behavior and properties while enforcing that derived classes implement specific methods.
+                        </p>
+                        <p>
+                            For example, you might have an abstract class called `Shape` that defines an abstract method
+                            `draw()`. Any class that inherits from `Shape` must implement the `draw()` method, but you cannot
+                            create an instance of `Shape` directly. Instead, you would create concrete classes like `Circle`
+                            and `Square` that inherit from `Shape` and provide their own implementations of the `draw()` method.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (abstract_classes) -->
+
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+        </div> <!-- #footer -->
+    </div> <!-- #content-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
