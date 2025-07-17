@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="lab-assignment-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <h1>Lab 10: Creating interfaces & defining abstract classes</h1>
+        <p style="margin:10px;">
+            <strong>Objective:</strong> create and implement interfaces and abstract classes in C#.
+        </p>
+
+
+        <div class="container my-4 px-2">
+            <div class="card"> <!-- .card (overview) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Overview (click each header to hide/show details)
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="overview" class="collapse show">
+                    <div class="card-body">
+                        <p>
+                            In this lab, you will learn how to create and implement interfaces 
+                            and abstract classes in C#. You will understand the differences 
+                            between interfaces and abstract classes, and when to use each one.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (overview) -->
+
+            <!-- IPlayable interface -->
+            <div class="card"> <!-- .card (iplayable) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#iplayable" aria-expanded="true"
+                        aria-controls="iplayable">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise 1: IPlayable
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="iplayable" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise 1: IPlayable Interface</h2>
+                        <p>
+                            In this exercise, you will create an interface called <code>IPlayable</code>
+                            and implement it in various classes as described below.
+                        </p>
+
+                        <ol id="ex-utils-steps">
+                            <li> <!-- create the project -->
+                                <details><summary>Create the project</summary>
+                                    <p>
+                                        <ul>
+                                            <li>Solution:  Lab10</li>
+                                            <li>Project: Media</li>
+                                        </ul>
+                                    </p>
+                                </details>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
+                                <details><summary>Design and write the code</summary>
+                                    <h4>IPlayable.cs</h4>
+                                    <p>
+                                        Create the interface <code>IPlayable</code> with the following members:
+                                        <ul>
+                                            <li><code>void Play()</code> - Starts playback</li>
+                                            <li><code>void Pause()</code> - Pauses playback</li>
+                                            <li><code>void Stop()</code> - Stops playback</li>
+                                        </ul>
+                                    </p>
+                                    <h4>Media classes</h4>
+                                    <p>
+                                        Create the following media classes that implement the <code>IPlayable</code> interface:
+                                    </p>
+                                    <ul>
+                                        <li><code>Song.cs</code></li>
+                                        <li><code>Video.cs</code></li>
+                                    </ul>
+                                    <h4>Player</h4>
+                                    <p>
+                                        Create a class to contain your <code>Main</code> method.
+                                    </p>
+                                    <p>
+                                        In the <code>Main</code> method, create a list of IPlayable items, including songs and videos.
+                                    </p>
+                                    <p>
+                                        Display your list, including details from each of the ToString() methods, allow the user to
+                                        make a selection and call Play(), Pause(), and Stop() on each object.
+                                    </p>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- test the classes -->
+                                <details><summary>Test the classes</summary>
+                                    <p>
+                                        Run your program and test the functionality of the <code>IPlayable</code> interface
+                                        and the classes that implement it.
+                                    </p>
+                                </details>
+                            </li> <!-- test the classes -->
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (iplayable) -->
+
+            <div class="card"> <!-- .card (payroll) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#payroll" aria-expanded="true"
+                        aria-controls="payroll">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Exercise 2: payroll
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="payroll" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Exercise 2: abstract Employee</h2>
+                        <p>
+                            Demonstrate inheritance and polymorphism by implementing different types of 
+                            employees who calculate their salary differently.
+                        </p>
+                        <p>
+                            Build a payroll system for a company where all employees share some common 
+                            information, but different types of employees calculate their salaries in 
+                            different ways.
+                        </p>
+                        <p>
+                            Use an abstract class <code>Employee</code> to define common behavior and 
+                            require derived classes to implement salary calculation.
+                        </p>
+                        <ol id="ex-shapes-steps">
+                            <li> <!-- create the project -->
+                                <details><summary>Create the project</summary>
+                                    <p>
+                                        Create a new project called <code>Payroll</code> in the same solution as the
+                                        previous exercise.
+                                    </p>
+                                    <p>
+                                        <ul>
+                                            <li>Solution:  Lab10</li>
+                                            <li>Project: Payroll</li>
+                                        </ul>
+                                    </p>
+                                    <p>
+                                        Each class should be in its own file. The file names should match the class names.
+                                    </p>
+                                </details>
+                            </li> <!-- create the project -->
+                            <li> <!-- edit the source code -->
+                                <details><summary>Design and create the source code</summary>
+                                    <ul>
+                                        <li>
+                                            Create an abstract class named Employee with:
+                                            <ul>
+                                                <li>Fields: Name, EmployeeID</li>
+                                                <li>Constructor to set these fields</li>
+                                                <li>Abstract method: <code>decimal CalculateSalary()</code></li>
+                                                <li>Method: <code>void DisplayInfo()</code> – prints name, ID, and
+                                                    salary by calling <code>CalculateSalary()</code></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            Create concrete subclasses:
+                                           <ul>
+                                                <li>SalariedEmployee
+                                                    <ul>
+                                                    <li>Additional field: MonthlySalary</li>
+                                                        <li>Implements CalculateSalary() to return MonthlySalary</li>
+                                                    </ul>
+                                                </li>
+                                                <li>HourlyEmployee
+                                                    <ul>
+                                                        <li>Additional fields: HourlyRate, HoursWorked</li>
+                                                        <li>Implements CalculateSalary() to return HourlyRate * HoursWorked</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <p>
+                                        <ol>
+                                            <li>
+                                                Define the abstract class Employee.
+                                            </li>
+                                            <li>
+                                                Implement both subclasses with appropriate constructors and method overrides.
+                                            </li>
+                                            <li>
+                                                In Main():
+                                                <ul>
+                                                    <li>Create a list of Employee objects.</li>
+                                                    <li>Add instances of SalariedEmployee and HourlyEmployee to the list.</li>
+                                                    <li>Call DisplayInfo() on each employee in the list.</li>
+                                                </ul>
+                                            </li>
+                                        </ol>
+                                    </p>
+                                </details>
+                            </li> <!-- edit the source code -->
+                            <li> <!-- test the classes -->
+                                <details><summary>Test the classes</summary>
+                                    <p>
+                                        Run your program and test the functionality of the Employee class and its derived classes.
+                                        Ensure that each employee's information is displayed correctly and that the salary calculations
+                                        are accurate.
+                                    </p>
+                                </details>
+                            </li> <!-- test the classes -->
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (payroll) -->
+
+            <div class="card"> <!-- .card (submit) -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#submit" aria-expanded="true" aria-controls="submit">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Review and Submit
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="submit" class="collapse hide">
+                    <div class="card-body">
+                        <h2>Review and Submit</h2>
+                        <ol>
+                            <li>
+                                <details>
+                                    <summary>Review</summary>
+                                    <p>
+                                        Before you submit your files, go back through the instructions and make
+                                        sure you haven't forgotten anything. Did you include the updated header 
+                                        information in each of your source files? Are the project files named
+                                        correctly and are they all included in the solution (.sln) file?
+                                    </p>
+                                    <p>
+                                        Review your code and make sure it is well organized, properly formatted,
+                                        appropriately commented, and follows the naming conventions.
+                                    </p>
+                                    <p style="font-style: italic;">
+                                        Did you remember to include the required header comment block in each of your 
+                                        source files?
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Zip the solution folder</summary>
+                                    <p>
+                                        Zip the solution folder and all of its contents. 
+                                        This should include the <code>.sln</code> file and all of the project folders.
+                                        Make sure to include all the projects you created for this lab.
+                                    </p>
+                                </details>
+                            </li>
+                            <li>
+                                <details>
+                                    <summary>Submit your work</summary>
+                                    <p>
+                                        Submit the zipped solution folder to the assignment submission link in
+                                        Canvas.
+                                    </p>
+                                </details>
+                            </li>
+                        </ol>
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (submit) -->
+
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+        </div> <!-- #footer -->
+    </div> <!-- #lab-assignment-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
