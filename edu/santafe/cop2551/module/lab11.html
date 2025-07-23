@@ -45,8 +45,8 @@
 
         <h1>Lab 11: Understanding properties</h1>
         <p>
-            Demonstrate your ability to define and use properties in C# to 
-            encapsulate data, control access, and use backing fields appropriately.
+            Demonstrate ability to define and use properties in C# to encapsulate data, 
+            control access, and use backing fields appropriately.
         </p>
 
         <div class="container my-4 px-2">
@@ -72,20 +72,29 @@
                         </p>
                         <p><strong>Requirements:</strong></p>
                     <ul>
-                        <li>Create a <code>Person</code> class with private fields: <code>_name</code> (string), <code>_age</code> (int)</li>
+                        <li>Create a <code>Person</code> class with private fields: <code>_name</code> (string), 
+                            <code>_age</code> (int)</li>
                         <li>Define public properties:
-                        <ul>
-                            <li><code>Name</code>: getter returns <code>_name</code>, setter ensures the value is not null or empty</li>
-                            <li><code>Age</code>: getter returns <code>_age</code>, setter ensures value is between 0 and 120</li>
-                        </ul>
+                            <ul>
+                                <li><code>Name</code>: getter returns <code>_name</code>, 
+                                    setter ensures the value is not null or empty</li>
+                                <li><code>Age</code>: getter returns <code>_age</code>, 
+                                    setter ensures value is between 0 and 120</li>
+                            </ul>
                         </li>
-                        <li>Add a constructor that sets <code>name</code> and <code>age</code></li>
+                        <li>Add a constructor that sets <code>name</code> and <code>age</code>, 
+                            using the setter methods</li>
                         <li>Add a method <code>PrintInfo()</code> that displays name and age</li>
+                        <li>Write a Main() method in another class to instantiate and demonstrate the
+                             <code>Person</code> class and use the <code>PrintInfo()</code> method to display 
+                             the person's information</li>
                     </ul>
 
   <div class="example">
 Name: Alice<br/>
-Age: 25
+Age: 25<br/>
+Name: Bob<br/>
+Age: 30
   </div>
 
                     </div> <!-- .card-body -->
