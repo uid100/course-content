@@ -316,3 +316,10 @@ pre {
     border-radius: 5px;
     overflow-x: auto;
 }
+.example {
+    background-color: #f0f0f0;
+    padding: 1em;
+    border-left: 4px solid #007acc;
+    margin: 1em 0;
+    white-space: pre-wrap;
+}
