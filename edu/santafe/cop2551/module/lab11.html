@@ -50,7 +50,7 @@
         </p>
 
         <div class="container my-4 px-2">
-            <!-- Person class -->
+            <!-- ex1 Person class -->
             <div class="card"> <!-- .card (person) -->
                 <div class="card-header">
                     <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
@@ -71,28 +71,28 @@
                             backing fields and simple logic in the accessors.        
                         </p>
                         <p><strong>Requirements:</strong></p>
-                    <ul>
-                        <li>
-                            Solution: <code>lab11</code><br>
-                            Project: <code>person</code></li>
-                        </li>
-                        <li>Create a <code>Person</code> class with private fields: <code>_name</code> (string), 
-                            <code>_age</code> (int)</li>
-                        <li>Define public properties:
-                            <ul>
-                                <li><code>Name</code>: getter returns <code>_name</code>, 
-                                    setter ensures the value is not null or empty</li>
-                                <li><code>Age</code>: getter returns <code>_age</code>, 
-                                    setter ensures value is between 0 and 120</li>
-                            </ul>
-                        </li>
-                        <li>Add a constructor that sets <code>name</code> and <code>age</code>, 
-                            using the setter methods</li>
-                        <li>Add a method <code>PrintInfo()</code> that displays name and age</li>
-                        <li>Write a <code>Main()</code> method in another class to instantiate and demonstrate the
-                             <code>Person</code> class and use the <code>PrintInfo()</code> method to display 
-                             the person's information</li>
-                    </ul>
+                        <ul>
+                            <li>
+                                Solution: <code>lab11</code><br>
+                                Project: <code>person</code></li>
+                            </li>
+                            <li>Create a <code>Person</code> class with private fields: <code>_name</code> (string), 
+                                <code>_age</code> (int)</li>
+                            <li>Define public properties:
+                                <ul>
+                                    <li><code>Name</code>: getter returns <code>_name</code>, 
+                                        setter ensures the value is not null or empty</li>
+                                    <li><code>Age</code>: getter returns <code>_age</code>, 
+                                        setter ensures value is between 0 and 120</li>
+                                </ul>
+                            </li>
+                            <li>Add a constructor that sets <code>name</code> and <code>age</code>, 
+                                using the setter methods to validate the data</li>
+                            <li>Add a method <code>PrintInfo()</code> that displays name and age</li>
+                            <li>Write a <code>Main()</code> method in another class to instantiate and demonstrate the
+                                <code>Person</code> class and use the <code>PrintInfo()</code> method to display 
+                                the person's information</li>
+                        </ul>
 
   <div class="example">
 Name: Alice
@@ -103,7 +103,7 @@ Age: 30
 
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
-            </div> <!-- .card (iplayable) -->
+            </div> <!-- .card (person) -->
 
             <!-- ex2 readonly Product Info -->
             <div class="card"> <!-- .card (product) -->
@@ -130,7 +130,8 @@ Age: 30
                             Solution: <code>lab11</code><br>
                             Project: <code>product</code></li>
                         </li>
-                        <li>Create a <code>Product</code> class with private fields: <code>_name</code> (string), <code>_price</code> (decimal)</li>
+                        <li>Create a <code>Product</code> class with private fields: <code>_name</code> (string), 
+                            <code>_price</code> (decimal)</li>
                         <li>Define public read-only properties:
                         <ul>
                             <li><code>Name</code>: getter returns <code>_name</code></li>
@@ -138,9 +139,20 @@ Age: 30
                         </ul>
                         </li>
                         <li>Add a constructor that sets the product name and price</li>
-                        <li>Include <code>ApplyDiscount(double percent)</code> method</li>
-                        <li>Print name and discounted price in <code>Main()</code></li>
+                        <li>Include <code>ApplyDiscount(double percent)</code> method<br>
+                            <em>How will <code>PrintInfo()</code> be affected?</em></li>
+                        <li>In <code>Main()</code>, create at least three <code>Product</code> instances, apply a 
+                            discount to one, and display their information</li>
                     </ul>
+    <div class="example">
+Product: Coffee Mug
+Price: $8.99
+Product: T-Shirt
+Price: $14.99
+Product: Water Bottle
+Price after discount: $9.59
+    </div>
+
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (product) -->
