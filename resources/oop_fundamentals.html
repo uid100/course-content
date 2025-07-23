@@ -63,13 +63,17 @@
                             concept of "objects". OOP helps you build flexible, modular, and reusable code.
                         </p>
                         <p>
-                            Object-Oriented Programming (OOP) is based on four key principles:
+                            Object-Oriented Programming is based on four key principles:
                         </p>
                         <ul>
-                            <li><strong>Encapsulation:</strong> Bundling data and methods that operate on that data within a single unit, or class.</li>
-                            <li><strong>Abstraction:</strong> Hiding complex implementation details and showing only the essential features of the object.</li>
-                            <li><strong>Inheritance:</strong> Mechanism by which one class can inherit the properties and methods of another class.</li>
-                            <li><strong>Polymorphism:</strong> Ability to present the same interface for different underlying forms (data types).</li>
+                            <li><strong>Encapsulation:</strong> Bundling data and methods that operate on that data 
+                                within a single unit, or class.</li>
+                            <li><strong>Abstraction:</strong> Hiding complex implementation details and showing only 
+                                the essential features of the object.</li>
+                            <li><strong>Inheritance:</strong> Mechanism by which one class can inherit the properties 
+                                and methods of another class.</li>
+                            <li><strong>Polymorphism:</strong> Ability to present the same interface for different 
+                                underlying forms (data types).</li>
                         </ul>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
@@ -87,16 +91,21 @@
                 <div id="encapsulation" class="collapse show">
                     <div class="card-body">
                         <p>
-                            Encapsulation is the bundling of data and methods that operate on that data within a single unit, or class. It restricts direct access to some of an object's components, which can prevent the accidental modification of data. Encapsulation helps in maintaining the integrity of the data and provides a clear interface for interacting with the object.
+                            Encapsulation is the bundling of data and methods that operate on that data 
+                            within a single unit, or class. It restricts direct access to some of an object's 
+                            components, which can prevent the accidental modification of data. Encapsulation 
+                            helps in maintaining the integrity of the data and provides a clear interface for 
+                            interacting with the object.
                         </p>
                         <p>
-                            In many programming languages, encapsulation is achieved through access modifiers such as public, private, and protected. These modifiers control the visibility of class members (attributes and methods) to other parts of the program.
+                            In many programming languages, encapsulation is achieved through access modifiers 
+                            such as public, private, and protected. These modifiers control the visibility of 
+                            class members (attributes and methods) to other parts of the program.
                         </p>
                         <p>
-                            For example, in Python, you can use a single underscore (_) to indicate that an attribute is intended for internal use (private), and a double underscore (__) to invoke name mangling, which makes it harder to access the attribute from outside the class. However, Python does not enforce strict encapsulation like some other languages (e.g., Java or C#).
-                        </p>
-                        <p>
-                            Encapsulation allows you to change the internal implementation of a class without affecting the code that uses it. This leads to better maintainability and flexibility in your codebase.
+                            Encapsulation allows you to change the internal implementation of a class without 
+                            affecting the code that uses it. This leads to better maintainability and flexibility 
+                            in your codebase.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
@@ -114,16 +123,22 @@
                 <div id="abstraction" class="collapse show">
                     <div class="card-body">
                         <p>
-                            Abstraction is the concept of hiding complex implementation details and showing only the essential features of an object. It allows you to focus on what an object does rather than how it does it. Abstraction helps in reducing complexity and increasing the efficiency of code development.
+                            Abstraction is the concept of hiding complex implementation details and showing only 
+                            the essential features of an object. It allows you to focus on what an object does 
+                            rather than how it does it. Abstraction helps in reducing complexity and increasing 
+                            the efficiency of code development.
                         </p>
                         <p>
-                            In OOP, abstraction is often achieved through abstract classes and interfaces. An abstract class can contain abstract methods (methods without implementation) that must be implemented by any concrete subclass. This allows you to define a common interface for a group of related classes while leaving the implementation details to the subclasses.   
+                            In OOP, abstraction is often achieved through abstract classes and interfaces. An 
+                            abstract class can contain abstract methods (methods without implementation) that 
+                            must be implemented by any concrete subclass. This allows you to define a common 
+                            interface for a group of related classes while leaving the implementation details 
+                            to the subclasses.   
                         </p>
                         <p>
-                            For example, in Python, you can use the `abc` module to create abstract base classes. By defining abstract methods in an abstract class, you can enforce that any subclass must implement those methods, ensuring a consistent interface across different implementations.
-                        </p>
-                        <p>
-                            Abstraction allows you to create a clear separation between the interface and implementation, making your code more modular and easier to maintain. It also enables you to work with high-level concepts without getting bogged down in low-level details.
+                            Abstraction allows you to create a clear separation between the interface and 
+                            implementation, making your code more modular and easier to maintain. It also enables 
+                            you to work with high-level concepts without getting bogged down in low-level details.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
@@ -141,16 +156,23 @@
                 <div id="inheritance" class="collapse show">
                     <div class="card-body">
                         <p>
-                            Inheritance is a mechanism by which one class (the child or subclass) can inherit the properties and methods of another class (the parent or superclass). This allows for code reuse and the creation of hierarchical relationships between classes. Inheritance enables you to create new classes based on existing ones, adding or modifying functionality as needed.
+                            Inheritance is a mechanism by which one class (the child or subclass) can inherit 
+                            the properties and methods of another class (the parent or superclass). This allows 
+                            for code reuse and the creation of hierarchical relationships between classes. 
+                            Inheritance enables you to create new classes based on existing ones, adding or 
+                            modifying functionality as needed.
                         </p>
                         <p>
-                            In OOP, inheritance can be single (a class inherits from one parent class) or multiple (a class inherits from multiple parent classes). Single inheritance is more common and simpler to implement, while multiple inheritance can lead to complexity and ambiguity, especially in languages that do not handle it well.    
+                            In OOP, inheritance can be single (a class inherits from one parent class) or multiple 
+                            (a class inherits from multiple parent classes). Single inheritance is more common and 
+                            simpler to implement, while multiple inheritance can lead to complexity and ambiguity, 
+                            especially in languages that do not handle it well. C# and Java, for example, support
+                            single inheritance, while Python supports multiple inheritance.  
                         </p>
                         <p>
-                            For example, in Python, you can define a class that inherits from another class by specifying the parent class in parentheses after the child class name. The child class can then access the attributes and methods of the parent class, allowing you to extend or override functionality as needed.
-                        </p>
-                        <p>
-                            Inheritance promotes code reuse and helps in organizing code into a logical hierarchy. It allows you to create specialized classes that build upon the functionality of more general classes, leading to a more structured and maintainable codebase.
+                            Inheritance promotes code reuse and helps in organizing code into a logical hierarchy. 
+                            It allows you to create specialized classes that build upon the functionality of more 
+                            general classes, leading to a more structured and maintainable codebase.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
@@ -168,21 +190,34 @@
                 <div id="polymorphism" class="collapse show">
                     <div class="card-body">
                         <p>
-                            Polymorphism is a core concept in OOP that allows objects of different classes to be treated as objects of a common superclass. It enables a single interface to represent different underlying forms (data types). The two main types of polymorphism are compile-time (or static) polymorphism and runtime (or dynamic) polymorphism.
+                            Polymorphism is a core concept in OOP that allows objects of different classes 
+                            to be treated as objects of a common superclass. It enables a single interface 
+                            to represent different underlying forms (data types). The two main types of 
+                            polymorphism are compile-time (or static) polymorphism and runtime (or dynamic) 
+                            polymorphism.
                         </p>
                         <p>
-                            Compile-time polymorphism is achieved through method overloading and operator overloading. Method overloading allows multiple methods with the same name but different parameters to coexist, while operator overloading enables custom behavior for operators (e.g., +, -, *) when applied to user-defined types.
+                            Compile-time polymorphism is achieved through method overloading and operator 
+                            overloading. Method overloading allows multiple methods with the same name but 
+                            different parameters to coexist, while operator overloading enables custom behavior 
+                            for operators (e.g., +, -, *) when applied to user-defined types.
                         </p>
                         <p>
-                            Runtime polymorphism, on the other hand, is achieved through method overriding and interfaces. In method overriding, a subclass provides a specific implementation of a method that is already defined in its superclass. This allows the subclass to be treated as an instance of its superclass while still exhibiting its own behavior.
+                            Runtime polymorphism, on the other hand, is achieved through method overriding 
+                            and interfaces. In method overriding, a subclass provides a specific implementation 
+                            of a method that is already defined in its superclass. This allows the subclass to 
+                            be treated as an instance of its superclass while still exhibiting its own behavior.
                         </p>
                         <p>
-                            Polymorphism promotes flexibility and extensibility in code. It allows you to write more generic and reusable code, as you can work with objects of different classes through a common interface. This leads to a more modular design and makes it easier to add new functionality without modifying existing code.
+                            Polymorphism promotes flexibility and extensibility in code. It allows you to write 
+                            more generic and reusable code, as you can work with objects of different classes 
+                            through a common interface. This leads to a more modular design and makes it easier 
+                            to add new functionality without modifying existing code.
                         </p>
                     </div> <!-- .card-body -->
                 </div> <!-- .collapse -->
             </div> <!-- .card (polymorphism) -->
-            
+
         </div> <!-- .container -->
         <div id="footer">
             <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
