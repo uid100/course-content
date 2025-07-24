@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="syllabus-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+        <h1>Module Overview</h1>
+        <div class="container my-4 px-2">
+            <div class="card">
+                <div class="card-header" id="module-title">
+                    Properties
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8" id="topicsColumn">
+                            <h5 id="chapterTitle">Chapter 15 - Implementing properties to access fields</h5>
+                            <ul id="topicsList">
+                                <li>encapsulate logical fields by using properties</li>
+                                <li>control read and write access to properties by declaring get and set accessors</li>
+                                <li>explain restrictions of properties</li>
+                                <li>create interfaces containing properties by using structures and classes</li>
+                                <li>generate properties automatically based on field definitions</li>
+                                <li>use properties to initialize objects</li>
+                                <li>implement records based on property values</li>
+                                <li>Implementing polymorphism</li>
+                            </ul>
+                        </div> <!-- #topicsColumn -->
+                        <div class="col-md-4 text-center">
+                            <img id="textbook-image" class="chapter-image" src="" alt="Textbook Cover" />
+                        </div> <!-- #textbookImageColumn -->
+                    </div> <!-- .row -->
+                    <div style="padding: 20px;">
+                        <h3>Properties</h3>
+                            <p>
+                                Properties are a key feature of C# that provide a flexible mechanism to read, write, 
+                                or compute the values of private fields. They enable data encapsulation and can 
+                                include logic in their accessors.
+                            </p>
+                        <h4 style="font-style: italic;">Did we skip some chapters?</h4>
+                        <p>
+                            As a matter of fact, yes. We are skipping some chapters in the textbook.
+                        </p>
+                        <p>
+                            All textbook authors divide the content into smaller digestible pieces and 
+                            sequence them in a way that makes sense and follows a logical progression. 
+                            This textbook contains a lot of really good content that we will not have 
+                            time to cover in this course.
+                        </p>
+                        <p>
+                            The objectives of the course are to (first) provide you with a solid foundation 
+                            in object-oriented programming, and (second) to introduce you to another popular 
+                            programming language to practice those patterns and concepts. The additional 
+                            content in the textbook is worthwhile, and you are encouraged to use this as a 
+                            good reference for future use.
+                        </p>
+                        <p>
+                            As much as I do like and appreciate the author's approach and perspective, I 
+                            do believe that an understanding of how and why to use properties is too
+                            important a concept to overlook, and I wish the author had prioritized it to
+                            include it in earlier chapters. Properties are a fundamental part of C# and
+                            are widely used in OOP (and C#) programming.
+                        </p>
+                        <p>
+                            In our introduction to classes and objects, we said that classes describe 
+                            entities with attibutes (fields) and behaviors (methods). Properties really
+                            fall into a category in between those two and share a lot of the same
+                            characteristics as both fields and methods. 
+                        </p>
+                        <p>
+                            Like the author, my approach has been to introduce you to the language and
+                            the concepts in a way that builds on your existing knowledge and to emphasize
+                            what I believe are the most important concepts to learn first.
+                        </p>
+                        <p>
+                            As the calendar runs out and we approach the end of the time available for 
+                            this course, I believe that properties are too important to overlook.
+                        </p>
+                        <hr>
+                        <h4 style="font-style: italic;">Try this!</h4>
+                        <p>
+                            The <strong>Visual Studio</strong> editor provides a lot of features that you
+                            may not have discovered yet. One of these is the ability to generate properties
+                            automatically based on field definitions. 
+                        </p>
+                        <p>
+                            If you have a field defined in your class, you can right-click on the field name
+                            and select <strong>Quick Actions and Refactorings</strong> (or press <code>Ctrl + .</code>).
+                            From the menu that appears, select <strong>Encapsulate Field</strong>. This will generate
+                            a property for that field with get and set accessors.
+                        </p>
+                        <p>
+                            To create a new property, you can also type the <code>prop</code> snippet in the editor and 
+                            press <code>Tab</code> twice. This will generate a property with a backing field and the get 
+                            and set accessors.
+                        </p>
+                        <p>
+                            On that topic, the author refers to <em>getters</em> and <em>setters</em> as get and set 
+                            accessors. This is a more formal term that is used, but most developers will refer to them
+                            as simply getters and setters. Some authors will also refer to them as <em>accessors</em> 
+                            and <em>mutators</em>, but this is less common. For common usage, if you use the terms
+                            <em>getters</em> and <em>setters</em>, you will be understood by most developers.
+                        </p>
+                    </div>
+                </div> <!-- .card-body -->
+            </div> <!-- .card -->
+
+
+            <div class="card">
+                <div class="card-header" id="module-title">to do:</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-8" id="topicsColumn">
+                            <div id="todo-list">
+                                <ol style="margin-left: 10%;">TODO list
+                                    <li><strong>Read</strong> Chapters 13</li>
+                                    <li><strong>Review</strong> Chapter notes</li>
+                                    <li><strong>Complete</strong> Chapter Quiz</li>
+                                    <li><strong>Complete</strong> Lab exercise</li>
+                                </ol>
+                                <p>&nbsp;</p>
+                                <em>... and don't forget to:</em>
+                                <ul>
+                                    <li>Check for any new announcements in Canvas</li>
+                                    <li>Check the calendar for upcoming events and due dates</li>
+                                </ul>
+                                <p>&nbsp;</p>
+                            </div>
+                        </div> <!-- #topicsColumn -->
+                    </div> <!-- .row -->
+                </div> <!-- .card-body -->
+            </div> <!-- .card -->
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+        </div> <!-- #footer -->
+    </div> <!-- #syllabus-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
