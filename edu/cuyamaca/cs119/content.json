@@ -13,7 +13,7 @@
   "course": {
     "courseNumber": "CS 119/119L",
     "courseTitle": "Program Design & Development",
-    "units": 3,
+    "units": "3 & 1",
     "coverImage": "/course-content/images/logic.png",
     "description": [
       "This class is an introduction to programming and program design using the Python programming language."
