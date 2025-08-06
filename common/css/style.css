@@ -66,6 +66,7 @@ header h4 {
     width: 30%;
     height: auto;
     object-fit: contain;
+    float: right;
 }
 
 #policy #cover-image,
