@@ -62,6 +62,30 @@
       {
         "id": "CLO #4",
         "outcome": "Analyze program requirements and design solutions using Python"
+      },
+      {
+        "id": "CLO #5",
+        "outcome": "Debug and test Python programs to ensure correctness"
+      },
+      {
+        "id": "CLO #6",
+        "outcome": "Utilize Python libraries and frameworks for application development"
+      },
+      {
+        "id": "CLO #7",
+        "outcome": "Apply object-oriented programming principles in Python"
+      },
+      {
+        "id": "CLO #8",
+        "outcome": "Implement data structures and algorithms using Python"
+      },
+      {
+        "id": "CLO #9",
+        "outcome": "Work with databases and APIs in Python applications"
+      },
+      {
+        "id": "CLO #10",
+        "outcome": "Collaborate on software development projects using version control systems"
       }
     ],
     "objectives": [
@@ -133,11 +157,11 @@
       },
       "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
     },
-    "requiredMaterialsPath": "/course-content/edu/palomar/CSIT175/required-materials.html",
-    "recommendedMaterialsPath": "/course-content/edu/palomar/CSIT175/recommended-materials.html",
-    "gradingDetailsPath": "/course-content/edu/palomar/CSIT175/grading-details.html",
-    "accommodationsPath": "/course-content/edu/palomar/CSIT175/accommodations.html",
-    "topicOutlinePath": "/course-content/edu/palomar/CSIT175/outline.html"
+    "requiredMaterialsPath": "/course-content/edu/palomar/csit175/required-materials.html",
+    "recommendedMaterialsPath": "/course-content/edu/palomar/csit175/recommended-materials.html",
+    "gradingDetailsPath": "/course-content/edu/palomar/csit175/grading-details.html",
+    "accommodationsPath": "/course-content/edu/palomar/csit175/accommodations.html",
+    "topicOutlinePath": "/course-content/edu/palomar/csit175/outline.html"
   },
   "instructor": {
     "firstName": "Dan",
