@@ -1,7 +1,9 @@
 {
   "canvas": {
     "server": "https://palomar.instructure.com",
-    "coursePath": "/courses/55278"
+    "coursePath": "/courses/58510",
+    "*coursePathSp25": "/courses/55278",
+    "*coursePathFa25": "/courses/58510"
   },
   "college": {
     "name": "Palomar College",
