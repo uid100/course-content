@@ -1,0 +1,186 @@
+{
+  "canvas": {
+    "server": "https://sdccd.instructure.com",
+    "coursePath": "/courses/2490146",
+    "*coursePath": "/courses/2475348"
+  },
+  "college": {
+    "name": "San Diego Mesa College",
+    "logoPath": "/course-content/images/sdmesa-college-logo.jpg",
+    "website": "https://www.sdmesa.edu/",
+    "academicCalendar": "https://www.sdccd.edu/faculty-staff/employee-resources/academic-calendars/academic-calendars-college/index.aspx"
+  },
+  "course": {
+    "courseNumber": "CISC 401",
+    "courseTitle": "Database Management and Design for Healthcare Professionals",
+    "units": "4",
+    "coverImage": "/course-content/images/server_room.jpg",
+    "description": [
+      "(from the catalog:)\nThis course discusses advanced topics in database management and design. The concepts covered in this course include programming language, current database structures utilized in healthcare, effective communication with end users and key stakeholders, identifying goals and requirements in database projects, performing end user analysis, and creating data models for performance improvement. Students explore all aspects of the data lifecycle from capture to storage and utilization to destruction.",
+      "<em>This course is designed for health information management majors.</em>"
+    ],
+    "prerequisites": "Must be admitted to the Health Information Management program.\n Computer and Information Sciences 181 with a grade of “C” or better, or equivalent.",
+    "section": {
+      "sectionNumber": "10676",
+      "courseId": "CISC 401-2001",
+      "term": "Fall 2025",
+      "startDate": "2025-08-25T08:00:00",
+      "endDate": "2025-12-20T08:00:00",
+      "gradesDue": "2025-12-22T08:00:00",
+      "schedule": {
+        "day": "Wednesday",
+        "time": " 5P - 8P",
+        "location": "S-304"
+      }
+    },
+    "*section-Fall2024": {
+      "sectionNumber": "10677",
+      "courseId": "CISC 401-2002",
+      "term": "Fall 2024",
+      "startDate": "2024-08-19T08:00:00",
+      "endDate": "2024-12-16T08:00:00",
+      "gradesDue": "2024-12-23T08:00:00",
+      "schedule": {
+        "day": "Wednesday",
+        "time": " 5P - 8P",
+        "location": "S-304"
+      }
+    },
+    "outcomes": [
+      {
+        "id": "CLO #1",
+        "outcome": "Conduct requirement analysis of healthcare information systems."
+      },
+      {
+        "id": "CLO #2",
+        "outcome": "Use SQL to create databases, create tables, insert data into tables, and select data from tables for sample healthcare databases."
+      },
+      {
+        "id": "CLO #3",
+        "outcome": "Use SQL to create primary keys, foreign keys, and referential integrity constraints for sample healthcare databases."
+      }
+    ],
+    "objectives": [
+      {
+        "id": "LO  #1",
+        "objective": "Use software engineering methodologies and practices to:\na. Decompose a complex problem into modular components using both procedural and object-oriented design practices.\nb. Define and provide examples of procedural abstraction.\nc. Define and provide examples of encapsulation."
+      },
+      {
+        "id": "LO  #2",
+        "objective": "Produce flowchart and pseudocode solutions to solve introductory level programming problems."
+      },
+      {
+        "id": "LO  #3",
+        "objective": "Design programs that utilize classes from the standard library (in Java this might include JTextField, DecimalFormat, Math, for example) to solve a variety of programming problems."
+      },
+      {
+        "id": "LO  #4",
+        "objective": "Design user-defined methods to augment the standard library in solving a variety of programming problems."
+      },
+      {
+        "id": "LO  #5",
+        "objective": "Discuss the difference between public and private access modifiers and their implications in programs."
+      },
+      {
+        "id": "LO  #6",
+        "objective": "Distinguish between local variables and class attributes and their accessibility implications."
+      },
+      {
+        "id": "LO  #7",
+        "objective": "Utilize all three fundamental programming structures–sequence, decision/selection, repetition–in solving programming problems."
+      },
+      {
+        "id": "LO  #8",
+        "objective": "Define the concept of \"inheritance\" in a programming perspective and provide examples of where it might be used."
+      },
+      {
+        "id": "LO  #9",
+        "objective": "Provide examples of \"polymorphic\" methods."
+      },
+      {
+        "id": "LO #10",
+        "objective": "Identify the role and variety of constructor methods in programs."
+      },
+      {
+        "id": "LO #11",
+        "objective": "Apply time management strategies critical for success in the business world."
+      },
+      {
+        "id": "LO #12",
+        "objective": "Demonstrate critical problem-solving skills in the debugging of programs."
+      },
+      {
+        "id": "LO #13",
+        "objective": "Trace program flow and predict outcomes."
+      }
+    ],
+    "program-learning-outcomes": [
+      {
+        "id": "PLO  #1",
+        "objective": "Apply the laws of patient record confidentiality, privacy and compliance."
+      },
+      {
+        "id": "PLO  #2",
+        "objective": "Use and design data, databases and healthcare systems."
+      },
+      {
+        "id": "PLO  #3",
+        "objective": "Demonstrate and apply knowledge of the principles of personnel management."
+      },
+      {
+        "id": "PLO  #4",
+        "objective": "Develop a financial plan for a health information department."
+      },
+      {
+        "id": "PLO  #5",
+        "objective": "Demonstrate mastery of the principles of health information management."
+      },
+      {
+        "id": "PLO  #6",
+        "objective": "Analyze healthcare data, assimilate data and information."
+      }
+    ],
+    "textbook": {
+      "title": "None Required",
+      "author": "",
+      "edition": "",
+      "isbn": "",
+      "imagePath": "/course-content/images/web_content.jpg"
+    },
+    "contact": {
+      "officeHours": {
+        "location": "Remote",
+        "schedule": "Wed & Fri 11A - 1P PST",
+        "zoomLink": "https://sdccd-edu.zoom.us/j/84311346086?pwd=eU51WG5KN2lBbWg5U3VVRThTTGc2QT09"
+      },
+      "discordLink": {
+        "label": "Code Bytes",
+        "url": "https://discord.gg/MpHjV4qgxZ"
+      },
+      "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
+    },
+    "requiredMaterialsPath": "/course-content/edu/sdmesa/CISC179/required-materials.html",
+    "recommendedMaterialsPath": "/course-content/edu/sdmesa/CISC179/recommended-materials.html",
+    "gradingDetailsPath": "/course-content/edu/sdmesa/CISC179/grading-details.html",
+    "accommodationsPath": "/course-content/edu/sdmesa/CISC179/accommodations.html",
+    "topicOutlinePath": "/course-content/edu/sdmesa/CISC179/outline.html"
+  },
+  "instructor": {
+    "firstName": "Dan",
+    "lastName": "Sullivan",
+    "email": "dsullivan@sdccd.edu",
+    "imagePath": "/course-content/images/Dan_20070717.jpg",
+    "about": "Over 30 years professional experience as a software engineer and program manager. I have worked for large and small companies.",
+    "url": "/course-content/common/instructor_more.html"
+  },
+  "templates": {
+    "syllabus": {
+      "title": "<p>&nbsp;</p><p>SD Mesa College</p><p>SYLLABUS</p>",
+      "path": "/course-content/edu/sdmesa/syllabus.html"
+    },
+    "policies": {
+      "title": "Department Policies",
+      "path": "/course-content/edu/sdmesa/policies.html"
+    }
+  }
+}
