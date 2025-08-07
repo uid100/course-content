@@ -1,102 +1,160 @@
 {
-    "canvas": {
-        "server": "https://palomar.instructure.com",
-        "coursePath": "/courses/55278"
+  "canvas": {
+    "server": "https://palomar.instructure.com",
+    "coursePath": "/courses/55278"
+  },
+  "college": {
+    "name": "Palomar College",
+    "logoPath": "/course-content/images/palomar-college-logo.jpg",
+    "website": "https://www.palomar.edu/",
+    "academicCalendar": "https://www.palomar.edu/enrollmentservices/printable-pdf-calendars/"
+  },
+  "course": {
+    "courseNumber": "CSIT 175",
+    "courseTitle": "Python Programming",
+    "units": 3,
+    "coverImage": "/course-content/images/programmer.jpg",
+    "description": [
+      "(catalog:)\nCSIT 175 Provides the knowledge and skills necessary to use the Python programming language to develop software for Desktop and Web applications.",
+      "Topics of study include the fundamentals of the language, using lists, dictionaries and creating functions and classes.",
+      "Enrolled students will access course materials and participate in class activities through Canvas"
+    ],
+    "prerequisites": "(co-requisite) Lecture and Lab must be taken concurrently. When you enroll in this class, you will also be automatically enrolled in the lab.",
+    "section": {
+      "sectionNumber": "72632",
+      "courseId": "CSIT-175 (72632)",
+      "term": "Fall 2025",
+      "startDate": "2025-08-25T08:00:00",
+      "endDate": "2025-12-20T08:00:00",
+      "gradesDue": "2025-12-22T08:00:00",
+      "schedule": {
+        "day": "Monday",
+        "time": " 6P - 9P",
+        "location": "Rancho Bernardo Ed Center #416"
+      }
     },
-    "college": {
-        "name": "Palomar College",
-        "logoPath": "/course-content/images/palomar-college-logo.jpg",
-        "website": "https://www.palomar.edu/",
-        "academicCalendar": "https://www.palomar.edu/enrollmentservices/printable-pdf-calendars/"
+    "*section-CSIT175sp25": {
+      "sectionNumber": "32928 & 32929",
+      "courseId": "CSIT-175 (32928/32929)",
+      "term": "Spring 2025",
+      "startDate": "2025-01-27T08:00:00",
+      "endDate": "2025-05-22T08:00:00",
+      "gradesDue": "2025-05-25T08:00:00",
+      "schedule": {
+        "day": "Tuesday",
+        "time": " 6P - 9P",
+        "location": "Ramona Education Center"
+      }
     },
-    "course": {
-        "courseNumber": "CSIT 175",
-        "courseTitle": "Python Programming",
-        "units": 3,
-        "coverImage": "/course-content/images/programmer.jpg",
-        "description": [
-            "(catalog:)\nCSIT 175 Provides the knowledge and skills necessary to use the Python programming language to develop software for Desktop and Web applications.",
-            "Topics of study include the fundamentals of the language, using lists, dictionaries and creating functions and classes.",
-            "Enrolled students will access course materials and participate in class activities through Canvas"
-
-
-
-        ],
-        "prerequisites": "(co-requisite) Lecture and Lab must be taken concurrently. When you enroll in this class, you will also be automatically enrolled in the lab.",
-        "section": {
-            "sectionNumber": "32928 & 32929",
-            "courseId": "CSIT-175 (32928/32929)",
-            "term": "Spring 2025",
-            "startDate": "2025-01-27T08:00:00",
-            "endDate": "2025-05-22T08:00:00",
-            "gradesDue": "2025-05-25T08:00:00",
-            "schedule": {
-                "day": "Tuesday",
-                "time": " 6P - 9P",
-                "location": "Ramona Education Center"
-            }
-        },
-        "outcomes": [
-            {"id": "CLO #1", "outcome": "Understand the fundamentals of the Python programming language"},
-            {"id": "CLO #2", "outcome": "Write syntactically and semantically correct Python programs"},
-            {"id": "CLO #3", "outcome": "Create Python Desktop and Web applications"},
-            {"id": "CLO #4", "outcome": "Analyze program requirements and design solutions using Python"}
-        ],
-        "objectives": [
-            { "id": "LO  #1", "objective": "Write and execute basic Python programs that utilize sequential processing, variables, operators, and input/output functions."},
-            { "id": "LO  #2", "objective": "Implement program logic using conditional statements based on boolean expressions."},
-            { "id": "LO  #3", "objective": "Use loops to control the flow of iterative execution of code blocks."},
-            { "id": "LO  #4", "objective": "Write and call reusable code blocks using functions with parameters, return values."},
-            { "id": "LO  #5", "objective": "Identify, describe, and correct syntax, runtime, and logic errors in Python code, and understand how these error types are addressed in different testing phases."},
-            { "id": "LO  #6", "objective": "Demonstrate use of simple data structures (lists, tuples, and arrays) to store and retrieve data."},
-            { "id": "LO  #7", "objective": "Read and write data to and from text files using appropriate file handling techniques."},
-            { "id": "LO  #8", "objective": "Utilize exception handling to gracefully manage errors and prevent program crashes."},
-            { "id": "LO  #9", "objective": "Use dictionaries to store and access data using key-value pairs."},
-            { "id": "LO #10", "objective": "Design and implement object-oriented programs using classes, objects, attributes, and methods."},
-            { "id": "LO #11", "objective": "Utilize inheritance to create hierarchical relationships between classes to promote code reuse."},
-            { "id": "LO #12", "objective": "Develop basic web applications using Flask to interact with APIs and display data."}
-        ],
-        "textbook": {
-            "title": "Murach's Python Programming",
-            "author": "Urban and Murach",
-            "edition": "2d Ed",
-            "isbn": "978-1-943872-74-9",
-            "imagePath": "/course-content/images/Murach_Python_2d.jpg"
-        },
-        "contact": {
-            "officeHours": {
-                "location": "Remote",
-                "schedule": "Wed 1:00P - 2:30P PST",
-                "zoomLink": "https://palomar-edu.zoom.us/j/82972508107?pwd=WnH7yZmAsS1qBGL0QQ8XuNxlmvVDRo.1"
-            },
-            "discordLink": {
-                "label": "Code Bytes",
-                "url": "https://discord.gg/MpHjV4qgxZ"
-            },
-            "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
-        },
-        "requiredMaterialsPath": "/course-content/edu/palomar/CSIT175/required-materials.html",
-        "recommendedMaterialsPath": "/course-content/edu/palomar/CSIT175/recommended-materials.html",
-        "gradingDetailsPath": "/course-content/edu/palomar/CSIT175/grading-details.html",
-        "accommodationsPath": "/course-content/edu/palomar/CSIT175/accommodations.html",
-        "topicOutlinePath": "/course-content/edu/palomar/CSIT175/outline.html"
+    "outcomes": [
+      {
+        "id": "CLO #1",
+        "outcome": "Understand the fundamentals of the Python programming language"
+      },
+      {
+        "id": "CLO #2",
+        "outcome": "Write syntactically and semantically correct Python programs"
+      },
+      {
+        "id": "CLO #3",
+        "outcome": "Create Python Desktop and Web applications"
+      },
+      {
+        "id": "CLO #4",
+        "outcome": "Analyze program requirements and design solutions using Python"
+      }
+    ],
+    "objectives": [
+      {
+        "id": "LO  #1",
+        "objective": "Write and execute basic Python programs that utilize sequential processing, variables, operators, and input/output functions."
+      },
+      {
+        "id": "LO  #2",
+        "objective": "Implement program logic using conditional statements based on boolean expressions."
+      },
+      {
+        "id": "LO  #3",
+        "objective": "Use loops to control the flow of iterative execution of code blocks."
+      },
+      {
+        "id": "LO  #4",
+        "objective": "Write and call reusable code blocks using functions with parameters, return values."
+      },
+      {
+        "id": "LO  #5",
+        "objective": "Identify, describe, and correct syntax, runtime, and logic errors in Python code, and understand how these error types are addressed in different testing phases."
+      },
+      {
+        "id": "LO  #6",
+        "objective": "Demonstrate use of simple data structures (lists, tuples, and arrays) to store and retrieve data."
+      },
+      {
+        "id": "LO  #7",
+        "objective": "Read and write data to and from text files using appropriate file handling techniques."
+      },
+      {
+        "id": "LO  #8",
+        "objective": "Utilize exception handling to gracefully manage errors and prevent program crashes."
+      },
+      {
+        "id": "LO  #9",
+        "objective": "Use dictionaries to store and access data using key-value pairs."
+      },
+      {
+        "id": "LO #10",
+        "objective": "Design and implement object-oriented programs using classes, objects, attributes, and methods."
+      },
+      {
+        "id": "LO #11",
+        "objective": "Utilize inheritance to create hierarchical relationships between classes to promote code reuse."
+      },
+      {
+        "id": "LO #12",
+        "objective": "Develop basic web applications using Flask to interact with APIs and display data."
+      }
+    ],
+    "textbook": {
+      "title": "Murach's Python Programming",
+      "author": "Urban and Murach",
+      "edition": "2d Ed",
+      "isbn": "978-1-943872-74-9",
+      "imagePath": "/course-content/images/Murach_Python_2d.jpg"
     },
-    "instructor": {
-        "firstName": "Dan",
-        "lastName": "Sullivan",
-        "email": "dsullivan1@palomar.edu",
-        "imagePath": "/course-content/images/Dan_20070717.jpg",
-        "about": "Over 30 years professional experience as a software engineer and program manager. I have worked for large and small companies.",
-        "url": "/course-content/common/instructor_more.html"
+    "contact": {
+      "officeHours": {
+        "location": "Remote",
+        "schedule": "Wed 1:00P - 2:30P PST",
+        "zoomLink": "https://palomar-edu.zoom.us/j/82972508107?pwd=WnH7yZmAsS1qBGL0QQ8XuNxlmvVDRo.1"
+      },
+      "discordLink": {
+        "label": "Code Bytes",
+        "url": "https://discord.gg/MpHjV4qgxZ"
+      },
+      "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
     },
-    "templates": {
-        "syllabus": {
-            "title": "<p>&nbsp;</p><p>Palomar College</p><p>SYLLABUS</p>",
-            "path": "/course-content/edu/palomar/syllabus.html"
-        },
-        "policies": {
-            "title": "Department Policies",
-            "path": "/course-content/edu/palomar/policies.html"
-        }
+    "requiredMaterialsPath": "/course-content/edu/palomar/CSIT175/required-materials.html",
+    "recommendedMaterialsPath": "/course-content/edu/palomar/CSIT175/recommended-materials.html",
+    "gradingDetailsPath": "/course-content/edu/palomar/CSIT175/grading-details.html",
+    "accommodationsPath": "/course-content/edu/palomar/CSIT175/accommodations.html",
+    "topicOutlinePath": "/course-content/edu/palomar/CSIT175/outline.html"
+  },
+  "instructor": {
+    "firstName": "Dan",
+    "lastName": "Sullivan",
+    "email": "dsullivan1@palomar.edu",
+    "imagePath": "/course-content/images/Dan_20070717.jpg",
+    "about": "Over 30 years professional experience as a software engineer and program manager. I have worked for large and small companies.",
+    "url": "/course-content/common/instructor_more.html"
+  },
+  "templates": {
+    "syllabus": {
+      "title": "<p>&nbsp;</p><p>Palomar College</p><p>SYLLABUS</p>",
+      "path": "/course-content/edu/palomar/syllabus.html"
+    },
+    "policies": {
+      "title": "Department Policies",
+      "path": "/course-content/edu/palomar/policies.html"
     }
+  }
 }
