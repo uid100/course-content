@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion: Pseudocode is Logic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!--
+      <p><iframe src="https://uid100.github.io/course-content/edu/cuyamaca/cs119/content/disc_pseudocode.html?path=../../../cuyamaca/cs119" 
+          width="100%" height="1000px" loading="lazy"></iframe></p>
+    -->
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="content-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+        <h1>&nbsp;</h1>
+        <div class="container my-4 px-2">
+            <div class="card"> <!-- .card sequence -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Discussion: Pseudocode is Logic
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="sequence" class="collapse show">
+                    <div class="card-body" style="padding: 20px;">
+                        <h2 class="alert">Sequential Logic</h2>
+                        <div class="ic-flash-info">
+                            A <strong>sequence</strong> is a set of events or things that come one 
+                            after another in a particular order.
+                        </div>
+                        <p>
+                            So much of what we do every day requires decisions and <em>sequential</em> logic
+                        </p>
+                        <ul style="padding-left: 50px;">
+                            <li>Open the door <strong>before</strong> you walk through it</li>
+                            <li><strong>If</strong> it is cold outside, grab a coat</li>
+                            <li><strong>While</strong> there is still work to do, keep workng</li>
+                            <li><strong>For</strong> all four car tires, check the air pressure</li>
+                        </ul>
+                        <p>Another example</p>
+                        <p style="font-style: italic; padding-left: 40px; padding-right: 40px;">
+                            Park your car &gt; turn off the engine &gt;
+                            remove the key &gt; take off your seatbelt &gt; gather your things &gt;
+                            open the car door &gt; get out of the car &gt; close the car door &gt;
+                            IF the car is outside, THEN lock the car &gt; walk to the front door &gt;
+                            IF the front door is locked AND you have a key, unlock the door, ELSE knock on the door and wait
+                            for someone to open it &gt; walk inside &gt; IF it is dark, THEN turn on the lights.</p>
+                        <p>Of course this is a lot of detail that you don't need to think about all the time, maybe "go home"
+                            is enough to be understood.</p>
+                        <p>&nbsp;</p>
+                        <p>
+                            When you stop and consider, you will realize that everything you do all day is a series of things,
+                            and many of them are intentionally ordered in a logical sequence.</p>
+                        <p>
+                            Maybe you have driven to an appointment, walked from your car and across a parking lot and up a
+                            set of stairs and remembered that you forgot something in your car. The logic demands that you
+                            consider this new data and make a decision. You can go to the appointment without <em>the thing,</em>
+                            or walk back to the car and get it and come back, or walk back to the car and make another decision,
+                            maybe the walk was too far, and either move your car closer, or call and reschedule the appointment
+                            for another day.</p>
+                    </div> <!-- .card-body -->
+                </div> <!-- #sequence -->
+            </div> <!-- .card (sequence) -->
+
+            <div class="card"> <!-- .card pseudocode -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#sequence" aria-expanded="true"
+                        aria-controls="sequence">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Discussion: Pseudocode is Logic
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="pseudocode" class="collapse show">
+                    <h2 class="card-body" style="padding: 20px;">Pseudocode</h2>
+                    <p><em>Pseudo</em> is an adjective which means false or immitation.</p>
+                    <p>
+                        A farmer might take an old set of worn out work clothes, stuff them with straw, add a hat and stand
+                        it up in a field. A <em>scarecrow</em> is a <em>pseudo-</em>farmer, or an imitation person intended
+                        to frighten away birds to keep them from eating the farmers crops. It cannot do the work of a farmer,
+                        it is not intended to fool anyone into thinking it is anything more than what it is, but for the
+                        purpose of scaring crows, it is adequate and more efficient than hiring an extra farm-hand to stand
+                        next to the fence all day scaring away the birds.</p>
+                    <p>
+                        Pseudocode is the simple expression of a logical <em>sequence</em> of steps that a process will take
+                        to complete a task. It is not intended to <em>fool</em> anyone into thinking that it is actual code.
+                        It is not meant to be executable by a computer it is simply the logical steps expressed in simple
+                        terms.</p>
+                    <p>&nbsp;</p>
+                    <p>For example, you might read the statement:</p>
+                    <pre style="margin: 30px;">if(x&gt;y){y++}</pre>
+                    <p style="font-style: italic; padding: 30px;">if open parenthesis letter 'x' pointing to letter 'y', close
+                        parenthesis, and then add letter 'y' two times.</p>
+                    <p>In most <em>C</em>-style languages (C/C++/C#/Java), this is a logical and acceptable statement. Some of
+                        you might already know that it really means:</p>
+                    <p style="font-style: italic; padding: 30px;">"if the value of x is greater than the value of y, then add
+                        1 to the value of y."</p>
+                    <p>By now you know that the first is <em>sourcecode</em> the second is <em>pseudocode.</em></p>
+
+                    <p>
+                        Pseudocode should contain clear, simple terms. Imagine you were sharing it with your grandmother or
+                        the random person on the street. If they try to read it and have questions about what it means, it
+                        might not be clear enough.</p>
+                    <p>
+                        To put it more simply, <em>pseudocode</em> is just the logical description of the sequential processing
+                        steps.
+                    </p>
+                </div> <!-- #pseudocode -->
+            </div> <!-- .card (pseudocode) -->
+
+            <div class="card"> <!-- .card instructions -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#instructions" aria-expanded="true" aria-controls="instructions">
+                        Instructions
+                    </button>
+                </div>
+                <div class="card-body">
+                    <div id="instructions" class="collapse show" style="padding: 20px;">
+                        <h2 class="alert">Instructions</h2>
+                        <p>There are three parts to this.</p>
+                        <h3>1. About you (15 points)</h3>
+                        <p>
+                            Share a little bit about ourselves; things like what you currently do, your major, 
+                            why you are taking this class, what you would like to do after you finish your 
+                            degree, hobbies, special interests, where you're originally from, where you live 
+                            (general area), family, etc.
+                        </p>
+                        <p>
+                            Your post should have at least one or two good paragraphs so others in the class 
+                            can find some things in common with you. Take this as an opportunity to get to 
+                            know others in the class and make some new friends with people who enjoy some of 
+                            the same things you enjoy (I.e., music, video games, travel, hiking, sports, etc.).
+                        </p>
+                        <h3>2. A typical day (15 points)</h3>
+                        <p>
+                            List at least 10 <em>things</em> that you might do in a typical day (these can be 
+                            real or completely made up.)
+                        </p>
+                        <p>
+                            Number the items on the list in the order that they <strong>must</strong> be 
+                            completed. Add IF statements (conditional) if they should be there. Do any of the 
+                            items get repeated and if so, is it a fixed number of times, or until something 
+                            changes? <em> Wash and rinse the car exactly 3 times, or wash and rinse the car 
+                            until it is clean enough? </em></p>
+                        <p style="background-color: yellow; text-align: center;">
+                            Parts 1 and 2 must be completed by Sunday Night at 1159PM so that others can reply.</p>
+                        <h3>3. Replies (10 points + 10 points)</h3>
+                        <p>
+                            After your initial post, find and share things you have in common with at least 
+                            two other students who posted. Could you relate to their <em>typical day</em>?</p>
+                        <p>
+                            Replies should be thoughtful, positive, and respectful.</p>
+                        <p>
+                            To respond to a post on this thread, click inside the Reply box, enter your introduction 
+                            or response and click the Post Reply button.</p>
+                    </div> <!-- #instructions -->
+                </div> <!-- .card-body -->
+            </div> <!-- .card -->
+
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+        </div> <!-- #footer -->
+    </div> <!-- #content-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
