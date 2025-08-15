@@ -333,7 +333,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const hyflexElement = document.getElementById("hyflex");
             if (hyflex && hyflexElement) {
                 // const hyflexPage = coursePath + "/hyflex";
-                const hyflexPage = "common/hyflex.html";
+                const hyflexPage = "/hyflex.html";
                 const hyflexLink = document.createElement("a");
                 hyflexLink.href = hyflexPage;
                 hyflexLink.textContent = "Hyflex";
