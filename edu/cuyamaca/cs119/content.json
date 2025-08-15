@@ -29,7 +29,8 @@
       "schedule": {
         "day": "Tuesday",
         "time": " 6P - 9P",
-        "location": "E-210"
+        "location": "E-210",
+        "hyflex": "hyflex"
       }
     },
     "*section-Spring2025": {
