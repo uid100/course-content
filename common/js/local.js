@@ -333,10 +333,10 @@ document.addEventListener("DOMContentLoaded", () => {
             const hyflexElement = document.getElementById("hyflex");
             if (hyflex && hyflexElement) {
                 // const hyflexPage = coursePath + "/hyflex";
-                const hyflexPage = "/hyflex.html";
+                const hyflexPage = "common/hyflex.html";
                 const hyflexLink = document.createElement("a");
                 hyflexLink.href = hyflexPage;
-                hyflexLink.textContent = "common/Hyflex";
+                hyflexLink.textContent = "Hyflex";
                 hyflexElement.appendChild(hyflexLink);
                 const newTag = document.createElement("span");
                 newTag.textContent = " New!";
