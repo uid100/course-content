@@ -336,7 +336,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 const hyflexPage = "/hyflex.html";
                 const hyflexLink = document.createElement("a");
                 hyflexLink.href = hyflexPage;
-                hyflexLink.textContent = "Hyflex";
+                hyflexLink.textContent = "common/Hyflex";
                 hyflexElement.appendChild(hyflexLink);
                 const newTag = document.createElement("span");
                 newTag.textContent = " New!";
