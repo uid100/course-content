@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex1. Sequential Processing</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+</head>
+
+<body>
+    <div id="lab-content">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <div id="title" style="padding: 20px;">
+            <h2 class="bg-primary text-center text-white">Lab #1 - Sequential Processing</h2>
+        </div> <!-- #title -->
+
+        <div id="tabs" style="padding: 20px;">
+            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-overview" data-bs-toggle="pill" data-bs-target="#overview"
+                        type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-first" data-bs-toggle="pill" data-bs-target="#prep" type="button"
+                        role="tab" aria-controls="prep" aria-selected="false">Start</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-ex1" data-bs-toggle="pill" data-bs-target="#ex1" type="button"
+                        role="tab" aria-controls="ex1" aria-selected="false">Exercise 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-ex2" data-bs-toggle="pill" data-bs-target="#ex2" type="button"
+                        role="tab" aria-controls="ex2" aria-selected="false">Exercise 2</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-ex3" data-bs-toggle="pill" data-bs-target="#ex3" type="button"
+                        role="tab" aria-controls="ex3" aria-selected="false">Exercise 3</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-submit" data-bs-toggle="pill" data-bs-target="#submit"
+                        type="button" role="tab" aria-controls="submit" aria-selected="false">Submit</button>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="pills-overview">
+                    <div class="card">
+                        <div class="card-header bg-primary text-center text-white">
+                            Background
+                        </div> <!-- .card-header -->
+                        <div class="card-body">
+                            <div id="introduction">
+                                <p>
+                                    This lab provides an introduction to programming in Python. You will be creating and
+                                    running relatively <em>simple* </em> Python console applications using Python's
+                                    Integrated Development and Learning Environment (<strong>IDLE</strong>).
+                                </p>
+                                <p style="padding: 20px;">
+                                    * <strong>Simple</strong> means <em>not complex</em> or few moving parts.
+                                </p>
+                                <p>It also gives you an opportunity to apply some of the terminology and concepts
+                                    presented in the textbook.
+                                </p>
+                                <p>There are three exercises in this lab. Be sure to complete all three.</p>
+                            </div> <!-- #introduction -->
+                            <div id="topics" style="padding: 40px;">
+                                <ul>Topics:
+                                    <li>Introduction to the Python <em>IDLE</em> IDE</li>
+                                    <li>Introduction to Python applications</li>
+                                    <li>Variables</li>
+                                    <li>Comments</li>
+                                    <li>Arithmetic calculations</li>
+                                    <li>Sequential code</li>
+                                    <li>Console input and output</li>
+                                </ul>
+                            </div> <!-- #topics -->
+                        </div> <!-- .card-body -->
+                    </div> <!-- .card -->
+                </div> <!-- .tab-pane -->
+                <div class="tab-pane fade" id="prep" role="tabpanel" aria-labelledby="pills-first">
+                    <div class="card">
+                        <div class="card-header bg-primary text-center text-white">
+                            Before You begin
+                        </div> <!-- .card-header -->
+                        <div class="card-body">
+                            <h5 class="card-title">File Extensions</h5>
+                            <div id="extensions" style="padding: 20px;">
+                                <p>I don't know why this is not the default setting anymore, but on both Windows and
+                                    MacOS, it is not. As a developer, you need to see this information.</p>
+                                <h4>MacOS:</h4>
+                                <p>Select Finder &gt; Preferences from the menu and check the box.</p>
+                                <p><img style="display: block; border: 2px solid black;"
+                                        src="/course-content/images/Mac_file_extensions.png"
+                                        alt="macos: Show file Extensions" width="365" height="190" /></p>
+                                <hr />
+                                <h4>Windows 11:</h4>
+                                <p>From File Explorer: View &gt; Show &gt; File name extensions.<br />
+                                    (Windows 10: it's a checkbox on the toolbar)</p>
+                                <p>Select Finder &gt; Preferences from the menu and check the box.</p>
+                                <p><img style="display: block; border: 2px solid black;"
+                                        src="/course-content/images/win_file_extensions.png"
+                                        alt="win: Show file extensions" width="320" height="330" /></p>
+                                <p class="ic-flash-info">This information is also bookmarked in the Discord channel <a
+                                        href="https://discord.com/channels/981657492423598161/981657492423598165/1016417848618397758">here.</a>
+                                </p>
+                            </div> <!-- #extensions -->
+                        </div> <!-- .card-body -->
+                        <hr />
+                        <div class="card-body">
+                            <h5 class="card-title">Lab Folder Structure</h5>
+                            <div id="folders" style="padding: 20px;">
+                                <h3>Lab Folder Structure</h3>
+                                <p><img style="display: block; border: 2px solid black;"
+                                        src="/course-content/images/lab_folders.png"
+                                        alt="recommended lab folder structure" /></p>
+                                <p>Before starting on any lab work for this class, take a few minutes to create a
+                                    folder structure for your labs like the one shown below. Being organized is a
+                                    critical survival skill in software development.</p>
+                                <p>If you are using the classroom lab computers, be sure to create this on a remote
+                                    cloud storage, or removable USB storage device and be sure to save to it! Saving
+                                    on the C: drive of the lab computers is a disaster waiting to happen!
+                                </p>
+                                <p>Notice that the folders are numbered "lab01", "lab02", and so on. If you number
+                                    these using only a single digit, then when we labs 10, 11, and 12, the natural
+                                    ordering of your folders will be lab1, lab10, lab11, lab12, lab2, lab3, ...
+                                </p>
+                                <p>Since there are more than 10, and less than 100, using 2 digit numbers makes sense.
+                                </p>
+                            </div> <!-- #folders -->
+                        </div> <!-- .card-body -->
+                    </div> <!-- .card -->
+                </div> <!-- #prep -->
+                <div class="tab-pane fade" id="ex1" role="tabpanel" aria-labelledby="pills-ex1">
+                    <div class="card">
+                        <div class="card-header bg-primary text-center text-white">
+                            Exercise 1: Multiply 2 Numbers
+                        </div> <!-- .card-header -->
+                        <div class="card-body">
+                            <h3>A Guided Python Application</h3>
+                            <div id="guided" class="ic-flash-info">
+                                <p>For most of the labs in this class, the first exercise will be a guided walk
+                                    through where we will apply the chapter concepts to develop a working Python
+                                    application.
+                                </p>
+                            </div> <!-- #guided -->
+                            <div id="ex1-intro">
+                                <p>In this exercise, you will be guided through the steps of analyzing a problem
+                                    statement and creating a working Python application using Python IDLE
+                                    (Integrated Development and Learning Environment). Be sure to complete this
+                                    exercise as you will be repeating these steps and writing the same (or very
+                                    similar) code for the other exercises.
+                                </p>
+                                <p style="font-style: italic;">Be aware, practice is the key here. The more you do,
+                                    the easier it gets!
+                                </p>
+                            </div> <!-- #ex1-intro -->
+                            <div id="analysis">
+                                <p>Step one is <strong><i>always</i></strong> to analyze the problem and figure out
+                                    a plan of attack. Consider the following problem statement.
+                                </p>
+                                <div id="problem" class="ic-flash-info">
+                                    <p>Problem statement:</p>
+                                    <p>
+                                        <del> It&rsquo;s a bright, sunny day and Cuyamaca Learning Center has hired you
+                                            as a consultant to develop an application that will </del>
+                                        accept two input numbers from the user and display the product of the two
+                                        <del>values</del> numbers.
+                                    </p>
+                                </div>
+                                <p>Break it down into <strong>input, process and output</strong>.</p>
+                                <p>This is a simple problem and we can easily break it down into &ldquo;workable
+                                    pieces&rdquo; using this approach.
+                                </p>
+                                <p><em>What input do we need?</em>&nbsp;&nbsp;&nbsp; <strong>We need 2 numbers.</strong>
+                                </p>
+                                <p>We can logically name these <code>number1</code> and <code>number2</code></p>
+                                <p><em>What is our process?</em>&nbsp;&nbsp;&nbsp; <strong>We need to multiply the 2
+                                        numbers.</strong><br />Our formula is:</p>
+                                <pre>product = number1 * number2</pre>
+                                <p>&nbsp;</p>
+                                <p>The result of multiplying two numbers is called the <code>product</code>.
+                                </p>
+                                <p ckass="ic-flash-info">Variable names must always be:
+                                <ul>
+                                    <li>Meaningful</li>
+                                    <li>Descriptive</li>
+                                    <li>Concise</li>
+                                </ul>
+                                </p>
+                                <p><em>What is our output?</em>&nbsp;&nbsp;&nbsp; <strong>We need to display the
+                                        product.</strong>
+                                </p>
+                            </div> <!-- #analysis -->
+                            <div id="ex1-code">
+                                <h3>Logic <i>Pseudocode</i> &amp; Python Source Code</h3>
+                                <h4>Steps</h4>
+                                <ol>
+                                    <li>Start Python IDLE.</li>
+                                    <li>From the File menu, click New File<br /><img
+                                            src="/course-content/images/lab01_fig1_menu_file_new.jpg"
+                                            alt="IDLE menu  File &gt; New " width="323" /></li>
+                                    <li>Create a new file and save as
+                                        <pre>multiply.py</pre>
+                                        to your Lab 1 folder. Note that Python source files must have the .py
+                                        extension.<br />If
+                                        IDLE is saving as type <em>Python Files</em>, then the extension will be
+                                        assigned
+                                        for
+                                        you.
+                                        If you try and enter "multiply.py", you may end up with a file named
+                                        "multiply.py.py".
+                                        This
+                                        is why it is important to enable file extensions in the <em>Before you
+                                            begin</em>
+                                        tab.<br /><img src="/course-content/images/lab01_fig4_save_py.jpg"
+                                            alt="Save As Python (.py) file" />
+                                    </li>
+                                    <li>
+                                        <ul>Write the code shown in the Python code screenshot below. Pay close
+                                            attention to
+                                            letter
+                                            case. Note the following things we will be doing for virtually every lab
+                                            exercise:
+                                            <li>Be sure to code the shebang line #!/user/bin/env python3. This
+                                                identifies
+                                                the
+                                                file
+                                                as an executable Python script file.</li>
+                                            <li>In comments at the top, put in your name, course number and the lab
+                                                exercise
+                                                information. See sample below.</li>
+                                            <li>Use the input() method for getting user input.</li>
+                                            <li>Use the print() method for displaying output.</li>
+                                            <li>Use the int() method to convert text to an integer.</li>
+                                            <li>Use the float() method to convert text to a float.</li>
+                                            <li>Use the str() method to convert an integer value to string.</li>
+                                            <li>The program code should follow the pseudocode!</li>
+                                            <li>In Python, anything after a single hash (#) character is a comment.</li>
+                                        </ul>
+                                        <p>Here&rsquo;s a sample comment header at the top with your name, the course
+                                            number,
+                                            and a
+                                            brief description of the lab exercise.</p>
+                                        <p><img src="/course-content/images/PythonHeader.png" alt="Python Header" /></p>
+                                        <ul>In the code below, a couple more things to note:
+                                            <li>We declare variables using a concise, yet descriptive name.</li>
+                                            <li>Python determines the data type by the initial value.</li>
+                                            <li>We use a single equal sign (=) for assigning literal values (i.e., 0,
+                                                etc.)
+                                                or
+                                                the
+                                                result of an expression to a variable.</li>
+                                        </ul>
+                                        <p><img src="/course-content/images/lab1_code.jpg"
+                                                alt="ex1 guided code solution" width="436" height="308" /></p>
+                                        <p><em>Wow! That's a lot!</em></p>
+                                    </li>
+                                    <li>Be sure to save your work!</li>
+                                    <li>Run your application. Select Run Module from the Run menu.<br /><img
+                                            src="/course-content/images/lab01_fig5.jpg"
+                                            alt="IDLE menu Run &gt; Run Module" /></li>
+                                    <li>Choose test values so that you can easily verify that your program is producing
+                                        the
+                                        correct
+                                        output. For example:<br /><img src="/course-content/images/lab01_fig6.jpg"
+                                            alt="Run with sample test values" /></li>
+                                    <li>Try (test) your program with different values to be sure it is working.</li>
+                                    <li>If you get a correct output, congratulations! <br>
+
+                                        You have just successfully created your first Python application!</li>
+                                </ol>
+                            </div> <!-- #ex1-code -->
+                        </div> <!-- .card-body -->
+                    </div> <!-- .card -->
+                </div> <!-- #ex1 -->
+                <div class="tab-pane fade" id="ex2" role="tabpanel" aria-labelledby="pills-ex2">
+                    <div class="card">
+                        <div class="card-header bg-primary text-center text-white">
+                            Exercise 2: Kilometers to Miles Calculator
+                        </div> <!-- .card-header -->
+                        <div class="card-body">
+                            <p>In this exercise, you will create another Python application to convert kilometers to
+                                miles. Your application must allow the user to enter the number of kilometers and then
+                                convert and
+                                display miles.</p>
+                            <div id="constant" class="ic-flash-info">
+                                <p>1 kilometer = 0.62 miles.</p>
+                                <p>This is the conversion factor that you are given. It must be in your code. Do not
+                                    lookup or calculate another.</p>
+                            </div> <!-- #constant -->
+                            <p>Before writing any code, consider writing some logical pseudocode as it will help you
+                                break down the problem into understandable pieces.</p>
+                            <p>
+                                What are meaningful and descriptive names for your variables?
+                            </p>
+                            <p>
+                                <strong>Hint:</strong> in this case, "number1" and "number2" and "product" are not
+                                meaningful or descriptive for this project.
+                            </p>
+                            <p>You will create a new Python source file (.py) in the Python IDLE the same way you did in
+                                exercise 1.
+                                The file name is left to your discretion but choose a reasonably concise, yet
+                                <em>descriptive</em>
+                                name for your project such as KmToMiles. Make sure you save the file in your Lab01
+                                folder.
+                            </p>
+                            <p>Like exercise 1, be sure to code the shebang line and comments with your name, course No.
+                                and lab exercise.</p>
+                            <div id="enter-km" class="ic-flash-info">
+                                <p><strong>Hint:</strong> For your input, you will need a line of code something like
+                                    this:
+                                </p>
+                                <pre>km = float(input("Enter kilometers: "))</pre>
+                            </div> <!-- #enter-km -->
+                        </div> <!-- .card-body -->
+                    </div> <!-- .card -->
+                </div> <!-- #ex2 -->
+                <div class="tab-pane fade" id="ex3" role="tabpanel" aria-labelledby="pills-ex3">
+                    <div class="card">
+                        <div class="card-header bg-primary text-center text-white">
+                            Exercise 3: Miles to Kilometers Calculator
+                        </div> <!-- .card-header -->
+                        <div class="card-body">
+                            <p>In this exercise, you will create another Python application to convert miles to
+                                kilometers.
+                                This
+                                conversion is just the opposite of what you did in the last exercise! Your application
+                                must
+                                allow
+                                the user to enter the number of miles and then convert and display kilometers.</p>
+                            <div id="miles-per-km" class="ic-flash-info">
+                                <p>1 kilometer = 0.62 miles.</p>
+                                <p>This is the conversion factor that you are given. It must be in your code. Do not
+                                    lookup
+                                    another,
+                                    or calculate the inverse. Any other values will produce (slightly) different
+                                    results.
+                                    Use
+                                    the
+                                    supplied value.</p>
+                            </div>
+                            <h3>Python Source Code</h3>
+                            <p>You will create a new source code (.py) file in the Python IDLE the same way you did in
+                                exercise
+                                1.
+                                The file name is left to your discretion but choose a reasonably concise, yet
+                                <em>descriptive</em>
+                                name for your project such as MilesToKm. Make sure you save the file in your Lab01
+                                folder.
+                            </p>
+                            <p>Like exercise 1, be sure to code the shebang line and comments with your name, course No.
+                                and
+                                lab
+                                exercise.</p>
+                            <div id="enter-miles" class="ic-flash-info">
+                                <p><strong>Hint:</strong> For your input, you will need a line of code something like
+                                    this:
+                                </p>
+                                <pre>miles = float(input("Enter miles: "))</pre>
+                            </div>
+                            <p>You will create the Python file the same way you did in exercise 1.</p>
+                        </div> <!-- .card-body -->
+                    </div> <!-- .card -->
+                </div> <!-- #ex3 -->
+                <div class="tab-pane fade" id="submit" role="tabpanel" aria-labelledby="pills-submit">
+                    <div class="card">
+                        <div class="card-header bg-primary text-center text-white">
+                            Submit Your Work
+                        </div> <!-- .card-header -->
+                        <div class="card-body">
+                            <h3>Submission</h3>
+                            <p>When you have completed all three exercises, you will need to submit your work to Canvas.
+                            </p>
+                            <p>Here is the step-by-step <strong>submission</strong> process:</p>
+                            <ol>
+                                <li>Zip your lab folder. The folder should contain the following files:</li>
+                                <ul>
+                                    <li>multiply.py</li>
+                                    <li>KmToMiles.py</li>
+                                    <li>MilesToKm.py</li>
+                                </ul>
+                                <li>Submit the zipped file (Lab01.zip) to Canvas.</li>
+                            </ol>
+                            <p>&nbsp;</p>
+                            <p>&nbsp;</p>
+                            <div id="outline">
+                                <h3>Outline</h3>
+                                <p>Before submitting your assignment, step through this checklist to be certain that
+                                    everything
+                                    is
+                                    complete. You should also check the grading rubric to see if there is anything that
+                                    you
+                                    might
+                                    have forgotten.</p>
+                                <p>Here is the step-by-step <strong>outline</strong></p>
+                                <ol>
+                                    <li>Create the Lab folder structure</li>
+                                    <li>Read (and understand) the pseudocode as described in the lab instructions</li>
+                                    <li>Create a new .py file and write the code for the sample exercise, run it and
+                                        view
+                                        the
+                                        result
+                                    </li>
+                                    <li>Create a new KmToMiles.py file and write the code for your solution (follow the
+                                        example
+                                        and
+                                        modify as needed from step 4). Run it and check your results.</li>
+                                    <li>Create a new MilesToKm.py file and write the new code, test, and confirm the
+                                        result.
+                                    </li>
+                                    <li>Zip your files and submit to Canvas <strong>(must be a zip file).</strong></li>
+                                </ol>
+                                <p>&nbsp;</p>
+                                <p>&nbsp;</p>
+                            </div> <!-- #outline -->
+                            <div id="shebang">
+                                <p><strong>Hint</strong>: your python code files must have the following on the first
+                                    line:
+                                </p>
+                                <pre>#!/usr/bin/env python3</pre>
+                                <p>The hash character ('#') must be the first character of the .py source file.</p>
+                                <p>&nbsp;</p>
+                            </div> <!-- #shebang -->
+                            <p>More information about Zipping your lab folders is in the notes and resources channel on
+                                the
+                                Discord
+                                server <a
+                                    href="https://discord.com/channels/981657492423598161/981657492423598165/1023418103381635166">here</a>
+                            </p>
+                        </div> <!-- .card-body -->
+                    </div> <!-- .card -->
+                </div> <!-- #submit -->
+            </div> <!-- .tab-content -->
+        </div><!-- #tabs -->
+    </div> <!-- #labcontent -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
