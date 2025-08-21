@@ -17,30 +17,32 @@
 <body>
     <div id="top">
         <div id="page-header">
-            <a id="college-link" href="#" target="_blank">
-                <img id="college-logo" class="logo" src="" alt="College Logo" />
-            </a>
+            <div class="row">
+                <div class="col-6 text-start">
+                        <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <div id="page-cover-image">
+                        <figure><img id="cover-image" src="" alt="cover page image" />
+                        </figure>
+                    </div> <!-- #page-cover-image -->
+                </div> <!-- .col-6 -->
+            </div> <!-- .row -->
+            <div class="row">
+                <div class="timeline">
+                    <div class="line"></div>
+                    <div id="start-marker" class="marker"></div>
+                    <div id="end-marker" class="marker"></div>
+                    <div id="current-marker" class="marker current-marker"></div>
 
-            <div id="page-cover-image">
-                <figure><img id="cover-image" src="/course-content/images/programmer.jpg" alt="cover page image" />
-                    <figcaption id="cover-caption">image licensed by: <a
-                            href="https://www.vecteezy.com/free-vector/python-programming">Vecteezy
-                        </a></figcaption>
-                </figure>
-            </div>
-
-            <div class="timeline">
-                <div class="line"></div>
-                <div id="start-marker" class="marker"></div>
-                <div id="end-marker" class="marker"></div>
-                <div id="current-marker" class="marker current-marker"></div>
-
-                <div id="start-label" class="label"></div>
-                <div id="end-label" class="label"></div>
-                <div id="current-label" class="label current"></div>
-            </div> <!-- #timeline -->
-
-        </div>
+                    <div id="start-label" class="label"></div>
+                    <div id="end-label" class="label"></div>
+                    <div id="current-label" class="label current"></div>
+                </div> <!-- #timeline -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
         <h2 id="course-title">Home Page</h2>
 
         <div id="section" class="card mx-auto">
