@@ -29,8 +29,8 @@
       "sectionNumber": "0M1",
       "courseId": "COP2552_0M1_S25",
       "term": "Fall 2025",
-      "startDate": "2025-08-25:00:00",
-      "endDate": "2025-12-1200:00",
+      "startDate": "2025-08-25T05:00:00",
+      "endDate": "2025-12-12T05:00:00",
       "gradesDue": "2025-12-15T05:00:00",
       "schedule": {
         "day": "n/a",
@@ -42,8 +42,8 @@
       "sectionNumber": "0M1",
       "courseId": "COP2552_0M1_S25",
       "term": "Summer 2025",
-      "startDate": "2025-05-12:00:00",
-      "endDate": "2025-08-09:00:00",
+      "startDate": "2025-05-12T05:00:00",
+      "endDate": "2025-08-09T05:00:00",
       "gradesDue": "2025-08-14T05:00:00",
       "schedule": {
         "day": "n/a",
