@@ -2,7 +2,8 @@
   "canvas": {
     "server": "https://gcccd.instructure.com",
     "coursePath": "/courses/66467",
-    "*coursePath": "/courses/63626"
+    "*coursePath-Fall2024": "/courses/66467",
+    "*coursePath-Spring2025": "/courses/63626"
   },
   "college": {
     "name": "Cuyamaca College",
