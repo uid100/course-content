@@ -1,0 +1,88 @@
+{
+  "canvas": {
+    "server": "https://courses.sfcollege.edu",
+    "coursePath": "/courses/493858",
+    "*coursePath_2025_Summer": "/courses/492054"
+  },
+  "college": {
+    "name": "Santa Fe College",
+    "logoPath": "/course-content/images/santafe-college-logo.png",
+    "website": "https://www.sfcollege.edu/",
+    "academicCalendar": "https://www.sfcollege.edu/registrar/calendar-and-critical-dates.html"
+  },
+  "course": {
+    "courseNumber": "CIS 4083",
+    "courseTitle": "Object-Oriented Programming 2",
+    "units": 3,
+    "coverImage": "/course-content/images/programmer.jpg",
+    "description": ["."],
+    "prerequisites": "",
+    "section": {
+      "sectionNumber": "0M1",
+      "courseId": "CIS4083_0M1_F25",
+      "term": "Fall 2025",
+      "startDate": "2025-08-25T05:00:00",
+      "endDate": "2025-12-12T05:00:00",
+      "gradesDue": "2025-12-15T05:00:00",
+      "schedule": {
+        "day": "n/a",
+        "time": "",
+        "location": "Online"
+      }
+    },
+    "outcomes": [
+      {
+        "id": "CLO #1",
+        "outcome": "."
+      }
+    ],
+    "objectives": [
+      {
+        "id": "LO #1",
+        "objective": ""
+      }
+    ],
+    "textbook": {
+      "title": "",
+      "author": "",
+      "edition": "",
+      "isbn": "",
+      "imagePath": ""
+    },
+    "contact": {
+      "officeHours": {
+        "location": "Remote",
+        "schedule": "Wed 12P - 2P EST",
+        "zoomLink": "https://sfcollege.zoom.us/j/92446820828?pwd=NHNrYlNaZTBwUXk3Zy9BWnEzYzEydz09"
+      },
+      "discordLink": {
+        "label": "Code Bytes",
+        "url": "https://discord.gg/MpHjV4qgxZ"
+      },
+      "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
+    },
+    "requiredMaterialsPath": "/course-content/edu/santafe/cis4083/required-materials.html",
+    "recommendedMaterialsPath": "/course-content/edu/santafe/cis4083/recommended-materials.html",
+    "gradingDetailsPath": "/course-content/edu/santafe/cis4083/grading-details.html",
+    "accommodationsPath": "/course-content/edu/santafe/cis4083/accommodations.html",
+    "topicOutlinePath": "/course-content/edu/santafe/cis4083/outline.html"
+  },
+  "instructor": {
+    "firstName": "Dan",
+    "lastName": "Sullivan",
+    "email": "daniel.sullivan@sfcollege.edu",
+    "imagePath": "/course-content/images/Dan_20070717.jpg",
+    "about": "Over 30 years professional experience as a software engineer and program manager. I have worked for large and small companies.",
+    "url": "/course-content/common/instructor_more.html"
+  },
+  "templates": {
+    "syllabus": {
+      "title": "<p>&nbsp;</p><p>IT/E PROGRAMS</p><p>SYLLABUS</p>",
+      "path": "/course-content/edu/santafe/ite_syllabus.html"
+    },
+    "policies": {
+      "title": "Department Policies",
+      "path": "/course-content/edu/santafe/ite-policies.html"
+    }
+  }
+}
