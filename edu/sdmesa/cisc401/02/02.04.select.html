@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!-- 
+     <p>
+        <iframe 
+            src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/02/02.04.select.html?path=../../cisc401" 
+                width="100%" height="1000px" loading="lazy">
+        </iframe>
+     </p>
+    -->
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div class="container my-4 px-2">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+        <div class="card" id="select">
+            <div class="card-header">SQL SELECT</div>
+            <div class="card-body">
+                <h1>Introduction to the SQL SELECT Statement</h1>
+
+                <p>The SQL <code>SELECT</code> statement is used to retrieve data from a database. It is one of the most fundamental
+                    SQL operations and allows you to query and display data from one or more tables. Here’s an overview of its
+                    clauses and their execution order:</p>
+
+                <h2>Clauses and Their Order</h2>
+                <figure style="text-align: center; width: 50%;">
+                    <img style="display: block; margin-left: auto; margin-right: auto;"
+                        src="https://uid100.github.io/course-content/images/ferrer_sql_select.jpg" alt="SELECT statement clauses"
+                        width="70%" />
+                    <figcaption style="text-align: center;">SELECT clauses</figcaption>
+                </figure>
+
+                <ul>
+                    <li><strong>SELECT:</strong> Specifies the columns you want to retrieve from the database.</li>
+                    <li><strong>FROM:</strong> Indicates the table or tables from which to retrieve the data.</li>
+                    <li><strong>WHERE:</strong> Filters records to only include those that meet specified conditions.</li>
+                    <li><strong>GROUP BY:</strong> Groups records with identical values into summary rows, often used with aggregate
+                        functions.</li>
+                    <li><strong>HAVING:</strong> Filters the results of a <code>GROUP BY</code> clause based on a condition.</li>
+                    <li><strong>ORDER BY:</strong> Sorts the results based on specified columns.</li>
+                </ul>
+
+                <p>The clauses are executed in the following order:</p>
+                <ol style="font-weight: bold;">
+                    <li>FROM</li>
+                    <li>WHERE</li>
+                    <li>GROUP BY</li>
+                    <li>HAVING</li>
+                    <li>SELECT</li>
+                    <li>ORDER BY</li>
+                </ol>
+
+                <p>Consider this image, which illustrates the data structure at each step.</p>
+                <figure style="text-align: center; width: 50%;">
+                    <img style="display: block; margin-left: auto; margin-right: auto;"
+                        src="https://uid100.github.io/course-content/images/ferrer_sql_select_execution.jpg"
+                        alt="SELECT statement clauses" width="70%" />
+                    <figcaption style="text-align: center;">SELECT clauses</figcaption>
+                </figure>
+
+                <h2>Types of Results</h2>
+                <p>The result of a <code>SELECT</code> statement can either be individual records or processed aggregate data.
+                    Individual records refer to each row of data retrieved directly from the tables. Aggregate results are summaries
+                    or calculations based on groups of records and are often produced using aggregate functions such as
+                    <code>COUNT</code>, <code>SUM</code>, <code>AVG</code>, <code>MIN</code>, and <code>MAX</code>.
+                </p>
+
+                <h2>What is an Aggregate?</h2>
+                <p>An <strong>aggregate</strong> is a summary or calculation derived from multiple rows of data. Aggregate functions
+                    operate on a set of values to produce a single value. For example, <code>SUM</code> calculates the total of a
+                    numeric column, while <code>COUNT</code> determines the number of rows in a set.</p>
+
+                <p>Understanding the <code>SELECT</code> statement and its clauses is crucial for effectively querying and analyzing
+                    data in SQL databases.</p>
+            </div>
+        </div> <!-- #select -->
+    </div>
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
