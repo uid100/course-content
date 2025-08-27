@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!-- module 1 overview
+     <p>
+        <iframe 
+            src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/02/02.01.overview.html?path=../../cisc401" 
+                width="100%" height="1000px" loading="lazy">
+        </iframe>
+     </p>
+    -->
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div class="container my-4 px-2">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+        <div class="card" id="crud">
+            <div class="card-header">Structured Query Language (SQL)</div>
+            <div class="card-body">
+                <h3>SQL Basics</h3>
+<h1>Introduction to Structured Query Language (SQL)</h1>
+
+    <p><strong>Structured Query Language (SQL)</strong> is a standardized programming language used to manage and
+        manipulate relational databases. SQL was developed in the 1970s by IBM researchers Raymond Boyce and Donald
+        Chamberlin. It was originally called SEQUEL (Structured English Query Language) and was designed to retrieve and
+        manipulate data stored in IBM's early relational database systems. SQL has since become the standard language
+        for interacting with relational databases, and it is widely used in various industries for managing large
+        volumes of data.</p>
+
+    <h2>Why SQL is Used</h2>
+
+    <p>SQL is essential for interacting with relational databases, which organize data into tables. It allows users to
+        perform various operations such as querying data, updating records, and defining database structures. The
+        simplicity and efficiency of SQL make it the go-to language for database management. SQL is also highly
+        portable, meaning that queries written in SQL can be used across different database systems with minimal
+        modification.</p>
+
+    <h2>Sub-Languages of SQL</h2>
+
+    <p>SQL is composed of several sub-languages, each with a specific purpose:</p>
+
+    <ul>
+        <li><strong>Data Definition Language (DDL):</strong> This sub-language is used to define and modify the
+            structure of database objects, such as tables and indexes. Common DDL commands include <code>CREATE</code>,
+            <code>ALTER</code>, and <code>DROP</code>.
+        </li>
+        <li><strong>Data Manipulation Language (DML):</strong> This sub-language is used to retrieve and manipulate data
+            within the database. It includes commands like <code>SELECT</code>, <code>INSERT</code>,
+            <code>UPDATE</code>, and <code>DELETE</code>. These commands correspond to the CRUD (Create, Read, Update,
+            Delete) operations in database management.
+        </li>
+        <li><strong>Data Control Language (DCL):</strong> This sub-language is used to control access to data within the
+            database. It includes commands like <code>GRANT</code> and <code>REVOKE</code> that manage user permissions.
+        </li>
+    </ul>
+
+    <h3>Core DML Operations (CRUD)</h3>
+
+    <p>The core DML operations that correspond to CRUD are:</p>
+
+    <ul>
+        <li><strong>Create:</strong> <code>INSERT</code> - Adds new records to a table.</li>
+        <li><strong>Read:</strong> <code>SELECT</code> - Retrieves data from a table.</li>
+        <li><strong>Update:</strong> <code>UPDATE</code> - Modifies existing records in a table.</li>
+        <li><strong>Delete:</strong> <code>DELETE</code> - Removes records from a table.</li>
+    </ul>
+
+    <h2>Example: CRUD Operations in SQL</h2>
+
+    <p>Below is a simple example demonstrating the basic CRUD operations in SQL:</p>
+
+    <pre><code>-- Create a new table called 'Employees'
+CREATE TABLE Employees (
+    EmployeeID INT PRIMARY KEY,
+    FirstName VARCHAR(50),
+    LastName VARCHAR(50),
+    Department VARCHAR(50)
+);
+
+-- Insert a new record into the 'Employees' table
+INSERT INTO Employees (EmployeeID, FirstName, LastName, Department)
+VALUES (1, 'John', 'Doe', 'HR');
+
+-- Read data from the 'Employees' table
+SELECT * FROM Employees;
+
+-- Update a record in the 'Employees' table
+UPDATE Employees
+SET Department = 'Finance'
+WHERE EmployeeID = 1;
+
+-- Delete a record from the 'Employees' table
+DELETE FROM Employees
+WHERE EmployeeID = 1;
+</code></pre>
+
+    <p>This example demonstrates the basic SQL commands used to create a table, insert data into it, retrieve data,
+        update existing records, and delete records from the table. These operations form the foundation of database
+        management using SQL.</p>
+
+            </div> <!-- .card-body -->
+        </div> <!-- #crud -->
+    </div>
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
