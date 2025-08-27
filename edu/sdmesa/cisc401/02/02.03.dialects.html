@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL dialects</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!-- module 1 overview
+     <p>
+        <iframe 
+            src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/02/02.03.dialects.html?path=../../cisc401" 
+                width="100%" height="1000px" loading="lazy">
+        </iframe>
+     </p>
+    -->
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div class="container my-4 px-2">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+        <div class="card" id="crud">
+            <div class="card-header">Variations</div>
+            <div class="card-body">
+                <h1 class="mb-4">SQL Variations</h1>
+                <p>SQL, as a standard database language, has several variations due to the differing needs and priorities of
+                    various database management systems (DBMS). These variations often introduce unique features, extensions,
+                    and optimizations tailored to specific use cases or performance improvements. Despite these differences,
+                    most variations still adhere to the core SQL standard defined by the American National Standards Institute
+                    (ANSI) and the International Organization for Standardization (ISO). Here are some common variations and
+                    their unique characteristics:</p>
+
+                <h3 class="mt-4">Common Variations of SQL</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h5>MySQL</h5>
+                        <p><strong>Developer:</strong> Oracle Corporation (originally developed by MySQL AB)</p>
+                        <p><strong>Usage:</strong> Widely used in web applications due to its speed and reliability.</p>
+                        <p><strong>Features:</strong> Supports various storage engines, replication, and spatial data types.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>PostgreSQL</h5>
+                        <p><strong>Developer:</strong> PostgreSQL Global Development Group</p>
+                        <p><strong>Usage:</strong> Known for its advanced features and standards compliance, often used in
+                            applications requiring complex queries and data integrity.</p>
+                        <p><strong>Features:</strong> Extensible with custom data types and functions, support for JSON, XML,
+                            and full-text search.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>Microsoft SQL Server</h5>
+                        <p><strong>Developer:</strong> Microsoft</p>
+                        <p><strong>Usage:</strong> Commonly used in enterprise environments and applications integrated with
+                            other Microsoft technologies.</p>
+                        <p><strong>Features:</strong> Integration with .NET, advanced security features, and business
+                            intelligence tools.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>Oracle Database</h5>
+                        <p><strong>Developer:</strong> Oracle Corporation</p>
+                        <p><strong>Usage:</strong> Preferred for large-scale enterprise applications requiring robust
+                            performance, scalability, and security.</p>
+                        <p><strong>Features:</strong> Advanced indexing, partitioning, clustering, and support for PL/SQL
+                            (Oracle's procedural extension).</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>SQLite</h5>
+                        <p><strong>Developer:</strong> D. Richard Hipp</p>
+                        <p><strong>Usage:</strong> Lightweight and embedded in applications, often used in mobile devices and
+                            small-scale applications.</p>
+                        <p><strong>Features:</strong> Serverless, self-contained, zero-configuration.</p>
+                    </li>
+                </ul>
+
+                <h3 class="mt-4">Reasons for Differences</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h5>Performance Optimizations</h5>
+                        <p>Different DBMSs implement unique optimizations for query processing, indexing, and storage to improve
+                            performance for specific use cases.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>Feature Enhancements</h5>
+                        <p>Extensions to the standard SQL language to support advanced features such as full-text search,
+                            spatial data, and JSON processing.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>Compatibility and Integration</h5>
+                        <p>Adaptations to integrate seamlessly with other software and technologies, such as Microsoft's SQL
+                            Server with .NET and Oracle with Java.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h5>Vendor-specific Innovations</h5>
+                        <p>Proprietary features introduced by vendors to provide competitive advantages, such as Oracle's PL/SQL
+                            or PostgreSQL's custom data types.</p>
+                    </li>
+                </ul>
+
+                <h3 class="mt-4">Adherence to the Standard</h3>
+                <p>While these variations introduce unique features and extensions, they still adhere to the core ANSI/ISO SQL
+                    standard. This ensures that basic SQL operations and syntax remain consistent across different DBMSs,
+                    allowing for a level of portability and interoperability. However, the use of vendor-specific extensions may
+                    limit the portability of SQL code between different systems.</p>
+                <hr />
+                <p>The variations in SQL implementations by different DBMSs arise from the need to address specific requirements
+                    and optimizations. Despite these differences, the fundamental principles and operations of SQL remain
+                    consistent with the ANSI/ISO standard, ensuring a common foundation for database management across different
+                    platforms.</p>
+            </div>
+        </div> <!-- #crud -->
+    </div>
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
