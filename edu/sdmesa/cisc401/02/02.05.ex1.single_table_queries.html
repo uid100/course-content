@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 1: Single Table Queries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!-- 
+     <p>
+        <iframe 
+            src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/02/02.05.ex1.single_table_queries.html?path=../../cisc401" 
+                width="100%" height="1000px" loading="lazy">
+        </iframe>
+     </p>
+    -->
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div class="container my-4 px-2">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+        <div class="card" id="select">
+            <div class="card-header">Exercise 1: Single Table Queries</div>
+            <div class="card-body">
+                <p>Download and run the script: <a id="149229461" class="instructure_file_link inline_disabled" title="Link" href="https://sdccd.instructure.com/courses/2490146/files/152937530?wrap=1" target="_blank" rel="noopener" data-api-endpoint="https://sdccd.instructure.com/api/v1/courses/2490146/files/152937530" data-api-returntype="File">MedStaff.sql</a> to create the table in your database server.</p>
+                <p>Install and connect to your local database server and run the MedStaff script to generate the table.</p>
+                <ul>
+                    <li>Write the .sql scripts to answer these <strong>single table query </strong>questions.</li>
+                    <li>Upload the script (text file), with a .sql extension.</li>
+                    <li>Include each question as a comment in the script</li>
+                </ul>
+                <p>&nbsp;</p>
+                <ol style="list-style-type: decimal;">
+                    <li>-- List all the Administrators from the table</li>
+                    <li>-- Return a List all the Doctors from the table whose first name begins with an 'A' or a 'B'</li>
+                    <li>-- Display the city and state where Sacred Heart Hospital is located</li>
+                    <li>-- Display the list of show title references the name of the subject hospital (hint: not one in Seattle)</li>
+                    <li>-- List the doctors in the table are listed as surgical specialties in California?</li>
+                    <li>-- How many records are listed as 'Nurse'?</li>
+                    <li>-- How many doctors in the table are listed as surgical specialties in California?</li>
+                    <li>-- How many different specialties are listed in the table?</li>
+                    <li>-- What is the largest number of nurses listed at any single hospital?</li>
+                    <li>-- List the hospitals in alphabetical order</li>
+                </ol>
+                <p>Answer each of these with the correct query, not with the data itself.&nbsp;</p>
+            </div>
+        </div> <!-- #select -->
+    </div>
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
