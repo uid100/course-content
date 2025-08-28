@@ -1,0 +1,113 @@
+{
+  "canvas": {
+    "server": "https://courses.sfcollege.edu",
+    "coursePath": "/courses/493858",
+    "*coursePath_2025_Fall": "/courses/493858"
+  },
+  "college": {
+    "name": "Santa Fe College",
+    "logoPath": "/course-content/images/santafe-college-logo.png",
+    "website": "https://www.sfcollege.edu/",
+    "academicCalendar": "https://www.sfcollege.edu/registrar/calendar-and-critical-dates.html"
+  },
+  "course": {
+    "courseNumber": "COP 4813",
+    "courseTitle": "Web Application Programming",
+    "units": 3,
+    "coverImage": "/course-content/images/webdev.png",
+    "description": [
+      "This course is designed to teach students advanced concepts in developing ASP.NET Core MVC, database driven web apps using HTML/CSS and C# in the Visual Studio IDE.",
+      "Topics covered include:",
+      "- Endpoint routing, Razor views",
+      "- Model binding",
+      "- Data validation",
+      "- Dependency injection",
+      "- Bootstrap for responsive design",
+      "- EF (Entity Framework) Core for database handling"
+    ],
+    "*prerequisites": "COP2822, CTS2445, CTS2552 each with a grade of C or better",
+    "prerequisites": "COP2822 Internet Programming 1, CTS2445 SQL Programming, CTS2552 Object-Oriented Programming 2",
+    "section": {
+      "sectionNumber": "0M1",
+      "courseId": "COP4813_0M1_F25",
+      "term": "Fall 2025",
+      "startDate": "2025-08-25T05:00:00",
+      "endDate": "2025-12-12T05:00:00",
+      "gradesDue": "2025-12-15T05:00:00",
+      "schedule": {
+        "day": "n/a",
+        "time": "",
+        "location": "Online"
+      }
+    },
+    "outcomes": [
+      {
+        "id": "CLO #1",
+        "outcome": "demonstrate practical applications of software engineering methodologies and practices using C# and the MVC design pattern"
+      }
+    ],
+    "objectives": [
+      { "id": "LO #1", "objective": "Develop a single-page MVC web app" },
+      { "id": "LO #2", "objective": "Develop a data driven MVC web app" },
+      {
+        "id": "LO #3",
+        "objective": "Use Bootstrap to develop a responsive MVC web app"
+      },
+      {
+        "id": "LO #4",
+        "objective": "Use Bootstrap to develop a responsive MVC web app"
+      },
+      { "id": "LO #5", "objective": "Test and debug a MVC web app" },
+      {
+        "id": "LO #6",
+        "objective": "Work with controllers and routing, session state and cookies, model binding, and razor views"
+      },
+      {
+        "id": "LO #7",
+        "objective": "Use EF Core to work with data in a database"
+      }
+    ],
+    "textbook": {
+      "title": "Murach’s ASP.NET Core MVC, 2nd Edition",
+      "author": "Mary Delamater and Joel Murach",
+      "edition": "2nd Ed",
+      "isbn": "978-1-943873-02-9",
+      "imagePath": "/course-content/images/Murach_MVC2.jpg"
+    },
+    "contact": {
+      "officeHours": {
+        "location": "Remote",
+        "schedule": "Wed 12P - 2P EST",
+        "zoomLink": "https://sfcollege.zoom.us/j/92446820828?pwd=NHNrYlNaZTBwUXk3Zy9BWnEzYzEydz09"
+      },
+      "discordLink": {
+        "label": "Code Bytes",
+        "url": "https://discord.gg/MpHjV4qgxZ"
+      },
+      "about": "preferred method of contact is via email. I will respond to emails within 24 hours on weekdays. Published office hours are times when I will be available on Zoom for real-time communication. If you need to meet at a different time, please email me to schedule an appointment.\nDiscord channels are also available for anytime communication with me and your classmates."
+    },
+    "requiredMaterialsPath": "/course-content/edu/santafe/cop4813/required-materials.html",
+    "recommendedMaterialsPath": "/course-content/edu/santafe/cop4813/recommended-materials.html",
+    "gradingDetailsPath": "/course-content/edu/santafe/cop4813/grading-details.html",
+    "accommodationsPath": "/course-content/edu/santafe/cop4813/accommodations.html",
+    "topicOutlinePath": "/course-content/edu/santafe/cop4813/outline.html"
+  },
+  "instructor": {
+    "firstName": "Dan",
+    "lastName": "Sullivan",
+    "email": "daniel.sullivan@sfcollege.edu",
+    "imagePath": "/course-content/images/Dan_20070717.jpg",
+    "about": "Over 30 years professional experience as a software engineer and program manager. I have worked for large and small companies.",
+    "url": "/course-content/common/instructor_more.html"
+  },
+  "templates": {
+    "syllabus": {
+      "title": "<p>&nbsp;</p><p>IT/E PROGRAMS</p><p>SYLLABUS</p>",
+      "path": "/course-content/edu/santafe/ite_syllabus.html"
+    },
+    "policies": {
+      "title": "Department Policies",
+      "path": "/course-content/edu/santafe/ite-policies.html"
+    }
+  }
+}
