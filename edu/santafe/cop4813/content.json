@@ -18,12 +18,7 @@
     "description": [
       "This course is designed to teach students advanced concepts in developing ASP.NET Core MVC, database driven web apps using HTML/CSS and C# in the Visual Studio IDE.",
       "Topics covered include:",
-      "- Endpoint routing, Razor views",
-      "- Model binding",
-      "- Data validation",
-      "- Dependency injection",
-      "- Bootstrap for responsive design",
-      "- EF (Entity Framework) Core for database handling"
+      "- Endpoint routing, Razor views<br> - Model binding<br> - Data validation<br> - Dependency injection<br> - Bootstrap for responsive design<br> - EF (Entity Framework) Core for database handling"
     ],
     "*prerequisites": "COP2822, CTS2445, CTS2552 each with a grade of C or better",
     "prerequisites": "COP2822 Internet Programming 1, CTS2445 SQL Programming, CTS2552 Object-Oriented Programming 2",
