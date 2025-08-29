@@ -428,19 +428,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
             const syllabusTemplate = document.getElementById("syllabus-template");
             // check to see if the item is on the page.
-            if (syllabusTemplate) {
-                // check to see if the syllabus template path is defined
-                if (syllabusTemplatePath) {
-                    syllabusTemplate.href = syllabusTemplatePath + "?path=" + getQueryParam('path');
-                }
-                else {
-                    syllabusTemplate.setAttribute("hidden", true);
-                }
+            // check to see if the syllabus template path is defined
+            if (syllabusTemplate && syllabusTemplatePath) {
+                syllabusTemplate.href = syllabusTemplatePath + "?path=" + getQueryParam('path');
+            }
+            else {
+                syllabusTemplate.setAttribute("hidden", true);
             }
 
             console.log("policies...");
             const deptPolicies = document.getElementById("policies-template");
-            if (deptPolicies) {                
+            if (deptPolicies && policiesTemplatePath) {                
                 deptPolicies.href = policiesTemplatePath;
             }
             else {
