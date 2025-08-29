@@ -433,7 +433,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 syllabusTemplate.href = syllabusTemplatePath + "?path=" + getQueryParam('path');
             }
             else {
-                syllabusTemplate.setAttribute("hidden", true);
+                const li = syllabusTemplate.closest("li");
+                if (li) { li.setAttribute("hidden", true); }
             }
 
             console.log("policies..." + policiesTemplatePath);
@@ -442,7 +443,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 deptPolicies.href = policiesTemplatePath;
             }
             else {
-                deptPolicies.setAttribute("hidden", true);
+                const li = deptPolicies.closest("li");
+                if (li) { li.setAttribute("hidden", true); }
             }
             const onlineClassesLink = document.getElementById("online-classes");
             if (onlineClassesLink) {
