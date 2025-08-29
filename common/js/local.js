@@ -422,7 +422,7 @@ document.addEventListener("DOMContentLoaded", () => {
             loadContent("accommodations-details", accommodationsPath);
 
             // syllabus link
-            console.log("syllabus...");
+            console.log("syllabus..." + syllabusTemplatePath);
             const syllabusLink = document.getElementById("syllabus-button");
             if (syllabusLink) { syllabusLink.href = coursePath + "/assignments/syllabus"; }
 
@@ -436,7 +436,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 syllabusTemplate.setAttribute("hidden", true);
             }
 
-            console.log("policies...");
+            console.log("policies..." + policiesTemplatePath);
             const deptPolicies = document.getElementById("policies-template");
             if (deptPolicies && policiesTemplatePath) {                
                 deptPolicies.href = policiesTemplatePath;
