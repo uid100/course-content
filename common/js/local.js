@@ -427,19 +427,24 @@ document.addEventListener("DOMContentLoaded", () => {
             if (syllabusLink) { syllabusLink.href = coursePath + "/assignments/syllabus"; }
 
             const syllabusTemplate = document.getElementById("syllabus-template");
+            // check to see if the item is on the page.
             if (syllabusTemplate) {
-                // syllabusTemplate.href = "https://uid100.github.io" + syllabusTemplatePath
-                syllabusTemplate.href = syllabusTemplatePath + "?path=" + getQueryParam('path');
-            }
-            else {
-                // set element to hidden
-                syllabusTemplate.setAttribute("hidden", true);
+                // check to see if the syllabus template path is defined
+                if (syllabusTemplatePath) {
+                    syllabusTemplate.href = syllabusTemplatePath + "?path=" + getQueryParam('path');
+                }
+                else {
+                    syllabusTemplate.setAttribute("hidden", true);
+                }
             }
 
             console.log("policies...");
             const deptPolicies = document.getElementById("policies-template");
-            if (deptPolicies) {
+            if (deptPolicies) {                
                 deptPolicies.href = policiesTemplatePath;
+            }
+            else {
+                deptPolicies.setAttribute("hidden", true);
             }
             const onlineClassesLink = document.getElementById("online-classes");
             if (onlineClassesLink) {
