@@ -144,7 +144,7 @@
     "about": "Over 30 years professional experience as a software engineer and program manager. I have worked for large and small companies.",
     "url": "/course-content/common/instructor_more.html"
   },
-  "templates": {
+  "*templates": {
     "syllabus": {
       "title": "<p>&nbsp;</p><p>Cuyamaca College</p><p>SYLLABUS</p>",
       "path": "/course-content/edu/cuyamaca/syllabus.html"
