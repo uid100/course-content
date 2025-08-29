@@ -167,6 +167,13 @@ header h4 {
     margin: 10px 0;
 }
 
+.boxed-paragraph {
+    margin: 0 40px;              /* offset left & right */
+    border: 1px solid black;     /* border */
+    border-radius: 10px;         /* rounded corners */
+    padding: 20px;               /* space inside box */
+}
+
 .shadow {
     margin: 50px 15% 50px 15%;
     background-color: #D8C3A5;
