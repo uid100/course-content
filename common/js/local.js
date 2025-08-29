@@ -431,10 +431,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 // syllabusTemplate.href = "https://uid100.github.io" + syllabusTemplatePath
                 syllabusTemplate.href = syllabusTemplatePath + "?path=" + getQueryParam('path');
             }
-            // else {
-            //     // set element to hidden
-            //     syllabusTemplate.setAttribute("hidden", true);
-            // }
+            else {
+                // set element to hidden
+                syllabusTemplate.setAttribute("hidden", true);
+            }
 
             console.log("policies...");
             const deptPolicies = document.getElementById("policies-template");
