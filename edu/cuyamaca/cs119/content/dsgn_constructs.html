@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!-- programming constructs
+     <p>
+        <iframe 
+            src="https://uid100.github.io/course-content/edu/cuyamaca/cs119/content/mod_03.html?path=../../../cuyamaca/cs119" 
+                width="100%" height="1000px" loading="lazy">
+        </iframe>
+     </p>
+    -->
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="syllabus-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+        <h1>Module Overview</h1>
+        <div class="container my-4 px-2">
+            <div class="card">
+                <div class="card-header">Review</div>
+                <div class="card-body">
+                    <h5 id="chapterTitle">3 Basic Programming Constructs</h5>
+                    <p>
+                        Programs are designed using common building blocks known as programming constructs.
+                        These programming constructs form the basis for all programs.
+                    </p>
+                    <p>
+                        These are the three structures:
+                    </p>
+                    <ul style="margin:40px;">
+                        <li>Sequence</li>
+                        <li>Selection</li>
+                        <li>Iteration</li>
+                    </ul>
+                    <a 
+                        href="https://www.bbc.co.uk/bitesize/guides/znh6pbk/revision/1" 
+                        target="_blank" rel="noopener noreferrer">
+                            BBC Bitesize - Programming Constructs</a>
+                </div> <!-- .card-body -->
+            </div> <!-- .card -->
+            <div class="card">
+                <div class="card-header">Sequence</div>
+                <div class="card-body">
+                    <p>
+                        The sequence structure is the simplest of the three programming constructs. It is simply a series of
+                        instructions that are executed in the order in which they are written. This is the default mode of
+                        execution for most programming languages.
+                    </p>
+                    <p>
+                        Example:
+                    </p>
+                    <pre><code>print("Hello, World!")
+name = input("What is your name? ")
+print("Nice to meet you, " + name)</code></pre>
+                </div> <!-- .card-body -->
+            </div> <!-- .card -->
+            <div class="card">
+                <div class="card-header">Selection</div>
+                <div class="card-body">
+                    <p>
+                        The selection structure, also known as a decision structure, allows the program to choose between
+                        two or more paths of execution based on a condition. This is typically implemented using if-else
+                        statements.
+                    </p>
+                    <p>
+                        Example:
+                    </p>
+                    <pre><code>age = int(input("Enter your age: "))
+if age &gt;= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")</code></pre>
+                </div> <!-- .card-body -->
+            </div> <!-- .card -->
+            <div class="card">
+                <div class="card-header">Iteration</div>
+                <div class="card-body">
+                    <p>
+                        The iteration structure, also known as a loop, allows the program to repeat a block of
+                        instructions multiple times until a certain condition is met. Common types of loops include for
+                        loops and while loops.
+                    </p>
+                    <p>
+                        Example:
+                    </p>
+                    <pre><code>for i in range(5):
+    print("This is iteration number", i)</code></pre>
+                </div> <!-- .card-body -->
+            </div> <!-- .card -->
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+            <p style="text-align: center; font-style: italic;">
+                <small>Use the [Next >] button to continue.</small>
+            </p>
+        </div> <!-- #footer -->
+    </div> <!-- #syllabus-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
