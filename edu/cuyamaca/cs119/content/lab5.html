@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!--
+      <p><iframe src="https://uid100.github.io/course-content/edu/cuyamaca/cs119/content/lab5.html?path=../../../cuyamaca/cs119" 
+          width="100%" height="1000px" loading="lazy"></iframe></p>
+    -->
+</head>
+
+<body>
+    <div id="top"></div>
+    <div class="content-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <div id="lab4">
+            <h2>Lab 5: Arrays and Looping</h2>
+            <div class="card mb-3" id="introduction">
+                <div class="card-header">
+                    <a 
+                        class="btn btn-link text-decoration-none" 
+                        data-bs-toggle="collapse" href="#introduction" role="button" 
+                        aria-expanded="false" aria-controls="introduction">Introduction
+                    </a>
+                </div>
+                <div class="card-body" id="introduction" class="collapse show">
+                    <p>
+                        This lab provides an opportunity to apply the concepts and principles 
+                        presented in chapter 4 of the PLD text.
+                    </p>
+                    <p>
+                        You have the choice of doing either pseudocode or a flowchart for each 
+                        exercise. In the guided exercises, we will mix it up and do the first 
+                        exercise with a flow chart and the second with pseudocode.
+                    </p>
+                    <div id="topics" style="padding: 40px;">
+                        <ul>Topics:
+                            <li>Creating applications in Python.</li>
+                            <li>Python repetition (loop) structures.</li>
+                            <li>Selection structures.</li>
+                            <li>Arrays and lists.</li>
+                            <li>Parallel arrays.</li>
+                            <li>Searching an array for a value.</li>
+                            <li>Random numbers.</li>
+                        </ul>
+                    </div> <!-- #topics -->
+                    <p class="boxed-paragraph">
+                        Be sure to check the Rubric to understand the grading criteria for this lab and to ensure 
+                        you don't forget to include everything.
+                    </p>
+                    <p style="font-style: italic; text-align: center;">
+                        Be sure to expand all sections below to see all instructions.
+                    </p>
+                </div> <!-- .card-body -->
+            </div> <!-- #introduction -->
+            <div class="card mb-3" id="ex-1">
+                <div class="card-header">
+                    <a 
+                        class="btn btn-link text-decoration-none" 
+                        data-bs-toggle="collapse" href="#collapseEx1" role="button" 
+                        aria-expanded="false" aria-controls="collapseEx1">
+                        Exercise 1 - Zip Code Lookup
+                    </a>
+                </div>
+                    <div id="collapseEx1" class="collapse">
+                    <div class="card-body">
+                        <h3>Exercise 1 (Guided) Zip Code Lookup</h3>
+                        <div id="ex1-intro">
+                            <h4>Description</h4>
+                            <p>
+                                The first case study is taken from page 199 in the PLD text. We are only going 
+                                to do the part where the user enters a zip code. If the zip code is found, the 
+                                program displays the city and state. This is something we’ve seen and done while 
+                                ordering items on a web site or filling out an online form.
+                            </p>
+                            <p>
+                                We are going to focus mainly on things that are new so there won’t be a whole 
+                                lot of detail on creating a program file in Python, etc. In this case, we will 
+                                focus on creating arrays, coding an efficient search loop, and accessing the 
+                                elements of an array.
+                            </p>
+                            <p>
+                                Analysis: The user enters a zip code. Search the array using a loop. If the zip 
+                                code is found, return the corresponding city and state from the parallel arrays. 
+                                Quick review from the book: If we search an array and find a match at subscript n, 
+                                we can get the corresponding values from the parallel arrays at subscript n as 
+                                well. We can do either pseudocode or a flowchart.
+                            </p>
+                            <p>
+                                Sample flowchart:
+                            </p>
+                            <figure style="text-align: center;">
+                            <img src="/course-content/images/pylab/fig5-1-flowchart.png" 
+                                alt="fig.1 - Zip Code search - Flowchart" width="50%"/>
+                            <figcaption>
+                                fig.1 - Zip Code search - Flowchart
+                            </figcaption>
+                            </figure>
+                            <p>&nbsp;</p>
+                            <p>
+                                You can do this in pseudocode if you prefer. If you decide to create this 
+                                or any other drawings, don't forget to export your work as a .jpg image 
+                                to turn it in.
+                            </p>
+                            <p>
+                                Note in the loop condition, we have 2 conditions: one to stay in the bounds 
+                                of the array and the other is a search flag called found. Note the found 
+                                flag is initially set false and gets set to true if we get a match. This 
+                                makes our search more efficient. Why continue searching for something if 
+                                we already found it? To avoid a selection structure after the loop, we can 
+                                initialize our city and state variables to something like “NOT FOUND” when 
+                                we declare them.
+                            </p>
+                            <p>
+                                To save time and make things a little easier, we can do just 4 zip codes 
+                                and the corresponding cities and states, but this code could be expanded 
+                                to much larger lists (arrays).
+                            </p>
+                        </div> <!-- #ex1-intro -->
+                        <p>&nbsp;</p>
+                        <div id="ex1-code">
+                            <h2 class="alert">Code</h2>
+                            <h3>Python Implementation</h3>
+                            <p>
+                                In IDLE or another IDE, create a new file called <strong>ZipSearch.py</strong>.
+                                Be sure to save in your <code>Lab05</code> folder.
+                            </p>
+                            <figure style="text-align: center;">
+                                <img src="/course-content/images/pylab/05_01_code.png" 
+                                    alt="Zip Code Parallel Array Search Code" />
+                                <figcaption>Zip Code Parallel Array Search Code</figcaption>
+                            </figure>
+                            <p>Be sure to test with both valid and invalid zip codes.</p>
+                            <figure style="text-align: center;">
+                                <img src="/course-content/images/pylab/zipsearchtest.jpg" 
+                                    alt="invalid user entry Output" />
+                                <figcaption>Test for invalid user entry</figcaption>
+                            </figure>
+                            <p>
+                                Notes on the code above:
+                                <ul>
+                                    <li>Initializing city to “NOT FOUND” and state to a blank string 
+                                        eliminates need for a selection structure after the loop.</li>
+                                    <li>Note the compound condition in the while loop and use of the 
+                                        Python not operator.</li>
+                                    <li>Watch your indentation closely with Python loops and selection 
+                                        structures.</li>
+                                    <li>Be sure to code the colon (:) after loop and selection structure 
+                                        conditions.</li>
+                                    <li>Be sure to test with both valid and invalid zip codes.</li>
+                                    <li>These solutions must be done using parallel arrays, not using 
+                                        dictionaries or other data structures and extension methods.
+                                    </li>
+                                </ul>
+                            </p>
+                            <p style="font-style: italic; text-align: center;">
+                                Go to Exercise 2!
+                            </p>
+
+                        </div> <!-- #ex1-code -->
+                        <a href="#ex-1" class="btn btn-primary">Back to Top <i class="fa fa-arrow-up"></i></a>
+                    </div> <!-- .card-body -->
+                </div> <!-- #collapseEx1 -->
+            </div> <!-- #ex-1 -->
+            <div class="card mb-3" id="ex-2">
+                <div class="card-header">
+                    <a 
+                    class="btn btn-link text-decoration-none" 
+                    data-bs-toggle="collapse" href="#collapseEx2" role="button" 
+                    aria-expanded="false" aria-controls="collapseEx2">
+                    Exercise 2 - Investment Growth
+                    </a>
+                </div>
+                <div id="collapseEx2" class="collapse">
+                    <div class="card-body">
+                        <h3>Investment Growth</h3>
+                        <p>
+                            Create a Python application that will allow the user to calculate the future 
+                            value of an investment. The user will enter a monthly amount, annual interest 
+                            rate and number of years for the investment.</p>
+                        <p>
+                            You will code a loop to calculate the future value and display the value of 
+                            each month and then display the final value.</p>
+                        <p>Some key formulas and free Python code snippets:</p>
+                        <p>
+                            Note that the term is in years but we need to show the value of each month. 
+                            So a 5 year savings account would be 60 months.</p>
+                        <p><code>months = years * 12</code></p>
+                        <p>
+                            Interest rates are a percentage and entered as 3.25 (i.e., for 3.25%), 1.125, 
+                            etc. This is also an annual percentage rate (APR). We need to divide this rate 
+                            by 100 and then by 12 to get the monthly percentage rate.</p>
+                        <p><code>monthlyIntRate = annualIntRate / 100 /12</code></p>
+                        <p>
+                            The futureValue variable is an accumulator as it accumulates value as the loop 
+                            executes.</p>
+                        <p><code>futureValue = (futureValue + monthlyAmount) * (1 + monthlyRate)</code></p>
+                        <hr />
+                        <h3>Steps</h3>
+                        <ol>
+                            <li>Create either a flowchart or pseudocode to document your design. This is worth 
+                                points and please complete this before attempting to write code.</li>
+                            <li>Create a new file called <code>Lab4FutureValue.py</code> in your 
+                                <code>\Labs\Lab04</code> folder.</li>
+                            <li>Code the application. Some of the code is given. The parts that are blurred out 
+                                you get to code!<br />
+                                <figure style="text-align: center;">
+                                    <img src="/course-content/images/pylab/investment-code.png" 
+                                        alt="investment code snippet" />
+                                    <figcaption>Fig.16 Investment Code Snippet</figcaption>
+                                </figure>
+                                <p>
+                                    At about line 17, there is a line that assigns a string <code>msg</code> to:<br />
+                                    <code>"month: {0:3d} FV: ${1:.2f} Interest ${2:.2f}"</code><br />note those are 
+                                    <em>curly braces</em> "{}", not parentheses "()"</p>
+                                <p>
+                                    Specifically this string as used for the <code>.format()</code> command used below.</p>
+                            </li>
+                            <li>Test your application using the following values:
+                                <ul>
+                                    <li>Monthly Amount = 100</li>
+                                    <li>Interest Rate = 6</li>
+                                    <li>Years = 5</li>
+                                </ul>
+                                Your result should be somewhere around $7011.88. Results should be reasonably close (+/- 2%). 
+                                Don&rsquo;t worry if your results have a large number of decimal places. Number formatting is 
+                                optional for this exercise.
+                            </li>
+                            <li>
+                                Calculate and display the total interest earned. After the loop, add a line to display the total 
+                                interest earned.</li>
+                        </ol>
+                        <a href="#ex-2" class="btn btn-primary">Back to Top <i class="fa fa-arrow-up"></i></a>
+
+                    </div><!-- .card-body -->
+                </div> <!-- #collapseEx2 -->
+            </div> <!-- #ex-2 -->
+            <div class="card mb-3" id="ex-3">
+                <div class="card-header">
+                    <a 
+                    class="btn btn-link text-decoration-none" 
+                    data-bs-toggle="collapse" href="#collapseEx3" role="button" 
+                    aria-expanded="false" aria-controls="collapseEx3">
+                    Ex.3 - Heads or Tails?
+                </div>
+                <div id="collapseEx3" class="collapse">
+                    <div class="card-body">
+                        <p>
+                            In this exercise, you will get some experience with the random number generator 
+                            in Python. Random numbers are heavily used in many games and simulations for 
+                            things like dice rolls, dealing cards, flipping a coin, etc.</p>
+                        <p>
+                            You will build an application that will flip a coin 20 times, keep a running 
+                            total of heads and tails.</p>
+                        <p>
+                            For each coin toss, display the result (heads or tails).</p>
+                        <p>
+                            After the last toss, you will display</p>
+                        <ul>
+                            <li>total number of heads</li>
+                            <li>total number of tails</li>
+                            <li>and the percentage of each</li>
+                        </ul>
+                        <p>&nbsp;</p>
+                        <hr />
+                        <h3>Steps</h3>
+                        <ol>
+                            <li>Complete your <strong>Program Design</strong>. You may create a flowchart or 
+                                you may use pseudocode to develop your logic. This is worth points and please 
+                                complete this before attempting to write code!</li>
+                            <li>Create a new Python file called <code>HeadsTails.py</code></li>
+                            <li>Code the application. Be sure to import random. A screen shot of a partially 
+                                coded application is given here to get you started:<br />
+                                <figure style="text-align: center;">
+                                    <img src="/course-content/images/pylab/heads-tails-code.png" 
+                                        alt="heads or tails code snippet" />
+                                    <figcaption>Fig.17 Heads or Tails Code Snippet</figcaption>
+                                </figure>
+                            </li>
+                            <li>Test your application.</li>
+                        </ol>
+                        <a href="#ex-3" class="btn btn-primary">Back to Top <i class="fa fa-arrow-up"></i></a>
+                    </div><!-- .card-body -->
+                </div> <!-- #collapseEx3 -->
+            </div> <!-- #ex-3 -->
+        </div> <!-- #lab4 -->
+    </div> <!-- #content-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
