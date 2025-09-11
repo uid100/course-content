@@ -1,27 +1,115 @@
-<span id="course-id" style="display: none;">2475348</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entity-Relationship Diagram (ERD)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!-- 
+     <p>
+        <iframe 
+            src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/04/04_03_ERD.html?path=../../cisc401" 
+                width="100%" height="1000px" loading="lazy">
+        </iframe>
+     </p>
+    -->
+</head>
 
-<!-- ##### Local Course Links ##### -->
+<body>
+    <div id="top"> </div>
+    <div class="container my-4 px-2">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
 
-<div id="page" style="background-color: #5CB3FF; ">
-    <div id="page-header" class="d-flex flex-column-reverse flex-md-row" style="margin-left: auto; margin-right: 0;">
-        <div id="course-image" class="p-3" style="float:right;">
-            <figure style="text-align: center;">
-                <a style="color: navy;" href="/courses/2475348/pages/start">
-                    <img style="display: block; margin-left: auto; margin-right: auto;"
-                        src="https://uid100.github.io/course-content/images/server_room.jpg" alt="main course image"
-                        width="100" height="100" />
-                    <figcaption style="text-align: center;">home</figcaption>
-                </a>
-            </figure>
-        </div> <!-- #course-image -->
-    </div> <!-- #page-header -->
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
 
+        <div class="card mb-4">
+            <div class="card-header">Database Design</div>
+            <div class="card-body">
+                <h1>Chen ERD</h1>
+                <p>A <strong>Chen ERD</strong> refers to an Entity-Relationship Diagram (ERD) style that follows the methodology
+                    proposed by Peter Chen in 1976. It is one of the earliest and most widely used models for ERDs. Chen's ERD
+                    notation is used to visually represent the relationships between data entities in a database.</p>
 
-    <h3 class="alert alert-info">Database Design</h3>
-    <div id="overview-link" class="flex-grow-1 d-flex justify-content-center align-items-center"
-        style="height: 90vh; background-color: aliceblue;">
-        <iframe src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/04/chen_erd.html" class="mt-4 mb-4"
-            allowfullscreen style="width: 90%; height: 90%; margin:auto; padding:20px;"></iframe>
-    </div> <!-- #page-link -->
+                <h2>Key Elements in Chen's ERD:</h2>
+                <ul>
+                    <li><strong>Entities</strong>:
+                        <ul>
+                            <li>Represented as rectangles.</li>
+                            <li>These are objects or things in the system that have a distinct existence (e.g., <em>Person</em>,
+                                <em>Department</em>).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Attributes</strong>:
+                        <ul>
+                            <li>Represented as ovals and connected to their entity with lines.</li>
+                            <li>They describe properties or characteristics of an entity (e.g., <em>Name</em>, <em>Age</em>,
+                                <em>Salary</em>).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Relationships</strong>:
+                        <ul>
+                            <li>Represented as diamonds.</li>
+                            <li>Describe how two or more entities are related (e.g., <em>Works in</em>, <em>Manages</em>).</li>
+                            <li>Can show cardinality (e.g., one-to-many, many-to-many).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Primary Key</strong>:
+                        <ul>
+                            <li>The unique identifier for an entity, often underlined in the entity's attribute list.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Cardinality</strong>:
+                        <ul>
+                            <li>Expressed as symbols near the entities (e.g., "1" for one-to-one, "M" for many).</li>
+                        </ul>
+                    </li>
+                </ul>
 
-</div> <!-- #page -->
+                <h3>Example:</h3>
+                <p>In a simple Chen ERD, if you have an entity <strong>Doctor</strong> related to another entity
+                    <strong>Hospital</strong> through a relationship <strong>Works At</strong>, it would look like this:</p>
+                <ul>
+                    <li><strong>Doctor</strong> (Entity) ⟶ <strong>Works At</strong> (Relationship) ⟶ <strong>Hospital</strong>
+                        (Entity)</li>
+                    <li>Attributes like <em>DoctorID</em>, <em>DoctorName</em>, etc., are represented as ovals around the
+                        <strong>Doctor</strong> entity. Similarly, <em>HospitalName</em>, <em>Location</em>, etc., would be
+                        attributes of <strong>Hospital</strong>.</li>
+                </ul>
+
+                <p>Chen’s ERD notation is particularly detailed and often used in academic contexts due to its ability to clearly
+                    express complex relationships.</p>
+            </div> <!-- .card-body -->
+        </div> <!-- .card -->
+    </div> <!-- .container -->
+
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
