@@ -48,6 +48,7 @@
 
         <div id="lab5">
             <h2>Lab 5: Arrays and Looping</h2>
+
             <div class="card mb-3">
                 <div class="card-header">
                     <a 
@@ -86,6 +87,7 @@
                     </p>
                 </div> <!-- .card-body -->
             </div> <!-- #introduction -->
+
             <div class="card mb-3" id="ex-1">
                 <div class="card-header">
                     <a 
@@ -195,76 +197,88 @@
                     </div> <!-- .card-body -->
                 </div> <!-- #collapseEx1 -->
             </div> <!-- #ex-1 -->
+
             <div class="card mb-3" id="ex-2">
                 <div class="card-header">
                     <a 
                     class="btn btn-link text-decoration-none" 
                     data-bs-toggle="collapse" href="#collapseEx2" role="button" 
                     aria-expanded="false" aria-controls="collapseEx2">
-                    Exercise 2 - Investment Growth
+                    Exercise 2 - (Guided) Dice Game
                     </a>
                 </div>
                 <div id="collapseEx2" class="collapse">
                     <div class="card-body">
-                        <h3>Investment Growth</h3>
+                        <h2>Exercise 2</h2>
+                        <h3>(Guided) Dice Game</h3>
                         <p>
-                            Create a Python application that will allow the user to calculate the future 
-                            value of an investment. The user will enter a monthly amount, annual interest 
-                            rate and number of years for the investment.</p>
+                            This one is for all you aspiring game programmers to give you a taste 
+                            and appreciation of what it&rsquo;s like to program even a simple computer 
+                            game. We&rsquo;re going to design and code a dice game or scaled down 
+                            version of Yahtzee if you will. This exercise is based largely off exercise 
+                            15 on page 197 of the PLD text. Here&rsquo;s how it will work:
+                        </p>
+                        <p>&nbsp;</p>
+                        <ul>
+                            <li>Player (person) against the computer.</li>
+                            <li>Each player will roll 5 dice.</li>
+                            <li>Find highest dice combination rolled such as 5 of a kind, 4 of a kind,
+                                 3 of a kind, or pair.</li>
+                            <li>Display value of each roll.</li>
+                            <li>To keep things simple for now, play 1 round.</li>
+                        </ul>
                         <p>
-                            You will code a loop to calculate the future value and display the value of 
-                            each month and then display the final value.</p>
-                        <p>Some key formulas and free Python code snippets:</p>
-                        <p>
-                            Note that the term is in years but we need to show the value of each month. 
-                            So a 5 year savings account would be 60 months.</p>
-                        <p><code>months = years * 12</code></p>
-                        <p>
-                            Interest rates are a percentage and entered as 3.25 (i.e., for 3.25%), 1.125, 
-                            etc. This is also an annual percentage rate (APR). We need to divide this rate 
-                            by 100 and then by 12 to get the monthly percentage rate.</p>
-                        <p><code>monthlyIntRate = annualIntRate / 100 /12</code></p>
-                        <p>
-                            The futureValue variable is an accumulator as it accumulates value as the loop 
-                            executes.</p>
-                        <p><code>futureValue = (futureValue + monthlyAmount) * (1 + monthlyRate)</code></p>
+                            Random numbers are used in games for dice rolls, dealing cards, etc. so 
+                            that&rsquo;s what will be used for the dice rolls.</p>
                         <hr />
-                        <h3>Steps</h3>
-                        <ol>
-                            <li>Create either a flowchart or pseudocode to document your design. This is worth 
-                                points and please complete this before attempting to write code.</li>
-                            <li>Create a new file called <code>Lab4FutureValue.py</code> in your 
-                                <code>\Labs\Lab04</code> folder.</li>
-                            <li>Code the application. Some of the code is given. The parts that are blurred out 
-                                you get to code!<br />
-                                <figure style="text-align: center;">
-                                    <img src="/course-content/images/pylab/investment-code.png" 
-                                        alt="investment code snippet" />
-                                    <figcaption>Fig.16 Investment Code Snippet</figcaption>
-                                </figure>
-                                <p>
-                                    At about line 17, there is a line that assigns a string <code>msg</code> to:<br />
-                                    <code>"month: {0:3d} FV: ${1:.2f} Interest ${2:.2f}"</code><br />note those are 
-                                    <em>curly braces</em> "{}", not parentheses "()"</p>
-                                <p>
-                                    Specifically this string as used for the <code>.format()</code> command used below.</p>
-                            </li>
-                            <li>Test your application using the following values:
-                                <ul>
-                                    <li>Monthly Amount = 100</li>
-                                    <li>Interest Rate = 6</li>
-                                    <li>Years = 5</li>
-                                </ul>
-                                Your result should be somewhere around $7011.88. Results should be reasonably close (+/- 2%). 
-                                Don&rsquo;t worry if your results have a large number of decimal places. Number formatting is 
-                                optional for this exercise.
-                            </li>
-                            <li>
-                                Calculate and display the total interest earned. After the loop, add a line to display the total 
-                                interest earned.</li>
-                        </ol>
+                        <h3>Analysis</h3>
+                        <p>
+                            This time we&rsquo;ll use Pseudocode although you can do a flowchart if 
+                            you&rsquo;d like some extra challenge and practice with those. If you 
+                            created a pseudocode file in exercise 1, you may add your pseudocode for 
+                            this exercise. Otherwise, go ahead and create a file for your pseudocode 
+                            now. Being a guided exercise, you are given a screen shot of the pseudocode.</p>
+                        <figure style="text-align: center;">
+                            <img src="/course-content/images/pylab/05-02-ex2-pseudocode.jpg" 
+                                alt="fig.2 - Dice Game Pseudocode" width="50%"/>
+                            <figcaption>
+                                fig.2 - Dice Game Pseudocode
+                            </figcaption>
+                        </figure>
+                        <h3>Code the Application</h3>
+                        <p>
+                            Create a new Python code file called <strong>DiceExercise2.py</strong>. Being 
+                            a guided exercise, you are given screenshots of the code you need to write.</p>
+                        <ul>Things to watch out for as you write your code:
+                            <li>Make sure you import random.</li>
+                            <li>Watch indentation (4 spaces) in loops and selection structures.</li>
+                            <li>In Python, we&rsquo;re actually using lists but we still need to watch 
+                                the lower bound (0) and make sure we&rsquo;re staying within the upper 
+                                bound.</li>
+                        </ul>
+            
+                        <figure style="text-align: center;">
+                            <img src="/course-content/images/pylab/05-02-ex2_a.png" 
+                                alt="fig.3 - Dice Game Code Part 1" />
+                            <img src="/course-content/images/pylab/05-02-ex2_b.png" 
+                                alt="fig.3 - Dice Game Code Part 1" />
+                            <img src="/course-content/images/pylab/05-02-ex2_c.png" 
+                                alt="fig.3 - Dice Game Code Part 1" />
+                            <figcaption>
+                                fig.3 - Dice Game Code
+                            </figcaption>
+                        </figure>
+                        <p style="text-align: center;">
+                            <img src="https://gcccd.instructure.com/courses/63626/files/12011531/preview"
+                             alt="ex.2 sample code - part 1" /> 
+                            <img src="https://gcccd.instructure.com/courses/63626/files/12011533/preview" 
+                             alt="ex.2 sample code - part 2" /> 
+                            <img src="https://gcccd.instructure.com/courses/63626/files/12011532/preview" 
+                             alt="ex.2 sample code - part 3" />
+                             Fig 5. Ex 2 - sample code</p>
+                        <hr />
+                        <p style="font-style: italic; text-align: center;">Go to Exercise 3!</p>
                         <a href="#ex-2" class="btn btn-primary">Back to Top <i class="fa fa-arrow-up"></i></a>
-
                     </div><!-- .card-body -->
                 </div> <!-- #collapseEx2 -->
             </div> <!-- #ex-2 -->
