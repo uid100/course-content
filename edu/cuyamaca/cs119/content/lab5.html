@@ -288,48 +288,103 @@
                     class="btn btn-link text-decoration-none" 
                     data-bs-toggle="collapse" href="#collapseEx3" role="button" 
                     aria-expanded="false" aria-controls="collapseEx3">
-                    Ex.3 - Heads or Tails?
+                    Ex.3 - Shipping Cost Calculator
                 </div>
                 <div id="collapseEx3" class="collapse">
                     <div class="card-body">
+                        <h2>Exercise 3</h2>
+                        <h3>Shipping Charge Calculator</h3>
                         <p>
-                            In this exercise, you will get some experience with the random number generator 
-                            in Python. Random numbers are heavily used in many games and simulations for 
-                            things like dice rolls, dealing cards, flipping a coin, etc.</p>
+                            You&rsquo;ve probably seen these in online shopping applications: Get an 
+                            estimated shipping cost based on the zip code your order has to ship to. 
+                            Price will vary depending on if it&rsquo;s shipped via Coyote Express or 
+                            Coyote Ground.</p>
                         <p>
-                            You will build an application that will flip a coin 20 times, keep a running 
-                            total of heads and tails.</p>
+                            Develop a Python application that will allow the user to enter a zip code 
+                            and shipping method. You must then look up the zip code and return the 
+                            correct city and shipping charge based on the user&rsquo;s shipping choice. 
+                            You can shorten the shipping choice to &ldquo;Express&rdquo; 
+                            and &ldquo;Ground&rdquo; if you prefer.</p>
                         <p>
-                            For each coin toss, display the result (heads or tails).</p>
+                            You must use either a Python array or list for the zip codes and shipping 
+                            charges. If the user enters an invalid zip code, your application must
+                            display an appropriate &ldquo;Zip code not found&rdquo; message</p>
                         <p>
-                            After the last toss, you will display</p>
-                        <ul>
-                            <li>total number of heads</li>
-                            <li>total number of tails</li>
-                            <li>and the percentage of each</li>
-                        </ul>
+                            You can also import your Methods module from Lab04 if you'd like to reuse 
+                            code that you've already written.</p>
+                        <p class="boxed-paragraph">
+                            Use a For- loop control structure and parallel arrays for this exercise. 
+                            Python Dictionaries are not part of this assignment.</p>
+                        <table style="width: 95%;">
+                            <caption>Parallel Arrays - content</caption>
+                            <tbody>
+                                <tr>
+                                    <th style="width: 15%;" scope="row">Zip Code</th>
+                                    <td style="width: 17%;">92020</td>
+                                    <td style="width: 17%;">91901</td>
+                                    <td style="width: 17%;">92040</td>
+                                    <td style="width: 17%;">91976</td>
+                                    <td style="width: 17%;">92071</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">City</th>
+                                    <td>El Cajon</td>
+                                    <td>Alpine</td>
+                                    <td>Lakeside</td>
+                                    <td>Spring Valley</td>
+                                    <td>Santee</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Express</th>
+                                    <td>$5.00</td>
+                                    <td>$10.00</td>
+                                    <td>$7.00</td>
+                                    <td>$6.00</td>
+                                    <td>$7.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ground</th>
+                                    <td>$3.00</td>
+                                    <td>$5.00</td>
+                                    <td>$4.00</td>
+                                    <td>$3.00</td>
+                                    <td>$4.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         <p>&nbsp;</p>
-                        <hr />
-                        <h3>Steps</h3>
-                        <ol>
-                            <li>Complete your <strong>Program Design</strong>. You may create a flowchart or 
-                                you may use pseudocode to develop your logic. This is worth points and please 
-                                complete this before attempting to write code!</li>
-                            <li>Create a new Python file called <code>HeadsTails.py</code></li>
-                            <li>Code the application. Be sure to import random. A screen shot of a partially 
-                                coded application is given here to get you started:<br />
-                                <figure style="text-align: center;">
-                                    <img src="/course-content/images/pylab/heads-tails-code.png" 
-                                        alt="heads or tails code snippet" />
-                                    <figcaption>Fig.17 Heads or Tails Code Snippet</figcaption>
-                                </figure>
-                            </li>
-                            <li>Test your application.</li>
-                        </ol>
+                        <p>
                         <a href="#ex-3" class="btn btn-primary">Back to Top <i class="fa fa-arrow-up"></i></a>
+                        </p>
                     </div><!-- .card-body -->
                 </div> <!-- #collapseEx3 -->
             </div> <!-- #ex-3 -->
+            <div class="card mb-3" id="ex-4">
+                                <div class="card-header">
+                    <a 
+                    class="btn btn-link text-decoration-none" 
+                    data-bs-toggle="collapse" href="#collapseEx4" role="button" 
+                    aria-expanded="false" aria-controls="collapseEx4">
+                    Ex.4 - Dice Game Revisited
+                </div>
+                <div id="collapseEx4" class="collapse">
+                    <div class="card-body">
+                        <h2 class="alert">Exercise 4</h2>
+                        <h3>Dice Game (Revisited)</h3>
+                        <p>In this exercise, you will make the following modifications to the dice game from exercise 2:</p>
+                        <ul>
+                            <li>Prompt the user for the number of rounds they want to play.</li>
+                            <li>Code a loop to play the user entered number of rounds.</li>
+                            <li>Keep score for the player and computer.</li>
+                            <li>At the end, display who won the game after all rounds have been played (player, computer or tie).</li>
+                        </ul>
+                        <p>You must complete exercise 2 before starting this.</p>
+                        <p>Save a copy of the <strong>DiceGameExercise2.py</strong> as <strong>DiceGameExercise4.py</strong>. You may copy the pseudocode or flowchart you did in exercise 2 and add/modify things as needed.</p>
+                        <hr />
+                        <p>Zip <strong>Lab05</strong> folder and upload.</p>
+                    </div><!-- .card-body -->
+                </div> <!-- #collapseEx4 -->
+            </div> <!-- #ex-4 -->
         </div> <!-- #lab5 -->
     </div> <!-- #content-wrapper -->
     <script src="/course-content/common/js/local.js"></script>
