@@ -1,24 +1,345 @@
-<span id="course-id" style="display: none;">2475348</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!-- module 3 overview
+     <p>
+        <iframe 
+            src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/03/03_01_data_storage.html?path=../../cisc401" 
+                width="100%" height="1000px" loading="lazy">
+        </iframe>
+     </p>
+    -->
+</head>
 
-<!-- ##### Local Course Links ##### -->
+<body>
+    <div id="top"> </div>
+    <div class="container my-4 px-2">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
 
-<div id="page" style="background-color: #5CB3FF; ">
-    <div id="page-header" class="d-flex flex-column-reverse flex-md-row" style="margin-left: auto; margin-right: 0;">
-        <div id="course-image" class="p-3" style="float:right;">
-            <figure style="text-align: center;">
-                <a style="color: navy;" href="/courses/2475348/pages/start">
-                    <img style="display: block; margin-left: auto; margin-right: auto;"
-                        src="https://uid100.github.io/course-content/images/server_room.jpg" alt="main course image"
-                        width="100" height="100" />
-                    <figcaption style="text-align: center;">home</figcaption>
-                </a>
-            </figure>
-        </div> <!-- #course-image -->
-    </div> <!-- #page-header -->
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <div class="card mb-4">
+            <div class="card-header">Storing Data</div>
+            <div class="card-body">
+                <h1 class="card-title">Storing Data</h1>
+                    <div id="data" class="accordion">
+                        <div id="information" class="accordion-item">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#db-information"
+                                aria-expanded="false" aria-controls="db-information">
+                                <h3>Data and Information</h3>
+                            </button>
+                            <div id="db-information" class="accordion-collapse collapse show" aria-labelledby="overview"
+                                data-bs-parent="#data" style="margin:20px;">
+                                <h4>Information</h4>
+                                <p>
+                                    We have discussed that <strong>Data</strong> is a collection or single element of values and facts.
+                                </p>
+                                <p>
+                                    <strong>Information</strong> is the result of processing, manipulating, and organizing data in a way
+                                    that adds value to it.
+                                </p>
+                                <ul>
+                                    <li>
+                                        Information is data that has been processed and presented in a meaningful context, making it
+                                        useful
+                                        for
+                                        decision-making and problem-solving.
+                                    </li>
+                                </ul>
+                                <p>
+                                    If we want to access and interpret data in a meaningful way, it is important to understand how to
+                                    store
+                                    and
+                                    manage it effectively.
+                                </p>
+                            </div> <!-- #db-information -->
+                        </div> <!-- #information -->
+
+                        <div id="data-types" class="accordion-item">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#db-data-types"
+                                aria-expanded="false" aria-controls="db-data-types">
+                                <h3>Data Types</h3>
+                            </button>
+                            <div id="db-data-types" class="accordion-collapse collapse show" aria-labelledby="overview"
+                                data-bs-parent="#data" style="margin:20px;">
+                                <p>
+                                    Data can be classified into different types based on its format and content. Data types commonly
+                                    used in
+                                    databases include:
+                                </p>
+                                <h4>Numeric types</h4>
+                                <ul>
+                                    <li>
+                                        <em>Integer ( -4, 0, 2, 106, 32762 )</em><br />
+                                        A whole number without a decimal point.
+                                        <ul>
+                                            <li><strong>INT</strong> Standard integer type.</li>
+                                            <li><em>SMALLINT</em> Smaller range of integer values.</li>
+                                            <li><em>TINYINT</em> Very small integer values.</li>
+                                            <li><em>BIGINT</em> Large integer values.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <em>Float ( -10.0, 3.14, 16.666667 )</em><br>
+                                        A number with a decimal point.
+                                        <ul>
+                                            <li><strong>FLOAT</strong> Single-precision floating-point number.</li>
+                                            <li><em>DOUBLE</em>: Double-precision floating-point number.</li>
+                                            <li><em>DECIMAL or NUMERIC</em>: Fixed-point numbers with a specific number of digits
+                                                before
+                                                and
+                                                after
+                                                the decimal point, used for exact calculations</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <h4>Text or Character types</h4>
+                                <ul>
+                                    <li><em>String ( "dude!", "one", "3-2-1-Go." "16" ) </em></li>
+                                    <ul>
+                                        <li><em>CHAR(n)</em>: Fixed-length string of n characters. Trailing spaces are padded.</li>
+                                        <li><strong>VARCHAR(n)</strong> Variable-length string with a maximum length of n
+                                            characters.
+                                            Efficient
+                                            for
+                                            storing strings of varying lengths.</li>
+                                        <li><em>NCHAR(n)</em> Fixed-length Unicode string of n characters.</li>
+                                        <li><strong>NVARCHAR(n)</strong>: Variable-length Unicode string with a maximum length of n
+                                            characters.
+                                        </li>
+                                        <li><em>TEXT</em> Large amounts of text data. The exact limit varies by database system.
+                                        </li>
+                                    </ul>
+                                </ul>
 
 
-    <div id="overview-link" class="flex-grow-1 d-flex justify-content-center align-items-center" style="height: 90vh;">
-        <iframe src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/03/data_storage.html" class="mt-4 mb-4"
-            allowfullscreen style="width: 90%; height: 90%; margin:auto; padding:20px;"></iframe>
-    </div> <!-- #page-link -->
-</div> <!-- #page -->
+                                <h4>Date and Time types</h4>
+                                <ul>
+                                    <li><strong>DATE</strong>: Date without a time component.</li>
+                                    <li><em>TIME</em>: Time without a date component.</li>
+                                    <li><strong>DATETIME</strong>: Date and time together.</li>
+                                    <li><em>TIMESTAMP</em>: A timestamp that records the date and time of an event.</li>
+                                </ul>
+
+                                <h4>Other types</h4>
+                                <p>
+                                    There are other data types used in and by SQL variants including boolean (TRUE/FALSE), binary
+                                    and
+                                    abstract
+                                    data
+                                    types, but these are the primary data types used most commonly.
+                                </p>
+
+                                <div
+                                    style="border: 1px solid #ccc; padding: 10px; margin-top: 20px; width: 50%; margin-left:auto; margin-right: auto;">
+                                    <p>Remember:</p>
+                                    <ul>
+                                        <li>INT</li>
+                                        <li>FLOAT</li>
+                                        <li>VARCHAR(<em>n</em>)</li>
+                                        <li><em>NVARCHAR(<em>n</em>)</em></li>
+                                        <li>DATETIME</li>
+                                    </ul>
+                                </div>
+                            </div> <!-- #db-data-types -->
+                        </div> <!-- #data-types -->
+
+                        <div id="data-constraints" class="accordion-item">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#db-data-constraints" aria-expanded="false" aria-controls="db-data-constraints">
+                                <h3>Data Constraints</h3>
+                            </button>
+                            <div id="db-data-constraints" class="accordion-collapse collapse show" aria-labelledby="overview"
+                                data-bs-parent="#data" style="margin:20px;">
+
+                                <p>
+                                    Data stored in a database must adhere to certain rules and restrictions to ensure data integrity
+                                    and consistency. These rules are known as <strong>data constraints</strong>.
+                                </p>
+                                <p>
+                                    Common data constraints include:
+                                </p>
+
+                                <ul>
+                                    <li>
+                                        <h4>Data Type Constraint</h4>
+                                        <p><strong>Purpose:</strong> Ensures that a column contains only values of a specific data
+                                            type.</p>
+                                        <p><strong>Characteristics:</strong>
+                                            - Helps maintain data consistency and accuracy.
+                                            - Prevents invalid data from being inserted into a column.
+                                        </p>
+                                        <p><strong>Example:</strong> Defining a column as <code>INT</code> to store only integer
+                                            values.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Primary Key Constraint</h4>
+                                        <p><strong>Purpose:</strong> Uniquely identifies each record in a table.</p>
+                                        <p><strong>Characteristics:</strong>
+                                            - Each table can have only one primary key.
+                                            - The primary key must contain unique values and cannot be null.
+                                        </p>
+                                        <p><strong>Example:</strong> <code>CustomerID</code> in a <code>Customers</code> table.</p>
+                                    </li>
+                                    <li>
+                                        <h4>Foreign Key Constraint</h4>
+                                        <p><strong>Purpose:</strong> Ensures referential integrity by linking records in one table
+                                            to records in another table.</p>
+                                        <p><strong>Characteristics:</strong>
+                                            - A foreign key in one table points to the primary key in another table.
+                                            - Helps maintain consistency across related tables.
+                                        </p>
+                                        <p><strong>Example:</strong> <code>OrderID</code> in an <code>Orders</code> table
+                                            referencing <code>CustomerID</code> in the <code>Customers</code> table.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Unique Constraint</h4>
+                                        <p><strong>Purpose:</strong> Ensures that all values in a column (or a set of columns) are
+                                            unique across the table.</p>
+                                        <p><strong>Characteristics:</strong>
+                                            - Unlike primary keys, unique constraints can allow null values unless explicitly
+                                            restricted.
+                                        </p>
+                                        <p><strong>Example:</strong> <code>Email</code> address in a <code>Users</code> table to
+                                            ensure no two users have the same email.</p>
+                                    </li>
+                                    <li>
+                                        <h4>Not Null Constraint</h4>
+                                        <p><strong>Purpose:</strong> Ensures that a column cannot have null values.</p>
+                                        <p><strong>Characteristics:</strong>
+                                            - Guarantees that a column always contains a valid value.
+                                        </p>
+                                        <p><strong>Example:</strong> <code>DateOfBirth</code> in a <code>Patients</code> table, as
+                                            every patient must have a birth date.</p>
+                                    </li>
+                                    <li>
+                                        <h4>Check Constraint</h4>
+                                        <p><strong>Purpose:</strong> Enforces domain integrity by specifying a condition that must
+                                            be
+                                            met
+                                            for a
+                                            column’s value.</p>
+                                        <p><strong>Characteristics:</strong>
+                                            - Allows you to define a range or pattern for valid values.
+                                        </p>
+                                        <p><strong>Example:</strong> Ensuring that <code>Age</code> in a <code>Patients</code> table
+                                            is
+                                            greater
+                                            than or equal to 0.</p>
+                                    </li>
+                                    <li>
+                                        <h4>Default Constraint</h4>
+                                        <p><strong>Purpose:</strong> Assigns a default value to a column when no value is provided
+                                            during
+                                            record
+                                            insertion.</p>
+                                        <p><strong>Characteristics:</strong>
+                                            - Helps ensure that columns have a meaningful value even when omitted.
+                                        </p>
+                                        <p><strong>Example:</strong> Setting a default value of <code>CURRENT_DATE</code> for a
+                                            <code>CreationDate</code> column in a <code>Records</code> table.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Index Constraint</h4>
+                                        <p><strong>Purpose:</strong> Enhances the speed of data retrieval operations.</p>
+                                        <p><strong>Characteristics:</strong>
+                                            - Creates a data structure (index) that allows faster searching and querying of data.
+                                        </p>
+                                        <p><strong>Example:</strong> Indexing the <code>LastName</code> column in a
+                                            <code>Employees</code>
+                                            table
+                                            to speed up search queries.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Unique Key Constraint</h4>
+                                        <p><strong>Purpose:</strong> Similar to the primary key, but allows a single null value in
+                                            the
+                                            column.
+                                        </p>
+                                        <p><strong>Characteristics:</strong>
+                                            - Can be applied to one or more columns to enforce uniqueness.
+                                        </p>
+                                        <p><strong>Example:</strong> Ensuring that <code>PhoneNumber</code> in a
+                                            <code>Contacts</code>
+                                            table
+                                            is
+                                            unique but allowing null values.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Composite Key Constraint</h4>
+                                        <p><strong>Purpose:</strong> Uses a combination of two or more columns to form a unique
+                                            identifier
+                                            for a
+                                            record.</p>
+                                        <p><strong>Characteristics:</strong>
+                                            - Ensures uniqueness when individual columns may not be unique by themselves.
+                                        </p>
+                                        <p><strong>Example:</strong> A combination of <code>OrderID</code> and
+                                            <code>ProductID</code> in
+                                            an
+                                            <code>OrderDetails</code> table.
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h4>Domain Constraint</h4>
+                                        <p><strong>Purpose:</strong> Defines the permissible values for a column based on its
+                                            domain.
+                                        </p>
+                                        <p><strong>Characteristics:</strong>
+                                            - Often enforced using check constraints or through data type definitions.
+                                        </p>
+                                        <p><strong>Example:</strong> Restricting <code>Access Leve</code> to values such as
+                                            <code>Employee</code> or <code>Visitor</code>.
+                                        </p>
+                                    </li>
+                                </ul>
+
+
+
+                            </div> <!-- #db-data-constraints -->
+                        </div> <!-- #data-constraints -->
+                    </div> <!-- #data -->
+            </div> <!-- .card-body -->
+        </div> <!-- .card -->
+    </div> <!-- .container -->
+
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
