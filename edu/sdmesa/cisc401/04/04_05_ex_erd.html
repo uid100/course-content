@@ -1,27 +1,160 @@
-<span id="course-id" style="display: none;">2475348</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!-- module 3 overview
+     <p>
+        <iframe 
+            src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/04/04_01_overview.html?path=../../cisc401" 
+                width="100%" height="1000px" loading="lazy">
+        </iframe>
+     </p>
+    -->
+</head>
 
-<!-- ##### Local Course Links ##### -->
+<body>
+    <div id="top"> </div>
+    <div class="container my-4 px-2">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
 
-<div id="page" style="background-color: #5CB3FF; ">
-    <div id="page-header" class="d-flex flex-column-reverse flex-md-row" style="margin-left: auto; margin-right: 0;">
-        <div id="course-image" class="p-3" style="float:right;">
-            <figure style="text-align: center;">
-                <a style="color: navy;" href="/courses/2475348/pages/start">
-                    <img style="display: block; margin-left: auto; margin-right: auto;"
-                        src="https://uid100.github.io/course-content/images/server_room.jpg" alt="main course image"
-                        width="100" height="100" />
-                    <figcaption style="text-align: center;">home</figcaption>
-                </a>
-            </figure>
-        </div> <!-- #course-image -->
-    </div> <!-- #page-header -->
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+        <div class="card" id="module-overview">
+            <div class="card-header">Module 3 Overview</div>
+            <div class="card-body">
+                <h1>Exercise: Create a Chen-format Entity-Relationship Diagram (ERD)</h1>
+
+                <h2>Introduction</h2>
+                <p>In this exercise, you will use the concepts and symbols of the <strong>Chen ERD notation</strong> to create an
+                    Entity-Relationship Diagram for the database structure you designed in your last assignment. This exercise will
+                    help you visually represent the relationships between the entities, their attributes, and the way they interact
+                    with each other.</p>
+                <p style="font-style: italic;">
+                    Note, crow's foot notation is another common way to represent ERDs, but for this exercise, we will focus on the
+                    Chen ERD style.
+                </p>
+
+                <h2>Instructions</h2>
+                <p>Using the list of entities, attributes, and relationships you created in your last assignment, follow the steps
+                    below to generate your ERD:</p>
+
+                <h3>1. Identify Your Entities</h3>
+                <ul>
+                    <li>Begin by identifying the key entities from your previous work. Each entity represents a distinct object,
+                        concept, or thing in your database.</li>
+                    <li>Entities should be drawn as <strong>rectangles</strong> in the diagram.
+                    </li>
+                </ul>
+
+                <h3>2. List Attributes for Each Entity</h3>
+                <ul>
+                    <li>For each entity, list the relevant attributes that describe its characteristics.</li>
+                    <li>Attributes are represented as <strong>ovals</strong> connected to their respective
+                        entities. At least one attribute should act as the <strong>Primary Key</strong>, which uniquely identifies
+                        each instance of the entity.</li>
+                </ul>
+
+                <h3>3. Indicate Primary Key</h3>
+                <ul>
+                    <li>Select one attribute per entity to act as the <strong>Primary Key</strong>, which is an attribute that
+                        uniquely identifies each entity in the database.</li>
+                    <li>The primary key should be underlined in your diagram.</li>
+                </ul>
+
+                <h3>4. Define Relationships</h3>
+                <ul>
+                    <li>For each relationship between entities (e.g., "Works At," "Manages," "Has"), create a
+                        <strong>diamond</strong> to represent the relationship.
+                    </li>
+                    <li>Connect the related entities to the relationship using straight lines.</li>
+                </ul>
+
+                <h3>5. Cardinality</h3>
+                <ul>
+                    <li>Specify the <strong>cardinality</strong> (one-to-one, one-to-many, many-to-many) for each relationship to
+                        show how many instances of one entity can be associated with another.</li>
+                    <li>Cardinality symbols should be added near the ends of the relationship lines (e.g., "1"
+                        for one, "N" for many).</li>
+                </ul>
+
+                <h3>6. Verify the Syntax</h3>
+                <ul>
+                    <li>Make sure you use the correct symbols:</li>
+                    <ul>
+                        <li>Rectangles for <strong>Entities</strong>.</li>
+                        <li>Ovals for <strong>Attributes</strong>.</li>
+                        <li>Diamonds for <strong>Relationships</strong>.</li>
+                        <li>Lines for connections.</li>
+                    </ul>
+                    <li>Also, ensure that the <strong>Primary Key</strong> is underlined and that <strong>cardinality</strong> is
+                        clearly indicated for each relationship.</li>
+                </ul>
+
+                <h2>Example Format</h2>
+                <p>If you have entities like <strong>Doctor</strong> and <strong>Hospital</strong>, and a relationship such as
+                    "Works At", your ERD should indicate:</p>
+                <ul>
+                    <li><strong>Doctor</strong> (Entity) ⟶ <strong>Works At</strong> (Relationship) ⟶ <strong>Hospital</strong>
+                        (Entity)</li>
+                    <li>Attributes for <strong>Doctor</strong> such as <em>DoctorID</em>, <em>Name</em>, <em>Specialty</em>, etc.,
+                        will be connected to the <strong>Doctor</strong> entity with ovals. Similarly, attributes for
+                        <strong>Hospital</strong> will connect to the <strong>Hospital</strong> entity.
+                    </li>
+                    <li>Don't forget to underline <em>DoctorID</em> as the <strong>Primary Key</strong>.</li>
+                </ul>
+
+                <h2>Reminder</h2>
+                <p>The <strong>Primary Key</strong> is a unique attribute within an entity that ensures each record is
+                    distinguishable from all others. Be sure to underline the Primary Key in your diagram.</p>
+
+                <h2>Submission Guidelines</h2>
+                <ul>
+                    <li>You may create your diagram using the Chen ERD notation using Draw.io as demonstrated in class, or a drawing
+                        tool of your choice. Be sure to save (Export) your drawing as a .jpg image.</li>
+                    <li>Ensure all entities, attributes, and relationships are clearly labeled and connected using the correct
+                        symbols.</li>
+                </ul>
 
 
-    <h3 class="alert alert-info">Database Design</h3>
-    <div id="overview-link" class="flex-grow-1 d-flex justify-content-center align-items-center"
-        style="height: 90vh; background-color: aliceblue;">
-        <iframe src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/04/ex_chen_erd.html" class="mt-4 mb-4"
-            allowfullscreen style="width: 90%; height: 90%; margin:auto; padding:20px;"></iframe>
+                <h2>Grading Criteria</h2>
+                <ul>
+                    <li>Correct use of Chen ERD notation.</li>
+                    <li>Clear indication of entities, attributes, relationships, and cardinality.</li>
+                    <li>Proper identification and underlining of Primary Keys.</li>
+                </ul>
+
+                <p>A clear ERD can make your database structure easier to understand and implement!</p>
+            </div> <!-- .card-body -->
+        </div> <!-- .card -->
     </div> <!-- #page-link -->
 
 </div> <!-- #page -->
