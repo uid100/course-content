@@ -464,7 +464,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // modules link
             const modulesLink = document.getElementById("modules-button");
-            console.log("modules link: " + coursePath + "/modules");
             if (modulesLink) { modulesLink.href = coursePath + "/modules"; }
         })
         .catch(error => {
