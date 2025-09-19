@@ -440,12 +440,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
             console.log("policies..." + policiesTemplatePath);
             const deptPolicies = document.getElementById("policies-template");
-            if (deptPolicies && policiesTemplatePath) {                
-                deptPolicies.href = policiesTemplatePath;
-            }
-            else {
-                const li = deptPolicies.closest("li");
-                if (li) { li.setAttribute("hidden", true); }
+            if (deptPolicies) {
+                if (policiesTemplatePath) {
+                    deptPolicies.href = policiesTemplatePath;
+                } else {
+                    const li = deptPolicies.closest("li");
+                    if (li) { li.setAttribute("hidden", true); }
+                }
             }
             const onlineClassesLink = document.getElementById("online-classes");
             if (onlineClassesLink) {
