@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!--
+      <p><iframe src="https://uid100.github.io/course-content/edu/cuyamaca/cs119/content/lab5.html?path=../../../cuyamaca/cs119" 
+          width="100%" height="1000px" loading="lazy"></iframe></p>
+    -->
+</head>
+
+<body>
+    <div id="top"></div>
+    <div class="content-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <div id="lab6">
+            <h2>Lab 6: Using Functions, arguments, modules</h2>
+
+            <div class="card mb-3">
+                <div class="card-header">
+                    <a 
+                        class="btn btn-link text-decoration-none" 
+                        data-bs-toggle="collapse" href="#intro-collapse" role="button" 
+                        aria-expanded="false" aria-controls="intro-collapse">Introduction
+                    </a>
+                </div>
+                <div id="intro-collapse" class="collapse show">
+                    <div class="card-body" id="introduction" class="collapse show">
+                        <p>
+                            This lab provides more opportunity to apply the concepts and principles
+                            presented in the textbook. We will be focusing on creating user-defined 
+                            methods. The idea here is to build a toolbox of reusable code that you 
+                            may reuse for other Python programming exercises and perhaps even in the 
+                            work place.     
+                        </p>
+                        <p>
+                            In <em>real-world</em> software development, it is a common practice to 
+                            implement libraries of reusable code needed for a larger project in a small
+                            <em>test fixture</em> environment similar to what we will be creating in
+                            some of these exercises. Code can be more easily tested/debugged in a small
+                            scale environment; different algorithms can be coded and tested to find the
+                            one with the best performance, etc. Once everything is tested and working
+                            correctly, it can then be integrated into a larger scale project and reused
+                            in future projects.
+                        </p>
+                        <p>
+                            Code needed for a larger project in a small <em>test fixture</em> environment 
+                            similar to what we will be creating in some of these exercises. Code can be 
+                            more easily tested/debugged in a small scale environment; different algorithms 
+                            can be coded and tested to find the one with the best performance, etc.
+                        </p>
+                        <p>
+                            Once everything is tested and working correctly, it can then be integrated into 
+                            a larger scale project and reused in future projects.
+                        </p>
+                        <p>
+                            Very often, interns and entry level software developers are tasked with coding 
+                            and/or testing libraries such as these.
+                        </p>
+                        <ul>Objectives:
+                            <li>write and call a custom function</li>
+                            <li>return a value from a function</li>
+                            <li>create a module of custom functions</li>
+                            <li>use functions from a module</li>
+                        </ul>
+                        <div id="functions">
+                            <p>
+                                <em>A function in Python is a unit of code that performs a task.</em>
+                            </p>
+                            <p>
+                                Start by determining what your function will do, it's purpose, whether it will 
+                                return a value and all the information it will need to have.
+                            </p>
+                            <p class="boxed-paragraph" style="padding: 30px;">
+                                The goal when you design and create a function should be for it 
+                                to do only one thing.
+                            </p>
+                            <h3>Functions</h3>
+                            <p>You have seen how to use some of Python's built-in functions such as input(), print(), float() and
+                                others. In this lab you will practice writing your own functions.</p>
+                            <ol style="padding:30px;">
+                                <li>Give your function a meaningful and descriptive name. Apply the same rules as for other identifiers,
+                                    such as variables, constants, and file names. If your code is easier to read, it will be improve
+                                    maintainability, extensibility, and reliabilty.</li>
+                                <li>Determine what it will return. If you send someone outside to count the cars parked in the
+                                    parking lot, do you want to find out how many cars there are, or are you just keeping them busy?
+                                </li>
+                                <li>What is the information it will need to do its job? These are called parameters supplied to the
+                                    function.</li>
+                            </ol>
+                            <p>
+                                In code, a function is easily distinguishable from a variable by the parentheses attached to it. This is
+                                the parameter list. Even it if there are no parameters being passed to the function, the empty parameter
+                                list is still contained in parentheses.
+                            </p>
+                            <p><img src="/images/pylab/Parameter.png"
+                                    alt="parameter definition" /></p>
+                            <p>&nbsp;</p>
+                            <p>Define the function with the <code>def</code> keyword. You can follow the examples, and remember that
+                                Python is very particular about indentation.</p>
+                        </div> <!-- #functions -->                        
+                        <p class="boxed-paragraph">
+                            Be sure to check the Rubric to understand the grading criteria for this lab and to ensure 
+                            you don't forget to include everything.
+                        </p>
+                        <p style="font-style: italic; text-align: center;">
+                            Be sure to expand all sections below to see all instructions.
+                        </p>
+                    </div> <!-- .card-body -->
+                </div> <!-- #intro-collapse -->
+            </div> <!-- #introduction -->
+
+            <div class="card mb-3" id="ex-1">
+                <div class="card-header">
+                    <a 
+                        class="btn btn-link text-decoration-none" 
+                        data-bs-toggle="collapse" href="#collapseEx1" role="button" 
+                        aria-expanded="false" aria-controls="collapseEx1">
+                        Exercise 1 - Zip Code Lookup
+                    </a>
+                </div>
+                    <div id="collapseEx1" class="collapse">
+                    <div class="card-body">
+                        <h3>Exercise 1 (Guided) Zip Code Lookup</h3>
+                        <div id="ex1-intro">
+                            <h4>Description</h4>
+                            <p>
+                                The first case study is taken from page 199 in the PLD text. We are only going 
+                                to do the part where the user enters a zip code. If the zip code is found, the 
+                                program displays the city and state. This is something we’ve seen and done while 
+                                ordering items on a web site or filling out an online form.
+                            </p>
+                            <p>
+                                We are going to focus mainly on things that are new so there won’t be a whole 
+                                lot of detail on creating a program file in Python, etc. In this case, we will 
+                                focus on creating arrays, coding an efficient search loop, and accessing the 
+                                elements of an array.
+                            </p>
+                            <p>
+                                Analysis: The user enters a zip code. Search the array using a loop. If the zip 
+                                code is found, return the corresponding city and state from the parallel arrays. 
+                                Quick review from the book: If we search an array and find a match at subscript n, 
+                                we can get the corresponding values from the parallel arrays at subscript n as 
+                                well. We can do either pseudocode or a flowchart.
+                            </p>
+                            <p>
+                                Sample flowchart:
+                            </p>
+                            <figure style="text-align: center;">
+                            <img src="/course-content/images/pylab/fig5-1-flowchart.png" 
+                                alt="fig.1 - Zip Code search - Flowchart" width="50%"/>
+                            <figcaption>
+                                fig.1 - Zip Code search - Flowchart
+                            </figcaption>
+                            </figure>
+                            <p>&nbsp;</p>
+                            <p>
+                                You can do this in pseudocode if you prefer. If you decide to create this 
+                                or any other drawings, don't forget to export your work as a .jpg image 
+                                to turn it in.
+                            </p>
+                            <p>
+                                Note in the loop condition, we have 2 conditions: one to stay in the bounds 
+                                of the array and the other is a search flag called found. Note the found 
+                                flag is initially set false and gets set to true if we get a match. This 
+                                makes our search more efficient. Why continue searching for something if 
+                                we already found it? To avoid a selection structure after the loop, we can 
+                                initialize our city and state variables to something like “NOT FOUND” when 
+                                we declare them.
+                            </p>
+                            <p>
+                                To save time and make things a little easier, we can do just 4 zip codes 
+                                and the corresponding cities and states, but this code could be expanded 
+                                to much larger lists (arrays).
+                            </p>
+                        </div> <!-- #ex1-intro -->
+                        <p>&nbsp;</p>
+                        <div id="ex1-code">
+                            <h2 class="alert">Code</h2>
+                            <h3>Python Implementation</h3>
+                            <p>
+                                In IDLE or another IDE, create a new file called <strong>ZipSearch.py</strong>.
+                                Be sure to save in your <code>Lab05</code> folder.
+                            </p>
+                            <figure style="text-align: center;">
+                                <img src="/course-content/images/pylab/05_01_code.png" 
+                                    alt="Zip Code Parallel Array Search Code" />
+                                <figcaption>Zip Code Parallel Array Search Code</figcaption>
+                            </figure>
+                            <p>Be sure to test with both valid and invalid zip codes.</p>
+                            <figure style="text-align: center;">
+                                <img src="/course-content/images/pylab/zipsearchtest.jpg" 
+                                    alt="invalid user entry Output" />
+                                <figcaption>Test for invalid user entry</figcaption>
+                            </figure>
+                            <p>
+                                Notes on the code above:
+                                <ul>
+                                    <li>Initializing city to “NOT FOUND” and state to a blank string 
+                                        eliminates need for a selection structure after the loop.</li>
+                                    <li>Note the compound condition in the while loop and use of the 
+                                        Python not operator.</li>
+                                    <li>Watch your indentation closely with Python loops and selection 
+                                        structures.</li>
+                                    <li>Be sure to code the colon (:) after loop and selection structure 
+                                        conditions.</li>
+                                    <li>Be sure to test with both valid and invalid zip codes.</li>
+                                    <li>These solutions must be done using parallel arrays, not using 
+                                        dictionaries or other data structures and extension methods.
+                                    </li>
+                                </ul>
+                            </p>
+                            <p style="font-style: italic; text-align: center;">
+                                Go to Exercise 2!
+                            </p>
+
+                        </div> <!-- #ex1-code -->
+                        <a href="#ex-1" class="btn btn-primary">Back to Top <i class="fa fa-arrow-up"></i></a>
+                    </div> <!-- .card-body -->
+                </div> <!-- #collapseEx1 -->
+            </div> <!-- #ex-1 -->
+
+            <div class="card mb-3" id="ex-2">
+                <div class="card-header">
+                    <a 
+                    class="btn btn-link text-decoration-none" 
+                    data-bs-toggle="collapse" href="#collapseEx2" role="button" 
+                    aria-expanded="false" aria-controls="collapseEx2">
+                    Exercise 2 - Dice Game
+                    </a>
+                </div>
+                <div id="collapseEx2" class="collapse">
+                    <div class="card-body">
+                        <h2>Exercise 2</h2>
+                        <h3>(Guided) Dice Game</h3>
+                        <p>
+                            This one is for all you aspiring game programmers to give you a taste 
+                            and appreciation of what it&rsquo;s like to program even a simple computer 
+                            game. We&rsquo;re going to design and code a dice game or scaled down 
+                            version of Yahtzee if you will. This exercise is based largely off exercise 
+                            15 on page 197 of the PLD text. Here&rsquo;s how it will work:
+                        </p>
+                        <p>&nbsp;</p>
+                        <ul>
+                            <li>Player (person) against the computer.</li>
+                            <li>Each player will roll 5 dice.</li>
+                            <li>Find highest dice combination rolled such as 5 of a kind, 4 of a kind,
+                                 3 of a kind, or pair.</li>
+                            <li>Display value of each roll.</li>
+                            <li>To keep things simple for now, play 1 round.</li>
+                        </ul>
+                        <p>
+                            Random numbers are used in games for dice rolls, dealing cards, etc. so 
+                            that&rsquo;s what will be used for the dice rolls.</p>
+                        <hr />
+                        <h3>Analysis</h3>
+                        <p>
+                            This time we&rsquo;ll use Pseudocode although you can do a flowchart if 
+                            you&rsquo;d like some extra challenge and practice with those. If you 
+                            created a pseudocode file in exercise 1, you may add your pseudocode for 
+                            this exercise. Otherwise, go ahead and create a file for your pseudocode 
+                            now. Being a guided exercise, you are given a screen shot of the pseudocode.</p>
+                        <figure style="text-align: center;">
+                            <img src="/course-content/images/pylab/05-02-ex2-pseudocode.jpg" 
+                                alt="fig.2 - Dice Game Pseudocode" width="50%"/>
+                            <figcaption>
+                                fig.2 - Dice Game Pseudocode
+                            </figcaption>
+                        </figure>
+                        <h3>Code the Application</h3>
+                        <p>
+                            Create a new Python code file called <strong>DiceExercise2.py</strong>. Being 
+                            a guided exercise, you are given screenshots of the code you need to write.</p>
+                        <ul>Things to watch out for as you write your code:
+                            <li>Make sure you import random.</li>
+                            <li>Watch indentation (4 spaces) in loops and selection structures.</li>
+                            <li>In Python, we&rsquo;re actually using lists but we still need to watch 
+                                the lower bound (0) and make sure we&rsquo;re staying within the upper 
+                                bound.</li>
+                        </ul>
+            
+                        <figure style="text-align: center;">
+                            <img src="/course-content/images/pylab/05_02_ex2_a.png" 
+                                alt="fig.3 - Dice Game Code Part 1" />
+                            <img src="/course-content/images/pylab/05_02_ex2_b.png" 
+                                alt="fig.3 - Dice Game Code Part 1" />
+                            <img src="/course-content/images/pylab/05_02_ex2_c.png" 
+                                alt="fig.3 - Dice Game Code Part 1" />
+                            <figcaption>
+                                fig.3 - Dice Game Code
+                            </figcaption>
+                        </figure>
+                        <p style="font-style: italic; text-align: center;">Go to Exercise 3!</p>
+                        <a href="#ex-2" class="btn btn-primary">Back to Top <i class="fa fa-arrow-up"></i></a>
+                    </div><!-- .card-body -->
+                </div> <!-- #collapseEx2 -->
+            </div> <!-- #ex-2 -->
+
+            <div class="card mb-3" id="ex-3">
+                <div class="card-header">
+                    <a 
+                    class="btn btn-link text-decoration-none" 
+                    data-bs-toggle="collapse" href="#collapseEx3" role="button" 
+                    aria-expanded="false" aria-controls="collapseEx3">
+                    Exercise 3 - Shipping Cost Calculator</a>
+                </div>
+                <div id="collapseEx3" class="collapse">
+                    <div class="card-body">
+                        <h2>Exercise 3</h2>
+                        <h3>Shipping Charge Calculator</h3>
+                        <p>
+                            You&rsquo;ve probably seen these in online shopping applications: Get an 
+                            estimated shipping cost based on the zip code your order has to ship to. 
+                            Price will vary depending on if it&rsquo;s shipped via Coyote Express or 
+                            Coyote Ground.</p>
+                        <p>
+                            Develop a Python application that will allow the user to enter a zip code 
+                            and shipping method. You must then look up the zip code and return the 
+                            correct city and shipping charge based on the user&rsquo;s shipping choice. 
+                            You can shorten the shipping choice to &ldquo;Express&rdquo; 
+                            and &ldquo;Ground&rdquo; if you prefer.</p>
+                        <p>
+                            You must use either a Python array or list for the zip codes and shipping 
+                            charges. If the user enters an invalid zip code, your application must
+                            display an appropriate &ldquo;Zip code not found&rdquo; message</p>
+                        <p>
+                            You can also import your Methods module from Lab04 if you'd like to reuse 
+                            code that you've already written.</p>
+                        <p class="boxed-paragraph">
+                            Use a For- loop control structure and parallel arrays for this exercise. 
+                            Python Dictionaries are not part of this assignment.</p>
+                        <table style="width: 95%;">
+                            <caption>Parallel Arrays - content</caption>
+                            <tbody>
+                                <tr>
+                                    <th style="width: 15%;" scope="row">Zip Code</th>
+                                    <td style="width: 17%;">92020</td>
+                                    <td style="width: 17%;">91901</td>
+                                    <td style="width: 17%;">92040</td>
+                                    <td style="width: 17%;">91976</td>
+                                    <td style="width: 17%;">92071</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">City</th>
+                                    <td>El Cajon</td>
+                                    <td>Alpine</td>
+                                    <td>Lakeside</td>
+                                    <td>Spring Valley</td>
+                                    <td>Santee</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Express</th>
+                                    <td>$5.00</td>
+                                    <td>$10.00</td>
+                                    <td>$7.00</td>
+                                    <td>$6.00</td>
+                                    <td>$7.00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ground</th>
+                                    <td>$3.00</td>
+                                    <td>$5.00</td>
+                                    <td>$4.00</td>
+                                    <td>$3.00</td>
+                                    <td>$4.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <p>&nbsp;</p>
+                        <p>
+                        <a href="#ex-3" class="btn btn-primary">Back to Top <i class="fa fa-arrow-up"></i></a>
+                        </p>
+                    </div><!-- .card-body -->
+                </div> <!-- #collapseEx3 -->
+            </div> <!-- #ex-3 -->
+
+            <div class="card mb-3" id="ex-4">
+                                <div class="card-header">
+                    <a 
+                    class="btn btn-link text-decoration-none" 
+                    data-bs-toggle="collapse" href="#collapseEx4" role="button" 
+                    aria-expanded="false" aria-controls="collapseEx4">
+                    Exercise 4 - Dice Game Revisited</a>
+                </div>
+                <div id="collapseEx4" class="collapse">
+                    <div class="card-body">
+                        <h2 class="alert">Exercise 4</h2>
+                        <h3>Dice Game (Revisited)</h3>
+                        <p>In this exercise, you will make the following modifications to the dice game from exercise 2:</p>
+                        <ul>
+                            <li>Prompt the user for the number of rounds they want to play.</li>
+                            <li>Code a loop to play the user entered number of rounds.</li>
+                            <li>Keep score for the player and computer.</li>
+                            <li>At the end, display who won the game after all rounds have been played (player, computer or tie).</li>
+                        </ul>
+                        <p>You must complete exercise 2 before starting this.</p>
+                        <p>Save a copy of the <strong>DiceGameExercise2.py</strong> as <strong>DiceGameExercise4.py</strong>. You may copy the pseudocode or flowchart you did in exercise 2 and add/modify things as needed.</p>
+                        <hr />
+                        <p>Zip <strong>Lab05</strong> folder and upload.</p>
+                    </div><!-- .card-body -->
+                </div> <!-- #collapseEx4 -->
+            </div> <!-- #ex-4 -->
+        </div> <!-- #lab6 -->
+    </div> <!-- #content-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
