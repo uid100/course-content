@@ -199,6 +199,9 @@
                             <li>
                                 <p>Add code to the <code>main()</code> method to test your <code>get_int_val()</code> method. The
                                     code will be very similar to what you did to test the <code>get_float_val()</code> method.</p>
+                                <p>
+                                    You can add each test case into this main() method. Do not write a new main() method.
+                                </p>
                             </li>
                             <li>
                                 <p>Test your <code>get_int_val()</code> method. Be sure to test with both invalid and valid values.
@@ -298,62 +301,70 @@
                 <div id="collapseEx2" class="collapse">
                     <div class="card-body">
                         <h2>Exercise 2</h2>
-                                   <h3>Coyote Tours</h3>
-            <p>Coyote Tours has hired you to develop an application that will</p>
-            <ul>
-                <li>provide the user the cost of a sightseeing tour.</li>
-                <li>ask the user to enter a tour code number and number of persons</li>
-                <li>look up the destination, and cost per person for that destination</li>
-                <li>compute the total price</li>
-                <li>store tour codes, destination and cost per person in <strong>parallel arrays.</strong></li>
-            </ul>
-            <p class="ic-flash-info">Do not use the python Dictionary data structure for this exercise.</p>
-            <p>&nbsp;</p>
-            <p><code>total_price = cost_per_person * number_of_people</code></p>
-            <p>You will import your Methods module and use the find_int() method like you did in exercise 1.</p>
-            <p>You are given the following table of tour codes. Use your creative talents to fill in the destinations and costs.</p>
-            <table class="table table-bordered table-sm">
-                <caption>Tour Code Destination Cost per Person</caption>
-                <thead class="thead-light">
-                    <tr>
-                        <th scope="col">Tour Code</th>
-                        <th scope="col">Destination</th>
-                        <th scope="col">Cost per Person</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1001</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1002</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1003</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1004</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1005</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td>1006</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+                        <h3>Coyote Tours</h3>
+                        <p>Coyote Tours has hired you to develop an application that will</p>
+                        <ul>
+                            <li>provide the user the cost of a sightseeing tour.</li>
+                            <li>ask the user to enter a tour code number and number of persons</li>
+                            <li>look up the destination, and cost per person for that destination</li>
+                            <li>compute the total price</li>
+                            <li>store tour codes, destination and cost per person in <strong>parallel arrays.</strong></li>
+                        </ul>
+                        <p class="ic-flash-info">Do not use the python Dictionary data structure for this exercise.</p>
+                        <p>&nbsp;</p>
+                        <p><code>total_price = cost_per_person * number_of_people</code></p>
+                        <p>
+                            Import your Methods module and use the find_int() method like you did in exercise 1. You will
+                            <em>reuse</em> not <em>rewrite</em> this module! The objective is to build a library of
+                            reusable code and demonstrate that the code can be used in multiple applications. Be sure to keep
+                            all of your files for this lab in the same <strong>Lab06</strong> folder.
+                        </p>
+                        <p>
+                            Start with the following table of tour codes. Use your creative talents to fill in the destinations 
+                            and costs. Store these as parallel arrays in your application.
+                        </p>
+                        <table class="table table-bordered table-sm">
+                            <caption>Tour Code Destination Cost per Person</caption>
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">Tour Code</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Cost per Person</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1001</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1002</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1003</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1004</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1005</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>1006</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
             <p>If the user types in an invalid tour code, display &ldquo;NOT FOUND&rdquo; for the destination and $0 for the cost.</p>
             <p>&nbsp;</p>
             <ol>
