@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!-- module 3 overview
+     <p>
+        <iframe 
+            src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/04/05_x_db_normalization.html?path=../../cisc401" 
+                width="100%" height="1000px" loading="lazy">
+        </iframe>
+     </p>
+    -->
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div class="container my-4 px-2">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+        <div class="card" id="Normalization">
+            <div class="card-header">data Normalization</div>
+            <div class="card-body">
+                <h2>Database Normalization and Normal Forms</h2>
+
+
+    <h1>Database Normalization and Denormalization</h1>
+
+    <h2>Introduction</h2>
+    <p>
+        Database normalization and denormalization are two key processes that influence how data is organized within a
+        relational database.
+    </p>
+    <ul>
+        <li><strong>Normalization</strong> is the process of organizing data to reduce redundancy (duplicate data) and
+            improve data integrity. It involves dividing a database into smaller tables and defining relationships
+            between them.</li>
+        <li><strong>Denormalization</strong> is the opposite process, where data is combined into fewer tables, often to
+            improve read performance by reducing the need for complex joins.</li>
+    </ul>
+
+    <h2>Normalization: First Normal Form (1NF)</h2>
+    <p>
+        A table is in 1NF if:
+    <ul>
+        <li>Each column contains atomic (indivisible) values.</li>
+        <li>Each record is unique and identified by a primary key.</li>
+    </ul>
+    </p>
+    <h3>Example (Unnormalized Table):</h3>
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Courses</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>Math, English</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jane Smith</td>
+            <td>Science, History</td>
+        </tr>
+    </table>
+    <p>Here, the "Courses" column contains multiple values. This is not allowed in 1NF.</p>
+
+    <h3>After applying 1NF:</h3>
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>Math</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jane Smith</td>
+            <td>Science</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jane Smith</td>
+            <td>History</td>
+        </tr>
+    </table>
+
+    <h2>Second Normal Form (2NF)</h2>
+    <p>
+        A table is in 2NF if:
+    <ul>
+        <li>It is in 1NF.</li>
+        <li>All non-key columns depend on the entire primary key (not just part of it).</li>
+    </ul>
+    In other words, partial dependencies are removed.
+    </p>
+    <h3>Example (1NF but not 2NF):</h3>
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Course</th>
+            <th>Teacher</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Math</td>
+            <td>Mr. Johnson</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>English</td>
+            <td>Ms. Brown</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Science</td>
+            <td>Dr. White</td>
+        </tr>
+    </table>
+    <p>Here, "Teacher" depends only on "Course," not on "Student ID," leading to redundancy.</p>
+
+    <h3>After applying 2NF:</h3>
+    <h4>Student-Course Table:</h4>
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Course</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Math</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>English</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Science</td>
+        </tr>
+    </table>
+
+    <h4>Course-Teacher Table:</h4>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Teacher</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Mr. Johnson</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>Ms. Brown</td>
+        </tr>
+        <tr>
+            <td>Science</td>
+            <td>Dr. White</td>
+        </tr>
+    </table>
+
+    <h2>Third Normal Form (3NF)</h2>
+    <p>
+        A table is in 3NF if:
+    <ul>
+        <li>It is in 2NF.</li>
+        <li>No non-key column depends on another non-key column (i.e., there are no transitive dependencies).</li>
+    </ul>
+    </p>
+    <h3>Example (2NF but not 3NF):</h3>
+    <table>
+        <tr>
+            <th>Student ID</th>
+            <th>Course</th>
+            <th>Teacher</th>
+            <th>Teacher's Phone</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Math</td>
+            <td>Mr. Johnson</td>
+            <td>555-1234</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>English</td>
+            <td>Ms. Brown</td>
+            <td>555-5678</td>
+        </tr>
+    </table>
+    <p>Here, "Teacher's Phone" depends on "Teacher," not directly on the "Student ID," creating redundancy.</p>
+
+    <h3>After applying 3NF:</h3>
+    <h4>Course-Teacher Table:</h4>
+    <table>
+        <tr>
+            <th>Course</th>
+            <th>Teacher</th>
+            <th>Teacher's Phone</th>
+        </tr>
+        <tr>
+            <td>Math</td>
+            <td>Mr. Johnson</td>
+            <td>555-1234</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td>Ms. Brown</td>
+            <td>555-5678</td>
+        </tr>
+    </table>
+
+    <h2>Denormalization</h2>
+    <p>
+        Denormalization is the process of combining data back into fewer tables, often to make data retrieval faster.
+        While normalization helps reduce redundancy and maintain data integrity, it can make queries more complex and
+        slower. Denormalization simplifies querying by reducing the need to join multiple tables.
+    </p>
+
+    <h4>More!</h4>
+    <a href="https://www.youtube.com/watch?v=27VeGN1h0Pw" 
+    target="_blank">Video Explanation of Normalization and Denormalization</a>
+
+            </div>
+        </div> <!-- #Normalization -->
+
+    </div> <!-- .container -->
+
+        <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
