@@ -152,9 +152,135 @@
                         Exercise 1 - Zip Code Lookup
                     </a>
                 </div>
-                    <div id="collapseEx1" class="collapse">
+                <div id="collapseEx1" class="collapse">
                     <div class="card-body">
                         <h3>Exercise 1 User-defined Methods</h3>
+                        <p>This first exercise will give you a guided walk through of creating a simple library of user defined
+                            methods. You may need to (re)use any/all of these methods in this library in future lab exercises so
+                            completing it and having everything working correctly now will give you an advantage later on.</p>
+                        <p>&nbsp;</p>
+                        <ol>
+                            <li>Create a Python file called <code>Methods.py</code>. This is case-sensitive.</li>
+                            <li>
+                                <p>Create a user defined method called <code>get_float(prompt)</code> that accepts a prompt as a
+                                    parameter, uses that prompt to prompt the user for an input, and stays in a loop until a float
+                                    value is entered. You are given the code for this one. You are also given a &ldquo;sneak
+                                    peak&rdquo; to using exception handling to validate input and recover from runtime errors.</p>
+                                <p style="font-style: italic;">Watch indentation closely. It gets tricky with both a while loop and
+                                    try/except blocks.</p>
+                                <p><img src="/courses/49289/file_contents/course%20files/course_image/lab04/get_float_val.png"
+                                        alt="Methods.py source code" width="621" height="493" /></p>
+                            </li>
+                            <li>
+                                <p>Create a Python file called <code>MethodTest.py</code></p>
+                            </li>
+                            <li>
+                                <p>Import your <code>Methods</code> file. Note how you can create a shortened &ldquo;alias&rdquo;
+                                    name for your import file. In this case, we&lsquo;ll call it <code>m</code>. You will also
+                                    create a <code>main()</code> method for testing the methods you create and code to invoke the
+                                    <code>main()</code> method.
+                                </p>
+                                <p>You are given the code for this:</p>
+                                <p><img src="/courses/49289/file_contents/course%20files/course_image/lab04/MethodTest.png"
+                                        alt="MethodTest.py source code" width="621" height="395" /></p>
+                            </li>
+                            <li>
+                                <p>Test your <code>get_float_val()</code> method. Test with both invalid and valid values. Be sure
+                                    to save <strong><em>both</em></strong> files before testing!</p>
+                                <p><img src="/courses/49289/file_contents/course%20files/course_image/lab04/get_float_val_results.png"
+                                        alt="test results" /></p>
+                            </li>
+                            <li>
+                                <p>In your Methods file, create a user defined method called <code>get_int_val(prompt)</code> that
+                                    takes a prompt as a parameter, uses that prompt to prompt the user for an input, and stays in a
+                                    loop until an integer value is entered. You get to code this one. Hint: The code will be very
+                                    similar to the <code>get_float_val()</code> method.</p>
+                            </li>
+                            <li>
+                                <p>Add code to the <code>main()</code> method to test your <code>get_int_val()</code> method. The
+                                    code will be very similar to what you did to test the <code>get_float_val()</code> method.</p>
+                            </li>
+                            <li>
+                                <p>Test your <code>get_int_val()</code> method. Be sure to test with both invalid and valid values.
+                                </p>
+                            </li>
+                            <li>
+                                <p>Create a user defined method called <code>is_float(value)</code> that simply tests if an input
+                                    value is a float. This method will accept a string input value as a parameter and return a
+                                    True/False (Boolean) result.</p>
+                                <p>You are given the code for this one. It also uses exception handling to determine if the value is
+                                    a float.</p>
+                                <p><img src="/courses/49289/file_contents/course%20files/course_image/lab04/is_float.png"
+                                        alt="is_float source" width="621" height="158" /></p>
+                            </li>
+                            <li>
+                                <p>Add code to the <code>main()</code> method to test your <code>is_float()</code> method. You are
+                                    given the code:</p>
+                                <p><img src="/courses/49289/file_contents/course%20files/course_image/lab04/test_is_float.png"
+                                        alt="test is_float()" width="621" height="237" /></p>
+                            </li>
+                            <li>
+                                <p>Be sure to save your work and then test the <code>is_float()</code> method with both
+                                    valid and invalid inputs.</p>
+                            </li>
+                            <li>
+                                <p>Create a user defined method called <code>is_integer(value)</code> that tests if an input value
+                                    is an integer. This method will accept a string input value as a parameter and return a
+                                    True/False (Boolean) result. You get to code this one but the code will be very similar to
+                                    <code>is_float()</code>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Add code to the <code>main()</code> method to test your <code>is_integer()</code> method. You get
+                                    to code this.</p>
+                            </li>
+                            <li>
+                                <p>Be sure to save and test your is_integer method. Test with both invalid and valid test data.</p>
+                            </li>
+                            <li>
+                                <p>In lab 5, you wrote code to search an array for a value. This is actually a quite common
+                                    programming task. Do you want to code this over and over every time you need to search an array?
+                                </p>
+                                <p>Let&rsquo;s code a search method we can reuse! In your Methods file, create a user defined method
+                                    called <code>find_string()</code> to find a string value in a Python list. This method will
+                                    accept 2 parameters. The first will be a string list to search and the second parameter will be
+                                    the value to find. It will return the subscript where the value was found or <code>-1</code> if
+                                    the value was not found. You are given the code for this one.</p>
+                                <p><img src="/courses/49289/file_contents/course%20files/course_image/lab04/find_string.png"
+                                        alt="find_string source" width="621" height="219" /></p>
+                            </li>
+                            <li>
+                                <p>In the <code>main()</code> method, add some code to test your <code>find_string()</code> method.
+                                    You are give the code.</p>
+                                <p><img src="/courses/49289/file_contents/course%20files/course_image/lab04/testFindString.png"
+                                        alt="test find_string source" width="621" height="629" /></p>
+                            </li>
+                            <li>
+                                <p>It&rsquo;s time to test. Test with both valid and invalid input values to make sure the method
+                                    returns the correct index or -1 if not found. Since we are comparing the string values in
+                                    <code>find_string()</code> using upper case, the letter case doesn&rsquo;t matter on the input.
+                                </p>
+                                <p>What does matter is that the word is spelled correctly!</p>
+                            </li>
+                            <li>
+                                <p>In your Methods file, create a user defined method called <code>find_int()</code> to find an
+                                    integer value in a Python list. This method will accept 2 parameters. The first will be an
+                                    integer list to search and the second parameter will be the value to find. It will return the
+                                    subscript where the value was found or -1 if the value was not found. You get to code this one.
+                                    Hint: The code from step 15 is quite similar.
+                                    you need it.</p>
+                            </li>
+                            <li>
+                                <p>In the <code>main()</code> method, add some code to test your <code>find_int()</code> method. You
+                                    get to code this, although the code will be very similar to the code in step 16.</p>
+                                <p>Use a hard-coded integer list (at least 6 values) and prompt the user for the value to find.
+                                    Display the subscript of the found value and a &ldquo;Not found&rdquo; message if the value was
+                                    not found.</p>
+                            </li>
+                            <li>
+                                <p>Test your <code>find_int()</code> with both valid and invalid values.</p>
+                            </li>
+                        </ol>
                         <a href="#ex-1" class="btn btn-primary">Back to Top <i class="fa fa-arrow-up"></i></a>
                     </div> <!-- .card-body -->
                 </div> <!-- #collapseEx1 -->
@@ -191,8 +317,41 @@
                     <div class="card-body">
                         <h2>Exercise 3</h2>
                         <h3>Units and Menu App</h3>
-
-                        
+                        <p>This time build an application with an interactive menu to test your functions</p>
+                        <ol>
+                            <li>Create a file called <code>Units.py</code></li>
+                            <li>
+                                <p>Create a user defined method called <code>mi_to_km(mi)</code> that accepts a floating point
+                                    number as a parameter, converts it to kilometers using the same formula you used in lab 1,
+                                    and returns the result</p>
+                                <p><img src="/courses/49289/file_contents/course%20files/course_image/lab04/units_py.png"
+                                        alt="Units.py source code" width="621" /></p>
+                            </li>
+                            <li>
+                                <p>
+                                    Write the menu application, this code is given to you, and test your <code>mi_to_km()</code>
+                                    function.
+                                </p>
+                                <p>
+                                    <img src="/courses/49289/file_contents/course%20files/course_image/lab04/menu_py.png"
+                                        alt="Menu.py source code" />
+                                </p>
+                                </p>
+                            </li>
+                            <li>
+                                <p>Add the remaining methods to the Units.py module, for each of the remaining menu items.</p>
+                                <p>You can use the formulas you were given in earlier labs:</p>
+                                <ul>
+                                    <li>miles = kilometers * miles_per_kilometer</li>
+                                    <li>kilometers = miles / miles_per_kilometer</li>
+                                    <li>pounds = kilograms * pounds_per_kilogram</li>
+                                    <li>kilograms = pounds / pounds_per_kilogram</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Be sure to test your code!
+                            </li>
+                        </ol>
                         <p>
                         <a href="#ex-3" class="btn btn-primary">Back to Top <i class="fa fa-arrow-up"></i></a>
                         </p>
