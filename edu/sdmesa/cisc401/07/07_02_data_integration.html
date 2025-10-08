@@ -1,24 +1,298 @@
-<span id="course-id" style="display: none;">2475348</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Integration</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!--
+     <p>
+        <iframe 
+            src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/07/07_02_data_integration.html?path=../../cisc401" 
+                width="100%" height="1000px" loading="lazy">
+        </iframe>
+     </p>
+    -->
+</head>
+<body>
+    <div id="top"> </div>
+    <div class="container my-4 px-2">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
 
-<!-- ##### Local Course Links ##### -->
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+        <div class="card">
+            <div class="card-header">Data Integration and Exchange</div>
+            <div class="card-body">
+                <div class="card-text">
+                    <h1 class="card-title">Data Integration</h1>
+                    <p>
+                        In this course, we have discussed and explored various aspects of data collection, storage, and analysis.
+                        However, the real value of data lies in its integration and exchange across different systems and platforms.
+                        Data integration, or combining data from multiple sources into a unified view, enabling organizations to
+                        have access to accurate and comprehensive information. This integrated data can then be used for various
+                        purposes, including decision-making, reporting, and analysis.
+                    </p>
+                    <p>
+                        We have looked examples of data collection and hosted data sets. And focused on data storage.
+                    </p>
+                    <p>
+                        Considering database architecture, you have seen the basic structure of client-server architecture and how
+                        separating the data and the processing from the user interface can improve performance and scalability. This
+                        separation also enables data integration by allowing different systems to access and interact with the same data
+                        source.
+                    </p>
+                    <p>&nbsp;</p>
+                    <h2>Why Data Integration Matters</h2>
+                    <p>
+                        Data integration is essential for organizations that rely on data-driven insights to make informed decisions. By
+                        combining data from disparate sources, organizations can gain a more complete and accurate understanding of
+                        their operations, customers, and market trends. This integrated view of data enables organizations to identify
+                        patterns, trends, and correlations that would be difficult to discern from individual data silos.
+                    </p>
+                    <p>
+                        In the context of business intelligence and analytics, data integration is critical for creating a single source
+                        of truth that can be used for reporting and analysis. Without data integration, organizations risk making
+                        decisions based on incomplete or inaccurate information, leading to undesirable outcomes.
+                    </p>
+                    <p>&nbsp;</p>
+                    <h2>Data Exchange and Inter-Process Communication (IPC)</h2>
+                    <p>
+                        Data exchange refers to the process of transferring data between different systems or applications. This can
+                        involve
+                        sending data from one system to another, receiving data from an external source, or synchronizing data between
+                        multiple systems. Data exchange is a fundamental aspect of data integration, as it enables disparate systems to
+                        share and access information in a seamless and efficient manner.
+                    </p>
+                    <p>
+                        One of the early challenges of data exchange was the lack of standardized formats and protocols for transferring
+                        data between systems. This led to compatibility issues, data loss, and errors during the data exchange process.
+                        To address these challenges, various data exchange formats and protocols have been developed to facilitate
+                        interoperability between systems.
+                    </p>
+                    <p>
+                        Matching these data formats and protocols to the needs of the systems involved in the data exchange process is
+                        necessary for ensuring smooth and efficient data transfer. <strong>Data transformation</strong> and mapping
+                        tools can be used to
+                        convert data from one format to another, enabling systems with different data structures to communicate and
+                        exchange information effectively. Data transformation involves converting data from one format to another. It is
+                        not just about changing the format of the data, but also about transforming the data to meet the requirements of
+                        the target system. This may involve careful cleaning, filtering, aggregating, or enriching the data to ensure
+                        that it is accurate, complete, and consistentm without changing the meaning or context of the data.
+                    </p>
+                    <p>&nbsp;</p>
+                    <h2>ETL</h2>
+                    <p>
+                        ETL stands for Extract, Transform, Load. It is a process used to extract data from one or more sources,
+                        transform it into a format that is suitable for analysis, and load it into a target system, such as a data
+                        warehouse or database. ETL is commonly used in data integration and business intelligence to consolidate and
+                        analyze data from multiple sources.
+                    </p>
+                    <p>
+                        The ETL process typically involves the following steps:
+                    <ul>
+                        <li><strong>Extract</strong>: Data is extracted from one or more sources, such as databases, files, or APIs.
+                        </li>
+                        <li><strong>Transform</strong>: The extracted data is transformed into a format that is suitable for analysis.
+                            This may involve cleaning, filtering, aggregating, or enriching the data to ensure its quality and
+                            consistency.</li>
+                        <li><strong>Load</strong>: The transformed data is loaded into a target system, such as a data warehouse or
+                            database, where it can be analyzed and queried.</li>
+                    </ul>
+                    </p>
+                    <p>&nbsp;</p>
+                    <h2>Self-Describing Data Formats</h2>
+                    <p>
+                        In the past, data exchange was often done using proprietary formats that required custom parsers and
+                        translators to interpret the data. This made data exchange between different systems cumbersome and error-prone.
+                        Self-describing data file formats were proposed as a solution to this problem. These formats include metadata
+                        that describe the structure and content of the data, making it easier for systems to interpret and process the
+                        information.
+                    </p>
+                    <h3>XML (extensible markup language)</h3>
+                    <p>
+                        XML was one of the first self-describing data formats to gain widespread adoption. XML
+                        uses tags to define the structure of the data, making it human-readable and machine-parseable.
+                    </p>
+                    <h4>XML sample</h4>
+                    <pre>
+                    <code>
+                        &lt;person&gt;
+                            &lt;name&gt;John Doe&lt;/name&gt;
+                            &lt;age&gt;30&lt;/age&gt;
+                            &lt;address&gt;123 Main St.&lt;/address&gt;
+                        &lt;/person&gt;
+                    </code>
+                    </pre>
+                    <p>
+                        XML has been widely used for data exchange in various industries, including finance, healthcare, and e-commerce.
+                        It
+                        provides a flexible and extensible way to represent structured data, making it suitable for a wide range of
+                        applications.
+                    </p>
+                    <h3>JSON (JavaScript Object Notation)</h3>
+                    <p>
+                        XML was followed by JSON, a lightweight data interchange format that is easy for humans to read and write and
+                        easy
+                        for machines to parse and generate. JSON is based on a subset of the JavaScript programming language and is
+                        commonly
+                        used for web APIs and data exchange between web applications.
+                    </p>
+                    <h4>JSON sample</h4>
+                    <pre>
+                    <code>
+                        {
+                            "person": {
+                                "name": "John Doe",
+                                "age": 30,
+                                "address": "123 Main St."
+                            }
+                        }
+                    </code>
+                    </pre>
+                    <p>
+                        Self-describing data formats like JSON and XML are commonly used for data exchange between different systems.
+                        These formats provide a standardized way to represent and structure data, making it easier for systems to
+                        interpret and process the information.
+                    </p>
+                    <p>
+                        APIs and web services are often used to facilitate data exchange between applications,
+                        enabling seamless communication and interoperability.
+                    </p>
+                    <p>&nbsp;</p>
 
-<div id="page" style="background-color: #5CB3FF; ">
-    <div id="page-header" class="d-flex flex-column-reverse flex-md-row" style="margin-left: auto; margin-right: 0;">
-        <div id="course-image" class="p-3" style="float:right;">
-            <figure style="text-align: center;">
-                <a style="color: navy;" href="/courses/2475348/pages/start">
-                    <img style="display: block; margin-left: auto; margin-right: auto;"
-                        src="https://uid100.github.io/course-content/images/server_room.jpg" alt="main course image"
-                        width="100" height="100" />
-                    <figcaption style="text-align: center;">home</figcaption>
-                </a>
-            </figure>
-        </div> <!-- #course-image -->
-    </div> <!-- #page-header -->
-
-
-    <div id="overview-link" class="flex-grow-1 d-flex justify-content-center align-items-center" style="height: 80vh;">
-        <iframe src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/07/data_integration_and_exchange.html"
-            class="mt-4 mb-4" allowfullscreen style="width: 90%; height: 90%; margin:auto; padding:20px;"></iframe>
-    </div> <!-- #page-link -->
-</div> <!-- #page -->
+                    <h2>API (Application Programming Interface)</h2>
+                    <p>
+                        An API is a set of rules and protocols that allows one software application to interact with another. APIs
+                        define the methods and data formats that applications can use to communicate with each other. APIs are commonly
+                        used to enable data exchange between different systems, applications, and services.
+                    </p>
+                    <p>
+                        Much like a web server, an API server listens for requests and responds with data. APIs can be used to retrieve
+                        data from a remote server, send data to a server, or perform specific actions based on the request. APIs are
+                        commonly used to integrate third-party services, access data from external sources, and enable communication
+                        between different applications. While a web server will return an HTML page, suitable for a web browser to read,
+                        an API will return data in a format that is more easily consumed by another program.
+                    </p>
+                    <p>
+                        APIs are widely used in web development, mobile app development, and software integration. They provide a
+                        standardized way for applications to communicate and exchange data, enabling developers to build powerful and
+                        interconnected systems.
+                    </p>
+                    <p>
+                        An API is one way to enable data exchange between different systems.
+                    </p>
+                    <p>
+                        Some examples of APIs include:
+                    <ul>
+                        <li><a href="https://api.chucknorris.io/jokes/random"
+                                target="_blank">https://api.chucknorris.io/jokes/random</a></li>
+                        <li><a href="https://dog.ceo/api/breeds/image/random"
+                                target="_blank">https://dog.ceo/api/breeds/image/random</a></li>
+                        <li><a href="https://api.nasa.gov/planetary/apod" target="_blank">https://api.nasa.gov/planetary/apod</a>
+                            <em>What happened?</em>
+                        </li>
+                        <li><a href="https://api.weather.gov/points/32.8041,-117.1635"
+                                target="_blank">https://api.weather.gov/points/32.8041,-117.1635</a>
+                            <ul>
+                                <li><a href="https://api.weather.gov/gridpoints/SGX/57,18/forecast"
+                                        target="_blank">https://api.weather.gov/gridpoints/SGX/57,18/forecast</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://api.opentopodata.org/v1/srtm90m?locations=32.8041,-117.1635&interpolation=cubic"
+                                target="_blank">https://api.opentopodata.org/v1/srtm90m?locations=32.8041,-117.1635&interpolation=cubic</a>
+                        </li>
+                    </ul>
+                    </p>
+                    <p>
+                        APIs can return data in various formats, such as JSON, XML, or HTML. The format of the data returned by an API
+                        depends on the API itself and the request made by the client application.
+                    <ul>
+                        <li>
+                            Try a web search for <em>free APIs</em>.
+                        </li>
+                        <li>
+                            What does the data look like when you access an API?
+                        </li>
+                    </ul>
+                    </p>
+                    <p>&nbsp;</p>
+                    <h2>Web Services</h2>
+                    <p style="font-style: italic; text-align: center; border:solid 1px; width:50%">
+                        What is the difference between an API and a web server?
+                    </p>
+                    <p>
+                        Try this. Open a web browser and type in the URL of a website. Hit enter. What do you see? A <em>formatted</em>
+                        web page.
+                    </p>
+                    <p>
+                        Now, open a new tab in your browser and type in the URL of an API. Hit enter. What do you see? Data.
+                    </p>
+                    <p>
+                        Open a terminal window and try this:
+                    </p>
+                    <pre>
+                        curl -H "Accept: application/json" https://icanhazdadjoke.com/
+                    </pre>
+                    <p>
+                        You can also try this:
+                    </p>
+                    <pre>
+                        curl -H "Accept: text/html" https://icanhazdadjoke.com/
+                    </pre>
+                    <p>
+                        The first command will return a JSON response, while the second command will return an HTML response. This is
+                        the difference between an API and a web server. An API returns data in a format that is more easily consumed by
+                        another program, while a web server returns an HTML page that is suitable for a web browser to read.
+                    </p>
+                    <p>&nbsp;</p>
+                    <h2>Inter-Process Communication (IPC)</h2>
+                    <p>
+                        Inter-Process Communication (IPC) refers to the mechanisms and techniques used by operating systems to allow
+                        processes to communicate with each other. IPC enables processes to share data, synchronize their actions, and
+                        coordinate their activities. IPC is essential for enabling communication between different components of a
+                        system, such as applications, services, and system processes.
+                    </p>
+                    <p>&nbsp;</p>
+                    <h2>Healthcare Technologies</h2>
+                    <p>
+                        Data integration is particularly important in the context of healthcare, where patient information is scattered
+                        across different systems and providers. By integrating data from electronic health records (EHRs), lab systems,
+                        imaging systems, and other sources, healthcare organizations can create a holistic view of a patient's health
+                        history and treatment journey. This comprehensive view enables healthcare providers to make informed decisions,
+                        deliver personalized care, and improve patient outcomes.
+                    </p>
+                </div>
+            </div> <!-- .card-body -->
+        </div> <!-- #module-overview -->
+    </div>
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
