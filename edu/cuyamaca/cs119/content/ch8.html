@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!--
+      <p><iframe src="https://uid100.github.io/course-content/edu/cuyamaca/cs119/content/ch8.html?path=../../../cuyamaca/cs119" 
+          width="100%" height="1000px" loading="lazy"></iframe></p>
+    -->
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="content-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+        <h1>Chapter 8: (More) Object-Oriented Programming Concepts</h1>
+        <div class="container my-4 px-2">
+            <div class="card"> <!-- .card overview -->
+                <div class="card-header">
+                    <button class="btn btn-link text-decoration-none text-dark fw-bold" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#overview" aria-expanded="true"
+                        aria-controls="overview">
+                        <span class="icon"><i class="fas fa-chevron-down"></i></span>
+                        <span class="icon"><i class="fas fa-chevron-up"></i></span>
+                        Chapter Notes
+                    </button>
+                </div> <!-- .card-header -->
+                <div id="overview">
+                    <div class="card-body">
+                        <h3>More Object-Oriented Concepts</h3>
+                        <p>Chapter 8 More Object Concepts</p>
+                        <p>
+                            In Chapter 7 you read that instances of classes are called objects which have 
+                            attributes and methods. In this chapter we will discuss a very specific method 
+                            common to all classes called the <strong>constructor</strong>.
+                        </p>
+                        <p>A constructor is a special method that is called when an object is created. 
+                            The constructor initializes the object's attributes and performs any other setup 
+                            procedures required when an object is instantiated. We will also discuss the 
+                            concept of overloading methods, which allows a class to have multiple methods 
+                            with the same name but different parameters. This can be useful for providing 
+                            different ways to perform the same operation depending on the context.
+                        </p>
+                        <p>
+                            Additionally, we discuss the concept of inheritance and how specific groups of 
+                            classes can be related to more generalized classes. Just as dogs are <em>animals</em>
+                            or cars and trucks and motorcycles and busses are all <em>motor-vehicles</em>.
+                        </p>
+                        <div id="topics" style="padding: 40px;">
+                            <p>Chapter Highlights</p>
+                            <ul>
+                                <li>Constructors</li>
+                                <li></li>Destructors</li>
+                                <li>The concept of inheritance</li>
+                                <li>Inheritance terminology</li>
+                                <li>Accessing private members of a parent class</li>
+                                <li>Overriding base class methods</li>
+                                <li>How constructors are called during inheritance</li>
+                                <li>The concept that a derived class object “is an” instance of the base class</li>
+                                <li>Using inheritance to achieve good software design</li>
+                            </ul>
+                        </div> <!-- #topics -->
+                    </div> <!-- .card-body -->
+                </div> <!-- .collapse -->
+            </div> <!-- .card (overview) -->
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+        </div> <!-- #footer -->
+    </div> <!-- #content-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
