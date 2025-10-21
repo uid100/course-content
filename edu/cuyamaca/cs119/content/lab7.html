@@ -232,13 +232,31 @@
             <p>In this exercise, you will design and build an application that allows the user to enter information for a checking account and then display it.</p>
             <p>To do this, you will create a new class called <code>CheckingAccount</code> that will contain properties for the account number, customer name, customer address and account balance.</p>
             <ol>
-                <li>Complete a class model in draw.io. Save it as <code>CheckingAccount_ClassModel.jpg</code></li>
-                <li>Create a Python code file in your Lab07 folder called CheckingAccount.py</li>
-                <li>Code a constructor, getter methods, setter methods, the to_string() method</li>
-                <li>Add methods: credit() and debit(). You may call these deposit() and withdraw() if you prefer.</li>
-                <li>The to_string() method must return a formatted string with the values for all the properties above.</li>
-                <li>Create a new Python code file called <code>CheckingAccountTest.py</code>. This will be the test fixture application.</li>
-                <li>Your test fixture code will have prompts for account number, customer name, address and initial balance. Additionally, you must have a prompt to debit an amount and a prompt to credit the account. Use the to_string() method to display the account information.</li>
+                <li>
+                    Complete a class model in draw.io. Save it as <code>CheckingAccount_ClassModel.jpg</code></li>
+                <li>
+                    Create a Python code file in your Lab07 folder called CheckingAccount.py</li>
+                <li>
+                    Code a constructor, getter methods, setter methods, the to_string() method</li>
+                <li>
+                    Add methods: credit() and debit(). You may call these deposit() and withdraw() 
+                    if you prefer.</li>
+                <li>
+                    The to_string() method must return a formatted string with the values for all the 
+                    properties above.</li>
+                <li>
+                    Create a new Python code file called <code>CheckingAccountTest.py</code>. This 
+                    will be the test fixture application.</li>
+                <li>
+                    Your test fixture code will have prompts for customer name and address. The class 
+                    should use a static class variable and a private setter to ensure that all the 
+                    account numbers are unique. The 
+                    starting balance should be set to $0.0. Additionally, you must have a prompt to 
+                    debit an amount and a prompt to credit the account. It is recommended to do this in a loop.
+                </li>
+                <li>
+                    Use the to_string() method to 
+                    display the account information.</li>
                 <li>Be sure to test your work.</li>
             </ol>
             <hr />
@@ -250,6 +268,7 @@
                     </div><!-- .card-body -->
                 </div> <!-- #collapseEx3 -->
             </div> <!-- #ex-3 -->
+
             <div class="card mb-3" id="ex-4">
                 <div class="card-header">
                     <a 
