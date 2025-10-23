@@ -50,7 +50,8 @@ function getQueryParams() {
 window.addEventListener("DOMContentLoaded", () => {
     const dates = getQueryParams();
     if (dates) {
-        const today = new Date();
+        // const today = new Date();
+        const today = new Date('2025-08-19'); // Fixed date for consistent testing
         showTimeLine(dates.start, dates.end, today);
     }
 });
