@@ -1,24 +1,111 @@
-<span id="course-id" style="display: none;">2475348</span>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module Overview</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!-- module 1 overview
+     <p>
+        <iframe 
+            src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/09/09_01_overview.html?path=../../cisc401" 
+                width="100%" height="1000px" loading="lazy">
+        </iframe>
+     </p>
+    -->
+</head>
+<body>
+    <div id="top"> </div>
+<div class="container my-4 px-2">
+    <h1 class="card" id="module_overview">Module Overview</h1>
+    <div id="page-header">
+        <div class="row">
+            <div class="col-6 text-start">
+                <a id="college-link" href="#" target="_blank">
+                    <img id="college-logo" class="logo" src="" alt="College Logo" />
+                </a> <!-- #college-link -->
+            </div> <!-- .col-6 -->
+            <div class="col-6 text-end">
+                <a id="course-home" href="#" target="parent">
+                    <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                    </figure>
+                </a> <!-- #course-home -->
+            </div> <!-- .col-6 -->
+        </div> <!-- .row -->
+        <div class="row">
+            <div class="col-12">
+                <div class="timeline">
+                    <div class="line"></div>
+                    <div id="start-marker" class="marker"></div>
+                    <div id="end-marker" class="marker"></div>
+                    <div id="current-marker" class="marker current-marker"></div>
 
-<!-- ##### Local Course Links ##### -->
-
-<div id="page" style="background-color: #5CB3FF; ">
-    <div id="page-header" class="d-flex flex-column-reverse flex-md-row" style="margin-left: auto; margin-right: 0;">
-        <div id="course-image" class="p-3" style="float:right;">
-            <figure style="text-align: center;">
-                <a style="color: navy;" href="/courses/2475348/pages/start">
-                    <img style="display: block; margin-left: auto; margin-right: auto;"
-                        src="https://uid100.github.io/course-content/images/server_room.jpg" alt="main course image"
-                        width="100" height="100" />
-                    <figcaption style="text-align: center;">home</figcaption>
-                </a>
-            </figure>
-        </div> <!-- #course-image -->
+                    <div id="start-label" class="label"></div>
+                    <div id="end-label" class="label"></div>
+                    <div id="current-label" class="label current"></div>
+                </div> <!-- #timeline -->
+            </div> <!-- .col-12 -->
+        </div> <!-- .row -->
     </div> <!-- #page-header -->
 
+    <div id="module-overview-content">
+        <div class="card p-3 mb-4">
+            <div class="card-header">
+                <h2 id="module-title">SQL in Healthcare</h2>
+            </div> <!-- .card-header -->
+            <div class="card-body">
+                <p>
+                    Databases and SQL are used exensively in healthcare systems for managing large
+                    amounts of data, ensuring data integrity, and supporting decision-making.
+                </p>
+                <h2>Examples</h2>
+                <ul>
+                    <li>Electronic Health Records (EHR)</li>
+                    <li>Common healthcare databases (HL7, FHIR, etc.)</li>
+                    <li>Other uses, such as patient data analysis, claims management, and report generation.</li>
+                </ul>
 
-    <div id="overview-link" class="flex-grow-1 d-flex justify-content-center align-items-center" style="height: 80vh;">
-        <iframe src="https://uid100.github.io/course-content/edu/sdmesa/cisc401/09/09_overview.html" class="mt-4 mb-4"
-            allowfullscreen style="width: 90%; height: 80%; margin:auto; padding:20px;"></iframe>
-    </div> <!-- #page-link -->
-</div> <!-- #page -->
+                <h2>Complex SQL queries - Concepts</h2>
+                <p>
+                    Writing complex queries for healthcare scenarios involves understanding how to
+                    combine data from multiple tables, use aggregate functions, and apply window functions
+                    for tracking trends over time.
+                </p>
+                <h3>Review</h3>
+                <ul>
+                    <li>Joins & Subqueries: Combining patient records with appointment data, lab results, and billing information.</li>
+                    <li>Aggregate Functions: Calculating averages, counts, and sums for healthcare metrics.</li>
+                    <li>Window Functions: Tracking patient trends over time, e.g., glucose level progression.</li>
+                </ul>
+                <hr />
+                <h2>Creating and Managing Healthcare Reports</h2>
+                <p>Create reports for hospital administrators and healthcare providers using SQL.</p>
+                <p>Reports are essential for monitoring patient care, resource utilization, and financial
+                    performance.</p>
+                <h3>Types of Reports</h3>
+                <ul>
+                    <li>Operational Reports (e.g., bed occupancy rate)</li>
+                    <li>Financial Reports (e.g., billing by insurance provider)</li>
+                    <li>Clinical Reports (e.g., patient discharge summaries)</li>
+                </ul>
+
+                <h3>Creating Reports with SQL</h3>
+                <p>
+                    Reports are commonly created using SQL tools, from SELECT queries with JOIN clauses to
+                    integrate data from multiple tables and using more advanced GROUP BY and HAVING clauses for
+                    aggregating data.
+                </p>
+                <h3>more reporting examples</h3>
+                <ul>
+                    <li>Create a report showing the number of patients admitted by department each month.</li>
+                    <li>Export query results into formats like CSV for further use in external
+                    reporting and visualization tools.</li>
+                </ul>
+            </div> <!-- .card-body -->
+        </div> <!-- .card -->
+    </div> <!-- #module-overview-content -->
+</div> <!-- .container -->
+
+</body>
+</html>
