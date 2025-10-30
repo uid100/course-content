@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!--
+      <p><iframe src="https://uid100.github.io/course-content/edu/cuyamaca/cs119/content/lab10.html?path=../../cs119" 
+          width="100%" height="1000px" loading="lazy"></iframe></p>
+    -->
+</head>
+
+<body>
+    <div id="top"></div>
+    <div class="content-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <div id="lab7">
+            <h2>Lab 10 - Exception Handling</h2>
+            <div class="card mb-3">
+                <div class="card-header">
+                    <a 
+                        class="btn btn-link text-decoration-none" 
+                        data-bs-toggle="collapse" href="#intro-collapse" role="button" 
+                        aria-expanded="false" aria-controls="intro-collapse">Lab 10 Introduction
+                    </a>
+                </div>
+                <div id="intro-collapse" class="collapse show">
+                    <div class="card-body" id="introduction" class="collapse show">
+                        <p>
+                            We&rsquo;ve seen from the textbook chapter that exception handling 
+                            is a vital tool that helps us write more robust, fault tolerant code. 
+                            Up until now, we&rsquo;ve put very little emphasis on error handling 
+                            in our code.</p>
+                        <div id="objectives" style="padding: 40px;">
+                            <ul>Objectives:
+                                <li>Python exception handling</li>
+                                <li>Working with classes and inheritance</li>
+                                <li>Review of general Python coding (sequential code, selection structures, etc.)</li>
+                            </ul>
+                        </div>
+                        <p><a href="https://youtu.be/fvo7ITiKL9c?si=fccFSzr7KxBZGR_h" target="_blank" rel="noopener">https://youtu.be/fvo7ITiKL9c?si=fccFSzr7KxBZGR_h</a></p>
+                        <p>&nbsp;</p>
+                    </div> <!-- .card-body -->
+                </div> <!-- #intro-collapse -->
+            </div> <!-- #introduction .card -->
+
+            <div class="card mb-3" id="ex-1">
+                <div class="card-header">
+                    <a 
+                        class="btn btn-link text-decoration-none" 
+                        data-bs-toggle="collapse" href="#collapseEx1" role="button" 
+                        aria-expanded="false" aria-controls="collapseEx1">
+                        Exercise 1 - <code>class</code> Player (revisited)
+                    </a>
+                </div> <!-- .card-header -->
+                <div id="collapseEx1" class="collapse">
+                    <div class="card-body">
+                        <h3>Player Exercise (Revisited)</h3>
+                        <p>For this exercise, you are going to modify the Player class created in Lab 8 and add a custom exception class for an invalid player number, throw the exception when the player number is invalid, and catch/handle it in the Python client code. You don&rsquo;t need to do any class models or pseudocode. The focus here will be strictly on creating a custom exception class, throwing and catching exceptions. As a best practice, and to avoid &ldquo;reinventing the wheel&rdquo;, use the built-in Python exception classes wherever possible. Custom classes should be created to enforce business rules that aren&rsquo;t handled by any of the built-in exception classes..</p>
+                        <ol>
+                            <li>
+                                <p>Copy the player files from lab 8 to your Lab 10 folder. Lab 8 must be completed before starting this!</p>
+                            </li>
+                            <li>
+                                <p>Create a new Python code file called <strong>CustomExceptions.py</strong>. Add the code shown below:</p>
+                                <p><img src="https://gcccd.instructure.com/courses/66467/files/13219892/preview" alt="Custom Exception Class" data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/66467/files/13219892" data-api-returntype="File" /></p>
+                            </li>
+                            <li>
+                                <p>Modify the <strong>Player</strong> class. Add an import for the custom exception:</p>
+                                <p><img src="https://gcccd.instructure.com/courses/66467/files/13219894/preview" alt="import the custom exception classes" data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/66467/files/13219894" data-api-returntype="File" /></p>
+                            </li>
+                            <li>
+                                <p>Modify the <code>set_number()</code> method as shown:</p>
+                                <p><img src="https://gcccd.instructure.com/courses/66467/files/13219831/preview" alt="set_number() method changes" data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/66467/files/13219831" data-api-returntype="File" /></p>
+                            </li>
+                            <li>
+                                <p>Modify the constructor with the code modification:</p>
+                                <p><img src="https://gcccd.instructure.com/courses/66467/files/13219893/preview" alt="modify the constructor" data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/66467/files/13219893" data-api-returntype="File" /></p>
+                            </li>
+                            <li>
+                                <p>Modify your test fixture app with the code shown. indent the code in the <em>try/except</em> blocks (4 spaces!). Be careful here!</p>
+                                <p><img src="https://gcccd.instructure.com/courses/66467/files/13219895/preview" alt="Added try/except blocks to test code" data-api-endpoint="https://gcccd.instructure.com/api/v1/courses/66467/files/13219895" data-api-returntype="File" /></p>
+                            </li>
+                            <li>
+                                <p>Test your application first with a player numbers in and out of range and also with other invalid number value(s). Note how the program repsonds.</p>
+                            </li>
+                            <li>
+                                <p>You get to do this one on your own. Create a class called <code>InvalidBattingException</code> in the <strong>CustomExceptions</strong> module from step 2. Modify the method to set batting average to raise this exception if batting average is less than 0 or greater than 1.0.</p>
+                                <p>Add the code to the test fixture to trap the exception.</p>
+                            </li>
+                        </ol>
+                        <p>&nbsp;</p>
+                        <p style="font-style: italic; text-align: center;">Go to Exercise 2!</p>
+                        <a href="#ex-1" class="btn btn-primary">Back to Top <i class="fa fa-arrow-up"></i></a>
+                    </div> <!-- .card-body -->
+                </div> <!-- #collapseEx1 -->
+            </div> <!-- #ex-1 -->
+
+            <div class="card mb-3" id="ex-2">
+                <div class="card-header">
+                    <a 
+                    class="btn btn-link text-decoration-none" 
+                    data-bs-toggle="collapse" href="#collapseEx2" role="button" 
+                    aria-expanded="false" aria-controls="collapseEx2">
+                    Exercise 2 - <code>class</code> Person class (revisited)
+                    </a>
+                </div>
+                <div id="collapseEx2" class="collapse">
+                    <div class="card-body">
+                        <h2>Exercise 2</h2>
+                        <p>
+                            For this exercise, you are going to modify the Person, Employee and 
+                            Student classes you created in Lab 8 and add a custom exception 
+                            classes for an invalid age (InvalidAge), years worked 
+                            (InvalidYearsWorked) and units completed (InvalidUnits).</p>
+                        <ul style="list-style-type: none; margin: 20px;">
+                            <li>Valid age is 0 through 120</li>
+                            <li>Valid years worked is from 0 through 75</li>
+                            <li>Valid units is from 0 through 200</li>
+                        </ul>
+                        <p>Add the custom exceptions to the custom exceptions file you created 
+                            in exercise 1. You don&rsquo;t need to do any class models or 
+                            pseudocode. Like exercise 1, the focus will be on creating a custom 
+                            exception class, raising and catching exceptions.</p>
+                        <ol>
+                            <li>
+                                <p>Copy the Person, Employee, Student and PersonTest Python code 
+                                    files from lab 8 to your Lab 10 folder. Lab 8 must be 
+                                    completed and working properly before starting this!</p>
+                            </li>
+                            <li>
+                                <p>Code the new custom exceptions in CustomExceptions.</p>
+                            </li>
+                            <li>
+                                <p>Modify the setter methods in Person, Student and Employee as 
+                                    needed to raise an exception for an invalid age,invalid years 
+                                    worked and invalid number of units.</p>
+                            </li>
+                            <li>
+                                <p>Modify the PersonTest application to catch these exceptions. 
+                                    Make your error messages informative. Remember to keep the 
+                                    generic exception as the last one.</p>
+                            </li>
+                            <li>
+                                <p>Test your application with both valid and invalid data and 
+                                    ensure your program responds appropriately.</p>
+                            </li>
+                        </ol>
+            </div><!-- .card-body -->
+                </div> <!-- #collapseEx4 -->
+            </div> <!-- #ex-4 -->
+
+        </div> <!-- #lab7 -->
+    </div> <!-- #content-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
