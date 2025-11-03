@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!--
+      <p><iframe src="https://uid100.github.io/course-content/edu/cuyamaca/cs119/content/lab11.html?path=../../cs119" 
+          width="100%" height="1000px" loading="lazy"></iframe></p>
+    -->
+</head>
+
+<body>
+    <div id="top"></div>
+    <div class="content-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+
+        <div id="lab7">
+            <h2>Lab 11 - Web Services</h2>
+            <div class="card mb-3">
+                <div class="card-header">
+                    <a 
+                        class="btn btn-link text-decoration-none" 
+                        data-bs-toggle="collapse" href="#intro-collapse" role="button" 
+                        aria-expanded="false" aria-controls="intro-collapse">Introduction
+                    </a>
+                </div>
+                <div id="intro-collapse" class="collapse show">
+                    <div class="card-body" id="introduction" class="collapse show">
+                        <p>This lab will demonstrate some ways you can integrate your code with web technologies.</p>                    
+                        <div id="objectives" style="padding: 40px;">
+                            <ul>Objectives:
+                                <li>Using APIs</li>
+                                <li>Using Flask to create web applications</li>
+                            </ul>
+                        </div>
+                    </div> <!-- .card-body -->
+                </div> <!-- #intro-collapse -->
+            </div> <!-- #introduction .card -->
+
+            <div class="card mb-3" id="ex-1">
+                <div class="card-header">
+                    <a 
+                        class="btn btn-link text-decoration-none" 
+                        data-bs-toggle="collapse" href="#collapseEx1" role="button" 
+                        aria-expanded="false" aria-controls="collapseEx1">
+                        Exercise 1 - Reading from an API
+                    </a>
+                </div> <!-- .card-header -->
+                <div id="collapseEx1" class="collapse">
+                    <div class="card-body">
+                        <h2 class="alert">Exercise 1</h2>
+                        <h3>Reading from an API</h3>
+                        <p>A browser request to a web server will usually return a formatted web page intended 
+                            to be viewed in a browser. Another common use-case is to send a request to an API 
+                            server, which typically returns JSON formatted data.</p>
+                        <p>Many API servers will require a key with the request, for example the Google Maps 
+                            API provides a rich data set which can be accessed for a modest fee. Most development 
+                            tasks will be well within the <em>free-tier</em> for many of these services, and the 
+                            fees are modest for light usage for production web sites.</p>
+                        <p>In addition, there are many publicly available API servers which are free to use and 
+                            access. A web search will quickly introduce many of these. The lists are growing all 
+                            the time.</p>
+                        <div id="api-read">
+                            <p>The <code>requests</code> module is a third-party library for making HTTP requests 
+                                in Python. It will need to be installed before this code will run.</p>
+                            <p class="ic-flash-info">
+                                <code>python3 -m pip install --upgrade urllib3</code><br />
+                                <code>python3 -m pip install --upgrade requests</code></p>
+                            <img style="float: left;" 
+                                src="https://p/11389776/preview" 
+                                alt="api_read Python source"  /> 
+                            <img style="float: left;" 
+                                src="https://palomview" 
+                                alt="api_read Python source" />
+                        </div>
+                        <p>Run the application several times. Observe the output changing.</p>
+                    </div> <!-- .card-body -->
+                </div> <!-- #collapseEx1 -->
+            </div> <!-- #ex-1 -->
+
+            <div class="card mb-3" id="ex-2">
+                <div class="card-header">
+                    <a 
+                    class="btn btn-link text-decoration-none" 
+                    data-bs-toggle="collapse" href="#collapseEx2" role="button" 
+                    aria-expanded="false" aria-controls="collapseEx2">
+                    Exercise 2 - A Web Application
+                    </a>
+                </div>
+                <div id="collapseEx2" class="collapse">
+                    <div class="card-body">
+                        <h2>Exercise 2</h2>
+                        <p>Now let's make an application which will read the user's location 
+                            from a ZIP code in the URL and return some current information about 
+                            that location. This will use the Zippopotamus API which does not 
+                            require an API key, and the Flask web server.</p>
+                        <p>You can learn more about writing Python Flask apps here:
+                                https://flask.palletsprojects.com/en/3.0.x/</p>
+                        <p>To create and use Flask applications, you will need to install the Flask 
+                            package. Once again, use the Package installer: <code>pip</code>. Pip 
+                            stands for <em>Pip Installs Packages</em>.</p>
+                        <p class="ic-flash-info"><code>python3 -m pip install --upgrade Flask</code></p>
+                        <p>This application uses the Zippopotamus API to fetch city and state 
+                            information based on a zip code. It's important to note that since 
+                            Zippopotamus is a free and open API, it may have limitations or 
+                            inconsistencies in its data compared to more comprehensive paid APIs.</p>
+                        <p>Create a new Python file named <strong>location.py</strong></p>
+                        <img style="float: left;" 
+                            src="https://p/11389803/preview" 
+                            alt="location Python source"  />
+                        <p>When you successfully run your code, you'll see that Flask has started a web server.</p>
+                        <img style="float: left;" 
+                            src="https://p/11389806/preview" 
+                            alt="Flask server running"  />
+                        <p>Open a browser and enter http://127.0.0.1:5000/92101 in the address bar.</p>
+                        <p>127.0.0.1 is a special IP address known as the <em>loopback</em> or <strong>localhost</strong> address. 
+                            You could also use <code>localhost:5000/92101</code> to see the same results. Try some different 
+                            zipcodes on the URL <em>route</em>.</p>
+                        <p>The response type served from Flask is a very simple web page. You can use your browser to view the 
+                            source. In the next exercise, we'll add more data and formatting.</p>
+                    </div><!-- .card-body -->
+                </div> <!-- #collapseEx2 -->
+            </div> <!-- #ex-2 -->
+
+            <div class="card mb-3" id="ex-3">
+                <div class="card-header">
+                    <a 
+                    class="btn btn-link text-decoration-none" 
+                    data-bs-toggle="collapse" href="#collapseEx3" role="button" 
+                    aria-expanded="false" aria-controls="collapseEx3">
+                    Exercise 3 - Weather Forecast Application
+                    </a>
+                </div>
+                <div id="collapseEx3" class="collapse">
+                    <div class="card-body">
+                        <h2>Exercise 3</h2>
+            <p>In the previous exercise, the application took input from the user, on the address bar, called the 'route', and returned a very simple string which Flask formatted as a minimalist html file. This time we'll add some more to make things more interesting, connecting to multiple APIs and formatting the html using <strong>bootstrap</strong> <em>cascading style sheets (CSS)</em>.</p>
+            <p>Create a new Python source file. Name it <code>forecast.py</code>. I suggest you enter the code as presented, test and understand it before making any <em>customizations.</em></p>
+            <p>Notice the code starts by parsing the @App.route from the user, to get the ZIP code from the user and then connects to the Zippopotamus API to get the latitude, longitude, city, and state. You can try this URL from your browser to see the JSON return data from this API for different ZIP codes.</p>
+            <p>Next the program uses that location (lat,lon) to get the weather forecast for the area from the NOAA servers. If you enter the position in the route to the NOAA URL, you'll see that the first response contains another URL that contains the forecast for the area, so two API calls are made to the weather API.</p>
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="https://palomar.instructure.com/courses/58510/files/11389684/preview" alt="get weather forecast from zip code Python source" data-api-endpoint="https://palomar.instructure.com/api/v1/courses/58510/files/11389684" data-api-returntype="File" /> <img style="display: block; margin-left: auto; margin-right: auto;" src="https://palomar.instructure.com/courses/58510/files/11389683/preview" alt="get weather forecast from zip code Python source" data-api-endpoint="https://palomar.instructure.com/api/v1/courses/58510/files/11389683" data-api-returntype="File" />
+            <p>Next, create another folder in your lab folder called <code>templates</code> and add a file named <code>weather.html</code> The data from the forecast model and the current local time will be passed to the template html file.</p>
+            <img style="display: block; margin-left: auto; margin-right: auto;" src="https://palomar.instructure.com/courses/58510/files/11389756/preview" alt="templates/weather.html source file" data-api-endpoint="https://palomar.instructure.com/api/v1/courses/58510/files/11389756" data-api-returntype="File" />
+            <p>When the html response is delivered to the browser, the browser will also download the bootstrap stylesheets from a <strong>Content Delivery Network (CDN)</strong> server. Using these styles, the output can be formatted with a little more <em>flair</em>. Notice the dynamic image file that is also retrieved from the weather site and included in the page.</p>
+            <p>Try using different zipcodes to see that the data is dynamic. Also, try resizing the browser to see that the responsive design resizes automatically.</p>
+            <p>This demonstration is only listening for requests on the same computer (localhost). If you change the app.run() parameter list in forecast.py to:<br /><code>app.run(host='0.0.0.0', debug=True, port=5000)</code><br />Flask will listen for requests from other computers (like your mobile phone if it's on your home wifi). You may have to also configure Firewall and router settings to get this to work across the network. That is beyond the scope of this exercise.</p>
+            <hr />
+            <p>zip your Lab11 folder with your lab files in it:</p>
+            <pre>                Lab11/
+                ├── api_read.py
+                ├── forecast.py
+                ├── location.py
+                ├── templates/
+                │   ├── weather.html
+            </pre>
+                    </div> <!-- .card-body -->
+                </div> <!-- #collapseEx3 -->
+            </div> <!-- #ex-3 -->
+        </div> <!-- #lab7 -->
+    </div> <!-- #content-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
