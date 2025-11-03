@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Server Architecture</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+    <!-- programming constructs
+     <p>
+        <iframe 
+            src="https://uid100.github.io/course-content/edu/cuyamaca/cs119/content/client_server_arch.html?path=../../../cuyamaca/cs119" 
+                width="100%" height="1000px" loading="lazy">
+        </iframe>
+     </p>
+    -->
+</head>
+
+<body>
+    <div id="top"> </div>
+    <div id="syllabus-wrapper">
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a> <!-- #college-link -->
+                </div> <!-- .col-6 -->
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure><img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a> <!-- #course-home -->
+                </div> <!-- .row -->
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div> <!-- #timeline -->
+                </div> <!-- .col-12 -->
+            </div> <!-- .row -->
+        </div> <!-- #page-header -->
+        <h1>Client-Server Architecture</h1>
+        <div class="container my-4 px-2">
+            <div class="card">
+                <div class="card-header">Introduction</div>
+                <div class="card-body">
+                    <h5 id="chapterTitle">Client-Server Architecture on IP</h5>
+                    <p>
+                        Client–server software architecture is a way of organizing programs so that 
+                        different parts of the system have different jobs. In this model, a server 
+                        is a program or machine that provides services—such as storing data, managing 
+                        user accounts, or running shared logic—while a client is the program that 
+                        users interact with directly, like a web browser or mobile app. The client 
+                        sends requests to the server, and the server responds with the information 
+                        or actions needed. This separation makes systems easier to understand because 
+                        each side has a clear role: clients handle user interface and interaction, 
+                        while servers handle data and shared operations.
+                    </p>
+                    <p>
+                        This setup is especially helpful for extensibility and code reuse. Since the 
+                        server contains core functionality in one place, multiple clients can use the 
+                        same logic without rewriting it—for example, a website and a mobile app can 
+                        both connect to the same server. If new features are added, they can be 
+                        implemented on the server once rather than on every version of the client. 
+                        Likewise, clients can be updated or redesigned without changing how the server 
+                        works. This makes client–server architecture a strong foundation for building 
+                        software that can grow over time and remain maintainable as new features, 
+                        devices, and users are added.
+                    </p>
+                </div> <!-- .card-body -->
+            </div> <!-- .card -->
+            <div class="card">
+                <div class="card-header"><em>Systems Thinking</em></div>
+                <div class="card-body">
+                    <p>
+                        In a client-server architecture, the system is viewed as a collection of interconnected components 
+                        that work together to achieve a common goal. Each component has a specific role and interacts 
+                        with others through well-defined interfaces. This perspective helps in understanding how changes 
+                        in one part of the system can affect the entire system.
+                    </p>
+                    <section>
+                    <h2>Decomposing systems: an effective architecture</h2>
+                    <p>
+                        Client–server architecture is a practical way to break a large software system into smaller, focused pieces that are easier to build, test, and evolve. By assigning clear responsibilities—clients for presentation and interaction, servers for data storage and core logic—teams can work in parallel and reuse components across projects. A well-designed server exposes stable interfaces (APIs) that many different clients can call, while clients can be swapped, upgraded, or specialized without rewriting the system’s central behavior. This decomposition reduces duplication, shortens development cycles, and makes it straightforward to add new features: implement functionality once on the server and reuse it everywhere.
+                    </p>
+                    </section>
+
+                    <aside style="border-left:4px solid #007acc; padding:12px; margin:16px 0; background:#f6fbff;">
+                    <strong>Separation of concerns</strong>
+                    <p style="margin:6px 0 0;">
+                        The heart of this architecture is <em>separation of concerns</em>: keep presentation, business logic, and data management in distinct places so each can change independently. That separation improves readability, testing, and long-term maintainability.
+                    </p>
+                    </aside>
+                </div> <!-- .card-body -->
+            </div> <!-- .card -->
+            <div class="card">
+                <div class="card-header">Client-Server Roles</div>
+                <div class="card-body"></div>
+                    <p>
+                        In a client-server architecture, the roles of clients and servers are clearly defined:
+                    </p>
+                    <ul>
+                        <li><strong>Clients</strong> are responsible for the user interface and user interaction. 
+                            They request services from the server and display the results to the user.</li>
+                        <li><strong>Servers</strong> manage resources, store data, and provide services to clients. 
+                            They process requests from clients and return appropriate responses.</li>
+                    </ul>
+                    <p>
+                        While it’s useful to think of a strict client vs. server split, many real components 
+                        are hybrids. A modern single-page application (SPA) runs significant business logic 
+                        in the browser (a “thick client”), yet still relies on server APIs for persistent data. 
+                        Similarly, server-side rendering mixes presentation and server logic to improve 
+                        performance or SEO. Microservices blur boundaries further: each service behaves like 
+                        a small server but may also expose UI components or push updates to clients. Recognizing 
+                        these blended roles helps you choose where to place responsibility for a feature based 
+                        on performance, security, and user experience.
+                    </p>
+                    <h2>Benefits & the blended roles of components</h2>
+                    <p>
+                        Key benefits include:
+                    </p>
+                    <ul>
+                        <li><strong>Reusability:</strong> A server’s API can be used by web apps, mobile apps, a
+                            nd automated scripts without duplicating logic.</li>
+                        <li><strong>Extensibility:</strong> New clients or server features can be added with 
+                            minimal impact to the rest of the system.</li>
+                        <li><strong>Maintainability:</strong> Bugs and updates are localized—fixing a server bug 
+                            fixes it for all clients.</li>
+                        <li><strong>Scalability:</strong> Servers can be scaled independently to handle more load 
+                            while clients remain lightweight.</li>
+                    </ul>
+                </div> <!-- .card-body -->
+            </div>  <!-- .card -->
+            <div class="card">
+                <div class="card-header">Classic Examples</div>
+                <div class="card-body">
+                    <p>
+                        Examples students will see again and again:
+                    </p>
+                    <ul>
+                        <li><strong>Web applications:</strong> A browser (client) requests pages and data from a web server; the same REST or GraphQL API can serve a mobile app and a web frontend.</li>
+                        <li><strong>Email:</strong> Mail clients (Outlook, Thunderbird, phone mail apps) interact with mail servers (IMAP/SMTP) that centralize storage and delivery.</li>
+                        <li><strong>Database-backed services:</strong> Multiple microservices or frontends query a central database through a server layer that enforces business rules and permissions.</li>
+                    </ul>
+                    <p>
+                        These patterns demonstrate how splitting responsibilities into clients, servers, and intermediate services makes software easier to reuse and extend. As you design systems, ask: “What needs to be shared, what must remain private, and where will change most often?” The answers guide where to place code so your system stays flexible and maintainable.
+                    </p>
+                </div> <!-- .card-body -->
+            </div>  <!-- .card -->
+        </div> <!-- .container -->
+        <div id="footer">
+            <a href="#top" class="btn btn-primary" id="back-to-top">Back to Top</a>
+            <p style="text-align: center; font-style: italic;">
+                <small>Use the [Next >] button to continue.</small>
+            </p>
+        </div> <!-- #footer -->
+    </div> <!-- #syllabus-wrapper -->
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
