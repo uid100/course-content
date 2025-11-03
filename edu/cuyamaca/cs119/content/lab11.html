@@ -166,25 +166,44 @@
                 <div id="collapseEx3" class="collapse">
                     <div class="card-body">
                         <h2>Exercise 3</h2>
-            <p>In the previous exercise, the application took input from the user, on the address bar, called the 'route', and returned a very simple string which Flask formatted as a minimalist html file. This time we'll add some more to make things more interesting, connecting to multiple APIs and formatting the html using <strong>bootstrap</strong> <em>cascading style sheets (CSS)</em>.</p>
-            <p>Create a new Python source file. Name it <code>forecast.py</code>. I suggest you enter the code as presented, test and understand it before making any <em>customizations.</em></p>
-            <p>Notice the code starts by parsing the @App.route from the user, to get the ZIP code from the user and then connects to the Zippopotamus API to get the latitude, longitude, city, and state. You can try this URL from your browser to see the JSON return data from this API for different ZIP codes.</p>
-            <p>Next the program uses that location (lat,lon) to get the weather forecast for the area from the NOAA servers. If you enter the position in the route to the NOAA URL, you'll see that the first response contains another URL that contains the forecast for the area, so two API calls are made to the weather API.</p>
-            <img style="display: block; margin-left: auto; margin-right: auto;" src="https://palomar.instructure.com/courses/58510/files/11389684/preview" alt="get weather forecast from zip code Python source" data-api-endpoint="https://palomar.instructure.com/api/v1/courses/58510/files/11389684" data-api-returntype="File" /> <img style="display: block; margin-left: auto; margin-right: auto;" src="https://palomar.instructure.com/courses/58510/files/11389683/preview" alt="get weather forecast from zip code Python source" data-api-endpoint="https://palomar.instructure.com/api/v1/courses/58510/files/11389683" data-api-returntype="File" />
-            <p>Next, create another folder in your lab folder called <code>templates</code> and add a file named <code>weather.html</code> The data from the forecast model and the current local time will be passed to the template html file.</p>
-            <img style="display: block; margin-left: auto; margin-right: auto;" src="https://palomar.instructure.com/courses/58510/files/11389756/preview" alt="templates/weather.html source file" data-api-endpoint="https://palomar.instructure.com/api/v1/courses/58510/files/11389756" data-api-returntype="File" />
-            <p>When the html response is delivered to the browser, the browser will also download the bootstrap stylesheets from a <strong>Content Delivery Network (CDN)</strong> server. Using these styles, the output can be formatted with a little more <em>flair</em>. Notice the dynamic image file that is also retrieved from the weather site and included in the page.</p>
-            <p>Try using different zipcodes to see that the data is dynamic. Also, try resizing the browser to see that the responsive design resizes automatically.</p>
-            <p>This demonstration is only listening for requests on the same computer (localhost). If you change the app.run() parameter list in forecast.py to:<br /><code>app.run(host='0.0.0.0', debug=True, port=5000)</code><br />Flask will listen for requests from other computers (like your mobile phone if it's on your home wifi). You may have to also configure Firewall and router settings to get this to work across the network. That is beyond the scope of this exercise.</p>
-            <hr />
-            <p>zip your Lab11 folder with your lab files in it:</p>
-            <pre>                Lab11/
-                ├── api_read.py
-                ├── forecast.py
-                ├── location.py
-                ├── templates/
-                │   ├── weather.html
-            </pre>
+                        <p>In the previous exercise, the application took input from the user, on the address 
+                            bar, called the 'route', and returned a very simple string which Flask formatted 
+                            as a minimalist html file. This time we'll add some more to make things more 
+                            interesting, connecting to multiple APIs and formatting the html using 
+                            <strong>bootstrap</strong> <em>cascading style sheets (CSS)</em>.</p>
+                        <p>Create a new Python source file. Name it <code>forecast.py</code>. I suggest you 
+                            enter the code as presented, test and understand it before making any 
+                            <em>customizations.</em></p>
+                        <p>Notice the code starts by parsing the @App.route from the user, to get the ZIP code 
+                            from the user and then connects to the Zippopotamus API to get the latitude, 
+                            longitude, city, and state. You can try this URL from your browser to see the 
+                            JSON return data from this API for different ZIP codes.</p>
+                        <p>Next the program uses that location (lat,lon) to get the weather forecast for the 
+                            area from the NOAA servers. If you enter the position in the route to the NOAA URL, 
+                            you'll see that the first response contains another URL that contains the forecast 
+                            for the area, so two API calls are made to the weather API.</p>
+                        <img style="display: block; margin-left: auto; margin-right: auto;" 
+                            src="/course-content/images/pylab/forecast_source1.png" 
+                            alt="get weather forecast from zip code Python source" /> <br>
+                            <img style="display: block; margin-left: auto; margin-right: auto;" 
+                            src="/course-content/images/pylab/forecast_source2.png" 
+                            alt="get weather forecast from zip code Python source" /> <br>
+                        <p>Next, create another folder in your lab folder called <code>templates</code> and add a file named <code>weather.html</code> The data from the forecast model and the current local time will be passed to the template html file.</p>
+                        <img style="display: block; margin-left: auto; margin-right: auto;" 
+                            src="/course-content/images/pylab/weather_html.png" 
+                            alt="templates/weather.html source file" />
+                        <p>When the html response is delivered to the browser, the browser will also download the bootstrap stylesheets from a <strong>Content Delivery Network (CDN)</strong> server. Using these styles, the output can be formatted with a little more <em>flair</em>. Notice the dynamic image file that is also retrieved from the weather site and included in the page.</p>
+                        <p>Try using different zipcodes to see that the data is dynamic. Also, try resizing the browser to see that the responsive design resizes automatically.</p>
+                        <p>This demonstration is only listening for requests on the same computer (localhost). If you change the app.run() parameter list in forecast.py to:<br /><code>app.run(host='0.0.0.0', debug=True, port=5000)</code><br />Flask will listen for requests from other computers (like your mobile phone if it's on your home wifi). You may have to also configure Firewall and router settings to get this to work across the network. That is beyond the scope of this exercise.</p>
+                        <hr />
+                        <p>zip your Lab11 folder with your lab files in it:</p>
+                        <pre>                Lab11/
+                            ├── api_read.py
+                            ├── forecast.py
+                            ├── location.py
+                            ├── templates/
+                            │   ├── weather.html
+                        </pre>
                     </div> <!-- .card-body -->
                 </div> <!-- #collapseEx3 -->
             </div> <!-- #ex-3 -->
