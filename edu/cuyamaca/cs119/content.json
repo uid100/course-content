@@ -12,6 +12,12 @@
     "academicCalendar": "https://www.gcccd.edu/academic-calendars/index.php"
   },
   "course": {
+    "c-id": {
+      "link": "https://data-c-idsystem.org/descriptors/final/show/340",
+      "title": "Introduction to Programming Concepts and Methodologies",
+      "C-ID Number": "COMP 112",
+      "(Cuy) Course Outline": "https://www.cuyamaca.edu/faculty-staff-resources/academic-senate/curriculum/outlines/files/cs/cs119.pdf"
+    },
     "courseNumber": "CS 119/119L",
     "courseTitle": "Program Design & Development",
     "units": "3 & 1",
