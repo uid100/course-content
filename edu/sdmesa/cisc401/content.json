@@ -7,6 +7,7 @@
   "college": {
     "name": "San Diego Mesa College",
     "logoPath": "/course-content/images/sdmesa-college-logo.jpg",
+    "_logoPath": "https://m.media-amazon.com/images/I/61otOpSoHnL.jpg",
     "website": "https://www.sdmesa.edu/",
     "academicCalendar": "https://www.sdccd.edu/faculty-staff/employee-resources/academic-calendars/academic-calendars-college/index.aspx"
   },
