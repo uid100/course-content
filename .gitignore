@@ -1,0 +1,41 @@
+# ----------------------------------------
+# General Project Exclusions
+# ----------------------------------------
+
+# Ignore common dependency/build directories
+/node_modules
+/dist
+/build
+/temp
+
+# ----------------------------------------
+# Operating System & IDE Specific Files
+# ----------------------------------------
+
+# macOS
+.DS_Store
+.Trashes
+*.iml
+.idea/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux/Unix
+*~
+
+# ----------------------------------------
+# Common Web Development Files
+# ----------------------------------------
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.log
+
+# Environment variables
+.env
+.env.*
