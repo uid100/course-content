@@ -1,0 +1,1239 @@
+.
+├── common
+│   ├── css
+│   ├── js
+│   └── schedule
+├── edu
+│   ├── _sandbox
+│   │   ├── Prog-101
+│   │   │   └── images
+│   │   └── templates
+│   ├── canvas
+│   │   ├── EDU101
+│   │   ├── EDU101.json
+│   │   └── python
+│   │       └── 00
+│   ├── cuyamaca
+│   │   ├── cs119
+│   │   │   ├── content
+│   │   │   ├── docs
+│   │   │   └── notes
+│   │   ├── CS119-W25
+│   │   └── cs181
+│   ├── palomar
+│   │   ├── csit175
+│   │   │   ├── modules
+│   │   │   │   ├── module01
+│   │   │   │   │   └── __pycache__
+│   │   │   │   ├── module02
+│   │   │   │   ├── module03
+│   │   │   │   ├── module04
+│   │   │   │   ├── module05
+│   │   │   │   ├── module06
+│   │   │   │   ├── module07
+│   │   │   │   │   └── __pycache__
+│   │   │   │   ├── module08
+│   │   │   │   ├── module09
+│   │   │   │   ├── module10
+│   │   │   │   ├── module11
+│   │   │   │   │   └── templates
+│   │   │   │   └── module12
+│   │   │   ├── resources
+│   │   │   │   ├── python
+│   │   │   │   │   ├── Instructors
+│   │   │   │   │   │   ├── Case studies
+│   │   │   │   │   │   │   └── case_study_solutions
+│   │   │   │   │   │   │       ├── baseball_by_chapter
+│   │   │   │   │   │   │       │   ├── ch02
+│   │   │   │   │   │   │       │   ├── ch03
+│   │   │   │   │   │   │       │   ├── ch04
+│   │   │   │   │   │   │       │   ├── ch05
+│   │   │   │   │   │   │       │   ├── ch06
+│   │   │   │   │   │   │       │   ├── ch07
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch08
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch10
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch11
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch12
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch14
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch15
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch16
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch17
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   └── ch18
+│   │   │   │   │   │   │       │       └── __pycache__
+│   │   │   │   │   │   │       ├── baseball_by_section
+│   │   │   │   │   │   │       │   ├── baseball_section_1
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── baseball_section_2
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── baseball_section_3
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   └── baseball_section_4
+│   │   │   │   │   │   │       │       └── __pycache__
+│   │   │   │   │   │   │       ├── blackjack_by_chapter
+│   │   │   │   │   │   │       │   ├── ch02
+│   │   │   │   │   │   │       │   ├── ch03
+│   │   │   │   │   │   │       │   ├── ch04
+│   │   │   │   │   │   │       │   ├── ch05
+│   │   │   │   │   │   │       │   ├── ch06
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch07
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch08
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch09
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch11
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch12
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch14
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch15
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch16
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   ├── ch17
+│   │   │   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │   │   │       │   └── ch18
+│   │   │   │   │   │   │       │       └── __pycache__
+│   │   │   │   │   │   │       └── blackjack_by_section
+│   │   │   │   │   │   │           ├── blackjack_section_1
+│   │   │   │   │   │   │           │   └── __pycache__
+│   │   │   │   │   │   │           ├── blackjack_section_2
+│   │   │   │   │   │   │           │   └── __pycache__
+│   │   │   │   │   │   │           ├── blackjack_section_3
+│   │   │   │   │   │   │           │   └── __pycache__
+│   │   │   │   │   │   │           └── blackjack_section_4
+│   │   │   │   │   │   │               └── __pycache__
+│   │   │   │   │   │   ├── Projects
+│   │   │   │   │   │   │   ├── project_solutions
+│   │   │   │   │   │   │   │   ├── ch02
+│   │   │   │   │   │   │   │   ├── ch03
+│   │   │   │   │   │   │   │   ├── ch04
+│   │   │   │   │   │   │   │   ├── ch05
+│   │   │   │   │   │   │   │   ├── ch06
+│   │   │   │   │   │   │   │   ├── ch07
+│   │   │   │   │   │   │   │   ├── ch08
+│   │   │   │   │   │   │   │   ├── ch09
+│   │   │   │   │   │   │   │   ├── ch10
+│   │   │   │   │   │   │   │   ├── ch11
+│   │   │   │   │   │   │   │   ├── ch12
+│   │   │   │   │   │   │   │   ├── ch13
+│   │   │   │   │   │   │   │   ├── ch14
+│   │   │   │   │   │   │   │   ├── ch15
+│   │   │   │   │   │   │   │   ├── ch16
+│   │   │   │   │   │   │   │   │   └── p16-1_blackjack
+│   │   │   │   │   │   │   │   │       └── __pycache__
+│   │   │   │   │   │   │   │   ├── ch17
+│   │   │   │   │   │   │   │   │   ├── p17-1_customer_import
+│   │   │   │   │   │   │   │   │   ├── p17-2_players
+│   │   │   │   │   │   │   │   │   │   └── __pycache__
+│   │   │   │   │   │   │   │   │   ├── p17-3_task_list
+│   │   │   │   │   │   │   │   │   │   └── __pycache__
+│   │   │   │   │   │   │   │   │   └── p17-4_products
+│   │   │   │   │   │   │   │   │       └── __pycache__
+│   │   │   │   │   │   │   │   └── ch18
+│   │   │   │   │   │   │   │       ├── p18-1_right_triangle
+│   │   │   │   │   │   │   │       │   └── __pycache__
+│   │   │   │   │   │   │   │       └── p18-2_preferences
+│   │   │   │   │   │   │   │           └── __pycache__
+│   │   │   │   │   │   │   └── project_starts
+│   │   │   │   │   │   │       ├── ch05
+│   │   │   │   │   │   │       ├── ch07
+│   │   │   │   │   │   │       ├── ch08
+│   │   │   │   │   │   │       ├── ch12
+│   │   │   │   │   │   │       ├── ch14
+│   │   │   │   │   │   │       └── ch17
+│   │   │   │   │   │   │           ├── p17-1_customer_import
+│   │   │   │   │   │   │           ├── p17-2_players
+│   │   │   │   │   │   │           ├── p17-3_task_lists
+│   │   │   │   │   │   │           └── p17-4_guitar_shop
+│   │   │   │   │   │   ├── Slides
+│   │   │   │   │   │   └── Test Banks
+│   │   │   │   │   │       ├── Blackboard 7 and earlier
+│   │   │   │   │   │       ├── Blackboard 8 and WebCT
+│   │   │   │   │   │       ├── Blackboard 9 and later
+│   │   │   │   │   │       ├── ExamView
+│   │   │   │   │   │       ├── IMS QTI
+│   │   │   │   │   │       ├── Respondus
+│   │   │   │   │   │       │   ├── murachs_python_chapter01
+│   │   │   │   │   │       │   ├── murachs_python_chapter02
+│   │   │   │   │   │       │   ├── murachs_python_chapter03
+│   │   │   │   │   │       │   ├── murachs_python_chapter04
+│   │   │   │   │   │       │   ├── murachs_python_chapter05
+│   │   │   │   │   │       │   ├── murachs_python_chapter06
+│   │   │   │   │   │       │   ├── murachs_python_chapter07
+│   │   │   │   │   │       │   ├── murachs_python_chapter08
+│   │   │   │   │   │       │   ├── murachs_python_chapter09
+│   │   │   │   │   │       │   ├── murachs_python_chapter10
+│   │   │   │   │   │       │   ├── murachs_python_chapter11
+│   │   │   │   │   │       │   ├── murachs_python_chapter12
+│   │   │   │   │   │       │   ├── murachs_python_chapter13
+│   │   │   │   │   │       │   ├── murachs_python_chapter14
+│   │   │   │   │   │       │   ├── murachs_python_chapter15
+│   │   │   │   │   │       │   ├── murachs_python_chapter16
+│   │   │   │   │   │       │   ├── murachs_python_chapter17
+│   │   │   │   │   │       │   └── murachs_python_chapter18
+│   │   │   │   │   │       └── RTF
+│   │   │   │   │   └── Student download
+│   │   │   │   │       ├── _db
+│   │   │   │   │       ├── book_apps
+│   │   │   │   │       │   ├── ch01
+│   │   │   │   │       │   │   └── future_value_web
+│   │   │   │   │       │   │       ├── static
+│   │   │   │   │       │   │       └── templates
+│   │   │   │   │       │   ├── ch02
+│   │   │   │   │       │   ├── ch03
+│   │   │   │   │       │   ├── ch04
+│   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │       │   ├── ch05
+│   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │       │   ├── ch06
+│   │   │   │   │       │   ├── ch07
+│   │   │   │   │       │   ├── ch08
+│   │   │   │   │       │   ├── ch09
+│   │   │   │   │       │   ├── ch10
+│   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │       │   ├── ch11
+│   │   │   │   │       │   ├── ch12
+│   │   │   │   │       │   ├── ch13
+│   │   │   │   │       │   ├── ch14
+│   │   │   │   │       │   │   ├── dice_roller
+│   │   │   │   │       │   │   │   └── __pycache__
+│   │   │   │   │       │   │   ├── dice_roller_encap1
+│   │   │   │   │       │   │   │   └── __pycache__
+│   │   │   │   │       │   │   ├── dice_roller_encap2
+│   │   │   │   │       │   │   │   └── __pycache__
+│   │   │   │   │       │   │   ├── pig_dice
+│   │   │   │   │       │   │   │   └── __pycache__
+│   │   │   │   │       │   │   └── product_viewer
+│   │   │   │   │       │   │       └── __pycache__
+│   │   │   │   │       │   ├── ch15
+│   │   │   │   │       │   │   ├── dice_roller
+│   │   │   │   │       │   │   │   └── __pycache__
+│   │   │   │   │       │   │   ├── movies
+│   │   │   │   │       │   │   │   └── __pycache__
+│   │   │   │   │       │   │   └── product_viewer
+│   │   │   │   │       │   │       └── __pycache__
+│   │   │   │   │       │   ├── ch16
+│   │   │   │   │       │   │   └── shopping_cart
+│   │   │   │   │       │   │       └── __pycache__
+│   │   │   │   │       │   ├── ch17
+│   │   │   │   │       │   │   ├── db_tester
+│   │   │   │   │       │   │   └── movies
+│   │   │   │   │       │   │       └── __pycache__
+│   │   │   │   │       │   └── ch18
+│   │   │   │   │       │       └── future_value_gui
+│   │   │   │   │       │           └── __pycache__
+│   │   │   │   │       ├── exercises
+│   │   │   │   │       │   ├── ch01
+│   │   │   │   │       │   ├── ch02
+│   │   │   │   │       │   ├── ch03
+│   │   │   │   │       │   ├── ch04
+│   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │       │   ├── ch05
+│   │   │   │   │       │   ├── ch06
+│   │   │   │   │       │   ├── ch07
+│   │   │   │   │       │   ├── ch08
+│   │   │   │   │       │   ├── ch09
+│   │   │   │   │       │   ├── ch10
+│   │   │   │   │       │   │   └── __pycache__
+│   │   │   │   │       │   ├── ch11
+│   │   │   │   │       │   ├── ch12
+│   │   │   │   │       │   ├── ch13
+│   │   │   │   │       │   ├── ch14
+│   │   │   │   │       │   │   ├── dice_roller
+│   │   │   │   │       │   │   │   └── __pycache__
+│   │   │   │   │       │   │   ├── movies
+│   │   │   │   │       │   │   └── temperature
+│   │   │   │   │       │   │       └── __pycache__
+│   │   │   │   │       │   ├── ch15
+│   │   │   │   │       │   │   ├── authors
+│   │   │   │   │       │   │   │   └── __pycache__
+│   │   │   │   │       │   │   └── product_viewer
+│   │   │   │   │       │   │       └── __pycache__
+│   │   │   │   │       │   ├── ch16
+│   │   │   │   │       │   ├── ch17
+│   │   │   │   │       │   │   └── movies
+│   │   │   │   │       │   │       └── __pycache__
+│   │   │   │   │       │   └── ch18
+│   │   │   │   │       │       ├── future_value_gui
+│   │   │   │   │       │       │   └── __pycache__
+│   │   │   │   │       │       └── mpg
+│   │   │   │   │       └── solutions
+│   │   │   │   │           ├── ch01
+│   │   │   │   │           ├── ch02
+│   │   │   │   │           ├── ch03
+│   │   │   │   │           ├── ch04
+│   │   │   │   │           │   └── __pycache__
+│   │   │   │   │           ├── ch05
+│   │   │   │   │           ├── ch06
+│   │   │   │   │           ├── ch07
+│   │   │   │   │           ├── ch08
+│   │   │   │   │           ├── ch09
+│   │   │   │   │           ├── ch10
+│   │   │   │   │           │   └── __pycache__
+│   │   │   │   │           ├── ch11
+│   │   │   │   │           ├── ch12
+│   │   │   │   │           ├── ch13
+│   │   │   │   │           ├── ch14
+│   │   │   │   │           │   ├── dice_roller
+│   │   │   │   │           │   │   └── __pycache__
+│   │   │   │   │           │   ├── movies
+│   │   │   │   │           │   │   └── __pycache__
+│   │   │   │   │           │   └── temperature
+│   │   │   │   │           │       └── __pycache__
+│   │   │   │   │           ├── ch15
+│   │   │   │   │           │   ├── authors
+│   │   │   │   │           │   │   └── __pycache__
+│   │   │   │   │           │   └── product_viewer
+│   │   │   │   │           │       └── __pycache__
+│   │   │   │   │           ├── ch16
+│   │   │   │   │           │   └── task_list
+│   │   │   │   │           │       └── __pycache__
+│   │   │   │   │           ├── ch17
+│   │   │   │   │           │   └── movies
+│   │   │   │   │           │       └── __pycache__
+│   │   │   │   │           └── ch18
+│   │   │   │   │               ├── future_value_gui
+│   │   │   │   │               │   └── __pycache__
+│   │   │   │   │               └── mpg
+│   │   │   │   └── python 2
+│   │   │   │       ├── Instructors
+│   │   │   │       │   ├── Case studies
+│   │   │   │       │   │   └── case_study_solutions
+│   │   │   │       │   │       ├── baseball_by_chapter
+│   │   │   │       │   │       │   ├── ch02
+│   │   │   │       │   │       │   ├── ch03
+│   │   │   │       │   │       │   ├── ch04
+│   │   │   │       │   │       │   ├── ch05
+│   │   │   │       │   │       │   ├── ch06
+│   │   │   │       │   │       │   ├── ch07
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch08
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch10
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch11
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch12
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch14
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch15
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch16
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch17
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   └── ch18
+│   │   │   │       │   │       │       └── __pycache__
+│   │   │   │       │   │       ├── baseball_by_section
+│   │   │   │       │   │       │   ├── baseball_section_1
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── baseball_section_2
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── baseball_section_3
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   └── baseball_section_4
+│   │   │   │       │   │       │       └── __pycache__
+│   │   │   │       │   │       ├── blackjack_by_chapter
+│   │   │   │       │   │       │   ├── ch02
+│   │   │   │       │   │       │   ├── ch03
+│   │   │   │       │   │       │   ├── ch04
+│   │   │   │       │   │       │   ├── ch05
+│   │   │   │       │   │       │   ├── ch06
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch07
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch08
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch09
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch11
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch12
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch14
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch15
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch16
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   ├── ch17
+│   │   │   │       │   │       │   │   └── __pycache__
+│   │   │   │       │   │       │   └── ch18
+│   │   │   │       │   │       │       └── __pycache__
+│   │   │   │       │   │       └── blackjack_by_section
+│   │   │   │       │   │           ├── blackjack_section_1
+│   │   │   │       │   │           │   └── __pycache__
+│   │   │   │       │   │           ├── blackjack_section_2
+│   │   │   │       │   │           │   └── __pycache__
+│   │   │   │       │   │           ├── blackjack_section_3
+│   │   │   │       │   │           │   └── __pycache__
+│   │   │   │       │   │           └── blackjack_section_4
+│   │   │   │       │   │               └── __pycache__
+│   │   │   │       │   ├── Projects
+│   │   │   │       │   │   ├── project_solutions
+│   │   │   │       │   │   │   ├── ch02
+│   │   │   │       │   │   │   ├── ch03
+│   │   │   │       │   │   │   ├── ch04
+│   │   │   │       │   │   │   ├── ch05
+│   │   │   │       │   │   │   ├── ch06
+│   │   │   │       │   │   │   ├── ch07
+│   │   │   │       │   │   │   ├── ch08
+│   │   │   │       │   │   │   ├── ch09
+│   │   │   │       │   │   │   ├── ch10
+│   │   │   │       │   │   │   ├── ch11
+│   │   │   │       │   │   │   ├── ch12
+│   │   │   │       │   │   │   ├── ch13
+│   │   │   │       │   │   │   ├── ch14
+│   │   │   │       │   │   │   ├── ch15
+│   │   │   │       │   │   │   ├── ch16
+│   │   │   │       │   │   │   │   └── p16-1_blackjack
+│   │   │   │       │   │   │   │       └── __pycache__
+│   │   │   │       │   │   │   ├── ch17
+│   │   │   │       │   │   │   │   ├── p17-1_customer_import
+│   │   │   │       │   │   │   │   ├── p17-2_players
+│   │   │   │       │   │   │   │   │   └── __pycache__
+│   │   │   │       │   │   │   │   ├── p17-3_task_list
+│   │   │   │       │   │   │   │   │   └── __pycache__
+│   │   │   │       │   │   │   │   └── p17-4_products
+│   │   │   │       │   │   │   │       └── __pycache__
+│   │   │   │       │   │   │   └── ch18
+│   │   │   │       │   │   │       ├── p18-1_right_triangle
+│   │   │   │       │   │   │       │   └── __pycache__
+│   │   │   │       │   │   │       └── p18-2_preferences
+│   │   │   │       │   │   │           └── __pycache__
+│   │   │   │       │   │   └── project_starts
+│   │   │   │       │   │       ├── ch05
+│   │   │   │       │   │       ├── ch07
+│   │   │   │       │   │       ├── ch08
+│   │   │   │       │   │       ├── ch12
+│   │   │   │       │   │       ├── ch14
+│   │   │   │       │   │       └── ch17
+│   │   │   │       │   │           ├── p17-1_customer_import
+│   │   │   │       │   │           ├── p17-2_players
+│   │   │   │       │   │           ├── p17-3_task_lists
+│   │   │   │       │   │           └── p17-4_guitar_shop
+│   │   │   │       │   ├── Slides
+│   │   │   │       │   └── Test Banks
+│   │   │   │       │       ├── Blackboard 7 and earlier
+│   │   │   │       │       ├── Blackboard 8 and WebCT
+│   │   │   │       │       ├── Blackboard 9 and later
+│   │   │   │       │       ├── ExamView
+│   │   │   │       │       ├── IMS QTI
+│   │   │   │       │       ├── Respondus
+│   │   │   │       │       │   ├── murachs_python_chapter01
+│   │   │   │       │       │   ├── murachs_python_chapter02
+│   │   │   │       │       │   ├── murachs_python_chapter03
+│   │   │   │       │       │   ├── murachs_python_chapter04
+│   │   │   │       │       │   ├── murachs_python_chapter05
+│   │   │   │       │       │   ├── murachs_python_chapter06
+│   │   │   │       │       │   ├── murachs_python_chapter07
+│   │   │   │       │       │   ├── murachs_python_chapter08
+│   │   │   │       │       │   ├── murachs_python_chapter09
+│   │   │   │       │       │   ├── murachs_python_chapter10
+│   │   │   │       │       │   ├── murachs_python_chapter11
+│   │   │   │       │       │   ├── murachs_python_chapter12
+│   │   │   │       │       │   ├── murachs_python_chapter13
+│   │   │   │       │       │   ├── murachs_python_chapter14
+│   │   │   │       │       │   ├── murachs_python_chapter15
+│   │   │   │       │       │   ├── murachs_python_chapter16
+│   │   │   │       │       │   ├── murachs_python_chapter17
+│   │   │   │       │       │   └── murachs_python_chapter18
+│   │   │   │       │       └── RTF
+│   │   │   │       └── Student download
+│   │   │   │           ├── _db
+│   │   │   │           ├── book_apps
+│   │   │   │           │   ├── ch01
+│   │   │   │           │   │   └── future_value_web
+│   │   │   │           │   │       ├── static
+│   │   │   │           │   │       └── templates
+│   │   │   │           │   ├── ch02
+│   │   │   │           │   ├── ch03
+│   │   │   │           │   ├── ch04
+│   │   │   │           │   │   └── __pycache__
+│   │   │   │           │   ├── ch05
+│   │   │   │           │   │   └── __pycache__
+│   │   │   │           │   ├── ch06
+│   │   │   │           │   ├── ch07
+│   │   │   │           │   ├── ch08
+│   │   │   │           │   ├── ch09
+│   │   │   │           │   ├── ch10
+│   │   │   │           │   │   └── __pycache__
+│   │   │   │           │   ├── ch11
+│   │   │   │           │   ├── ch12
+│   │   │   │           │   ├── ch13
+│   │   │   │           │   ├── ch14
+│   │   │   │           │   │   ├── dice_roller
+│   │   │   │           │   │   │   └── __pycache__
+│   │   │   │           │   │   ├── dice_roller_encap1
+│   │   │   │           │   │   │   └── __pycache__
+│   │   │   │           │   │   ├── dice_roller_encap2
+│   │   │   │           │   │   │   └── __pycache__
+│   │   │   │           │   │   ├── pig_dice
+│   │   │   │           │   │   │   └── __pycache__
+│   │   │   │           │   │   └── product_viewer
+│   │   │   │           │   │       └── __pycache__
+│   │   │   │           │   ├── ch15
+│   │   │   │           │   │   ├── dice_roller
+│   │   │   │           │   │   │   └── __pycache__
+│   │   │   │           │   │   ├── movies
+│   │   │   │           │   │   │   └── __pycache__
+│   │   │   │           │   │   └── product_viewer
+│   │   │   │           │   │       └── __pycache__
+│   │   │   │           │   ├── ch16
+│   │   │   │           │   │   └── shopping_cart
+│   │   │   │           │   │       └── __pycache__
+│   │   │   │           │   ├── ch17
+│   │   │   │           │   │   ├── db_tester
+│   │   │   │           │   │   └── movies
+│   │   │   │           │   │       └── __pycache__
+│   │   │   │           │   └── ch18
+│   │   │   │           │       └── future_value_gui
+│   │   │   │           │           └── __pycache__
+│   │   │   │           ├── exercises
+│   │   │   │           │   ├── ch01
+│   │   │   │           │   ├── ch02
+│   │   │   │           │   ├── ch03
+│   │   │   │           │   ├── ch04
+│   │   │   │           │   │   └── __pycache__
+│   │   │   │           │   ├── ch05
+│   │   │   │           │   ├── ch06
+│   │   │   │           │   ├── ch07
+│   │   │   │           │   ├── ch08
+│   │   │   │           │   ├── ch09
+│   │   │   │           │   ├── ch10
+│   │   │   │           │   │   └── __pycache__
+│   │   │   │           │   ├── ch11
+│   │   │   │           │   ├── ch12
+│   │   │   │           │   ├── ch13
+│   │   │   │           │   ├── ch14
+│   │   │   │           │   │   ├── dice_roller
+│   │   │   │           │   │   │   └── __pycache__
+│   │   │   │           │   │   ├── movies
+│   │   │   │           │   │   └── temperature
+│   │   │   │           │   │       └── __pycache__
+│   │   │   │           │   ├── ch15
+│   │   │   │           │   │   ├── authors
+│   │   │   │           │   │   │   └── __pycache__
+│   │   │   │           │   │   └── product_viewer
+│   │   │   │           │   │       └── __pycache__
+│   │   │   │           │   ├── ch16
+│   │   │   │           │   ├── ch17
+│   │   │   │           │   │   └── movies
+│   │   │   │           │   │       └── __pycache__
+│   │   │   │           │   └── ch18
+│   │   │   │           │       ├── future_value_gui
+│   │   │   │           │       │   └── __pycache__
+│   │   │   │           │       └── mpg
+│   │   │   │           └── solutions
+│   │   │   │               ├── ch01
+│   │   │   │               ├── ch02
+│   │   │   │               ├── ch03
+│   │   │   │               ├── ch04
+│   │   │   │               │   └── __pycache__
+│   │   │   │               ├── ch05
+│   │   │   │               ├── ch06
+│   │   │   │               ├── ch07
+│   │   │   │               ├── ch08
+│   │   │   │               ├── ch09
+│   │   │   │               ├── ch10
+│   │   │   │               │   └── __pycache__
+│   │   │   │               ├── ch11
+│   │   │   │               ├── ch12
+│   │   │   │               ├── ch13
+│   │   │   │               ├── ch14
+│   │   │   │               │   ├── dice_roller
+│   │   │   │               │   │   └── __pycache__
+│   │   │   │               │   ├── movies
+│   │   │   │               │   │   └── __pycache__
+│   │   │   │               │   └── temperature
+│   │   │   │               │       └── __pycache__
+│   │   │   │               ├── ch15
+│   │   │   │               │   ├── authors
+│   │   │   │               │   │   └── __pycache__
+│   │   │   │               │   └── product_viewer
+│   │   │   │               │       └── __pycache__
+│   │   │   │               ├── ch16
+│   │   │   │               │   └── task_list
+│   │   │   │               │       └── __pycache__
+│   │   │   │               ├── ch17
+│   │   │   │               │   └── movies
+│   │   │   │               │       └── __pycache__
+│   │   │   │               └── ch18
+│   │   │   │                   ├── future_value_gui
+│   │   │   │                   │   └── __pycache__
+│   │   │   │                   └── mpg
+│   │   │   └── root
+│   │   │       └── Canvas - Python
+│   │   └── CSIT175-W25
+│   │       ├── modules
+│   │       │   ├── module01
+│   │       │   │   └── __pycache__
+│   │       │   ├── module02
+│   │       │   ├── module03
+│   │       │   ├── module04
+│   │       │   ├── module05
+│   │       │   ├── module06
+│   │       │   ├── module07
+│   │       │   │   └── __pycache__
+│   │       │   ├── module08
+│   │       │   ├── module09
+│   │       │   ├── module10
+│   │       │   ├── module11
+│   │       │   │   └── templates
+│   │       │   └── module12
+│   │       ├── resources
+│   │       │   ├── python
+│   │       │   │   ├── Instructors
+│   │       │   │   │   ├── Case studies
+│   │       │   │   │   │   └── case_study_solutions
+│   │       │   │   │   │       ├── baseball_by_chapter
+│   │       │   │   │   │       │   ├── ch02
+│   │       │   │   │   │       │   ├── ch03
+│   │       │   │   │   │       │   ├── ch04
+│   │       │   │   │   │       │   ├── ch05
+│   │       │   │   │   │       │   ├── ch06
+│   │       │   │   │   │       │   ├── ch07
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch08
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch10
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch11
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch12
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch14
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch15
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch16
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch17
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   └── ch18
+│   │       │   │   │   │       │       └── __pycache__
+│   │       │   │   │   │       ├── baseball_by_section
+│   │       │   │   │   │       │   ├── baseball_section_1
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── baseball_section_2
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── baseball_section_3
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   └── baseball_section_4
+│   │       │   │   │   │       │       └── __pycache__
+│   │       │   │   │   │       ├── blackjack_by_chapter
+│   │       │   │   │   │       │   ├── ch02
+│   │       │   │   │   │       │   ├── ch03
+│   │       │   │   │   │       │   ├── ch04
+│   │       │   │   │   │       │   ├── ch05
+│   │       │   │   │   │       │   ├── ch06
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch07
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch08
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch09
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch11
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch12
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch14
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch15
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch16
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   ├── ch17
+│   │       │   │   │   │       │   │   └── __pycache__
+│   │       │   │   │   │       │   └── ch18
+│   │       │   │   │   │       │       └── __pycache__
+│   │       │   │   │   │       └── blackjack_by_section
+│   │       │   │   │   │           ├── blackjack_section_1
+│   │       │   │   │   │           │   └── __pycache__
+│   │       │   │   │   │           ├── blackjack_section_2
+│   │       │   │   │   │           │   └── __pycache__
+│   │       │   │   │   │           ├── blackjack_section_3
+│   │       │   │   │   │           │   └── __pycache__
+│   │       │   │   │   │           └── blackjack_section_4
+│   │       │   │   │   │               └── __pycache__
+│   │       │   │   │   ├── Projects
+│   │       │   │   │   │   ├── project_solutions
+│   │       │   │   │   │   │   ├── ch02
+│   │       │   │   │   │   │   ├── ch03
+│   │       │   │   │   │   │   ├── ch04
+│   │       │   │   │   │   │   ├── ch05
+│   │       │   │   │   │   │   ├── ch06
+│   │       │   │   │   │   │   ├── ch07
+│   │       │   │   │   │   │   ├── ch08
+│   │       │   │   │   │   │   ├── ch09
+│   │       │   │   │   │   │   ├── ch10
+│   │       │   │   │   │   │   ├── ch11
+│   │       │   │   │   │   │   ├── ch12
+│   │       │   │   │   │   │   ├── ch13
+│   │       │   │   │   │   │   ├── ch14
+│   │       │   │   │   │   │   ├── ch15
+│   │       │   │   │   │   │   ├── ch16
+│   │       │   │   │   │   │   │   └── p16-1_blackjack
+│   │       │   │   │   │   │   │       └── __pycache__
+│   │       │   │   │   │   │   ├── ch17
+│   │       │   │   │   │   │   │   ├── p17-1_customer_import
+│   │       │   │   │   │   │   │   ├── p17-2_players
+│   │       │   │   │   │   │   │   │   └── __pycache__
+│   │       │   │   │   │   │   │   ├── p17-3_task_list
+│   │       │   │   │   │   │   │   │   └── __pycache__
+│   │       │   │   │   │   │   │   └── p17-4_products
+│   │       │   │   │   │   │   │       └── __pycache__
+│   │       │   │   │   │   │   └── ch18
+│   │       │   │   │   │   │       ├── p18-1_right_triangle
+│   │       │   │   │   │   │       │   └── __pycache__
+│   │       │   │   │   │   │       └── p18-2_preferences
+│   │       │   │   │   │   │           └── __pycache__
+│   │       │   │   │   │   └── project_starts
+│   │       │   │   │   │       ├── ch05
+│   │       │   │   │   │       ├── ch07
+│   │       │   │   │   │       ├── ch08
+│   │       │   │   │   │       ├── ch12
+│   │       │   │   │   │       ├── ch14
+│   │       │   │   │   │       └── ch17
+│   │       │   │   │   │           ├── p17-1_customer_import
+│   │       │   │   │   │           ├── p17-2_players
+│   │       │   │   │   │           ├── p17-3_task_lists
+│   │       │   │   │   │           └── p17-4_guitar_shop
+│   │       │   │   │   ├── Slides
+│   │       │   │   │   └── Test Banks
+│   │       │   │   │       ├── Blackboard 7 and earlier
+│   │       │   │   │       ├── Blackboard 8 and WebCT
+│   │       │   │   │       ├── Blackboard 9 and later
+│   │       │   │   │       ├── ExamView
+│   │       │   │   │       ├── IMS QTI
+│   │       │   │   │       ├── Respondus
+│   │       │   │   │       │   ├── murachs_python_chapter01
+│   │       │   │   │       │   ├── murachs_python_chapter02
+│   │       │   │   │       │   ├── murachs_python_chapter03
+│   │       │   │   │       │   ├── murachs_python_chapter04
+│   │       │   │   │       │   ├── murachs_python_chapter05
+│   │       │   │   │       │   ├── murachs_python_chapter06
+│   │       │   │   │       │   ├── murachs_python_chapter07
+│   │       │   │   │       │   ├── murachs_python_chapter08
+│   │       │   │   │       │   ├── murachs_python_chapter09
+│   │       │   │   │       │   ├── murachs_python_chapter10
+│   │       │   │   │       │   ├── murachs_python_chapter11
+│   │       │   │   │       │   ├── murachs_python_chapter12
+│   │       │   │   │       │   ├── murachs_python_chapter13
+│   │       │   │   │       │   ├── murachs_python_chapter14
+│   │       │   │   │       │   ├── murachs_python_chapter15
+│   │       │   │   │       │   ├── murachs_python_chapter16
+│   │       │   │   │       │   ├── murachs_python_chapter17
+│   │       │   │   │       │   └── murachs_python_chapter18
+│   │       │   │   │       └── RTF
+│   │       │   │   └── Student download
+│   │       │   │       ├── _db
+│   │       │   │       ├── book_apps
+│   │       │   │       │   ├── ch01
+│   │       │   │       │   │   └── future_value_web
+│   │       │   │       │   │       ├── static
+│   │       │   │       │   │       └── templates
+│   │       │   │       │   ├── ch02
+│   │       │   │       │   ├── ch03
+│   │       │   │       │   ├── ch04
+│   │       │   │       │   │   └── __pycache__
+│   │       │   │       │   ├── ch05
+│   │       │   │       │   │   └── __pycache__
+│   │       │   │       │   ├── ch06
+│   │       │   │       │   ├── ch07
+│   │       │   │       │   ├── ch08
+│   │       │   │       │   ├── ch09
+│   │       │   │       │   ├── ch10
+│   │       │   │       │   │   └── __pycache__
+│   │       │   │       │   ├── ch11
+│   │       │   │       │   ├── ch12
+│   │       │   │       │   ├── ch13
+│   │       │   │       │   ├── ch14
+│   │       │   │       │   │   ├── dice_roller
+│   │       │   │       │   │   │   └── __pycache__
+│   │       │   │       │   │   ├── dice_roller_encap1
+│   │       │   │       │   │   │   └── __pycache__
+│   │       │   │       │   │   ├── dice_roller_encap2
+│   │       │   │       │   │   │   └── __pycache__
+│   │       │   │       │   │   ├── pig_dice
+│   │       │   │       │   │   │   └── __pycache__
+│   │       │   │       │   │   └── product_viewer
+│   │       │   │       │   │       └── __pycache__
+│   │       │   │       │   ├── ch15
+│   │       │   │       │   │   ├── dice_roller
+│   │       │   │       │   │   │   └── __pycache__
+│   │       │   │       │   │   ├── movies
+│   │       │   │       │   │   │   └── __pycache__
+│   │       │   │       │   │   └── product_viewer
+│   │       │   │       │   │       └── __pycache__
+│   │       │   │       │   ├── ch16
+│   │       │   │       │   │   └── shopping_cart
+│   │       │   │       │   │       └── __pycache__
+│   │       │   │       │   ├── ch17
+│   │       │   │       │   │   ├── db_tester
+│   │       │   │       │   │   └── movies
+│   │       │   │       │   │       └── __pycache__
+│   │       │   │       │   └── ch18
+│   │       │   │       │       └── future_value_gui
+│   │       │   │       │           └── __pycache__
+│   │       │   │       ├── exercises
+│   │       │   │       │   ├── ch01
+│   │       │   │       │   ├── ch02
+│   │       │   │       │   ├── ch03
+│   │       │   │       │   ├── ch04
+│   │       │   │       │   │   └── __pycache__
+│   │       │   │       │   ├── ch05
+│   │       │   │       │   ├── ch06
+│   │       │   │       │   ├── ch07
+│   │       │   │       │   ├── ch08
+│   │       │   │       │   ├── ch09
+│   │       │   │       │   ├── ch10
+│   │       │   │       │   │   └── __pycache__
+│   │       │   │       │   ├── ch11
+│   │       │   │       │   ├── ch12
+│   │       │   │       │   ├── ch13
+│   │       │   │       │   ├── ch14
+│   │       │   │       │   │   ├── dice_roller
+│   │       │   │       │   │   │   └── __pycache__
+│   │       │   │       │   │   ├── movies
+│   │       │   │       │   │   └── temperature
+│   │       │   │       │   │       └── __pycache__
+│   │       │   │       │   ├── ch15
+│   │       │   │       │   │   ├── authors
+│   │       │   │       │   │   │   └── __pycache__
+│   │       │   │       │   │   └── product_viewer
+│   │       │   │       │   │       └── __pycache__
+│   │       │   │       │   ├── ch16
+│   │       │   │       │   ├── ch17
+│   │       │   │       │   │   └── movies
+│   │       │   │       │   │       └── __pycache__
+│   │       │   │       │   └── ch18
+│   │       │   │       │       ├── future_value_gui
+│   │       │   │       │       │   └── __pycache__
+│   │       │   │       │       └── mpg
+│   │       │   │       └── solutions
+│   │       │   │           ├── ch01
+│   │       │   │           ├── ch02
+│   │       │   │           ├── ch03
+│   │       │   │           ├── ch04
+│   │       │   │           │   └── __pycache__
+│   │       │   │           ├── ch05
+│   │       │   │           ├── ch06
+│   │       │   │           ├── ch07
+│   │       │   │           ├── ch08
+│   │       │   │           ├── ch09
+│   │       │   │           ├── ch10
+│   │       │   │           │   └── __pycache__
+│   │       │   │           ├── ch11
+│   │       │   │           ├── ch12
+│   │       │   │           ├── ch13
+│   │       │   │           ├── ch14
+│   │       │   │           │   ├── dice_roller
+│   │       │   │           │   │   └── __pycache__
+│   │       │   │           │   ├── movies
+│   │       │   │           │   │   └── __pycache__
+│   │       │   │           │   └── temperature
+│   │       │   │           │       └── __pycache__
+│   │       │   │           ├── ch15
+│   │       │   │           │   ├── authors
+│   │       │   │           │   │   └── __pycache__
+│   │       │   │           │   └── product_viewer
+│   │       │   │           │       └── __pycache__
+│   │       │   │           ├── ch16
+│   │       │   │           │   └── task_list
+│   │       │   │           │       └── __pycache__
+│   │       │   │           ├── ch17
+│   │       │   │           │   └── movies
+│   │       │   │           │       └── __pycache__
+│   │       │   │           └── ch18
+│   │       │   │               ├── future_value_gui
+│   │       │   │               │   └── __pycache__
+│   │       │   │               └── mpg
+│   │       │   └── python 2
+│   │       │       ├── Instructors
+│   │       │       │   ├── Case studies
+│   │       │       │   │   └── case_study_solutions
+│   │       │       │   │       ├── baseball_by_chapter
+│   │       │       │   │       │   ├── ch02
+│   │       │       │   │       │   ├── ch03
+│   │       │       │   │       │   ├── ch04
+│   │       │       │   │       │   ├── ch05
+│   │       │       │   │       │   ├── ch06
+│   │       │       │   │       │   ├── ch07
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch08
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch10
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch11
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch12
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch14
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch15
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch16
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch17
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   └── ch18
+│   │       │       │   │       │       └── __pycache__
+│   │       │       │   │       ├── baseball_by_section
+│   │       │       │   │       │   ├── baseball_section_1
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── baseball_section_2
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── baseball_section_3
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   └── baseball_section_4
+│   │       │       │   │       │       └── __pycache__
+│   │       │       │   │       ├── blackjack_by_chapter
+│   │       │       │   │       │   ├── ch02
+│   │       │       │   │       │   ├── ch03
+│   │       │       │   │       │   ├── ch04
+│   │       │       │   │       │   ├── ch05
+│   │       │       │   │       │   ├── ch06
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch07
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch08
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch09
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch11
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch12
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch14
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch15
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch16
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   ├── ch17
+│   │       │       │   │       │   │   └── __pycache__
+│   │       │       │   │       │   └── ch18
+│   │       │       │   │       │       └── __pycache__
+│   │       │       │   │       └── blackjack_by_section
+│   │       │       │   │           ├── blackjack_section_1
+│   │       │       │   │           │   └── __pycache__
+│   │       │       │   │           ├── blackjack_section_2
+│   │       │       │   │           │   └── __pycache__
+│   │       │       │   │           ├── blackjack_section_3
+│   │       │       │   │           │   └── __pycache__
+│   │       │       │   │           └── blackjack_section_4
+│   │       │       │   │               └── __pycache__
+│   │       │       │   ├── Projects
+│   │       │       │   │   ├── project_solutions
+│   │       │       │   │   │   ├── ch02
+│   │       │       │   │   │   ├── ch03
+│   │       │       │   │   │   ├── ch04
+│   │       │       │   │   │   ├── ch05
+│   │       │       │   │   │   ├── ch06
+│   │       │       │   │   │   ├── ch07
+│   │       │       │   │   │   ├── ch08
+│   │       │       │   │   │   ├── ch09
+│   │       │       │   │   │   ├── ch10
+│   │       │       │   │   │   ├── ch11
+│   │       │       │   │   │   ├── ch12
+│   │       │       │   │   │   ├── ch13
+│   │       │       │   │   │   ├── ch14
+│   │       │       │   │   │   ├── ch15
+│   │       │       │   │   │   ├── ch16
+│   │       │       │   │   │   │   └── p16-1_blackjack
+│   │       │       │   │   │   │       └── __pycache__
+│   │       │       │   │   │   ├── ch17
+│   │       │       │   │   │   │   ├── p17-1_customer_import
+│   │       │       │   │   │   │   ├── p17-2_players
+│   │       │       │   │   │   │   │   └── __pycache__
+│   │       │       │   │   │   │   ├── p17-3_task_list
+│   │       │       │   │   │   │   │   └── __pycache__
+│   │       │       │   │   │   │   └── p17-4_products
+│   │       │       │   │   │   │       └── __pycache__
+│   │       │       │   │   │   └── ch18
+│   │       │       │   │   │       ├── p18-1_right_triangle
+│   │       │       │   │   │       │   └── __pycache__
+│   │       │       │   │   │       └── p18-2_preferences
+│   │       │       │   │   │           └── __pycache__
+│   │       │       │   │   └── project_starts
+│   │       │       │   │       ├── ch05
+│   │       │       │   │       ├── ch07
+│   │       │       │   │       ├── ch08
+│   │       │       │   │       ├── ch12
+│   │       │       │   │       ├── ch14
+│   │       │       │   │       └── ch17
+│   │       │       │   │           ├── p17-1_customer_import
+│   │       │       │   │           ├── p17-2_players
+│   │       │       │   │           ├── p17-3_task_lists
+│   │       │       │   │           └── p17-4_guitar_shop
+│   │       │       │   ├── Slides
+│   │       │       │   └── Test Banks
+│   │       │       │       ├── Blackboard 7 and earlier
+│   │       │       │       ├── Blackboard 8 and WebCT
+│   │       │       │       ├── Blackboard 9 and later
+│   │       │       │       ├── ExamView
+│   │       │       │       ├── IMS QTI
+│   │       │       │       ├── Respondus
+│   │       │       │       │   ├── murachs_python_chapter01
+│   │       │       │       │   ├── murachs_python_chapter02
+│   │       │       │       │   ├── murachs_python_chapter03
+│   │       │       │       │   ├── murachs_python_chapter04
+│   │       │       │       │   ├── murachs_python_chapter05
+│   │       │       │       │   ├── murachs_python_chapter06
+│   │       │       │       │   ├── murachs_python_chapter07
+│   │       │       │       │   ├── murachs_python_chapter08
+│   │       │       │       │   ├── murachs_python_chapter09
+│   │       │       │       │   ├── murachs_python_chapter10
+│   │       │       │       │   ├── murachs_python_chapter11
+│   │       │       │       │   ├── murachs_python_chapter12
+│   │       │       │       │   ├── murachs_python_chapter13
+│   │       │       │       │   ├── murachs_python_chapter14
+│   │       │       │       │   ├── murachs_python_chapter15
+│   │       │       │       │   ├── murachs_python_chapter16
+│   │       │       │       │   ├── murachs_python_chapter17
+│   │       │       │       │   └── murachs_python_chapter18
+│   │       │       │       └── RTF
+│   │       │       └── Student download
+│   │       │           ├── _db
+│   │       │           ├── book_apps
+│   │       │           │   ├── ch01
+│   │       │           │   │   └── future_value_web
+│   │       │           │   │       ├── static
+│   │       │           │   │       └── templates
+│   │       │           │   ├── ch02
+│   │       │           │   ├── ch03
+│   │       │           │   ├── ch04
+│   │       │           │   │   └── __pycache__
+│   │       │           │   ├── ch05
+│   │       │           │   │   └── __pycache__
+│   │       │           │   ├── ch06
+│   │       │           │   ├── ch07
+│   │       │           │   ├── ch08
+│   │       │           │   ├── ch09
+│   │       │           │   ├── ch10
+│   │       │           │   │   └── __pycache__
+│   │       │           │   ├── ch11
+│   │       │           │   ├── ch12
+│   │       │           │   ├── ch13
+│   │       │           │   ├── ch14
+│   │       │           │   │   ├── dice_roller
+│   │       │           │   │   │   └── __pycache__
+│   │       │           │   │   ├── dice_roller_encap1
+│   │       │           │   │   │   └── __pycache__
+│   │       │           │   │   ├── dice_roller_encap2
+│   │       │           │   │   │   └── __pycache__
+│   │       │           │   │   ├── pig_dice
+│   │       │           │   │   │   └── __pycache__
+│   │       │           │   │   └── product_viewer
+│   │       │           │   │       └── __pycache__
+│   │       │           │   ├── ch15
+│   │       │           │   │   ├── dice_roller
+│   │       │           │   │   │   └── __pycache__
+│   │       │           │   │   ├── movies
+│   │       │           │   │   │   └── __pycache__
+│   │       │           │   │   └── product_viewer
+│   │       │           │   │       └── __pycache__
+│   │       │           │   ├── ch16
+│   │       │           │   │   └── shopping_cart
+│   │       │           │   │       └── __pycache__
+│   │       │           │   ├── ch17
+│   │       │           │   │   ├── db_tester
+│   │       │           │   │   └── movies
+│   │       │           │   │       └── __pycache__
+│   │       │           │   └── ch18
+│   │       │           │       └── future_value_gui
+│   │       │           │           └── __pycache__
+│   │       │           ├── exercises
+│   │       │           │   ├── ch01
+│   │       │           │   ├── ch02
+│   │       │           │   ├── ch03
+│   │       │           │   ├── ch04
+│   │       │           │   │   └── __pycache__
+│   │       │           │   ├── ch05
+│   │       │           │   ├── ch06
+│   │       │           │   ├── ch07
+│   │       │           │   ├── ch08
+│   │       │           │   ├── ch09
+│   │       │           │   ├── ch10
+│   │       │           │   │   └── __pycache__
+│   │       │           │   ├── ch11
+│   │       │           │   ├── ch12
+│   │       │           │   ├── ch13
+│   │       │           │   ├── ch14
+│   │       │           │   │   ├── dice_roller
+│   │       │           │   │   │   └── __pycache__
+│   │       │           │   │   ├── movies
+│   │       │           │   │   └── temperature
+│   │       │           │   │       └── __pycache__
+│   │       │           │   ├── ch15
+│   │       │           │   │   ├── authors
+│   │       │           │   │   │   └── __pycache__
+│   │       │           │   │   └── product_viewer
+│   │       │           │   │       └── __pycache__
+│   │       │           │   ├── ch16
+│   │       │           │   ├── ch17
+│   │       │           │   │   └── movies
+│   │       │           │   │       └── __pycache__
+│   │       │           │   └── ch18
+│   │       │           │       ├── future_value_gui
+│   │       │           │       │   └── __pycache__
+│   │       │           │       └── mpg
+│   │       │           └── solutions
+│   │       │               ├── ch01
+│   │       │               ├── ch02
+│   │       │               ├── ch03
+│   │       │               ├── ch04
+│   │       │               │   └── __pycache__
+│   │       │               ├── ch05
+│   │       │               ├── ch06
+│   │       │               ├── ch07
+│   │       │               ├── ch08
+│   │       │               ├── ch09
+│   │       │               ├── ch10
+│   │       │               │   └── __pycache__
+│   │       │               ├── ch11
+│   │       │               ├── ch12
+│   │       │               ├── ch13
+│   │       │               ├── ch14
+│   │       │               │   ├── dice_roller
+│   │       │               │   │   └── __pycache__
+│   │       │               │   ├── movies
+│   │       │               │   │   └── __pycache__
+│   │       │               │   └── temperature
+│   │       │               │       └── __pycache__
+│   │       │               ├── ch15
+│   │       │               │   ├── authors
+│   │       │               │   │   └── __pycache__
+│   │       │               │   └── product_viewer
+│   │       │               │       └── __pycache__
+│   │       │               ├── ch16
+│   │       │               │   └── task_list
+│   │       │               │       └── __pycache__
+│   │       │               ├── ch17
+│   │       │               │   └── movies
+│   │       │               │       └── __pycache__
+│   │       │               └── ch18
+│   │       │                   ├── future_value_gui
+│   │       │                   │   └── __pycache__
+│   │       │                   └── mpg
+│   │       └── root
+│   │           └── Canvas - Python
+│   ├── santafe
+│   │   ├── cis4083
+│   │   ├── CIS4083_0M1_W25
+│   │   ├── CIS4891_0M1_W25
+│   │   ├── cop2535
+│   │   ├── COP2535_0M1_S25
+│   │   ├── cop2551
+│   │   │   ├── ann
+│   │   │   └── module
+│   │   ├── COP2551_0M1_S25
+│   │   ├── cop2552
+│   │   │   └── modules
+│   │   │       ├── 00
+│   │   │       ├── 01
+│   │   │       ├── 02
+│   │   │       ├── 03
+│   │   │       ├── 04
+│   │   │       ├── 05
+│   │   │       ├── 06
+│   │   │       ├── 07
+│   │   │       ├── 08
+│   │   │       ├── 09
+│   │   │       ├── 10
+│   │   │       ├── 11
+│   │   │       └── 12
+│   │   ├── COP2552_0M1_S25
+│   │   ├── COP2552_0M1_W25
+│   │   ├── cop4813
+│   │   ├── css
+│   │   ├── images
+│   │   ├── js
+│   │   └── template
+│   └── sdmesa
+│       ├── _cisc179
+│       │   ├── 01
+│       │   ├── 99
+│       │   └── cor
+│       ├── CISC179
+│       ├── CISC179-W25-1
+│       ├── CISC179-W25-2
+│       └── cisc401
+│           ├── 00
+│           ├── 01
+│           ├── 02
+│           ├── 03
+│           ├── 04
+│           ├── 05
+│           ├── 06
+│           ├── 07
+│           ├── 08
+│           ├── 09
+│           ├── 10
+│           ├── 11
+│           ├── 12
+│           ├── 13
+│           ├── 14
+│           ├── 15
+│           ├── 98_qa
+│           ├── 99_data
+│           └── files
+├── files
+├── images
+│   ├── memes
+│   ├── pylab
+│   └── vs
+├── node_modules
+│   ├── @popperjs
+│   │   └── core
+│   │       ├── dist
+│   │       │   ├── cjs
+│   │       │   ├── esm
+│   │       │   │   ├── dom-utils
+│   │       │   │   ├── modifiers
+│   │       │   │   └── utils
+│   │       │   └── umd
+│   │       └── lib
+│   │           ├── dom-utils
+│   │           ├── modifiers
+│   │           └── utils
+│   └── bootstrap
+│       ├── dist
+│       │   ├── css
+│       │   └── js
+│       ├── js
+│       │   ├── dist
+│       │   │   ├── dom
+│       │   │   └── util
+│       │   └── src
+│       │       ├── dom
+│       │       └── util
+│       └── scss
+│           ├── forms
+│           ├── helpers
+│           ├── mixins
+│           ├── utilities
+│           └── vendor
+├── py
+│   └── investment
+│       └── templates
+├── resources
+├── sandbox
+└── scss
+
+1237 directories

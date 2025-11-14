@@ -1,0 +1,3696 @@
+.
+├── common
+│   ├── css
+│   │   ├── schedule.css
+│   │   └── style.css
+│   ├── end-module.html
+│   ├── footer.html
+│   ├── generic_link.html
+│   ├── getting-help.html
+│   ├── homepage.html
+│   ├── hyflex.html
+│   ├── instructor_more.html
+│   ├── instructor.html
+│   ├── js
+│   │   ├── loader.js
+│   │   ├── local.js
+│   │   ├── schedule.js
+│   │   ├── sfc.js
+│   │   ├── timeline.js
+│   │   └── topics.js
+│   ├── late-policy.html
+│   ├── macos-gatekeeper.html
+│   ├── online-classes.html
+│   ├── overview.html
+│   ├── page-header.html
+│   ├── schedule
+│   │   ├── index.html
+│   │   ├── schedule.html
+│   │   └── schedule.json
+│   ├── start-here.html
+│   ├── syllabus-acknowledgement.html
+│   ├── syllabus.html
+│   └── timeline.html
+├── edu
+│   ├── _sandbox
+│   │   ├── app.py
+│   │   ├── Ex2DArrays_BACKUP.html
+│   │   ├── Prog-101
+│   │   │   ├── 01_Lab_Intro_to_Python.html
+│   │   │   ├── 04.04_Lab_While_Loop.html
+│   │   │   ├── images
+│   │   │   │   ├── Flowchart Lab 4.jpeg
+│   │   │   │   ├── flowchart_symbols.jpg
+│   │   │   │   ├── InventoryItem Class UML.png
+│   │   │   │   ├── Lab_Folders_Mac.jpg
+│   │   │   │   ├── Lab4_Ex1_exponent.jpg
+│   │   │   │   ├── Lab4_Ex1_factorial.jpg
+│   │   │   │   └── PersonalInformation Class UML.png
+│   │   │   ├── insights.html
+│   │   │   └── late_policy.html
+│   │   ├── report.md
+│   │   ├── support.html
+│   │   ├── survey.html
+│   │   └── templates
+│   │       ├── content.html
+│   │       ├── front-page-backup.html
+│   │       ├── lab.html
+│   │       └── test.html
+│   ├── canvas
+│   │   ├── 10873360.json
+│   │   ├── 2483102.json
+│   │   ├── 2484403.json
+│   │   ├── 486348.json
+│   │   ├── 486448.json
+│   │   ├── 52720.json
+│   │   ├── 55278.json
+│   │   ├── course_list.html
+│   │   ├── dyn.json
+│   │   ├── EDU101
+│   │   │   └── content.json
+│   │   ├── EDU101.json
+│   │   │   └── content.json
+│   │   ├── home.html
+│   │   └── python
+│   │       ├── 00
+│   │       │   ├── 00.00outline.html
+│   │       │   ├── 00.01homepage.html
+│   │       │   └── homepage.html
+│   │       ├── content.8wk1.json
+│   │       ├── content.8wk2.json
+│   │       ├── content.json
+│   │       ├── content.pal.json
+│   │       ├── contentBAK.json
+│   │       └── test.html
+│   ├── cuyamaca
+│   │   ├── cs119
+│   │   │   ├── __homepage_backup.html
+│   │   │   ├── accommodations.html
+│   │   │   ├── content
+│   │   │   │   ├── ch1.html
+│   │   │   │   ├── ch10.html
+│   │   │   │   ├── ch2.html
+│   │   │   │   ├── ch3.html
+│   │   │   │   ├── ch4.html
+│   │   │   │   ├── ch5.html
+│   │   │   │   ├── ch7.html
+│   │   │   │   ├── ch8.html
+│   │   │   │   ├── ch9.html
+│   │   │   │   ├── client_server_arch.html
+│   │   │   │   ├── disc_pseudocode.html
+│   │   │   │   ├── dsgn_constructs.html
+│   │   │   │   ├── FV_Revisited.html
+│   │   │   │   ├── lab1.html
+│   │   │   │   ├── lab10.html
+│   │   │   │   ├── lab11.html
+│   │   │   │   ├── lab12.html
+│   │   │   │   ├── lab2.html
+│   │   │   │   ├── lab3.html
+│   │   │   │   ├── lab4.html
+│   │   │   │   ├── lab5.html
+│   │   │   │   ├── lab6.html
+│   │   │   │   ├── lab7.html
+│   │   │   │   ├── m2_lab_if.html
+│   │   │   │   ├── mod_01.html
+│   │   │   │   ├── mod_02.html
+│   │   │   │   ├── mod_03.html
+│   │   │   │   ├── mod_04.html
+│   │   │   │   ├── mod_05.html
+│   │   │   │   ├── mod_06.html
+│   │   │   │   ├── mod_07.html
+│   │   │   │   ├── mod_08.html
+│   │   │   │   ├── mod_09.html
+│   │   │   │   ├── mod_10.html
+│   │   │   │   ├── mod_11.html
+│   │   │   │   ├── mod_12.html
+│   │   │   │   ├── mod_13.html
+│   │   │   │   ├── mod_14.html
+│   │   │   │   └── web_services.html
+│   │   │   ├── content.json
+│   │   │   ├── course-links.html
+│   │   │   ├── current.json
+│   │   │   ├── docs
+│   │   │   │   ├── cs119_cor.pdf
+│   │   │   │   └── cs119l_cor.pdf
+│   │   │   ├── grading-details.html
+│   │   │   ├── lab_corequisite.html
+│   │   │   ├── notes
+│   │   │   │   └── PLDTextNotesCh01_Python.pdf
+│   │   │   ├── objectives.html
+│   │   │   ├── outline.html
+│   │   │   ├── recommended-materials.html
+│   │   │   ├── required-materials.html
+│   │   │   └── todo_Sp2025.html
+│   │   ├── CS119-W25
+│   │   │   ├── accommodations.html
+│   │   │   ├── content.json
+│   │   │   ├── grading-details.html
+│   │   │   ├── outline.html
+│   │   │   ├── recommended-materials.html
+│   │   │   └── required-materials.html
+│   │   └── cs181
+│   │       └── cs181 Course Outline of Record.pdf
+│   ├── palomar
+│   │   ├── csit175
+│   │   │   ├── accommodations.html
+│   │   │   ├── content.json
+│   │   │   ├── grading-details.html
+│   │   │   ├── modules
+│   │   │   │   ├── module01
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   └── dice.cpython-312.pyc
+│   │   │   │   │   ├── chapter1.html
+│   │   │   │   │   ├── chapter2.html
+│   │   │   │   │   ├── lab1.html
+│   │   │   │   │   ├── m1_demo.html
+│   │   │   │   │   ├── m1_logic_discussion.html
+│   │   │   │   │   ├── m1_overview.html
+│   │   │   │   │   ├── m1_syllabus_ack.html
+│   │   │   │   │   ├── m1_variables.html
+│   │   │   │   │   ├── multiply.py
+│   │   │   │   │   ├── Screen Shot 2024-09-09 at 1.43.14 PM.png
+│   │   │   │   │   └── Screen Shot 2024-09-09 at 1.43.50 PM.png
+│   │   │   │   ├── module02
+│   │   │   │   │   ├── m2_decisions.html
+│   │   │   │   │   ├── m2_demo.html
+│   │   │   │   │   ├── m2_lab_if.html
+│   │   │   │   │   └── m2_overview.html
+│   │   │   │   ├── module03
+│   │   │   │   │   ├── m3_demo.html
+│   │   │   │   │   ├── m3_lab_iteration.html
+│   │   │   │   │   ├── m3_overview.html
+│   │   │   │   │   └── programming_constructs.html
+│   │   │   │   ├── module04
+│   │   │   │   │   ├── chapter4.html
+│   │   │   │   │   ├── lab4.html
+│   │   │   │   │   └── m4_overview.html
+│   │   │   │   ├── module05
+│   │   │   │   │   ├── m5_ex1 copy.py
+│   │   │   │   │   ├── m5_ex1.py
+│   │   │   │   │   ├── m5_ex2.py
+│   │   │   │   │   ├── m5_ex3 copy.py
+│   │   │   │   │   ├── m5_ex3.py
+│   │   │   │   │   ├── m5_lab_testing.html
+│   │   │   │   │   ├── m5_overview.html
+│   │   │   │   │   ├── m5_SDLC_discussion.html
+│   │   │   │   │   └── m5_testing.html
+│   │   │   │   ├── module06
+│   │   │   │   │   ├── m6_arrays.html
+│   │   │   │   │   ├── m6_f_strings.html
+│   │   │   │   │   ├── m6_lab_loops_and_arrays.html
+│   │   │   │   │   ├── m6_lists.html
+│   │   │   │   │   ├── m6_overview.html
+│   │   │   │   │   ├── m6_variables.html
+│   │   │   │   │   └── sandbox.py
+│   │   │   │   ├── module07
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   └── Methods.cpython-312.pyc
+│   │   │   │   │   ├── count_votes.py
+│   │   │   │   │   ├── gradebook.csv
+│   │   │   │   │   ├── herecomesthesun.txt
+│   │   │   │   │   ├── lowdown.txt
+│   │   │   │   │   ├── LyricsAnalyzer.py
+│   │   │   │   │   ├── m7_exceptions.html
+│   │   │   │   │   ├── m7_file types_and_contents_discussion.html
+│   │   │   │   │   ├── m7_file_types.html
+│   │   │   │   │   ├── m7_lab_file_io_and_exceptions.html
+│   │   │   │   │   ├── m7_lab_fileio_exceptions.html
+│   │   │   │   │   ├── m7_overview.html
+│   │   │   │   │   ├── m8_exceptions.html
+│   │   │   │   │   ├── Methods.py
+│   │   │   │   │   ├── mlb_postseason_2023_results.csv
+│   │   │   │   │   ├── student_votes.py
+│   │   │   │   │   ├── test_scores.py
+│   │   │   │   │   ├── threelittlebirds.txt
+│   │   │   │   │   └── word_counts.csv
+│   │   │   │   ├── module07.zip
+│   │   │   │   ├── module08
+│   │   │   │   │   ├── cars.csv
+│   │   │   │   │   ├── chapter12.html
+│   │   │   │   │   ├── CountryCode.py
+│   │   │   │   │   ├── lab8_rubric.md
+│   │   │   │   │   ├── m8_dictionaries_lab.html
+│   │   │   │   │   ├── m8_overview.html
+│   │   │   │   │   ├── Nursery.py
+│   │   │   │   │   ├── registration.csv
+│   │   │   │   │   ├── StoreFront.py
+│   │   │   │   │   ├── StoreInfo.py
+│   │   │   │   │   ├── Taqueria.py
+│   │   │   │   │   ├── vehicle_lookup.py
+│   │   │   │   │   └── VIN.py
+│   │   │   │   ├── module09
+│   │   │   │   │   ├── m9_classes_lab.html
+│   │   │   │   │   ├── m9_overview.html
+│   │   │   │   │   └── oop.html
+│   │   │   │   ├── module10
+│   │   │   │   │   ├── m10_inheritance_lab.html
+│   │   │   │   │   ├── m10_inheritance.html
+│   │   │   │   │   └── m10_overview.html
+│   │   │   │   ├── module11
+│   │   │   │   │   ├── api_read.py
+│   │   │   │   │   ├── forecast.py
+│   │   │   │   │   ├── location.py
+│   │   │   │   │   ├── m11_overview.html
+│   │   │   │   │   └── templates
+│   │   │   │   │       └── weather.html
+│   │   │   │   └── module12
+│   │   │   │       ├── m12_overview.html
+│   │   │   │       ├── m12_web_services_discussion.html
+│   │   │   │       ├── m12_webservices_lab.html
+│   │   │   │       └── m12_webservices.html
+│   │   │   ├── outline.html
+│   │   │   ├── recommended-materials.html
+│   │   │   ├── required-materials.html
+│   │   │   ├── resources
+│   │   │   │   ├── CSIT 175 COR.pdf
+│   │   │   │   ├── dice_roller.py
+
+ ...
+
+│   │   │   └── root
+│   │   │       ├── Canvas - Python
+│   │   │       │   ├── Screen Shot 2024-08-27 at 11.53.14 AM.png
+
+...
+
+│   │   │       ├── planning.html
+│   │   │       ├── planning.json
+│   │   │       └── syl.html
+│   │   ├── CSIT175-W25
+│   │   │   ├── accommodations.html
+│   │   │   ├── content.json
+│   │   │   ├── grading-details.html
+│   │   │   ├── modules
+│   │   │   │   ├── module01
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   └── dice.cpython-312.pyc
+│   │   │   │   │   ├── chapter1.html
+│   │   │   │   │   ├── chapter2.html
+│   │   │   │   │   ├── lab1.html
+│   │   │   │   │   ├── m1_demo.html
+│   │   │   │   │   ├── m1_logic_discussion.html
+│   │   │   │   │   ├── m1_overview.html
+│   │   │   │   │   ├── m1_syllabus_ack.html
+│   │   │   │   │   ├── m1_variables.html
+│   │   │   │   │   ├── multiply.py
+│   │   │   │   │   ├── Screen Shot 2024-09-09 at 1.43.14 PM.png
+│   │   │   │   │   └── Screen Shot 2024-09-09 at 1.43.50 PM.png
+│   │   │   │   ├── module02
+│   │   │   │   │   ├── m2_decisions.html
+│   │   │   │   │   ├── m2_demo.html
+│   │   │   │   │   ├── m2_lab_if.html
+│   │   │   │   │   └── m2_overview.html
+│   │   │   │   ├── module03
+│   │   │   │   │   ├── m3_demo.html
+│   │   │   │   │   ├── m3_lab_iteration.html
+│   │   │   │   │   ├── m3_overview.html
+│   │   │   │   │   └── programming_constructs.html
+│   │   │   │   ├── module04
+│   │   │   │   │   ├── chapter4.html
+│   │   │   │   │   ├── lab4.html
+│   │   │   │   │   └── m4_overview.html
+│   │   │   │   ├── module05
+│   │   │   │   │   ├── m5_ex1 copy.py
+│   │   │   │   │   ├── m5_ex1.py
+│   │   │   │   │   ├── m5_ex2.py
+│   │   │   │   │   ├── m5_ex3 copy.py
+│   │   │   │   │   ├── m5_ex3.py
+│   │   │   │   │   ├── m5_lab_testing.html
+│   │   │   │   │   ├── m5_overview.html
+│   │   │   │   │   ├── m5_SDLC_discussion.html
+│   │   │   │   │   └── m5_testing.html
+│   │   │   │   ├── module06
+│   │   │   │   │   ├── m6_arrays.html
+│   │   │   │   │   ├── m6_f_strings.html
+│   │   │   │   │   ├── m6_lab_loops_and_arrays.html
+│   │   │   │   │   ├── m6_lists.html
+│   │   │   │   │   ├── m6_overview.html
+│   │   │   │   │   ├── m6_variables.html
+│   │   │   │   │   └── sandbox.py
+│   │   │   │   ├── module07
+│   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   └── Methods.cpython-312.pyc
+│   │   │   │   │   ├── count_votes.py
+│   │   │   │   │   ├── gradebook.csv
+│   │   │   │   │   ├── herecomesthesun.txt
+│   │   │   │   │   ├── lowdown.txt
+│   │   │   │   │   ├── LyricsAnalyzer.py
+│   │   │   │   │   ├── m7_exceptions.html
+│   │   │   │   │   ├── m7_file types_and_contents_discussion.html
+│   │   │   │   │   ├── m7_file_types.html
+│   │   │   │   │   ├── m7_lab_file_io_and_exceptions.html
+│   │   │   │   │   ├── m7_lab_fileio_exceptions.html
+│   │   │   │   │   ├── m7_overview.html
+│   │   │   │   │   ├── m8_exceptions.html
+│   │   │   │   │   ├── Methods.py
+│   │   │   │   │   ├── mlb_postseason_2023_results.csv
+│   │   │   │   │   ├── student_votes.py
+│   │   │   │   │   ├── test_scores.py
+│   │   │   │   │   ├── threelittlebirds.txt
+│   │   │   │   │   └── word_counts.csv
+│   │   │   │   ├── module07.zip
+│   │   │   │   ├── module08
+│   │   │   │   │   ├── cars.csv
+│   │   │   │   │   ├── chapter12.html
+│   │   │   │   │   ├── CountryCode.py
+│   │   │   │   │   ├── lab8_rubric.md
+│   │   │   │   │   ├── m8_dictionaries_lab.html
+│   │   │   │   │   ├── m8_overview.html
+│   │   │   │   │   ├── Nursery.py
+│   │   │   │   │   ├── registration.csv
+│   │   │   │   │   ├── StoreFront.py
+│   │   │   │   │   ├── StoreInfo.py
+│   │   │   │   │   ├── Taqueria.py
+│   │   │   │   │   ├── vehicle_lookup.py
+│   │   │   │   │   └── VIN.py
+│   │   │   │   ├── module09
+│   │   │   │   │   ├── m9_classes_lab.html
+│   │   │   │   │   ├── m9_overview.html
+│   │   │   │   │   └── oop.html
+│   │   │   │   ├── module10
+│   │   │   │   │   ├── m10_inheritance_lab.html
+│   │   │   │   │   ├── m10_inheritance.html
+│   │   │   │   │   └── m10_overview.html
+│   │   │   │   ├── module11
+│   │   │   │   │   ├── api_read.py
+│   │   │   │   │   ├── forecast.py
+│   │   │   │   │   ├── location.py
+│   │   │   │   │   ├── m11_overview.html
+│   │   │   │   │   ├── m11_web_services_discussion.html
+│   │   │   │   │   ├── m11_webservices_lab.html
+│   │   │   │   │   ├── m11_webservices.html
+│   │   │   │   │   └── templates
+│   │   │   │   │       └── weather.html
+│   │   │   │   └── module12
+│   │   │   │       └── m12_overview.html
+│   │   │   ├── outline.html
+│   │   │   ├── recommended-materials.html
+│   │   │   ├── required-materials.html
+│   │   │   ├── resources
+│   │   │   │   ├── CSIT 175 COR.pdf
+│   │   │   │   ├── dice_roller.py
+│   │   │   │   ├── dice.py
+│   │   │   │   ├── murach_python_programming_ig.zip
+│   │   │   │   ├── python
+│   │   │   │   │   ├── Instructors
+│   │   │   │   │   │   ├── Case studies
+│   │   │   │   │   │   │   ├── Baseball Case Study by chapter.pdf
+│   │   │   │   │   │   │   ├── Baseball Case Study by section.pdf
+│   │   │   │   │   │   │   ├── Blackjack case study by chapter.pdf
+│   │   │   │   │   │   │   ├── Blackjack case study by section.pdf
+│   │   │   │   │   │   │   └── case_study_solutions
+│   │   │   │   │   │   │       ├── baseball_by_chapter
+│   │   │   │   │   │   │       │   ├── ch02
+│   │   │   │   │   │   │       │   │   └── baseball_team.py
+│   │   │   │   │   │   │       │   ├── ch03
+│   │   │   │   │   │   │       │   │   └── baseball_team.py
+│   │   │   │   │   │   │       │   ├── ch04
+│   │   │   │   │   │   │       │   │   └── baseball_team.py
+│   │   │   │   │   │   │       │   ├── ch05
+│   │   │   │   │   │   │       │   │   └── baseball_team.py
+│   │   │   │   │   │   │       │   ├── ch06
+│   │   │   │   │   │   │       │   │   └── baseball_team.py
+│   │   │   │   │   │   │       │   ├── ch07
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── baseball_team.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   └── players.txt
+│   │   │   │   │   │   │       │   ├── ch08
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── baseball_team.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   └── players.txt
+│   │   │   │   │   │   │       │   ├── ch10
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── baseball_team.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   └── players.txt
+│   │   │   │   │   │   │       │   ├── ch11
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── baseball_team.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   └── players.txt
+│   │   │   │   │   │   │       │   ├── ch12
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── baseball_team.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   └── players.txt
+│   │   │   │   │   │   │       │   ├── ch14
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── baseball_team.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   ├── objects.py
+│   │   │   │   │   │   │       │   │   └── players.txt
+│   │   │   │   │   │   │       │   ├── ch15
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── baseball_team.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   ├── objects.py
+│   │   │   │   │   │   │       │   │   └── players.txt
+│   │   │   │   │   │   │       │   ├── ch16
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   ├── objects.py
+│   │   │   │   │   │   │       │   │   ├── players.txt
+│   │   │   │   │   │   │       │   │   └── ui.py
+│   │   │   │   │   │   │       │   ├── ch17
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   ├── objects.py
+│   │   │   │   │   │   │       │   │   ├── player_db.sql
+│   │   │   │   │   │   │       │   │   ├── player_db.sqlite
+│   │   │   │   │   │   │       │   │   └── ui.py
+│   │   │   │   │   │   │       │   └── ch18
+│   │   │   │   │   │   │       │       ├── __pycache__
+│   │   │   │   │   │   │       │       │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │       │       │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │       │       ├── db.py
+│   │   │   │   │   │   │       │       ├── gui.py
+│   │   │   │   │   │   │       │       ├── objects.py
+│   │   │   │   │   │   │       │       ├── player_db.sql
+│   │   │   │   │   │   │       │       ├── player_db.sqlite
+│   │   │   │   │   │   │       │       └── ui.py
+│   │   │   │   │   │   │       ├── baseball_by_section
+│   │   │   │   │   │   │       │   ├── baseball_section_1
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── baseball_team.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   └── players.txt
+│   │   │   │   │   │   │       │   ├── baseball_section_2
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── baseball_team.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   └── players.txt
+│   │   │   │   │   │   │       │   ├── baseball_section_3
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   ├── objects.py
+│   │   │   │   │   │   │       │   │   ├── players.txt
+│   │   │   │   │   │   │       │   │   └── ui.py
+│   │   │   │   │   │   │       │   └── baseball_section_4
+│   │   │   │   │   │   │       │       ├── __pycache__
+│   │   │   │   │   │   │       │       │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │       │       │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │       │       ├── db.py
+│   │   │   │   │   │   │       │       ├── gui.py
+│   │   │   │   │   │   │       │       ├── objects.py
+│   │   │   │   │   │   │       │       ├── player_db.sql
+│   │   │   │   │   │   │       │       ├── player_db.sqlite
+│   │   │   │   │   │   │       │       └── ui.py
+│   │   │   │   │   │   │       ├── blackjack_by_chapter
+│   │   │   │   │   │   │       │   ├── ch02
+│   │   │   │   │   │   │       │   │   └── blackjack.py
+│   │   │   │   │   │   │       │   ├── ch03
+│   │   │   │   │   │   │       │   │   └── blackjack.py
+│   │   │   │   │   │   │       │   ├── ch04
+│   │   │   │   │   │   │       │   │   └── blackjack.py
+│   │   │   │   │   │   │       │   ├── ch05
+│   │   │   │   │   │   │       │   │   └── blackjack.py
+│   │   │   │   │   │   │       │   ├── ch06
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   └── cards.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── blackjack.py
+│   │   │   │   │   │   │       │   │   └── cards.py
+│   │   │   │   │   │   │       │   ├── ch07
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── blackjack.py
+│   │   │   │   │   │   │       │   │   ├── cards.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   └── money.txt
+│   │   │   │   │   │   │       │   ├── ch08
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── blackjack.py
+│   │   │   │   │   │   │       │   │   ├── cards.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   └── money.txt
+│   │   │   │   │   │   │       │   ├── ch09
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── blackjack.py
+│   │   │   │   │   │   │       │   │   ├── cards.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   └── money.txt
+│   │   │   │   │   │   │       │   ├── ch11
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── blackjack.py
+│   │   │   │   │   │   │       │   │   ├── cards.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   └── money.txt
+│   │   │   │   │   │   │       │   ├── ch12
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── blackjack.py
+│   │   │   │   │   │   │       │   │   ├── cards.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   └── money.txt
+│   │   │   │   │   │   │       │   ├── ch14
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── blackjack.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   ├── money.txt
+│   │   │   │   │   │   │       │   │   └── objects.py
+│   │   │   │   │   │   │       │   ├── ch15
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── blackjack.py
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   ├── money.txt
+│   │   │   │   │   │   │       │   │   └── objects.py
+│   │   │   │   │   │   │       │   ├── ch16
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   ├── money.txt
+│   │   │   │   │   │   │       │   │   ├── objects.py
+│   │   │   │   │   │   │       │   │   └── ui.py
+│   │   │   │   │   │   │       │   ├── ch17
+│   │   │   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │   │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │       │   │   ├── db.py
+│   │   │   │   │   │   │       │   │   ├── objects.py
+│   │   │   │   │   │   │       │   │   ├── session_db.sql
+│   │   │   │   │   │   │       │   │   ├── session_db.sqlite
+│   │   │   │   │   │   │       │   │   └── ui.py
+│   │   │   │   │   │   │       │   └── ch18
+│   │   │   │   │   │   │       │       ├── __pycache__
+│   │   │   │   │   │   │       │       │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │       │       │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │       │       │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │       │       ├── db.py
+│   │   │   │   │   │   │       │       ├── gui.py
+│   │   │   │   │   │   │       │       ├── objects.py
+│   │   │   │   │   │   │       │       ├── session_db.sql
+│   │   │   │   │   │   │       │       ├── session_db.sqlite
+│   │   │   │   │   │   │       │       └── ui.py
+│   │   │   │   │   │   │       └── blackjack_by_section
+│   │   │   │   │   │   │           ├── blackjack_section_1
+│   │   │   │   │   │   │           │   ├── __pycache__
+│   │   │   │   │   │   │           │   │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │           │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │           │   ├── blackjack.py
+│   │   │   │   │   │   │           │   ├── cards.py
+│   │   │   │   │   │   │           │   ├── db.py
+│   │   │   │   │   │   │           │   └── money.txt
+│   │   │   │   │   │   │           ├── blackjack_section_2
+│   │   │   │   │   │   │           │   ├── __pycache__
+│   │   │   │   │   │   │           │   │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │           │   │   └── db.cpython-35.pyc
+│   │   │   │   │   │   │           │   ├── blackjack.py
+│   │   │   │   │   │   │           │   ├── cards.py
+│   │   │   │   │   │   │           │   ├── db.py
+│   │   │   │   │   │   │           │   └── money.txt
+│   │   │   │   │   │   │           ├── blackjack_section_3
+│   │   │   │   │   │   │           │   ├── __pycache__
+│   │   │   │   │   │   │           │   │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │           │   │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │           │   │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │           │   ├── db.py
+│   │   │   │   │   │   │           │   ├── money.txt
+│   │   │   │   │   │   │           │   ├── objects.py
+│   │   │   │   │   │   │           │   └── ui.py
+│   │   │   │   │   │   │           └── blackjack_section_4
+│   │   │   │   │   │   │               ├── __pycache__
+│   │   │   │   │   │   │               │   ├── cards.cpython-35.pyc
+│   │   │   │   │   │   │               │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │               │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │               ├── db.py
+│   │   │   │   │   │   │               ├── gui.py
+│   │   │   │   │   │   │               ├── objects.py
+│   │   │   │   │   │   │               ├── session_db.sql
+│   │   │   │   │   │   │               ├── session_db.sqlite
+│   │   │   │   │   │   │               └── ui.py
+│   │   │   │   │   │   ├── Instructor's summary.pdf
+│   │   │   │   │   │   ├── Objectives.pdf
+│   │   │   │   │   │   ├── Projects
+│   │   │   │   │   │   │   ├── project_solutions
+│   │   │   │   │   │   │   │   ├── ch02
+│   │   │   │   │   │   │   │   │   ├── p2-1_registration.py
+│   │   │   │   │   │   │   │   │   ├── p2-2_paycheck.py
+│   │   │   │   │   │   │   │   │   ├── p2-3_tip.py
+│   │   │   │   │   │   │   │   │   ├── p2-4_price_comparison.py
+│   │   │   │   │   │   │   │   │   └── p2-5_travel_time.py
+│   │   │   │   │   │   │   │   ├── ch03
+│   │   │   │   │   │   │   │   │   ├── p3-1_letter_grade.py
+│   │   │   │   │   │   │   │   │   ├── p3-2_tip.py
+│   │   │   │   │   │   │   │   │   ├── p3-3_change.py
+│   │   │   │   │   │   │   │   │   ├── p3-4_shipping.py
+│   │   │   │   │   │   │   │   │   └── p3-5_table_of_powers.py
+│   │   │   │   │   │   │   │   ├── ch04
+│   │   │   │   │   │   │   │   │   ├── conversions.py
+│   │   │   │   │   │   │   │   │   ├── p4-1_even_odd.py
+│   │   │   │   │   │   │   │   │   ├── p4-2_hike.py
+│   │   │   │   │   │   │   │   │   ├── p4-3_feet_to_meters.py
+│   │   │   │   │   │   │   │   │   ├── p4-4_sales_tax.py
+│   │   │   │   │   │   │   │   │   ├── p4-5_dice.py
+│   │   │   │   │   │   │   │   │   ├── p4-6_primes.py
+│   │   │   │   │   │   │   │   │   └── sales_tax.py
+│   │   │   │   │   │   │   │   ├── ch05
+│   │   │   │   │   │   │   │   │   ├── p5-1_sales_tax.py
+│   │   │   │   │   │   │   │   │   └── p5-2_guesses.py
+│   │   │   │   │   │   │   │   ├── ch06
+│   │   │   │   │   │   │   │   │   ├── p6-1_primes.py
+│   │   │   │   │   │   │   │   │   ├── p6-2_wizard_inventory.py
+│   │   │   │   │   │   │   │   │   ├── p6-3_contacts.py
+│   │   │   │   │   │   │   │   │   ├── p6-4_quarterly_sales.py
+│   │   │   │   │   │   │   │   │   └── p6-5_tic_tac_toe.py
+│   │   │   │   │   │   │   │   ├── ch07
+│   │   │   │   │   │   │   │   │   ├── contacts.csv
+│   │   │   │   │   │   │   │   │   ├── monthly_sales.csv
+│   │   │   │   │   │   │   │   │   ├── p7-1_pig_dice.py
+│   │   │   │   │   │   │   │   │   ├── p7-2_wizard_inventory.py
+│   │   │   │   │   │   │   │   │   ├── p7-3_contacts.py
+│   │   │   │   │   │   │   │   │   ├── p7-4_monthly_sales.py
+│   │   │   │   │   │   │   │   │   ├── p7-5_mailing_list.py
+│   │   │   │   │   │   │   │   │   ├── pig_dice_rules.txt
+│   │   │   │   │   │   │   │   │   ├── prospects_clean.csv
+│   │   │   │   │   │   │   │   │   ├── prospects.csv
+│   │   │   │   │   │   │   │   │   ├── wizard_all_items.txt
+│   │   │   │   │   │   │   │   │   └── wizard_inventory.txt
+│   │   │   │   │   │   │   │   ├── ch08
+│   │   │   │   │   │   │   │   │   ├── contacts.csv
+│   │   │   │   │   │   │   │   │   ├── monthly_sales.csv
+│   │   │   │   │   │   │   │   │   ├── p8-1_tip.py
+│   │   │   │   │   │   │   │   │   ├── p8-2_wizard_inventory.py
+│   │   │   │   │   │   │   │   │   ├── p8-3_contacts.py
+│   │   │   │   │   │   │   │   │   ├── p8-4_monthly_sales.py
+│   │   │   │   │   │   │   │   │   ├── wizard_all_items.txt
+│   │   │   │   │   │   │   │   │   └── wizard_inventory.txt
+│   │   │   │   │   │   │   │   ├── ch09
+│   │   │   │   │   │   │   │   │   ├── p9-1_loan_interest.py
+│   │   │   │   │   │   │   │   │   ├── p9-2_monthly_payment.py
+│   │   │   │   │   │   │   │   │   ├── p9-3_sales_report.py
+│   │   │   │   │   │   │   │   │   └── p9-4_fuel.py
+│   │   │   │   │   │   │   │   ├── ch10
+│   │   │   │   │   │   │   │   │   ├── email_template.txt
+│   │   │   │   │   │   │   │   │   ├── email.csv
+│   │   │   │   │   │   │   │   │   ├── groceries.html
+│   │   │   │   │   │   │   │   │   ├── p10-1_html_converter.py
+│   │   │   │   │   │   │   │   │   ├── p10-2_email.py
+│   │   │   │   │   │   │   │   │   ├── p10-3_loan_interest.py
+│   │   │   │   │   │   │   │   │   ├── p10-4_pig_latin.py
+│   │   │   │   │   │   │   │   │   └── prospects.csv
+│   │   │   │   │   │   │   │   ├── ch11
+│   │   │   │   │   │   │   │   │   ├── future_value_log.txt
+│   │   │   │   │   │   │   │   │   ├── p11-1_birth_date.py
+│   │   │   │   │   │   │   │   │   ├── p11-2_eta.py
+│   │   │   │   │   │   │   │   │   └── p11-3_logger.py
+│   │   │   │   │   │   │   │   ├── ch12
+│   │   │   │   │   │   │   │   │   ├── birds.bin
+│   │   │   │   │   │   │   │   │   ├── monthly_sales.txt
+│   │   │   │   │   │   │   │   │   ├── p12-1_game_stats.py
+│   │   │   │   │   │   │   │   │   ├── p12-2_bird_counter.py
+│   │   │   │   │   │   │   │   │   ├── p12-3_champions.py
+│   │   │   │   │   │   │   │   │   ├── p12-4_monthly_sales.py
+│   │   │   │   │   │   │   │   │   └── world_cup_champions.txt
+│   │   │   │   │   │   │   │   ├── ch13
+│   │   │   │   │   │   │   │   │   ├── p13-1_greatest_common_divisor.py
+│   │   │   │   │   │   │   │   │   ├── p13-2_tree_pattern.py
+│   │   │   │   │   │   │   │   │   ├── p13-3_binary_search.py
+│   │   │   │   │   │   │   │   │   └── p13-4_number_finder.py
+│   │   │   │   │   │   │   │   ├── ch14
+│   │   │   │   │   │   │   │   │   ├── customers.csv
+│   │   │   │   │   │   │   │   │   ├── p14-1_rectangles.py
+│   │   │   │   │   │   │   │   │   ├── p14-2_cards.py
+│   │   │   │   │   │   │   │   │   └── p14-3_customers.py
+│   │   │   │   │   │   │   │   ├── ch15
+│   │   │   │   │   │   │   │   │   ├── p15-1_rectangle_square.py
+│   │   │   │   │   │   │   │   │   ├── p15-2_roshambo.py
+│   │   │   │   │   │   │   │   │   ├── p15-3_customer_employee.py
+│   │   │   │   │   │   │   │   │   └── p15-4_random_int_list.py
+│   │   │   │   │   │   │   │   ├── ch16
+│   │   │   │   │   │   │   │   │   └── p16-1_blackjack
+│   │   │   │   │   │   │   │   │       ├── __pycache__
+│   │   │   │   │   │   │   │   │       │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │   │   │       ├── blackjack.py
+│   │   │   │   │   │   │   │   │       └── objects.py
+│   │   │   │   │   │   │   │   ├── ch17
+│   │   │   │   │   │   │   │   │   ├── p17-1_customer_import
+│   │   │   │   │   │   │   │   │   │   ├── customer_importer.py
+│   │   │   │   │   │   │   │   │   │   ├── customers_db.sql
+│   │   │   │   │   │   │   │   │   │   ├── customers.csv
+│   │   │   │   │   │   │   │   │   │   └── customers.sqlite
+│   │   │   │   │   │   │   │   │   ├── p17-2_players
+│   │   │   │   │   │   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   │   │   │   │   │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │   │   │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │   │   │   │   ├── db.py
+│   │   │   │   │   │   │   │   │   │   ├── objects.py
+│   │   │   │   │   │   │   │   │   │   ├── player_db.sql
+│   │   │   │   │   │   │   │   │   │   ├── player_db.sqlite
+│   │   │   │   │   │   │   │   │   │   └── ui.py
+│   │   │   │   │   │   │   │   │   ├── p17-3_task_list
+│   │   │   │   │   │   │   │   │   │   ├── __pycache__
+│   │   │   │   │   │   │   │   │   │   │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │   │   │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │   │   │   │   ├── db.py
+│   │   │   │   │   │   │   │   │   │   ├── objects_tester.py
+│   │   │   │   │   │   │   │   │   │   ├── objects.py
+│   │   │   │   │   │   │   │   │   │   ├── task_list_db.sql
+│   │   │   │   │   │   │   │   │   │   ├── task_list_db.sqlite
+│   │   │   │   │   │   │   │   │   │   └── ui.py
+│   │   │   │   │   │   │   │   │   └── p17-4_products
+│   │   │   │   │   │   │   │   │       ├── __pycache__
+│   │   │   │   │   │   │   │   │       │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │   │   │       │   └── objects.cpython-35.pyc
+│   │   │   │   │   │   │   │   │       ├── db.py
+│   │   │   │   │   │   │   │   │       ├── guitar_shop.sql
+│   │   │   │   │   │   │   │   │       ├── guitar_shop.sqlite
+│   │   │   │   │   │   │   │   │       ├── objects.py
+│   │   │   │   │   │   │   │   │       └── ui.py
+│   │   │   │   │   │   │   │   └── ch18
+│   │   │   │   │   │   │   │       ├── p18-1_right_triangle
+│   │   │   │   │   │   │   │       │   ├── __pycache__
+│   │   │   │   │   │   │   │       │   │   └── triangle.cpython-35.pyc
+│   │   │   │   │   │   │   │       │   ├── triangle.py
+│   │   │   │   │   │   │   │       │   └── ui.py
+│   │   │   │   │   │   │   │       └── p18-2_preferences
+│   │   │   │   │   │   │   │           ├── __pycache__
+│   │   │   │   │   │   │   │           │   ├── business.cpython-35.pyc
+│   │   │   │   │   │   │   │           │   ├── db.cpython-35.pyc
+│   │   │   │   │   │   │   │           │   └── investment.cpython-35.pyc
+│   │   │   │   │   │   │   │           ├── db.py
+│   │   │   │   │   │   │   │           ├── preferences.txt
+│   │   │   │   │   │   │   │           └── ui.py
+│   │   │   │   │   │   │   ├── project_starts
+│   │   │   │   │   │   │   │   ├── ch05
+│   │   │   │   │   │   │   │   │   ├── p5-1_sales_tax.py
+│   │   │   │   │   │   │   │   │   └── p5-2_guesses.py
+│   │   │   │   │   │   │   │   ├── ch07
+│   │   │   │   │   │   │   │   │   ├── contacts.csv
+│   │   │   │   │   │   │   │   │   ├── monthly_sales.csv
+│   │   │   │   │   │   │   │   │   ├── prospects.csv
+│   │   │   │   │   │   │   │   │   ├── rules.txt
+│   │   │   │   │   │   │   │   │   └── wizard_all_items.txt
+│   │   │   │   │   │   │   │   ├── ch08
+│   │   │   │   │   │   │   │   │   ├── contacts.csv
+│   │   │   │   │   │   │   │   │   └── monthly_sales.csv
+│   │   │   │   │   │   │   │   ├── ch12
+│   │   │   │   │   │   │   │   │   ├── monthly_sales.txt
+│   │   │   │   │   │   │   │   │   └── world_cup_champions.txt
+│   │   │   │   │   │   │   │   ├── ch14
+│   │   │   │   │   │   │   │   │   └── customers.csv
+│   │   │   │   │   │   │   │   └── ch17
+│   │   │   │   │   │   │   │       ├── p17-1_customer_import
+│   │   │   │   │   │   │   │       │   ├── customers.csv
+│   │   │   │   │   │   │   │       │   ├── customers.sql
+│   │   │   │   │   │   │   │       │   └── customers.sqlite
+│   │   │   │   │   │   │   │       ├── p17-2_players
+│   │   │   │   │   │   │   │       │   ├── player_db.sql
+│   │   │   │   │   │   │   │       │   └── player_db.sqlite
+│   │   │   │   │   │   │   │       ├── p17-3_task_lists
+│   │   │   │   │   │   │   │       │   ├── task_list_db.sql
+│   │   │   │   │   │   │   │       │   └── task_list_db.sqlite
+│   │   │   │   │   │   │   │       └── p17-4_guitar_shop
+│   │   │   │   │   │   │   │           ├── guitar_shop.sql
+│   │   │   │   │   │   │   │           └── guitar_shop.sqlite
+│   │   │   │   │   │   │   └── Projects.pdf
+│   │   │   │   │   │   ├── Slides
+│   │   │   │   │   │   │   ├── Python_Chapter 01 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 02 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 03 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 04 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 05 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 06 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 07 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 08 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 09 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 10 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 11 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 12 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 13 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 14 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 15 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 16 slides.pptx
+│   │   │   │   │   │   │   ├── Python_Chapter 17 slides.pptx
+│   │   │   │   │   │   │   └── Python_Chapter 18 slides.pptx
+│   │   │   │   │   │   └── Test Banks
+│   │   │   │   │   │       ├── Blackboard 7 and earlier
+│   │   │   │   │   │       │   ├── murachs_python_chapter01.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter02.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter03.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter04.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter05.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter06.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter07.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter08.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter09.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter10.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter11.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter12.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter13.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter14.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter15.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter16.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter17.zip
+│   │   │   │   │   │       │   └── murachs_python_chapter18.zip
+│   │   │   │   │   │       ├── Blackboard 8 and WebCT
+│   │   │   │   │   │       │   ├── murachs_python_chapter01.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter02.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter03.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter04.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter05.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter06.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter07.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter08.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter09.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter10.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter11.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter12.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter13.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter14.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter15.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter16.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter17.zip
+│   │   │   │   │   │       │   └── murachs_python_chapter18.zip
+│   │   │   │   │   │       ├── Blackboard 9 and later
+│   │   │   │   │   │       │   ├── murachs_python_chapter01.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter02.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter03.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter04.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter05.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter06.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter07.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter08.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter09.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter10.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter11.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter12.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter13.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter14.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter15.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter16.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter17.zip
+│   │   │   │   │   │       │   └── murachs_python_chapter18.zip
+│   │   │   │   │   │       ├── ExamView
+│   │   │   │   │   │       │   ├── Chapter 01.bnk
+│   │   │   │   │   │       │   ├── Chapter 02.bnk
+│   │   │   │   │   │       │   ├── Chapter 03.bnk
+│   │   │   │   │   │       │   ├── Chapter 04.bnk
+│   │   │   │   │   │       │   ├── Chapter 05.bnk
+│   │   │   │   │   │       │   ├── Chapter 06.bnk
+│   │   │   │   │   │       │   ├── Chapter 07.bnk
+│   │   │   │   │   │       │   ├── Chapter 08.bnk
+│   │   │   │   │   │       │   ├── Chapter 09.bnk
+│   │   │   │   │   │       │   ├── Chapter 10.bnk
+│   │   │   │   │   │       │   ├── Chapter 11.bnk
+│   │   │   │   │   │       │   ├── Chapter 12.bnk
+│   │   │   │   │   │       │   ├── Chapter 13.bnk
+│   │   │   │   │   │       │   ├── Chapter 14.bnk
+│   │   │   │   │   │       │   ├── Chapter 15.bnk
+│   │   │   │   │   │       │   ├── Chapter 16.bnk
+│   │   │   │   │   │       │   ├── Chapter 17.bnk
+│   │   │   │   │   │       │   └── Chapter 18.bnk
+│   │   │   │   │   │       ├── IMS QTI
+│   │   │   │   │   │       │   ├── murachs_python_chapter01_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter02_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter03_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter04_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter05_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter06_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter07_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter08_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter09_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter10_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter11_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter12_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter13_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter14_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter15_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter16_qti.zip
+│   │   │   │   │   │       │   ├── murachs_python_chapter17_qti.zip
+│   │   │   │   │   │       │   └── murachs_python_chapter18_qti.zip
+│   │   │   │   │   │       ├── Respondus
+│   │   │   │   │   │       │   ├── murachs_python_chapter01
+│   │   │   │   │   │       │   │   └── murachs_python_chapter01.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter02
+│   │   │   │   │   │       │   │   └── murachs_python_chapter02.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter03
+│   │   │   │   │   │       │   │   └── murachs_python_chapter03.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter04
+│   │   │   │   │   │       │   │   └── murachs_python_chapter04.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter05
+│   │   │   │   │   │       │   │   └── murachs_python_chapter05.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter06
+│   │   │   │   │   │       │   │   └── murachs_python_chapter06.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter07
+│   │   │   │   │   │       │   │   └── murachs_python_chapter07.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter08
+│   │   │   │   │   │       │   │   └── murachs_python_chapter08.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter09
+│   │   │   │   │   │       │   │   └── murachs_python_chapter09.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter10
+│   │   │   │   │   │       │   │   └── murachs_python_chapter10.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter11
+│   │   │   │   │   │       │   │   └── murachs_python_chapter11.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter12
+│   │   │   │   │   │       │   │   └── murachs_python_chapter12.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter13
+│   │   │   │   │   │       │   │   └── murachs_python_chapter13.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter14
+│   │   │   │   │   │       │   │   └── murachs_python_chapter14.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter15
+│   │   │   │   │   │       │   │   ├── image00158766d75.gif
+│   │   │   │   │   │       │   │   └── murachs_python_chapter15.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter16
+│   │   │   │   │   │       │   │   └── murachs_python_chapter16.rsp
+│   │   │   │   │   │       │   ├── murachs_python_chapter17
+│   │   │   │   │   │       │   │   └── murachs_python_chapter17.rsp
+│   │   │   │   │   │       │   └── murachs_python_chapter18
+│   │   │   │   │   │       │       └── murachs_python_chapter18.rsp
+│   │   │   │   │   │       └── RTF
+│   │   │   │   │   │           ├── murachs_python_chapter01.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter02.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter03.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter04.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter05.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter06.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter07.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter08.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter09.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter10.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter11.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter12.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter13.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter14.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter15.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter16.rtf
+│   │   │   │   │   │           ├── murachs_python_chapter17.rtf
+│   │   │   │   │   │           └── murachs_python_chapter18.rtf
+│   │   │   │   │   ├── Murach Books for Instructors.url
+│   │   │   │   │   ├── murach_instructors.ico
+│   │   │   │   │   └── Student download
+│   │   │   │   │       ├── _db
+│   │   │   │   │       │   ├── create_movie_db.sql
+│   │   │   │   │       │   └── movies.sqlite
+│   │   │   │   │       ├── book_apps
+│   │   │   │   │       │   ├── ch01
+│   │   │   │   │       │   │   ├── future_value_gui.py
+│   │   │   │   │       │   │   ├── future_value_web
+│   │   │   │   │       │   │   │   ├── future_value_web.py
+│   │   │   │   │       │   │   │   ├── static
+│   │   │   │   │       │   │   │   │   └── main.css
+│   │   │   │   │       │   │   │   └── templates
+│   │   │   │   │       │   │   │       └── index.html
+│   │   │   │   │       │   │   └── future_value.py
+│   │   │   │   │       │   ├── ch02
+│   │   │   │   │       │   │   ├── mpg.py
+│   │   │   │   │       │   │   └── test_scores.py
+│   │   │   │   │       │   ├── ch03
+│   │   │   │   │       │   │   ├── future_value.py
+│   │   │   │   │       │   │   ├── invoice.py
+│   │   │   │   │       │   │   ├── mpg.py
+│   │   │   │   │       │   │   └── test_scores.py
+│   │   │   │   │       │   ├── ch04
+│   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │       │   │   │   └── temperature.cpython-35.pyc
+│   │   │   │   │       │   │   ├── convert_temperatures.py
+│   │   │   │   │       │   │   ├── future_value.py
+│   │   │   │   │       │   │   ├── guess_the_number.py
+│   │   │   │   │       │   │   ├── pig_dice_game_global.py
+│   │   │   │   │       │   │   ├── pig_dice_game_local.py
+│   │   │   │   │       │   │   ├── temperature_documented.py
+│   │   │   │   │       │   │   └── temperature.py
+│   │   │   │   │       │   ├── ch05
+│   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │       │   │   │   └── temperature.cpython-35.pyc
+│   │   │   │   │       │   │   ├── convert_temperatures.py
+│   │   │   │   │       │   │   ├── future_value.py
+│   │   │   │   │       │   │   ├── mpg.py
+│   │   │   │   │       │   │   └── temperature.py
+│   │   │   │   │       │   ├── ch06
+│   │   │   │   │       │   │   ├── movie_list_2d.py
+│   │   │   │   │       │   │   ├── movie_list.py
+│   │   │   │   │       │   │   └── number_crunching.py
+│   │   │   │   │       │   ├── ch07
+│   │   │   │   │       │   │   ├── movies.bin
+│   │   │   │   │       │   │   ├── movies.csv
+│   │   │   │   │       │   │   ├── movies.txt
+│   │   │   │   │       │   │   ├── movies1.py
+│   │   │   │   │       │   │   ├── movies2.py
+│   │   │   │   │       │   │   └── movies3.py
+│   │   │   │   │       │   ├── ch08
+│   │   │   │   │       │   │   ├── movies.csv
+│   │   │   │   │       │   │   ├── movies2.py
+│   │   │   │   │       │   │   └── total_calc.py
+│   │   │   │   │       │   ├── ch09
+│   │   │   │   │       │   │   ├── future_value_decimal.py
+│   │   │   │   │       │   │   ├── invoice_decimal.py
+│   │   │   │   │       │   │   └── invoice_float.py
+│   │   │   │   │       │   ├── ch10
+│   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │       │   │   │   └── wordlist.cpython-35.pyc
+│   │   │   │   │       │   │   ├── create_account.py
+│   │   │   │   │       │   │   ├── gettysburg_address.txt
+│   │   │   │   │       │   │   ├── hangman.py
+│   │   │   │   │       │   │   ├── movies.txt
+│   │   │   │   │       │   │   ├── movies2.py
+│   │   │   │   │       │   │   ├── word_counter.py
+│   │   │   │   │       │   │   └── wordlist.py
+│   │   │   │   │       │   ├── ch11
+│   │   │   │   │       │   │   ├── invoice.py
+│   │   │   │   │       │   │   ├── reservation.py
+│   │   │   │   │       │   │   └── timer.py
+│   │   │   │   │       │   ├── ch12
+│   │   │   │   │       │   │   ├── book_catalog.py
+│   │   │   │   │       │   │   ├── country_codes.py
+│   │   │   │   │       │   │   ├── gettysburg_address.txt
+│   │   │   │   │       │   │   └── word_counter.py
+│   │   │   │   │       │   ├── ch13
+│   │   │   │   │       │   │   ├── adder_loop.py
+│   │   │   │   │       │   │   ├── adder_recursion.py
+│   │   │   │   │       │   │   ├── factorial_loop.py
+│   │   │   │   │       │   │   ├── factorial_recursion.py
+│   │   │   │   │       │   │   ├── fibonacci_loop.py
+│   │   │   │   │       │   │   ├── fibonacci_recursion.py
+│   │   │   │   │       │   │   ├── infinite_loop.py
+│   │   │   │   │       │   │   ├── infinite_recursion.py
+│   │   │   │   │       │   │   └── towers_of_hanoi.py
+│   │   │   │   │       │   ├── ch14
+│   │   │   │   │       │   │   ├── dice_roller
+│   │   │   │   │       │   │   │   ├── __pycache__
+│   │   │   │   │       │   │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   ├── die.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   └── pig_game.cpython-35.pyc
+│   │   │   │   │       │   │   │   ├── dice_roller.py
+│   │   │   │   │       │   │   │   └── dice.py
+│   │   │   │   │       │   │   ├── dice_roller_encap1
+│   │   │   │   │       │   │   │   ├── __pycache__
+│   │   │   │   │       │   │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   ├── die.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   └── pig_game.cpython-35.pyc
+│   │   │   │   │       │   │   │   ├── dice_roller.py
+│   │   │   │   │       │   │   │   └── dice.py
+│   │   │   │   │       │   │   ├── dice_roller_encap2
+│   │   │   │   │       │   │   │   ├── __pycache__
+│   │   │   │   │       │   │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   ├── die.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   └── pig_game.cpython-35.pyc
+│   │   │   │   │       │   │   │   ├── dice_roller.py
+│   │   │   │   │       │   │   │   └── dice.py
+│   │   │   │   │       │   │   ├── pig_dice
+│   │   │   │   │       │   │   │   ├── __pycache__
+│   │   │   │   │       │   │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   ├── die.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   └── game.cpython-35.pyc
+│   │   │   │   │       │   │   │   ├── dice.py
+│   │   │   │   │       │   │   │   ├── game.py
+│   │   │   │   │       │   │   │   └── pig_game.py
+│   │   │   │   │       │   │   └── product_viewer
+│   │   │   │   │       │   │       ├── __pycache__
+│   │   │   │   │       │   │       │   └── objects.cpython-35.pyc
+│   │   │   │   │       │   │       ├── objects.py
+│   │   │   │   │       │   │       └── product_viewer.py
+│   │   │   │   │       │   ├── ch15
+│   │   │   │   │       │   │   ├── dice_roller
+│   │   │   │   │       │   │   │   ├── __pycache__
+│   │   │   │   │       │   │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   ├── die.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   └── pig_game.cpython-35.pyc
+│   │   │   │   │       │   │   │   ├── dice_roller.py
+│   │   │   │   │       │   │   │   └── dice.py
+│   │   │   │   │       │   │   ├── movies
+│   │   │   │   │       │   │   │   ├── __pycache__
+│   │   │   │   │       │   │   │   │   ├── aircraft.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   ├── conversions.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   ├── db.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   ├── objects.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   ├── temp.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   └── temperature.cpython-35.pyc
+│   │   │   │   │       │   │   │   ├── db.py
+│   │   │   │   │       │   │   │   ├── movies.csv
+│   │   │   │   │       │   │   │   ├── movies.py
+│   │   │   │   │       │   │   │   └── objects.py
+│   │   │   │   │       │   │   └── product_viewer
+│   │   │   │   │       │   │       ├── __pycache__
+│   │   │   │   │       │   │       │   └── objects.cpython-35.pyc
+│   │   │   │   │       │   │       ├── objects.py
+│   │   │   │   │       │   │       └── product_viewer.py
+│   │   │   │   │       │   ├── ch16
+│   │   │   │   │       │   │   └── shopping_cart
+│   │   │   │   │       │   │       ├── __pycache__
+│   │   │   │   │       │   │       │   ├── business.cpython-35.pyc
+│   │   │   │   │       │   │       │   ├── db.cpython-35.pyc
+│   │   │   │   │       │   │       │   └── objects.cpython-35.pyc
+│   │   │   │   │       │   │       ├── business.py
+│   │   │   │   │       │   │       ├── db.py
+│   │   │   │   │       │   │       ├── products.csv
+│   │   │   │   │       │   │       ├── shopping_cart.py
+│   │   │   │   │       │   │       └── tester.py
+│   │   │   │   │       │   ├── ch17
+│   │   │   │   │       │   │   ├── db_tester
+│   │   │   │   │       │   │   │   ├── db_tester.py
+│   │   │   │   │       │   │   │   └── movies.sqlite
+│   │   │   │   │       │   │   └── movies
+│   │   │   │   │       │   │       ├── __pycache__
+│   │   │   │   │       │   │       │   ├── db.cpython-35.pyc
+│   │   │   │   │       │   │       │   └── objects.cpython-35.pyc
+│   │   │   │   │       │   │       ├── db.py
+│   │   │   │   │       │   │       ├── objects.py
+│   │   │   │   │       │   │       └── ui.py
+│   │   │   │   │       │   └── ch18
+│   │   │   │   │       │       └── future_value_gui
+│   │   │   │   │       │           ├── __pycache__
+│   │   │   │   │       │           │   ├── business.cpython-35.pyc
+│   │   │   │   │       │           │   └── investment.cpython-35.pyc
+│   │   │   │   │       │           ├── business.py
+│   │   │   │   │       │           └── ui.py
+│   │   │   │   │       ├── exercises
+│   │   │   │   │       │   ├── ch01
+│   │   │   │   │       │   │   └── future_value_errors.py
+│   │   │   │   │       │   ├── ch02
+│   │   │   │   │       │   │   ├── mpg_model.py
+│   │   │   │   │       │   │   ├── mpg.py
+│   │   │   │   │       │   │   └── test_scores.py
+│   │   │   │   │       │   ├── ch03
+│   │   │   │   │       │   │   ├── future_value.py
+│   │   │   │   │       │   │   ├── mpg.py
+│   │   │   │   │       │   │   └── test_scores.py
+│   │   │   │   │       │   ├── ch04
+│   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │       │   │   │   └── validation.cpython-35.pyc
+│   │   │   │   │       │   │   └── future_value.py
+│   │   │   │   │       │   ├── ch05
+│   │   │   │   │       │   │   ├── future_value.py
+│   │   │   │   │       │   │   └── test_scores.py
+│   │   │   │   │       │   ├── ch06
+│   │   │   │   │       │   │   ├── movie_list_2d.py
+│   │   │   │   │       │   │   └── test_scores.py
+│   │   │   │   │       │   ├── ch07
+│   │   │   │   │       │   │   ├── mpg_write.py
+│   │   │   │   │       │   │   └── mpg.py
+│   │   │   │   │       │   ├── ch08
+│   │   │   │   │       │   │   ├── future_value.py
+│   │   │   │   │       │   │   ├── movies.csv
+│   │   │   │   │       │   │   └── movies2.py
+│   │   │   │   │       │   ├── ch09
+│   │   │   │   │       │   │   └── invoice_decimal.py
+│   │   │   │   │       │   ├── ch10
+│   │   │   │   │       │   │   ├── __pycache__
+│   │   │   │   │       │   │   │   └── wordlist.cpython-35.pyc
+│   │   │   │   │       │   │   ├── create_account.py
+│   │   │   │   │       │   │   ├── gettysburg_address.txt
+│   │   │   │   │       │   │   ├── hangman.py
+│   │   │   │   │       │   │   ├── word_counter.py
+│   │   │   │   │       │   │   └── wordlist.py
+│   │   │   │   │       │   ├── ch11
+│   │   │   │   │       │   │   ├── invoice.py
+│   │   │   │   │       │   │   └── timer.py
+│   │   │   │   │       │   ├── ch12
+│   │   │   │   │       │   │   ├── book_catalog.py
+│   │   │   │   │       │   │   └── movie_list_2d.py
+│   │   │   │   │       │   ├── ch13
+│   │   │   │   │       │   │   ├── fibonacci_loop.py
+│   │   │   │   │       │   │   ├── fibonacci_recursion.py
+│   │   │   │   │       │   │   └── towers_of_hanoi.py
+│   │   │   │   │       │   ├── ch14
+│   │   │   │   │       │   │   ├── dice_roller
+│   │   │   │   │       │   │   │   ├── __pycache__
+│   │   │   │   │       │   │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   ├── die.cpython-35.pyc
+│   │   │   │   │       │   │   │   │   └── pig_game.cpython-35.pyc
+│   │   │   │   │       │   │   │   ├── dice_roller.py
+│   │   │   │   │       │   │   │   └── dice.py
+│   │   │   │   │       │   │   ├── movies
+│   │   │   │   │       │   │   │   └── movies.py
+│   │   │   │   │       │   │   └── temperature
+│   │   │   │   │       │   │       ├── __pycache__
+│   │   │   │   │       │   │       │   └── temperature.cpython-35.pyc
+│   │   │   │   │       │   │       ├── convert_temperatures.py
+│   │   │   │   │       │   │       └── temperature.py
+│   │   │   │   │       │   ├── ch15
+│   │   │   │   │       │   │   ├── authors
+│   │   │   │   │       │   │   │   ├── __pycache__
+│   │   │   │   │       │   │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │       │   │   │   ├── authors_tester.py
+│   │   │   │   │       │   │   │   └── objects.py
+│   │   │   │   │       │   │   └── product_viewer
+│   │   │   │   │       │   │       ├── __pycache__
+│   │   │   │   │       │   │       │   └── objects.cpython-35.pyc
+│   │   │   │   │       │   │       ├── objects.py
+│   │   │   │   │       │   │       └── product_viewer.py
+│   │   │   │   │       │   ├── ch16
+│   │   │   │   │       │   │   └── read_me.py
+│   │   │   │   │       │   ├── ch17
+│   │   │   │   │       │   │   └── movies
+│   │   │   │   │       │   │       ├── __pycache__
+│   │   │   │   │       │   │       │   ├── db.cpython-35.pyc
+│   │   │   │   │       │   │       │   └── objects.cpython-35.pyc
+│   │   │   │   │       │   │       ├── db.py
+│   │   │   │   │       │   │       ├── objects.py
+│   │   │   │   │       │   │       └── ui.py
+│   │   │   │   │       │   └── ch18
+│   │   │   │   │       │       ├── future_value_gui
+│   │   │   │   │       │       │   ├── __pycache__
+│   │   │   │   │       │       │   │   ├── business.cpython-35.pyc
+│   │   │   │   │       │       │   │   └── investment.cpython-35.pyc
+│   │   │   │   │       │       │   ├── business.py
+│   │   │   │   │       │       │   └── ui.py
+│   │   │   │   │       │       └── mpg
+│   │   │   │   │       │           └── mpg_gui.py
+│   │   │   │   │       └── solutions
+│   │   │   │   │           ├── ch01
+│   │   │   │   │           │   └── future_value_errors.py
+│   │   │   │   │           ├── ch02
+│   │   │   │   │           │   ├── mpg.py
+│   │   │   │   │           │   ├── rectangle.py
+│   │   │   │   │           │   └── test_scores.py
+│   │   │   │   │           ├── ch03
+│   │   │   │   │           │   ├── future_value.py
+│   │   │   │   │           │   ├── mpg.py
+│   │   │   │   │           │   └── test_scores.py
+│   │   │   │   │           ├── ch04
+│   │   │   │   │           │   ├── __pycache__
+│   │   │   │   │           │   │   └── validation.cpython-35.pyc
+│   │   │   │   │           │   ├── future_value.py
+│   │   │   │   │           │   └── validation.py
+│   │   │   │   │           ├── ch05
+│   │   │   │   │           │   ├── future_value.py
+│   │   │   │   │           │   └── test_scores.py
+│   │   │   │   │           ├── ch06
+│   │   │   │   │           │   ├── movie_list_2d.py
+│   │   │   │   │           │   └── test_scores.py
+│   │   │   │   │           ├── ch07
+│   │   │   │   │           │   ├── mpg_binary.py
+│   │   │   │   │           │   ├── mpg_write_binary.py
+│   │   │   │   │           │   ├── mpg_write.py
+│   │   │   │   │           │   ├── mpg.py
+│   │   │   │   │           │   ├── trips.bin
+│   │   │   │   │           │   └── trips.csv
+│   │   │   │   │           ├── ch08
+│   │   │   │   │           │   ├── future_value.py
+│   │   │   │   │           │   ├── movies.csv
+│   │   │   │   │           │   └── movies2.py
+│   │   │   │   │           ├── ch09
+│   │   │   │   │           │   └── invoice_decimal.py
+│   │   │   │   │           ├── ch10
+│   │   │   │   │           │   ├── __pycache__
+│   │   │   │   │           │   │   └── wordlist.cpython-35.pyc
+│   │   │   │   │           │   ├── create_account.py
+│   │   │   │   │           │   ├── gettysburg_address.txt
+│   │   │   │   │           │   ├── hangman.py
+│   │   │   │   │           │   ├── word_counter.py
+│   │   │   │   │           │   └── wordlist.py
+│   │   │   │   │           ├── ch11
+│   │   │   │   │           │   ├── invoice.py
+│   │   │   │   │           │   └── timer.py
+│   │   │   │   │           ├── ch12
+│   │   │   │   │           │   ├── book_catalog.py
+│   │   │   │   │           │   └── movie_list_2d.py
+│   │   │   │   │           ├── ch13
+│   │   │   │   │           │   ├── fibonacci_loop.py
+│   │   │   │   │           │   ├── fibonacci_recursion.py
+│   │   │   │   │           │   └── towers_of_hanoi.py
+│   │   │   │   │           ├── ch14
+│   │   │   │   │           │   ├── dice_roller
+│   │   │   │   │           │   │   ├── __pycache__
+│   │   │   │   │           │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │   │           │   │   │   ├── die.cpython-35.pyc
+│   │   │   │   │           │   │   │   └── pig_game.cpython-35.pyc
+│   │   │   │   │           │   │   ├── dice_roller.py
+│   │   │   │   │           │   │   └── dice.py
+│   │   │   │   │           │   ├── movies
+│   │   │   │   │           │   │   ├── __pycache__
+│   │   │   │   │           │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │           │   │   ├── movies.py
+│   │   │   │   │           │   │   └── objects.py
+│   │   │   │   │           │   └── temperature
+│   │   │   │   │           │       ├── __pycache__
+│   │   │   │   │           │       │   └── temperature.cpython-35.pyc
+│   │   │   │   │           │       ├── convert_temperatures.py
+│   │   │   │   │           │       └── temperature.py
+│   │   │   │   │           ├── ch15
+│   │   │   │   │           │   ├── authors
+│   │   │   │   │           │   │   ├── __pycache__
+│   │   │   │   │           │   │   │   └── objects.cpython-35.pyc
+│   │   │   │   │           │   │   ├── authors_tester.py
+│   │   │   │   │           │   │   └── objects.py
+│   │   │   │   │           │   └── product_viewer
+│   │   │   │   │           │       ├── __pycache__
+│   │   │   │   │           │       │   └── objects.cpython-35.pyc
+│   │   │   │   │           │       ├── objects.py
+│   │   │   │   │           │       └── product_viewer.py
+│   │   │   │   │           ├── ch16
+│   │   │   │   │           │   └── task_list
+│   │   │   │   │           │       ├── __pycache__
+│   │   │   │   │           │       │   ├── db.cpython-35.pyc
+│   │   │   │   │           │       │   └── objects.cpython-35.pyc
+│   │   │   │   │           │       ├── class_diagram.png
+│   │   │   │   │           │       ├── db.py
+│   │   │   │   │           │       ├── objects_tester.py
+│   │   │   │   │           │       ├── objects.py
+│   │   │   │   │           │       ├── task_list_business.csv
+│   │   │   │   │           │       ├── task_list_personal.csv
+│   │   │   │   │           │       ├── task_list.py
+│   │   │   │   │           │       └── task_lists.txt
+│   │   │   │   │           ├── ch17
+│   │   │   │   │           │   ├── 17-1_step11.sql
+│   │   │   │   │           │   ├── 17-1_step5.sql
+│   │   │   │   │           │   ├── 17-1_step6.sql
+│   │   │   │   │           │   ├── 17-1_step7.sql
+│   │   │   │   │           │   ├── 17-1_step8.sql
+│   │   │   │   │           │   ├── 17-1_step9.sql
+│   │   │   │   │           │   └── movies
+│   │   │   │   │           │       ├── __pycache__
+│   │   │   │   │           │       │   ├── db.cpython-35.pyc
+│   │   │   │   │           │       │   └── objects.cpython-35.pyc
+│   │   │   │   │           │       ├── db.py
+│   │   │   │   │           │       ├── objects.py
+│   │   │   │   │           │       └── ui.py
+│   │   │   │   │           └── ch18
+│   │   │   │   │               ├── future_value_gui
+│   │   │   │   │               │   ├── __pycache__
+│   │   │   │   │               │   │   ├── business.cpython-35.pyc
+│   │   │   │   │               │   │   └── investment.cpython-35.pyc
+│   │   │   │   │               │   ├── business.py
+│   │   │   │   │               │   └── ui.py
+│   │   │   │   │               └── mpg
+│   │   │   │   │                   ├── mpg_gui.py
+│   │   │   │   │                   └── mpg.py
+│   │   │   │   └── python 2
+│   │   │   │       ├── Instructors
+│   │   │   │       │   ├── Case studies
+│   │   │   │       │   │   ├── Baseball Case Study by chapter.pdf
+│   │   │   │       │   │   ├── Baseball Case Study by section.pdf
+│   │   │   │       │   │   ├── Blackjack case study by chapter.pdf
+│   │   │   │       │   │   ├── Blackjack case study by section.pdf
+│   │   │   │       │   │   └── case_study_solutions
+│   │   │   │       │   │       ├── baseball_by_chapter
+│   │   │   │       │   │       │   ├── ch02
+│   │   │   │       │   │       │   │   └── baseball_team.py
+│   │   │   │       │   │       │   ├── ch03
+│   │   │   │       │   │       │   │   └── baseball_team.py
+│   │   │   │       │   │       │   ├── ch04
+│   │   │   │       │   │       │   │   └── baseball_team.py
+│   │   │   │       │   │       │   ├── ch05
+│   │   │   │       │   │       │   │   └── baseball_team.py
+│   │   │   │       │   │       │   ├── ch06
+│   │   │   │       │   │       │   │   └── baseball_team.py
+│   │   │   │       │   │       │   ├── ch07
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── baseball_team.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   └── players.txt
+│   │   │   │       │   │       │   ├── ch08
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── baseball_team.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   └── players.txt
+│   │   │   │       │   │       │   ├── ch10
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── baseball_team.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   └── players.txt
+│   │   │   │       │   │       │   ├── ch11
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── baseball_team.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   └── players.txt
+│   │   │   │       │   │       │   ├── ch12
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── baseball_team.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   └── players.txt
+│   │   │   │       │   │       │   ├── ch14
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── baseball_team.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   ├── objects.py
+│   │   │   │       │   │       │   │   └── players.txt
+│   │   │   │       │   │       │   ├── ch15
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── baseball_team.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   ├── objects.py
+│   │   │   │       │   │       │   │   └── players.txt
+│   │   │   │       │   │       │   ├── ch16
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   ├── objects.py
+│   │   │   │       │   │       │   │   ├── players.txt
+│   │   │   │       │   │       │   │   └── ui.py
+│   │   │   │       │   │       │   ├── ch17
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   ├── objects.py
+│   │   │   │       │   │       │   │   ├── player_db.sql
+│   │   │   │       │   │       │   │   ├── player_db.sqlite
+│   │   │   │       │   │       │   │   └── ui.py
+│   │   │   │       │   │       │   └── ch18
+│   │   │   │       │   │       │       ├── __pycache__
+│   │   │   │       │   │       │       │   ├── db.cpython-35.pyc
+│   │   │   │       │   │       │       │   └── objects.cpython-35.pyc
+│   │   │   │       │   │       │       ├── db.py
+│   │   │   │       │   │       │       ├── gui.py
+│   │   │   │       │   │       │       ├── objects.py
+│   │   │   │       │   │       │       ├── player_db.sql
+│   │   │   │       │   │       │       ├── player_db.sqlite
+│   │   │   │       │   │       │       └── ui.py
+│   │   │   │       │   │       ├── baseball_by_section
+│   │   │   │       │   │       │   ├── baseball_section_1
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── baseball_team.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   └── players.txt
+│   │   │   │       │   │       │   ├── baseball_section_2
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── baseball_team.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   └── players.txt
+│   │   │   │       │   │       │   ├── baseball_section_3
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   ├── objects.py
+│   │   │   │       │   │       │   │   ├── players.txt
+│   │   │   │       │   │       │   │   └── ui.py
+│   │   │   │       │   │       │   └── baseball_section_4
+│   │   │   │       │   │       │       ├── __pycache__
+│   │   │   │       │   │       │       │   ├── db.cpython-35.pyc
+│   │   │   │       │   │       │       │   └── objects.cpython-35.pyc
+│   │   │   │       │   │       │       ├── db.py
+│   │   │   │       │   │       │       ├── gui.py
+│   │   │   │       │   │       │       ├── objects.py
+│   │   │   │       │   │       │       ├── player_db.sql
+│   │   │   │       │   │       │       ├── player_db.sqlite
+│   │   │   │       │   │       │       └── ui.py
+│   │   │   │       │   │       ├── blackjack_by_chapter
+│   │   │   │       │   │       │   ├── ch02
+│   │   │   │       │   │       │   │   └── blackjack.py
+│   │   │   │       │   │       │   ├── ch03
+│   │   │   │       │   │       │   │   └── blackjack.py
+│   │   │   │       │   │       │   ├── ch04
+│   │   │   │       │   │       │   │   └── blackjack.py
+│   │   │   │       │   │       │   ├── ch05
+│   │   │   │       │   │       │   │   └── blackjack.py
+│   │   │   │       │   │       │   ├── ch06
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   └── cards.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── blackjack.py
+│   │   │   │       │   │       │   │   └── cards.py
+│   │   │   │       │   │       │   ├── ch07
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── blackjack.py
+│   │   │   │       │   │       │   │   ├── cards.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   └── money.txt
+│   │   │   │       │   │       │   ├── ch08
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── blackjack.py
+│   │   │   │       │   │       │   │   ├── cards.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   └── money.txt
+│   │   │   │       │   │       │   ├── ch09
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── blackjack.py
+│   │   │   │       │   │       │   │   ├── cards.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   └── money.txt
+│   │   │   │       │   │       │   ├── ch11
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── blackjack.py
+│   │   │   │       │   │       │   │   ├── cards.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   └── money.txt
+│   │   │   │       │   │       │   ├── ch12
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── blackjack.py
+│   │   │   │       │   │       │   │   ├── cards.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   └── money.txt
+│   │   │   │       │   │       │   ├── ch14
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── blackjack.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   ├── money.txt
+│   │   │   │       │   │       │   │   └── objects.py
+│   │   │   │       │   │       │   ├── ch15
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── blackjack.py
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   ├── money.txt
+│   │   │   │       │   │       │   │   └── objects.py
+│   │   │   │       │   │       │   ├── ch16
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   ├── money.txt
+│   │   │   │       │   │       │   │   ├── objects.py
+│   │   │   │       │   │       │   │   └── ui.py
+│   │   │   │       │   │       │   ├── ch17
+│   │   │   │       │   │       │   │   ├── __pycache__
+│   │   │   │       │   │       │   │   │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   ├── db.cpython-35.pyc
+│   │   │   │       │   │       │   │   │   └── objects.cpython-35.pyc
+│   │   │   │       │   │       │   │   ├── db.py
+│   │   │   │       │   │       │   │   ├── objects.py
+│   │   │   │       │   │       │   │   ├── session_db.sql
+│   │   │   │       │   │       │   │   ├── session_db.sqlite
+│   │   │   │       │   │       │   │   └── ui.py
+│   │   │   │       │   │       │   └── ch18
+│   │   │   │       │   │       │       ├── __pycache__
+│   │   │   │       │   │       │       │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │       │       │   ├── db.cpython-35.pyc
+│   │   │   │       │   │       │       │   └── objects.cpython-35.pyc
+│   │   │   │       │   │       │       ├── db.py
+│   │   │   │       │   │       │       ├── gui.py
+│   │   │   │       │   │       │       ├── objects.py
+│   │   │   │       │   │       │       ├── session_db.sql
+│   │   │   │       │   │       │       ├── session_db.sqlite
+│   │   │   │       │   │       │       └── ui.py
+│   │   │   │       │   │       └── blackjack_by_section
+│   │   │   │       │   │           ├── blackjack_section_1
+│   │   │   │       │   │           │   ├── __pycache__
+│   │   │   │       │   │           │   │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │           │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │           │   ├── blackjack.py
+│   │   │   │       │   │           │   ├── cards.py
+│   │   │   │       │   │           │   ├── db.py
+│   │   │   │       │   │           │   └── money.txt
+│   │   │   │       │   │           ├── blackjack_section_2
+│   │   │   │       │   │           │   ├── __pycache__
+│   │   │   │       │   │           │   │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │           │   │   └── db.cpython-35.pyc
+│   │   │   │       │   │           │   ├── blackjack.py
+│   │   │   │       │   │           │   ├── cards.py
+│   │   │   │       │   │           │   ├── db.py
+│   │   │   │       │   │           │   └── money.txt
+│   │   │   │       │   │           ├── blackjack_section_3
+│   │   │   │       │   │           │   ├── __pycache__
+│   │   │   │       │   │           │   │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │           │   │   ├── db.cpython-35.pyc
+│   │   │   │       │   │           │   │   └── objects.cpython-35.pyc
+│   │   │   │       │   │           │   ├── db.py
+│   │   │   │       │   │           │   ├── money.txt
+│   │   │   │       │   │           │   ├── objects.py
+│   │   │   │       │   │           │   └── ui.py
+│   │   │   │       │   │           └── blackjack_section_4
+│   │   │   │       │   │               ├── __pycache__
+│   │   │   │       │   │               │   ├── cards.cpython-35.pyc
+│   │   │   │       │   │               │   ├── db.cpython-35.pyc
+│   │   │   │       │   │               │   └── objects.cpython-35.pyc
+│   │   │   │       │   │               ├── db.py
+│   │   │   │       │   │               ├── gui.py
+│   │   │   │       │   │               ├── objects.py
+│   │   │   │       │   │               ├── session_db.sql
+│   │   │   │       │   │               ├── session_db.sqlite
+│   │   │   │       │   │               └── ui.py
+│   │   │   │       │   ├── Instructor's summary.pdf
+│   │   │   │       │   ├── Objectives.pdf
+│   │   │   │       │   ├── Projects
+│   │   │   │       │   │   ├── project_solutions
+│   │   │   │       │   │   │   ├── ch02
+│   │   │   │       │   │   │   │   ├── p2-1_registration.py
+│   │   │   │       │   │   │   │   ├── p2-2_paycheck.py
+│   │   │   │       │   │   │   │   ├── p2-3_tip.py
+│   │   │   │       │   │   │   │   ├── p2-4_price_comparison.py
+│   │   │   │       │   │   │   │   └── p2-5_travel_time.py
+│   │   │   │       │   │   │   ├── ch03
+│   │   │   │       │   │   │   │   ├── p3-1_letter_grade.py
+│   │   │   │       │   │   │   │   ├── p3-2_tip.py
+│   │   │   │       │   │   │   │   ├── p3-3_change.py
+│   │   │   │       │   │   │   │   ├── p3-4_shipping.py
+│   │   │   │       │   │   │   │   └── p3-5_table_of_powers.py
+│   │   │   │       │   │   │   ├── ch04
+│   │   │   │       │   │   │   │   ├── conversions.py
+│   │   │   │       │   │   │   │   ├── p4-1_even_odd.py
+│   │   │   │       │   │   │   │   ├── p4-2_hike.py
+│   │   │   │       │   │   │   │   ├── p4-3_feet_to_meters.py
+│   │   │   │       │   │   │   │   ├── p4-4_sales_tax.py
+│   │   │   │       │   │   │   │   ├── p4-5_dice.py
+│   │   │   │       │   │   │   │   ├── p4-6_primes.py
+│   │   │   │       │   │   │   │   └── sales_tax.py
+│   │   │   │       │   │   │   ├── ch05
+│   │   │   │       │   │   │   │   ├── p5-1_sales_tax.py
+│   │   │   │       │   │   │   │   └── p5-2_guesses.py
+│   │   │   │       │   │   │   ├── ch06
+│   │   │   │       │   │   │   │   ├── p6-1_primes.py
+│   │   │   │       │   │   │   │   ├── p6-2_wizard_inventory.py
+│   │   │   │       │   │   │   │   ├── p6-3_contacts.py
+│   │   │   │       │   │   │   │   ├── p6-4_quarterly_sales.py
+│   │   │   │       │   │   │   │   └── p6-5_tic_tac_toe.py
+│   │   │   │       │   │   │   ├── ch07
+│   │   │   │       │   │   │   │   ├── contacts.csv
+│   │   │   │       │   │   │   │   ├── monthly_sales.csv
+│   │   │   │       │   │   │   │   ├── p7-1_pig_dice.py
+│   │   │   │       │   │   │   │   ├── p7-2_wizard_inventory.py
+│   │   │   │       │   │   │   │   ├── p7-3_contacts.py
+│   │   │   │       │   │   │   │   ├── p7-4_monthly_sales.py
+│   │   │   │       │   │   │   │   ├── p7-5_mailing_list.py
+│   │   │   │       │   │   │   │   ├── pig_dice_rules.txt
+│   │   │   │       │   │   │   │   ├── prospects_clean.csv
+│   │   │   │       │   │   │   │   ├── prospects.csv
+│   │   │   │       │   │   │   │   ├── wizard_all_items.txt
+│   │   │   │       │   │   │   │   └── wizard_inventory.txt
+│   │   │   │       │   │   │   ├── ch08
+│   │   │   │       │   │   │   │   ├── contacts.csv
+│   │   │   │       │   │   │   │   ├── monthly_sales.csv
+│   │   │   │       │   │   │   │   ├── p8-1_tip.py
+│   │   │   │       │   │   │   │   ├── p8-2_wizard_inventory.py
+│   │   │   │       │   │   │   │   ├── p8-3_contacts.py
+│   │   │   │       │   │   │   │   ├── p8-4_monthly_sales.py
+│   │   │   │       │   │   │   │   ├── wizard_all_items.txt
+│   │   │   │       │   │   │   │   └── wizard_inventory.txt
+│   │   │   │       │   │   │   ├── ch09
+│   │   │   │       │   │   │   │   ├── p9-1_loan_interest.py
+│   │   │   │       │   │   │   │   ├── p9-2_monthly_payment.py
+│   │   │   │       │   │   │   │   ├── p9-3_sales_report.py
+│   │   │   │       │   │   │   │   └── p9-4_fuel.py
+│   │   │   │       │   │   │   ├── ch10
+│   │   │   │       │   │   │   │   ├── email_template.txt
+│   │   │   │       │   │   │   │   ├── email.csv
+│   │   │   │       │   │   │   │   ├── groceries.html
+│   │   │   │       │   │   │   │   ├── p10-1_html_converter.py
+│   │   │   │       │   │   │   │   ├── p10-2_email.py
+│   │   │   │       │   │   │   │   ├── p10-3_loan_interest.py
+│   │   │   │       │   │   │   │   ├── p10-4_pig_latin.py
+│   │   │   │       │   │   │   │   └── prospects.csv
+│   │   │   │       │   │   │   ├── ch11
+│   │   │   │       │   │   │   │   ├── future_value_log.txt
+│   │   │   │       │   │   │   │   ├── p11-1_birth_date.py
+│   │   │   │       │   │   │   │   ├── p11-2_eta.py
+│   │   │   │       │   │   │   │   └── p11-3_logger.py
+│   │   │   │       │   │   │   ├── ch12
+│   │   │   │       │   │   │   │   ├── birds.bin
+│   │   │   │       │   │   │   │   ├── monthly_sales.txt
+│   │   │   │       │   │   │   │   ├── p12-1_game_stats.py
+│   │   │   │       │   │   │   │   ├── p12-2_bird_counter.py
+│   │   │   │       │   │   │   │   ├── p12-3_champions.py
+│   │   │   │       │   │   │   │   ├── p12-4_monthly_sales.py
+│   │   │   │       │   │   │   │   └── world_cup_champions.txt
+│   │   │   │       │   │   │   ├── ch13
+│   │   │   │       │   │   │   │   ├── p13-1_greatest_common_divisor.py
+│   │   │   │       │   │   │   │   ├── p13-2_tree_pattern.py
+│   │   │   │       │   │   │   │   ├── p13-3_binary_search.py
+│   │   │   │       │   │   │   │   └── p13-4_number_finder.py
+│   │   │   │       │   │   │   ├── ch14
+│   │   │   │       │   │   │   │   ├── customers.csv
+│   │   │   │       │   │   │   │   ├── p14-1_rectangles.py
+│   │   │   │       │   │   │   │   ├── p14-2_cards.py
+│   │   │   │       │   │   │   │   └── p14-3_customers.py
+│   │   │   │       │   │   │   ├── ch15
+│   │   │   │       │   │   │   │   ├── p15-1_rectangle_square.py
+│   │   │   │       │   │   │   │   ├── p15-2_roshambo.py
+│   │   │   │       │   │   │   │   ├── p15-3_customer_employee.py
+│   │   │   │       │   │   │   │   └── p15-4_random_int_list.py
+│   │   │   │       │   │   │   ├── ch16
+│   │   │   │       │   │   │   │   └── p16-1_blackjack
+│   │   │   │       │   │   │   │       ├── __pycache__
+│   │   │   │       │   │   │   │       │   └── objects.cpython-35.pyc
+│   │   │   │       │   │   │   │       ├── blackjack.py
+│   │   │   │       │   │   │   │       └── objects.py
+│   │   │   │       │   │   │   ├── ch17
+│   │   │   │       │   │   │   │   ├── p17-1_customer_import
+│   │   │   │       │   │   │   │   │   ├── customer_importer.py
+│   │   │   │       │   │   │   │   │   ├── customers_db.sql
+│   │   │   │       │   │   │   │   │   ├── customers.csv
+│   │   │   │       │   │   │   │   │   └── customers.sqlite
+│   │   │   │       │   │   │   │   ├── p17-2_players
+│   │   │   │       │   │   │   │   │   ├── __pycache__
+│   │   │   │       │   │   │   │   │   │   ├── db.cpython-35.pyc
+│   │   │   │       │   │   │   │   │   │   └── objects.cpython-35.pyc
+│   │   │   │       │   │   │   │   │   ├── db.py
+│   │   │   │       │   │   │   │   │   ├── objects.py
+│   │   │   │       │   │   │   │   │   ├── player_db.sql
+│   │   │   │       │   │   │   │   │   ├── player_db.sqlite
+│   │   │   │       │   │   │   │   │   └── ui.py
+│   │   │   │       │   │   │   │   ├── p17-3_task_list
+│   │   │   │       │   │   │   │   │   ├── __pycache__
+│   │   │   │       │   │   │   │   │   │   ├── db.cpython-35.pyc
+│   │   │   │       │   │   │   │   │   │   └── objects.cpython-35.pyc
+│   │   │   │       │   │   │   │   │   ├── db.py
+│   │   │   │       │   │   │   │   │   ├── objects_tester.py
+│   │   │   │       │   │   │   │   │   ├── objects.py
+│   │   │   │       │   │   │   │   │   ├── task_list_db.sql
+│   │   │   │       │   │   │   │   │   ├── task_list_db.sqlite
+│   │   │   │       │   │   │   │   │   └── ui.py
+│   │   │   │       │   │   │   │   └── p17-4_products
+│   │   │   │       │   │   │   │       ├── __pycache__
+│   │   │   │       │   │   │   │       │   ├── db.cpython-35.pyc
+│   │   │   │       │   │   │   │       │   └── objects.cpython-35.pyc
+│   │   │   │       │   │   │   │       ├── db.py
+│   │   │   │       │   │   │   │       ├── guitar_shop.sql
+│   │   │   │       │   │   │   │       ├── guitar_shop.sqlite
+│   │   │   │       │   │   │   │       ├── objects.py
+│   │   │   │       │   │   │   │       └── ui.py
+│   │   │   │       │   │   │   └── ch18
+│   │   │   │       │   │   │       ├── p18-1_right_triangle
+│   │   │   │       │   │   │       │   ├── __pycache__
+│   │   │   │       │   │   │       │   │   └── triangle.cpython-35.pyc
+│   │   │   │       │   │   │       │   ├── triangle.py
+│   │   │   │       │   │   │       │   └── ui.py
+│   │   │   │       │   │   │       └── p18-2_preferences
+│   │   │   │       │   │   │           ├── __pycache__
+│   │   │   │       │   │   │           │   ├── business.cpython-35.pyc
+│   │   │   │       │   │   │           │   ├── db.cpython-35.pyc
+│   │   │   │       │   │   │           │   └── investment.cpython-35.pyc
+│   │   │   │       │   │   │           ├── db.py
+│   │   │   │       │   │   │           ├── preferences.txt
+│   │   │   │       │   │   │           └── ui.py
+│   │   │   │       │   │   ├── project_starts
+│   │   │   │       │   │   │   ├── ch05
+│   │   │   │       │   │   │   │   ├── p5-1_sales_tax.py
+│   │   │   │       │   │   │   │   └── p5-2_guesses.py
+│   │   │   │       │   │   │   ├── ch07
+│   │   │   │       │   │   │   │   ├── contacts.csv
+│   │   │   │       │   │   │   │   ├── monthly_sales.csv
+│   │   │   │       │   │   │   │   ├── prospects.csv
+│   │   │   │       │   │   │   │   ├── rules.txt
+│   │   │   │       │   │   │   │   └── wizard_all_items.txt
+│   │   │   │       │   │   │   ├── ch08
+│   │   │   │       │   │   │   │   ├── contacts.csv
+│   │   │   │       │   │   │   │   └── monthly_sales.csv
+│   │   │   │       │   │   │   ├── ch12
+│   │   │   │       │   │   │   │   ├── monthly_sales.txt
+│   │   │   │       │   │   │   │   └── world_cup_champions.txt
+│   │   │   │       │   │   │   ├── ch14
+│   │   │   │       │   │   │   │   └── customers.csv
+│   │   │   │       │   │   │   └── ch17
+│   │   │   │       │   │   │       ├── p17-1_customer_import
+│   │   │   │       │   │   │       │   ├── customers.csv
+│   │   │   │       │   │   │       │   ├── customers.sql
+│   │   │   │       │   │   │       │   └── customers.sqlite
+│   │   │   │       │   │   │       ├── p17-2_players
+│   │   │   │       │   │   │       │   ├── player_db.sql
+│   │   │   │       │   │   │       │   └── player_db.sqlite
+│   │   │   │       │   │   │       ├── p17-3_task_lists
+│   │   │   │       │   │   │       │   ├── task_list_db.sql
+│   │   │   │       │   │   │       │   └── task_list_db.sqlite
+│   │   │   │       │   │   │       └── p17-4_guitar_shop
+│   │   │   │       │   │   │           ├── guitar_shop.sql
+│   │   │   │       │   │   │           └── guitar_shop.sqlite
+│   │   │   │       │   │   └── Projects.pdf
+│   │   │   │       │   ├── Slides
+│   │   │   │       │   │   ├── Python_Chapter 01 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 02 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 03 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 04 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 05 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 06 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 07 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 08 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 09 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 10 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 11 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 12 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 13 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 14 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 15 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 16 slides.pptx
+│   │   │   │       │   │   ├── Python_Chapter 17 slides.pptx
+│   │   │   │       │   │   └── Python_Chapter 18 slides.pptx
+│   │   │   │       │   └── Test Banks
+│   │   │   │       │       ├── Blackboard 7 and earlier
+│   │   │   │       │       │   ├── murachs_python_chapter01.zip
+│   │   │   │       │       │   ├── murachs_python_chapter02.zip
+│   │   │   │       │       │   ├── murachs_python_chapter03.zip
+│   │   │   │       │       │   ├── murachs_python_chapter04.zip
+│   │   │   │       │       │   ├── murachs_python_chapter05.zip
+│   │   │   │       │       │   ├── murachs_python_chapter06.zip
+│   │   │   │       │       │   ├── murachs_python_chapter07.zip
+│   │   │   │       │       │   ├── murachs_python_chapter08.zip
+│   │   │   │       │       │   ├── murachs_python_chapter09.zip
+│   │   │   │       │       │   ├── murachs_python_chapter10.zip
+│   │   │   │       │       │   ├── murachs_python_chapter11.zip
+│   │   │   │       │       │   ├── murachs_python_chapter12.zip
+│   │   │   │       │       │   ├── murachs_python_chapter13.zip
+│   │   │   │       │       │   ├── murachs_python_chapter14.zip
+│   │   │   │       │       │   ├── murachs_python_chapter15.zip
+│   │   │   │       │       │   ├── murachs_python_chapter16.zip
+│   │   │   │       │       │   ├── murachs_python_chapter17.zip
+│   │   │   │       │       │   └── murachs_python_chapter18.zip
+│   │   │   │       │       ├── Blackboard 8 and WebCT
+│   │   │   │       │       │   ├── murachs_python_chapter01.zip
+│   │   │   │       │       │   ├── murachs_python_chapter02.zip
+│   │   │   │       │       │   ├── murachs_python_chapter03.zip
+│   │   │   │       │       │   ├── murachs_python_chapter04.zip
+│   │   │   │       │       │   ├── murachs_python_chapter05.zip
+│   │   │   │       │       │   ├── murachs_python_chapter06.zip
+│   │   │   │       │       │   ├── murachs_python_chapter07.zip
+│   │   │   │       │       │   ├── murachs_python_chapter08.zip
+│   │   │   │       │       │   ├── murachs_python_chapter09.zip
+│   │   │   │       │       │   ├── murachs_python_chapter10.zip
+│   │   │   │       │       │   ├── murachs_python_chapter11.zip
+│   │   │   │       │       │   ├── murachs_python_chapter12.zip
+│   │   │   │       │       │   ├── murachs_python_chapter13.zip
+│   │   │   │       │       │   ├── murachs_python_chapter14.zip
+│   │   │   │       │       │   ├── murachs_python_chapter15.zip
+│   │   │   │       │       │   ├── murachs_python_chapter16.zip
+│   │   │   │       │       │   ├── murachs_python_chapter17.zip
+│   │   │   │       │       │   └── murachs_python_chapter18.zip
+│   │   │   │       │       ├── Blackboard 9 and later
+│   │   │   │       │       │   ├── murachs_python_chapter01.zip
+│   │   │   │       │       │   ├── murachs_python_chapter02.zip
+│   │   │   │       │       │   ├── murachs_python_chapter03.zip
+│   │   │   │       │       │   ├── murachs_python_chapter04.zip
+│   │   │   │       │       │   ├── murachs_python_chapter05.zip
+│   │   │   │       │       │   ├── murachs_python_chapter06.zip
+│   │   │   │       │       │   ├── murachs_python_chapter07.zip
+│   │   │   │       │       │   ├── murachs_python_chapter08.zip
+│   │   │   │       │       │   ├── murachs_python_chapter09.zip
+│   │   │   │       │       │   ├── murachs_python_chapter10.zip
+│   │   │   │       │       │   ├── murachs_python_chapter11.zip
+│   │   │   │       │       │   ├── murachs_python_chapter12.zip
+│   │   │   │       │       │   ├── murachs_python_chapter13.zip
+│   │   │   │       │       │   ├── murachs_python_chapter14.zip
+│   │   │   │       │       │   ├── murachs_python_chapter15.zip
+│   │   │   │       │       │   ├── murachs_python_chapter16.zip
+│   │   │   │       │       │   ├── murachs_python_chapter17.zip
+│   │   │   │       │       │   └── murachs_python_chapter18.zip
+│   │   │   │       │       ├── ExamView
+│   │   │   │       │       │   ├── Chapter 01.bnk
+│   │   │   │       │       │   ├── Chapter 02.bnk
+│   │   │   │       │       │   ├── Chapter 03.bnk
+│   │   │   │       │       │   ├── Chapter 04.bnk
+│   │   │   │       │       │   ├── Chapter 05.bnk
+│   │   │   │       │       │   ├── Chapter 06.bnk
+│   │   │   │       │       │   ├── Chapter 07.bnk
+│   │   │   │       │       │   ├── Chapter 08.bnk
+│   │   │   │       │       │   ├── Chapter 09.bnk
+│   │   │   │       │       │   ├── Chapter 10.bnk
+│   │   │   │       │       │   ├── Chapter 11.bnk
+│   │   │   │       │       │   ├── Chapter 12.bnk
+│   │   │   │       │       │   ├── Chapter 13.bnk
+│   │   │   │       │       │   ├── Chapter 14.bnk
+│   │   │   │       │       │   ├── Chapter 15.bnk
+│   │   │   │       │       │   ├── Chapter 16.bnk
+│   │   │   │       │       │   ├── Chapter 17.bnk
+│   │   │   │       │       │   └── Chapter 18.bnk
+│   │   │   │       │       ├── IMS QTI
+│   │   │   │       │       │   ├── murachs_python_chapter01_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter02_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter03_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter04_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter05_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter06_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter07_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter08_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter09_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter10_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter11_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter12_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter13_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter14_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter15_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter16_qti.zip
+│   │   │   │       │       │   ├── murachs_python_chapter17_qti.zip
+│   │   │   │       │       │   └── murachs_python_chapter18_qti.zip
+│   │   │   │       │       ├── Respondus
+│   │   │   │       │       │   ├── murachs_python_chapter01
+│   │   │   │       │       │   │   └── murachs_python_chapter01.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter02
+│   │   │   │       │       │   │   └── murachs_python_chapter02.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter03
+│   │   │   │       │       │   │   └── murachs_python_chapter03.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter04
+│   │   │   │       │       │   │   └── murachs_python_chapter04.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter05
+│   │   │   │       │       │   │   └── murachs_python_chapter05.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter06
+│   │   │   │       │       │   │   └── murachs_python_chapter06.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter07
+│   │   │   │       │       │   │   └── murachs_python_chapter07.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter08
+│   │   │   │       │       │   │   └── murachs_python_chapter08.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter09
+│   │   │   │       │       │   │   └── murachs_python_chapter09.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter10
+│   │   │   │       │       │   │   └── murachs_python_chapter10.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter11
+│   │   │   │       │       │   │   └── murachs_python_chapter11.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter12
+│   │   │   │       │       │   │   └── murachs_python_chapter12.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter13
+│   │   │   │       │       │   │   └── murachs_python_chapter13.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter14
+│   │   │   │       │       │   │   └── murachs_python_chapter14.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter15
+│   │   │   │       │       │   │   ├── image00158766d75.gif
+│   │   │   │       │       │   │   └── murachs_python_chapter15.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter16
+│   │   │   │       │       │   │   └── murachs_python_chapter16.rsp
+│   │   │   │       │       │   ├── murachs_python_chapter17
+│   │   │   │       │       │   │   └── murachs_python_chapter17.rsp
+│   │   │   │       │       │   └── murachs_python_chapter18
+│   │   │   │       │       │       └── murachs_python_chapter18.rsp
+│   │   │   │       │       └── RTF
+│   │   │   │       │           ├── murachs_python_chapter01.rtf
+│   │   │   │       │           ├── murachs_python_chapter02.rtf
+│   │   │   │       │           ├── murachs_python_chapter03.rtf
+│   │   │   │       │           ├── murachs_python_chapter04.rtf
+│   │   │   │       │           ├── murachs_python_chapter05.rtf
+│   │   │   │       │           ├── murachs_python_chapter06.rtf
+│   │   │   │       │           ├── murachs_python_chapter07.rtf
+│   │   │   │       │           ├── murachs_python_chapter08.rtf
+│   │   │   │       │           ├── murachs_python_chapter09.rtf
+│   │   │   │       │           ├── murachs_python_chapter10.rtf
+│   │   │   │       │           ├── murachs_python_chapter11.rtf
+│   │   │   │       │           ├── murachs_python_chapter12.rtf
+│   │   │   │       │           ├── murachs_python_chapter13.rtf
+│   │   │   │       │           ├── murachs_python_chapter14.rtf
+│   │   │   │       │           ├── murachs_python_chapter15.rtf
+│   │   │   │       │           ├── murachs_python_chapter16.rtf
+│   │   │   │       │           ├── murachs_python_chapter17.rtf
+│   │   │   │       │           └── murachs_python_chapter18.rtf
+│   │   │   │       ├── Murach Books for Instructors.url
+│   │   │   │       ├── murach_instructors.ico
+│   │   │   │       └── Student download
+│   │   │   │           ├── _db
+│   │   │   │           │   ├── create_movie_db.sql
+│   │   │   │           │   └── movies.sqlite
+│   │   │   │           ├── book_apps
+│   │   │   │           │   ├── ch01
+│   │   │   │           │   │   ├── future_value_gui.py
+│   │   │   │           │   │   ├── future_value_web
+│   │   │   │           │   │   │   ├── future_value_web.py
+│   │   │   │           │   │   │   ├── static
+│   │   │   │           │   │   │   │   └── main.css
+│   │   │   │           │   │   │   └── templates
+│   │   │   │           │   │   │       └── index.html
+│   │   │   │           │   │   └── future_value.py
+│   │   │   │           │   ├── ch02
+│   │   │   │           │   │   ├── mpg.py
+│   │   │   │           │   │   └── test_scores.py
+│   │   │   │           │   ├── ch03
+│   │   │   │           │   │   ├── future_value.py
+│   │   │   │           │   │   ├── invoice.py
+│   │   │   │           │   │   ├── mpg.py
+│   │   │   │           │   │   └── test_scores.py
+│   │   │   │           │   ├── ch04
+│   │   │   │           │   │   ├── __pycache__
+│   │   │   │           │   │   │   └── temperature.cpython-35.pyc
+│   │   │   │           │   │   ├── convert_temperatures.py
+│   │   │   │           │   │   ├── future_value.py
+│   │   │   │           │   │   ├── guess_the_number.py
+│   │   │   │           │   │   ├── pig_dice_game_global.py
+│   │   │   │           │   │   ├── pig_dice_game_local.py
+│   │   │   │           │   │   ├── temperature_documented.py
+│   │   │   │           │   │   └── temperature.py
+│   │   │   │           │   ├── ch05
+│   │   │   │           │   │   ├── __pycache__
+│   │   │   │           │   │   │   └── temperature.cpython-35.pyc
+│   │   │   │           │   │   ├── convert_temperatures.py
+│   │   │   │           │   │   ├── future_value.py
+│   │   │   │           │   │   ├── mpg.py
+│   │   │   │           │   │   └── temperature.py
+│   │   │   │           │   ├── ch06
+│   │   │   │           │   │   ├── movie_list_2d.py
+│   │   │   │           │   │   ├── movie_list.py
+│   │   │   │           │   │   └── number_crunching.py
+│   │   │   │           │   ├── ch07
+│   │   │   │           │   │   ├── movies.bin
+│   │   │   │           │   │   ├── movies.csv
+│   │   │   │           │   │   ├── movies.txt
+│   │   │   │           │   │   ├── movies1.py
+│   │   │   │           │   │   ├── movies2.py
+│   │   │   │           │   │   └── movies3.py
+│   │   │   │           │   ├── ch08
+│   │   │   │           │   │   ├── movies.csv
+│   │   │   │           │   │   ├── movies2.py
+│   │   │   │           │   │   └── total_calc.py
+│   │   │   │           │   ├── ch09
+│   │   │   │           │   │   ├── future_value_decimal.py
+│   │   │   │           │   │   ├── invoice_decimal.py
+│   │   │   │           │   │   └── invoice_float.py
+│   │   │   │           │   ├── ch10
+│   │   │   │           │   │   ├── __pycache__
+│   │   │   │           │   │   │   └── wordlist.cpython-35.pyc
+│   │   │   │           │   │   ├── create_account.py
+│   │   │   │           │   │   ├── gettysburg_address.txt
+│   │   │   │           │   │   ├── hangman.py
+│   │   │   │           │   │   ├── movies.txt
+│   │   │   │           │   │   ├── movies2.py
+│   │   │   │           │   │   ├── word_counter.py
+│   │   │   │           │   │   └── wordlist.py
+│   │   │   │           │   ├── ch11
+│   │   │   │           │   │   ├── invoice.py
+│   │   │   │           │   │   ├── reservation.py
+│   │   │   │           │   │   └── timer.py
+│   │   │   │           │   ├── ch12
+│   │   │   │           │   │   ├── book_catalog.py
+│   │   │   │           │   │   ├── country_codes.py
+│   │   │   │           │   │   ├── gettysburg_address.txt
+│   │   │   │           │   │   └── word_counter.py
+│   │   │   │           │   ├── ch13
+│   │   │   │           │   │   ├── adder_loop.py
+│   │   │   │           │   │   ├── adder_recursion.py
+│   │   │   │           │   │   ├── factorial_loop.py
+│   │   │   │           │   │   ├── factorial_recursion.py
+│   │   │   │           │   │   ├── fibonacci_loop.py
+│   │   │   │           │   │   ├── fibonacci_recursion.py
+│   │   │   │           │   │   ├── infinite_loop.py
+│   │   │   │           │   │   ├── infinite_recursion.py
+│   │   │   │           │   │   └── towers_of_hanoi.py
+│   │   │   │           │   ├── ch14
+│   │   │   │           │   │   ├── dice_roller
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │           │   │   │   │   ├── die.cpython-35.pyc
+│   │   │   │           │   │   │   │   └── pig_game.cpython-35.pyc
+│   │   │   │           │   │   │   ├── dice_roller.py
+│   │   │   │           │   │   │   └── dice.py
+│   │   │   │           │   │   ├── dice_roller_encap1
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │           │   │   │   │   ├── die.cpython-35.pyc
+│   │   │   │           │   │   │   │   └── pig_game.cpython-35.pyc
+│   │   │   │           │   │   │   ├── dice_roller.py
+│   │   │   │           │   │   │   └── dice.py
+│   │   │   │           │   │   ├── dice_roller_encap2
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │           │   │   │   │   ├── die.cpython-35.pyc
+│   │   │   │           │   │   │   │   └── pig_game.cpython-35.pyc
+│   │   │   │           │   │   │   ├── dice_roller.py
+│   │   │   │           │   │   │   └── dice.py
+│   │   │   │           │   │   ├── pig_dice
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │           │   │   │   │   ├── die.cpython-35.pyc
+│   │   │   │           │   │   │   │   └── game.cpython-35.pyc
+│   │   │   │           │   │   │   ├── dice.py
+│   │   │   │           │   │   │   ├── game.py
+│   │   │   │           │   │   │   └── pig_game.py
+│   │   │   │           │   │   └── product_viewer
+│   │   │   │           │   │       ├── __pycache__
+│   │   │   │           │   │       │   └── objects.cpython-35.pyc
+│   │   │   │           │   │       ├── objects.py
+│   │   │   │           │   │       └── product_viewer.py
+│   │   │   │           │   ├── ch15
+│   │   │   │           │   │   ├── dice_roller
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │           │   │   │   │   ├── die.cpython-35.pyc
+│   │   │   │           │   │   │   │   └── pig_game.cpython-35.pyc
+│   │   │   │           │   │   │   ├── dice_roller.py
+│   │   │   │           │   │   │   └── dice.py
+│   │   │   │           │   │   ├── movies
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── aircraft.cpython-35.pyc
+│   │   │   │           │   │   │   │   ├── conversions.cpython-35.pyc
+│   │   │   │           │   │   │   │   ├── db.cpython-35.pyc
+│   │   │   │           │   │   │   │   ├── objects.cpython-35.pyc
+│   │   │   │           │   │   │   │   ├── temp.cpython-35.pyc
+│   │   │   │           │   │   │   │   └── temperature.cpython-35.pyc
+│   │   │   │           │   │   │   ├── db.py
+│   │   │   │           │   │   │   ├── movies.csv
+│   │   │   │           │   │   │   ├── movies.py
+│   │   │   │           │   │   │   └── objects.py
+│   │   │   │           │   │   └── product_viewer
+│   │   │   │           │   │       ├── __pycache__
+│   │   │   │           │   │       │   └── objects.cpython-35.pyc
+│   │   │   │           │   │       ├── objects.py
+│   │   │   │           │   │       └── product_viewer.py
+│   │   │   │           │   ├── ch16
+│   │   │   │           │   │   └── shopping_cart
+│   │   │   │           │   │       ├── __pycache__
+│   │   │   │           │   │       │   ├── business.cpython-35.pyc
+│   │   │   │           │   │       │   ├── db.cpython-35.pyc
+│   │   │   │           │   │       │   └── objects.cpython-35.pyc
+│   │   │   │           │   │       ├── business.py
+│   │   │   │           │   │       ├── db.py
+│   │   │   │           │   │       ├── products.csv
+│   │   │   │           │   │       ├── shopping_cart.py
+│   │   │   │           │   │       └── tester.py
+│   │   │   │           │   ├── ch17
+│   │   │   │           │   │   ├── db_tester
+│   │   │   │           │   │   │   ├── db_tester.py
+│   │   │   │           │   │   │   └── movies.sqlite
+│   │   │   │           │   │   └── movies
+│   │   │   │           │   │       ├── __pycache__
+│   │   │   │           │   │       │   ├── db.cpython-35.pyc
+│   │   │   │           │   │       │   └── objects.cpython-35.pyc
+│   │   │   │           │   │       ├── db.py
+│   │   │   │           │   │       ├── objects.py
+│   │   │   │           │   │       └── ui.py
+│   │   │   │           │   └── ch18
+│   │   │   │           │       └── future_value_gui
+│   │   │   │           │           ├── __pycache__
+│   │   │   │           │           │   ├── business.cpython-35.pyc
+│   │   │   │           │           │   └── investment.cpython-35.pyc
+│   │   │   │           │           ├── business.py
+│   │   │   │           │           └── ui.py
+│   │   │   │           ├── exercises
+│   │   │   │           │   ├── ch01
+│   │   │   │           │   │   └── future_value_errors.py
+│   │   │   │           │   ├── ch02
+│   │   │   │           │   │   ├── mpg_model.py
+│   │   │   │           │   │   ├── mpg.py
+│   │   │   │           │   │   └── test_scores.py
+│   │   │   │           │   ├── ch03
+│   │   │   │           │   │   ├── future_value.py
+│   │   │   │           │   │   ├── mpg.py
+│   │   │   │           │   │   └── test_scores.py
+│   │   │   │           │   ├── ch04
+│   │   │   │           │   │   ├── __pycache__
+│   │   │   │           │   │   │   └── validation.cpython-35.pyc
+│   │   │   │           │   │   └── future_value.py
+│   │   │   │           │   ├── ch05
+│   │   │   │           │   │   ├── future_value.py
+│   │   │   │           │   │   └── test_scores.py
+│   │   │   │           │   ├── ch06
+│   │   │   │           │   │   ├── movie_list_2d.py
+│   │   │   │           │   │   └── test_scores.py
+│   │   │   │           │   ├── ch07
+│   │   │   │           │   │   ├── mpg_write.py
+│   │   │   │           │   │   └── mpg.py
+│   │   │   │           │   ├── ch08
+│   │   │   │           │   │   ├── future_value.py
+│   │   │   │           │   │   ├── movies.csv
+│   │   │   │           │   │   └── movies2.py
+│   │   │   │           │   ├── ch09
+│   │   │   │           │   │   └── invoice_decimal.py
+│   │   │   │           │   ├── ch10
+│   │   │   │           │   │   ├── __pycache__
+│   │   │   │           │   │   │   └── wordlist.cpython-35.pyc
+│   │   │   │           │   │   ├── create_account.py
+│   │   │   │           │   │   ├── gettysburg_address.txt
+│   │   │   │           │   │   ├── hangman.py
+│   │   │   │           │   │   ├── word_counter.py
+│   │   │   │           │   │   └── wordlist.py
+│   │   │   │           │   ├── ch11
+│   │   │   │           │   │   ├── invoice.py
+│   │   │   │           │   │   └── timer.py
+│   │   │   │           │   ├── ch12
+│   │   │   │           │   │   ├── book_catalog.py
+│   │   │   │           │   │   └── movie_list_2d.py
+│   │   │   │           │   ├── ch13
+│   │   │   │           │   │   ├── fibonacci_loop.py
+│   │   │   │           │   │   ├── fibonacci_recursion.py
+│   │   │   │           │   │   └── towers_of_hanoi.py
+│   │   │   │           │   ├── ch14
+│   │   │   │           │   │   ├── dice_roller
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │           │   │   │   │   ├── die.cpython-35.pyc
+│   │   │   │           │   │   │   │   └── pig_game.cpython-35.pyc
+│   │   │   │           │   │   │   ├── dice_roller.py
+│   │   │   │           │   │   │   └── dice.py
+│   │   │   │           │   │   ├── movies
+│   │   │   │           │   │   │   └── movies.py
+│   │   │   │           │   │   └── temperature
+│   │   │   │           │   │       ├── __pycache__
+│   │   │   │           │   │       │   └── temperature.cpython-35.pyc
+│   │   │   │           │   │       ├── convert_temperatures.py
+│   │   │   │           │   │       └── temperature.py
+│   │   │   │           │   ├── ch15
+│   │   │   │           │   │   ├── authors
+│   │   │   │           │   │   │   ├── __pycache__
+│   │   │   │           │   │   │   │   └── objects.cpython-35.pyc
+│   │   │   │           │   │   │   ├── authors_tester.py
+│   │   │   │           │   │   │   └── objects.py
+│   │   │   │           │   │   └── product_viewer
+│   │   │   │           │   │       ├── __pycache__
+│   │   │   │           │   │       │   └── objects.cpython-35.pyc
+│   │   │   │           │   │       ├── objects.py
+│   │   │   │           │   │       └── product_viewer.py
+│   │   │   │           │   ├── ch16
+│   │   │   │           │   │   └── read_me.py
+│   │   │   │           │   ├── ch17
+│   │   │   │           │   │   └── movies
+│   │   │   │           │   │       ├── __pycache__
+│   │   │   │           │   │       │   ├── db.cpython-35.pyc
+│   │   │   │           │   │       │   └── objects.cpython-35.pyc
+│   │   │   │           │   │       ├── db.py
+│   │   │   │           │   │       ├── objects.py
+│   │   │   │           │   │       └── ui.py
+│   │   │   │           │   └── ch18
+│   │   │   │           │       ├── future_value_gui
+│   │   │   │           │       │   ├── __pycache__
+│   │   │   │           │       │   │   ├── business.cpython-35.pyc
+│   │   │   │           │       │   │   └── investment.cpython-35.pyc
+│   │   │   │           │       │   ├── business.py
+│   │   │   │           │       │   └── ui.py
+│   │   │   │           │       └── mpg
+│   │   │   │           │           └── mpg_gui.py
+│   │   │   │           └── solutions
+│   │   │   │               ├── ch01
+│   │   │   │               │   └── future_value_errors.py
+│   │   │   │               ├── ch02
+│   │   │   │               │   ├── mpg.py
+│   │   │   │               │   ├── rectangle.py
+│   │   │   │               │   └── test_scores.py
+│   │   │   │               ├── ch03
+│   │   │   │               │   ├── future_value.py
+│   │   │   │               │   ├── mpg.py
+│   │   │   │               │   └── test_scores.py
+│   │   │   │               ├── ch04
+│   │   │   │               │   ├── __pycache__
+│   │   │   │               │   │   └── validation.cpython-35.pyc
+│   │   │   │               │   ├── future_value.py
+│   │   │   │               │   └── validation.py
+│   │   │   │               ├── ch05
+│   │   │   │               │   ├── future_value.py
+│   │   │   │               │   └── test_scores.py
+│   │   │   │               ├── ch06
+│   │   │   │               │   ├── movie_list_2d.py
+│   │   │   │               │   └── test_scores.py
+│   │   │   │               ├── ch07
+│   │   │   │               │   ├── mpg_binary.py
+│   │   │   │               │   ├── mpg_write_binary.py
+│   │   │   │               │   ├── mpg_write.py
+│   │   │   │               │   ├── mpg.py
+│   │   │   │               │   ├── trips.bin
+│   │   │   │               │   └── trips.csv
+│   │   │   │               ├── ch08
+│   │   │   │               │   ├── future_value.py
+│   │   │   │               │   ├── movies.csv
+│   │   │   │               │   └── movies2.py
+│   │   │   │               ├── ch09
+│   │   │   │               │   └── invoice_decimal.py
+│   │   │   │               ├── ch10
+│   │   │   │               │   ├── __pycache__
+│   │   │   │               │   │   └── wordlist.cpython-35.pyc
+│   │   │   │               │   ├── create_account.py
+│   │   │   │               │   ├── gettysburg_address.txt
+│   │   │   │               │   ├── hangman.py
+│   │   │   │               │   ├── word_counter.py
+│   │   │   │               │   └── wordlist.py
+│   │   │   │               ├── ch11
+│   │   │   │               │   ├── invoice.py
+│   │   │   │               │   └── timer.py
+│   │   │   │               ├── ch12
+│   │   │   │               │   ├── book_catalog.py
+│   │   │   │               │   └── movie_list_2d.py
+│   │   │   │               ├── ch13
+│   │   │   │               │   ├── fibonacci_loop.py
+│   │   │   │               │   ├── fibonacci_recursion.py
+│   │   │   │               │   └── towers_of_hanoi.py
+│   │   │   │               ├── ch14
+│   │   │   │               │   ├── dice_roller
+│   │   │   │               │   │   ├── __pycache__
+│   │   │   │               │   │   │   ├── dice.cpython-35.pyc
+│   │   │   │               │   │   │   ├── die.cpython-35.pyc
+│   │   │   │               │   │   │   └── pig_game.cpython-35.pyc
+│   │   │   │               │   │   ├── dice_roller.py
+│   │   │   │               │   │   └── dice.py
+│   │   │   │               │   ├── movies
+│   │   │   │               │   │   ├── __pycache__
+│   │   │   │               │   │   │   └── objects.cpython-35.pyc
+│   │   │   │               │   │   ├── movies.py
+│   │   │   │               │   │   └── objects.py
+│   │   │   │               │   └── temperature
+│   │   │   │               │       ├── __pycache__
+│   │   │   │               │       │   └── temperature.cpython-35.pyc
+│   │   │   │               │       ├── convert_temperatures.py
+│   │   │   │               │       └── temperature.py
+│   │   │   │               ├── ch15
+│   │   │   │               │   ├── authors
+│   │   │   │               │   │   ├── __pycache__
+│   │   │   │               │   │   │   └── objects.cpython-35.pyc
+│   │   │   │               │   │   ├── authors_tester.py
+│   │   │   │               │   │   └── objects.py
+│   │   │   │               │   └── product_viewer
+│   │   │   │               │       ├── __pycache__
+│   │   │   │               │       │   └── objects.cpython-35.pyc
+│   │   │   │               │       ├── objects.py
+│   │   │   │               │       └── product_viewer.py
+│   │   │   │               ├── ch16
+│   │   │   │               │   └── task_list
+│   │   │   │               │       ├── __pycache__
+│   │   │   │               │       │   ├── db.cpython-35.pyc
+│   │   │   │               │       │   └── objects.cpython-35.pyc
+│   │   │   │               │       ├── class_diagram.png
+│   │   │   │               │       ├── db.py
+│   │   │   │               │       ├── objects_tester.py
+│   │   │   │               │       ├── objects.py
+│   │   │   │               │       ├── task_list_business.csv
+│   │   │   │               │       ├── task_list_personal.csv
+│   │   │   │               │       ├── task_list.py
+│   │   │   │               │       └── task_lists.txt
+│   │   │   │               ├── ch17
+│   │   │   │               │   ├── 17-1_step11.sql
+│   │   │   │               │   ├── 17-1_step5.sql
+│   │   │   │               │   ├── 17-1_step6.sql
+│   │   │   │               │   ├── 17-1_step7.sql
+│   │   │   │               │   ├── 17-1_step8.sql
+│   │   │   │               │   ├── 17-1_step9.sql
+│   │   │   │               │   └── movies
+│   │   │   │               │       ├── __pycache__
+│   │   │   │               │       │   ├── db.cpython-35.pyc
+│   │   │   │               │       │   └── objects.cpython-35.pyc
+│   │   │   │               │       ├── db.py
+│   │   │   │               │       ├── objects.py
+│   │   │   │               │       └── ui.py
+│   │   │   │               └── ch18
+│   │   │   │                   ├── future_value_gui
+│   │   │   │                   │   ├── __pycache__
+│   │   │   │                   │   │   ├── business.cpython-35.pyc
+│   │   │   │                   │   │   └── investment.cpython-35.pyc
+│   │   │   │                   │   ├── business.py
+│   │   │   │                   │   └── ui.py
+│   │   │   │                   └── mpg
+│   │   │   │                       ├── mpg_gui.py
+│   │   │   │                       └── mpg.py
+│   │   │   └── root
+│   │   │       ├── Canvas - Python
+│   │   │       │   ├── Screen Shot 2024-08-27 at 11.53.14 AM.png
+│   │   │       │   ├── Screen Shot 2024-08-27 at 11.53.32 AM.png
+│   │   │       │   ├── Screen Shot 2024-08-27 at 12.03.13 PM.png
+│   │   │       │   ├── Screen Shot 2024-08-27 at 12.21.53 PM.png
+│   │   │       │   ├── Screen Shot 2024-08-27 at 12.22.13 PM.png
+│   │   │       │   ├── Screen Shot 2024-08-27 at 12.22.22 PM.png
+│   │   │       │   └── Screen Shot 2024-08-27 at 12.22.50 PM.png
+│   │   │       ├── end_module.html
+│   │   │       ├── F24_links.html
+│   │   │       ├── fall24_links.html
+│   │   │       ├── faq.html
+│   │   │       ├── homepage.html
+│   │   │       ├── module-links.html
+│   │   │       ├── planning.html
+│   │   │       ├── planning.json
+│   │   │       └── syl.html
+│   │   └── test.js
+│   ├── santafe
+│   │   ├── accommodations.html
+│   │   ├── cis4083
+│   │   │   ├── content.json
+│   │   │   └── ex04-01.html
+│   │   ├── CIS4083_0M1_W25
+│   │   │   ├── accommodations.html
+│   │   │   ├── ai-policy.html
+│   │   │   ├── classroom-etiquette.html
+│   │   │   ├── content.json
+│   │   │   ├── course-description.html
+│   │   │   ├── course-expectations.html
+│   │   │   ├── course-objectives.html
+│   │   │   ├── course-schedule.html
+│   │   │   ├── critical-dates.html
+│   │   │   ├── grading-details.html
+│   │   │   ├── grading-scale.html
+│   │   │   ├── outline.html
+│   │   │   ├── recommended-materials.html
+│   │   │   ├── required-materials.html
+│   │   │   └── student-lab.html
+│   │   ├── CIS4891_0M1_W25
+│   │   │   ├── accommodations.html
+│   │   │   ├── ai-policy.html
+│   │   │   ├── classroom-etiquette.html
+│   │   │   ├── content.json
+│   │   │   ├── course-description.html
+│   │   │   ├── course-expectations.html
+│   │   │   ├── course-objectives.html
+│   │   │   ├── course-schedule.html
+│   │   │   ├── critical-dates.html
+│   │   │   ├── grading-details.html
+│   │   │   ├── grading-scale.html
+│   │   │   ├── outline.html
+│   │   │   ├── recommended-materials.html
+│   │   │   ├── required-materials.html
+│   │   │   └── student-lab.html
+│   │   ├── cop2535
+│   │   │   ├── accommodations.html
+│   │   │   ├── ai-policy.html
+│   │   │   ├── classroom-etiquette.html
+│   │   │   ├── content.json
+│   │   │   ├── course-description.html
+│   │   │   ├── course-expectations.html
+│   │   │   ├── critical-dates.html
+│   │   │   ├── grading-details.html
+│   │   │   ├── outline.html
+│   │   │   ├── recommended-materials.html
+│   │   │   ├── required-materials.html
+│   │   │   └── student-lab.html
+│   │   ├── COP2535_0M1_S25
+│   │   │   └── content.json
+│   │   ├── cop2551
+│   │   │   ├── accommodations.html
+│   │   │   ├── ai-policy.html
+│   │   │   ├── ann
+│   │   │   │   ├── 1.0.html
+│   │   │   │   └── 2.0.draft.html
+│   │   │   ├── classroom-etiquette.html
+│   │   │   ├── content.json
+│   │   │   ├── course_assessment.html
+│   │   │   ├── course-description.html
+│   │   │   ├── course-expectations.html
+│   │   │   ├── course-objectives.html
+│   │   │   ├── course-schedule.html
+│   │   │   ├── critical-dates.html
+│   │   │   ├── draft_outline.json
+│   │   │   ├── gatekeeper.html
+│   │   │   ├── grading-details.html
+│   │   │   ├── module
+│   │   │   │   ├── blank-page.html
+│   │   │   │   ├── ch1.html
+│   │   │   │   ├── ch10.html
+│   │   │   │   ├── ch11.html
+│   │   │   │   ├── ch12.html
+│   │   │   │   ├── ch13.html
+│   │   │   │   ├── ch15.html
+│   │   │   │   ├── ch2.html
+│   │   │   │   ├── ch3.html
+│   │   │   │   ├── ch4.html
+│   │   │   │   ├── ch5.html
+│   │   │   │   ├── ch6.html
+│   │   │   │   ├── ch7.html
+│   │   │   │   ├── ch8.html
+│   │   │   │   ├── ch9.html
+│   │   │   │   ├── lab01.html
+│   │   │   │   ├── lab02_notes.md
+│   │   │   │   ├── lab02.html
+│   │   │   │   ├── lab03.html
+│   │   │   │   ├── lab04.html
+│   │   │   │   ├── lab05.html
+│   │   │   │   ├── lab06.html
+│   │   │   │   ├── lab07.html
+│   │   │   │   ├── lab08.html
+│   │   │   │   ├── lab09.html
+│   │   │   │   ├── lab09rubric.md
+│   │   │   │   ├── lab1.html
+│   │   │   │   ├── lab10.html
+│   │   │   │   ├── lab11.html
+│   │   │   │   ├── notes2.md
+│   │   │   │   ├── notes5.2.md
+│   │   │   │   ├── notes5.3.md
+│   │   │   │   ├── notes5.4.md
+│   │   │   │   ├── overview1.html
+│   │   │   │   ├── overview10.html
+│   │   │   │   ├── overview11.html
+│   │   │   │   ├── overview12.html
+│   │   │   │   ├── overview2.html
+│   │   │   │   ├── overview3.html
+│   │   │   │   ├── overview4.html
+│   │   │   │   ├── overview5.html
+│   │   │   │   ├── overview6.html
+│   │   │   │   ├── overview7.html
+│   │   │   │   ├── overview8.html
+│   │   │   │   └── overview9.html
+│   │   │   ├── outline.html
+│   │   │   ├── recommended-materials.html
+│   │   │   ├── required-materials.html
+│   │   │   └── student-lab.html
+│   │   ├── COP2551_0M1_S25
+│   │   │   └── content.json
+│   │   ├── cop2552
+│   │   │   ├── accommodations.html
+│   │   │   ├── ai-policy.html
+│   │   │   ├── classroom-etiquette.html
+│   │   │   ├── content.json
+│   │   │   ├── course-description.html
+│   │   │   ├── course-expectations.html
+│   │   │   ├── course-objectives.html
+│   │   │   ├── course-schedule.html
+│   │   │   ├── critical-dates.html
+│   │   │   ├── ex_template.html
+│   │   │   ├── grading-details.html
+│   │   │   ├── grading-scale.html
+│   │   │   ├── modules
+│   │   │   │   ├── 00
+│   │   │   │   │   └── frontpage.html
+│   │   │   │   ├── 01
+│   │   │   │   │   ├── m1_rsi.html
+│   │   │   │   │   └── tdd.html
+│   │   │   │   ├── 02
+│   │   │   │   │   ├── 02_03_style.html
+│   │   │   │   │   ├── 02_04_JavaFundamentals.html
+│   │   │   │   │   ├── CodingStyleAndConventions.html
+│   │   │   │   │   └── ExJavaFundamentals.html
+│   │   │   │   ├── 03
+│   │   │   │   │   ├── 03_04_JavaArrayFundamentals.html
+│   │   │   │   │   ├── ExJavaArrayFundamentals.html
+│   │   │   │   │   └── javadoc.html
+│   │   │   │   ├── 04
+│   │   │   │   │   ├── 04_04_2DArrays.html
+│   │   │   │   │   └── Ex2DArrays.html
+│   │   │   │   ├── 05
+│   │   │   │   │   ├── 05_04_Classes.html
+│   │   │   │   │   ├── 05_05_ExClasses.html
+│   │   │   │   │   ├── Classes.html
+│   │   │   │   │   └── ExJavaClasses.html
+│   │   │   │   ├── 06
+│   │   │   │   │   ├── 06_04_DataStructureshtml
+│   │   │   │   │   ├── 06_05_ExDataStructures.html
+│   │   │   │   │   ├── ArrayList.html
+│   │   │   │   │   ├── BinaryTree.html
+│   │   │   │   │   ├── DataStructures.html
+│   │   │   │   │   ├── ExDataStructures.html
+│   │   │   │   │   ├── HashTable.html
+│   │   │   │   │   ├── LinkedList.html
+│   │   │   │   │   ├── Queue.html
+│   │   │   │   │   └── Stack.html
+│   │   │   │   ├── 07
+│   │   │   │   │   ├── 07_04_AdvClasses.html
+│   │   │   │   │   └── AdvClasses.html
+│   │   │   │   ├── 08
+│   │   │   │   │   ├── 08_04_OODesign.html
+│   │   │   │   │   └── OODesign.html
+│   │   │   │   ├── 09
+│   │   │   │   │   ├── 09_04_Exceptions.html
+│   │   │   │   │   └── Exceptions.html
+│   │   │   │   ├── 10
+│   │   │   │   │   ├── 10_04_IO.html
+│   │   │   │   │   └── IO.html
+│   │   │   │   ├── 11
+│   │   │   │   │   ├── 11_04_GUI.html
+│   │   │   │   │   └── GUI.html
+│   │   │   │   └── 12
+│   │   │   │       ├── 12_04_Recursion.html
+│   │   │   │       └── Recursion.html
+│   │   │   ├── outline.html
+│   │   │   ├── recommended-materials.html
+│   │   │   ├── required-materials.html
+│   │   │   └── student-lab.html
+│   │   ├── COP2552_0M1_S25
+│   │   │   └── content.json
+│   │   ├── COP2552_0M1_W25
+│   │   │   ├── accommodations.html
+│   │   │   ├── ai-policy.html
+│   │   │   ├── classroom-etiquette.html
+│   │   │   ├── content.json
+│   │   │   ├── course-description.html
+│   │   │   ├── course-expectations.html
+│   │   │   ├── course-objectives.html
+│   │   │   ├── course-schedule.html
+│   │   │   ├── critical-dates.html
+│   │   │   ├── grading-scale.html
+│   │   │   ├── recommended-materials.html
+│   │   │   ├── required-materials.html
+│   │   │   └── student-lab.html
+│   │   ├── cop4813
+│   │   │   ├── accommodations.html
+│   │   │   ├── ai-policy.html
+│   │   │   ├── classroom-etiquette.html
+│   │   │   ├── content.json
+│   │   │   ├── course-description.html
+│   │   │   ├── course-expectations.html
+│   │   │   ├── grading-details.html
+│   │   │   ├── outline.html
+│   │   │   ├── recommended-materials.html
+│   │   │   ├── required-materials.html
+│   │   │   └── student-lab.html
+│   │   ├── css
+│   │   │   └── content.css
+│   │   ├── images
+│   │   │   └── college_logo.png
+│   │   ├── ite_syllabus.html
+│   │   ├── ite-policies.html
+│   │   ├── js
+│   │   │   └── content.js
+│   │   └── template
+│   │       ├── content.json
+│   │       └── scratchpad.html
+│   └── sdmesa
+│       ├── _cisc179
+│       │   ├── 01
+│       │   │   └── intro.html
+│       │   ├── 99
+│       │   │   └── template.py
+│       │   └── cor
+│       │       ├── catalog_existing.html
+│       │       ├── CISC179_course_outline.pdf
+│       │       ├── clo_20241121.html
+│       │       ├── clo_existing.html
+│       │       ├── clo.json
+│       │       ├── content.json
+│       │       ├── cor.html
+│       │       ├── cor.json
+│       │       ├── course_description.html
+│       │       ├── course_outline.html
+│       │       ├── course_planning.html
+│       │       ├── outline_20220315.html
+│       │       ├── outline_20241121.html
+│       │       ├── outline.html
+│       │       ├── prep.html
+│       │       ├── rtm_Spring25.html
+│       │       ├── slo_20220315.html
+│       │       ├── slo.html
+│       │       ├── Spring2025_8wk1.json
+│       │       └── Spring2025_8wk2.json
+│       ├── accommodations.html
+│       ├── CISC179
+│       │   ├── content.json
+│       │   ├── grading-details.html
+│       │   ├── outline.html
+│       │   ├── recommended-materials.html
+│       │   └── required-materials.html
+│       ├── CISC179-W25-1
+│       │   ├── accommodations.html
+│       │   ├── content.json
+│       │   ├── grading-details.html
+│       │   ├── outline.html
+│       │   ├── recommended-materials.html
+│       │   └── required-materials.html
+│       ├── CISC179-W25-2
+│       │   ├── accommodations.html
+│       │   ├── content.json
+│       │   ├── grading-details.html
+│       │   ├── outline.html
+│       │   ├── recommended-materials.html
+│       │   └── required-materials.html
+│       └── cisc401
+│           ├── 00
+│           │   ├── 00_00_template.html
+│           │   ├── 00_01_toc.html
+│           │   ├── catalog.html
+│           │   ├── cisc401_outline.html
+│           │   ├── CLOs.html
+│           │   ├── contact.html
+│           │   ├── end_module.html
+│           │   ├── front_page_canvas.html
+│           │   ├── frontpage.html
+│           │   ├── him_programlearningoutcomes.html
+│           │   ├── hl7.html
+│           │   ├── instructor.html
+│           │   ├── learning_objectives.html
+│           │   ├── modules.html
+│           │   ├── objectives.html
+│           │   ├── outline_of_topics.html
+│           │   ├── outline.html
+│           │   ├── planning.json
+│           │   ├── program_reqts.csv
+│           │   ├── requisites.html
+│           │   ├── SQL_install_Macos.html
+│           │   ├── SQL_install_Windows.html
+│           │   ├── start.html
+│           │   ├── syllabus_cisc401.html
+│           │   ├── term.html
+│           │   └── toc.html
+│           ├── 01
+│           │   ├── 01_00_introduction_to_databases
+│           │   ├── 01_07_client_server.html
+│           │   ├── 01_notes.html
+│           │   ├── 01.01.overview.html
+│           │   ├── 01.02.chapter-notes.html
+│           │   ├── 01.03.db_demo.html
+│           │   ├── 01.04.db-intro.html
+│           │   ├── 01.05.Introductions.html
+│           │   ├── 01.06.client-server-arch.html
+│           │   └── 01.0x.html
+│           ├── 02
+│           │   ├── 02_00_sql_basics
+│           │   ├── 02_01_overview.html
+│           │   ├── 02_02_crud.html
+│           │   ├── 02_03_dialects.html
+│           │   ├── 02_04_select.html
+│           │   ├── 02.01.overview.html
+│           │   ├── 02.02.crud.html
+│           │   ├── 02.03.dialects.html
+│           │   ├── 02.04.select.html
+│           │   ├── 02.05.ex1.single_table_queries.html
+│           │   ├── 1.SingleTableQueries.sql
+│           │   ├── data_structure.html
+│           │   ├── MedicalStaff.sql
+│           │   ├── MedStaff.sql
+│           │   ├── sql_basics.html
+│           │   ├── sql_crud.html
+│           │   ├── sql_dialects.html
+│           │   ├── sql_select.html
+│           │   ├── SQLQuery_1.sql
+│           │   └── SQLQuery_3.sql
+│           ├── 03
+│           │   ├── 03_01_overview_new.html
+│           │   ├── 03_01_overview.html
+│           │   ├── 03_02_data_storage.html
+│           │   ├── 03_03_disc_healt_data.html
+│           │   ├── 03_04_quiz.html
+│           │   ├── data_storage.html
+│           │   ├── db_architecture.html
+│           │   ├── healthcare_data_id.html
+│           │   ├── rdbm.html
+│           │   ├── rubric_entities.html
+│           │   └── schema.html
+│           ├── 04
+│           │   ├── 04_01_overview.html
+│           │   ├── 04_02_db_keys.html
+│           │   ├── 04_03_ERD.html
+│           │   ├── 04_04_ERD_pt2.html
+│           │   ├── 04_05_ex_erd.html
+│           │   ├── chen_erd.html
+│           │   ├── data_design.html
+│           │   ├── data_modeling.html
+│           │   ├── data_models.html
+│           │   ├── db_keys.html
+│           │   ├── erd_rubric.html
+│           │   ├── ERD_rubric.md
+│           │   └── ex_chen_erd.html
+│           ├── 05
+│           │   ├── 05_01_overview.html
+│           │   ├── 05_02_data_constraints.html
+│           │   ├── 05_03_normalization.html
+│           │   ├── 05_04_normalize_medstaff.html
+│           │   ├── 05_05_disc_data_collection.html
+│           │   ├── 05_x_db_normalization.html
+│           │   ├── data_collection_discussion.html
+│           │   ├── data_integrity.html
+│           │   ├── db_design.html
+│           │   ├── integrity_constraints.html
+│           │   ├── normalization.html
+│           │   ├── normalize_medstaff.html
+│           │   └── primary_key.html
+│           ├── 06
+│           │   ├── _ex_06_solution.sql
+│           │   ├── 06_02_joins.html
+│           │   ├── 06_03_subqueries.html
+│           │   ├── 06.01.overview.html
+│           │   ├── 06.02.table_joins.html
+│           │   ├── 06.03.subqueries.html
+│           │   ├── 06.04.ex6_multi_table_queries.html
+│           │   ├── connect.png
+│           │   ├── ex_mult_table_queries.html
+│           │   ├── ex06.html
+│           │   ├── multi_table_queries.html
+│           │   ├── subqueries.html
+│           │   └── tableJoins.html
+│           ├── 07
+│           │   ├── 07_01_overview.html
+│           │   ├── 07_02_data_integration.html
+│           │   ├── 07_03_health_information_exchange.html
+│           │   ├── 07_04_hl7_and_fhir.html
+│           │   ├── data_exchange_overview.html
+│           │   ├── data_integration_and_exchange.html
+│           │   ├── healthcare_data_integration.html
+│           │   ├── hie_bak.html
+│           │   ├── hie.html
+│           │   └── hl7.html
+│           ├── 08
+│           │   ├── 08_01_overview.html
+│           │   ├── 08_02_data_security copy.html
+│           │   ├── 08_03_cybersecurity.html
+│           │   ├── 08_04_data_encryption.html
+│           │   ├── 08_05_disc_data_breach_cast_study.html
+│           │   ├── cybersecurity_primer.html
+│           │   ├── data_security_and_privacy.html
+│           │   ├── data_security_overview.html
+│           │   ├── disc_data_breach_case_studies.html
+│           │   └── MCQs.md
+│           ├── 09
+│           │   ├── 09_01_overview.html
+│           │   ├── 09_03_scheduling.html
+│           │   ├── 09_overview.html
+│           │   └── ex_scheduling.html
+│           ├── 10
+│           │   ├── 10_01_overview.html
+│           │   ├── 10_02_NoSQL.html
+│           │   ├── 10_03_NoSQL_comp.html
+│           │   ├── 10_04_NoSQLdemo.html
+│           │   ├── noSQL_demo.html
+│           │   ├── NoSQL_overview.html
+│           │   ├── NoSQL_vs_JSON.md
+│           │   ├── noSQL.html
+│           │   └── SqlVNosql.html
+│           ├── 11
+│           │   ├── 11_01_overview.html
+│           │   ├── 11_02_global_views.html
+│           │   ├── 11_03_who_data.html
+│           │   ├── 11_04_disc_ghodataapi.html
+│           │   ├── 11_overview.html
+│           │   ├── GHO_api.html
+│           │   ├── HospitalInTheCloud.html
+│           │   └── WHO.html
+│           ├── 12
+│           │   ├── 12_01_overview.html
+│           │   ├── 12_02_database_applications.html
+│           │   ├── 12_03_ex_create_dbapp.html
+│           │   ├── 12_overview.html
+│           │   ├── DatabaseApplications.html
+│           │   └── ex_creating_dbapps.html
+│           ├── 13
+│           │   ├── 13_01_overview.html
+│           │   ├── 13_02_bigdata.html
+│           │   ├── 13_03_analytics.html
+│           │   ├── 13_04_bigdata_healthcare.html
+│           │   ├── 13_overview.html
+│           │   ├── bigdata_healthcare.html
+│           │   ├── BigData.html
+│           │   └── DataAnalytics.html
+│           ├── 14
+│           │   ├── 14_01_overview.html
+│           │   ├── 14_02_datamining.html
+│           │   ├── 14_03_datamining_discussion.html
+│           │   ├── 14_04_electronic_health_records.html
+│           │   ├── 14_05_Ex_PatientData.html
+│           │   ├── 14_06_EHR_DB_tables.html
+│           │   ├── 14_overview.html
+│           │   ├── DataMining.html
+│           │   ├── disc_datamining.html
+│           │   ├── ehr_erd.html
+│           │   ├── ehr_soln.md
+│           │   ├── ehrdb.md
+│           │   ├── ex_patientdb.html
+│           │   └── patientEHRs.html
+│           ├── 15
+│           │   ├── 15_overview.html
+│           │   ├── carousel_dynamic.html
+│           │   ├── carousel.html
+│           │   ├── images.html
+│           │   └── review.html
+│           ├── 98_qa
+│           │   └── questions.md
+│           ├── 99_data
+│           │   ├── 99_00_LOs.html
+│           │   ├── CreateHRSampleDatabase.sql
+│           │   ├── DropHRSampleDatabaseTables.sql
+│           │   ├── HRSampleDatabase_Schema.png
+│           │   ├── LoadHRSampleDatabase.sql
+│           │   ├── LOs.html
+│           │   ├── PatientDB.sql
+│           │   ├── README.md
+│           │   ├── RemoveDatabase.sql
+│           │   ├── resetDatabase.html
+│           │   ├── SeedPatientDB.sql
+│           │   └── TSQLV4 Sample Database.html
+│           ├── CISC 401 - Database Management and Design Syllabus revised 101418.docx
+│           ├── CISC 401 Assignment 4.docx
+│           ├── CISC 401 Assignment Descriptions (2).docx
+│           ├── CISC401 - Fall 2024 - Syllabus.pdf
+│           ├── content.json
+│           ├── Fa24_CISC401_.72064_Sullivan,D.pdf
+│           ├── files
+│           │   └── MedStaff_queries.sql
+│           ├── grading-details.html
+│           ├── outline.html
+│           ├── README.md
+│           ├── recommended-materials.html
+│           ├── required-materials.html
+│           └── WDW_CISC 401 Assignments and CAHIIM competencies.docx
+├── files
+│   ├── AzWebApp.zip
+│   ├── CreateTables.sql
+│   ├── dbapp.py
+│   ├── InsertValues.sql
+│   ├── investment_gui.zip
+│   ├── MedStaff.sql
+│   ├── sched.sql
+│   └── TSQLV4.zip
+├── images
+│   ├── acronym_soup.jpeg
+│   ├── array.png
+│   ├── automobile_class_code.png
+│   ├── automobile_class.png
+│   ├── big_data.png
+│   ├── Book_classDiagram.jpg
+│   ├── Book_cs_src.png
+│   ├── Bookshelf_cs_src.png
+│   ├── Car-cs.png
+│   ├── CarsTestApp-cs.png
+│   ├── Cloud2.jpg
+│   ├── college-logo.jpg
+│   ├── controls.jpeg
+│   ├── Convertible_class_code.png
+│   ├── convertible_test.png
+│   ├── Convertible-cs.png
+│   ├── cop2551ex03.01.png
+│   ├── cop2551ex03.02out.png
+│   ├── cop2551ex03.02src.png
+│   ├── cop2551ex04.01.png
+│   ├── cop2551ex05.01.png
+│   ├── cop2551ex06.01.jpg
+│   ├── csharp_step_by_step.jpeg
+│   ├── cuyamaca-college-logo.jpg
+│   ├── Dan_20070717.jpg
+│   ├── data_management-big_data_vs_mobile.png
+│   ├── data_struct.png
+│   ├── dbdesign2_textbook.jpg
+│   ├── discord-logo.png
+│   ├── dug.jpeg
+│   ├── email-icon.png
+│   ├── Farrell_PLD.jpg
+│   ├── ferrer_sql_select_execution.jpg
+│   ├── ferrer_sql_select.jpg
+│   ├── flip_horiz.png
+│   ├── Gaddis_Java_6ed.jpg
+│   ├── getstarted_cpp.jpg
+│   ├── IMG_2154.jpeg
+│   ├── install-python.png
+│   ├── lab_folders.png
+│   ├── lab01_fig1_menu_file_new.jpg
+│   ├── lab01_fig2_save_txt.jpg
+│   ├── lab01_fig3_pseudocode.jpg
+│   ├── lab01_fig4_save_py.jpg
+│   ├── lab01_fig5.jpg
+│   ├── lab01_fig6.jpg
+│   ├── lab1_code.jpg
+│   ├── linkedin.png
+│   ├── logic.png
+│   ├── Mac_file_extensions.png
+│   ├── memes
+│   │   ├── can_i_join_you.jpeg
+│   │   ├── howitfeels.jpeg
+│   │   ├── oprah_db.jpg
+│   │   ├── relationship_keys.jpeg
+│   │   ├── SQL_JOINs.jpg
+│   │   └── sql_skills.jpeg
+│   ├── mesa_logo_white_500x154.png
+│   ├── Molly.jpeg
+│   ├── monte-carlo-pi-2.png
+│   ├── monte-carlo-pi.png
+│   ├── Motorcycle-cs.png
+│   ├── Murach_MVC2.jpg
+│   ├── Murach_Python_2d.jpg
+│   ├── oop_cover_image.jpg
+│   ├── OSI_reference_model.png
+│   ├── palomar-college-logo.jpg
+│   ├── PatientRecordsDB_diagram.jpg
+│   ├── pixelated_cat.png
+│   ├── prime_cs_pt1.jpg
+│   ├── prime_cs_pt2.jpg
+│   ├── prime_cs_pt3.jpg
+│   ├── ProductClass.jpg
+│   ├── programmer-DONE.jpg
+│   ├── programmer.jpg
+│   ├── puppy_flip.png
+│   ├── pylab
+│   │   ├── 05_01_code.png
+│   │   ├── 05_02_ex2_a.png
+│   │   ├── 05_02_ex2_b.png
+│   │   ├── 05_02_ex2_c.png
+│   │   ├── 05-02-ex2-pseudocode.jpg
+│   │   ├── 10.ImportExceptions.png
+│   │   ├── 10.InvalidPlayerNumberException.png
+│   │   ├── 10.raisePlayerNrException.png
+│   │   ├── 10.test_with_try_except.png
+│   │   ├── 10.UpdateConstructor.png
+│   │   ├── 10.use_setter_in_constructor.png
+│   │   ├── added-flowlines.png
+│   │   ├── adding-flowlines.png
+│   │   ├── api_read_1.png
+│   │   ├── api_read_2.png
+│   │   ├── BaseballPlayerClass.png
+│   │   ├── create_flowchart.png
+│   │   ├── create-blank.png
+│   │   ├── decision.png
+│   │   ├── exponent-pycode.png
+│   │   ├── export-jpg.png
+│   │   ├── factorial-example.jpg
+│   │   ├── factorial-pycode.png
+│   │   ├── fig5-1-flowchart.png
+│   │   ├── find_string.png
+│   │   ├── FlaskRunning.png
+│   │   ├── flow-exponent.png
+│   │   ├── flow-factorial.png
+│   │   ├── flow-shapes-key.png
+│   │   ├── flowchart-shapes.png
+│   │   ├── forecast_source1.png
+│   │   ├── forecast_source2.png
+│   │   ├── fv-sample-run.png
+│   │   ├── get_float_val_results.png
+│   │   ├── get_float_val.png
+│   │   ├── get-inputs.png
+│   │   ├── heads-tails-code.png
+│   │   ├── investment_flaskweb.png
+│   │   ├── investment_tkapp.png
+│   │   ├── investment-code.png
+│   │   ├── is_float.png
+│   │   ├── lab09ex1out.png
+│   │   ├── lab09ex1pt1.png
+│   │   ├── lab09ex1pt2.png
+│   │   ├── lab09ex1pt3.png
+│   │   ├── location_py.png
+│   │   ├── loop.png
+│   │   ├── Magazine.py.png
+│   │   ├── MagazineClassModel.png
+│   │   ├── MagazineTest.png
+│   │   ├── menu_py.png
+│   │   ├── MethodTest.png
+│   │   ├── new-diagram.png
+│   │   ├── Parameter.png
+│   │   ├── PersonTest.jpg
+│   │   ├── PizzaClass.png
+│   │   ├── PizzaClassModel.png
+│   │   ├── PizzaTest.png
+│   │   ├── player_model.png
+│   │   ├── PlayerClass.png
+│   │   ├── PlayerTest.png
+│   │   ├── save-as.png
+│   │   ├── save-drawio.png
+│   │   ├── SubscriberTest.png
+│   │   ├── test_is_float.png
+│   │   ├── TestFindString.png
+│   │   ├── UMLClassTemplate.png
+│   │   ├── units_py.png
+│   │   ├── weather_html.png
+│   │   └── zipsearchtest.jpg
+│   ├── PythonHeader.png
+│   ├── README.md
+│   ├── run-hello-world.png
+│   ├── santafe-college-logo.png
+│   ├── sdmesa-college-logo.jpg
+│   ├── server_room.jpg
+│   ├── sfc_logo_vertical_black.png
+│   ├── sfc_logo_vertical_blue.png
+│   ├── sfcollege_logo.png
+│   ├── sock_hop.png
+│   ├── SQL_1_download.png
+│   ├── SQL_2_install.png
+│   ├── SQL_3_ssms.png
+│   ├── SQL_4a_SQL_server_config_menu.png
+│   ├── SQL_4b_enable_tcpip.png
+│   ├── SQL_4c_restart_db.png
+│   ├── StudentClass.jpg
+│   ├── sunset_neg.png
+│   ├── Truck-cs.png
+│   ├── TSQLV4.jpg
+│   ├── tulips_to_BW.png
+│   ├── Types-of-Join-inSQL.jpg
+│   ├── Vehicle-cs.png
+│   ├── vehicle-inheritance.jpg
+│   ├── vs
+│   │   ├── vs_downloads.jpg
+│   │   ├── vs_permission.jpg
+│   │   ├── vs_search.jpg
+│   │   ├── vs_setup_launch.jpg
+│   │   ├── vs_workloads_pt1-1.jpg
+│   │   └── vs_workloads_pt2.jpg
+│   ├── web_content.jpg
+│   ├── webdev.png
+│   ├── win_file_extensions.png
+│   └── zoom-icon.png
+├── node_modules
+│   ├── @popperjs
+│   │   └── core
+│   │       ├── dist
+│   │       │   ├── cjs
+│   │       │   │   ├── enums.js
+│   │       │   │   ├── enums.js.flow
+│   │       │   │   ├── enums.js.map
+│   │       │   │   ├── popper-base.js
+│   │       │   │   ├── popper-base.js.flow
+│   │       │   │   ├── popper-base.js.map
+│   │       │   │   ├── popper-lite.js
+│   │       │   │   ├── popper-lite.js.flow
+│   │       │   │   ├── popper-lite.js.map
+│   │       │   │   ├── popper.js
+│   │       │   │   ├── popper.js.flow
+│   │       │   │   └── popper.js.map
+│   │       │   ├── esm
+│   │       │   │   ├── createPopper.js
+│   │       │   │   ├── dom-utils
+│   │       │   │   │   ├── contains.js
+│   │       │   │   │   ├── getBoundingClientRect.js
+│   │       │   │   │   ├── getClippingRect.js
+│   │       │   │   │   ├── getCompositeRect.js
+│   │       │   │   │   ├── getComputedStyle.js
+│   │       │   │   │   ├── getDocumentElement.js
+│   │       │   │   │   ├── getDocumentRect.js
+│   │       │   │   │   ├── getHTMLElementScroll.js
+│   │       │   │   │   ├── getLayoutRect.js
+│   │       │   │   │   ├── getNodeName.js
+│   │       │   │   │   ├── getNodeScroll.js
+│   │       │   │   │   ├── getOffsetParent.js
+│   │       │   │   │   ├── getParentNode.js
+│   │       │   │   │   ├── getScrollParent.js
+│   │       │   │   │   ├── getViewportRect.js
+│   │       │   │   │   ├── getWindow.js
+│   │       │   │   │   ├── getWindowScroll.js
+│   │       │   │   │   ├── getWindowScrollBarX.js
+│   │       │   │   │   ├── instanceOf.js
+│   │       │   │   │   ├── isLayoutViewport.js
+│   │       │   │   │   ├── isScrollParent.js
+│   │       │   │   │   ├── isTableElement.js
+│   │       │   │   │   └── listScrollParents.js
+│   │       │   │   ├── enums.js
+│   │       │   │   ├── index.js
+│   │       │   │   ├── modifiers
+│   │       │   │   │   ├── applyStyles.js
+│   │       │   │   │   ├── arrow.js
+│   │       │   │   │   ├── computeStyles.js
+│   │       │   │   │   ├── eventListeners.js
+│   │       │   │   │   ├── flip.js
+│   │       │   │   │   ├── hide.js
+│   │       │   │   │   ├── index.js
+│   │       │   │   │   ├── offset.js
+│   │       │   │   │   ├── popperOffsets.js
+│   │       │   │   │   └── preventOverflow.js
+│   │       │   │   ├── popper-base.js
+│   │       │   │   ├── popper-lite.js
+│   │       │   │   ├── popper.js
+│   │       │   │   ├── types.js
+│   │       │   │   └── utils
+│   │       │   │       ├── computeAutoPlacement.js
+│   │       │   │       ├── computeOffsets.js
+│   │       │   │       ├── debounce.js
+│   │       │   │       ├── detectOverflow.js
+│   │       │   │       ├── expandToHashMap.js
+│   │       │   │       ├── getAltAxis.js
+│   │       │   │       ├── getAltLen.js
+│   │       │   │       ├── getBasePlacement.js
+│   │       │   │       ├── getFreshSideObject.js
+│   │       │   │       ├── getMainAxisFromPlacement.js
+│   │       │   │       ├── getOppositePlacement.js
+│   │       │   │       ├── getOppositeVariationPlacement.js
+│   │       │   │       ├── getVariation.js
+│   │       │   │       ├── math.js
+│   │       │   │       ├── mergeByName.js
+│   │       │   │       ├── mergePaddingObject.js
+│   │       │   │       ├── orderModifiers.js
+│   │       │   │       ├── rectToClientRect.js
+│   │       │   │       ├── uniqueBy.js
+│   │       │   │       ├── userAgent.js
+│   │       │   │       └── within.js
+│   │       │   └── umd
+│   │       │       ├── enums.js
+│   │       │       ├── enums.js.map
+│   │       │       ├── enums.min.js
+│   │       │       ├── enums.min.js.flow
+│   │       │       ├── enums.min.js.map
+│   │       │       ├── popper-base.js
+│   │       │       ├── popper-base.js.map
+│   │       │       ├── popper-base.min.js
+│   │       │       ├── popper-base.min.js.flow
+│   │       │       ├── popper-base.min.js.map
+│   │       │       ├── popper-lite.js
+│   │       │       ├── popper-lite.js.map
+│   │       │       ├── popper-lite.min.js
+│   │       │       ├── popper-lite.min.js.flow
+│   │       │       ├── popper-lite.min.js.map
+│   │       │       ├── popper.js
+│   │       │       ├── popper.js.map
+│   │       │       ├── popper.min.js
+│   │       │       ├── popper.min.js.flow
+│   │       │       └── popper.min.js.map
+│   │       ├── index.d.ts
+│   │       ├── lib
+│   │       │   ├── createPopper.d.ts
+│   │       │   ├── createPopper.js
+│   │       │   ├── createPopper.js.flow
+│   │       │   ├── dom-utils
+│   │       │   │   ├── contains.d.ts
+│   │       │   │   ├── contains.js
+│   │       │   │   ├── contains.js.flow
+│   │       │   │   ├── getBoundingClientRect.d.ts
+│   │       │   │   ├── getBoundingClientRect.js
+│   │       │   │   ├── getBoundingClientRect.js.flow
+│   │       │   │   ├── getClippingRect.d.ts
+│   │       │   │   ├── getClippingRect.js
+│   │       │   │   ├── getClippingRect.js.flow
+│   │       │   │   ├── getCompositeRect.d.ts
+│   │       │   │   ├── getCompositeRect.js
+│   │       │   │   ├── getCompositeRect.js.flow
+│   │       │   │   ├── getComputedStyle.d.ts
+│   │       │   │   ├── getComputedStyle.js
+│   │       │   │   ├── getComputedStyle.js.flow
+│   │       │   │   ├── getDocumentElement.d.ts
+│   │       │   │   ├── getDocumentElement.js
+│   │       │   │   ├── getDocumentElement.js.flow
+│   │       │   │   ├── getDocumentRect.d.ts
+│   │       │   │   ├── getDocumentRect.js
+│   │       │   │   ├── getDocumentRect.js.flow
+│   │       │   │   ├── getHTMLElementScroll.d.ts
+│   │       │   │   ├── getHTMLElementScroll.js
+│   │       │   │   ├── getHTMLElementScroll.js.flow
+│   │       │   │   ├── getLayoutRect.d.ts
+│   │       │   │   ├── getLayoutRect.js
+│   │       │   │   ├── getLayoutRect.js.flow
+│   │       │   │   ├── getNodeName.d.ts
+│   │       │   │   ├── getNodeName.js
+│   │       │   │   ├── getNodeName.js.flow
+│   │       │   │   ├── getNodeScroll.d.ts
+│   │       │   │   ├── getNodeScroll.js
+│   │       │   │   ├── getNodeScroll.js.flow
+│   │       │   │   ├── getOffsetParent.d.ts
+│   │       │   │   ├── getOffsetParent.js
+│   │       │   │   ├── getOffsetParent.js.flow
+│   │       │   │   ├── getParentNode.d.ts
+│   │       │   │   ├── getParentNode.js
+│   │       │   │   ├── getParentNode.js.flow
+│   │       │   │   ├── getScrollParent.d.ts
+│   │       │   │   ├── getScrollParent.js
+│   │       │   │   ├── getScrollParent.js.flow
+│   │       │   │   ├── getViewportRect.d.ts
+│   │       │   │   ├── getViewportRect.js
+│   │       │   │   ├── getViewportRect.js.flow
+│   │       │   │   ├── getWindow.d.ts
+│   │       │   │   ├── getWindow.js
+│   │       │   │   ├── getWindow.js.flow
+│   │       │   │   ├── getWindowScroll.d.ts
+│   │       │   │   ├── getWindowScroll.js
+│   │       │   │   ├── getWindowScroll.js.flow
+│   │       │   │   ├── getWindowScrollBarX.d.ts
+│   │       │   │   ├── getWindowScrollBarX.js
+│   │       │   │   ├── getWindowScrollBarX.js.flow
+│   │       │   │   ├── instanceOf.d.ts
+│   │       │   │   ├── instanceOf.js
+│   │       │   │   ├── instanceOf.js.flow
+│   │       │   │   ├── isLayoutViewport.d.ts
+│   │       │   │   ├── isLayoutViewport.js
+│   │       │   │   ├── isLayoutViewport.js.flow
+│   │       │   │   ├── isScrollParent.d.ts
+│   │       │   │   ├── isScrollParent.js
+│   │       │   │   ├── isScrollParent.js.flow
+│   │       │   │   ├── isTableElement.d.ts
+│   │       │   │   ├── isTableElement.js
+│   │       │   │   ├── isTableElement.js.flow
+│   │       │   │   ├── listScrollParents.d.ts
+│   │       │   │   ├── listScrollParents.js
+│   │       │   │   └── listScrollParents.js.flow
+│   │       │   ├── enums.d.ts
+│   │       │   ├── enums.js
+│   │       │   ├── enums.js.flow
+│   │       │   ├── index.d.ts
+│   │       │   ├── index.js
+│   │       │   ├── index.js.flow
+│   │       │   ├── modifiers
+│   │       │   │   ├── applyStyles.d.ts
+│   │       │   │   ├── applyStyles.js
+│   │       │   │   ├── applyStyles.js.flow
+│   │       │   │   ├── arrow.d.ts
+│   │       │   │   ├── arrow.js
+│   │       │   │   ├── arrow.js.flow
+│   │       │   │   ├── computeStyles.d.ts
+│   │       │   │   ├── computeStyles.js
+│   │       │   │   ├── computeStyles.js.flow
+│   │       │   │   ├── eventListeners.d.ts
+│   │       │   │   ├── eventListeners.js
+│   │       │   │   ├── eventListeners.js.flow
+│   │       │   │   ├── flip.d.ts
+│   │       │   │   ├── flip.js
+│   │       │   │   ├── flip.js.flow
+│   │       │   │   ├── hide.d.ts
+│   │       │   │   ├── hide.js
+│   │       │   │   ├── hide.js.flow
+│   │       │   │   ├── index.d.ts
+│   │       │   │   ├── index.js
+│   │       │   │   ├── index.js.flow
+│   │       │   │   ├── offset.d.ts
+│   │       │   │   ├── offset.js
+│   │       │   │   ├── offset.js.flow
+│   │       │   │   ├── popperOffsets.d.ts
+│   │       │   │   ├── popperOffsets.js
+│   │       │   │   ├── popperOffsets.js.flow
+│   │       │   │   ├── preventOverflow.d.ts
+│   │       │   │   ├── preventOverflow.js
+│   │       │   │   └── preventOverflow.js.flow
+│   │       │   ├── popper-base.d.ts
+│   │       │   ├── popper-base.js
+│   │       │   ├── popper-base.js.flow
+│   │       │   ├── popper-lite.d.ts
+│   │       │   ├── popper-lite.js
+│   │       │   ├── popper-lite.js.flow
+│   │       │   ├── popper.d.ts
+│   │       │   ├── popper.js
+│   │       │   ├── popper.js.flow
+│   │       │   ├── types.d.ts
+│   │       │   ├── types.js
+│   │       │   ├── types.js.flow
+│   │       │   └── utils
+│   │       │       ├── computeAutoPlacement.d.ts
+│   │       │       ├── computeAutoPlacement.js
+│   │       │       ├── computeAutoPlacement.js.flow
+│   │       │       ├── computeOffsets.d.ts
+│   │       │       ├── computeOffsets.js
+│   │       │       ├── computeOffsets.js.flow
+│   │       │       ├── debounce.d.ts
+│   │       │       ├── debounce.js
+│   │       │       ├── debounce.js.flow
+│   │       │       ├── detectOverflow.d.ts
+│   │       │       ├── detectOverflow.js
+│   │       │       ├── detectOverflow.js.flow
+│   │       │       ├── expandToHashMap.d.ts
+│   │       │       ├── expandToHashMap.js
+│   │       │       ├── expandToHashMap.js.flow
+│   │       │       ├── getAltAxis.d.ts
+│   │       │       ├── getAltAxis.js
+│   │       │       ├── getAltAxis.js.flow
+│   │       │       ├── getAltLen.d.ts
+│   │       │       ├── getAltLen.js
+│   │       │       ├── getAltLen.js.flow
+│   │       │       ├── getBasePlacement.d.ts
+│   │       │       ├── getBasePlacement.js
+│   │       │       ├── getBasePlacement.js.flow
+│   │       │       ├── getFreshSideObject.d.ts
+│   │       │       ├── getFreshSideObject.js
+│   │       │       ├── getFreshSideObject.js.flow
+│   │       │       ├── getMainAxisFromPlacement.d.ts
+│   │       │       ├── getMainAxisFromPlacement.js
+│   │       │       ├── getMainAxisFromPlacement.js.flow
+│   │       │       ├── getOppositePlacement.d.ts
+│   │       │       ├── getOppositePlacement.js
+│   │       │       ├── getOppositePlacement.js.flow
+│   │       │       ├── getOppositeVariationPlacement.d.ts
+│   │       │       ├── getOppositeVariationPlacement.js
+│   │       │       ├── getOppositeVariationPlacement.js.flow
+│   │       │       ├── getVariation.d.ts
+│   │       │       ├── getVariation.js
+│   │       │       ├── getVariation.js.flow
+│   │       │       ├── math.d.ts
+│   │       │       ├── math.js
+│   │       │       ├── math.js.flow
+│   │       │       ├── mergeByName.d.ts
+│   │       │       ├── mergeByName.js
+│   │       │       ├── mergeByName.js.flow
+│   │       │       ├── mergePaddingObject.d.ts
+│   │       │       ├── mergePaddingObject.js
+│   │       │       ├── mergePaddingObject.js.flow
+│   │       │       ├── orderModifiers.d.ts
+│   │       │       ├── orderModifiers.js
+│   │       │       ├── orderModifiers.js.flow
+│   │       │       ├── rectToClientRect.d.ts
+│   │       │       ├── rectToClientRect.js
+│   │       │       ├── rectToClientRect.js.flow
+│   │       │       ├── uniqueBy.d.ts
+│   │       │       ├── uniqueBy.js
+│   │       │       ├── uniqueBy.js.flow
+│   │       │       ├── userAgent.d.ts
+│   │       │       ├── userAgent.js
+│   │       │       ├── userAgent.js.flow
+│   │       │       ├── within.d.ts
+│   │       │       ├── within.js
+│   │       │       └── within.js.flow
+│   │       ├── LICENSE.md
+│   │       ├── package.json
+│   │       └── README.md
+│   └── bootstrap
+│       ├── dist
+│       │   ├── css
+│       │   │   ├── bootstrap-grid.css
+│       │   │   ├── bootstrap-grid.css.map
+│       │   │   ├── bootstrap-grid.min.css
+│       │   │   ├── bootstrap-grid.min.css.map
+│       │   │   ├── bootstrap-grid.rtl.css
+│       │   │   ├── bootstrap-grid.rtl.css.map
+│       │   │   ├── bootstrap-grid.rtl.min.css
+│       │   │   ├── bootstrap-grid.rtl.min.css.map
+│       │   │   ├── bootstrap-reboot.css
+│       │   │   ├── bootstrap-reboot.css.map
+│       │   │   ├── bootstrap-reboot.min.css
+│       │   │   ├── bootstrap-reboot.min.css.map
+│       │   │   ├── bootstrap-reboot.rtl.css
+│       │   │   ├── bootstrap-reboot.rtl.css.map
+│       │   │   ├── bootstrap-reboot.rtl.min.css
+│       │   │   ├── bootstrap-reboot.rtl.min.css.map
+│       │   │   ├── bootstrap-utilities.css
+│       │   │   ├── bootstrap-utilities.css.map
+│       │   │   ├── bootstrap-utilities.min.css
+│       │   │   ├── bootstrap-utilities.min.css.map
+│       │   │   ├── bootstrap-utilities.rtl.css
+│       │   │   ├── bootstrap-utilities.rtl.css.map
+│       │   │   ├── bootstrap-utilities.rtl.min.css
+│       │   │   ├── bootstrap-utilities.rtl.min.css.map
+│       │   │   ├── bootstrap.css
+│       │   │   ├── bootstrap.css.map
+│       │   │   ├── bootstrap.min.css
+│       │   │   ├── bootstrap.min.css.map
+│       │   │   ├── bootstrap.rtl.css
+│       │   │   ├── bootstrap.rtl.css.map
+│       │   │   ├── bootstrap.rtl.min.css
+│       │   │   └── bootstrap.rtl.min.css.map
+│       │   └── js
+│       │       ├── bootstrap.bundle.js
+│       │       ├── bootstrap.bundle.js.map
+│       │       ├── bootstrap.bundle.min.js
+│       │       ├── bootstrap.bundle.min.js.map
+│       │       ├── bootstrap.esm.js
+│       │       ├── bootstrap.esm.js.map
+│       │       ├── bootstrap.esm.min.js
+│       │       ├── bootstrap.esm.min.js.map
+│       │       ├── bootstrap.js
+│       │       ├── bootstrap.js.map
+│       │       ├── bootstrap.min.js
+│       │       └── bootstrap.min.js.map
+│       ├── js
+│       │   ├── dist
+│       │   │   ├── alert.js
+│       │   │   ├── alert.js.map
+│       │   │   ├── base-component.js
+│       │   │   ├── base-component.js.map
+│       │   │   ├── button.js
+│       │   │   ├── button.js.map
+│       │   │   ├── carousel.js
+│       │   │   ├── carousel.js.map
+│       │   │   ├── collapse.js
+│       │   │   ├── collapse.js.map
+│       │   │   ├── dom
+│       │   │   │   ├── data.js
+│       │   │   │   ├── data.js.map
+│       │   │   │   ├── event-handler.js
+│       │   │   │   ├── event-handler.js.map
+│       │   │   │   ├── manipulator.js
+│       │   │   │   ├── manipulator.js.map
+│       │   │   │   ├── selector-engine.js
+│       │   │   │   └── selector-engine.js.map
+│       │   │   ├── dropdown.js
+│       │   │   ├── dropdown.js.map
+│       │   │   ├── modal.js
+│       │   │   ├── modal.js.map
+│       │   │   ├── offcanvas.js
+│       │   │   ├── offcanvas.js.map
+│       │   │   ├── popover.js
+│       │   │   ├── popover.js.map
+│       │   │   ├── scrollspy.js
+│       │   │   ├── scrollspy.js.map
+│       │   │   ├── tab.js
+│       │   │   ├── tab.js.map
+│       │   │   ├── toast.js
+│       │   │   ├── toast.js.map
+│       │   │   ├── tooltip.js
+│       │   │   ├── tooltip.js.map
+│       │   │   └── util
+│       │   │       ├── backdrop.js
+│       │   │       ├── backdrop.js.map
+│       │   │       ├── component-functions.js
+│       │   │       ├── component-functions.js.map
+│       │   │       ├── config.js
+│       │   │       ├── config.js.map
+│       │   │       ├── focustrap.js
+│       │   │       ├── focustrap.js.map
+│       │   │       ├── index.js
+│       │   │       ├── index.js.map
+│       │   │       ├── sanitizer.js
+│       │   │       ├── sanitizer.js.map
+│       │   │       ├── scrollbar.js
+│       │   │       ├── scrollbar.js.map
+│       │   │       ├── swipe.js
+│       │   │       ├── swipe.js.map
+│       │   │       ├── template-factory.js
+│       │   │       └── template-factory.js.map
+│       │   ├── index.esm.js
+│       │   ├── index.umd.js
+│       │   └── src
+│       │       ├── alert.js
+│       │       ├── base-component.js
+│       │       ├── button.js
+│       │       ├── carousel.js
+│       │       ├── collapse.js
+│       │       ├── dom
+│       │       │   ├── data.js
+│       │       │   ├── event-handler.js
+│       │       │   ├── manipulator.js
+│       │       │   └── selector-engine.js
+│       │       ├── dropdown.js
+│       │       ├── modal.js
+│       │       ├── offcanvas.js
+│       │       ├── popover.js
+│       │       ├── scrollspy.js
+│       │       ├── tab.js
+│       │       ├── toast.js
+│       │       ├── tooltip.js
+│       │       └── util
+│       │           ├── backdrop.js
+│       │           ├── component-functions.js
+│       │           ├── config.js
+│       │           ├── focustrap.js
+│       │           ├── index.js
+│       │           ├── sanitizer.js
+│       │           ├── scrollbar.js
+│       │           ├── swipe.js
+│       │           └── template-factory.js
+│       ├── LICENSE
+│       ├── package.json
+│       ├── README.md
+│       └── scss
+│           ├── _accordion.scss
+│           ├── _alert.scss
+│           ├── _badge.scss
+│           ├── _breadcrumb.scss
+│           ├── _button-group.scss
+│           ├── _buttons.scss
+│           ├── _card.scss
+│           ├── _carousel.scss
+│           ├── _close.scss
+│           ├── _containers.scss
+│           ├── _dropdown.scss
+│           ├── _forms.scss
+│           ├── _functions.scss
+│           ├── _grid.scss
+│           ├── _helpers.scss
+│           ├── _images.scss
+│           ├── _list-group.scss
+│           ├── _maps.scss
+│           ├── _mixins.scss
+│           ├── _modal.scss
+│           ├── _nav.scss
+│           ├── _navbar.scss
+│           ├── _offcanvas.scss
+│           ├── _pagination.scss
+│           ├── _placeholders.scss
+│           ├── _popover.scss
+│           ├── _progress.scss
+│           ├── _reboot.scss
+│           ├── _root.scss
+│           ├── _spinners.scss
+│           ├── _tables.scss
+│           ├── _toasts.scss
+│           ├── _tooltip.scss
+│           ├── _transitions.scss
+│           ├── _type.scss
+│           ├── _utilities.scss
+│           ├── _variables-dark.scss
+│           ├── _variables.scss
+│           ├── bootstrap-grid.scss
+│           ├── bootstrap-reboot.scss
+│           ├── bootstrap-utilities.scss
+│           ├── bootstrap.scss
+│           ├── forms
+│           │   ├── _floating-labels.scss
+│           │   ├── _form-check.scss
+│           │   ├── _form-control.scss
+│           │   ├── _form-range.scss
+│           │   ├── _form-select.scss
+│           │   ├── _form-text.scss
+│           │   ├── _input-group.scss
+│           │   ├── _labels.scss
+│           │   └── _validation.scss
+│           ├── helpers
+│           │   ├── _clearfix.scss
+│           │   ├── _color-bg.scss
+│           │   ├── _colored-links.scss
+│           │   ├── _focus-ring.scss
+│           │   ├── _icon-link.scss
+│           │   ├── _position.scss
+│           │   ├── _ratio.scss
+│           │   ├── _stacks.scss
+│           │   ├── _stretched-link.scss
+│           │   ├── _text-truncation.scss
+│           │   ├── _visually-hidden.scss
+│           │   └── _vr.scss
+│           ├── mixins
+│           │   ├── _alert.scss
+│           │   ├── _backdrop.scss
+│           │   ├── _banner.scss
+│           │   ├── _border-radius.scss
+│           │   ├── _box-shadow.scss
+│           │   ├── _breakpoints.scss
+│           │   ├── _buttons.scss
+│           │   ├── _caret.scss
+│           │   ├── _clearfix.scss
+│           │   ├── _color-mode.scss
+│           │   ├── _color-scheme.scss
+│           │   ├── _container.scss
+│           │   ├── _deprecate.scss
+│           │   ├── _forms.scss
+│           │   ├── _gradients.scss
+│           │   ├── _grid.scss
+│           │   ├── _image.scss
+│           │   ├── _list-group.scss
+│           │   ├── _lists.scss
+│           │   ├── _pagination.scss
+│           │   ├── _reset-text.scss
+│           │   ├── _resize.scss
+│           │   ├── _table-variants.scss
+│           │   ├── _text-truncate.scss
+│           │   ├── _transition.scss
+│           │   ├── _utilities.scss
+│           │   └── _visually-hidden.scss
+│           ├── utilities
+│           │   └── _api.scss
+│           └── vendor
+│               └── _rfs.scss
+├── package-lock.json
+├── package.json
+├── py
+│   ├── -pycache.html
+│   ├── -python-interpreter.html
+│   ├── -shebang.html
+│   ├── 001_classroom.html
+│   ├── ex1-sequential-proc.html
+│   ├── ex1a-sequential-proc.html
+│   ├── installing-python.html
+│   ├── investment
+│   │   ├── future_value_app.py
+│   │   ├── future_value_web.py
+│   │   └── templates
+│   │       └── index.html
+│   ├── outline.txt
+│   ├── test-bs.html
+│   └── troubleshooting.html
+├── README.md
+├── resources
+│   ├── arrays.html
+│   ├── class_diagrams.html
+│   ├── coding_style.html
+│   ├── installing_vs2022.html
+│   ├── java_styleguide.html
+│   ├── oop_fundamentals.html
+│   ├── sln-csproj.html
+│   ├── sql_server_install_macos.html
+│   ├── sql_server_install_windows.html
+│   ├── using-dotnet-cli.html
+│   ├── variables.html
+│   └── vid_links.html
+├── sandbox
+│   ├── collapse.html
+│   └── sandbox.py
+└── scss
+    ├── styles.css
+    ├── styles.css.map
+    └── styles.scss
+
+1237 directories, 4483 files
