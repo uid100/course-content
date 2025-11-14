@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 12: UML Modeling</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="/course-content/common/css/style.css">
+
+    <!--
+      <p><iframe src="https://uid100.github.io/course-content/edu/cuyamaca/cs119/content/lab12.html?path=../../../cuyamaca/cs119" 
+          width="100%" height="1000px" loading="lazy"></iframe></p>
+    -->
+</head>
+
+<body>
+    <div id="top"></div>
+
+    <div id="content-wrapper">
+
+        <!-- ========================================= -->
+        <!-- PAGE HEADER / COURSE BANNER               -->
+        <!-- ========================================= -->
+        <div id="page-header">
+            <div class="row">
+                <div class="col-6 text-start">
+                    <a id="college-link" href="#" target="_blank">
+                        <img id="college-logo" class="logo" src="" alt="College Logo" />
+                    </a>
+                </div>
+
+                <div class="col-6 text-end">
+                    <a id="course-home" href="#" target="parent">
+                        <figure>
+                            <img id="cover-image" src="" alt="cover page image" class="course-home" />
+                        </figure>
+                    </a>
+                </div>
+            </div>
+
+            <!-- TIMELINE -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div id="start-marker" class="marker"></div>
+                        <div id="end-marker" class="marker"></div>
+                        <div id="current-marker" class="marker current-marker"></div>
+
+                        <div id="start-label" class="label"></div>
+                        <div id="end-label" class="label"></div>
+                        <div id="current-label" class="label current"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================= -->
+        <!-- LAB CONTENT                               -->
+        <!-- ========================================= -->
+        <div id="lab">
+            <h2>Lab 12: UML Modeling</h2>
+
+            <!-- INTRODUCTION CARD -->
+            <div class="card mb-3">
+                <div class="card-header">
+                    <a class="btn btn-link text-decoration-none"
+                       data-bs-toggle="collapse"
+                       href="#introduction"
+                       role="button"
+                       aria-expanded="false"
+                       aria-controls="introduction">
+                        Introduction
+                    </a>
+                </div>
+
+                <div id="introduction" class="collapse show card-body">
+                    <p>You will use Draw.io to create some fairly basic UML models.</p>
+
+                    <p class="boxed-paragraph">
+                        Be sure to export your completed models to JPEG image files and copy them
+                        into your Lab folder.
+                    </p>
+
+                    <p class="boxed-paragraph">
+                        Turn off <strong>Dark Mode</strong> before saving your images.
+                        Do <em>not</em> submit blacked-out diagrams!
+                    </p>
+
+                    <div id="topics">
+                        <h4>Objectives</h4>
+                        <ul>
+                            <li>UML Modeling</li>
+                        </ul>
+                    </div>
+
+                    <p style="font-style: italic; text-align: center;">
+                        Be sure to expand all sections below to see all instructions.
+                    </p>
+                </div>
+            </div>
+
+            <!-- EXERCISE 1 -->
+            <div class="card mb-3" id="ex-1">
+                <div class="card-header">
+                    <a class="btn btn-link text-decoration-none"
+                       data-bs-toggle="collapse"
+                       href="#collapseEx1"
+                       role="button"
+                       aria-expanded="false"
+                       aria-controls="collapseEx1">
+                        Exercise 1 – Rent-A-Wreck Car Rentals
+                    </a>
+                </div>
+
+                <div id="collapseEx1" class="collapse">
+                    <div class="card-body">
+
+                        <h3>Exercise 1 – UML Use Case & Activity Diagrams</h3>
+
+                        <ol>
+                            <li>
+                                <h4>Use Case Diagram</h4>
+                                <p>Develop a <strong>use case</strong> model for renting a car.</p>
+
+                                <h5>Actors</h5>
+                                <ul>
+                                    <li>Rental Agent</li>
+                                    <li>Fleet Mechanic</li>
+                                    <li>Customer</li>
+                                </ul>
+
+                                <h5>Use Cases</h5>
+                                <ul>
+                                    <li>Make Reservation</li>
+                                    <li>Rent Car</li>
+                                    <li>Return Car</li>
+                                    <li>Report Mechanical Problems</li>
+                                    <li>Order Repairs</li>
+                                    <li>Make Repairs</li>
+                                </ul>
+
+                                <p>Use correct symbols for actors, use cases, and system boundaries.</p>
+                                <p>
+                                    Association connectors should be correct and logical.
+                                    <em>This is not a flowchart!</em>
+                                </p>
+                            </li>
+
+                            <li>
+                                <h4>Activity Diagram</h4>
+                                <p>Develop an <strong>activity diagram</strong> that represents how to rent a car.</p>
+                                <p>Use correct symbols for activities, decisions, and connectors.</p>
+                            </li>
+                        </ol>
+
+                        <p class="text-center" style="font-style: italic;">Go to Exercise 2!</p>
+
+                        <a href="#ex-1" class="btn btn-primary">
+                            Back to Top <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXERCISE 2 -->
+            <div class="card mb-3" id="ex-2">
+                <div class="card-header">
+                    <a class="btn btn-link text-decoration-none"
+                       data-bs-toggle="collapse"
+                       href="#collapseEx2"
+                       role="button"
+                       aria-expanded="false"
+                       aria-controls="collapseEx2">
+                       Exercise 2 – Coyote Cellular
+                    </a>
+                </div>
+
+                <div id="collapseEx2" class="collapse">
+                    <div class="card-body">
+
+                        <h3>Exercise 2 – UML Class Diagram</h3>
+                        <p>Develop a <strong>class model</strong> for a <strong>Message</strong> class for a cell phone company.</p>
+
+                        <ul>
+                            <li>Your Message class must contain at least 3 properties and at least 2 methods.</li>
+                            <li>Include generalizations for:
+                                <ul>
+                                    <li>TextMessage</li>
+                                    <li>VoiceMessage</li>
+                                    <li>VideoMessage</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <p class="text-center" style="font-style: italic;">Go to Exercise 3!</p>
+
+                        <a href="#ex-2" class="btn btn-primary">
+                            Back to Top <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXERCISE 3 -->
+            <div class="card mb-3" id="ex-3">
+                <div class="card-header">
+                    <a class="btn btn-link text-decoration-none"
+                       data-bs-toggle="collapse"
+                       href="#collapseEx3"
+                       role="button"
+                       aria-expanded="false"
+                       aria-controls="collapseEx3">
+                       Exercise 3 – Party Planning
+                    </a>
+                </div>
+
+                <div id="collapseEx3" class="collapse">
+                    <div class="card-body">
+
+                        <h3>Exercise 3 – Activity Diagram</h3>
+                        <p>Develop an activity diagram that illustrates how to throw a party.</p>
+                        <p>Your model must contain at least 5 activities.</p>
+
+                        <a href="#ex-3" class="btn btn-primary">
+                            Back to Top <i class="fa fa-arrow-up"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- #lab -->
+
+    </div> <!-- #content-wrapper -->
+
+    <script src="/course-content/common/js/local.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
