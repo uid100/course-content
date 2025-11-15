@@ -14,6 +14,6 @@ async function injectFragment(id, url) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    injectFragment("shared-header", "/course-content/common/templates/page-header.html");
-    injectFragment("shared-footer", "/course-content/common/templates/footer.html");
+    injectFragment("shared-header", "/course-content/common/page-header.html");
+    injectFragment("shared-footer", "/course-content/common/footer.html");
 });
