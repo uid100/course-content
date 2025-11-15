@@ -143,6 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // The path to the JSON file
     const jsonFilePath = "../edu/" + getQueryParam('path');
     const jsonFile = jsonFilePath + "/content.json";
+    console.log("jsonFile: " + jsonFile);
     if (!jsonFile) {
         document.getElementById('content').textContent = "Error: No JSON file specified.";
         return;
