@@ -154,7 +154,8 @@ async function loadContent(id, filePath) {
 document.addEventListener("DOMContentLoaded", () => {
     console.log("DOMContentLoaded");
     // The path to the JSON file
-    const jsonFilePath = "../edu/" + getQueryParam('path');
+    // const jsonFilePath = "../edu/" + getQueryParam('path');
+    const jsonFilePath =  getQueryParam('path');
     const jsonFile = jsonFilePath + "/content.json";
     console.log("jsonFile: " + jsonFile);
     if (!jsonFile) {
