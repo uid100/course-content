@@ -47,7 +47,7 @@ function initializeTimeline(jsonPath) {
             const start = new Date(startDate);
             const end = new Date(endDate);
             const today = new Date();
-            // const today = new Date('2025-08-19'); // Fixed date for consistent testing
+            //const today = new Date('2025-08-26'); // Fixed date for consistent testing
 
 
             // Get timeline element
