@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+## pip install -r requirements.txt
+
 import requests
 import pandas as pd
 import matplotlib.pyplot as plt
