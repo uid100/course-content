@@ -11,6 +11,7 @@ import matplotlib.pyplot as plt
 # country = "South Africa"
 country_dim = "ZAF"
 country_dim = "MOZ"
+# country_dim = "GLOBAL"
 API_URL = "https://ghoapi.azureedge.net/api/HIV_0000000001"
 # API_URL = f"https://ghoapi.azureedge.net/api/HIV_0000000001?$filter=SpatialDim%20eq%20%27{country_dim}%27"
 
