@@ -22,7 +22,7 @@ def sql_server_driver():
     driver_names = [
         x for x in pyodbc.drivers() if x.endswith('SQL Server')]
     if driver_names:
-        driver_name = driver_names[0]  # use the first driver found
+        driver_name = driver_names[-1]  # use the first driver found
     else:
         print("No pyodbc driver found for SQL Server. Exiting.")
         return None
