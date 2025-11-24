@@ -1,3 +1,0 @@
-name|Joel Murach
-autosave|15
-language|English
