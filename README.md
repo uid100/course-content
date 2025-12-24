@@ -15,3 +15,14 @@
  * shared/ 
      └── 
 ```
+
+stop tracking .DS_Store!
+
+From the repo root, run:
+
+`git rm --cached .DS_Store`
+
+
+Then commit the change:
+
+`git commit -m "Remove .DS_Store from tracking"`
