@@ -34,7 +34,7 @@ def connect_to_db():
         if is_windows():
             conn = pyodbc.connect(
                 f'DRIVER={sql_server_driver()};'
-                'SERVER=localhost;'
+                'SERVER=localhost\SQLEXPRESS;'
                 'Encrypt=no;'
                 'TRUSTED_CONNECTION=yes;'
             )
